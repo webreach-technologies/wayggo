@@ -1,0 +1,123 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import { Image } from "astro:assets";
+import heroImg from "../../assets/tourtype/Sports Teams & Fan Group Travel.png";
+import { MapPin, Luggage, Calendar, Zap } from "@lucide/astro";
+
+const features = [
+  {
+    icon: MapPin,
+    title: "Stadium Door Drops",
+    desc: "Precise gate-level drop-off and pick-up timing",
+  },
+  {
+    icon: Luggage,
+    title: "Team Equipment Capable",
+    desc: "Large luggage hold for gear and equipment bags",
+  },
+  {
+    icon: Calendar,
+    title: "Multi-Game Scheduling",
+    desc: "Multi-city sports tour packages across 5–10 days",
+  },
+  {
+    icon: Zap,
+    title: "Fan Group Energy",
+    desc: "Fun, safe coaches for enthusiastic supporter groups",
+  },
+];
+
+const tours = [
+  { sport: "NFL Experience", cities: ["New York (MetLife)", "Chicago (Soldier Field)", "Dallas (AT&T Stadium)", "Los Angeles (SoFi Stadium)"], vehicle: "Motorcoach" },
+  { sport: "MLB Baseball Tour", cities: ["NYC (Yankee Stadium)", "Chicago (Wrigley Field)", "Boston (Fenway Park)", "Toronto (Rogers Centre)"], vehicle: "Full-Size Bus" },
+  { sport: "NBA City Hopper", cities: ["Chicago (United Center)", "Miami (Kaseya Center)", "Los Angeles (Crypto.com Arena)", "New York (MSG)"], vehicle: "Full-Size Bus" },
+  { sport: "Soccer Fan Tour", cities: ["Toronto FC", "LA Galaxy", "New York Red Bulls", "Chicago Fire"], vehicle: "Minibus or Full-Size Bus" },
+  { sport: "NHL Ice Tour", cities: ["Toronto (Scotiabank)", "Montreal (Bell Centre)", "Chicago (United Center)", "Boston (TD Garden)"], vehicle: "Full-Size Bus" },
+  { sport: "Grand Slam Tennis", cities: ["New York (US Open)", "Cincinnati Masters", "Miami Open", "Indian Wells Masters"], vehicle: "Minibus or Van" },
+];
+---
+
+<BaseLayout
+  title="Sports Teams & Fan Group Transportation — WAYGGO"
+  description="Game day transportation, team charters, and fan group buses across North America. WAYGGO serves sports teams, fan clubs, and tour operators bringing international groups to major sporting events."
+>
+
+  <section class="relative py-24 overflow-hidden" style="background-color: #1A2744;">
+    <Image
+      src={heroImg}
+      alt=""
+      width={1600}
+      height={600}
+      quality=25
+      loading="eager"
+      class="absolute inset-0 w-full h-full object-cover opacity-25"
+    />
+    <div class="absolute inset-0 diagonal-lines pointer-events-none" />
+    <div class="container relative z-10">
+      <div class="max-w-3xl">
+        <span class="section-label-white mb-5 inline-flex">Sports Group Travel</span>
+        <h1 class="text-5xl lg:text-6xl font-black text-white mb-5">
+          Sports Teams &<br />
+          <span style="color: #FDEA01;">Fan Group Travel</span>
+        </h1>
+        <p class="text-white/65 text-lg leading-relaxed max-w-2xl mb-8">
+          From the Super Bowl to the NBA Finals, from baseball road trips to international soccer friendlies — WAYGGO moves sports groups to stadiums across North America with game-day precision.
+        </p>
+        <a href="/contact" class="btn-primary">Plan Your Sports Tour</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-20" style="background-color: #FDEA01;">
+    <div class="container">
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+        {features.map((item) => {
+          const Icon = item.icon;
+          return (
+            <div>
+              <div class="mb-3 flex justify-center" style="color: #1A2744;"><Icon size={28} stroke-width={1.5} /></div>
+              <h3 class="font-black text-sm mb-1" style="color: #1A2744;">{item.title}</h3>
+              <p class="text-xs" style="color: rgba(26,39,68,0.65);">{item.desc}</p>
+            </div>
+          );
+        })}
+      </div>
+    </div>
+  </section>
+
+  <section class="py-20" style="background-color: white;">
+    <div class="container">
+      <div class="text-center mb-12">
+        <span class="section-label">Sports Experiences</span>
+        <h2 class="text-4xl font-black mt-4" style="color: #1A2744;">Popular Sports Tour Routes</h2>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        {tours.map((tour) => (
+          <div class="bg-white border-2 border-gray-100 rounded-2xl p-6 card-hover hover:border-yellow transition-all">
+            <h3 class="text-lg font-black mb-4" style="color: #1A2744;">{tour.sport}</h3>
+            <ul class="space-y-1.5 mb-4">
+              {tour.cities.map((city) => (
+                <li class="flex items-center gap-2 text-sm text-gray-500">
+                  <span class="w-1.5 h-1.5 rounded-full shrink-0" style="background: #FDEA01;"></span>
+                  {city}
+                </li>
+              ))}
+            </ul>
+            <span class="badge badge-navy">{tour.vehicle}</span>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <section class="py-16 diagonal-lines" style="background-color: #1A2744;">
+    <div class="container text-center">
+      <h2 class="text-3xl font-black text-white mb-4">Book Your Sports Group Transport</h2>
+      <p class="text-white/60 max-w-lg mx-auto mb-8">
+        Tell us which sport, which city, and how many fans. We'll get you there on time, every time.
+      </p>
+      <a href="/contact" class="btn-primary">Request a Sports Tour Quote</a>
+    </div>
+  </section>
+
+</BaseLayout>

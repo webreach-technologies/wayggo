@@ -1,0 +1,95 @@
+---
+import { Shield, Star, Users, type AstroComponent } from "@lucide/astro";
+
+interface Pillar {
+  icon: AstroComponent;
+  num: string;
+  title: string;
+  tagline: string;
+  desc: string;
+}
+
+interface Props {
+  heading?: string;
+  subheading?: string;
+  pillars?: Pillar[];
+}
+
+const {
+  heading = "Why Operators\nChoose WAYGGO",
+  subheading = "We're not a booking platform. We're your dedicated ground operations team for North America — one relationship that covers every city, every group, every season.",
+  pillars = [
+    {
+      icon: Shield,
+      num: "01",
+      title: "One Point of Contact",
+      tagline: "Your single connection on the ground.",
+      desc: "One dedicated coordinator handles every city, every operator, every leg. No juggling vendors across time zones. One email. One invoice. Total clarity.",
+    },
+    {
+      icon: Star,
+      num: "02",
+      title: "Infinite Flexibility",
+      tagline: "From VIP vans to 56-seat motorcoaches.",
+      desc: "12 passengers or 120 — split across multiple vehicles, multiple cities. We configure the exact fleet your itinerary demands, with zero minimum orders.",
+    },
+    {
+      icon: Users,
+      num: "03",
+      title: "Vetted Reliability",
+      tagline: "500+ trusted partners. Zero guesswork.",
+      desc: "Every operator passes our rigorous 12-point vetting: licensing, insurance, vehicle inspection, driver background checks, and client references.",
+    },
+  ],
+} = Astro.props;
+
+const headingLines = heading.split("\n");
+---
+
+<section class="py-28" style="background: #F9F7F2;">
+  <div class="container">
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
+      <!-- Left heading column -->
+      <div class="lg:col-span-4">
+        <span class="section-label">Why Us</span>
+        <h2 class="text-4xl lg:text-5xl font-black mt-5 mb-6 leading-tight"
+          style="color: #1A2744;">
+          {headingLines.map((line, i) => (
+            <>
+              {line}
+              {i < headingLines.length - 1 && <br />}
+            </>
+          ))}
+        </h2>
+        <p class="font-subheading text-base leading-relaxed mb-8" style="color: #6B7280;">
+          {subheading}
+        </p>
+        <a href="/about" class="btn-secondary">Learn Our Story</a>
+      </div>
+
+      <!-- Right: 3 pillar cards -->
+      <div class="lg:col-span-8 flex flex-col gap-4">
+        {pillars.map((pillar) => {
+          const PillarIcon = pillar.icon;
+          return (
+          <div class="flex items-start gap-6 bg-white rounded-2xl p-7"
+            style="box-shadow: 0 2px 16px rgba(26,39,68,0.06);">
+            <div class="w-14 h-14 rounded-2xl shrink-0 flex items-center justify-center"
+              style="background: #1A2744;">
+              <PillarIcon size={22} color="#FDEA01" stroke-width={2.5} />
+            </div>
+            <div class="flex-1">
+              <div class="flex items-center gap-3 mb-1">
+                <span class="font-heading text-xs font-black uppercase tracking-widest" style="color: #FDEA01;">{pillar.num}</span>
+                <h3 class="text-lg font-black" style="color: #1A2744;">{pillar.title}</h3>
+              </div>
+              <p class="text-sm font-semibold italic mb-2" style="color: rgba(26,39,68,0.5);">"{pillar.tagline}"</p>
+              <p class="text-sm leading-relaxed" style="color: #6B7280;">{pillar.desc}</p>
+            </div>
+          </div>
+          );
+        })}
+      </div>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,153 @@
+﻿---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import { ArrowRight } from "@lucide/astro";
+
+const categories = [
+  {
+    icon: "🏙️",
+    name: "Sightseeing & City Tours",
+    tagline: "Iconic landmarks. Expert local guides.",
+    desc: "Curated motorcoach and minibus tours through America's most celebrated cities — Times Square, the Golden Gate, Millennium Park. We match your group to the perfect guide and vehicle for unforgettable urban exploration.",
+    href: "/tours/sightseeing",
+    cities: ["New York", "Los Angeles", "Chicago", "Las Vegas", "San Francisco", "Miami"],
+    color: "#1A2744",
+    accent: "#FDEA01",
+  },
+  {
+    icon: "🎓",
+    name: "Educational & Student Tours",
+    tagline: "Knowledge-first journeys for curious minds.",
+    desc: "Smithsonian museums, NASA facilities, Ivy League campuses, Silicon Valley headquarters — we transport student groups safely with age-appropriate vehicles, experienced drivers, and chaperone-friendly planning.",
+    href: "/tours/educational",
+    cities: ["Washington D.C.", "Boston", "Cambridge", "San Francisco", "Chicago", "Toronto"],
+    color: "#243460",
+    accent: "#FDEA01",
+  },
+  {
+    icon: "⛪",
+    name: "Religious & Pilgrimage Groups",
+    tagline: "Sacred journeys handled with respect.",
+    desc: "From the National Cathedral to Salt Lake City's Temple Square and Notre Dame — we understand the spiritual significance of every stop and ensure your group arrives composed, on time, and fully accommodated.",
+    href: "/tours/religious",
+    cities: ["Salt Lake City", "Washington D.C.", "Notre Dame", "Niagara Falls", "Philadelphia", "Montreal"],
+    color: "#0D1B3E",
+    accent: "#FDEA01",
+  },
+  {
+    icon: "💼",
+    name: "Corporate & Convention Travel",
+    tagline: "Professional group movement at scale.",
+    desc: "CES, SXSW, NAB, MedCity — when your delegation lands in Las Vegas or Chicago, WAYGGO coordinates executive coaches, shuttle loops, and VIP transfers for convention groups of any size.",
+    href: "/tours/corporate",
+    cities: ["Las Vegas", "Chicago", "New York", "San Francisco", "Dallas", "Orlando"],
+    color: "#1A2744",
+    accent: "#FDEA01",
+  },
+  {
+    icon: "🏆",
+    name: "Sports Teams & Fan Groups",
+    tagline: "Game day done right.",
+    desc: "Team charters, stadium transfers, fan group buses — we handle the logistics so players and supporters travel together comfortably, on schedule, from the hotel to the stadium and back.",
+    href: "/tours/sports",
+    cities: ["New York", "Chicago", "Los Angeles", "Dallas", "Boston", "Toronto"],
+    color: "#243460",
+    accent: "#FDEA01",
+  },
+  {
+    icon: "💍",
+    name: "Wedding & Special Events",
+    tagline: "Luxury transportation for life's biggest moments.",
+    desc: "Elegant coaches for wedding parties, seamless guest shuttles between venue and hotel, anniversary tours — we ensure every guest arrives stress-free so you can focus on celebrating.",
+    href: "/tours/weddings",
+    cities: ["New York", "Las Vegas", "Miami", "Los Angeles", "Chicago", "Niagara Falls"],
+    color: "#0D1B3E",
+    accent: "#FDEA01",
+  },
+];
+---
+
+<BaseLayout
+  title="Tour Categories — WAYGGO Ground Transportation"
+  description="Sightseeing, Educational, Religious, Corporate, Sports, and Wedding group tours across North America. WAYGGO provides dedicated ground transportation for every type of group tour."
+>
+
+  <!-- Hero -->
+  <section class="py-24 diagonal-lines" style="background-color: #1A2744;">
+    <div class="container">
+      <div class="max-w-3xl">
+        <span class="section-label-white mb-5 inline-flex">Our Specializations</span>
+        <h1 class="text-5xl lg:text-6xl font-black text-white mb-5" style="">
+          Every Tour Type.<br />
+          <span style="color: #FDEA01;">One Trusted Partner.</span>
+        </h1>
+        <p class="text-white/65 text-lg leading-relaxed max-w-2xl" style="">
+          Whether you're moving a student group through D.C. museums or chauffeuring a Fortune 500 delegation across Las Vegas, WAYGGO has the vehicle, the driver, and the local knowledge to make it seamless.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Categories grid -->
+  <section class="py-20" style="background-color: #F9F7F2;">
+    <div class="container">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        {categories.map((cat) => (
+          <a
+            href={cat.href}
+            class="group bg-white rounded-2xl overflow-hidden card-hover border-2 border-transparent hover:border-[#FDEA01] transition-all duration-300"
+          >
+            <!-- Header -->
+            <div class="p-7 pb-0">
+              <div class="text-4xl mb-4">{cat.icon}</div>
+              <h2 class="text-xl font-black mb-1" style="color: #1A2744;">
+                {cat.name}
+              </h2>
+              <p class="text-xs font-semibold italic text-gray-400 mb-4" style="">
+                {cat.tagline}
+              </p>
+              <p class="text-sm text-gray-500 leading-relaxed" style="">
+                {cat.desc}
+              </p>
+            </div>
+
+            <!-- Cities -->
+            <div class="p-7 pt-5">
+              <p class="text-xs font-bold uppercase tracking-widest text-gray-400 mb-3" style="">
+                Popular Destinations
+              </p>
+              <div class="flex flex-wrap gap-1.5 mb-5">
+                {cat.cities.map((city) => (
+                  <span class="text-xs px-2.5 py-1 rounded-full" style="background-color: #F9F7F2; color: #1A2744; font-weight: 500;">
+                    {city}
+                  </span>
+                ))}
+              </div>
+
+              <div
+                class="flex items-center gap-2 text-sm font-bold uppercase tracking-widest group-hover:gap-3 transition-all"
+                style="color: #1A2744;"
+              >
+                Explore Tours
+                <ArrowRight size={14} stroke-width={2.5} />
+              </div>
+            </div>
+          </a>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="py-20" style="background-color: #FDEA01;">
+    <div class="container text-center">
+      <h2 class="text-3xl lg:text-4xl font-black mb-4" style="color: #1A2744;">
+        Not Sure Which Category Fits?
+      </h2>
+      <p class="text-base mb-8 max-w-xl mx-auto" style="color: rgba(26,39,68,0.7);">
+        Tell us your itinerary and we'll recommend the right vehicle and tour structure for your group.
+      </p>
+      <a href="/contact" class="btn-secondary">Get a Custom Recommendation</a>
+    </div>
+  </section>
+
+</BaseLayout>

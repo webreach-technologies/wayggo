@@ -1,0 +1,85 @@
+---
+import "../styles/global.css";
+import { ClientRouter } from 'astro:transitions';
+import TopBar from "../components/layout/TopBar.astro";
+import Header from "../components/layout/Header.astro";
+import Footer from "../components/layout/Footer.astro";
+import { ChevronUp } from "@lucide/astro";
+
+interface Props {
+  title?: string;
+  description?: string;
+  ogImage?: string;
+  canonical?: string;
+  noindex?: boolean;
+}
+
+const {
+  title = "WAYGGO — North America's #1 B2B Ground Transportation Partner",
+  description = "WAYGGO connects international tour operators and travel agents to 500+ vetted ground transportation operators across the USA and Canada. Motorcoaches, minibuses, vans, and shuttles for every group size.",
+  ogImage = "/og-default.jpg",
+  canonical,
+  noindex = false,
+} = Astro.props;
+
+const canonicalURL = canonical ?? new URL(Astro.url.pathname, Astro.site ?? "https://wayggo.com").href;
+---
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="generator" content={Astro.generator} />
+    <title>{title}</title>
+    <meta name="description" content={description} />
+    {noindex && <meta name="robots" content="noindex, follow" />}
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:image" content={ogImage} />
+    <meta property="og:url" content={canonicalURL} />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+<link rel="preload" href="/fonts/nunito-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin />
+    <link rel="canonical" href={canonicalURL} />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="icon" href="/favicon.ico" />
+    <ClientRouter />
+  </head>
+
+  <body>
+    <TopBar />
+    <Header />
+    <main>
+      <slot />
+    </main>
+    <Footer />
+
+    <!-- Scroll to top button -->
+    <button
+      id="scroll-top-btn"
+      aria-label="Scroll to top"
+      class="fixed bottom-8 right-8 z-50 w-12 h-12 rounded-full bg-yellow shadow-lg flex items-center justify-center opacity-0 pointer-events-none transition-all duration-300 hover:bg-yellow-dark focus:outline-none focus:ring-2 focus:ring-yellow focus:ring-offset-2"
+    >
+      <ChevronUp size={20} class="text-navy" stroke-width={2.5} aria-hidden="true" />
+    </button>
+
+    <script>
+      const btn = document.getElementById('scroll-top-btn');
+
+      window.addEventListener('scroll', () => {
+        if (window.scrollY > 400) {
+          btn?.classList.remove('opacity-0', 'pointer-events-none');
+          btn?.classList.add('opacity-100');
+        } else {
+          btn?.classList.add('opacity-0', 'pointer-events-none');
+          btn?.classList.remove('opacity-100');
+        }
+      }, { passive: true });
+
+      btn?.addEventListener('click', () => {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      });
+    </script>
+  </body>
+</html>

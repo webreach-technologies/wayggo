@@ -1,0 +1,36 @@
+{
+  "name": "frontend",
+  "type": "module",
+  "version": "0.0.1",
+  "engines": {
+    "node": ">=22.12.0"
+  },
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro"
+  },
+  "dependencies": {
+    "@astrojs/react": "^6.0.1",
+    "@fontsource-variable/nunito": "^5.2.7",
+    "@lucide/astro": "^1.22.0",
+    "@tailwindcss/vite": "^4.2.4",
+    "@types/leaflet": "^1.9.21",
+    "@types/react": "^19.2.14",
+    "@types/react-dom": "^19.2.3",
+    "astro": "^7.0.6",
+    "leaflet": "^1.9.4",
+    "lucide-react": "^1.22.0",
+    "react": "^19.2.5",
+    "react-datepicker": "^9.1.0",
+    "react-dom": "^19.2.5",
+    "react-leaflet": "^5.0.0",
+    "tailwindcss": "^4.2.4"
+  },
+  "devDependencies": {
+    "@astrojs/check": "^0.9.9",
+    "playwright": "^1.60.0",
+    "typescript": "^6.0.3"
+  }
+}

@@ -1,0 +1,129 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import { Image } from "astro:assets";
+import heroImg from "../../assets/tourtype/Educational & Student Tours.png";
+import { ShieldCheck, Users, Clock, Smartphone } from "@lucide/astro";
+
+const destinations = [
+  { city: "Washington D.C.", ideal: "History, Science, Government", sites: ["Smithsonian Institution", "National Air & Space Museum", "US Capitol", "Library of Congress", "National Zoo"] },
+  { city: "Boston & Cambridge", ideal: "Higher Education, History", sites: ["Harvard University", "MIT Campus", "Freedom Trail", "Museum of Science", "Boston Public Library"] },
+  { city: "Silicon Valley", ideal: "Tech, Innovation, Business", sites: ["Computer History Museum", "Stanford University", "NASA Ames", "Apple HQ", "Google Campus"] },
+  { city: "Toronto, Canada", ideal: "Science, Arts, Education", sites: ["ROM (Royal Ontario Museum)", "University of Toronto", "Ontario Science Centre", "OCAD University", "CN Tower"] },
+  { city: "Chicago", ideal: "Science, Arts, Culture", sites: ["Field Museum", "Shedd Aquarium", "Adler Planetarium", "Art Institute", "University of Chicago"] },
+  { city: "New York City", ideal: "Arts, Diplomacy, History", sites: ["American Museum of Natural History", "Columbia University", "MoMA", "UN Headquarters", "Metropolitan Museum"] },
+];
+
+const features = [
+  {
+    icon: ShieldCheck,
+    title: "Background-Checked Drivers",
+    desc: "All drivers pass student transport compliance checks",
+  },
+  {
+    icon: Users,
+    title: "Chaperone Coordination",
+    desc: "Reserved seats and communication protocols for chaperones",
+  },
+  {
+    icon: Clock,
+    title: "Curriculum-Timed Routing",
+    desc: "We time stops to match your educational program",
+  },
+  {
+    icon: Smartphone,
+    title: "Parent Tracking Available",
+    desc: "Real-time GPS updates for school coordinators",
+  },
+];
+---
+
+<BaseLayout
+  title="Educational & Student Tours — WAYGGO Group Transportation"
+  description="Safe, organized ground transportation for student groups and educational tours across North America. Smithsonian, Ivy League campuses, Silicon Valley, and more."
+>
+
+  <section class="relative py-24 overflow-hidden" style="background-color: #1A2744;">
+    <Image
+      src={heroImg}
+      alt=""
+      width={1600}
+      height={600}
+      quality=25
+      loading="eager"
+      class="absolute inset-0 w-full h-full object-cover opacity-25"
+    />
+    <div class="absolute inset-0 diagonal-lines pointer-events-none" />
+    <div class="container relative z-10">
+      <div class="max-w-3xl">
+        <span class="section-label-white mb-5 inline-flex">For Schools & Universities</span>
+        <h1 class="text-5xl lg:text-6xl font-black text-white mb-5">
+          Educational &<br />
+          <span style="color: #FDEA01;">Student Tours</span>
+        </h1>
+        <p class="text-white/65 text-lg leading-relaxed max-w-2xl mb-8">
+          Moving student groups requires precise timing, safe vehicles, and drivers who understand the responsibility. WAYGGO's educational tour fleet is purpose-built for schools, universities, and youth travel operators worldwide.
+        </p>
+        <a href="/contact" class="btn-primary">Plan a Student Tour</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-20" style="background-color: #FDEA01;">
+    <div class="container">
+      <h2 class="text-3xl font-black mb-8 text-center" style="color: #1A2744;">Built for Student Safety & Learning</h2>
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+        {features.map((item) => {
+          const Icon = item.icon;
+          return (
+            <div class="text-center">
+              <div class="mb-3 flex justify-center" style="color: #1A2744;"><Icon size={28} stroke-width={1.5} /></div>
+              <h3 class="font-black text-sm mb-1" style="color: #1A2744;">{item.title}</h3>
+              <p class="text-xs" style="color: rgba(26,39,68,0.65);">{item.desc}</p>
+            </div>
+          );
+        })}
+      </div>
+    </div>
+  </section>
+
+  <section class="py-20" style="background-color: white;">
+    <div class="container">
+      <div class="text-center mb-12">
+        <span class="section-label">Top Destinations</span>
+        <h2 class="text-4xl font-black mt-4" style="color: #1A2744;">Knowledge-Rich Destinations</h2>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        {destinations.map((d) => (
+          <div class="bg-white border-2 border-gray-100 rounded-2xl p-6 card-hover hover:border-[#FDEA01] transition-all">
+            <div class="mb-4">
+              <h3 class="font-black" style="color: #1A2744;">{d.city}</h3>
+              <span class="text-xs text-gray-400">{d.ideal}</span>
+            </div>
+            <ul class="space-y-1.5">
+              {d.sites.map((site) => (
+                <li class="flex items-center gap-2 text-sm text-gray-500">
+                  <span class="w-1.5 h-1.5 rounded-full flex-shrink-0" style="background: #FDEA01;"></span>
+                  {site}
+                </li>
+              ))}
+            </ul>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <section class="py-16 diagonal-lines" style="background-color: #1A2744;">
+    <div class="container text-center">
+      <h2 class="text-3xl font-black text-white mb-4">Ready to Plan Your Educational Tour?</h2>
+      <p class="text-white/60 max-w-lg mx-auto mb-8">
+        Share your school's travel itinerary and we'll build the safest, most educational ground transport plan.
+      </p>
+      <div class="flex flex-col sm:flex-row gap-4 justify-center">
+        <a href="/contact" class="btn-primary">Request a Student Tour Quote</a>
+        <a href="/fleet" class="btn-outline-white">View Suitable Vehicles</a>
+      </div>
+    </div>
+  </section>
+
+</BaseLayout>

@@ -1,0 +1,42 @@
+---
+interface Props {
+  badge?: string;
+  heading: string;
+  subheading?: string;
+  size?: "sm" | "md" | "lg";
+  align?: "left" | "center";
+}
+
+const {
+  badge,
+  heading,
+  subheading,
+  size = "md",
+  align = "left",
+} = Astro.props;
+
+const paddingMap = { sm: "py-20", md: "py-28", lg: "py-36" };
+const headingMap = { sm: "text-4xl lg:text-5xl", md: "text-5xl lg:text-6xl", lg: "text-5xl lg:text-7xl" };
+const alignClass = align === "center" ? "text-center mx-auto" : "";
+const maxWidthClass = align === "center" ? "max-w-3xl mx-auto" : "max-w-3xl";
+---
+
+<section class={`${paddingMap[size]} diagonal-lines`} style="background-color: #1A2744;">
+  <div class="container">
+    <div class={maxWidthClass}>
+      {badge && (
+        <span class={`section-label-white mb-5 inline-flex ${alignClass}`}>{badge}</span>
+      )}
+      <h1
+        class={`${headingMap[size]} font-black text-white mb-6 ${alignClass}`}
+        set:html={heading}
+      />
+      {subheading && (
+        <p
+          class={`font-subheading text-white/65 text-lg leading-relaxed ${alignClass}`}
+          set:html={subheading}
+        />
+      )}
+    </div>
+  </div>
+</section>

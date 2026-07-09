@@ -1,0 +1,119 @@
+﻿---
+import { Image } from "astro:assets";
+import { ArrowRight } from "@lucide/astro";
+import luxuryvanImg from "../../assets/fleet/luxuryvan.png";
+import minibusImg from "../../assets/fleet/minibus.png";
+import fullsizebusImg from "../../assets/fleet/fullsizebus.png";
+import motorcoachImg from "../../assets/fleet/motorcoach.png";
+import chartershuttleImg from "../../assets/fleet/chartershuttle.png";
+
+interface Vehicle {
+  tag: string;
+  name: string;
+  capacity: string;
+  features: string[];
+  color: string;
+  image?: any;
+}
+
+interface Props {
+  badge?: string;
+  heading?: string;
+  viewAllHref?: string;
+  viewAllLabel?: string;
+  vehicles?: Vehicle[];
+}
+
+const {
+  badge = "Our Fleet",
+  heading = "Every Vehicle.\nEvery Journey.",
+  viewAllHref = "/fleet",
+  viewAllLabel = "Full Specs & Pricing",
+  vehicles = [
+    { name: "Luxury Van",      capacity: "6–14 pax",  tag: "Small Group", color: "#1A2744", features: ["Premium leather seating","WiFi & USB charging","Climate control","Luggage space"], image: luxuryvanImg },
+    { name: "Minibus",         capacity: "15–28 pax", tag: "Mid Group",   color: "#243460", features: ["Panoramic windows","PA system","AC throughout","Tour guide seat"], image: minibusImg },
+    { name: "Full-Size Bus",   capacity: "29–40 pax", tag: "Large Group", color: "#0D1B3E", features: ["Overhead storage","Reading lights","Air suspension","Coach toilet"], image: fullsizebusImg },
+    { name: "Motorcoach",      capacity: "41–56 pax", tag: "Mega Group",  color: "#1A2744", features: ["Premium reclining seats","Entertainment system","PA + restroom","WiFi onboard"], image: motorcoachImg },
+    { name: "Charter Shuttle", capacity: "8–16 pax",  tag: "Transfer",    color: "#243460", features: ["Airport-ready","Hotel door stops","Luggage rack","Flexible routing"], image: chartershuttleImg },
+  ],
+} = Astro.props;
+
+const headingLines = heading.split("\n");
+const vehiclesWithIndex = vehicles.map((v, i) => ({ ...v, idx: i }));
+const gradientCSS = vehicles.map((v, i) =>
+  `.fleet-card-bg-${i}{background:linear-gradient(135deg,${v.color} 0%,${v.color}cc 100%)}`
+).join("");
+---
+
+<section class="py-28" style="background: white;">
+  <div class="container">
+    <div class="flex flex-col lg:flex-row lg:items-end justify-between mb-14 gap-4">
+      <div>
+        <span class="section-label">{badge}</span>
+        <h2 class="text-4xl lg:text-5xl font-black mt-5"
+          style="color: #1A2744;">
+          {headingLines.map((line, i) => (
+            <>
+              {line}
+              {i < headingLines.length - 1 && <br />}
+            </>
+          ))}
+        </h2>
+      </div>
+      <a href={viewAllHref}
+        class="self-start lg:self-auto flex items-center gap-2 font-bold text-sm uppercase tracking-widest transition-all hover:gap-4"
+        style="color: #1A2744;">
+        {viewAllLabel}
+        <ArrowRight size={16} stroke-width={2.5} />
+      </a>
+    </div>
+
+    <style set:html={gradientCSS}></style>
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+      {vehiclesWithIndex.map((v) => (
+        <div class="group rounded-2xl overflow-hidden card-hover bg-white"
+          style="box-shadow: 0 4px 24px rgba(26,39,68,0.09);">
+          <!-- Card header: gradient bg with vehicle PNG on top -->
+          <div class="h-44 relative overflow-hidden">
+            <div class={`absolute inset-0 fleet-card-bg-${v.idx}`}>
+              <div class="absolute inset-0 opacity-20"
+                style="background: repeating-linear-gradient(-45deg, transparent, transparent 20px, rgba(255,255,255,0.03) 20px, rgba(255,255,255,0.03) 21px);"></div>
+            </div>
+            {v.image && (
+              <Image
+                src={v.image}
+                alt={v.name}
+                quality=1
+                class="absolute inset-0 w-full h-full object-contain transition-transform duration-500 group-hover:scale-110"
+                style="padding: 0.5rem 0.5rem 1rem;"
+              />
+            )}
+
+            <div class="absolute flex justify-between bottom-0 left-0 right-0 px-7 py-4 z-10">
+              <h3 class="text-base font-black text-white">{v.name}</h3>
+              <span class="badge badge-yellow text-xs">{v.tag}</span>
+            </div>
+          </div>
+
+          <div class="p-6">
+            <!-- Feature tags -->
+            <div class="flex flex-wrap gap-1.5 mb-4">
+              {v.features.map((f) => (
+                <span class="text-xs px-2 py-0.5 rounded-full" style="background: #F9F7F2; color: #1A2744;">{f}</span>
+              ))}
+            </div>
+            <div class="flex items-center justify-between mb-5">
+              <div class="text-sm text-gray-500" style="">
+                Capacity: <strong class="text-gray-800">{v.capacity}</strong>
+              </div>
+            </div>
+            <a href={viewAllHref} class="btn-secondary w-full justify-center"
+              style="padding: 0.65rem 1.5rem; font-size: 0.72rem;">
+              View Full Specs
+            </a>
+          </div>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>

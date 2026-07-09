@@ -1,0 +1,559 @@
+---
+import { Image } from 'astro:assets';
+import { MessageSquare, Users, Star, Globe, Truck } from '@lucide/astro';
+import imgCorporate  from '../../assets/tourtype/Corporate & Convention Travel.png';
+import imgEducation  from '../../assets/tourtype/Educational & Student Tours.png';
+import imgReligious  from '../../assets/tourtype/Religious & Pilgrimage Groups.png';
+import imgSightseeing from '../../assets/tourtype/Sightseeing & City Tours.png';
+import imgSports     from '../../assets/tourtype/Sports Teams & Fan Group Travel.png';
+import imgWedding    from '../../assets/tourtype/Wedding & Special Events.png';
+
+interface Props {
+  badge?: string;
+  heading?: string;
+  headingHighlight?: string;
+  headingEnd?: string;
+  subheading?: string;
+  primaryCta?: { label: string; href: string };
+  secondaryCta?: { label: string; href: string };
+  partnerCount?: string;
+  rating?: string;
+  cityCount?: string;
+}
+
+const {
+  badge = "Your Gateway to Great Destinations",
+  heading = "North America's",
+  headingEnd = "Ground Transportation",
+  subheading = "500+ vetted operators across every major US & Canadian city. One call. Every vehicle type.",
+  primaryCta = { label: "Request a Quote", href: "/contact" },
+  secondaryCta = { label: "Become a Partner", href: "/portal" },
+  partnerCount = "500+",
+  rating = "4.9/5",
+  cityCount = "80+",
+} = Astro.props;
+
+const slides = [
+  { img: imgCorporate,   label: "Corporate & Convention",  tag: "Business Travel",    color: "#4A9EFF", icon: "briefcase" },
+  { img: imgSightseeing, label: "Sightseeing & City Tours",tag: "Explore America",    color: "#FF7A45", icon: "camera"    },
+  { img: imgWedding,     label: "Wedding & Special Events",tag: "Make It Memorable",  color: "#FF6B9D", icon: "heart"     },
+  { img: imgSports,      label: "Sports & Fan Travel",     tag: "Game Day Ready",     color: "#7ED321", icon: "trophy"    },
+  { img: imgEducation,   label: "Educational & Student",   tag: "Learn. Explore. Grow.", color: "#F5A623", icon: "book" },
+  { img: imgReligious,   label: "Religious & Pilgrimage",  tag: "Journey of Faith",   color: "#BD9FE0", icon: "compass"   },
+];
+
+function getPos(i: number, total: number): string {
+  let offset = i;
+  const half = total / 2;
+  if (offset > half) offset -= total;
+  if (offset < -half) offset += total;
+  if (Math.abs(offset) > 2) return 'hidden';
+  return String(offset);
+}
+
+const cyclingWords = [
+  "Most Trusted",
+  "Most Reliable",
+  "Most Connected",
+  "Most Flexible",
+  "Most Efficient",
+];
+---
+
+<section
+  class="relative flex items-center diagonal-lines overflow-hidden"
+  style="background-color: #1A2744; min-height: calc(100vh - 108px);"
+>
+  <div class="absolute top-0 right-0 w-150 h-150 rounded-full opacity-10 blur-3xl pointer-events-none"
+    style="background: radial-gradient(circle, #FDEA01 0%, transparent 70%); transform: translate(30%, -30%);"/>
+  <div class="absolute bottom-0 left-0 w-100 h-100 rounded-full opacity-5 blur-3xl pointer-events-none"
+    style="background: radial-gradient(circle, #FDEA01 0%, transparent 70%); transform: translate(-30%, 30%);"/>
+
+  <div class="container relative z-10 py-12 lg:py-16">
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 xl:gap-16 items-center">
+
+      <!-- LEFT -->
+      <div>
+        <div class="section-label-white mb-5 animate-fade-up">{badge}</div>
+
+        <h1
+          class="text-4xl sm:text-5xl lg:text-5xl xl:text-6xl font-black leading-tight mb-6 animate-fade-up delay-100 text-white"
+        >
+          {heading}<br />
+          <span class="word-track" aria-live="polite">
+            <span id="heroWord" style="color:#FDEA01;">{cyclingWords[0]}</span>
+          </span><br />
+          {headingEnd}
+        </h1>
+
+        <p class="font-subheading text-base sm:text-lg text-white/60 max-w-md mb-8 leading-relaxed animate-fade-up delay-200">
+          {subheading}
+        </p>
+
+        <div class="flex flex-col sm:flex-row gap-4 mb-10 animate-fade-up delay-300">
+          <a href={primaryCta.href} class="btn-primary">
+            <MessageSquare size={16} stroke-width={2.5} />
+            {primaryCta.label}
+          </a>
+          <a href={secondaryCta.href} class="btn-outline-white">
+            <Users size={16} stroke-width={2.5} />
+            {secondaryCta.label}
+          </a>
+        </div>
+
+        <!-- Trust pills -->
+        <div class="flex lg:hidden place-content-center flex-wrap gap-3 animate-fade-up delay-400">
+          <div class="trust-pill">
+            <Star size={13} color="#FDEA01" fill="#FDEA01" />
+            <span>{rating} Rating</span>
+          </div>
+          <div class="trust-pill">
+            <Users size={13} color="#FDEA01" stroke-width={2.5} />
+            <span>{partnerCount} Operators</span>
+          </div>
+          <div class="trust-pill">
+            <Globe size={13} color="#FDEA01" stroke-width={2.5} />
+            <span>{cityCount} Cities</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- RIGHT: coverflow carousel -->
+      <div class="hidden lg:flex flex-col gap-3 items-center tour-scene" id="heroSliderScene" style="position:relative;">
+
+        <!-- Floating stat badges -->
+        <div class="float-badge" style="top:6%;left:-4%;animation-delay:0s;">
+          <Star size={14} color="#FDEA01" fill="#FDEA01" />
+          <div><div class="float-badge-val">4.9/5</div><div class="float-badge-lbl">Rating</div></div>
+        </div>
+        <div class="float-badge" style="top:10%;right:-2%;animation-delay:1.2s;">
+          <Users size={14} color="#FDEA01" stroke-width={2.5} />
+          <div><div class="float-badge-val">500+</div><div class="float-badge-lbl">Operators</div></div>
+        </div>
+        <div class="float-badge" style="bottom:18%;left:-5%;animation-delay:2.1s;">
+          <Globe size={14} color="#FDEA01" stroke-width={2.5} />
+          <div><div class="float-badge-val">80+</div><div class="float-badge-lbl">Cities</div></div>
+        </div>
+        <div class="float-badge" style="bottom:12%;right:-3%;animation-delay:0.7s;">
+          <Truck size={14} color="#FDEA01" stroke-width={2.5} />
+          <div><div class="float-badge-val">6 Types</div><div class="float-badge-lbl">Tour Types</div></div>
+        </div>
+
+        <!-- Stage + arrows -->
+        <div class="cf-wrap">
+
+          <div class="cf-stage" id="heroSlider">
+            {slides.map((s, i) => (
+              <div class="slide" data-index={i} data-pos={getPos(i, slides.length)} data-accent={s.color}>
+                <div class="slide-card">
+                  <div class="slide-img-wrap">
+                    <Image
+                      src={s.img}
+                      quality={50}
+                      width={800}
+                      height={650}
+                      alt={s.label}
+                      class="slide-img"
+                      draggable="false"
+                      loading={i === 0 ? "eager" : "lazy"}
+                      fetchpriority={i === 0 ? "high" : "auto"}
+                    />
+                  </div>
+                  <div class="slide-overlay"></div>
+                  <div class="slide-chip">
+                    <span class="slide-chip-dot"></span>
+                    {s.tag}
+                  </div>
+                  <div class="slide-info">
+                    <div class="slide-info-label">{s.label}</div>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+
+        </div>
+
+
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<style>
+  /* ── Cycling word track ── */
+  .word-track {
+    display: inline-block;
+    overflow: hidden;
+    vertical-align: top;
+    line-height: inherit;
+  }
+  #heroWord {
+    display: inline-block;
+    line-height: inherit;
+    will-change: transform, opacity;
+  }
+
+  /* ── Trust pills (mobile) ── */
+  .trust-pill {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.375rem;
+    padding: 0.375rem 0.875rem;
+    border-radius: 9999px;
+    background: rgba(255,255,255,0.07);
+    border: 1px solid rgba(255,255,255,0.1);
+    font-weight: 700;
+    font-size: 0.72rem;
+    letter-spacing: 0.04em;
+    color: rgba(255,255,255,0.75);
+  }
+
+  /* ── Floating stat badges ── */
+  .float-badge {
+    position: absolute;
+    z-index: 20;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px 14px;
+    border-radius: 14px;
+    background: rgba(10,18,38,0.75);
+    border: 1px solid rgba(253,234,1,0.18);
+    backdrop-filter: blur(12px);
+    box-shadow: 0 8px 32px rgba(0,0,0,0.45), 0 0 0 1px rgba(255,255,255,0.04);
+    animation: floatBob 4s ease-in-out infinite;
+    pointer-events: none;
+  }
+  .float-badge-val {
+    font-size: 0.9rem;
+    font-weight: 900;
+    color: #fff;
+    line-height: 1;
+  }
+  .float-badge-lbl {
+    font-size: 0.6rem;
+    font-weight: 600;
+    color: rgba(255,255,255,0.45);
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    margin-top: 2px;
+  }
+  @keyframes floatBob {
+    0%, 100% { transform: translateY(0px);   }
+    50%       { transform: translateY(-7px);  }
+  }
+
+  /* ════════════════════════════════════
+     TOUR SCENE — COVERFLOW
+  ════════════════════════════════════ */
+  .tour-scene {
+    width: 100%;
+  }
+
+  /* Wrapper holds stage + arrow buttons */
+  .cf-wrap {
+    position: relative;
+    width: 100%;
+    overflow: hidden;          /* clips side cards at column edge */
+    padding-top: 24px;         /* space for top shadows */
+    padding-bottom: 100px;      /* space for bottom shadows */
+    margin-top: -24px;
+    margin-bottom: -32px;
+  }
+
+  /* Arrow buttons */
+  .cf-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 20;
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    background: rgba(255,255,255,0.07);
+    border: 1px solid rgba(255,255,255,0.13);
+    backdrop-filter: blur(8px);
+    color: rgba(255,255,255,0.7);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background 0.2s, border-color 0.2s, color 0.2s;
+  }
+  .cf-arrow:hover {
+    background: rgba(253,234,1,0.15);
+    border-color: rgba(253,234,1,0.45);
+    color: #FDEA01;
+  }
+  .cf-prev { left: 0; }
+  .cf-next { right: 0; }
+
+  /* Stage: overflow visible so shadows are not clipped */
+  .cf-stage {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 16 / 13;
+    overflow: visible;
+  }
+
+  /* ── Slides — all absolutely positioned in the stage ──
+     Position + scale live entirely in `transform` (no margin-left animation),
+     so the carousel transition runs on the compositor only — that's what was
+     causing the stutter, since animating margin-left forces layout + paint
+     on every frame for every visible card. */
+  .slide {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 58%;
+    transform: translate(-50%, -50%) scale(0.5);
+    opacity: 0;
+    z-index: 0;
+    pointer-events: none;
+    transition:
+      transform 0.52s cubic-bezier(0.25,0.46,0.45,0.94),
+      opacity   0.52s ease;
+    will-change: transform, opacity;
+    cursor: default;
+  }
+
+  /* Card layer owns the rounded corners + clip + shadow. Keeping
+     border-radius/overflow off the element that gets `scale()`-d avoids the
+     hairline seam Chromium/Firefox can rasterize between a scaled rounded
+     clip and its content (the "pixelated gap" along the image border). */
+  .slide-card {
+    position: relative;
+    width: 100%;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: none;
+    transition: box-shadow 0.52s ease;
+  }
+
+  /* Active — centered, full scale */
+  .slide[data-pos="0"] {
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 1;
+    z-index: 5;
+    pointer-events: auto;
+  }
+  .slide[data-pos="0"] .slide-card {
+    box-shadow: 0 28px 80px rgba(0,0,0,0.75), 0 0 60px rgba(253,234,1,0.08);
+  }
+
+  /* ±1 — peek from sides (~18% of stage visible) */
+  .slide[data-pos="1"] {
+    transform: translate(46.55%, -50%) scale(0.83);
+    opacity: 0.55;
+    z-index: 3;
+    pointer-events: auto;
+    cursor: pointer;
+  }
+  .slide[data-pos="-1"] {
+    transform: translate(-146.55%, -50%) scale(0.83);
+    opacity: 0.55;
+    z-index: 3;
+    pointer-events: auto;
+    cursor: pointer;
+  }
+
+  /* ±2 — barely a sliver at edges */
+  .slide[data-pos="2"] {
+    transform: translate(60.34%, -50%) scale(0.67);
+    opacity: 0.2;
+    z-index: 1;
+  }
+  .slide[data-pos="-2"] {
+    transform: translate(-160.34%, -50%) scale(0.67);
+    opacity: 0.2;
+    z-index: 1;
+  }
+
+  /* hidden — behind center, invisible */
+  .slide[data-pos="hidden"] {
+    transform: translate(-50%, -50%) scale(0.5);
+    opacity: 0;
+    z-index: 0;
+    pointer-events: none;
+  }
+
+  /* ── Image with Ken Burns on active ── */
+  .slide-img-wrap {
+    width: 100%;
+    aspect-ratio: 16/13;
+    overflow: hidden;
+    display: block;
+    background: #0d1528;
+  }
+  .slide-img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transform-origin: center center;
+    user-select: none;
+    -webkit-user-drag: none;
+  }
+  .slide[data-pos="0"] .slide-img {
+    animation: kenBurns 5s ease-in-out forwards;
+  }
+  @keyframes kenBurns {
+    from { transform: scale(1);    }
+    to   { transform: scale(1.07); }
+  }
+
+  /* ── Gradient overlay ── */
+  .slide-overlay {
+    position: absolute;
+    inset: 0;
+    background:
+      linear-gradient(to top,  rgba(5,11,24,0.94) 0%, rgba(5,11,24,0.5) 35%, transparent 58%),
+      linear-gradient(to bottom, rgba(5,11,24,0.35) 0%, transparent 22%);
+    pointer-events: none;
+    z-index: 3;
+  }
+
+  /* ── Category chip ── */
+  .slide-chip {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    z-index: 4;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 4px 10px;
+    border-radius: 999px;
+    background: rgba(10,18,38,0.72);
+    border: 1px solid rgba(255,255,255,0.12);
+    backdrop-filter: blur(10px);
+    font-size: 0.6rem;
+    font-weight: 700;
+    letter-spacing: 0.07em;
+    text-transform: uppercase;
+    color: rgba(255,255,255,0.8);
+    white-space: nowrap;
+  }
+  .slide-chip-dot {
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: var(--chip-color, #FDEA01);
+    box-shadow: 0 0 6px var(--chip-color, #FDEA01);
+    flex-shrink: 0;
+    animation: chipPulse 2s ease-in-out infinite;
+  }
+  @keyframes chipPulse {
+    0%, 100% { opacity: 1; transform: scale(1);    }
+    50%       { opacity: 0.6; transform: scale(1.3); }
+  }
+
+  /* ── Bottom label ── */
+  .slide-info {
+    position: absolute;
+    bottom: 14px;
+    left: 16px;
+    right: 16px;
+    z-index: 4;
+  }
+  .slide-info-label {
+    font-weight: 900;
+    font-size: 1.1rem;
+    color: #fff;
+    letter-spacing: -0.01em;
+    line-height: 1.2;
+    text-shadow: 0 2px 10px rgba(0,0,0,0.6);
+  }
+
+</style>
+
+<script define:vars={{ cyclingWords }}>
+  /* ── Word cycler ── */
+  const el = document.getElementById("heroWord");
+  if (el) {
+    const DUR = 420;
+    let idx = 0, busy = false;
+    el.style.transition = `transform ${DUR}ms cubic-bezier(0.4,0,0.2,1), opacity ${DUR}ms ease`;
+    function cycle() {
+      if (busy) return;
+      busy = true;
+      el.style.transform = "translateY(-120%)";
+      el.style.opacity   = "0";
+      setTimeout(() => {
+        el.style.transition = "none";
+        el.style.transform  = "translateY(120%)";
+        el.style.opacity    = "0";
+        idx = (idx + 1) % cyclingWords.length;
+        el.textContent = cyclingWords[idx];
+        void el.offsetWidth;
+        el.style.transition = `transform ${DUR}ms cubic-bezier(0.4,0,0.2,1), opacity ${DUR}ms ease`;
+        el.style.transform  = "translateY(0)";
+        el.style.opacity    = "1";
+        setTimeout(() => { busy = false; }, DUR);
+      }, DUR);
+    }
+    setInterval(cycle, 6000);
+  }
+
+  /* ── Coverflow carousel ── */
+  (() => {
+    const INTERVAL = 4200;
+    const total  = document.querySelectorAll(".slide").length;
+    const slides = Array.from(document.querySelectorAll(".slide"));
+    if (!slides.length) return;
+
+    let current = 0;
+    let startTime = null;
+    let paused = false;
+
+    /* Set accent color on each chip dot */
+    slides.forEach(slide => {
+      const color = slide.dataset.accent || "#FDEA01";
+      const dot = slide.querySelector(".slide-chip-dot");
+      if (dot) dot.style.setProperty("--chip-color", color);
+    });
+
+    function updatePositions() {
+      slides.forEach((slide, i) => {
+        let offset = i - current;
+        const half = total / 2;
+        if (offset > half)  offset -= total;
+        if (offset < -half) offset += total;
+        slide.dataset.pos = Math.abs(offset) > 2 ? "hidden" : String(offset);
+      });
+    }
+
+    function goTo(next) {
+      if (next === current) return;
+      current = next;
+      updatePositions();
+    }
+
+    function advance() { goTo((current + 1) % total); }
+
+    function tick(ts) {
+      if (paused) { requestAnimationFrame(tick); return; }
+      if (!startTime) startTime = ts;
+      if (ts - startTime >= INTERVAL) { advance(); startTime = ts; }
+      requestAnimationFrame(tick);
+    }
+    requestAnimationFrame(tick);
+
+    /* Arrow nav */
+    document.getElementById("cfPrev")?.addEventListener("click", () => { goTo((current - 1 + total) % total); startTime = null; });
+    document.getElementById("cfNext")?.addEventListener("click", () => { goTo((current + 1) % total); startTime = null; });
+
+    /* Click on ±1 cards to advance to them */
+    slides.forEach((slide, i) => {
+      slide.addEventListener("click", () => {
+        if (slide.dataset.pos === "1" || slide.dataset.pos === "-1") {
+          goTo(i);
+          startTime = null;
+        }
+      });
+    });
+
+  })();
+</script>

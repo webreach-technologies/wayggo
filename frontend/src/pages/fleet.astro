@@ -1,0 +1,384 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import { Image } from "astro:assets";
+import luxuryvanImg from "../assets/fleet/luxuryvan.png";
+import minibusImg from "../assets/fleet/minibus.png";
+import fullsizebusImg from "../assets/fleet/fullsizebus.png";
+import motorcoachImg from "../assets/fleet/motorcoach.png";
+import chartershuttleImg from "../assets/fleet/chartershuttle.png";
+import {
+  Van,
+  Bus,
+  BusFront,
+  Wifi,
+  Snowflake,
+  Armchair,
+  Volume2,
+  Luggage,
+  Grid2x2,
+  Megaphone,
+  Lightbulb,
+  Monitor,
+  Droplet,
+  Zap,
+  Mic,
+  Plane,
+  Building,
+  MapPin,
+  Settings2,
+} from "@lucide/astro";
+
+// Vehicle icon components (rendered directly in the template)
+const vehicleIconComponents: Record<string, typeof Van> = {
+  van: Van,
+  bus: Bus,
+  fullbus: BusFront,
+  motorcoach: BusFront,
+};
+
+// Feature icon components
+const featureIconComponents: Record<string, typeof Van> = {
+  wifi: Wifi,
+  snowflake: Snowflake,
+  armchair: Armchair,
+  volume: Volume2,
+  suitcase: Luggage,
+  windowgrid: Grid2x2,
+  megaphone: Megaphone,
+  lightbulb: Lightbulb,
+  monitor: Monitor,
+  droplet: Droplet,
+  zap: Zap,
+  mic: Mic,
+  plane: Plane,
+  building: Building,
+  mappin: MapPin,
+};
+
+const vehicles = [
+  {
+    id: "luxury-van",
+    iconKey: "van",
+    image: luxuryvanImg,
+    name: "Luxury Van",
+    tagline: "Premium small-group travel",
+    capacity: { passengers: "6–14", luggage: "8–12 bags" },
+    features: [
+      { iconKey: "wifi",       label: "WiFi & Mobile Charging" },
+      { iconKey: "snowflake",  label: "Dual-zone Climate Control" },
+      { iconKey: "armchair",   label: "Captain's Leather Seats" },
+      { iconKey: "volume",     label: "Premium Sound System" },
+      { iconKey: "suitcase",   label: "Ample Luggage Space" },
+      { iconKey: "windowgrid", label: "Privacy Tinted Windows" },
+    ],
+    idealFor: ["Airport VIP Transfers", "Small Group City Tours", "Executive Group Travel", "Wedding Party Shuttles", "Intimate Private Tours"],
+    color: "#1A2744",
+  },
+  {
+    id: "minibus",
+    iconKey: "bus",
+    image: minibusImg,
+    name: "Minibus",
+    tagline: "The workhorse of city touring",
+    capacity: { passengers: "15–28", luggage: "18–24 bags" },
+    features: [
+      { iconKey: "megaphone",  label: "PA Microphone System" },
+      { iconKey: "snowflake",  label: "Full Cabin Air Conditioning" },
+      { iconKey: "windowgrid", label: "Panoramic View Windows" },
+      { iconKey: "lightbulb",  label: "Individual Reading Lights" },
+      { iconKey: "wifi",       label: "WiFi Available" },
+      { iconKey: "suitcase",   label: "Underbelly Luggage Hold" },
+    ],
+    idealFor: ["City Sightseeing Tours", "Airport Group Transfers", "Day Trip Excursions", "University Campus Visits", "Cultural Group Outings"],
+    color: "#243460",
+  },
+  {
+    id: "full-size-bus",
+    iconKey: "fullbus",
+    image: fullsizebusImg,
+    name: "Full-Size Bus",
+    tagline: "Mid-size comfort for regional tours",
+    capacity: { passengers: "29–40", luggage: "28–36 bags" },
+    features: [
+      { iconKey: "armchair", label: "High-Back Reclining Seats" },
+      { iconKey: "droplet",  label: "Onboard Restroom" },
+      { iconKey: "monitor",  label: "Front Monitor Screen" },
+      { iconKey: "snowflake",label: "Full Air Suspension & AC" },
+      { iconKey: "zap",      label: "USB Charging at Every Row" },
+      { iconKey: "mic",      label: "PA System for Guides" },
+    ],
+    idealFor: ["Regional Multi-Day Tours", "Student & School Groups", "Religious Group Travel", "Convention Transfers", "Sports Team Charters"],
+    color: "#0D1B3E",
+  },
+  {
+    id: "motorcoach",
+    iconKey: "motorcoach",
+    image: motorcoachImg,
+    name: "Motorcoach",
+    tagline: "Full luxury for large groups",
+    capacity: { passengers: "41–56", luggage: "44–56 bags" },
+    features: [
+      { iconKey: "armchair",  label: "56 Premium Reclining Seats" },
+      { iconKey: "monitor",   label: "Multiple HD Monitors" },
+      { iconKey: "megaphone", label: "Professional PA System" },
+      { iconKey: "droplet",   label: "Full Onboard Restroom" },
+      { iconKey: "wifi",      label: "High-Speed WiFi" },
+      { iconKey: "snowflake", label: "Climate Control Throughout" },
+    ],
+    idealFor: ["Long-Distance Interstate Tours", "Large Group Sightseeing", "Multi-City Grand Tours", "Sports Fan Charters", "Convention & Conference Groups"],
+    color: "#1A2744",
+  },
+  {
+    id: "shuttle",
+    iconKey: "van",
+    image: chartershuttleImg,
+    name: "Charter Shuttle",
+    tagline: "Fast, flexible point-to-point service",
+    capacity: { passengers: "8–16", luggage: "8–14 bags" },
+    features: [
+      { iconKey: "plane",    label: "Airport-Ready Configuration" },
+      { iconKey: "building", label: "Hotel Door-to-Door" },
+      { iconKey: "suitcase", label: "Overhead & Rear Luggage" },
+      { iconKey: "snowflake",label: "Climate Controlled" },
+      { iconKey: "zap",      label: "USB Charging" },
+      { iconKey: "mappin",   label: "Flexible Route Stops" },
+    ],
+    idealFor: ["Airport–Hotel Transfers", "Convention Center Shuttles", "Cruise Terminal Connections", "Hotel Loop Shuttles", "Small Event Transport"],
+    color: "#243460",
+  },
+];
+---
+
+<BaseLayout
+  title="Fleet & Capabilities — WAYGGO Ground Transportation"
+  description="From 6-passenger luxury vans to 56-seat motorcoaches. Explore WAYGGO's complete ground transportation fleet for international tour operators across North America."
+>
+
+  <!-- Hero -->
+  <section class="py-24 diagonal-lines" style="background-color: #1A2744;">
+    <div class="container">
+      <div class="max-w-3xl">
+        <span class="section-label-white mb-5 inline-flex">Fleet & Capabilities</span>
+        <h1
+          class="text-5xl lg:text-6xl font-black text-white mb-5"
+          style=""
+        >
+          The Right Vehicle<br />
+          <span style="color: #FDEA01;">For Every Group</span>
+        </h1>
+        <p class="text-white/65 text-lg leading-relaxed max-w-2xl" style="">
+          6 passengers or 56. Airport transfer or 12-day cross-country tour. WAYGGO sources the exact vehicle your itinerary demands — all meticulously maintained, fully insured, and operated by vetted professionals.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Filter bar -->
+  <div style="background-color: #F9F7F2; border-bottom: 1px solid #E5E7EB; position: sticky; top: 72px; z-index: 40;">
+    <div class="container">
+      <div class="flex overflow-x-auto md:flex-wrap md:justify-center gap-3 py-4">
+        <button
+          id="fleet-btn-all"
+          onclick="fleetShowAll()"
+          class="shrink-0 flex items-center gap-2 px-5 py-2.5 rounded-full text-sm font-bold uppercase tracking-widest transition-all"
+          style="background-color: #1A2744; color: white; border: 2px solid #1A2744; "
+        >
+          All Vehicles
+        </button>
+        {vehicles.map((v) => (
+          <button
+            id={`fleet-btn-${v.id}`}
+            onclick={`fleetShow('${v.id}')`}
+            class="shrink-0 flex items-center gap-2 px-5 py-2.5 rounded-full text-sm font-bold uppercase tracking-widest transition-all"
+            style="background-color: transparent; color: #1A2744; border: 2px solid #E5E7EB; "
+          >
+            {(() => { const VehicleIcon = vehicleIconComponents[v.iconKey]; return <VehicleIcon size={16} />; })()}
+            {v.name}
+          </button>
+        ))}
+      </div>
+    </div>
+  </div>
+
+  <!-- Vehicle Sections -->
+  {vehicles.map((v, i) => (
+    <section
+      id={v.id}
+      class="py-20"
+      style={`background-color: ${i % 2 === 0 ? "white" : "#F9F7F2"};`}
+    >
+      <div class="container">
+        <div class={`grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center ${i % 2 === 1 ? "lg:grid-flow-col-dense" : ""}`}>
+
+          <!-- Vehicle visual -->
+          <div class={i % 2 === 1 ? "lg:col-start-2" : ""}>
+            <div class="rounded-3xl overflow-hidden" style="box-shadow: 0 8px 40px rgba(26,39,68,0.13);">
+              {v.image ? (
+                <div
+                  class="aspect-4/3 relative overflow-hidden"
+                  style={`background: linear-gradient(145deg, ${v.color} 0%, ${v.color}cc 60%, #0a1020 100%);`}
+                >
+                  <div class="absolute inset-0 diagonal-lines opacity-20" />
+                  <Image
+                    src={v.image}
+                    alt={v.name}
+                    quality=1
+                    class="absolute inset-0 w-full h-full object-contain z-10"
+                  />
+                </div>
+              ) : (
+                <div
+                  class="aspect-4/3 flex flex-col items-center justify-center relative overflow-hidden"
+                  style={`background: linear-gradient(145deg, ${v.color} 0%, ${v.color}cc 60%, #0a1020 100%);`}
+                >
+                  <div class="absolute inset-0 diagonal-lines opacity-20" />
+                  <div class="relative z-10 flex flex-col items-center gap-5">
+                    <div
+                      class="flex items-center justify-center rounded-2xl"
+                      style="width:120px;height:80px;background:rgba(255,255,255,0.07);border:2px dashed rgba(255,255,255,0.2);"
+                    >
+                      {(() => { const VehicleIcon = vehicleIconComponents[v.iconKey]; return <VehicleIcon size={64} color="white" stroke-width={1.5} />; })()}
+                    </div>
+                    <span
+                      class="text-xs font-bold uppercase tracking-widest px-3 py-1 rounded-full"
+                      style="background:rgba(255,208,0,0.15);color:#FDEA01;border:1px solid rgba(255,208,0,0.3);"
+                    >
+                      Photo Coming Soon
+                    </span>
+                  </div>
+                </div>
+              )}
+            </div>
+          </div>
+
+          <!-- Content -->
+          <div class={i % 2 === 1 ? "lg:col-start-1 lg:row-start-1" : ""}>
+            <span class="section-label mb-4 inline-flex">{v.tagline}</span>
+            <h2
+              class="text-4xl lg:text-5xl font-black mb-6"
+              style=" color: #1A2744;"
+            >
+              {v.name}
+            </h2>
+
+            <!-- Capacity -->
+            <div class="flex gap-4 mb-8">
+              <div
+                class="flex-1 rounded-2xl p-4 text-center"
+                style="background-color: #FDEA01;"
+              >
+                <div class="text-2xl font-black" style=" color: #1A2744;">{v.capacity.passengers}</div>
+                <div class="text-xs font-bold uppercase tracking-widest mt-0.5" style=" color: rgba(26,39,68,0.65);">Passengers</div>
+              </div>
+              <div
+                class="flex-1 rounded-2xl p-4 text-center border-2"
+                style="border-color: #E5E7EB;"
+              >
+                <div class="text-2xl font-black" style=" color: #1A2744;">{v.capacity.luggage}</div>
+                <div class="text-xs font-bold uppercase tracking-widest mt-0.5" style=" color: #6B7280;">Luggage</div>
+              </div>
+            </div>
+
+            <!-- Features -->
+            <h3 class="text-xs font-bold uppercase tracking-widest mb-3" style=" color: #6B7280;">Onboard Features</h3>
+            <div class="grid grid-cols-2 gap-2.5 mb-7">
+              {v.features.map((f) => (
+                <div class="flex items-center gap-2.5 text-sm text-gray-600" style="">
+                  {(() => { const FeatureIcon = featureIconComponents[f.iconKey]; return <FeatureIcon size={16} class="shrink-0 text-navy" />; })()}
+                  {f.label}
+                </div>
+              ))}
+            </div>
+
+            <!-- Ideal for -->
+            <h3 class="text-xs font-bold uppercase tracking-widest mb-3" style=" color: #6B7280;">Ideal For</h3>
+            <div class="flex flex-wrap gap-2 mb-8">
+              {v.idealFor.map((use) => (
+                <span
+                  class="text-xs font-semibold px-3 py-1.5 rounded-full border"
+                  style=" border-color: #E5E7EB; color: #1A2744; background: white;"
+                >
+                  {use}
+                </span>
+              ))}
+            </div>
+
+            <a href="/contact" class="btn-primary">
+              Request This Vehicle
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  ))}
+
+  <!-- Custom Fleet CTA -->
+  <section class="py-20 diagonal-lines" style="background-color: #1A2744;">
+    <div class="container text-center">
+      <div
+        class="inline-flex items-center justify-center w-16 h-16 rounded-2xl mb-6"
+        style="background-color: #FDEA01;"
+      >
+        <Settings2 size={28} color="#1A2744" stroke-width={2.5} />
+      </div>
+      <h2 class="text-3xl lg:text-4xl font-black text-white mb-4" style="">
+        Can't Find the Right Fit?
+      </h2>
+      <p class="text-white/60 max-w-xl mx-auto mb-8 leading-relaxed" style="">
+        Large delegations, back-to-back multi-city legs, mixed fleet for different group sizes — we build custom configurations for complex itineraries every day.
+      </p>
+      <div class="flex flex-col sm:flex-row gap-4 justify-center">
+        <a href="/contact" class="btn-primary">Discuss Custom Requirements</a>
+        <a href="/packages" class="btn-outline-white">Browse Tour Packages</a>
+      </div>
+    </div>
+  </section>
+
+  <script>
+    const vehicleIds = ['luxury-van', 'minibus', 'full-size-bus', 'motorcoach', 'shuttle'];
+
+    function fleetSetActive(activeId) {
+      // Reset all vehicle buttons
+      vehicleIds.forEach((id) => {
+        const btn = document.getElementById('fleet-btn-' + id);
+        if (!btn) return;
+        btn.style.backgroundColor = 'transparent';
+        btn.style.color = '#1A2744';
+        btn.style.borderColor = '#E5E7EB';
+      });
+      // Reset "All" button
+      const allBtn = document.getElementById('fleet-btn-all');
+      allBtn.style.backgroundColor = 'transparent';
+      allBtn.style.color = '#1A2744';
+      allBtn.style.borderColor = '#E5E7EB';
+
+      // Activate target
+      const target = activeId === 'all' ? allBtn : document.getElementById('fleet-btn-' + activeId);
+      if (target) {
+        target.style.backgroundColor = '#1A2744';
+        target.style.color = 'white';
+        target.style.borderColor = '#1A2744';
+      }
+    }
+
+    function fleetShowAll() {
+      vehicleIds.forEach((id) => {
+        const section = document.getElementById(id);
+        if (section) section.style.display = '';
+      });
+      fleetSetActive('all');
+    }
+
+    function fleetShow(id) {
+      vehicleIds.forEach((vid) => {
+        const section = document.getElementById(vid);
+        if (section) section.style.display = vid === id ? '' : 'none';
+      });
+      fleetSetActive(id);
+    }
+
+    window.fleetShowAll = fleetShowAll;
+    window.fleetShow = fleetShow;
+  </script>
+
+</BaseLayout>

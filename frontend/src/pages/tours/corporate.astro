@@ -1,0 +1,146 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import { Image } from "astro:assets";
+import heroImg from "../../assets/tourtype/Corporate & Convention Travel.png";
+import { Send, RefreshCw, Award, Clipboard, Moon, FileText } from "@lucide/astro";
+
+const conventions = [
+  { name: "CES — Consumer Electronics Show", city: "Las Vegas, NV", months: "January", size: "Up to 120,000 attendees", vehicle: "Motorcoach fleet" },
+  { name: "SXSW — South by Southwest", city: "Austin, TX", months: "March", size: "Up to 280,000 attendees", vehicle: "Shuttle loops + buses" },
+  { name: "NAB Show", city: "Las Vegas, NV", months: "April", size: "Up to 90,000 attendees", vehicle: "Motorcoach + shuttle" },
+  { name: "Dreamforce (Salesforce)", city: "San Francisco, CA", months: "September", size: "Up to 170,000 attendees", vehicle: "Shuttle loops" },
+  { name: "IMEX America", city: "Las Vegas, NV", months: "October", size: "Up to 14,000 attendees", vehicle: "VIP van + Motorcoach" },
+  { name: "Chicago Auto Show", city: "Chicago, IL", months: "February", size: "Up to 800,000 attendees", vehicle: "Convention shuttle" },
+];
+
+const services = [
+  {
+    icon: Send,
+    title: "Airport Delegation Pickup",
+    desc: "Coordinated arrivals across multiple flights, terminals, and airlines — zero delegates left behind.",
+  },
+  {
+    icon: RefreshCw,
+    title: "Shuttle Loop Management",
+    desc: "Continuous hotel-to-venue loops timed to session breaks, with real-time adjustments.",
+  },
+  {
+    icon: Award,
+    title: "VIP Executive Transfer",
+    desc: "Luxury van service for C-suite delegates, speakers, and VIP guests.",
+  },
+  {
+    icon: Clipboard,
+    title: "On-Site Coordinator",
+    desc: "A WAYGGO coordinator on the ground for groups of 50+ delegates.",
+  },
+  {
+    icon: Moon,
+    title: "Evening Event Transport",
+    desc: "After-hours gala and dinner transport with precise scheduling.",
+  },
+  {
+    icon: FileText,
+    title: "Consolidated Invoicing",
+    desc: "One invoice per delegation — simplified billing for corporate travel managers.",
+  },
+];
+---
+
+<BaseLayout
+  title="Corporate & Convention Travel — WAYGGO Group Transportation"
+  description="Professional ground transportation for corporate delegations and convention groups in Las Vegas, NYC, Chicago, and San Francisco. WAYGGO handles CES, SXSW, NAB, and more."
+>
+
+  <section class="relative py-24 overflow-hidden" style="background-color: #1A2744;">
+    <Image
+      src={heroImg}
+      alt=""
+      width={1600}
+      height={600}
+      quality=25
+      loading="eager"
+      class="absolute inset-0 w-full h-full object-cover opacity-25"
+    />
+    <div class="absolute inset-0 diagonal-lines pointer-events-none" />
+    <div class="container relative z-10">
+      <div class="max-w-3xl">
+        <span class="section-label-white mb-5 inline-flex">For Corporate Operators</span>
+        <h1 class="text-5xl lg:text-6xl font-black text-white mb-5">
+          Corporate &<br />
+          <span style="color: #FDEA01;">Convention Travel</span>
+        </h1>
+        <p class="text-white/65 text-lg leading-relaxed max-w-2xl mb-8">
+          When your delegation lands in North America, every minute counts. WAYGGO delivers precision ground logistics for corporate groups, industry conventions, and executive travel programs — managing complexity so your clients experience nothing but seamless movement.
+        </p>
+        <a href="/contact" class="btn-primary">Request Corporate Quote</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-20" style="background-color: #F9F7F2;">
+    <div class="container">
+      <div class="text-center mb-12">
+        <span class="section-label">Our Services</span>
+        <h2 class="text-4xl font-black mt-4" style="color: #1A2744;">Complete Corporate Transport Solutions</h2>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
+        {services.map((s) => {
+          const Icon = s.icon;
+          return (
+            <div class="bg-white rounded-2xl p-6 card-hover">
+              <div class="mb-4" style="color: #1A2744;"><Icon size={28} stroke-width={1.5} /></div>
+              <h3 class="text-base font-black mb-2" style="color: #1A2744;">{s.title}</h3>
+              <p class="text-sm text-gray-500 leading-relaxed">{s.desc}</p>
+            </div>
+          );
+        })}
+      </div>
+    </div>
+  </section>
+
+  <section class="py-20" style="background-color: white;">
+    <div class="container">
+      <div class="text-center mb-12">
+        <span class="section-label">Event Experience</span>
+        <h2 class="text-4xl font-black mt-4" style="color: #1A2744;">Major Conventions We Serve</h2>
+      </div>
+      <div class="overflow-x-auto">
+        <table class="table-clean w-full">
+          <thead>
+            <tr>
+              <th>Convention</th>
+              <th>City</th>
+              <th>Month</th>
+              <th>Recommended Vehicle</th>
+            </tr>
+          </thead>
+          <tbody>
+            {conventions.map((c) => (
+              <tr>
+                <td class="font-semibold" style="color: #1A2744;">{c.name}</td>
+                <td>{c.city}</td>
+                <td><span class="badge badge-yellow">{c.months}</span></td>
+                <td style="color: #6B7280;">{c.vehicle}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-16 diagonal-lines" style="background-color: #1A2744;">
+    <div class="container text-center">
+      <h2 class="text-3xl font-black text-white mb-4">Planning a Corporate Tour or Convention?</h2>
+      <p class="text-white/60 max-w-lg mx-auto mb-8">
+        Submit your delegation size, convention dates, and hotel locations. We'll build a precision transport plan within 24 hours.
+      </p>
+      <div class="flex flex-col sm:flex-row gap-4 justify-center">
+        <a href="/contact" class="btn-primary">Request a Corporate Quote</a>
+        <a href="/portal" class="btn-outline-white">Register as Corporate Partner</a>
+      </div>
+    </div>
+  </section>
+
+</BaseLayout>

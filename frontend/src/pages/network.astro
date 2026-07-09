@@ -1,0 +1,221 @@
+﻿---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import CoverageMap from "../components/react/CoverageMap";
+import { Clipboard, ShieldCheck, Search, Users } from "@lucide/astro";
+
+const usHubs = [
+  { city: "New York City", state: "NY", note: "East Coast hub — JFK, LGA, EWR airports" },
+  { city: "Los Angeles", state: "CA", note: "West Coast hub — LAX airport" },
+  { city: "Chicago", state: "IL", note: "Midwest hub — O'Hare + Midway" },
+  { city: "Las Vegas", state: "NV", note: "Convention capital — McCarran airport" },
+  { city: "Miami", state: "FL", note: "South Florida hub — MIA airport" },
+  { city: "Orlando", state: "FL", note: "Theme park & convention hub" },
+  { city: "San Francisco", state: "CA", note: "Bay Area — SFO + Oakland airports" },
+  { city: "Washington D.C.", state: "DC", note: "Capital hub — Reagan + Dulles airports" },
+  { city: "Boston", state: "MA", note: "New England hub — Logan airport" },
+  { city: "Seattle", state: "WA", note: "Pacific NW hub — SEA-TAC airport" },
+  { city: "Dallas", state: "TX", note: "Texas hub — DFW + Love Field" },
+  { city: "Houston", state: "TX", note: "Gulf Coast hub — IAH airport" },
+  { city: "Phoenix", state: "AZ", note: "Southwest hub — PHX airport" },
+  { city: "Denver", state: "CO", note: "Mountain hub — DEN airport" },
+  { city: "Atlanta", state: "GA", note: "Southeast hub — Hartsfield-Jackson (world's busiest)" },
+];
+
+const canadaHubs = [
+  { city: "Toronto", prov: "ON", note: "Eastern Canada hub — Pearson airport" },
+  { city: "Vancouver", prov: "BC", note: "Pacific Canada hub — YVR airport" },
+  { city: "Montreal", prov: "QC", note: "Quebec hub — Trudeau airport" },
+  { city: "Calgary", prov: "AB", note: "Alberta hub — YYC airport" },
+  { city: "Ottawa", prov: "ON", note: "Capital of Canada — YOW airport" },
+  { city: "Quebec City", prov: "QC", note: "Historic city — YQB airport" },
+];
+
+const vetDetails = [
+  {
+    icon: Clipboard,
+    title: "Licensing & Compliance",
+    desc: "Every operator holds valid Federal Motor Carrier Safety Administration (FMCSA) registration in the US and Transport Canada certification, verified annually.",
+  },
+  {
+    icon: ShieldCheck,
+    title: "Insurance Verification",
+    desc: "Minimum $5M liability coverage for all motorcoach operators, $1M for vans and shuttles, verified with direct insurer confirmation.",
+  },
+  {
+    icon: Search,
+    title: "Vehicle Inspection Records",
+    desc: "We require annual DOT inspection certificates, maintenance logs, and a WAYGGO physical inspection every 2 years.",
+  },
+  {
+    icon: Users,
+    title: "Driver Background Checks",
+    desc: "All drivers pass TSA-equivalent background screening, CDL verification, driving record review, and annual drug testing.",
+  },
+];
+---
+
+<BaseLayout
+  title="Our Network — 500+ Operators Across USA & Canada | WAYGGO"
+  description="WAYGGO's ground transportation network spans 21 hub cities across the USA and Canada with 500+ vetted bus, motorcoach, and van operators. View our interactive coverage map."
+>
+
+  <!-- Hero -->
+  <section class="py-24 diagonal-lines" style="background-color: #1A2744;">
+    <div class="container">
+      <div class="max-w-3xl">
+        <span class="section-label-white mb-5 inline-flex">Our Coverage</span>
+        <h1 class="text-5xl lg:text-6xl font-black text-white mb-5" style="">
+          500+ Operators.<br />
+          <span style="color: #FDEA01;">Every Corner of North America.</span>
+        </h1>
+        <p class="text-white/65 text-lg leading-relaxed max-w-2xl" style="">
+          From Vancouver to Miami, from Boston to Los Angeles — WAYGGO's vetted operator network ensures your group is covered in every city on your itinerary. 15 US hubs. 6 Canadian hubs. One contact.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Trust numbers -->
+  <section style="background: #FDEA01;">
+    <div class="container">
+      <div class="py-10 grid grid-cols-2 lg:grid-cols-4 gap-0 lg:divide-x divide-[rgba(26,39,68,0.15)]">
+        {[
+          { stat: "500+", label: "Vetted Operators" },
+          { stat: "21", label: "Major Hub Cities" },
+          { stat: "12-Point", label: "Vetting Process" },
+          { stat: "98.7%", label: "On-Time Rate" },
+        ].map((item) => (
+          <div class="text-center px-0 lg:px-8 py-2">
+            <div class="text-3xl lg:text-4xl font-black leading-none mb-1" style="color: #1A2744;" data-counter={item.stat}>{item.stat}</div>
+            <div class="text-xs font-bold uppercase tracking-widest" style="color: rgba(26,39,68,0.55);">{item.label}</div>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- Interactive Map -->
+  <section class="py-20" style="background-color: #0D1B3E;">
+    <div class="container">
+      <div class="text-center mb-10">
+        <span class="section-label-white mb-4 inline-flex">Interactive Map</span>
+        <h2 class="text-3xl font-black text-white" style="">
+          Our Hub City Network
+        </h2>
+      </div>
+      <CoverageMap client:only="react" />
+    </div>
+  </section>
+
+  <!-- US Hubs -->
+  <section class="py-20" style="background-color: white;">
+    <div class="container">
+      <div class="text-center mb-12">
+        <span class="section-label">United States</span>
+        <h2 class="text-3xl font-black mt-4" style="color: #1A2744;">
+          🇺🇸 US Hub Cities
+        </h2>
+      </div>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+        {usHubs.map((hub) => (
+          <div class="flex items-start gap-4 p-5 rounded-2xl border border-gray-100 hover:border-[#FDEA01] hover:shadow-md transition-all">
+            <div
+              class="w-10 h-10 rounded-xl flex items-center justify-center flex-shrink-0"
+              style="background-color: #FDEA01;"
+            >
+              <span class="text-xs font-black" style="color: #1A2744;">{hub.state}</span>
+            </div>
+            <div>
+              <h3 class="font-black text-sm" style="color: #1A2744;">{hub.city}</h3>
+              <p class="text-xs text-gray-400 mt-0.5" style="">{hub.note}</p>
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- Canada Hubs -->
+  <section class="py-20" style="background-color: #F9F7F2;">
+    <div class="container">
+      <div class="text-center mb-12">
+        <span class="section-label">Canada</span>
+        <h2 class="text-3xl font-black mt-4" style="color: #1A2744;">
+          🇨🇦 Canadian Hub Cities
+        </h2>
+      </div>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+        {canadaHubs.map((hub) => (
+          <div class="flex items-start gap-4 p-5 rounded-2xl bg-white border border-gray-100 hover:border-[#FDEA01] hover:shadow-md transition-all">
+            <div
+              class="w-10 h-10 rounded-xl flex items-center justify-center flex-shrink-0"
+              style="background-color: #FDEA01;"
+            >
+              <span class="text-xs font-black" style="color: #1A2744;">{hub.prov}</span>
+            </div>
+            <div>
+              <h3 class="font-black text-sm" style="color: #1A2744;">{hub.city}</h3>
+              <p class="text-xs text-gray-400 mt-0.5" style="">{hub.note}</p>
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- How We Vet -->
+  <section class="py-20" style="background-color: white;">
+    <div class="container">
+      <div class="text-center mb-12">
+        <span class="section-label">Quality Assurance</span>
+        <h2 class="text-3xl font-black mt-4" style="color: #1A2744;">
+          How We Vet Our Operators
+        </h2>
+        <p class="text-gray-500 mt-3 max-w-xl mx-auto" style="">
+          Every operator in our network passes a rigorous 12-point vetting process before their first assignment — and undergoes annual re-certification.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        {vetDetails.map((v) => (
+          <div class="flex gap-5 p-7 rounded-2xl border-2 border-gray-100 hover:border-[#FDEA01] transition-all">
+            <div
+              class="w-12 h-12 rounded-xl flex items-center justify-center shrink-0"
+              style="background-color: #FDEA01; color: #1A2744;"
+            >
+              <v.icon size={24} />
+            </div>
+            <div>
+              <h3 class="font-black text-base mb-2" style="color: #1A2744;">{v.title}</h3>
+              <p class="text-sm text-gray-500 leading-relaxed" style="">{v.desc}</p>
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="py-20 diagonal-lines" style="background-color: #1A2744;">
+    <div class="container text-center">
+      <h2 class="text-3xl font-black text-white mb-4" style="">
+        Your City. Our Operator. Zero Guesswork.
+      </h2>
+      <p class="text-white/60 max-w-lg mx-auto mb-8" style="">
+        Tell us your tour cities and we'll confirm operator availability within 24 hours.
+      </p>
+      <div class="flex flex-col sm:flex-row gap-4 justify-center">
+        <a href="/contact" class="btn-primary">Request a Quote</a>
+        <a href="/packages" class="btn-outline-white">Browse Tour Packages</a>
+      </div>
+    </div>
+  </section>
+
+  <script>
+    import { initCounters } from '../utils/counterAnimation.js';
+    initCounters();
+  </script>
+
+</BaseLayout>

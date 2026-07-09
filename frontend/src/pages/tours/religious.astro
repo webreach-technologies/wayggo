@@ -1,0 +1,117 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import { Image } from "astro:assets";
+import heroImg from "../../assets/tourtype/Religious & Pilgrimage Groups.png";
+import { Heart, Clock, Utensils, VolumeX } from "@lucide/astro";
+
+const sites = [
+  { name: "Temple Square", city: "Salt Lake City, UT", faith: "Latter-day Saints", desc: "The spiritual heart of the LDS Church, featuring the iconic Salt Lake Temple and Tabernacle." },
+  { name: "Washington National Cathedral", city: "Washington D.C.", faith: "Interfaith", desc: "One of the largest cathedrals in the world — a place of beauty, prayer, and national remembrance." },
+  { name: "Notre-Dame Basilica", city: "Montreal, QC", faith: "Catholic", desc: "A breathtaking Gothic Revival masterpiece and one of North America's most visited sacred sites." },
+  { name: "St. Patrick's Cathedral", city: "New York City, NY", faith: "Catholic", desc: "Manhattan's iconic neo-Gothic cathedral on Fifth Avenue, a cornerstone of American Catholic heritage." },
+  { name: "Niagara Falls Pilgrimage", city: "Niagara Falls, NY/ON", faith: "Multi-faith", desc: "A site of natural wonder and spiritual renewal, often incorporated into multi-faith pilgrimage routes." },
+  { name: "University of Notre Dame", city: "South Bend, IN", faith: "Catholic", desc: "America's most famous Catholic university, home to the Golden Dome and Grotto of Our Lady of Lourdes." },
+];
+
+const values = [
+  {
+    icon: Heart,
+    title: "Cultural Sensitivity",
+    desc: "Drivers briefed on group customs and requirements",
+  },
+  {
+    icon: Clock,
+    title: "Prayer Time Awareness",
+    desc: "Flexible scheduling respects daily prayer obligations",
+  },
+  {
+    icon: Utensils,
+    title: "Dietary Coordination",
+    desc: "We note halal, kosher, vegetarian requirements",
+  },
+  {
+    icon: VolumeX,
+    title: "Quiet, Composed Service",
+    desc: "Discreet drivers who understand the tone of sacred travel",
+  },
+];
+---
+
+<BaseLayout
+  title="Religious & Pilgrimage Group Tours — WAYGGO Ground Transportation"
+  description="Respectful, punctual ground transportation for religious groups and pilgrimage tours across North America. Salt Lake City, Notre Dame, Washington National Cathedral, and more."
+>
+
+  <section class="relative py-24 overflow-hidden" style="background-color: #1A2744;">
+    <Image
+      src={heroImg}
+      alt=""
+      width={1600}
+      height={600}
+      quality=25
+      loading="eager"
+      class="absolute inset-0 w-full h-full object-cover opacity-25"
+    />
+    <div class="absolute inset-0 diagonal-lines pointer-events-none" />
+    <div class="container relative z-10">
+      <div class="max-w-3xl">
+        <span class="section-label-white mb-5 inline-flex">Sacred Journeys</span>
+        <h1 class="text-5xl lg:text-6xl font-black text-white mb-5">
+          Religious &<br />
+          <span style="color: #FDEA01;">Pilgrimage Groups</span>
+        </h1>
+        <p class="text-white/65 text-lg leading-relaxed max-w-2xl mb-8">
+          We understand that religious travel carries profound significance. WAYGGO provides respectful, composed, and perfectly timed ground transportation for faith groups making sacred journeys across North America.
+        </p>
+        <a href="/contact" class="btn-primary">Plan a Pilgrimage Tour</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-16" style="background-color: #FDEA01;">
+    <div class="container">
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+        {values.map((v) => {
+          const Icon = v.icon;
+          return (
+            <div>
+              <div class="mb-2 flex justify-center" style="color: #1A2744;"><Icon size={28} stroke-width={1.5} /></div>
+              <h3 class="font-black text-sm mb-1" style="color: #1A2744;">{v.title}</h3>
+              <p class="text-xs" style="color: rgba(26,39,68,0.65);">{v.desc}</p>
+            </div>
+          );
+        })}
+      </div>
+    </div>
+  </section>
+
+  <section class="py-20" style="background-color: white;">
+    <div class="container">
+      <div class="text-center mb-12">
+        <span class="section-label">Key Sites</span>
+        <h2 class="text-4xl font-black mt-4" style="color: #1A2744;">Sacred Sites We Serve</h2>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        {sites.map((site) => (
+          <div class="bg-white border-2 border-gray-100 rounded-2xl p-6 card-hover hover:border-yellow transition-all">
+            <span class="badge badge-navy mb-3 inline-flex" style="font-size: 0.65rem;">{site.faith}</span>
+            <h3 class="text-base font-black mb-1" style="color: #1A2744;">{site.name}</h3>
+            <p class="text-xs text-gray-400 mb-3">{site.city}</p>
+            <p class="text-sm text-gray-500 leading-relaxed">{site.desc}</p>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <section class="py-16 diagonal-lines" style="background-color: #1A2744;">
+    <div class="container text-center">
+      <h2 class="text-3xl font-black text-white mb-4">Arrange Your Pilgrimage Transportation</h2>
+      <p class="text-white/60 max-w-lg mx-auto mb-8">
+        Share your sacred sites, group size, and travel dates. We will respond within 24 hours with a respectful, tailored plan.
+      </p>
+      <a href="/contact" class="btn-primary">Request a Quote</a>
+    </div>
+  </section>
+
+</BaseLayout>

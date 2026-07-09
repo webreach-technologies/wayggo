@@ -1,0 +1,132 @@
+﻿---
+import { Image } from 'astro:assets';
+import Logo from '../../assets/images/wayggo-logo.png';
+import { Camera, BookOpen, Church, Building2, Trophy, Gem, ChevronDown, type AstroComponent } from "@lucide/astro";
+
+import MobileMenu from "../react/MobileMenu.tsx";
+
+interface NavLink {
+  href: string;
+  label: string;
+}
+
+interface TourLink {
+  href: string;
+  label: string;
+  icon: AstroComponent;
+}
+
+interface Props {
+  navLinks?: NavLink[];
+  tourLinks?: TourLink[];
+  primaryCta?: { label: string; href: string };
+  partnerLoginHref?: string;
+}
+
+const {
+  navLinks = [
+    { href: "/", label: "Home" },
+    { href: "/fleet", label: "Fleet" },
+    { href: "/packages", label: "Packages" },
+    { href: "/network", label: "Network" },
+    { href: "/about", label: "About" },
+    { href: "/contact", label: "Contact" },
+  ],
+  tourLinks = [
+    { href: "/tours/sightseeing", label: "Sightseeing & City Tours", icon: Camera },
+    { href: "/tours/educational", label: "Educational & Student Tours", icon: BookOpen },
+    { href: "/tours/religious", label: "Religious & Pilgrimage Groups", icon: Church },
+    { href: "/tours/corporate", label: "Corporate & Convention Travel", icon: Building2 },
+    { href: "/tours/sports", label: "Sports Teams & Fan Groups", icon: Trophy },
+    { href: "/tours/weddings", label: "Wedding & Special Events", icon: Gem },
+  ],
+  primaryCta = { label: "Request a Quote", href: "/contact" },
+  partnerLoginHref = "/portal",
+} = Astro.props;
+
+const currentPath = Astro.url.pathname;
+---
+
+<header
+  class="sticky top-0 z-1001 w-full"
+  style="background-color: #1A2744; border-bottom: 1px solid rgba(255,255,255,0.06);"
+>
+  <div class="container">
+    <div class="flex items-center justify-between" style="height: 72px;">
+      <!-- Logo -->
+      <a href="/" class="flex items-center group lg:mt-2" aria-label="WAYGGO Home">
+        <Image
+          src={Logo}
+          alt="WAYGGO"
+          class="h-9 w-auto block"
+          draggable="false"
+          loading="eager"
+        />
+      </a>
+
+      <!-- Desktop Nav -->
+      <nav class="hidden lg:flex items-center gap-1">
+        {navLinks.map((link) => (
+          <a
+            href={link.href}
+            class={`px-4 py-2 rounded-lg text-sm font-medium transition-all duration-200 ${
+              currentPath === link.href
+                ? "text-yellow"
+                : "text-white/75 hover:text-yellow"
+            }`}
+            style=""
+          >
+            {link.label}
+          </a>
+        ))}
+
+        <!-- Tours Dropdown -->
+        <div class="nav-group">
+          <button
+            class={`flex items-center gap-1 px-4 py-2 rounded-lg text-sm font-medium transition-all duration-200 ${
+              currentPath.startsWith("/tours")
+                ? "text-yellow"
+                : "text-white/75 hover:text-yellow"
+            }`}
+            style=""
+          >
+            Tours
+            <ChevronDown size={14} class="mt-0.5" />
+          </button>
+          <div class="nav-dropdown">
+            {tourLinks.map((link) => {
+              const Icon = link.icon;
+              return (
+                <a
+                  href={link.href}
+                  class="flex items-center gap-3 px-3 py-2.5 rounded-lg text-sm text-gray-700 hover:bg-yellow-100 hover:text-navy transition-colors font-medium"
+                  style=""
+                >
+                  <Icon size={16} class="shrink-0" />
+                  {link.label}
+                </a>
+              );
+            })}
+          </div>
+        </div>
+      </nav>
+
+      <!-- Desktop CTAs -->
+      <div class="hidden lg:flex items-center gap-3">
+        <a
+          href={partnerLoginHref}
+          class="text-sm font-semibold text-white/70 hover:text-yellow transition-colors px-3 py-2 rounded-lg"
+          style=""
+        >
+          Partner Login
+        </a>
+        <a href={primaryCta.href} class="btn-primary" style="padding: 0.625rem 1.5rem; font-size: 0.75rem;">
+          {primaryCta.label}
+        </a>
+      </div>
+
+      <!-- Mobile menu -->
+      <MobileMenu client:load />
+    </div>
+  </div>
+</header>

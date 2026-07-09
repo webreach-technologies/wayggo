@@ -1,0 +1,185 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import { Image } from "astro:assets";
+import heroImg from "../../assets/tourtype/Sightseeing & City Tours.png";
+import { Bus, User, Mic, MapPin } from "@lucide/astro";
+
+const routes = [
+  { city: "New York City", highlights: ["Times Square", "Statue of Liberty", "Central Park", "9/11 Memorial", "Empire State Building", "Brooklyn Bridge"], vehicle: "Minibus or Motorcoach", days: "3–7 days" },
+  { city: "Los Angeles", highlights: ["Hollywood Walk of Fame", "Getty Center", "Santa Monica Pier", "Beverly Hills", "Universal Studios"], vehicle: "Minibus", days: "3–5 days" },
+  { city: "Chicago", highlights: ["Millennium Park", "Navy Pier", "The 606 Trail", "Art Institute", "Deep-Dish Pizza Tour"], vehicle: "Minibus or Full-Size Bus", days: "2–4 days" },
+  { city: "San Francisco", highlights: ["Golden Gate Bridge", "Alcatraz Island", "Fisherman's Wharf", "Chinatown", "Muir Woods"], vehicle: "Minibus", days: "3–5 days" },
+  { city: "Miami", highlights: ["Art Deco District", "Little Havana", "Wynwood Walls", "South Beach", "Everglades Day Trip"], vehicle: "Minibus or Luxury Van", days: "2–4 days" },
+  { city: "Las Vegas", highlights: ["The Strip", "Fremont Street", "Grand Canyon Day Trip", "Hoover Dam", "Red Rock Canyon"], vehicle: "Minibus", days: "3–5 days" },
+];
+
+const itinerary = [
+  { day: "Day 1", title: "Midtown Marvels", stops: ["Times Square", "Empire State Building", "Rockefeller Center", "St. Patrick's Cathedral", "Central Park"], vehicle: "Minibus (full day)" },
+  { day: "Day 2", title: "Downtown & History", stops: ["9/11 Memorial & Museum", "Wall Street", "Brooklyn Bridge Walk", "DUMBO Brooklyn", "Brooklyn Bridge Park"], vehicle: "Minibus (full day)" },
+  { day: "Day 3", title: "Icons & Boroughs", stops: ["Statue of Liberty Ferry", "Ellis Island", "High Line Park", "Chelsea Market", "Greenwich Village"], vehicle: "Minibus (half day) + ferry" },
+];
+
+const features = [
+  {
+    icon: Bus,
+    title: "Modern Fleet", desc: "Clean, maintained, fully insured vehicles",
+  },
+  {
+    icon: User,
+    title: "Pro Drivers", desc: "Licensed, vetted, punctual professionals",
+  },
+  {
+    icon: Mic,
+    title: "Guide Coordination", desc: "We work with your tour guide or provide one",
+  },
+  {
+    icon: MapPin,
+    title: "Real-Time Tracking", desc: "Operations monitor every trip live",
+  },
+];
+---
+
+<BaseLayout
+  title="Sightseeing & City Tours — WAYGGO Group Transportation"
+  description="Motorcoach and minibus group sightseeing tours in NYC, LA, Chicago, San Francisco, Miami, and Las Vegas. WAYGGO provides expert-guided ground transportation for international tour groups."
+>
+
+  <section class="relative py-24 overflow-hidden" style="background-color: #1A2744;">
+    <Image
+      src={heroImg}
+      alt=""
+      width={1600}
+      height={600}
+      quality=25
+      loading="eager"
+      class="absolute inset-0 w-full h-full object-cover opacity-25"
+    />
+    <div class="absolute inset-0 diagonal-lines pointer-events-none" />
+    <div class="container relative z-10">
+      <div class="max-w-3xl">
+        <span class="section-label-white mb-5 inline-flex">Tour Category</span>
+        <h1 class="text-5xl lg:text-6xl font-black text-white mb-5">
+          Sightseeing &<br />
+          <span style="color: #FDEA01;">City Tours</span>
+        </h1>
+        <p class="text-white/65 text-lg leading-relaxed max-w-2xl mb-8">
+          From the Manhattan skyline to the Pacific coast, WAYGGO's sightseeing fleet connects international groups to North America's most iconic landmarks with professional drivers and optional expert guides.
+        </p>
+        <a href="/contact" class="btn-primary">Request Sightseeing Quote</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-20" style="background-color: #FDEA01;">
+    <div class="container">
+      <h2 class="text-3xl font-black mb-8 text-center" style="color: #1A2744;">What Every Tour Includes</h2>
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-5">
+        {features.map((item) => {
+          const Icon = item.icon;
+          return (
+            <div class="text-center">
+              <div class="mb-3 flex justify-center" style="color: #1A2744;"><Icon size={28} stroke-width={1.5} /></div>
+              <h3 class="font-black text-sm mb-1" style="color: #1A2744;">{item.title}</h3>
+              <p class="text-xs" style="color: rgba(26,39,68,0.65);">{item.desc}</p>
+            </div>
+          );
+        })}
+      </div>
+    </div>
+  </section>
+
+  <section class="py-20" style="background-color: white;">
+    <div class="container">
+      <div class="text-center mb-12">
+        <span class="section-label">Top Destinations</span>
+        <h2 class="text-4xl font-black mt-4" style="color: #1A2744;">Popular City Routes</h2>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        {routes.map((route) => (
+          <div class="bg-white border-2 border-gray-100 rounded-2xl p-6 card-hover hover:border-[#FDEA01] transition-all">
+            <div class="mb-4">
+              <h3 class="text-lg font-black" style="color: #1A2744;">{route.city}</h3>
+            </div>
+            <div class="space-y-1.5 mb-4">
+              {route.highlights.map((h) => (
+                <div class="flex items-center gap-2 text-sm text-gray-500">
+                  <span class="w-1.5 h-1.5 rounded-full flex-shrink-0" style="background: #FDEA01;"></span>
+                  {h}
+                </div>
+              ))}
+            </div>
+            <div class="pt-4 border-t border-gray-100 flex items-center justify-between text-xs">
+              <span class="text-gray-400">Vehicle: <strong class="text-gray-700">{route.vehicle}</strong></span>
+              <span class="badge badge-navy">{route.days}</span>
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <section class="py-20" style="background-color: #F9F7F2;">
+    <div class="container">
+      <div class="max-w-3xl mx-auto">
+        <div class="text-center mb-10">
+          <span class="section-label">Sample Itinerary</span>
+          <h2 class="text-4xl font-black mt-4" style="color: #1A2744;">3-Day New York City Group Tour</h2>
+          <p class="text-gray-500 mt-3">Recommended for 15–28 passengers · Minibus</p>
+        </div>
+        <div class="space-y-4">
+          {itinerary.map((day) => (
+            <div class="bg-white rounded-2xl p-6 border-l-4" style="border-color: #FDEA01;">
+              <div class="flex items-start justify-between mb-3">
+                <div>
+                  <span class="badge badge-navy mb-2 inline-flex">{day.day}</span>
+                  <h3 class="text-lg font-black" style="color: #1A2744;">{day.title}</h3>
+                </div>
+                <span class="text-xs text-gray-400 mt-1">{day.vehicle}</span>
+              </div>
+              <div class="flex flex-wrap gap-2">
+                {day.stops.map((stop) => (
+                  <span class="text-xs px-3 py-1.5 rounded-full border" style="border-color: #E5E7EB; color: #374151;">{stop}</span>
+                ))}
+              </div>
+            </div>
+          ))}
+        </div>
+        <div class="mt-8 text-center">
+          <a href="/contact" class="btn-primary">Request This Itinerary</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-16" style="background-color: #1A2744;">
+    <div class="container">
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6 text-center">
+        {[
+          { size: "6–14 pax", vehicle: "Luxury Van", note: "VIP or private group" },
+          { size: "15–28 pax", vehicle: "Minibus", note: "Ideal for city sightseeing" },
+          { size: "29–56 pax", vehicle: "Bus / Motorcoach", note: "Large group tours" },
+        ].map((rec) => (
+          <div class="rounded-2xl p-6" style="background-color: rgba(255,255,255,0.06);">
+            <div class="badge badge-yellow mb-3 inline-flex">{rec.size}</div>
+            <div class="text-base font-black text-white mb-2">{rec.vehicle}</div>
+            <p class="text-sm text-white/60">{rec.note}</p>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <section class="py-20" style="background-color: white;">
+    <div class="container text-center">
+      <h2 class="text-3xl font-black mb-4" style="color: #1A2744;">Plan Your Sightseeing Tour Today</h2>
+      <p class="text-gray-500 max-w-lg mx-auto mb-8">
+        Tell us your cities, group size, and dates. We'll match you with the perfect vehicle and operator within 24 hours.
+      </p>
+      <div class="flex flex-col sm:flex-row gap-4 justify-center">
+        <a href="/contact" class="btn-primary">Request a Quote</a>
+        <a href="/packages" class="btn-outline-navy">Browse Tour Packages</a>
+      </div>
+    </div>
+  </section>
+
+</BaseLayout>

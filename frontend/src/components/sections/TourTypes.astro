@@ -1,0 +1,145 @@
+---
+import { Image } from "astro:assets";
+import type { ImageMetadata } from "astro";
+import { ArrowRight } from "@lucide/astro";
+import imgSightseeing from "../../assets/tourtype/Sightseeing & City Tours.png";
+import imgEducational from "../../assets/tourtype/Educational & Student Tours.png";
+import imgReligious from "../../assets/tourtype/Religious & Pilgrimage Groups.png";
+import imgCorporate from "../../assets/tourtype/Corporate & Convention Travel.png";
+import imgSports from "../../assets/tourtype/Sports Teams & Fan Group Travel.png";
+import imgWeddings from "../../assets/tourtype/Wedding & Special Events.png";
+
+interface TourType {
+  image: ImageMetadata;
+  alt: string;
+  name: string;
+  desc: string;
+  href: string;
+}
+
+interface Props {
+  badge?: string;
+  heading?: string;
+  headingHighlight?: string;
+  subheading?: string;
+  tourTypes?: TourType[];
+}
+
+const {
+  badge = "Tour Categories",
+  heading = "Built for Every",
+  headingHighlight = "Kind of Group",
+  subheading = "From pilgrimage groups to Fortune 500 conventions — our network serves every travel purpose with precision.",
+  tourTypes = [
+    {
+      image: imgSightseeing,
+      alt: "Sightseeing & City Tours",
+      name: "Sightseeing & City Tours",
+      desc: "NYC, LA, Chicago, Las Vegas — iconic landmarks with expert guides.",
+      href: "/tours/sightseeing",
+    },
+    {
+      image: imgEducational,
+      alt: "Educational Tours",
+      name: "Educational Tours",
+      desc: "Smithsonian, MIT, Silicon Valley — knowledge-first journeys for student groups.",
+      href: "/tours/educational",
+    },
+    {
+      image: imgReligious,
+      alt: "Religious & Pilgrimage Tours",
+      name: "Religious & Pilgrimage",
+      desc: "Sacred sites across America handled with care, respect, and punctuality.",
+      href: "/tours/religious",
+    },
+    {
+      image: imgCorporate,
+      alt: "Corporate & Convention Tours",
+      name: "Corporate & Convention",
+      desc: "Las Vegas conventions, NYC roadshows — professional group movement at scale.",
+      href: "/tours/corporate",
+    },
+    {
+      image: imgSports,
+      alt: "Sports & Fan Group Tours",
+      name: "Sports & Fan Groups",
+      desc: "Stadium transfers, team charters, game-day transportation for fan groups.",
+      href: "/tours/sports",
+    },
+    {
+      image: imgWeddings,
+      alt: "Wedding & Special Events",
+      name: "Wedding & Special Events",
+      desc: "Luxury coaches for wedding parties, guest shuttles, venue transfers.",
+      href: "/tours/weddings",
+    },
+  ],
+} = Astro.props;
+---
+
+<section class="py-24 diagonal-lines" style="background-color: #1A2744;">
+  <div class="container">
+    <div class="text-center mb-14">
+      <span class="section-label-white">{badge}</span>
+      <h2
+        class="text-4xl lg:text-5xl font-black mt-4 mb-4"
+        style=" color: white;"
+      >
+        {heading}<br />
+        <span style="color: #FDEA01;">{headingHighlight}</span>
+      </h2>
+      <p class="font-subheading text-white/60 max-w-xl mx-auto">
+        {subheading}
+      </p>
+    </div>
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
+      {tourTypes.map((t) => (
+        <a
+          href={t.href}
+          class="group relative rounded-2xl overflow-hidden border border-white/10 hover:border-yellow transition-all duration-300 hover:-translate-y-1"
+        >
+          <div class="relative h-48 overflow-hidden">
+            <Image
+              src={t.image}
+              alt={t.alt}
+              width={480}
+              height={192}
+              class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+            />
+            <div
+              class="absolute inset-0"
+              style="background: linear-gradient(to bottom, rgba(26,39,68,0) 0%, rgba(26,39,68,0.25) 100%);"
+            />
+          </div>
+
+          <div
+            class="relative p-7 border-t-0"
+            style="background-color: rgba(255,255,255,0.04);"
+          >
+            <div
+              class="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none"
+              style="background: linear-gradient(135deg, rgba(255,208,0,0.06) 0%, transparent 60%);"
+            />
+            <h3
+              class="text-base font-black mb-2 text-white"
+              style=""
+            >
+              {t.name}
+            </h3>
+            <p class="text-sm text-white/55 leading-relaxed mb-4">
+              {t.desc}
+            </p>
+            <div
+              class="flex items-center gap-1.5 text-xs font-bold uppercase tracking-widest opacity-60 group-hover:opacity-100 transition-opacity"
+              style=" color: #FDEA01;"
+            >
+              Explore
+              <ArrowRight size={12} stroke-width={2} />
+            </div>
+          </div>
+        </a>
+      ))}
+    </div>
+  </div>
+</section>

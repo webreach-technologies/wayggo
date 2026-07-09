@@ -1,0 +1,654 @@
+@import "tailwindcss";
+
+@font-face {
+  font-family: 'Nunito Variable';
+  src: url('/fonts/nunito-latin-wght-normal.woff2') format('woff2-variations');
+  font-weight: 200 1000;
+  font-style: normal;
+  font-display: swap;
+}
+
+@import "leaflet/dist/leaflet.css";
+@import "react-datepicker/dist/react-datepicker.css";
+
+@theme {
+  --color-yellow: #FDEA01;
+  --color-yellow-dark: #E6BB00;
+  --color-yellow-light: #FFF3A3;
+  --color-red: #ED232A;
+  --color-red-dark: #C91D23;
+  --color-navy: #1A2744;
+  --color-navy-light: #243460;
+  --color-navy-dark: #0D1B3E;
+  --color-off-white: #F9F7F2;
+  --color-dark: #0D0D0D;
+  --color-gray-soft: #6B7280;
+
+  --font-heading: 'Nunito Variable', sans-serif;
+  --font-subheading: 'Nunito Variable', sans-serif;
+  --font-body: 'Nunito Variable', sans-serif;
+  --font-sans: 'Nunito Variable', sans-serif;
+}
+
+/* ── Base ── */
+html {
+  scroll-behavior: smooth;
+  /* Offsets anchor-jump targets (jump links, hero/CTA "#section" buttons) so they
+     don't land hidden underneath the sticky 72px header. */
+  scroll-padding-top: 96px;
+}
+
+body {
+  font-family: var(--font-body);
+  color: var(--color-dark);
+  background-color: #ffffff;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+::selection {
+  background-color: var(--color-yellow);
+  color: var(--color-navy);
+}
+
+/* ── Typography helpers ── */
+.font-heading {
+  font-family: var(--font-heading);
+}
+
+.font-subheading {
+  font-family: var(--font-subheading);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading);
+  font-weight: 800;
+}
+
+/* ── Buttons ── */
+.btn-primary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 1rem 2rem;
+  background-color: var(--color-red);
+  color: white;
+  font-family: var(--font-heading);
+  font-weight: 800;
+  font-size: 0.75rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  border-radius: 9999px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.25s ease;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.btn-primary:hover {
+  background-color: var(--color-red-dark);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(237, 35, 42, 0.35);
+}
+
+.btn-secondary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 1rem 2rem;
+  background-color: var(--color-navy);
+  color: white;
+  font-family: var(--font-heading);
+  font-weight: 800;
+  font-size: 0.75rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  border-radius: 9999px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.25s ease;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.btn-secondary:hover {
+  background-color: var(--color-navy-light);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(26, 39, 68, 0.3);
+}
+
+.btn-outline-white {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 0.9375rem 2rem;
+  background-color: transparent;
+  color: white;
+  font-family: var(--font-heading);
+  font-weight: 800;
+  font-size: 0.75rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  border-radius: 9999px;
+  border: 2px solid white;
+  cursor: pointer;
+  transition: all 0.25s ease;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.btn-outline-white:hover {
+  background-color: white;
+  color: var(--color-navy);
+  transform: translateY(-2px);
+}
+
+.btn-outline-navy {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 0.9375rem 2rem;
+  background-color: transparent;
+  color: var(--color-navy);
+  font-family: var(--font-heading);
+  font-weight: 800;
+  font-size: 0.75rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  border-radius: 9999px;
+  border: 2px solid var(--color-navy);
+  cursor: pointer;
+  transition: all 0.25s ease;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.btn-outline-navy:hover {
+  background-color: var(--color-navy);
+  color: white;
+  transform: translateY(-2px);
+}
+
+/* ── Section labels ── */
+.section-label {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-family: var(--font-heading);
+  font-weight: 700;
+  font-size: 0.75rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--color-navy);
+  padding-left: 0.75rem;
+  border-left: 3px solid var(--color-yellow);
+}
+
+.section-label-white {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-family: var(--font-heading);
+  font-weight: 700;
+  font-size: 0.75rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--color-yellow);
+  padding-left: 0.75rem;
+  border-left: 3px solid var(--color-yellow);
+}
+
+/* ── Container ── */
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+@media (min-width: 640px) {
+  .container {
+    padding: 0 2rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .container {
+    padding: 0 2.5rem;
+  }
+}
+
+/* ── Cards ── */
+.card-hover {
+  transition: all 0.3s ease;
+}
+
+.card-hover:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 20px 40px rgba(26, 39, 68, 0.12);
+}
+
+/* ── Nav dropdown ── */
+.nav-group {
+  position: relative;
+}
+
+.nav-dropdown {
+  position: absolute;
+  top: calc(100% + 0.5rem);
+  left: 50%;
+  transform: translateX(-50%);
+  width: 220px;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 10px 40px rgba(26, 39, 68, 0.15);
+  border: 1px solid rgba(26, 39, 68, 0.08);
+  padding: 0.5rem;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.2s ease;
+  z-index: 100;
+}
+
+.nav-group:hover .nav-dropdown {
+  opacity: 1;
+  visibility: visible;
+  transform: translateX(-50%) translateY(0);
+}
+
+/* ── Diagonal stripe pattern ── */
+.diagonal-lines {
+  background-image: repeating-linear-gradient(
+    -45deg,
+    transparent,
+    transparent 24px,
+    rgba(255, 255, 255, 0.025) 24px,
+    rgba(255, 255, 255, 0.025) 25px
+  );
+}
+
+/* ── Animations ── */
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(24px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes scrollBounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(10px); }
+}
+
+@keyframes pulseDot {
+  0% { transform: scale(1); opacity: 0.7; }
+  70% { transform: scale(2.5); opacity: 0; }
+  100% { transform: scale(2.5); opacity: 0; }
+}
+
+@keyframes shimmer {
+  0% { background-position: -200% 0; }
+  100% { background-position: 200% 0; }
+}
+
+.animate-fade-up {
+  animation: fadeUp 0.7s ease forwards;
+}
+
+.animate-scroll-bounce {
+  animation: scrollBounce 1.5s ease-in-out infinite;
+}
+
+.animate-pulse-dot {
+  animation: pulseDot 2s ease-out infinite;
+}
+
+@keyframes mapPulseHero {
+  0%   { transform: scale(1);   opacity: 0.5; }
+  65%  { transform: scale(2.4); opacity: 0;   }
+  100% { transform: scale(2.4); opacity: 0;   }
+}
+
+.delay-100 { animation-delay: 0.1s; }
+.delay-200 { animation-delay: 0.2s; }
+.delay-300 { animation-delay: 0.3s; }
+.delay-400 { animation-delay: 0.4s; }
+.delay-500 { animation-delay: 0.5s; }
+.delay-600 { animation-delay: 0.6s; }
+
+/* ── Yellow highlight text ── */
+.text-highlight {
+  position: relative;
+  display: inline;
+  background: linear-gradient(to bottom, transparent 55%, rgba(255, 208, 0, 0.4) 55%);
+}
+
+/* ── Clip-path dividers ── */
+.clip-wave-bottom {
+  clip-path: polygon(0 0, 100% 0, 100% 88%, 0 100%);
+}
+
+.clip-wave-top {
+  clip-path: polygon(0 12%, 100% 0, 100% 100%, 0 100%);
+}
+
+/* ── Step number ── */
+.step-number {
+  font-family: var(--font-heading);
+  font-weight: 900;
+  font-size: 4.5rem;
+  line-height: 1;
+  color: var(--color-yellow);
+  opacity: 0.25;
+  position: absolute;
+  top: -1rem;
+  left: -0.5rem;
+  pointer-events: none;
+}
+
+/* ── Status badges ── */
+.badge {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.25rem 0.75rem;
+  border-radius: 9999px;
+  font-family: var(--font-heading);
+  font-weight: 700;
+  font-size: 0.7rem;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+.badge-yellow {
+  background-color: var(--color-yellow);
+  color: var(--color-navy);
+}
+
+.badge-navy {
+  background-color: var(--color-navy);
+  color: white;
+}
+
+.badge-green {
+  background-color: #D1FAE5;
+  color: #065F46;
+}
+
+.badge-blue {
+  background-color: #DBEAFE;
+  color: #1D4ED8;
+}
+
+.badge-orange {
+  background-color: #FEF3C7;
+  color: #92400E;
+}
+
+/* ── Input styles ── */
+.form-input {
+  width: 100%;
+  padding: 0.875rem 1rem;
+  border: 2px solid #E5E7EB;
+  border-radius: 10px;
+  font-family: var(--font-body);
+  font-size: 0.9375rem;
+  color: var(--color-dark);
+  background: white;
+  transition: border-color 0.2s ease;
+  outline: none;
+}
+
+.form-input:focus {
+  border-color: var(--color-navy);
+  box-shadow: 0 0 0 3px rgba(26, 39, 68, 0.08);
+}
+
+.form-label {
+  display: block;
+  font-family: var(--font-heading);
+  font-weight: 600;
+  font-size: 0.8125rem;
+  color: var(--color-navy);
+  margin-bottom: 0.375rem;
+  letter-spacing: 0.02em;
+}
+
+/* ── Table ── */
+.table-clean th {
+  font-family: var(--font-heading);
+  font-weight: 700;
+  font-size: 0.75rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--color-gray-soft);
+  padding: 0.875rem 1rem;
+  text-align: left;
+  border-bottom: 2px solid #F3F4F6;
+}
+
+.table-clean td {
+  padding: 1rem 1rem;
+  border-bottom: 1px solid #F3F4F6;
+  font-size: 0.9375rem;
+  color: var(--color-dark);
+}
+
+.table-clean tr:hover td {
+  background-color: #F9F7F2;
+}
+
+/* ── Leaflet hub markers ── */
+.hub-icon {
+  background: transparent !important;
+  border: none !important;
+  overflow: visible !important;
+}
+
+.hub-dot {
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #FDEA01;
+  box-shadow: 0 0 8px rgba(255, 208, 0, 0.65);
+}
+
+.hub-dot.is-major {
+  width: 14px;
+  height: 14px;
+  box-shadow: 0 0 12px rgba(255, 208, 0, 0.85), 0 0 24px rgba(255, 208, 0, 0.3);
+}
+
+.hub-ring {
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  border: 1.5px solid rgba(255, 208, 0, 0.75);
+  animation: hubRingPulse 2s ease-out infinite;
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.hub-ring.is-outer {
+  animation-duration: 2.7s;
+  animation-delay: 0.55s;
+}
+
+@keyframes hubRingPulse {
+  0%   { transform: translate(-50%, -50%) scale(1);   opacity: 0.75; }
+  72%  { transform: translate(-50%, -50%) scale(3.4); opacity: 0;    }
+  100% { transform: translate(-50%, -50%) scale(3.4); opacity: 0;    }
+}
+
+/* ── Leaflet tooltip — WAYGGO brand style ── */
+.wayggo-tooltip.leaflet-tooltip {
+  background: #FDEA01;
+  border: none;
+  border-radius: 9px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.55);
+  padding: 9px 14px;
+  white-space: nowrap;
+}
+
+.wayggo-tooltip.leaflet-tooltip-top::before {
+  border-top-color: #FDEA01;
+}
+
+.wayggo-tooltip-name {
+  font-family: var(--font-heading);
+  font-weight: 700;
+  font-size: 13px;
+  color: #111E40;
+  line-height: 1.2;
+}
+
+.wayggo-tooltip-sub {
+  font-family: var(--font-body);
+  font-size: 10px;
+  color: rgba(17, 30, 64, 0.58);
+  margin-top: 2px;
+}
+
+/* Leaflet zoom control — match dark theme */
+.leaflet-control-zoom a {
+  background: rgba(8, 14, 28, 0.85) !important;
+  color: rgba(255, 255, 255, 0.7) !important;
+  border-color: rgba(255, 255, 255, 0.12) !important;
+  backdrop-filter: blur(6px);
+  transition: background 0.2s, color 0.2s;
+}
+
+.leaflet-control-zoom a:hover {
+  background: rgba(255, 208, 0, 0.9) !important;
+  color: #111E40 !important;
+}
+
+/* Leaflet attribution — subtle on dark map */
+.leaflet-control-attribution {
+  background: rgba(8, 14, 28, 0.65) !important;
+  color: rgba(255, 255, 255, 0.35) !important;
+  backdrop-filter: blur(4px);
+  font-size: 9px !important;
+}
+
+.leaflet-control-attribution a {
+  color: rgba(255, 208, 0, 0.5) !important;
+}
+
+/* ── react-datepicker — WAYGGO brand theme ── */
+.wayggo-datepicker-popper {
+  z-index: 50;
+}
+
+.wayggo-datepicker.react-datepicker {
+  font-family: var(--font-body);
+  border: 1px solid #E5E7EB;
+  border-radius: 14px;
+  box-shadow: 0 12px 36px rgba(26, 39, 68, 0.18);
+  overflow: hidden;
+}
+
+.wayggo-datepicker .react-datepicker__header {
+  background-color: var(--color-navy);
+  border-bottom: none;
+  padding-top: 0.875rem;
+}
+
+.wayggo-datepicker .react-datepicker__navigation {
+  top: 8px;
+}
+
+.wayggo-datepicker .react-datepicker__current-month,
+.wayggo-datepicker .react-datepicker-time__header {
+  color: white;
+  font-weight: 800;
+  font-size: 0.875rem;
+}
+
+.wayggo-datepicker .react-datepicker__day-names {
+  background-color: var(--color-off-white);
+  border-bottom: 1px solid #F3F4F6;
+  margin-bottom: 0;
+  padding-top: 0.5rem;
+}
+
+.wayggo-datepicker .react-datepicker__day-name {
+  color: var(--color-gray-soft);
+  font-weight: 700;
+  font-size: 0.7rem;
+}
+
+.wayggo-datepicker .react-datepicker__month {
+  margin-top: 0;
+}
+
+.wayggo-datepicker .react-datepicker__navigation-icon::before {
+  border-color: rgba(255, 255, 255, 0.7);
+}
+
+.wayggo-datepicker .react-datepicker__navigation:hover .react-datepicker__navigation-icon::before {
+  border-color: var(--color-yellow);
+}
+
+.wayggo-datepicker .react-datepicker__day {
+  border-radius: 8px;
+  font-size: 0.8125rem;
+  transition: background-color 0.15s, color 0.15s;
+}
+
+.wayggo-datepicker .react-datepicker__day:hover {
+  background-color: var(--color-off-white);
+}
+
+.wayggo-datepicker .react-datepicker__day--keyboard-selected,
+.wayggo-datepicker .react-datepicker__day--selected {
+  background-color: var(--color-yellow);
+  color: var(--color-navy);
+  font-weight: 800;
+}
+
+.wayggo-datepicker .react-datepicker__day--selected:hover {
+  background-color: var(--color-yellow-dark);
+}
+
+.wayggo-datepicker .react-datepicker__day--disabled {
+  color: #D1D5DB;
+}
+
+.wayggo-datepicker .react-datepicker__day--today {
+  font-weight: 800;
+  color: var(--color-navy);
+}
+
+.wayggo-datepicker .react-datepicker__time-container {
+  border-left: 1px solid #F3F4F6;
+}
+
+.wayggo-datepicker .react-datepicker__time-list-item {
+  font-size: 0.8125rem;
+}
+
+.wayggo-datepicker .react-datepicker__time-list-item--selected {
+  background-color: var(--color-yellow) !important;
+  color: var(--color-navy) !important;
+  font-weight: 800;
+}
+
+.wayggo-datepicker .react-datepicker__triangle {
+  display: none;
+}

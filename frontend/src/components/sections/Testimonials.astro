@@ -1,0 +1,130 @@
+﻿---
+import { Star } from "@lucide/astro";
+
+interface Testimonial {
+  quote: string;
+  name: string;
+  company: string;
+  country: string;
+  role: string;
+  flag: string;
+}
+
+interface Props {
+  badge?: string;
+  heading?: string;
+  testimonials?: Testimonial[];
+}
+
+const {
+  badge = "Partner Stories",
+  heading = "Trusted by Operators\non Every Continent",
+  testimonials = [
+    {
+      quote: "WAYGGO handled our 14-day, 6-city USA tour for 48 passengers flawlessly. One point of contact, zero surprises. Our clients rated ground transport 9.8/10.",
+      name: "Priya Sharma",
+      role: "Director of Operations",
+      company: "Horizon Voyages Pvt. Ltd.",
+      flag: "🇮🇳",
+      country: "India",
+    },
+    {
+      quote: "As a UK operator sending 3–4 groups to North America every month, WAYGGO is non-negotiable. They understand our schedule sensitivity and deliver every time.",
+      name: "James Whitmore",
+      role: "Senior Tour Manager",
+      company: "Albion Travel Group",
+      flag: "🇬🇧",
+      country: "United Kingdom",
+    },
+    {
+      quote: "Japanese travelers have exacting standards. WAYGGO's drivers are punctual, professional, and their coaches are spotless. We've been partners for six years.",
+      name: "Kenji Tanaka",
+      role: "Managing Director",
+      company: "Fuji Global Tours K.K.",
+      flag: "🇯🇵",
+      country: "Japan",
+    },
+  ],
+} = Astro.props;
+
+const headingLines = heading.split("\n");
+---
+
+<section class="py-28" style="background: #F9F7F2;">
+  <div class="container">
+    <div class="text-center mb-16">
+      <span class="section-label">{badge}</span>
+      <h2 class="text-4xl lg:text-5xl font-black mt-5"
+        style="color: #1A2744;">
+        {headingLines.map((line, i) => (
+          <>
+            {line}
+            {i < headingLines.length - 1 && <br />}
+          </>
+        ))}
+      </h2>
+    </div>
+
+    <!-- Featured testimonial -->
+    <div class="rounded-3xl p-10 lg:p-14 mb-6 relative overflow-hidden"
+      style="background: #1A2744;">
+      <div class="absolute top-0 right-0 w-64 h-64 pointer-events-none"
+        style="background: radial-gradient(circle at 80% 20%, rgba(255,208,0,0.08) 0%, transparent 60%);"></div>
+      <div class="absolute -bottom-6 -left-6 w-40 h-40 pointer-events-none"
+        style="background: radial-gradient(circle, rgba(255,208,0,0.05) 0%, transparent 70%);"></div>
+
+      <div class="relative z-10">
+        <div class="flex gap-1 mb-6">
+          {[1,2,3,4,5].map(() => (
+            <Star size={20} fill="#FDEA01" stroke="none" />
+          ))}
+        </div>
+        <blockquote class="text-xl lg:text-2xl font-medium leading-relaxed mb-8 text-white"
+          style="">
+          "{testimonials[0].quote}"
+        </blockquote>
+        <div class="flex items-center gap-4 pt-4 border-t border-gray-600">
+          <div class="w-12 h-12 rounded-full flex items-center justify-center text-xl font-black"
+            style="background: #FDEA01; color: #1A2744;">
+            {testimonials[0].name.charAt(0)}
+          </div>
+          <div>
+            <p class="font-black text-white" style="">{testimonials[0].name}</p>
+            <p class="text-sm" style="color: rgba(255,255,255,0.5);">
+              {testimonials[0].role} · {testimonials[0].company}
+            </p>
+          </div>
+          <div class="ml-auto text-2xl text-white">{testimonials[0].flag}</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Two smaller testimonials -->
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+      {testimonials.slice(1).map((t) => (
+        <div class="rounded-2xl p-8 bg-white" style="box-shadow: 0 2px 16px rgba(26,39,68,0.06);">
+          <div class="flex gap-0.5 mb-5">
+            {[1,2,3,4,5].map(() => (
+              <Star size={14} fill="#FDEA01" stroke="none" />
+            ))}
+          </div>
+          <blockquote class="text-sm leading-relaxed text-gray-600 mb-6 italic"
+            style="">
+            "{t.quote}"
+          </blockquote>
+          <div class="flex items-center gap-3 pt-4 border-t border-gray-100">
+            <div class="w-10 h-10 rounded-full flex items-center justify-center text-base font-black"
+              style="background: #1A2744; color: #FDEA01;">
+              {t.name.charAt(0)}
+            </div>
+            <div>
+              <p class="text-sm font-bold" style="color: #1A2744;">{t.name}</p>
+              <p class="text-xs text-gray-400" style="">{t.role} · {t.company}</p>
+            </div>
+            <div class="ml-auto text-xl">{t.flag}</div>
+          </div>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>

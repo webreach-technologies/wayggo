@@ -1,0 +1,211 @@
+﻿---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import PartnerCTA from "../components/sections/PartnerCTA.astro";
+import { Lock, Globe, Handshake, TrendingUp } from "@lucide/astro";
+
+const milestones = [
+  { year: "2008", event: "Founded in Toronto, Ontario with a network of 12 operators serving Eastern Canada." },
+  { year: "2011", event: "Expanded to the US East Coast — New York, Washington D.C., and Boston added to the network." },
+  { year: "2014", event: "Crossed 100 vetted operators. First international tour operator partnerships signed." },
+  { year: "2017", event: "US coast-to-coast coverage achieved. Los Angeles, Las Vegas, and San Francisco hubs activated." },
+  { year: "2020", event: "Weathered the pandemic. Maintained operator relationships and relaunched with enhanced health protocols." },
+  { year: "2022", event: "Reached 350+ operators. Partner portal launched. First 200 active tour operator accounts." },
+  { year: "2024", event: "500+ operators across 21 cities. Serving tour operators from 40+ countries worldwide." },
+];
+
+const values = [
+  {
+    icon: Lock,
+    title: "Reliability Above All",
+    desc: "A group tour disrupted by a no-show vehicle is a catastrophe. We treat every booking like it's our reputation on the line — because it is.",
+  },
+  {
+    icon: Globe,
+    title: "Global Understanding",
+    desc: "Our team includes professionals from 12 countries. We understand the cultural nuances, time zones, and expectations of operators worldwide.",
+  },
+  {
+    icon: Handshake,
+    title: "Partnership, Not Transaction",
+    desc: "We invest in long-term relationships. Your success on the ground in North America is our success as a business.",
+  },
+  {
+    icon: TrendingUp,
+    title: "Continuous Improvement",
+    desc: "Every trip generates data. We use it to improve routing, timing, and operator selection for your next booking.",
+  },
+];
+---
+
+<BaseLayout
+  title="About WAYGGO — Our Story, Mission, and Network"
+  description="Learn how WAYGGO became North America's most trusted B2B ground transportation partner. Founded in 2008, serving 200+ partner agencies from 40+ countries."
+>
+
+  <!-- Hero -->
+  <section class="py-24 diagonal-lines" style="background-color: #1A2744;">
+    <div class="container">
+      <div class="max-w-3xl">
+        <span class="section-label-white mb-5 inline-flex">Our Story</span>
+        <h1 class="text-5xl lg:text-6xl font-black text-white mb-5" style="">
+          We Solve the Problem<br />
+          <span style="color: #FDEA01;">No One Else Would</span>
+        </h1>
+        <p class="text-white/65 text-lg leading-relaxed max-w-2xl" style="">
+          An international tour operator planning a 10-day North American tour had to contact 8 different bus companies in 4 different states, negotiate 8 different contracts, manage 8 invoices, and hope they all showed up. We built WAYGGO to eliminate that problem entirely.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Mission -->
+  <section class="py-20" style="background-color: #FDEA01;">
+    <div class="container">
+      <div class="max-w-3xl mx-auto text-center">
+        <h2 class="text-3xl lg:text-4xl font-black mb-4" style="color: #1A2744;">
+          Our Mission
+        </h2>
+        <p class="text-lg leading-relaxed" style="color: rgba(26,39,68,0.8);">
+          To be the definitive B2B ground transportation partner for every international tour operator and travel agent who sends groups to North America — making their planning simpler, their operations more reliable, and their clients happier.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Story -->
+  <section class="py-20" style="background-color: white;">
+    <div class="container">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+        <div>
+          <span class="section-label mb-4 inline-flex">How We Got Here</span>
+          <h2 class="text-4xl font-black mb-6" style="color: #1A2744;">
+            Built by Operators, for Operators
+          </h2>
+          <div class="space-y-5 text-gray-600" style="line-height: 1.8;">
+            <p>
+              WAYGGO was founded in 2008 by a team of travel industry professionals who had personally experienced the fragmentation of North American ground transportation. As tour operators themselves, they knew the pain of coordinating vehicles across state and provincial lines — dealing with different carriers, different standards, and different reliability levels.
+            </p>
+            <p>
+              The solution was simple in concept and complex in execution: build relationships with the best local operators in every major market, vet them to an uncompromising standard, and present them to the world as a unified service. One call. One contact. One invoice.
+            </p>
+            <p>
+              Today, WAYGGO serves tour operators and travel agents from over 40 countries, managing thousands of group transport days annually across 21 hub cities in the USA and Canada.
+            </p>
+          </div>
+        </div>
+
+        <!-- Timeline -->
+        <div>
+          <div class="space-y-0">
+            {milestones.map((m, i) => (
+              <div class="flex gap-4">
+                <div class="flex flex-col items-center">
+                  <div class="w-10 h-10 rounded-full flex items-center justify-center shrink-0" style="background-color: #FDEA01;">
+                    <span class="text-xs font-black" style="color: #1A2744;">{m.year.slice(2)}</span>
+                  </div>
+                  {i < milestones.length - 1 && <div class="w-px flex-1 my-1" style="background-color: #E5E7EB; min-height: 32px;"></div>}
+                </div>
+                <div class="pb-6">
+                  <div class="text-xs font-black uppercase tracking-widest mb-1" style="color: #1A2744;">{m.year}</div>
+                  <p class="text-sm text-gray-500 leading-relaxed" style="">{m.event}</p>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Values -->
+  <section class="py-20" style="background-color: #F9F7F2;">
+    <div class="container">
+      <div class="text-center mb-12">
+        <span class="section-label">Our Values</span>
+        <h2 class="text-4xl font-black mt-4" style="color: #1A2744;">
+          What We Stand For
+        </h2>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        {values.map((v) => (
+          <div class="bg-white rounded-2xl p-8 card-hover">
+            <div
+              class="w-12 h-12 rounded-xl flex items-center justify-center mb-4"
+              style="background-color: #FDEA01; color: #1A2744;"
+            >
+              <v.icon size={24} />
+            </div>
+            <h3 class="text-lg font-black mb-3" style="color: #1A2744;">{v.title}</h3>
+            <p class="text-sm text-gray-500 leading-relaxed" style="">{v.desc}</p>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- Network Story -->
+  <section class="py-20" style="background-color: white;">
+    <div class="container">
+      <div class="max-w-3xl mx-auto text-center">
+        <span class="section-label mb-4 inline-flex mx-auto">The Network</span>
+        <h2 class="text-4xl font-black mb-6" style="color: #1A2744;">
+          How We Built 500+ Trusted Partners
+        </h2>
+        <p class="text-gray-500 leading-relaxed mb-8" style="">
+          Every operator in the WAYGGO network passed our 12-point vetting process — FMCSA licensing verification, $5M+ insurance confirmation, vehicle inspection records, driver background checks, and direct client reference interviews. We reject approximately 40% of applicants.
+        </p>
+        <div class="grid grid-cols-2 sm:grid-cols-4 gap-4">
+          {[
+            { num: "12", label: "Vetting criteria" },
+            { num: "40%", label: "Application rejection rate" },
+            { num: "2yr", label: "Re-certification cycle" },
+            { num: "98.7%", label: "On-time performance" },
+          ].map((s) => (
+            <div class="rounded-2xl p-5 text-center" style="background-color: #F9F7F2;">
+              <div class="text-2xl font-black mb-1" style="color: #1A2744;">{s.num}</div>
+              <div class="text-xs text-gray-500" style="">{s.label}</div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Team section -->
+  <section class="py-20" style="background-color: #F9F7F2;">
+    <div class="container">
+      <div class="text-center mb-12">
+        <span class="section-label">Leadership</span>
+        <h2 class="text-3xl font-black mt-4" style="color: #1A2744;">The People Behind WAYGGO</h2>
+      </div>
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-5">
+        {[
+          { initials: "JM", name: "James Mercer", role: "Chief Executive Officer", note: "25 years in ground transportation" },
+          { initials: "LC", name: "Laura Chen", role: "VP, Partner Operations", note: "Ex-Contiki Group, 18 years" },
+          { initials: "AR", name: "Amir Rashid", role: "VP, International Sales", note: "Covering 40+ countries" },
+          { initials: "MK", name: "Maria Kowalski", role: "Head of Network Quality", note: "12-point vetting architect" },
+        ].map((person) => (
+          <div class="bg-white rounded-2xl p-6 text-center card-hover">
+            <div class="w-16 h-16 rounded-2xl flex items-center justify-center mx-auto mb-4 font-black text-xl" style="background-color: #1A2744; color: #FDEA01;">
+              {person.initials}
+            </div>
+            <h3 class="font-black text-sm mb-0.5" style="color: #1A2744;">{person.name}</h3>
+            <p class="text-xs font-semibold mb-1" style="color: #6B7280;">{person.role}</p>
+            <p class="text-xs text-gray-400" style="">{person.note}</p>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <PartnerCTA
+    badge="Work With Us"
+    heading="Ready to Partner"
+    headingHighlight="With Us?"
+    subheading="Join 200+ active partner agencies who trust WAYGGO with their clients' North American ground transportation."
+    primaryCta={{ label: "Request a Quote", href: "/contact" }}
+    secondaryCta={{ label: "Register as Partner", href: "/portal" }}
+    trustItems={[]}
+  />
+
+</BaseLayout>

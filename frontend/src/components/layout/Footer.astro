@@ -1,0 +1,162 @@
+﻿---
+import { Image } from "astro:assets";
+import logoImg from "../../assets/images/wayggo-logo.png";
+import { Star, Mail, Phone } from "@lucide/astro";
+
+const navLinks = [
+  { href: "/",        label: "Home"     },
+  { href: "/fleet",   label: "Fleet"    },
+  { href: "/packages",label: "Packages" },
+  { href: "/network", label: "Network"  },
+  { href: "/about",   label: "About"    },
+  { href: "/contact", label: "Contact"  },
+];
+
+const tourLinks = [
+  { href: "/tours/sightseeing", label: "Sightseeing & City Tours"       },
+  { href: "/tours/educational", label: "Educational & Student Tours"    },
+  { href: "/tours/religious",   label: "Religious & Pilgrimage Groups"  },
+  { href: "/tours/corporate",   label: "Corporate & Convention Travel"  },
+  { href: "/tours/sports",      label: "Sports Teams & Fan Groups"      },
+  { href: "/tours/weddings",    label: "Wedding & Special Events"       },
+];
+
+const socialLinks = [
+  { label: "LinkedIn", path: "M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6zM2 9h4v12H2z M4 6a2 2 0 1 0 0-4 2 2 0 0 0 0 4z" },
+  { label: "Twitter",  path: "M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" },
+  { label: "Facebook", path: "M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" },
+];
+
+const contactItems = [
+  { icon: Mail, label: "Email", value: "operations@wayggo.com", href: "mailto:operations@wayggo.com" },
+  { icon: Phone, label: "Phone", value: "+1 (800) 555-WAYGGO", href: "tel:+18005559248" },
+];
+
+const legalLinks = ["Privacy Policy", "Terms of Service", "Cookie Policy"];
+---
+
+<footer style="background-color: #070D1A; color: white;">
+  <!-- Top gradient bar -->
+  <div style="height: 3px; background: linear-gradient(to right, #FDEA01 0%, #E6BB00 50%, #FDEA01 100%);"></div>
+
+  <div class="container">
+    <div class="py-16 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-10 border-b" style="border-color: rgba(255,255,255,0.07);">
+
+      <!-- Brand column -->
+      <div class="lg:col-span-4">
+        <div class="mb-5">
+          <a href="/" aria-label="WAYGGO Home">
+            <Image src={logoImg} alt="WAYGGO" class="w-auto h-10" style="object-fit: contain;" />
+          </a>
+        </div>
+        <p class="text-sm leading-relaxed mb-6" style="color: rgba(255,255,255,0.5); max-width: 280px;">
+          North America's definitive B2B ground transportation partner for international tour operators and travel agents.
+        </p>
+        <div class="flex items-center gap-2 mb-6">
+          <div class="flex gap-0.5">
+            {[1,2,3,4,5].map(() => (
+              <Star size={13} fill="#FDEA01" color="#FDEA01" />
+            ))}
+          </div>
+          <span class="text-xs" style="color: rgba(255,255,255,0.4);">
+            4.9/5 · 200+ partner agencies
+          </span>
+        </div>
+        <div class="flex items-center gap-2.5">
+          {socialLinks.map((s) => (
+            <a
+              href="#"
+              aria-label={s.label}
+              class="w-9 h-9 flex items-center justify-center rounded-full transition-all border border-white/15 text-white/50 hover:border-yellow hover:text-yellow"
+            >
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor">
+                <path d={s.path} />
+              </svg>
+            </a>
+          ))}
+        </div>
+      </div>
+
+      <!-- Quick Links -->
+      <div class="lg:col-span-2">
+        <h4 class="text-xs font-bold uppercase tracking-widest mb-5" style="color: rgba(255,255,255,0.35);">
+          Company
+        </h4>
+        <ul class="space-y-3">
+          {navLinks.map((link) => (
+            <li>
+              <a href={link.href} class="text-sm text-white/50 transition-colors hover:text-yellow"
+                style="">
+                {link.label}
+              </a>
+            </li>
+          ))}
+        </ul>
+      </div>
+
+      <!-- Tour Types -->
+      <div class="lg:col-span-3">
+        <h4 class="text-xs font-bold uppercase tracking-widest mb-5" style="color: rgba(255,255,255,0.35);">
+          Tour Categories
+        </h4>
+        <ul class="space-y-3">
+          {tourLinks.map((link) => (
+            <li>
+              <a href={link.href} class="text-sm text-white/50 transition-colors hover:text-yellow"
+                style="">
+                {link.label}
+              </a>
+            </li>
+          ))}
+        </ul>
+      </div>
+
+      <!-- Contact -->
+      <div class="lg:col-span-3">
+        <h4 class="text-xs font-bold uppercase tracking-widest mb-5" style="color: rgba(255,255,255,0.35);">
+          Get in Touch
+        </h4>
+        <ul class="space-y-4">
+          {contactItems.map((item) => {
+            const Icon = item.icon;
+            return (
+              <li class="flex items-start gap-3">
+                <div class="w-8 h-8 rounded-lg flex items-center justify-center shrink-0 mt-0.5"
+                  style="background: rgba(255,208,0,0.1);">
+                  <Icon size={14} color="#FDEA01" stroke-width={2.5} />
+                </div>
+                <div>
+                  <p class="text-xs mb-0.5" style="color: rgba(255,255,255,0.35);">{item.label}</p>
+                  <a href={item.href} class="text-sm text-white/65 transition-colors hover:text-yellow"
+                    style="">
+                    {item.value}
+                  </a>
+                </div>
+              </li>
+            );
+          })}
+          <li class="mt-6">
+            <a href="/contact" class="btn-primary" style="padding: 0.7rem 1.5rem; font-size: 0.7rem;">
+              Request a Quote
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Bottom bar -->
+    <div class="py-6 flex flex-col sm:flex-row items-center justify-between gap-4">
+      <p class="text-xs" style="color: rgba(255,255,255,0.3);">
+        © 2025 WAYGGO Inc. All rights reserved. Serving USA & Canada Since 2008.
+      </p>
+      <div class="flex items-center gap-6">
+        {legalLinks.map((label) => (
+          <a href="#" class="text-xs text-white/30 transition-colors hover:text-yellow"
+            style="">
+            {label}
+          </a>
+        ))}
+      </div>
+    </div>
+  </div>
+</footer>

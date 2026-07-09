@@ -1,0 +1,418 @@
+﻿---
+import { Image } from "astro:assets";
+import { Zap, LayoutGrid, FileText, User, Globe, Mail, Lock } from "@lucide/astro";
+import PortalLayout from "../../layouts/PortalLayout.astro";
+import Logo from "../../assets/images/wayggo-logo.png";
+
+const benefits = [
+  {
+    title: "Fast-Track Quotes",
+    desc: "Registered partners receive quotes within 4 hours, not 24.",
+    icon: Zap,
+  },
+  {
+    title: "Trip Dashboard",
+    desc: "Track active bookings, upcoming tours, and completed trips in real time.",
+    icon: LayoutGrid,
+  },
+  {
+    title: "Unified Invoicing",
+    desc: "All your trips consolidated into one monthly invoice for easy reconciliation.",
+    icon: FileText,
+  },
+  {
+    title: "Dedicated Manager",
+    desc: "Your assigned account manager is available by direct line.",
+    icon: User,
+  },
+  {
+    title: "Multi-Destination Planning",
+    desc: "Plan complex multi-city tours from a single dashboard.",
+    icon: Globe,
+  },
+];
+---
+
+<PortalLayout
+  title="Partner Portal Login — WAYGGO Ground Transportation"
+  description="WAYGGO Partner Portal for registered travel agents and tour operators."
+>
+
+<div class="portal-root">
+
+  <!-- ── Left dark panel ── -->
+  <aside class="portal-panel diagonal-lines">
+
+    <a href="/" class="portal-logo-link" aria-label="WAYGGO Home">
+      <Image src={Logo} alt="WAYGGO" class="portal-logo-img" loading="eager" draggable="false" />
+    </a>
+
+    <div class="portal-panel-body">
+      <p class="portal-panel-eyebrow">Partner Portal</p>
+      <h2 class="portal-panel-heading">The smarter way to manage group travel.</h2>
+      <p class="portal-panel-sub">
+        Your single command center for all WAYGGO ground transportation operations across North America.
+      </p>
+
+      <ul class="portal-benefits">
+        {benefits.map((b) => {
+          const Icon = b.icon;
+          return (
+            <li class="portal-benefit">
+              <span class="portal-benefit-icon">
+                <Icon size={18} />
+              </span>
+              <div>
+                <h3 class="portal-benefit-title">{b.title}</h3>
+                <p class="portal-benefit-desc">{b.desc}</p>
+              </div>
+            </li>
+          );
+        })}
+      </ul>
+    </div>
+
+    <p class="portal-panel-footer">
+      &copy; 2025 WAYGGO Inc. &middot; Serving Travel Operators Worldwide
+    </p>
+  </aside>
+
+  <!-- ── Right: login form ── -->
+  <main class="portal-form-area">
+
+    <!-- Mobile top bar with logo (dark bg so logo is visible) -->
+    <div class="portal-mobile-bar">
+      <a href="/" aria-label="WAYGGO Home">
+        <Image src={Logo} alt="WAYGGO" class="portal-logo-img" loading="eager" draggable="false" />
+      </a>
+    </div>
+
+    <div class="portal-form-scroll">
+      <div class="portal-card">
+        <h1 class="portal-card-heading">Welcome Back</h1>
+        <p class="portal-card-sub">Sign in to your WAYGGO partner account.</p>
+
+        <form action="/portal/dashboard" method="GET" class="portal-form" novalidate>
+
+          <!-- Email -->
+          <div class="form-group">
+            <label for="email" class="form-label">Business Email</label>
+            <div class="input-wrap">
+              <span class="input-icon">
+                <Mail size={15} aria-hidden="true" />
+              </span>
+              <input id="email" type="email" class="form-input" placeholder="you@agencyname.com" autocomplete="email" required />
+            </div>
+          </div>
+
+          <!-- Password -->
+          <div class="form-group">
+            <div class="form-label-row">
+              <label for="password" class="form-label" style="margin:0;">Password</label>
+              <a href="#" class="form-forgot">Forgot password?</a>
+            </div>
+            <div class="input-wrap">
+              <span class="input-icon">
+                <Lock size={15} aria-hidden="true" />
+              </span>
+              <input id="password" type="password" class="form-input" placeholder="••••••••••" autocomplete="current-password" required />
+            </div>
+          </div>
+
+          <!-- Remember -->
+          <label class="remember-row">
+            <input type="checkbox" class="remember-check" style="accent-color: #1A2744;" />
+            Keep me signed in for 30 days
+          </label>
+
+          <button type="submit" class="btn-primary w-full justify-center" style="margin-top:0.25rem;">
+            Sign In to Partner Portal
+          </button>
+        </form>
+
+        <div class="portal-divider">
+          <p class="portal-register-label">Not a partner yet?</p>
+          <a href="/contact" class="btn-outline-navy w-full justify-center">
+            Register Your Agency
+          </a>
+        </div>
+
+        <p class="portal-legal">
+          By signing in, you agree to WAYGGO&apos;s
+          <a href="#">Terms of Service</a> and <a href="#">Privacy Policy</a>.
+        </p>
+      </div>
+
+      <p class="portal-help">
+        Need help? Email&nbsp;
+        <a href="mailto:partners@wayggo.com">partners@wayggo.com</a>
+      </p>
+    </div>
+  </main>
+
+</div>
+
+</PortalLayout>
+
+<style>
+/* ── Root ── */
+.portal-root {
+  display: flex;
+  min-height: 100dvh;
+}
+
+/* ── Left panel ── */
+.portal-panel {
+  display: none;
+  width: 42%;
+  max-width: 560px;
+  min-width: 380px;
+  flex-shrink: 0;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 3rem;
+  background-color: #1A2744;
+  position: sticky;
+  top: 0;
+  height: 100dvh;
+  overflow-y: auto;
+}
+@media (min-width: 1024px) { .portal-panel { display: flex; } }
+
+.portal-logo-link { display: inline-flex; }
+.portal-logo-img  { height: 2.25rem; width: auto; display: block; }
+
+.portal-panel-body {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 2.5rem 0 2rem;
+}
+
+.portal-panel-eyebrow {
+ 
+  font-size: 0.6875rem;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: #FDEA01;
+  margin: 0 0 0.75rem;
+}
+
+.portal-panel-heading {
+ 
+  font-size: 1.75rem;
+  font-weight: 900;
+  color: #fff;
+  line-height: 1.2;
+  margin: 0 0 0.875rem;
+}
+
+.portal-panel-sub {
+ 
+  font-size: 0.8125rem;
+  color: rgba(255,255,255,0.5);
+  line-height: 1.7;
+  margin: 0 0 2.25rem;
+}
+
+.portal-benefits { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 1.375rem; }
+
+.portal-benefit { display: flex; align-items: flex-start; gap: 0.875rem; }
+
+.portal-benefit-icon {
+  width: 38px; height: 38px;
+  border-radius: 10px;
+  display: flex; align-items: center; justify-content: center;
+  flex-shrink: 0;
+  background-color: rgba(253,234,1,0.12);
+  color: #FDEA01;
+}
+
+.portal-benefit-title {
+ 
+  font-size: 0.8125rem;
+  font-weight: 700;
+  color: #fff;
+  margin: 0 0 0.2rem;
+}
+
+.portal-benefit-desc {
+ 
+  font-size: 0.75rem;
+  color: rgba(255,255,255,0.42);
+  line-height: 1.6;
+  margin: 0;
+}
+
+.portal-panel-footer {
+ 
+  font-size: 0.6875rem;
+  color: rgba(255,255,255,0.22);
+  margin: 0;
+}
+
+/* ── Right: form area ── */
+.portal-form-area {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  background-color: #F9F7F2;
+  min-width: 0;
+  overflow-y: auto;
+}
+
+/* Mobile top bar — dark so logo is readable */
+.portal-mobile-bar {
+  display: flex;
+  align-items: center;
+  padding: 0 1.5rem;
+  height: 64px;
+  background-color: #1A2744;
+  flex-shrink: 0;
+}
+@media (min-width: 1024px) { .portal-mobile-bar { display: none; } }
+
+/* Scrollable form column */
+.portal-form-scroll {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 3rem 2rem;
+}
+
+/* ── Card ── */
+.portal-card {
+  width: 100%;
+  max-width: 460px;
+  background: #fff;
+  border-radius: 1.5rem;
+  padding: 2.75rem 2.5rem;
+  box-shadow: 0 4px 40px rgba(26,39,68,0.10), 0 1px 6px rgba(26,39,68,0.05);
+}
+
+.portal-card-heading {
+ 
+  font-size: 1.5rem;
+  font-weight: 900;
+  color: #1A2744;
+  margin: 0 0 0.3rem;
+}
+
+.portal-card-sub {
+ 
+  font-size: 0.875rem;
+  color: #6B7280;
+  margin: 0 0 1.75rem;
+}
+
+/* ── Form ── */
+.portal-form { display: flex; flex-direction: column; gap: 1.125rem; }
+
+.form-group { display: flex; flex-direction: column; }
+
+.form-label {
+ 
+  font-weight: 600;
+  font-size: 0.8125rem;
+  color: #1A2744;
+  margin-bottom: 0.375rem;
+  letter-spacing: 0.02em;
+  display: block;
+}
+
+.form-label-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 0.375rem;
+}
+
+.form-forgot {
+ 
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: #1A2744;
+  text-decoration: none;
+}
+.form-forgot:hover { text-decoration: underline; }
+
+.input-wrap { position: relative; }
+
+.input-icon {
+  position: absolute;
+  top: 0; bottom: 0; left: 0.875rem;
+  display: flex;
+  align-items: center;
+  color: #9CA3AF;
+  pointer-events: none;
+}
+
+.form-input {
+  width: 100%;
+  padding: 0.875rem 1rem 0.875rem 2.625rem;
+  border: 2px solid #E5E7EB;
+  border-radius: 10px;
+ 
+  font-size: 0.9375rem;
+  color: #0D0D0D;
+  background: white;
+  transition: border-color 0.2s ease;
+  outline: none;
+  box-sizing: border-box;
+}
+.form-input:focus { border-color: #1A2744; box-shadow: 0 0 0 3px rgba(26,39,68,0.08); }
+.form-input::placeholder { color: #C4C9D4; }
+
+.remember-row {
+  display: flex;
+  align-items: center;
+  gap: 0.625rem;
+ 
+  font-size: 0.875rem;
+  color: #6B7280;
+  cursor: pointer;
+}
+.remember-check { width: 1rem; height: 1rem; cursor: pointer; flex-shrink: 0; }
+
+/* ── Divider / register ── */
+.portal-divider {
+  margin-top: 1.5rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid #F3F4F6;
+  text-align: center;
+}
+
+.portal-register-label {
+ 
+  font-size: 0.875rem;
+  color: #6B7280;
+  margin: 0 0 0.875rem;
+}
+
+/* ── Legal ── */
+.portal-legal {
+  margin-top: 1.25rem;
+ 
+  font-size: 0.6875rem;
+  color: #9CA3AF;
+  text-align: center;
+  line-height: 1.65;
+}
+.portal-legal a { color: inherit; text-decoration: underline; }
+.portal-legal a:hover { color: #6B7280; }
+
+/* ── Help text ── */
+.portal-help {
+  margin-top: 1.25rem;
+ 
+  font-size: 0.75rem;
+  color: #9CA3AF;
+  text-align: center;
+}
+.portal-help a { font-weight: 600; color: #1A2744; text-decoration: none; }
+.portal-help a:hover { text-decoration: underline; }
+</style>

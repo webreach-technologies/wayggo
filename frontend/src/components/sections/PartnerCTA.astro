@@ -1,0 +1,76 @@
+---
+interface TrustCard {
+  title: string;
+  desc: string;
+}
+
+interface Props {
+  badge?: string;
+  heading?: string;
+  headingHighlight?: string;
+  subheading?: string;
+  primaryCta?: { label: string; href: string };
+  secondaryCta?: { label: string; href: string };
+  trustCards?: TrustCard[];
+}
+
+const {
+  badge = "Join Our Partner Network",
+  heading = "Ready to Simplify Your",
+  headingHighlight = "North American Tours?",
+  subheading = "Join 200+ active partner agencies from 40+ countries who trust WAYGGO to move their clients safely, on time, every leg of the journey.",
+  primaryCta = { label: "Request a Quote — It's Free", href: "/contact" },
+  secondaryCta = { label: "Register as Travel Partner", href: "/portal" },
+  trustCards = [
+    { title: "No Registration Fee",       desc: "Free to become a partner. No onboarding costs, no contracts." },
+    { title: "24-Hour Response",           desc: "Guaranteed quote turnaround within one business day." },
+    { title: "Dedicated Account Manager", desc: "Your single point of contact for every operation." },
+    { title: "Custom Invoicing",           desc: "Net-30 terms, multi-currency, consolidated billing available." },
+  ],
+} = Astro.props;
+---
+
+<section class="relative overflow-hidden" style="background: #1A2744;">
+  <!-- Texture -->
+  <div class="absolute inset-0 pointer-events-none diagonal-lines opacity-40"></div>
+  <!-- Glow -->
+  <div class="absolute inset-0 pointer-events-none"
+    style="background: radial-gradient(ellipse at 50% 60%, rgba(255,208,0,0.07) 0%, transparent 65%);"></div>
+
+  <div class="container relative z-10">
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center py-24">
+
+      <!-- Left: Copy -->
+      <div>
+        <span class="section-label-white mb-6 inline-flex">{badge}</span>
+        <h2 class="text-4xl lg:text-5xl font-black mb-6 text-white leading-tight"
+          style="">
+          {heading}<br />
+          <span style="color: #FDEA01;">{headingHighlight}</span>
+        </h2>
+        <p class="font-subheading text-base leading-relaxed mb-10"
+          style="color: rgba(255,255,255,0.55); max-width: 460px;">
+          {subheading}
+        </p>
+        <div class="flex flex-col sm:flex-row gap-4">
+          <a href={primaryCta.href} class="btn-primary">{primaryCta.label}</a>
+          <a href={secondaryCta.href} class="btn-outline-white">{secondaryCta.label}</a>
+        </div>
+      </div>
+
+      <!-- Right: Trust checklist cards -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+        {trustCards.map((item) => (
+          <div class="rounded-2xl p-5" style="background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.08);">
+            <div class="w-8 h-8 rounded-xl flex items-center justify-center mb-3 text-sm font-black"
+              style="background: #FDEA01; color: #1A2744; ">
+              ✓
+            </div>
+            <h4 class="text-sm font-black mb-1.5 text-white" style="">{item.title}</h4>
+            <p class="text-xs leading-relaxed" style="color: rgba(255,255,255,0.45);">{item.desc}</p>
+          </div>
+        ))}
+      </div>
+    </div>
+  </div>
+</section>

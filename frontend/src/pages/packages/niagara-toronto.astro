@@ -1,0 +1,571 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import PackageBookingForm from "../../components/react/PackageBookingForm";
+import PackageGallery from "../../components/react/PackageGallery";
+import { Compass, Users, Camera, Building2, Star, CircleCheck, CircleX, FileText, Clock, ChevronDown, ArrowRight, Zap } from "@lucide/astro";
+
+const pkg = {
+  id: "niagara-toronto",
+  groupPackageLabel: "Niagara Toronto",
+  name: "Niagara Falls & Toronto Explorer",
+  tagline: "3-Day Small Group Ground Transportation Package",
+  days: 3,
+  nights: 2,
+  size: "8–20 passengers",
+  vehicle: "Luxury Van",
+  price: "$200",
+  priceUnit: "/pax/day",
+  cities: ["Toronto", "Niagara Falls"],
+};
+
+const galleryStops = [
+  { label: "Niagara Falls", sub: "Canadian & American sides", gradient: "linear-gradient(135deg, #164e63, #0f766e)" },
+  { label: "CN Tower & Skyline", sub: "Downtown Toronto", gradient: "linear-gradient(135deg, #1A2744, #243460)" },
+  { label: "Niagara-on-the-Lake", sub: "Wine country day trip", gradient: "linear-gradient(135deg, #7c2d12, #92400e)" },
+];
+
+const idealFor = [
+  { title: "Leisure & Sightseeing Groups", desc: "Classic first-time itinerary covering both cities' must-see stops.", icon: Compass },
+  { title: "Multigenerational Family Tours", desc: "Easy pacing, short walking distances, comfortable van seating.", icon: Users },
+  { title: "Photography & Honeymoon Groups", desc: "Built-in time at the Falls for golden-hour and illumination shots.", icon: Camera },
+  { title: "Corporate Incentive Trips", desc: "Premium van, flexible scheduling, and optional bilingual guide.", icon: Building2 },
+];
+
+const highlights = [
+  "Niagara Falls — Canadian & American sides",
+  "Maid of the Mist Boat Tour",
+  "CN Tower & Observation Deck",
+  "Distillery Historic District",
+  "Niagara-on-the-Lake Wine Tour",
+  "Toronto Waterfront drive-by",
+];
+
+const timelineStops = [
+  { num: 1, day: "Day 1", time: "8:30 AM", duration: "30 min", title: "Hotel or Airport Pickup", status: "Included", desc: "Your driver meets your group at the hotel lobby or airport arrivals with a name sign, assists with luggage, and confirms the day's schedule." },
+  { num: 2, day: "Day 1", time: "9:30 AM", duration: "2 hrs", title: "CN Tower & Observation Deck", status: "Option", desc: "Transport and wait time are included; observation deck and SkyPod tickets are booked separately and can be pre-arranged as an add-on." },
+  { num: 3, day: "Day 1", time: "12:00 PM", duration: "1.5 hrs", title: "Distillery Historic District", status: "Included", desc: "Free walking time among the cobblestone lanes, boutiques, and cafés of this 19th-century industrial district." },
+  { num: 4, day: "Day 1", time: "2:00 PM", duration: "45 min", title: "Toronto Waterfront Drive-By", status: "Included", desc: "A scenic drive along Queens Quay and the harbourfront before checking in to your Toronto hotel for the evening." },
+  { num: 5, day: "Day 2", time: "8:00 AM", duration: "1 hr", title: "Departure to Niagara-on-the-Lake", status: "Included", desc: "Morning pickup from your Toronto hotel for the scenic ~90-minute drive into wine country." },
+  { num: 6, day: "Day 2", time: "9:30 AM", duration: "2 hrs", title: "Niagara-on-the-Lake Wine Tour", status: "Option", desc: "Transport between two boutique wineries is included; tasting flights and bottle purchases are billed directly by the winery." },
+  { num: 7, day: "Day 2", time: "1:00 PM", duration: "1.5 hrs", title: "Table Rock & Niagara Falls (Canadian Side)", status: "Included", desc: "Up-close viewing platforms at Table Rock, directly across from the Horseshoe Falls." },
+  { num: 8, day: "Day 2", time: "2:30 PM", duration: "1 hr", title: "Journey Behind the Falls", status: "Option", desc: "A self-guided descent through tunnels to viewing portals behind the cascading water; admission is booked separately or by your guide." },
+  { num: 9, day: "Day 2", time: "7:00 PM", duration: "2 hrs", title: "Evening Illumination Drive & Clifton Hill", status: "Included", desc: "A guided drive past the illuminated Falls (seasonal Nov–Jan) followed by free time on Clifton Hill before checking in to your Niagara hotel." },
+  { num: 10, day: "Day 3", time: "9:00 AM", duration: "1 hr", title: "Cross-Border to American Side", status: "Option", desc: "Drivers coordinate the Rainbow Bridge crossing; valid passports are required for all travelers (visas/eTA where applicable)." },
+  { num: 11, day: "Day 3", time: "10:30 AM", duration: "1.5 hrs", title: "Maid of the Mist Boat Tour", status: "Option", desc: "A seasonal boat tour to the base of the Falls; tickets are booked separately and subject to availability (closed roughly Dec–Mar)." },
+  { num: 12, day: "Day 3", time: "1:00 PM", duration: "2.5 hrs", title: "Return Transfer to Toronto", status: "Included", desc: "Free time or a lunch stop before the drive back to Toronto, with drop-off at your hotel or the airport." },
+];
+
+const included = [
+  "Luxury Van for all 3 days (8–20 passengers)",
+  "Professional, English-speaking driver",
+  "Optional bilingual/multilingual guide on request",
+  "Airport-to-hotel transfer on arrival",
+  "Cross-border transit support & documentation guidance",
+  "Toronto ↔ Niagara Falls inter-city transfers",
+  "Fuel, tolls, and parking at all included stops",
+];
+
+const notIncluded = [
+  "Hotel accommodation (Toronto & Niagara Falls nights)",
+  "Attraction admission (Journey Behind the Falls, Maid of the Mist, CN Tower, wineries)",
+  "Meals & beverages",
+  "Travel insurance & visa/eTA fees",
+  "Driver/guide gratuities",
+];
+
+const tipsBeforeBook = [
+  "Minimum group size is 8 passengers — for 20+ pax, ask about our Canada Panorama motorcoach package",
+  "Confirm 3–4 weeks ahead; 6+ weeks during illumination season (Nov–Jan) and summer peak (Jun–Aug)",
+  "Cross-border travel requires valid passports for all travelers (and visas/eTA where applicable) — we provide a documentation checklist",
+  "Journey Behind the Falls and Maid of the Mist can be pre-booked as an add-on or arranged by your local guide",
+];
+
+const tipsBeforeGo = [
+  "Maid of the Mist and Journey Behind the Falls operate seasonally — closures possible Dec–Mar; we'll suggest substitutes",
+  "Winter illuminations and fireworks (in season) call for warm clothing",
+  "Comfortable walking shoes recommended for the Distillery District and Falls viewing areas",
+  "Wineries require all guests to be of legal drinking age for tastings, or a non-tasting alternative",
+  "Border wait times vary — our drivers build buffer time into the schedule",
+];
+
+const faqs = [
+  { q: "What's the minimum and maximum group size for this package?", a: "8–20 passengers in a single Luxury Van. For groups above 20, we recommend our Canada Panorama motorcoach package, which covers the same cities at scale." },
+  { q: "Does this package include a tour guide?", a: "The price includes a professional driver. An English or multilingual guide can be added for an additional daily rate — let us know in your request and we'll quote it." },
+  { q: "Do you handle the US–Canada border crossing?", a: "Yes. Our drivers are experienced with the crossing, and we provide a documentation checklist for your travelers' passports and visas ahead of time." },
+  { q: "Are hotel stays included?", a: "No — this is a ground transportation package. We can recommend partner hotels in Toronto and Niagara Falls on request." },
+  { q: "Can we customize the itinerary or swap a day?", a: "Yes. Every package is a starting template. Tell us your changes in the request form below and we'll send back a revised proposal." },
+  { q: "What happens if an attraction is closed for the season?", a: "Our local drivers and guides offer an equivalent substitute stop at no extra cost — common in winter when some Falls attractions close." },
+  { q: "How far in advance should we confirm?", a: "3–4 weeks minimum; 6+ weeks during the Nov–Jan illumination season and Jun–Aug summer peak, when vehicles and guides book up fastest." },
+];
+
+const relatedPackages = [
+  { name: "Canada Panorama", days: 10, size: "21–56 pax", price: "$155/pax/day", gradient: "linear-gradient(135deg, #7F1D1D, #991B1B)", cities: ["Toronto", "Niagara Falls", "Ottawa", "Montreal", "Quebec City"] },
+  { name: "New York City Icons", days: 5, size: "8–20 pax", price: "$180/pax/day", gradient: "linear-gradient(135deg, #1e293b, #334155)", cities: ["New York City"] },
+  { name: "Washington DC & Colonial Heritage", days: 4, size: "8–20 pax", price: "$160/pax/day", gradient: "linear-gradient(135deg, #1e3a8a, #312e81)", cities: ["Washington D.C.", "Colonial Williamsburg"] },
+];
+
+const jumpLinks = [
+  { href: "#overview", label: "Overview" },
+  { href: "#highlights", label: "Highlights" },
+  { href: "#itinerary", label: "Itinerary" },
+  { href: "#inclusions", label: "Inclusions" },
+  { href: "#tips", label: "Good to Know" },
+  { href: "#faq", label: "FAQ" },
+];
+---
+
+<BaseLayout
+  title="Niagara Falls & Toronto Explorer — 3-Day Package — WAYGGO"
+  description="A 3-day, small-group ground transportation package covering Toronto and Niagara Falls — CN Tower, Distillery District, Niagara-on-the-Lake wine country, and the Falls on both sides of the border."
+>
+
+  <!-- Hero -->
+  <section class="py-20 lg:py-24 diagonal-lines" style="background-color: #1A2744;">
+    <div class="container">
+      <div class="max-w-3xl">
+        <span class="section-label-white mb-5 inline-flex">{pkg.tagline}</span>
+        <h1 class="text-4xl lg:text-6xl font-black text-white mb-5">
+          Niagara Falls &<br />
+          <span style="color: #FDEA01;">Toronto Explorer</span>
+        </h1>
+        <p class="text-white/65 text-lg leading-relaxed max-w-2xl mb-8">
+          Two of Canada's most-requested cities in one tidy itinerary. WAYGGO provides the Luxury Van, the driver, and the cross-border know-how — your travelers handle the sightseeing.
+        </p>
+
+        <!-- Quick stats -->
+        <div class="flex flex-wrap gap-3 mb-9">
+          {[
+            { label: `${pkg.days} Days / ${pkg.nights} Nights` },
+            { label: pkg.size },
+            { label: pkg.vehicle },
+            { label: `From ${pkg.price}${pkg.priceUnit}` },
+          ].map((s) => (
+            <span class="px-4 py-2 rounded-full text-xs font-bold text-white" style="background: rgba(255,255,255,0.08); border: 1px solid rgba(255,255,255,0.15);">
+              {s.label}
+            </span>
+          ))}
+        </div>
+
+        <div class="flex flex-col sm:flex-row gap-4">
+          <a href="#request" class="btn-primary">Request This Package</a>
+          <a href="#itinerary" class="btn-outline-white">View Complete Tour Timeline</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Visual gallery — bento layout with click-to-open lightbox -->
+  <section class="py-10 lg:py-14" style="background-color: white;">
+    <div class="container">
+      <PackageGallery client:load images={galleryStops} />
+    </div>
+  </section>
+
+  <!-- Main content + sticky sidebar -->
+  <section id="page-content" class="py-16 lg:py-20" style="background-color: white;">
+    <div class="container">
+      <div class="grid grid-cols-1 gap-10">
+
+        <!-- Main content column -->
+        <div class="space-y-16 main-content">
+
+          <!-- Overview -->
+          <div id="overview">
+            <span class="section-label">Tour Overview</span>
+            <h2 class="text-3xl font-black mt-4 mb-5" style="color: #1A2744;">
+              One Van, Two Cities, Zero Logistics
+            </h2>
+            <p class="text-gray-500 leading-relaxed mb-4">
+              This package puts your group in a single Luxury Van for three days, moving between Toronto and Niagara Falls without a single transfer headache. Day one covers Toronto's skyline and historic district; day two crosses into Niagara-on-the-Lake wine country before settling in at the Falls for the evening illumination; day three closes with the Falls by daylight and the cross-border leg, before returning your group to Toronto.
+            </p>
+            <p class="text-gray-500 leading-relaxed">
+              Built for international tour operators booking small groups of 8–20 travelers, the package includes the vehicle, a professional driver, and cross-border documentation support — so you can quote one line item and let WAYGGO run the road.
+            </p>
+
+            <h3 class="text-xl font-black mt-10 mb-5" style="color: #1A2744;">Ideal For These Groups</h3>
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
+              {idealFor.map((item) => (
+                <div class="flex gap-3">
+                  <div class="w-10 h-10 rounded-xl flex items-center justify-center shrink-0 bg-yellow">
+                    <item.icon size={20} color="#1A2744" />
+                  </div>
+                  <div>
+                    <h4 class="font-black text-sm mb-0.5" style="color: #1A2744;">{item.title}</h4>
+                    <p class="text-xs text-gray-500 leading-relaxed">{item.desc}</p>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+
+          <!-- Highlights -->
+          <div id="highlights">
+            <span class="section-label">What Makes This Route</span>
+            <h2 class="text-3xl font-black mt-4 mb-8" style="color: #1A2744;">Tour Highlights</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              {highlights.map((h) => (
+                <div class="flex items-center gap-3 rounded-xl p-4" style="background-color: #F9F7F2;">
+                  <Star size={20} color="#FDEA01" fill="#FDEA01" stroke-width={1} class="shrink-0" />
+                  <span class="text-sm font-semibold" style="color: #1A2744;">{h}</span>
+                </div>
+              ))}
+            </div>
+          </div>
+
+          <!-- Itinerary: Complete Tour Timeline -->
+          <div id="itinerary">
+            <span class="section-label">Day-by-Day</span>
+            <h2 class="text-3xl font-black mt-4 mb-3" style="color: #1A2744;">Complete Tour Timeline</h2>
+            <p class="text-gray-500 mb-10">{timelineStops.length} stops across 3 days — built for 8–20 passengers in one Luxury Van.</p>
+
+            <div class="relative">
+              <div class="absolute left-4.5 top-2 bottom-2 w-px" style="background-color: #E5E7EB;"></div>
+              <div class="space-y-6">
+                {timelineStops.map((stop) => (
+                  <div class="relative flex gap-4 sm:gap-5">
+                    <div
+                      class="relative z-10 w-9 h-9 rounded-full flex items-center justify-center text-xs font-black shrink-0"
+                      style="background-color: #1A2744; color: #FDEA01;"
+                    >
+                      {stop.num}
+                    </div>
+                    <div class="flex-1 rounded-2xl p-5 lg:p-6" style="background-color: #F9F7F2;">
+                      <div class="flex flex-wrap items-center gap-2 mb-2">
+                        <span class="badge badge-navy">{stop.day}</span>
+                        <span class="text-xs text-gray-400">{stop.time} · {stop.duration}</span>
+                        <span class={`badge ${stop.status === "Included" ? "badge-green" : "badge-orange"}`}>{stop.status}</span>
+                      </div>
+                      <h4 class="font-black text-base mb-1" style="color: #1A2744;">{stop.title}</h4>
+                      <details class="mt-2 group">
+                        <summary class="text-xs font-bold cursor-pointer select-none inline-flex items-center gap-1" style="color: #1A2744;">
+                          See Details
+                          <ChevronDown size={12} class="transition-transform group-open:rotate-180" />
+                        </summary>
+                        <p class="text-sm text-gray-500 leading-relaxed mt-2">{stop.desc}</p>
+                      </details>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
+
+          <!-- Inclusions -->
+          <div id="inclusions">
+            <span class="section-label">Fine Print</span>
+            <h2 class="text-3xl font-black mt-4 mb-8" style="color: #1A2744;">What's Included / Not Included</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+              <div class="rounded-2xl p-7 border border-gray-100">
+                <h3 class="font-black text-sm uppercase tracking-widest mb-5" style="color: #1A2744;">Included</h3>
+                <div class="space-y-3">
+                  {included.map((item) => (
+                    <div class="flex items-start gap-3 text-sm text-gray-600">
+                      <span class="shrink-0 mt-0.5 rounded-full flex items-center justify-center" style="background-color: #D1FAE5; width: 18px; height: 18px;">
+                        <CircleCheck size={14} color="#065F46" stroke-width={2} fill="none" />
+                      </span>
+                      {item}
+                    </div>
+                  ))}
+                </div>
+              </div>
+              <div class="rounded-2xl p-7 border border-gray-100">
+                <h3 class="font-black text-sm uppercase tracking-widest mb-5" style="color: #1A2744;">Not Included</h3>
+                <div class="space-y-3">
+                  {notIncluded.map((item) => (
+                    <div class="flex items-start gap-3 text-sm text-gray-600">
+                      <span class="shrink-0 mt-0.5 rounded-full flex items-center justify-center" style="background-color: #FEE2E2; width: 18px; height: 18px;">
+                        <CircleX size={14} color="#B91C1C" stroke-width={2} fill="none" />
+                      </span>
+                      {item}
+                    </div>
+                  ))}
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Tips -->
+          <div id="tips">
+            <span class="section-label">Plan With Confidence</span>
+            <h2 class="text-3xl font-black mt-4 mb-3" style="color: #1A2744;">Good to Know Before You Quote</h2>
+            <p class="text-gray-500 mb-8">Everything your operations team needs before confirming this itinerary.</p>
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-8">
+              <div>
+                <h3 class="font-black text-base mb-4 flex items-center gap-2" style="color: #1A2744;">
+                  <FileText size={20} color="#1A2744" />
+                  Know Before You Book
+                </h3>
+                <div class="space-y-3">
+                  {tipsBeforeBook.map((tip) => (
+                    <div class="flex items-start gap-2.5 text-sm text-gray-600 leading-relaxed">
+                      <span class="w-1.5 h-1.5 rounded-full shrink-0 mt-1.5" style="background: #FDEA01;"></span>
+                      {tip}
+                    </div>
+                  ))}
+                </div>
+              </div>
+              <div>
+                <h3 class="font-black text-base mb-4 flex items-center gap-2" style="color: #1A2744;">
+                  <Clock size={20} color="#1A2744" />
+                  Know Before You Go
+                </h3>
+                <div class="space-y-3">
+                  {tipsBeforeGo.map((tip) => (
+                    <div class="flex items-start gap-2.5 text-sm text-gray-600 leading-relaxed">
+                      <span class="w-1.5 h-1.5 rounded-full shrink-0 mt-1.5" style="background: #FDEA01;"></span>
+                      {tip}
+                    </div>
+                  ))}
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- FAQ -->
+          <div id="faq">
+            <span class="section-label">Common Questions</span>
+            <h2 class="text-3xl font-black mt-4 mb-8" style="color: #1A2744;">Frequently Asked Questions</h2>
+            <div class="space-y-4">
+              {faqs.map((faq) => (
+                <details class="rounded-2xl border border-gray-100 group" style="background: #F9F7F2;">
+                  <summary class="flex items-center justify-between px-6 py-5 cursor-pointer select-none">
+                    <span class="font-semibold text-sm pr-4" style="color: #1A2744;">{faq.q}</span>
+                    <ChevronDown size={20} class="flex-shrink-0 transition-transform group-open:rotate-180" style="color: #6B7280;" />
+                  </summary>
+                  <div class="px-6 pb-5">
+                    <p class="text-sm text-gray-500 leading-relaxed">{faq.a}</p>
+                  </div>
+                </details>
+              ))}
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+
+    <!-- On-page nav: fixed to the right edge of the viewport (only on screens with room to spare) -->
+    <div class="hidden xl:block on-page-nav" style="position: fixed; top: 96px; right: 2rem; width: 260px;">
+      <div class="rounded-2xl border border-gray-100 p-6" style="box-shadow: 0 4px 24px rgba(26,39,68,0.08); background-color: white;">
+        <h3 class="text-xs uppercase font-black tracking-widest mb-3 px-1" style="color: #1A2744;">On This Page</h3>
+        <nav class="flex flex-col gap-1 mb-5">
+          {jumpLinks.map((link) => (
+            <a
+              href={link.href}
+              data-jump-link
+              data-target={link.href.replace("#", "")}
+              class="jump-link px-3 py-2 rounded-lg text-sm font-semibold transition-colors"
+              style="color: #1A2744;"
+            >
+              {link.label}
+            </a>
+          ))}
+        </nav>
+        <a href="#request" class="btn-primary w-full justify-center">Request This Package</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Request quote -->
+  <section id="request" class="py-16 lg:py-20" style="background-color: #F9F7F2;">
+    <div class="container">
+      <div class="text-center mb-12 max-w-2xl mx-auto">
+        <span class="section-label">Get a Proposal</span>
+        <h2 class="text-3xl lg:text-4xl font-black mt-4" style="color: #1A2744;">Request the Niagara Falls & Toronto Explorer</h2>
+        <p class="text-gray-500 mt-3">Confirm dates and group size below — our operations team replies within 24 hours with a detailed proposal.</p>
+      </div>
+
+      <div class="grid grid-cols-1 lg:grid-cols-3 gap-10">
+        <div class="lg:col-span-2">
+          <div class="bg-white rounded-3xl border border-gray-100 p-5 sm:p-8 lg:p-10" style="box-shadow: 0 4px 24px rgba(26,39,68,0.08);">
+            <PackageBookingForm client:load packageLabel={pkg.groupPackageLabel} />
+          </div>
+        </div>
+        <div class="space-y-5 request-sidebar">
+          <div class="rounded-2xl p-6" style="background-color: #FDEA01;">
+            <div class="flex items-center gap-3 mb-3">
+              <div class="text-2xl"><Zap /></div>
+              <h3 class="font-black text-base" style="color: #1A2744;">Book Instantly or Request a Quote</h3>
+            </div>
+            <p class="text-sm leading-relaxed" style="color: rgba(26,39,68,0.75);">
+              Choose <strong>Instant Book</strong> to lock in your bus and driver now with a 20% deposit, or <strong>Request a Quote</strong> and our operations team replies within 24 hours with full pricing — no obligation either way.
+            </p>
+          </div>
+          <div class="bg-white rounded-2xl p-6 border border-gray-100">
+            <h3 class="font-black text-sm uppercase tracking-widest mb-4" style="color: #1A2744;">What Happens Next</h3>
+            <div class="space-y-3">
+              {[
+                { step: "1", text: "Tell us your trip basics, group details, and preferred bus size" },
+                { step: "2", text: "Instant Book confirms your bus right away — Request a Quote goes to our operations team" },
+                { step: "3", text: "You get a confirmation or an itemized proposal, with one invoice for the full route" },
+              ].map((s) => (
+                <div class="flex items-start gap-3">
+                  <div class="w-6 h-6 rounded-full flex items-center justify-center shrink-0 text-xs font-black" style="background-color: #FDEA01; color: #1A2744;">{s.step}</div>
+                  <p class="text-sm text-gray-500 leading-relaxed">{s.text}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Related packages -->
+  <section class="py-16 lg:py-20 diagonal-lines" style="background-color: #1A2744;">
+    <div class="container">
+      <div class="flex items-center justify-between mb-10 gap-4">
+        <h2 class="text-3xl font-black text-white">You Might Also Like</h2>
+        <a href="/packages" class="hidden sm:flex items-center gap-2 font-bold text-sm uppercase tracking-widest text-white/70 hover:text-yellow transition-all">
+          View All Packages
+          <ArrowRight size={16} stroke-width={2.5} />
+        </a>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        {relatedPackages.map((rp) => (
+          <a href="/packages" class="rounded-2xl overflow-hidden card-hover block" style="background-color: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.08);">
+            <div class="h-32 relative">
+              <div class="absolute inset-0" style={`background: ${rp.gradient};`} />
+              <div class="absolute inset-0 diagonal-lines" />
+              <div class="absolute bottom-0 left-0 right-0 p-5">
+                <span class="badge badge-yellow mb-2 text-xs">{rp.days} Days</span>
+                <h3 class="text-base font-black text-white">{rp.name}</h3>
+              </div>
+            </div>
+            <div class="p-5 flex items-center justify-between text-xs">
+              <span class="text-white/50">Group: <strong class="text-white/80">{rp.size}</strong></span>
+              <span class="font-bold" style="color: #FDEA01;">From {rp.price}</span>
+            </div>
+          </a>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <style>
+    .jump-link:hover {
+      background-color: rgba(26, 39, 68, 0.06);
+    }
+    .jump-link.is-active {
+      background-color: #FDEA01;
+    }
+    .on-page-nav {
+      opacity: 0;
+      visibility: hidden;
+      transform: translateX(24px);
+      transition: opacity 0.4s cubic-bezier(0.16, 1, 0.3, 1), transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), visibility 0.4s;
+    }
+    .on-page-nav.is-visible {
+      opacity: 1;
+      visibility: visible;
+      transform: translateX(0);
+    }
+    /* Keep the "Book Instantly" / "What Happens Next" panel in view alongside
+       the booking form as the user scrolls through it. */
+    @media (min-width: 1024px) {
+      .request-sidebar {
+        position: sticky;
+        top: 96px;
+        align-self: start;
+      }
+    }
+    /* Reserve just enough right clearance to clear the fixed nav panel (260px wide,
+       2rem from the viewport edge) — shrinks as the viewport widens past the
+       container's 1280px max-width, and drops to zero once the container's own
+       right edge already clears the panel (~1784px+). */
+    @media (min-width: 1280px) {
+      .main-content {
+        padding-right: max(0px, calc(916px - 50vw));
+      }
+    }
+  </style>
+
+  <script>
+    // With the site's <ClientRouter /> (View Transitions) enabled, script tags only
+    // execute once per browser session — navigating away and back to this page would
+    // otherwise leave the observers below wired to elements that no longer exist.
+    // Re-run this setup on every navigation (including the first) via astro:page-load.
+    let jumpObserver: IntersectionObserver | null = null;
+    let overviewObserver: IntersectionObserver | null = null;
+    let pageContentObserver: IntersectionObserver | null = null;
+
+    function initOnPageNav() {
+      jumpObserver?.disconnect();
+      overviewObserver?.disconnect();
+      pageContentObserver?.disconnect();
+
+      const jumpLinks = Array.from(document.querySelectorAll<HTMLAnchorElement>(".jump-link"));
+      const targets = jumpLinks
+        .map((link) => {
+          const id = link.dataset.target;
+          const el = id ? document.getElementById(id) : null;
+          return el ? { link, el } : null;
+        })
+        .filter((t): t is { link: HTMLAnchorElement; el: HTMLElement } => t !== null);
+
+      function setActive(id: string) {
+        jumpLinks.forEach((link) => {
+          link.classList.toggle("is-active", link.dataset.target === id);
+        });
+      }
+
+      if (targets.length) {
+        jumpObserver = new IntersectionObserver(
+          (entries) => {
+            entries.forEach((entry) => {
+              if (entry.isIntersecting) setActive(entry.target.id);
+            });
+          },
+          { rootMargin: "-120px 0px -55% 0px", threshold: 0 }
+        );
+        targets.forEach(({ el }) => jumpObserver!.observe(el));
+      }
+
+      // Slide the fixed "On This Page" panel in once the Tour Overview section is
+      // actually on screen (not just a sliver at the bottom edge), and keep it
+      // visible for the rest of the content section until it scrolls out of view.
+      const pageNav = document.querySelector<HTMLElement>(".on-page-nav");
+      const overviewSection = document.getElementById("overview");
+      const pageContent = document.getElementById("page-content");
+      if (pageNav && overviewSection && pageContent) {
+        let reachedOverview = false;
+        let withinPageContent = false;
+        const updateNavVisibility = () => {
+          pageNav.classList.toggle("is-visible", reachedOverview && withinPageContent);
+        };
+
+        overviewObserver = new IntersectionObserver(
+          (entries) => {
+            entries.forEach((entry) => {
+              if (entry.isIntersecting) {
+                reachedOverview = true;
+              } else if (entry.boundingClientRect.top > 0) {
+                // Overview hasn't been scrolled to yet (still below the viewport) — keep hidden.
+                reachedOverview = false;
+              }
+              // Otherwise Overview has been scrolled past (above the viewport) — stays revealed.
+              updateNavVisibility();
+            });
+          },
+          { rootMargin: "0px 0px -50% 0px", threshold: 0 }
+        );
+        overviewObserver.observe(overviewSection);
+
+        pageContentObserver = new IntersectionObserver(
+          (entries) => {
+            entries.forEach((entry) => {
+              withinPageContent = entry.isIntersecting;
+              updateNavVisibility();
+            });
+          },
+          { rootMargin: "-50% 0px 0px 0px", threshold: 0 }
+        );
+        pageContentObserver.observe(pageContent);
+      }
+    }
+
+    document.addEventListener("astro:page-load", initOnPageNav);
+  </script>
+
+</BaseLayout>

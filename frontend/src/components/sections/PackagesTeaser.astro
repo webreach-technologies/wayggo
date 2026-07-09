@@ -1,0 +1,129 @@
+﻿---
+import { Image } from "astro:assets";
+import { ArrowRight } from "@lucide/astro";
+
+interface Package {
+  name: string;
+  days: number;
+  size: string;
+  gradient: string;
+  price: string;
+  cities: string[];
+  image?: string;
+}
+
+interface Props {
+  badge?: string;
+  heading?: string;
+  viewAllHref?: string;
+  viewAllLabel?: string;
+  packages?: Package[];
+}
+
+const {
+  badge = "Popular Packages",
+  heading = "Ready-to-Book\nGroup Tour Packages",
+  viewAllHref = "/packages",
+  viewAllLabel = "View All 12 Packages",
+  packages = [
+    {
+      name: "East Coast Grand Tour",
+      days: 10,
+      size: "21–56 pax",
+      price: "$145/person/day",
+      gradient: "linear-gradient(135deg, #0A1628 0%, #1A2744 100%)",
+      cities: ["New York","Boston","Philadelphia","Washington D.C."],
+    },
+    {
+      name: "New York City Icons",
+      days: 5,
+      size: "8–20 pax",
+      price: "$180/person/day",
+      gradient: "linear-gradient(135deg, #2D1B00 0%, #4A2E00 100%)",
+      cities: ["Manhattan","Brooklyn","Statue of Liberty","Midtown"],
+    },
+    {
+      name: "Canada Panorama",
+      days: 10,
+      size: "21–56 pax",
+      price: "$155/person/day",
+      gradient: "linear-gradient(135deg, #1A0A0A 0%, #3D1A1A 100%)",
+      cities: ["Toronto","Montreal","Quebec City","Ottawa"],
+    },
+  ],
+} = Astro.props;
+
+const headingLines = heading.split("\n");
+---
+
+<section class="py-28" style="background: white;">
+  <div class="container">
+    <div class="flex flex-col lg:flex-row lg:items-end justify-between mb-14 gap-4">
+      <div>
+        <span class="section-label">{badge}</span>
+        <h2 class="text-4xl lg:text-5xl font-black mt-5"
+          style="color: #1A2744;">
+          {headingLines.map((line, i) => (
+            <>
+              {line}
+              {i < headingLines.length - 1 && <br />}
+            </>
+          ))}
+        </h2>
+      </div>
+      <a href={viewAllHref}
+        class="self-start lg:self-auto flex items-center gap-2 font-bold text-sm uppercase tracking-widest transition-all hover:gap-4"
+        style="color: #1A2744;">
+        {viewAllLabel}
+        <ArrowRight size={16} stroke-width={2.5} />
+      </a>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+      {packages.map((pkg) => (
+        <div class="rounded-2xl overflow-hidden card-hover bg-white"
+          style="box-shadow: 0 4px 24px rgba(26,39,68,0.09);">
+          <!-- Card header: image if provided, else gradient placeholder -->
+          <div class="h-44 relative overflow-hidden">
+            {pkg.image ? (
+              <>
+                <Image src={pkg.image} alt={pkg.name} width={800} height={500} class="absolute inset-0 w-full h-full object-cover" />
+                <div class="absolute inset-0" style="background: linear-gradient(to top, rgba(0,0,0,0.55) 0%, transparent 60%);"></div>
+              </>
+            ) : (
+              <div class="absolute inset-0"
+                style={`background: ${pkg.gradient};`}>
+                <div class="absolute inset-0 opacity-20"
+                  style="background: repeating-linear-gradient(-45deg, transparent, transparent 20px, rgba(255,255,255,0.03) 20px, rgba(255,255,255,0.03) 21px);"></div>
+              </div>
+            )}
+            <div class="absolute bottom-0 left-0 right-0 p-7 z-10">
+              <span class="badge badge-yellow mb-2 text-xs">{pkg.days} Days</span>
+              <h3 class="text-base font-black text-white" style="">{pkg.name}</h3>
+            </div>
+          </div>
+          <div class="p-6">
+            <!-- City tags -->
+            <div class="flex flex-wrap gap-1.5 mb-4">
+              {pkg.cities.map((city) => (
+                <span class="text-xs px-2 py-0.5 rounded-full" style="background: #F9F7F2; color: #1A2744;">{city}</span>
+              ))}
+            </div>
+            <div class="flex items-center justify-between mb-5">
+              <div class="text-sm text-gray-500" style="">
+                Group: <strong class="text-gray-800">{pkg.size}</strong>
+              </div>
+              <div class="text-sm font-black" style="color: #1A2744;">
+                From {pkg.price}
+              </div>
+            </div>
+            <a href={viewAllHref} class="btn-secondary w-full justify-center"
+              style="padding: 0.65rem 1.5rem; font-size: 0.72rem;">
+              View Package Details
+            </a>
+          </div>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>

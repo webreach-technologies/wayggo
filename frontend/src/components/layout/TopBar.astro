@@ -1,0 +1,190 @@
+﻿---
+import { Phone, Mail } from "@lucide/astro";
+
+const contactItems = [
+  {
+    icon: Phone,
+    value: "+1 (800) 555-WAYGGO",
+    href: "tel:+18005559248",
+    ariaLabel: "Call us",
+  },
+  {
+    icon: Mail,
+    value: "operations@wayggo.com",
+    href: "mailto:operations@wayggo.com",
+    ariaLabel: "Email us",
+    hideOnMobile: true,
+  },
+];
+
+const socialLinks = [
+  {
+    label: "LinkedIn",
+    href: "#",
+    icon: `<path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/>`,
+    fill: false,
+  },
+  {
+    label: "X / Twitter",
+    href: "#",
+    icon: `<path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>`,
+    fill: true,
+  },
+  {
+    label: "Facebook",
+    href: "#",
+    icon: `<path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/>`,
+    fill: false,
+  },
+];
+---
+
+<div class="topbar" aria-label="Contact and social links">
+  <div class="container">
+    <div class="topbar-inner">
+
+      <!-- Contact info -->
+      <div class="topbar-contact">
+        {contactItems.map((item) => {
+          const Icon = item.icon;
+          return (
+            <a
+              href={item.href}
+              aria-label={item.ariaLabel}
+              class:list={["topbar-link", { "topbar-link--hide-mobile": item.hideOnMobile }]}
+            >
+              <span class="topbar-contact-icon">
+                <Icon size={11} aria-hidden="true" />
+              </span>
+              <span>{item.value}</span>
+            </a>
+          );
+        })}
+      </div>
+
+      <!-- Social icons -->
+      <div class="topbar-social">
+        {socialLinks.map((s) => (
+          <a href={s.href} aria-label={s.label} class="topbar-social-icon">
+            <svg
+              width="13"
+              height="13"
+              viewBox="0 0 24 24"
+              fill={s.fill ? "currentColor" : "none"}
+              stroke={s.fill ? "none" : "currentColor"}
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              aria-hidden="true"
+              set:html={s.icon}
+            />
+          </a>
+        ))}
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<style>
+  .topbar {
+    background-color: var(--color-white);
+    width: 100%;
+    position: relative;
+  }
+
+  .topbar-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 36px;
+    gap: 1rem;
+  }
+
+  /* Contact links */
+  .topbar-contact {
+    display: flex;
+    align-items: center;
+    gap: 1.25rem;
+    flex-shrink: 0;
+    min-width: 0;
+  }
+
+  .topbar-link {
+    display: flex;
+    align-items: center;
+    gap: 0.375rem;
+    font-family: 'Nunito Variable', sans-serif;
+    font-size: 0.75rem;
+    font-weight: 500;
+    color: #1A2744;
+    text-decoration: none;
+    white-space: nowrap;
+    transition: opacity 0.15s ease;
+  }
+
+  .topbar-link:hover {
+    color: #0D1B3E;
+    opacity: 1;
+  }
+
+
+  /* Social icons */
+  .topbar-social {
+    display: flex;
+    align-items: center;
+    gap: 0.625rem;
+    flex-shrink: 0;
+  }
+
+  .topbar-contact-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    background-color: #1A2744;
+    color: #FDEA01;
+    flex-shrink: 0;
+  }
+
+  .topbar-link:hover .topbar-contact-icon {
+    background-color: #0D1B3E;
+  }
+
+  .topbar-social-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 26px;
+    height: 26px;
+    border-radius: 50%;
+    color: #FDEA01;
+    background-color: #1A2744;
+    transition: background-color 0.15s ease, color 0.15s ease;
+    text-decoration: none;
+  }
+
+  .topbar-social-icon:hover {
+    background-color: #0D1B3E;
+    color: #FDEA01;
+  }
+
+  /* Responsive */
+  @media (max-width: 639px) {
+    .topbar-inner {
+      height: 34px;
+    }
+
+    .topbar-link--hide-mobile {
+      display: none;
+    }
+
+    .topbar-link span {
+      max-width: 160px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+  }
+</style>

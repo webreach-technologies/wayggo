@@ -1,0 +1,148 @@
+---
+import { ArrowRight } from "@lucide/astro";
+import CoverageMap from "../react/CoverageMap";
+
+interface Props {
+  badge?: string;
+  heading?: string;
+  subheading?: string;
+  ctaHref?: string;
+  ctaLabel?: string;
+  usCities?: string[];
+  caCities?: string[];
+}
+
+const {
+  badge = "Our Coverage",
+  heading = "We Cover All of\nNorth America",
+  subheading = "From the Pacific Coast to the Atlantic, from the Canadian Rockies to the Florida Keys — our network of 500+ vetted operators ensures your group never waits on the ground, in any city, any season.",
+  ctaHref = "/network",
+  ctaLabel = "Explore Full Network",
+  usCities = ["New York City","Los Angeles","Chicago","Las Vegas","Miami","Orlando","San Francisco","Washington D.C.","Boston","Seattle","Dallas","Denver","Atlanta","Phoenix","Houston"],
+  caCities = ["Toronto","Vancouver","Montreal","Calgary","Ottawa","Quebec City"],
+} = Astro.props;
+
+const headingLines = heading.split("\n");
+
+const stats = [
+  { label: "Operators in Network", value: "500+" },
+  { label: "US States Covered",    value: "50"   },
+  { label: "Canadian Provinces",   value: "10"   },
+];
+---
+
+<section class="py-28 relative overflow-hidden" style="background: #0D1B3E;">
+
+  <!-- Subtle background radial -->
+  <div class="absolute inset-0 pointer-events-none"
+    style="background: radial-gradient(ellipse 70% 55% at 75% 60%, rgba(30,58,110,0.35) 0%, transparent 70%);"></div>
+
+  <div class="container relative">
+
+    <!-- Section header -->
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start mb-16">
+
+      <!-- Left: heading + copy + CTA -->
+      <div class="lg:col-span-5">
+        <span class="section-label-white">{badge}</span>
+        <h2
+          class="text-4xl lg:text-5xl font-black mt-5 mb-5 text-white leading-tight"
+          style=""
+        >
+          {headingLines.map((line, i) => (
+            <>
+              {i === headingLines.length - 1
+                ? <span style="color: #FDEA01;">{line}</span>
+                : <>{line}<br /></>
+              }
+            </>
+          ))}
+        </h2>
+        <p class="font-subheading leading-relaxed mb-8" style="color: rgba(255,255,255,0.52); font-size: 0.95rem;">
+          {subheading}
+        </p>
+        <a href={ctaHref} class="btn-primary">
+          {ctaLabel}
+          <ArrowRight size={16} stroke-width={2.5} />
+        </a>
+      </div>
+
+      <!-- Right: city cards + stats -->
+      <div class="lg:col-span-7 flex flex-col gap-4">
+
+        <!-- City list cards -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+
+          <!-- US hubs -->
+          <div class="rounded-2xl p-5"
+            style="background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.08);">
+            <div class="flex items-center gap-3 mb-4">
+              <h4 class="text-xs font-black uppercase tracking-widest"
+                style="color: #FDEA01; ">
+                United States — 15 Hubs
+              </h4>
+            </div>
+            <div class="grid grid-cols-2 gap-x-3 gap-y-1.5">
+              {usCities.map((city) => (
+                <div class="flex items-center gap-2 text-xs"
+                  style="color: rgba(255,255,255,0.62);">
+                  <span class="w-1.5 h-1.5 rounded-full shrink-0" style="background: #FDEA01;"></span>
+                  {city}
+                </div>
+              ))}
+            </div>
+          </div>
+
+          <!-- Canada hubs + stats -->
+          <div class="rounded-2xl p-5 flex flex-col"
+            style="background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.08);">
+            <div class="flex items-center gap-3 mb-4">
+              <h4 class="text-xs font-black uppercase tracking-widest"
+                style="color: #FDEA01; ">
+                Canada — 6 Hubs
+              </h4>
+            </div>
+            <div class="grid grid-cols-2 gap-x-3 gap-y-1.5 mb-5">
+              {caCities.map((city) => (
+                <div class="flex items-center gap-2 text-xs"
+                  style="color: rgba(255,255,255,0.62);">
+                  <span class="w-1.5 h-1.5 rounded-full shrink-0"
+                    style="background: #FDEA01; opacity: 0.8;"></span>
+                  {city}
+                </div>
+              ))}
+            </div>
+            <!-- Quick stats -->
+            <div class="mt-auto pt-4 space-y-2.5"
+              style="border-top: 1px solid rgba(255,255,255,0.08);">
+              {stats.map((s) => (
+                <div class="flex items-center justify-between gap-2">
+                  <span class="text-xs" style="color: rgba(255,255,255,0.42);">
+                    {s.label}
+                  </span>
+                  <span class="text-sm font-black tabular-nums"
+                    style="color: #FDEA01; ">
+                    {s.value}
+                  </span>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Interactive map -->
+    <div class="rounded-3xl overflow-hidden"
+      style="border: 1px solid rgba(255,208,0,0.14); box-shadow: 0 32px 96px rgba(0,0,0,0.5), 0 0 0 1px rgba(255,255,255,0.04);">
+      <CoverageMap client:only="react" />
+    </div>
+
+    <p class="text-center text-xs mt-4"
+      style="color: rgba(255,255,255,0.25); letter-spacing: 0.02em;">
+      Hover any dot to see city details &nbsp;·&nbsp; 21 hub cities across USA &amp; Canada
+    </p>
+
+  </div>
+</section>

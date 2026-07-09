@@ -1,0 +1,45 @@
+---
+interface StatItem {
+  value: string;
+  label: string;
+}
+
+interface Props {
+  stats?: StatItem[];
+}
+
+const {
+  stats = [
+    { value: "500+", label: "Vetted Operators" },
+    { value: "21",   label: "Hub Cities"        },
+    { value: "200+", label: "Partner Agencies"  },
+    { value: "20+",  label: "Years Experience"  },
+  ],
+} = Astro.props;
+---
+
+<section style="background: #FDEA01;">
+  <div class="container">
+    <p class="text-lg lg:text-base font-bold leading-relaxed mx-auto pt-5"
+      style="color: rgba(26,39,68,0.7);">
+      Wayggo is North America's largest bus rental network, connecting international and domestic tour operators, travel companies, businesses and group travelers with reliable transportation across the United States and Canada. Powered by an extensive affiliate network of vetted bus operators, Wayggo guarantees dependable group transportation solutions for every request matching every journey with the right vehicle, at the right time.
+    </p>
+    <div class="py-5 grid grid-cols-2 lg:grid-cols-4 gap-0 lg:divide-x divide-[rgba(26,39,68,0.15)]">
+      {stats.map((s) => (
+        <div class="text-center px-8 py-2">
+          <div class="text-5xl lg:text-6xl font-black leading-none mb-1"
+            style="color: #1A2744;" data-counter={s.value}>{s.value}</div>
+          <div class="text-xs font-bold uppercase tracking-widest"
+            style="color: rgba(26,39,68,0.55);">{s.label}</div>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>
+
+<!-- TEMP: counter animation disabled, numbers render static. Re-enable later.
+<script>
+  import { initCounters } from '../../utils/counterAnimation.js';
+  initCounters();
+</script>
+-->

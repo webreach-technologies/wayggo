@@ -1,0 +1,153 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import { Image } from "astro:assets";
+import heroImg from "../../assets/tourtype/Wedding & Special Events.png";
+import { Star, User, Clock, Heart, RefreshCw, Bus, Send, Sunrise, LayoutGrid, MapPin } from "@lucide/astro";
+
+const highlights = [
+  {
+    icon: Star,
+    title: "Elegantly Presented",
+    desc: "Immaculate vehicles with optional floral or ribbon decoration",
+  },
+  {
+    icon: User,
+    title: "Formally Dressed Drivers",
+    desc: "Professional attire to match your event's formality",
+  },
+  {
+    icon: Clock,
+    title: "Zero-Latency Timing",
+    desc: "Synchronized with your ceremony and reception schedule",
+  },
+  {
+    icon: Heart,
+    title: "Bridal Party Priority",
+    desc: "Dedicated bridal coach with privacy partition available",
+  },
+];
+
+const services = [
+  {
+    icon: RefreshCw,
+    title: "Guest Shuttle Loops", desc: "Continuous loops between hotel blocks and venue throughout the day and evening.", vehicle: "Minibus or Shuttle",
+  },
+  {
+    icon: Bus,
+    title: "Bridal Party Coach", desc: "Dedicated luxury coach for the wedding party — from getting ready to the ceremony.", vehicle: "Luxury Van",
+  },
+  {
+    icon: Send,
+    title: "Airport Reception Transfers", desc: "Coordinated arrivals for out-of-town guests across multiple flight times.", vehicle: "Vans & Minibuses",
+  },
+  {
+    icon: Sunrise,
+    title: "Farewell Transfers", desc: "Post-wedding morning transfers from hotel to airport or train station.", vehicle: "Vans & Buses",
+  },
+  {
+    icon: LayoutGrid,
+    title: "Multi-Venue Events", desc: "Cocktail hour, dinner, and after-party at different venues — we handle all legs.", vehicle: "Fleet Mix",
+  },
+  {
+    icon: MapPin,
+    title: "Destination Wedding Packages", desc: "Niagara Falls, Vegas, NYC, Miami — full transport package for destination weddings.", vehicle: "Custom Fleet",
+  },
+];
+
+const cities = ["Las Vegas, NV", "Niagara Falls, NY/ON", "New York City, NY", "Miami Beach, FL", "Napa Valley, CA", "Chicago, IL", "Sedona, AZ", "Savannah, GA", "Whistler, BC", "Montreal, QC", "Victoria, BC", "Banff, AB"];
+---
+
+<BaseLayout
+  title="Wedding & Special Event Transportation — WAYGGO"
+  description="Luxury coach and shuttle services for destination weddings, wedding parties, and special events across North America. Elegant, punctual, professionally managed."
+>
+
+  <section class="relative py-24 overflow-hidden" style="background-color: #1A2744;">
+    <Image
+      src={heroImg}
+      alt=""
+      width={1600}
+      height={600}
+      quality=25
+      loading="eager"
+      class="absolute inset-0 w-full h-full object-cover opacity-25"
+    />
+    <div class="absolute inset-0 diagonal-lines pointer-events-none" />
+    <div class="container relative z-10">
+      <div class="max-w-3xl">
+        <span class="section-label-white mb-5 inline-flex">Weddings & Events</span>
+        <h1 class="text-5xl lg:text-6xl font-black text-white mb-5">
+          Wedding &<br />
+          <span style="color: #FDEA01;">Special Events</span>
+        </h1>
+        <p class="text-white/65 text-lg leading-relaxed max-w-2xl mb-8">
+          Your clients are traveling from across the world for one perfect day. WAYGGO ensures every guest moves elegantly from ceremony to reception, hotel to venue, arrival to farewell — without a single logistical worry.
+        </p>
+        <a href="/contact" class="btn-primary">Request Wedding Transport</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-20" style="background-color: #FDEA01;">
+    <div class="container">
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+        {highlights.map((item) => {
+          const Icon = item.icon;
+          return (
+            <div>
+              <div class="mb-2 flex justify-center" style="color: #1A2744;"><Icon size={28} stroke-width={1.5} /></div>
+              <h3 class="font-black text-sm mb-1" style="color: #1A2744;">{item.title}</h3>
+              <p class="text-xs" style="color: rgba(26,39,68,0.65);">{item.desc}</p>
+            </div>
+          );
+        })}
+      </div>
+    </div>
+  </section>
+
+  <section class="py-20" style="background-color: white;">
+    <div class="container">
+      <div class="text-center mb-12">
+        <span class="section-label">Services</span>
+        <h2 class="text-4xl font-black mt-4" style="color: #1A2744;">Complete Wedding Transport Services</h2>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        {services.map((s) => {
+          const Icon = s.icon;
+          return (
+            <div class="bg-white border-2 border-gray-100 rounded-2xl p-6 card-hover hover:border-yellow transition-all">
+              <div class="mb-3" style="color: #1A2744;"><Icon size={28} stroke-width={1.5} /></div>
+              <h3 class="font-black text-base mb-2" style="color: #1A2744;">{s.title}</h3>
+              <p class="text-sm text-gray-500 leading-relaxed mb-3">{s.desc}</p>
+              <span class="badge badge-navy">{s.vehicle}</span>
+            </div>
+          );
+        })}
+      </div>
+    </div>
+  </section>
+
+  <section class="py-20" style="background-color: #F9F7F2;">
+    <div class="container">
+      <div class="text-center mb-10">
+        <h2 class="text-3xl font-black" style="color: #1A2744;">Top Destination Wedding Cities</h2>
+      </div>
+      <div class="flex flex-wrap gap-3 justify-center">
+        {cities.map((city) => (
+          <span class="px-5 py-2.5 rounded-full border-2 font-semibold text-sm transition-all hover:border-yellow" style="border-color: #E5E7EB; color: #1A2744;">{city}</span>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <section class="py-16 diagonal-lines" style="background-color: #1A2744;">
+    <div class="container text-center">
+      <h2 class="text-3xl font-black text-white mb-4">Let's Make It Perfect</h2>
+      <p class="text-white/60 max-w-lg mx-auto mb-8">
+        Share the wedding date, guest count, and venues. We'll design an elegant transport plan that blends seamlessly into your event.
+      </p>
+      <a href="/contact" class="btn-primary">Request Wedding Transport Quote</a>
+    </div>
+  </section>
+
+</BaseLayout>

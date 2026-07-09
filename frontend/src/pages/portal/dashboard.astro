@@ -1,0 +1,587 @@
+﻿---
+import { Image } from "astro:assets";
+import { Truck, Calendar, Check, Clock, Plus, FileText, MapPin, Mail, Phone } from "@lucide/astro";
+import PortalLayout from "../../layouts/PortalLayout.astro";
+import Logo from "../../assets/images/wayggo-logo.png";
+
+const stats = [
+  {
+    label: "Active Bookings", value: "3", trend: "+1 this week",
+    accentColor: "#1A2744", bgColor: "rgba(26,39,68,0.07)",
+    icon: Truck,
+  },
+  {
+    label: "Upcoming Trips", value: "7", trend: "Next: Jun 12",
+    accentColor: "#1D4ED8", bgColor: "rgba(29,78,216,0.08)",
+    icon: Calendar,
+  },
+  {
+    label: "Trips This Year", value: "28", trend: "+12 vs last year",
+    accentColor: "#065F46", bgColor: "rgba(6,95,70,0.08)",
+    icon: Check, strokeWidth: 2.5,
+  },
+  {
+    label: "Pending Quotes", value: "2", trend: "Response <4 hrs",
+    accentColor: "#92400E", bgColor: "rgba(146,64,14,0.08)",
+    icon: Clock,
+  },
+];
+
+const recentTrips = [
+  { ref: "WG-4821", name: "Tokyo Horizons Group — NYC & DC",        date: "May 28 – Jun 4, 2025",  pax: 42, vehicle: "Motorcoach",   status: "completed" },
+  { ref: "WG-4856", name: "Albion Travel — Chicago Sightseeing",    date: "Jun 5 – Jun 8, 2025",   pax: 24, vehicle: "Full-Size Bus", status: "completed" },
+  { ref: "WG-4890", name: "Fuji Global — Las Vegas & Grand Canyon", date: "Jun 10 – Jun 15, 2025", pax: 18, vehicle: "Minibus",       status: "active"    },
+  { ref: "WG-4912", name: "Sunrise Tours — East Coast Grand Tour",  date: "Jun 18 – Jun 27, 2025", pax: 48, vehicle: "Motorcoach",   status: "upcoming"  },
+  { ref: "WG-4937", name: "Horizon Voyages — Canada Panorama",      date: "Jul 1 – Jul 10, 2025",  pax: 36, vehicle: "Motorcoach",   status: "upcoming"  },
+];
+
+const quotes = [
+  { ref: "QT-291", name: "Pacific Northwest Discovery — 31 pax",        submitted: "May 30, 2025" },
+  { ref: "QT-298", name: "Nashville & New Orleans Heritage — 22 pax",   submitted: "Jun 2, 2025"  },
+];
+
+const quickActions = [
+  {
+    label: "New Quote Request", href: "/contact", primary: true,
+    icon: Plus,
+  },
+  {
+    label: "View Invoices", href: "#", primary: false,
+    icon: FileText,
+  },
+  {
+    label: "Track Active Trip", href: "#", primary: false,
+    icon: MapPin,
+  },
+  {
+    label: "Contact My Manager", href: "mailto:sarah.chen@wayggo.com", primary: false,
+    icon: Phone,
+  },
+];
+---
+
+<PortalLayout
+  title="Partner Dashboard — WAYGGO"
+  description="WAYGGO Partner Dashboard — manage your bookings, track trips, and submit quote requests."
+>
+
+<div class="dash-root">
+
+  <!-- ── Top nav ── -->
+  <header class="dash-header">
+    <div class="dash-header-inner">
+      <div class="dash-header-left">
+        <a href="/" aria-label="WAYGGO Home" class="dash-logo-link">
+          <Image src={Logo} alt="WAYGGO" class="dash-logo" loading="eager" draggable="false" />
+        </a>
+        <span class="dash-header-sep" aria-hidden="true"></span>
+        <span class="dash-header-label">Partner Portal</span>
+      </div>
+
+      <div class="dash-header-right">
+        <a href="/contact" class="btn-primary dash-new-quote-btn">
+          <Plus size={12} stroke-width={3} aria-hidden="true" />
+          New Quote
+        </a>
+        <div class="dash-user">
+          <div class="dash-avatar" aria-hidden="true">H</div>
+          <span class="dash-username">Horizon Voyages</span>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- ── Page body ── -->
+  <div class="dash-body">
+
+    <!-- Welcome -->
+    <div class="dash-welcome">
+      <h1 class="dash-welcome-heading">Welcome back, Horizon Voyages</h1>
+      <p class="dash-welcome-sub">
+        Thursday, June 5, 2025 &middot; Account manager:
+        <strong>Sarah Chen</strong> &middot; sarah.chen@wayggo.com
+      </p>
+    </div>
+
+    <!-- Stats row -->
+    <div class="dash-stats">
+      {stats.map((s) => {
+        const Icon = s.icon;
+        return (
+          <div class="stat-card">
+            <div class="stat-card-top">
+              <div class="stat-icon" style={`background:${s.bgColor}; color:${s.accentColor};`}>
+                <Icon size={20} stroke-width={s.strokeWidth ?? 2} />
+              </div>
+              <span class="stat-trend">{s.trend}</span>
+            </div>
+            <div class="stat-value" style={`color:${s.accentColor};`}>{s.value}</div>
+            <div class="stat-label">{s.label}</div>
+          </div>
+        );
+      })}
+    </div>
+
+    <!-- Main grid -->
+    <div class="dash-grid">
+
+      <!-- Trips table -->
+      <div class="dash-card dash-trips-col">
+        <div class="dash-card-header">
+          <h2 class="dash-card-title">Recent Trips</h2>
+          <button class="dash-card-action">View all &rarr;</button>
+        </div>
+        <div class="dash-table-wrap">
+          <table class="table-clean w-full">
+            <thead>
+              <tr>
+                <th>Trip</th>
+                <th>Date</th>
+                <th>Pax</th>
+                <th>Status</th>
+              </tr>
+            </thead>
+            <tbody>
+              {recentTrips.map((trip) => (
+                <tr>
+                  <td>
+                    <p class="trip-name">{trip.name}</p>
+                    <p class="trip-meta">{trip.ref} &middot; {trip.vehicle}</p>
+                  </td>
+                  <td class="trip-date">{trip.date}</td>
+                  <td class="trip-pax">{trip.pax}</td>
+                  <td>
+                    {trip.status === "active" && (
+                      <span class="badge badge-blue">
+                        <span class="badge-dot badge-dot-blue"></span>Active
+                      </span>
+                    )}
+                    {trip.status === "upcoming" && (
+                      <span class="badge badge-orange">Upcoming</span>
+                    )}
+                    {trip.status === "completed" && (
+                      <span class="badge badge-green">
+                        <Check size={9} stroke-width={3} aria-hidden="true" />
+                        Done
+                      </span>
+                    )}
+                  </td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <!-- Right column -->
+      <div class="dash-sidebar">
+
+        <!-- Quick Actions -->
+        <div class="dash-card">
+          <div class="dash-card-header">
+            <h2 class="dash-card-title">Quick Actions</h2>
+          </div>
+          <div class="dash-actions">
+            {quickActions.map((a) => {
+              const Icon = a.icon;
+              return (
+                <a
+                  href={a.href}
+                  class={`dash-action ${a.primary ? "dash-action--primary" : "dash-action--secondary"}`}
+                >
+                  <span class="dash-action-icon"><Icon size={14} stroke-width={a.primary ? 2.5 : 2} /></span>
+                  {a.label}
+                </a>
+              );
+            })}
+          </div>
+        </div>
+
+        <!-- Pending Quotes -->
+        <div class="dash-card">
+          <div class="dash-card-header">
+            <h2 class="dash-card-title">Pending Quotes</h2>
+          </div>
+          <div class="quotes-list">
+            {quotes.map((q) => (
+              <div class="quote-item">
+                <div class="quote-item-top">
+                  <span class="quote-ref">{q.ref}</span>
+                  <span class="badge badge-orange" style="font-size:0.6rem;">In Review</span>
+                </div>
+                <p class="quote-name">{q.name}</p>
+                <p class="quote-date">Submitted {q.submitted}</p>
+              </div>
+            ))}
+            <p class="quotes-note">Quotes typically reviewed within 4 hours</p>
+          </div>
+        </div>
+
+        <!-- Account Manager -->
+        <div class="manager-card">
+          <p class="manager-eyebrow">Your Account Manager</p>
+          <div class="manager-profile">
+            <div class="manager-avatar">SC</div>
+            <div>
+              <p class="manager-name">Sarah Chen</p>
+              <p class="manager-title">Senior Partner Success Manager</p>
+            </div>
+          </div>
+          <div class="manager-contacts">
+            <a href="mailto:sarah.chen@wayggo.com" class="manager-contact-link">
+              <Mail size={13} aria-hidden="true" />
+              sarah.chen@wayggo.com
+            </a>
+            <a href="tel:+18005559248" class="manager-contact-link">
+              <Phone size={13} aria-hidden="true" />
+              Direct line: ext. 241
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+</PortalLayout>
+
+<style>
+/* ── Root ── */
+.dash-root {
+  min-height: 100dvh;
+  background-color: #F9F7F2;
+  display: flex;
+  flex-direction: column;
+}
+
+/* ── Header ── */
+.dash-header {
+  background-color: #1A2744;
+  border-bottom: 1px solid rgba(255,255,255,0.07);
+  flex-shrink: 0;
+  position: sticky;
+  top: 0;
+  z-index: 50;
+}
+
+.dash-header-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  height: 64px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.dash-header-left  { display: flex; align-items: center; gap: 1rem; }
+.dash-header-right { display: flex; align-items: center; gap: 1rem; }
+
+.dash-logo-link { display: inline-flex; }
+.dash-logo { height: 2rem; width: auto; display: block; }
+
+.dash-header-sep {
+  width: 1px;
+  height: 20px;
+  background: rgba(255,255,255,0.2);
+  flex-shrink: 0;
+}
+
+.dash-header-label {
+ 
+  font-size: 0.8125rem;
+  color: rgba(255,255,255,0.55);
+}
+
+.dash-new-quote-btn {
+  padding: 0.5rem 1.125rem !important;
+  font-size: 0.6875rem !important;
+  gap: 0.375rem;
+}
+
+.dash-user { display: flex; align-items: center; gap: 0.625rem; }
+
+.dash-avatar {
+  width: 32px; height: 32px;
+  border-radius: 50%;
+  background-color: #FDEA01;
+  color: #1A2744;
+ 
+  font-weight: 900;
+  font-size: 0.8125rem;
+  display: flex; align-items: center; justify-content: center;
+  flex-shrink: 0;
+}
+
+.dash-username {
+ 
+  font-size: 0.875rem;
+  color: rgba(255,255,255,0.75);
+  white-space: nowrap;
+}
+@media (max-width: 639px) { .dash-username { display: none; } }
+
+/* ── Page body ── */
+.dash-body {
+  flex: 1;
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 2.25rem 2rem 3.5rem;
+  box-sizing: border-box;
+}
+@media (max-width: 639px) { .dash-body { padding: 1.25rem 1rem 2rem; } }
+
+/* ── Welcome ── */
+.dash-welcome { margin-bottom: 1.75rem; }
+
+.dash-welcome-heading {
+ 
+  font-size: 1.5rem;
+  font-weight: 900;
+  color: #1A2744;
+  margin: 0 0 0.3rem;
+}
+
+.dash-welcome-sub {
+ 
+  font-size: 0.8125rem;
+  color: #6B7280;
+  margin: 0;
+}
+.dash-welcome-sub strong { color: #374151; font-weight: 600; }
+
+/* ── Stats ── */
+.dash-stats {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  margin-bottom: 1.75rem;
+}
+@media (min-width: 1024px) { .dash-stats { grid-template-columns: repeat(4, 1fr); } }
+
+.stat-card {
+  background: #fff;
+  border-radius: 1rem;
+  padding: 1.25rem;
+  border: 1px solid #F0F0EE;
+}
+
+.stat-card-top {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-bottom: 0.875rem;
+  gap: 0.5rem;
+}
+
+.stat-icon {
+  width: 36px; height: 36px;
+  border-radius: 9px;
+  display: flex; align-items: center; justify-content: center;
+  flex-shrink: 0;
+}
+
+.stat-trend {
+ 
+  font-size: 0.6875rem;
+  color: #9CA3AF;
+  text-align: right;
+  line-height: 1.3;
+  padding-top: 0.125rem;
+}
+
+.stat-value {
+ 
+  font-size: 2rem;
+  font-weight: 900;
+  line-height: 1;
+  margin-bottom: 0.3rem;
+}
+
+.stat-label {
+ 
+  font-size: 0.6875rem;
+  font-weight: 700;
+  color: #6B7280;
+  text-transform: uppercase;
+  letter-spacing: 0.07em;
+}
+
+/* ── Main grid ── */
+.dash-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.25rem;
+  align-items: start;
+}
+@media (min-width: 1024px) { .dash-grid { grid-template-columns: 1fr 340px; } }
+
+.dash-trips-col { /* spans naturally */ }
+.dash-sidebar { display: flex; flex-direction: column; gap: 1.25rem; }
+
+/* ── Generic card ── */
+.dash-card {
+  background: #fff;
+  border-radius: 1rem;
+  border: 1px solid #F0F0EE;
+  overflow: hidden;
+}
+
+.dash-card-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 1.25rem;
+  border-bottom: 1px solid #F3F4F6;
+}
+
+.dash-card-title {
+ 
+  font-size: 0.75rem;
+  font-weight: 800;
+  color: #1A2744;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  margin: 0;
+}
+
+.dash-card-action {
+  background: none;
+  border: none;
+  padding: 0;
+ 
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: #9CA3AF;
+  cursor: pointer;
+  transition: color 0.15s;
+}
+.dash-card-action:hover { color: #374151; }
+
+/* ── Table ── */
+.dash-table-wrap { overflow-x: auto; }
+
+.trip-name  { font-size: 0.8125rem; font-weight: 600; color: #1A2744; margin: 0 0 0.2rem; }
+.trip-meta  { font-size: 0.6875rem; color: #9CA3AF; margin: 0; }
+.trip-date  { font-size: 0.75rem; color: #374151; white-space: nowrap; }
+.trip-pax   { font-size: 0.75rem; font-weight: 600; color: #374151; }
+
+.badge-dot {
+  display: inline-block;
+  width: 6px; height: 6px;
+  border-radius: 50%;
+  margin-right: 5px;
+  animation: pulse 2s ease-in-out infinite;
+}
+.badge-dot-blue { background: #3B82F6; }
+
+@keyframes pulse {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50%       { opacity: 0.6; transform: scale(0.85); }
+}
+
+/* ── Quick Actions ── */
+.dash-actions { padding: 0.75rem; display: flex; flex-direction: column; gap: 0.375rem; }
+
+.dash-action {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.75rem 1rem;
+  border-radius: 0.625rem;
+  font-size: 0.875rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.15s ease;
+}
+
+.dash-action--primary {
+  background-color: #FDEA01;
+  color: #1A2744;
+ 
+}
+.dash-action--primary:hover { filter: brightness(0.95); transform: translateY(-1px); }
+
+.dash-action--secondary {
+  color: #374151;
+ 
+}
+.dash-action--secondary:hover { background-color: #F9F7F2; }
+
+.dash-action-icon { display: flex; align-items: center; flex-shrink: 0; }
+
+/* ── Quotes ── */
+.quotes-list { padding: 0.75rem; display: flex; flex-direction: column; gap: 0.625rem; }
+
+.quote-item {
+  padding: 0.75rem;
+  border-radius: 0.625rem;
+  border: 1px solid #F0F0EE;
+}
+
+.quote-item-top { display: flex; align-items: center; justify-content: space-between; margin-bottom: 0.3rem; }
+
+.quote-ref  { font-size: 0.75rem; font-weight: 700; color: #1A2744; }
+.quote-name { font-size: 0.75rem; color: #4B5563; margin: 0 0 0.2rem; }
+.quote-date { font-size: 0.6875rem; color: #9CA3AF; margin: 0; }
+
+.quotes-note {
+ 
+  font-size: 0.6875rem;
+  color: #9CA3AF;
+  text-align: center;
+  padding-top: 0.25rem;
+  margin: 0;
+}
+
+/* ── Manager card ── */
+.manager-card {
+  background-color: #1A2744;
+  border-radius: 1rem;
+  padding: 1.25rem;
+}
+
+.manager-eyebrow {
+ 
+  font-size: 0.6875rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: rgba(253,234,1,0.65);
+  margin: 0 0 0.875rem;
+}
+
+.manager-profile { display: flex; align-items: center; gap: 0.75rem; margin-bottom: 1rem; }
+
+.manager-avatar {
+  width: 40px; height: 40px;
+  border-radius: 50%;
+  background-color: #FDEA01;
+  color: #1A2744;
+ 
+  font-weight: 900;
+  font-size: 0.875rem;
+  display: flex; align-items: center; justify-content: center;
+  flex-shrink: 0;
+}
+
+.manager-name  { font-size: 0.875rem; font-weight: 900; color: #fff; margin: 0 0 0.15rem; }
+.manager-title { font-size: 0.6875rem; color: rgba(255,255,255,0.45); margin: 0; }
+
+.manager-contacts { display: flex; flex-direction: column; gap: 0.5rem; }
+
+.manager-contact-link {
+  display: flex;
+  align-items: center;
+  gap: 0.625rem;
+ 
+  font-size: 0.75rem;
+  color: rgba(255,255,255,0.55);
+  text-decoration: none;
+  transition: color 0.15s;
+}
+.manager-contact-link:hover { color: #FDEA01; }
+</style>
