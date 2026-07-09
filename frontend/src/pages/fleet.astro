@@ -197,13 +197,13 @@ const vehicles = [
     document.addEventListener('astro:page-load', initOnPageNav);
 
     function initOnPageNav() {
-      window.fleetShowAll = fleetShowAll;
-      window.fleetShow = fleetShow;
+      (window as any).fleetShowAll = fleetShowAll;
+      (window as any).fleetShow = fleetShow;
     }
 
     const vehicleIds = ['luxury-van', 'minibus', 'full-size-bus', 'motorcoach', 'shuttle'];
 
-    function fleetSetActive(activeId) {
+    function fleetSetActive(activeId: string) {
       // Reset all vehicle buttons
       vehicleIds.forEach((id) => {
         const btn = document.getElementById('fleet-btn-' + id);
@@ -214,6 +214,7 @@ const vehicles = [
       });
       // Reset "All" button
       const allBtn = document.getElementById('fleet-btn-all');
+      if (!allBtn) return;
       allBtn.style.backgroundColor = 'transparent';
       allBtn.style.color = '#1A2744';
       allBtn.style.borderColor = '#E5E7EB';
@@ -235,7 +236,7 @@ const vehicles = [
       fleetSetActive('all');
     }
 
-    function fleetShow(id) {
+    function fleetShow(id: string) {
       vehicleIds.forEach((vid) => {
         const section = document.getElementById(vid);
         if (section) section.style.display = vid === id ? '' : 'none';
