@@ -1,5 +1,6 @@
 ---
 import BaseLayout from "../../layouts/BaseLayout.astro";
+import PageHero from "../../components/sections/PageHero.astro";
 import PackageBookingForm from "../../components/react/PackageBookingForm";
 import { Zap } from "@lucide/astro";
 ---
@@ -11,20 +12,11 @@ import { Zap } from "@lucide/astro";
 >
 
   <!-- Hero -->
-  <section class="py-24 diagonal-lines" style="background-color: #1A2744;">
-    <div class="container">
-      <div class="max-w-3xl">
-        <span class="section-label-white mb-5 inline-flex">Get a Proposal</span>
-        <h1 class="text-5xl lg:text-6xl font-black text-white mb-5">
-          Request Your<br />
-          <span style="color: #FDEA01;">Tour Package</span>
-        </h1>
-        <p class="text-white/65 text-lg leading-relaxed max-w-2xl">
-          Confirm dates and group size below — our operations team replies within <strong class="text-white">24 hours</strong> with a detailed proposal.
-        </p>
-      </div>
-    </div>
-  </section>
+  <PageHero
+    badge="Get a Proposal"
+    heading={'Request Your<br /><span style="color: #FDEA01;">Tour Package</span>'}
+    subheading={'Confirm dates and group size below — our operations team replies within <strong class="text-white">24 hours</strong> with a detailed proposal.'}
+  />
 
   <!-- Form + Info -->
   <section class="py-16 lg:py-20" style="background-color: #F9F7F2;">

@@ -1,5 +1,6 @@
 ﻿---
 import BaseLayout from "../../layouts/BaseLayout.astro";
+import PageHero from "../../components/sections/PageHero.astro";
 import { ArrowRight } from "@lucide/astro";
 
 const categories = [
@@ -72,20 +73,11 @@ const categories = [
 >
 
   <!-- Hero -->
-  <section class="py-24 diagonal-lines" style="background-color: #1A2744;">
-    <div class="container">
-      <div class="max-w-3xl">
-        <span class="section-label-white mb-5 inline-flex">Our Specializations</span>
-        <h1 class="text-5xl lg:text-6xl font-black text-white mb-5" style="">
-          Every Tour Type.<br />
-          <span style="color: #FDEA01;">One Trusted Partner.</span>
-        </h1>
-        <p class="text-white/65 text-lg leading-relaxed max-w-2xl" style="">
-          Whether you're moving a student group through D.C. museums or chauffeuring a Fortune 500 delegation across Las Vegas, WAYGGO has the vehicle, the driver, and the local knowledge to make it seamless.
-        </p>
-      </div>
-    </div>
-  </section>
+  <PageHero
+    badge="Our Specializations"
+    heading={'Every Tour Type.<br /><span style="color: #FDEA01;">One Trusted Partner.</span>'}
+    subheading="Whether you're moving a student group through D.C. museums or chauffeuring a Fortune 500 delegation across Las Vegas, WAYGGO has the vehicle, the driver, and the local knowledge to make it seamless."
+  />
 
   <!-- Categories grid -->
   <section class="py-20" style="background-color: #F9F7F2;">

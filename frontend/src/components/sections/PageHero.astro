@@ -15,7 +15,7 @@ const {
   align = "left",
 } = Astro.props;
 
-const paddingMap = { sm: "py-20", md: "py-28", lg: "py-36" };
+const paddingMap = { sm: "py-16", md: "py-24", lg: "py-32" };
 const headingMap = { sm: "text-4xl lg:text-5xl", md: "text-5xl lg:text-6xl", lg: "text-5xl lg:text-7xl" };
 const alignClass = align === "center" ? "text-center mx-auto" : "";
 const maxWidthClass = align === "center" ? "max-w-3xl mx-auto" : "max-w-3xl";
@@ -28,7 +28,7 @@ const maxWidthClass = align === "center" ? "max-w-3xl mx-auto" : "max-w-3xl";
         <span class={`section-label-white mb-5 inline-flex ${alignClass}`}>{badge}</span>
       )}
       <h1
-        class={`${headingMap[size]} font-black text-white mb-6 ${alignClass}`}
+        class={`${headingMap[size]} font-black text-white mb-5 ${alignClass}`}
         set:html={heading}
       />
       {subheading && (

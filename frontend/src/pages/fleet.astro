@@ -1,5 +1,6 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
+import PageHero from "../components/sections/PageHero.astro";
 import { Image } from "astro:assets";
 import luxuryvanImg from "../assets/fleet/luxuryvan.png";
 import minibusImg from "../assets/fleet/minibus.png";
@@ -155,23 +156,11 @@ const vehicles = [
 >
 
   <!-- Hero -->
-  <section class="py-24 diagonal-lines" style="background-color: #1A2744;">
-    <div class="container">
-      <div class="max-w-3xl">
-        <span class="section-label-white mb-5 inline-flex">Fleet & Capabilities</span>
-        <h1
-          class="text-5xl lg:text-6xl font-black text-white mb-5"
-          style=""
-        >
-          The Right Vehicle<br />
-          <span style="color: #FDEA01;">For Every Group</span>
-        </h1>
-        <p class="text-white/65 text-lg leading-relaxed max-w-2xl" style="">
-          6 passengers or 56. Airport transfer or 12-day cross-country tour. WAYGGO sources the exact vehicle your itinerary demands — all meticulously maintained, fully insured, and operated by vetted professionals.
-        </p>
-      </div>
-    </div>
-  </section>
+  <PageHero
+    badge="Fleet & Capabilities"
+    heading={'The Right Vehicle<br /><span style="color: #FDEA01;">For Every Group</span>'}
+    subheading="6 passengers or 56. Airport transfer or 12-day cross-country tour. WAYGGO sources the exact vehicle your itinerary demands — all meticulously maintained, fully insured, and operated by vetted professionals."
+  />
 
   <!-- Filter bar -->
   <div style="background-color: #F9F7F2; border-bottom: 1px solid #E5E7EB; position: sticky; top: 72px; z-index: 40;">
