@@ -215,7 +215,13 @@ const vetDetails = [
 
   <script>
     import { initCounters } from '../utils/counterAnimation.js';
-    initCounters();
+
+    // With the site's <ClientRouter /> (View Transitions) enabled, script tags only
+    // execute once per browser session — revisiting this page later in the same
+    // session would otherwise leave the counters with no IntersectionObserver
+    // wired up. Re-run setup on every navigation (including the first) via
+    // astro:page-load.
+    document.addEventListener('astro:page-load', () => initCounters());
   </script>
 
 </BaseLayout>

@@ -56,8 +56,11 @@ const canonicalURL = canonical ?? new URL(Astro.url.pathname, Astro.site ?? "htt
     <Footer />
 
     <!-- Scroll to top button -->
+    <!-- transition:persist keeps this the same DOM node across ClientRouter navigations,
+         so the listeners attached below stay valid instead of targeting a detached node. -->
     <button
       id="scroll-top-btn"
+      transition:persist
       aria-label="Scroll to top"
       class="fixed bottom-8 right-8 z-50 w-12 h-12 rounded-full bg-yellow shadow-lg flex items-center justify-center opacity-0 pointer-events-none transition-all duration-300 hover:bg-yellow-dark focus:outline-none focus:ring-2 focus:ring-yellow focus:ring-offset-2"
     >

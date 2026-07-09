@@ -335,6 +335,18 @@ const vehicles = [
   </section>
 
   <script>
+    // With the site's <ClientRouter /> (View Transitions) enabled, script tags only
+    // execute once per browser session. window.fleetShowAll/fleetShow are safe to
+    // define once (they do fresh DOM lookups on every call), but wrapping the whole
+    // setup in astro:page-load keeps this file consistent with the same pattern used
+    // for the filter bar in packages.astro.
+    document.addEventListener('astro:page-load', initOnPageNav);
+
+    function initOnPageNav() {
+      window.fleetShowAll = fleetShowAll;
+      window.fleetShow = fleetShow;
+    }
+
     const vehicleIds = ['luxury-van', 'minibus', 'full-size-bus', 'motorcoach', 'shuttle'];
 
     function fleetSetActive(activeId) {
@@ -376,9 +388,6 @@ const vehicles = [
       });
       fleetSetActive(id);
     }
-
-    window.fleetShowAll = fleetShowAll;
-    window.fleetShow = fleetShow;
   </script>
 
 </BaseLayout>
