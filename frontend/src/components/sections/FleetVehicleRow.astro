@@ -1,0 +1,181 @@
+---
+import { Image } from "astro:assets";
+import type { ImageMetadata } from "astro";
+import {
+  Van,
+  Bus,
+  BusFront,
+  Wifi,
+  Snowflake,
+  Armchair,
+  Volume2,
+  Luggage,
+  Grid2x2,
+  Megaphone,
+  Lightbulb,
+  Monitor,
+  Droplet,
+  Zap,
+  Mic,
+  Plane,
+  Building,
+  MapPin,
+} from "@lucide/astro";
+
+const vehicleIconComponents: Record<string, typeof Van> = {
+  van: Van,
+  bus: Bus,
+  fullbus: BusFront,
+  motorcoach: BusFront,
+};
+
+const featureIconComponents: Record<string, typeof Van> = {
+  wifi: Wifi,
+  snowflake: Snowflake,
+  armchair: Armchair,
+  volume: Volume2,
+  suitcase: Luggage,
+  windowgrid: Grid2x2,
+  megaphone: Megaphone,
+  lightbulb: Lightbulb,
+  monitor: Monitor,
+  droplet: Droplet,
+  zap: Zap,
+  mic: Mic,
+  plane: Plane,
+  building: Building,
+  mappin: MapPin,
+};
+
+interface Feature {
+  iconKey: string;
+  label: string;
+}
+
+interface Props {
+  id: string;
+  index: number;
+  image: ImageMetadata | null;
+  color: string;
+  iconKey: string;
+  name: string;
+  tagline: string;
+  capacity: { passengers: string; luggage: string };
+  features: Feature[];
+  idealFor: string[];
+}
+
+const { id, index, image, color, iconKey, name, tagline, capacity, features, idealFor } = Astro.props;
+
+const isReversed = index % 2 === 1;
+const VehicleIcon = vehicleIconComponents[iconKey];
+---
+
+<section
+  id={id}
+  class="py-20"
+  style={`background-color: ${index % 2 === 0 ? "white" : "#F9F7F2"};`}
+>
+  <div class="container">
+    <div class={`grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center ${isReversed ? "lg:grid-flow-col-dense" : ""}`}>
+
+      <!-- Vehicle visual -->
+      <div class={isReversed ? "lg:col-start-2" : ""}>
+        <div class="rounded-3xl overflow-hidden" style="box-shadow: 0 8px 40px rgba(26,39,68,0.13);">
+          {image ? (
+            <div
+              class="aspect-4/3 relative overflow-hidden"
+              style={`background: linear-gradient(145deg, ${color} 0%, ${color}cc 60%, #0a1020 100%);`}
+            >
+              <div class="absolute inset-0 diagonal-lines opacity-20" />
+              <Image
+                src={image}
+                alt={name}
+                quality=1
+                class="absolute inset-0 w-full h-full object-contain z-10"
+              />
+            </div>
+          ) : (
+            <div
+              class="aspect-4/3 flex flex-col items-center justify-center relative overflow-hidden"
+              style={`background: linear-gradient(145deg, ${color} 0%, ${color}cc 60%, #0a1020 100%);`}
+            >
+              <div class="absolute inset-0 diagonal-lines opacity-20" />
+              <div class="relative z-10 flex flex-col items-center gap-5">
+                <div
+                  class="flex items-center justify-center rounded-2xl"
+                  style="width:120px;height:80px;background:rgba(255,255,255,0.07);border:2px dashed rgba(255,255,255,0.2);"
+                >
+                  <VehicleIcon size={64} color="white" stroke-width={1.5} />
+                </div>
+                <span
+                  class="text-xs font-bold uppercase tracking-widest px-3 py-1 rounded-full"
+                  style="background:rgba(255,208,0,0.15);color:#FDEA01;border:1px solid rgba(255,208,0,0.3);"
+                >
+                  Photo Coming Soon
+                </span>
+              </div>
+            </div>
+          )}
+        </div>
+      </div>
+
+      <!-- Content -->
+      <div class={isReversed ? "lg:col-start-1 lg:row-start-1" : ""}>
+        <span class="section-label mb-4 inline-flex">{tagline}</span>
+        <h2
+          class="text-4xl lg:text-5xl font-black mb-6"
+          style=" color: #1A2744;"
+        >
+          {name}
+        </h2>
+
+        <!-- Capacity -->
+        <div class="flex gap-4 mb-8">
+          <div
+            class="flex-1 rounded-2xl p-4 text-center"
+            style="background-color: #FDEA01;"
+          >
+            <div class="text-2xl font-black" style=" color: #1A2744;">{capacity.passengers}</div>
+            <div class="text-xs font-bold uppercase tracking-widest mt-0.5" style=" color: rgba(26,39,68,0.65);">Passengers</div>
+          </div>
+          <div
+            class="flex-1 rounded-2xl p-4 text-center border-2"
+            style="border-color: #E5E7EB;"
+          >
+            <div class="text-2xl font-black" style=" color: #1A2744;">{capacity.luggage}</div>
+            <div class="text-xs font-bold uppercase tracking-widest mt-0.5" style=" color: #6B7280;">Luggage</div>
+          </div>
+        </div>
+
+        <!-- Features -->
+        <h3 class="text-xs font-bold uppercase tracking-widest mb-3" style=" color: #6B7280;">Onboard Features</h3>
+        <div class="grid grid-cols-2 gap-2.5 mb-7">
+          {features.map((f) => (
+            <div class="flex items-center gap-2.5 text-sm text-gray-600" style="">
+              {(() => { const FeatureIcon = featureIconComponents[f.iconKey]; return <FeatureIcon size={16} class="shrink-0 text-navy" />; })()}
+              {f.label}
+            </div>
+          ))}
+        </div>
+
+        <!-- Ideal for -->
+        <h3 class="text-xs font-bold uppercase tracking-widest mb-3" style=" color: #6B7280;">Ideal For</h3>
+        <div class="flex flex-wrap gap-2 mb-8">
+          {idealFor.map((use) => (
+            <span
+              class="text-xs font-semibold px-3 py-1.5 rounded-full border"
+              style=" border-color: #E5E7EB; color: #1A2744; background: white;"
+            >
+              {use}
+            </span>
+          ))}
+        </div>
+
+        <a href="/contact" class="btn-primary">
+          Request This Vehicle
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
