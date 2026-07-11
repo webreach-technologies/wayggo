@@ -1,0 +1,112 @@
+---
+import { Image } from "astro:assets";
+import { Van, Bus, BusFront } from "@lucide/astro";
+import type { PackageCard } from "../../lib/packages";
+
+interface Props {
+  cards: PackageCard[];
+}
+
+const { cards } = Astro.props;
+
+const vehicleIconComponents: Record<string, typeof Van> = {
+  van: Van,
+  bus: Bus,
+  fullbus: BusFront,
+  motorcoach: BusFront,
+};
+---
+
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+  {cards.map((pkg) => (
+    <div class="package-card bg-white rounded-2xl overflow-hidden card-hover border border-gray-100 flex flex-col">
+      <!-- Card image / header -->
+      <div class="relative h-44 overflow-hidden shrink-0">
+        {pkg.image ? (
+          <Image
+            src={pkg.image}
+            alt={pkg.name}
+            width={480}
+            height={176}
+            class="absolute inset-0 w-full h-full object-cover"
+          />
+        ) : (
+          <div class="absolute inset-0" style={{ background: pkg.gradientStyle }} />
+        )}
+        {pkg.image && <div class="absolute inset-0" style="background: linear-gradient(to top, rgba(0,0,0,0.55) 0%, transparent 60%);" />}
+        <!-- Overlay content -->
+        <div class="relative z-10 h-full p-5 flex flex-col justify-between">
+          <div class="flex justify-between items-start">
+            <span class="badge badge-navy" style="background-color: rgba(255,255,255,0.15); color: white;">{pkg.country} · {pkg.state}</span>
+            <span class="badge badge-yellow">{pkg.days} Days</span>
+          </div>
+          <div>
+            <a href={pkg.detailHref} class="hover:underline">
+              <h3 class="text-base font-black text-white leading-tight">{pkg.name}</h3>
+            </a>
+            <p class="text-white/60 text-xs mt-1">{pkg.cities.join(" · ")}</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card body -->
+      <div class="p-5 flex flex-col flex-1">
+        <!-- Stats -->
+        <div class="flex items-center justify-between mb-4 pb-4 border-b border-gray-100">
+          <div class="text-xs text-gray-400">
+            Group: <strong class="text-gray-700">{pkg.size}</strong>
+          </div>
+          <div class="text-xs text-gray-400">
+            From <strong class="text-[#1A2744] text-sm">{pkg.price}/pax/day</strong>
+          </div>
+        </div>
+
+        <!-- Highlights -->
+        <div class="space-y-1.5 mb-5 flex-1">
+          {pkg.highlights.slice(0, 4).map((h) => (
+            <div class="flex items-center gap-2 text-xs text-gray-500">
+              <span class="w-1.5 h-1.5 rounded-full shrink-0" style="background: #FDEA01;"></span>
+              {h}
+            </div>
+          ))}
+          {pkg.highlights.length > 4 && (
+            <div class="text-xs text-gray-400">
+              + {pkg.highlights.length - 4} more highlights
+            </div>
+          )}
+        </div>
+
+        <!-- Vehicle badge -->
+        <div class="flex items-center gap-2 mb-5 py-2.5 px-3 rounded-xl" style="background-color: #F9F7F2;">
+          {(() => { const VehicleIcon = vehicleIconComponents[pkg.iconKey]; return <VehicleIcon size={16} color="#1A2744" class="shrink-0" />; })()}
+          <span class="text-xs font-semibold text-gray-600">{pkg.vehicle}</span>
+        </div>
+
+        <!-- CTA -->
+        <div class="flex flex-col gap-2">
+          <a
+            href={pkg.detailHref}
+            class="btn-outline-navy w-full justify-center"
+            style="padding: 0.625rem 1.5rem; font-size: 0.75rem;"
+          >
+            View Full Itinerary
+          </a>
+          <a
+            href={`/packages/request?package=${pkg.id}&name=${encodeURIComponent(pkg.name)}`}
+            class="btn-secondary w-full justify-center"
+            style="padding: 0.625rem 1.5rem; font-size: 0.75rem;"
+          >
+            Request This Package
+          </a>
+        </div>
+      </div>
+    </div>
+  ))}
+</div>
+
+{cards.length === 0 && (
+  <div class="text-center py-16">
+    <p class="text-gray-500 text-sm mb-2">No packages published for this location yet.</p>
+    <p class="text-gray-400 text-xs">More state and provincial packages are coming soon — tell us the cities and we'll build a custom itinerary.</p>
+  </div>
+)}

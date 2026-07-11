@@ -1,0 +1,97 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import PageHero from "../sections/PageHero.astro";
+import PackagesFilterBar from "./PackagesFilterBar.astro";
+import PackagesGrid from "./PackagesGrid.astro";
+import PackagesPagination from "./PackagesPagination.astro";
+import { Plus } from "@lucide/astro";
+import {
+  PAGE_SIZE,
+  bucketPageHref,
+  bucketSeo,
+  bucketBreadcrumbs,
+  type Bucket,
+  type PackageCard,
+} from "../../lib/packages";
+
+interface Props {
+  bucket: Bucket;
+  page: number;
+  totalPages: number;
+  pageCards: PackageCard[];
+  totalInBucket: number;
+}
+
+const { bucket, page, totalPages, pageCards, totalInBucket } = Astro.props;
+
+const seo = bucketSeo(bucket, page, totalInBucket);
+const breadcrumbs = bucketBreadcrumbs(bucket);
+// Country/state filter pages (bucket.country set) are real, useful nav
+// targets but not meant to be a separate indexable surface — only the main
+// /packages listing (and its numbered pages) and individual package pages
+// are indexable. `follow` still lets crawlers reach the linked package pages.
+const noindex = !!bucket.country;
+
+const siteOrigin = Astro.site ?? new URL("https://wayggo.com");
+const packagesItemListSchema = {
+  "@context": "https://schema.org",
+  "@type": "ItemList",
+  itemListElement: pageCards.map((pkg, i) => ({
+    "@type": "ListItem",
+    position: (page - 1) * PAGE_SIZE + i + 1,
+    url: new URL(pkg.detailHref, siteOrigin).href,
+    name: pkg.name,
+  })),
+};
+---
+
+<BaseLayout
+  title={seo.title}
+  description={seo.description}
+  breadcrumbs={breadcrumbs}
+  noindex={noindex}
+  prevHref={page > 1 ? bucketPageHref(bucket, page - 1) : undefined}
+  nextHref={page < totalPages ? bucketPageHref(bucket, page + 1) : undefined}
+>
+  <script is:inline type="application/ld+json" set:html={JSON.stringify(packagesItemListSchema)} />
+
+  <!-- Hero -->
+  <PageHero
+    badge={seo.badge}
+    heading={'Group Tour Packages<br /><span style="color: #FDEA01;">Across North America</span>'}
+    subheading="Curated ground transportation packages for international tour operators. All vehicles, all drivers, all transfers — included. Request any package or mix and match cities for a custom itinerary."
+  />
+
+  <!-- Filter bar -->
+  <PackagesFilterBar bucket={bucket} />
+
+  <!-- Packages -->
+  <section class="py-16 lg:py-20" style="background-color: white;">
+    <div class="container">
+      <PackagesGrid cards={pageCards} />
+      <PackagesPagination bucket={bucket} currentPage={page} totalPages={totalPages} />
+    </div>
+  </section>
+
+  <!-- Custom CTA -->
+  <section class="py-20 diagonal-lines" style="background-color: #1A2744;">
+    <div class="container">
+      <div class="max-w-2xl mx-auto text-center">
+        <div class="w-14 h-14 rounded-2xl flex items-center justify-center mx-auto mb-6" style="background-color: #FDEA01;">
+          <Plus size={28} color="#1A2744" stroke-width={2.5} />
+        </div>
+        <h2 class="text-3xl font-black text-white mb-4">
+          Have a Custom Route?<br />
+          <span style="color: #FDEA01;">We'll Build It.</span>
+        </h2>
+        <p class="text-white/60 mb-8 leading-relaxed">
+          Don't see exactly what your client needs? Tell us the cities, the dates, and the group size — our operations team will design a bespoke transportation itinerary within 24 hours.
+        </p>
+        <div class="flex flex-col sm:flex-row gap-4 justify-center">
+          <a href="/contact" class="btn-primary">Request Custom Itinerary</a>
+          <a href="/network" class="btn-outline-white">View Our Coverage</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</BaseLayout>

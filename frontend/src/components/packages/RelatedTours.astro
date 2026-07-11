@@ -1,0 +1,51 @@
+---
+// Pure presentation — the caller resolves `related` from the content collection
+// (see getRelatedPackages in [slug].astro) so the ranking query runs once per
+// page and the caller can also decide whether to show the "Related Tours" jump
+// link based on whether this list is empty.
+import { ArrowRight } from "@lucide/astro";
+import type { CollectionEntry } from "astro:content";
+
+interface Props {
+  related: CollectionEntry<"packages">[];
+}
+
+const { related: ranked } = Astro.props;
+---
+
+{ranked.length > 0 && (
+  <section id="related" class="py-16 lg:py-20" style="background-color: #F9F7F2;">
+    <div class="container">
+      <div class="main-content">
+        <div class="flex items-center justify-between mb-10 gap-4">
+          <div>
+            <span class="section-label mb-3 inline-flex">Related Tours</span>
+            <h2 class="text-3xl font-black" style="color: #1A2744;">Other Tours You May Like</h2>
+          </div>
+          <a href="/packages" class="hidden sm:flex items-center gap-2 font-bold text-sm uppercase tracking-widest text-gray-400 hover:text-navy transition-all">
+            View All Packages
+            <ArrowRight size={16} stroke-width={2.5} />
+          </a>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+          {ranked.map((rp) => (
+            <a href={`/packages/${rp.id}`} class="rounded-2xl overflow-hidden card-hover block bg-white border border-gray-100" style="box-shadow: 0 4px 24px rgba(26,39,68,0.08);">
+              <div class="h-32 relative">
+                <div class="absolute inset-0" style={`background: ${rp.data.cardGradient};`} />
+                <div class="absolute inset-0 diagonal-lines" />
+                <div class="absolute bottom-0 left-0 right-0 p-5">
+                  <span class="badge badge-yellow mb-2 text-xs">{rp.data.days} Days</span>
+                  <h3 class="text-base font-black text-white">{rp.data.name}</h3>
+                </div>
+              </div>
+              <div class="p-5 flex items-center justify-between text-xs">
+                <span class="text-gray-400">Group: <strong class="text-gray-700">{rp.data.size}</strong></span>
+                <span class="font-bold" style="color: #1A2744;">From {rp.data.price}{rp.data.priceUnit}</span>
+              </div>
+            </a>
+          ))}
+        </div>
+      </div>
+    </div>
+  </section>
+)}

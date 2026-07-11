@@ -1,0 +1,38 @@
+---
+// Company-wide claims, identical for every package page — not stored per-package
+// in the content collection since none of it is city/route specific.
+import { Bus, ShieldCheck, Wifi, Clock, MapPin, Headphones } from "@lucide/astro";
+
+const items = [
+  { icon: Bus, title: "Modern Charter Fleet", desc: "Clean, late-model vans and minibuses maintained to a strict inspection schedule." },
+  { icon: ShieldCheck, title: "Licensed, Vetted Drivers", desc: "Locally experienced drivers, background-checked and fully licensed for city driving." },
+  { icon: Wifi, title: "Free WiFi Onboard", desc: "Stay connected between stops with complimentary WiFi on every vehicle." },
+  { icon: Clock, title: "On-Time Guarantee", desc: "Built-in buffer time for city traffic keeps your itinerary on schedule." },
+  { icon: MapPin, title: "Local Route Expertise", desc: "Drivers who know which entrances, drop-offs, and shortcuts save your group time." },
+  { icon: Headphones, title: "24/7 Support Line", desc: "A real person answers if plans change mid-tour — any day, any hour." },
+];
+---
+
+<section id="why-choose" class="py-16 lg:py-20" style="background-color: #F9F7F2;">
+  <div class="container">
+    <div class="main-content">
+      <div class="text-center mb-12 max-w-2xl mx-auto">
+        <span class="section-label">Why Ride With Us</span>
+        <h2 class="text-3xl lg:text-4xl font-black mt-4" style="color: #1A2744;">Why Choose Our Bus Service</h2>
+      </div>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        {items.map((item) => (
+          <div class="flex gap-4 bg-white rounded-2xl p-6" style="box-shadow: 0 2px 16px rgba(26,39,68,0.06);">
+            <div class="w-11 h-11 rounded-xl flex items-center justify-center shrink-0 bg-yellow">
+              <item.icon size={20} color="#1A2744" />
+            </div>
+            <div>
+              <h4 class="font-black text-sm mb-1" style="color: #1A2744;">{item.title}</h4>
+              <p class="text-xs text-gray-500 leading-relaxed">{item.desc}</p>
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+  </div>
+</section>

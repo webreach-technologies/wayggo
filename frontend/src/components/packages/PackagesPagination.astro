@@ -1,0 +1,67 @@
+---
+import { ChevronLeft, ChevronRight } from "@lucide/astro";
+import { bucketPageHref, type Bucket } from "../../lib/packages";
+
+interface Props {
+  bucket: Bucket;
+  currentPage: number;
+  totalPages: number;
+}
+
+const { bucket, currentPage, totalPages } = Astro.props;
+---
+
+{totalPages > 1 && (
+  <div class="flex justify-center items-center gap-2 mt-12">
+    {currentPage > 1 ? (
+      <a
+        href={bucketPageHref(bucket, currentPage - 1)}
+        class="pagination-arrow w-10 h-10 rounded-full flex items-center justify-center transition-all shrink-0"
+        style="border: 2px solid #E5E7EB; color: #1A2744;"
+        aria-label="Previous page"
+      >
+        <ChevronLeft size={18} />
+      </a>
+    ) : (
+      <span
+        class="pagination-arrow w-10 h-10 rounded-full flex items-center justify-center shrink-0"
+        style="border: 2px solid #E5E7EB; color: #1A2744; opacity: 0.4;"
+        aria-hidden="true"
+      >
+        <ChevronLeft size={18} />
+      </span>
+    )}
+
+    <div class="flex items-center gap-2">
+      {Array.from({ length: totalPages }, (_, i) => i + 1).map((page) => (
+        <a
+          href={bucketPageHref(bucket, page)}
+          class="pagination-page w-10 h-10 rounded-full flex items-center justify-center text-sm font-bold transition-all"
+          style={`background-color: ${page === currentPage ? "#1A2744" : "transparent"}; color: ${page === currentPage ? "white" : "#1A2744"}; border: 2px solid ${page === currentPage ? "#1A2744" : "#E5E7EB"};`}
+          aria-current={page === currentPage ? "page" : undefined}
+        >
+          {page}
+        </a>
+      ))}
+    </div>
+
+    {currentPage < totalPages ? (
+      <a
+        href={bucketPageHref(bucket, currentPage + 1)}
+        class="pagination-arrow w-10 h-10 rounded-full flex items-center justify-center transition-all shrink-0"
+        style="border: 2px solid #E5E7EB; color: #1A2744;"
+        aria-label="Next page"
+      >
+        <ChevronRight size={18} />
+      </a>
+    ) : (
+      <span
+        class="pagination-arrow w-10 h-10 rounded-full flex items-center justify-center shrink-0"
+        style="border: 2px solid #E5E7EB; color: #1A2744; opacity: 0.4;"
+        aria-hidden="true"
+      >
+        <ChevronRight size={18} />
+      </span>
+    )}
+  </div>
+)}

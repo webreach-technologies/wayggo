@@ -37,17 +37,31 @@ const features = [
     title: "Real-Time Tracking", desc: "Operations monitor every trip live",
   },
 ];
+
+const pageURL = new URL(Astro.url.pathname, Astro.site ?? "https://wayggo.com").href;
+const serviceSchema = {
+  "@context": "https://schema.org",
+  "@type": "Service",
+  name: "Sightseeing & City Tour Group Transportation",
+  description: "Motorcoach and minibus group sightseeing tours in NYC, LA, Chicago, San Francisco, Miami, and Las Vegas.",
+  url: pageURL,
+  provider: { "@type": "Organization", name: "WAYGGO", url: new URL("/", Astro.site ?? "https://wayggo.com").href },
+  areaServed: ["United States", "Canada"],
+  serviceType: "Sightseeing Group Ground Transportation",
+};
 ---
 
 <BaseLayout
   title="Sightseeing & City Tours — WAYGGO Group Transportation"
   description="Motorcoach and minibus group sightseeing tours in NYC, LA, Chicago, San Francisco, Miami, and Las Vegas. WAYGGO provides expert-guided ground transportation for international tour groups."
+  breadcrumbs={[{ name: "Tours", path: "/tours" }, { name: "Sightseeing & City Tours", path: "/tours/sightseeing" }]}
 >
+  <script is:inline type="application/ld+json" set:html={JSON.stringify(serviceSchema)} />
 
   <section class="relative py-24 overflow-hidden" style="background-color: #1A2744;">
     <Image
       src={heroImg}
-      alt=""
+      alt="Sightseeing and city tour group transportation — WAYGGO"
       width={1600}
       height={600}
       quality=25

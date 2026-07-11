@@ -1,0 +1,51 @@
+---
+import { countries, bucketPageHref, type Bucket } from "../../lib/packages";
+
+interface Props {
+  bucket: Bucket;
+}
+
+const { bucket } = Astro.props;
+
+const activeCountry = countries.find((c) => c.code === bucket.country) ?? null;
+---
+
+<div style="background-color: #F9F7F2; border-bottom: 1px solid #E5E7EB;">
+  <div class="container">
+    <div class="flex overflow-x-auto md:flex-wrap md:justify-center gap-3 py-4">
+      <a
+        href="/packages"
+        class="filter-btn shrink-0 px-6 py-2.5 rounded-full text-sm font-bold uppercase tracking-widest transition-all"
+        style={`background-color: ${!bucket.country ? "#1A2744" : "transparent"}; color: ${!bucket.country ? "white" : "#1A2744"}; border: 2px solid ${!bucket.country ? "#1A2744" : "#E5E7EB"};`}
+      >
+        All Packages
+      </a>
+      {countries.map((country) => (
+        <a
+          href={bucketPageHref({ basePath: country.slug, country: country.code, state: null, label: country.label }, 1)}
+          class="filter-btn shrink-0 px-6 py-2.5 rounded-full text-sm font-bold uppercase tracking-widest transition-all"
+          style={`background-color: ${bucket.country === country.code ? "#1A2744" : "transparent"}; color: ${bucket.country === country.code ? "white" : "#1A2744"}; border: 2px solid ${bucket.country === country.code ? "#1A2744" : "#E5E7EB"};`}
+        >
+          {country.label}
+        </a>
+      ))}
+    </div>
+
+    {activeCountry && (
+      <div class="flex flex-wrap justify-center gap-2 pb-4">
+        {activeCountry.states.map((state) => (
+          <a
+            href={bucketPageHref(
+              { basePath: `${activeCountry.slug}/${state.toLowerCase()}`, country: activeCountry.code, state, label: state },
+              1
+            )}
+            class="state-btn shrink-0 px-3.5 py-1.5 rounded-full text-xs font-bold uppercase tracking-wider transition-all"
+            style={`background-color: ${bucket.state === state ? "#FDEA01" : "transparent"}; color: #1A2744; border: 1.5px solid ${bucket.state === state ? "#FDEA01" : "#E5E7EB"};`}
+          >
+            {state}
+          </a>
+        ))}
+      </div>
+    )}
+  </div>
+</div>

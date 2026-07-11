@@ -1,0 +1,41 @@
+---
+// Same 4-vehicle fleet lineup on every package page — not stored per-package.
+import { Image } from "astro:assets";
+import luxuryvanImg from "../../assets/fleet/luxuryvan.png";
+import minibusImg from "../../assets/fleet/minibus.png";
+import chartershuttleImg from "../../assets/fleet/chartershuttle.png";
+import fullsizebusImg from "../../assets/fleet/fullsizebus.png";
+
+const vehicles = [
+  { name: "Luxury Van", capacity: "6–14 pax", image: luxuryvanImg, desc: "Premium leather seating for small VIP groups." },
+  { name: "Minibus", capacity: "15–28 pax", image: minibusImg, desc: "Panoramic windows, ideal for mid-size groups." },
+  { name: "Charter Shuttle", capacity: "8–16 pax", image: chartershuttleImg, desc: "Airport-ready, flexible for hotel-hop routing." },
+  { name: "Full-Size Bus", capacity: "29–40 pax", image: fullsizebusImg, desc: "For larger delegations touring together." },
+];
+---
+
+<section id="fleet" class="py-16 lg:py-20" style="background-color: #F9F7F2;">
+  <div class="container">
+    <div class="main-content">
+      <div class="text-center mb-12 max-w-2xl mx-auto">
+        <span class="section-label">Vehicle Options</span>
+        <h2 class="text-3xl lg:text-4xl font-black mt-4" style="color: #1A2744;">Our Fleet for This Route</h2>
+        <p class="text-gray-500 mt-3">Every vehicle option scales to your group size — swap anytime before confirming.</p>
+      </div>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        {vehicles.map((v) => (
+          <div class="rounded-2xl overflow-hidden bg-white card-hover" style="box-shadow: 0 4px 24px rgba(26,39,68,0.08);">
+            <div class="h-32 relative overflow-hidden" style="background: linear-gradient(135deg, #1A2744, #243460);">
+              <Image src={v.image} alt={v.name} quality={1} class="absolute inset-0 w-full h-full object-contain" style="padding: 0.75rem;" />
+            </div>
+            <div class="p-5">
+              <h3 class="font-black text-sm mb-1" style="color: #1A2744;">{v.name}</h3>
+              <p class="text-xs font-bold mb-2" style="color: #E6BB00;">{v.capacity}</p>
+              <p class="text-xs text-gray-500 leading-relaxed">{v.desc}</p>
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+  </div>
+</section>

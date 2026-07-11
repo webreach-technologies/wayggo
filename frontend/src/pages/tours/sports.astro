@@ -35,17 +35,31 @@ const tours = [
   { sport: "NHL Ice Tour", cities: ["Toronto (Scotiabank)", "Montreal (Bell Centre)", "Chicago (United Center)", "Boston (TD Garden)"], vehicle: "Full-Size Bus" },
   { sport: "Grand Slam Tennis", cities: ["New York (US Open)", "Cincinnati Masters", "Miami Open", "Indian Wells Masters"], vehicle: "Minibus or Van" },
 ];
+
+const pageURL = new URL(Astro.url.pathname, Astro.site ?? "https://wayggo.com").href;
+const serviceSchema = {
+  "@context": "https://schema.org",
+  "@type": "Service",
+  name: "Sports Team & Fan Group Transportation",
+  description: "Game day transportation, team charters, and fan group buses across North America.",
+  url: pageURL,
+  provider: { "@type": "Organization", name: "WAYGGO", url: new URL("/", Astro.site ?? "https://wayggo.com").href },
+  areaServed: ["United States", "Canada"],
+  serviceType: "Sports Group Ground Transportation",
+};
 ---
 
 <BaseLayout
   title="Sports Teams & Fan Group Transportation — WAYGGO"
   description="Game day transportation, team charters, and fan group buses across North America. WAYGGO serves sports teams, fan clubs, and tour operators bringing international groups to major sporting events."
+  breadcrumbs={[{ name: "Tours", path: "/tours" }, { name: "Sports Teams & Fan Group Travel", path: "/tours/sports" }]}
 >
+  <script is:inline type="application/ld+json" set:html={JSON.stringify(serviceSchema)} />
 
   <section class="relative py-24 overflow-hidden" style="background-color: #1A2744;">
     <Image
       src={heroImg}
-      alt=""
+      alt="Sports team and fan group transportation — WAYGGO"
       width={1600}
       height={600}
       quality=25

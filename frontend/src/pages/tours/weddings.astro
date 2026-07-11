@@ -55,17 +55,31 @@ const services = [
 ];
 
 const cities = ["Las Vegas, NV", "Niagara Falls, NY/ON", "New York City, NY", "Miami Beach, FL", "Napa Valley, CA", "Chicago, IL", "Sedona, AZ", "Savannah, GA", "Whistler, BC", "Montreal, QC", "Victoria, BC", "Banff, AB"];
+
+const pageURL = new URL(Astro.url.pathname, Astro.site ?? "https://wayggo.com").href;
+const serviceSchema = {
+  "@context": "https://schema.org",
+  "@type": "Service",
+  name: "Wedding & Special Event Group Transportation",
+  description: "Luxury coach and shuttle services for destination weddings, wedding parties, and special events across North America.",
+  url: pageURL,
+  provider: { "@type": "Organization", name: "WAYGGO", url: new URL("/", Astro.site ?? "https://wayggo.com").href },
+  areaServed: ["United States", "Canada"],
+  serviceType: "Wedding & Event Group Ground Transportation",
+};
 ---
 
 <BaseLayout
   title="Wedding & Special Event Transportation — WAYGGO"
   description="Luxury coach and shuttle services for destination weddings, wedding parties, and special events across North America. Elegant, punctual, professionally managed."
+  breadcrumbs={[{ name: "Tours", path: "/tours" }, { name: "Wedding & Special Events", path: "/tours/weddings" }]}
 >
+  <script is:inline type="application/ld+json" set:html={JSON.stringify(serviceSchema)} />
 
   <section class="relative py-24 overflow-hidden" style="background-color: #1A2744;">
     <Image
       src={heroImg}
-      alt=""
+      alt="Wedding and special event group transportation — WAYGGO"
       width={1600}
       height={600}
       quality=25

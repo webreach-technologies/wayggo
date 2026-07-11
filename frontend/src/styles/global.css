@@ -222,6 +222,18 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
+/* Reserve just enough right clearance on package detail pages to clear the fixed
+   "On This Page" nav panel (200px wide, 2rem from the viewport edge) — shrinks as
+   the viewport widens past the container's 1280px max-width, and drops to zero
+   once the container's own right edge already clears the panel (~1712px+). Used
+   by the package page sections in src/components/packages/, which each render
+   their own .main-content wrapper so this can't live in page-scoped CSS. */
+@media (min-width: 1280px) {
+  .main-content {
+    padding-right: max(0px, calc(856px - 50vw));
+  }
+}
+
 /* ── Cards ── */
 .card-hover {
   transition: all 0.3s ease;

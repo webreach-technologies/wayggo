@@ -3,12 +3,22 @@ import BaseLayout from "../layouts/BaseLayout.astro";
 import PageHero from "../components/sections/PageHero.astro";
 import QuoteForm from "../components/react/QuoteForm";
 import { Mail, Phone, MessageSquare, Users, ChevronDown } from "@lucide/astro";
+
+const pageURL = new URL(Astro.url.pathname, Astro.site ?? "https://wayggo.com").href;
+const contactPageSchema = {
+  "@context": "https://schema.org",
+  "@type": "ContactPage",
+  name: "Request a Quote — WAYGGO Ground Transportation",
+  url: pageURL,
+};
 ---
 
 <BaseLayout
   title="Request a Quote — WAYGGO Ground Transportation"
   description="Get a ground transportation quote for your international tour group in North America. Complete our 4-step form and receive a detailed proposal within 24 hours."
+  breadcrumbs={[{ name: "Contact", path: "/contact" }]}
 >
+  <script is:inline type="application/ld+json" set:html={JSON.stringify(contactPageSchema)} />
 
   <!-- Hero -->
   <PageHero

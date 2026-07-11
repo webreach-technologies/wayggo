@@ -1,0 +1,33 @@
+---
+// Same onboard amenities company-wide — not stored per-package.
+import { Wifi, Usb, Armchair, Snowflake, Volume2 } from "@lucide/astro";
+
+const amenities = [
+  { icon: Wifi, label: "Free WiFi" },
+  { icon: Usb, label: "USB Charging" },
+  { icon: Armchair, label: "Reclining Seats" },
+  { icon: Snowflake, label: "Climate Control" },
+  { icon: Volume2, label: "PA System & Mic" },
+];
+---
+
+<section id="amenities" class="py-16 lg:py-20" style="background-color: white;">
+  <div class="container">
+    <div class="main-content">
+      <div class="text-center mb-12">
+        <span class="section-label">Onboard Comfort</span>
+        <h2 class="text-3xl lg:text-4xl font-black mt-4" style="color: #1A2744;">Premium Amenities</h2>
+      </div>
+      <div class="flex flex-wrap justify-center gap-6">
+        {amenities.map((a) => (
+          <div class="flex flex-col items-center text-center w-28 rounded-2xl py-6 px-3" style="background-color: #F9F7F2;">
+            <div class="w-12 h-12 rounded-full flex items-center justify-center mb-3 bg-yellow">
+              <a.icon size={20} color="#1A2744" stroke-width={2} />
+            </div>
+            <span class="text-xs font-bold leading-snug" style="color: #1A2744;">{a.label}</span>
+          </div>
+        ))}
+      </div>
+    </div>
+  </div>
+</section>

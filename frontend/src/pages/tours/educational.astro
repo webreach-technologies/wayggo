@@ -35,17 +35,31 @@ const features = [
     desc: "Real-time GPS updates for school coordinators",
   },
 ];
+
+const pageURL = new URL(Astro.url.pathname, Astro.site ?? "https://wayggo.com").href;
+const serviceSchema = {
+  "@context": "https://schema.org",
+  "@type": "Service",
+  name: "Educational & Student Group Transportation",
+  description: "Safe, organized ground transportation for student groups and educational tours across North America.",
+  url: pageURL,
+  provider: { "@type": "Organization", name: "WAYGGO", url: new URL("/", Astro.site ?? "https://wayggo.com").href },
+  areaServed: ["United States", "Canada"],
+  serviceType: "Educational Group Ground Transportation",
+};
 ---
 
 <BaseLayout
   title="Educational & Student Tours — WAYGGO Group Transportation"
   description="Safe, organized ground transportation for student groups and educational tours across North America. Smithsonian, Ivy League campuses, Silicon Valley, and more."
+  breadcrumbs={[{ name: "Tours", path: "/tours" }, { name: "Educational & Student Tours", path: "/tours/educational" }]}
 >
+  <script is:inline type="application/ld+json" set:html={JSON.stringify(serviceSchema)} />
 
   <section class="relative py-24 overflow-hidden" style="background-color: #1A2744;">
     <Image
       src={heroImg}
-      alt=""
+      alt="Educational and student group tour transportation — WAYGGO"
       width={1600}
       height={600}
       quality=25

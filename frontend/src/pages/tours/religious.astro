@@ -35,17 +35,31 @@ const values = [
     desc: "Discreet drivers who understand the tone of sacred travel",
   },
 ];
+
+const pageURL = new URL(Astro.url.pathname, Astro.site ?? "https://wayggo.com").href;
+const serviceSchema = {
+  "@context": "https://schema.org",
+  "@type": "Service",
+  name: "Religious & Pilgrimage Group Transportation",
+  description: "Respectful, punctual ground transportation for religious groups and pilgrimage tours across North America.",
+  url: pageURL,
+  provider: { "@type": "Organization", name: "WAYGGO", url: new URL("/", Astro.site ?? "https://wayggo.com").href },
+  areaServed: ["United States", "Canada"],
+  serviceType: "Religious Group Ground Transportation",
+};
 ---
 
 <BaseLayout
   title="Religious & Pilgrimage Group Tours — WAYGGO Ground Transportation"
   description="Respectful, punctual ground transportation for religious groups and pilgrimage tours across North America. Salt Lake City, Notre Dame, Washington National Cathedral, and more."
+  breadcrumbs={[{ name: "Tours", path: "/tours" }, { name: "Religious & Pilgrimage Groups", path: "/tours/religious" }]}
 >
+  <script is:inline type="application/ld+json" set:html={JSON.stringify(serviceSchema)} />
 
   <section class="relative py-24 overflow-hidden" style="background-color: #1A2744;">
     <Image
       src={heroImg}
-      alt=""
+      alt="Religious and pilgrimage group tour transportation — WAYGGO"
       width={1600}
       height={600}
       quality=25

@@ -1,0 +1,30 @@
+---
+// Audience segments WAYGGO serves — identical messaging on every package page,
+// so this is baked in rather than duplicated in each content collection entry.
+import PackageGallery from "../react/PackageGallery";
+
+const groupTypes = [
+  { label: "Family & Multigenerational Groups", sub: "Easy pacing, stroller & wheelchair friendly", gradient: "linear-gradient(135deg, #b91c1c, #7c2d12)" },
+  { label: "School & Educational Trips", sub: "Curriculum-aligned museum & landmark stops", gradient: "linear-gradient(135deg, #1d4ed8, #1e3a8a)" },
+  { label: "Corporate & MICE Groups", sub: "Roadshows, incentive trips, conference shuttles", gradient: "linear-gradient(135deg, #334155, #1e293b)" },
+  { label: "Weddings & Celebrations", sub: "Guest shuttles, bachelor/ette party routes", gradient: "linear-gradient(135deg, #9d174d, #831843)" },
+  { label: "Sports & Fan Groups", sub: "Stadium transfers, game-day charters", gradient: "linear-gradient(135deg, #065f46, #064e3b)" },
+  { label: "Senior & Leisure Clubs", sub: "Comfortable seating, accessible boarding", gradient: "linear-gradient(135deg, #7c3aed, #5b21b6)" },
+  { label: "Friends' Getaways & Reunions", sub: "Flexible multi-stop nightlife routing", gradient: "linear-gradient(135deg, #b45309, #92400e)" },
+  { label: "Sightseeing & City Tour Groups", sub: "Landmark-hopping with flexible photo stops", gradient: "linear-gradient(135deg, #0e7490, #155e75)" },
+  { label: "Religious & Pilgrimage Groups", sub: "Sacred sites handled with care and punctuality", gradient: "linear-gradient(135deg, #92400e, #78350f)" },
+];
+---
+
+<section id="groups" class="py-16 lg:py-20" style="background-color: white;">
+  <div class="container">
+    <div class="main-content">
+      <div class="text-center mb-10 max-w-2xl mx-auto">
+        <span class="section-label">Flexible By Design</span>
+        <h2 class="text-3xl lg:text-4xl font-black mt-4" style="color: #1A2744;">Perfect for Every Group</h2>
+        <p class="text-gray-500 mt-3">The same route, tuned to how your group actually travels.</p>
+      </div>
+      <PackageGallery client:load images={groupTypes} layout="grid" />
+    </div>
+  </div>
+</section>

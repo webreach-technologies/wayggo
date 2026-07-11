@@ -1,0 +1,33 @@
+---
+// Generic value props, identical across every package — not stored per-package.
+import { House, CircleParking, Users, MapPin, Camera } from "@lucide/astro";
+
+const items = [
+  { icon: House, label: "Door-to-Door Pickups & Drop-offs" },
+  { icon: CircleParking, label: "Zero Parking Hassles" },
+  { icon: Users, label: "Kid & Senior Friendly" },
+  { icon: MapPin, label: "Flexible Multi-Stop Routing" },
+  { icon: Camera, label: "Photo-Ready Landmark Stops" },
+];
+---
+
+<section id="why-groups-love" class="py-16 lg:py-20" style="background-color: white;">
+  <div class="container">
+    <div class="main-content">
+      <div class="text-center mb-12">
+        <span class="section-label">Traveler Favorites</span>
+        <h2 class="text-3xl lg:text-4xl font-black mt-4" style="color: #1A2744;">Why Groups Love to Frequently Visit This Place</h2>
+      </div>
+      <div class="flex flex-wrap justify-center gap-x-10 gap-y-8">
+        {items.map((item) => (
+          <div class="flex flex-col items-center text-center w-32">
+            <div class="w-16 h-16 rounded-full flex items-center justify-center mb-3" style="background-color: #1A2744;">
+              <item.icon size={24} color="#FDEA01" stroke-width={2} />
+            </div>
+            <span class="text-xs font-bold leading-snug" style="color: #1A2744;">{item.label}</span>
+          </div>
+        ))}
+      </div>
+    </div>
+  </div>
+</section>

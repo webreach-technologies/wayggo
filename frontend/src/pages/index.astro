@@ -10,12 +10,20 @@ import WhyWayggo from "../components/sections/WhyWayggo.astro";
 import Testimonials from "../components/sections/Testimonials.astro";
 import PackagesTeaser from "../components/sections/PackagesTeaser.astro";
 import PartnerCTA from "../components/sections/PartnerCTA.astro";
+
+const websiteSchema = {
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  name: "WAYGGO",
+  url: (Astro.site ?? new URL("https://wayggo.com")).href,
+};
 ---
 
 <BaseLayout
   title="WAYGGO — North America's #1 B2B Ground Transportation Partner for Tour Operators"
   description="Connect your international tour groups to 500+ vetted bus, motorcoach, and van operators across the USA and Canada. One call. End-to-end ground transportation."
 >
+  <script is:inline type="application/ld+json" set:html={JSON.stringify(websiteSchema)} />
   <HeroSection />
   <TrustBar />
   <HowItWorks />

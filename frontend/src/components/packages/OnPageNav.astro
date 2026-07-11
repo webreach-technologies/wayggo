@@ -1,0 +1,146 @@
+---
+interface JumpLink {
+  href: string;
+  label: string;
+}
+
+interface Props {
+  jumpLinks: JumpLink[];
+}
+
+const { jumpLinks } = Astro.props;
+---
+
+<!-- Fixed to the right edge of the viewport (only on screens with room to spare) -->
+<div class="hidden xl:block on-page-nav" style="position: fixed; top: 96px; right: 2rem; width: 200px; max-height: calc(100vh - 120px);">
+  <div class="rounded-xl border border-gray-100 p-4 flex flex-col" style="box-shadow: 0 4px 24px rgba(26,39,68,0.08); background-color: white; max-height: calc(100vh - 120px);">
+    <h3 class="text-[0.65rem] uppercase font-black tracking-widest mb-2 px-1 shrink-0" style="color: #1A2744;">On This Page</h3>
+    <nav class="flex flex-col mb-3 overflow-y-auto">
+      {jumpLinks.map((link) => (
+        <a
+          href={link.href}
+          data-jump-link
+          data-target={link.href.replace("#", "")}
+          class="jump-link px-2 py-1.5 rounded-md text-xs font-semibold transition-colors"
+          style="color: #1A2744;"
+        >
+          {link.label}
+        </a>
+      ))}
+    </nav>
+    <a
+      href="#request"
+      class="shrink-0 inline-flex items-center justify-center w-full rounded-full font-black uppercase tracking-widest text-white transition-all whitespace-nowrap"
+      style="background-color: #ED232A; padding: 0.55rem 1rem; font-size: 0.65rem;"
+    >
+      Get a Quote
+    </a>
+  </div>
+</div>
+
+<style>
+  .jump-link:hover {
+    background-color: rgba(26, 39, 68, 0.06);
+  }
+  .jump-link.is-active {
+    background-color: #FDEA01;
+  }
+  .on-page-nav {
+    opacity: 0;
+    visibility: hidden;
+    transform: translateX(24px);
+    transition: opacity 0.4s cubic-bezier(0.16, 1, 0.3, 1), transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), visibility 0.4s;
+  }
+  .on-page-nav.is-visible {
+    opacity: 1;
+    visibility: visible;
+    transform: translateX(0);
+  }
+</style>
+
+<script>
+  // With the site's <ClientRouter /> (View Transitions) enabled, script tags only
+  // execute once per browser session — navigating away and back to this page would
+  // otherwise leave the observers below wired to elements that no longer exist.
+  // Re-run this setup on every navigation (including the first) via astro:page-load.
+  let jumpObserver: IntersectionObserver | null = null;
+  let overviewObserver: IntersectionObserver | null = null;
+  let pageContentObserver: IntersectionObserver | null = null;
+
+  function initOnPageNav() {
+    jumpObserver?.disconnect();
+    overviewObserver?.disconnect();
+    pageContentObserver?.disconnect();
+
+    const jumpLinks = Array.from(document.querySelectorAll<HTMLAnchorElement>(".jump-link"));
+    const targets = jumpLinks
+      .map((link) => {
+        const id = link.dataset.target;
+        const el = id ? document.getElementById(id) : null;
+        return el ? { link, el } : null;
+      })
+      .filter((t): t is { link: HTMLAnchorElement; el: HTMLElement } => t !== null);
+
+    function setActive(id: string) {
+      jumpLinks.forEach((link) => {
+        link.classList.toggle("is-active", link.dataset.target === id);
+      });
+    }
+
+    if (targets.length) {
+      jumpObserver = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) setActive(entry.target.id);
+          });
+        },
+        { rootMargin: "-120px 0px -55% 0px", threshold: 0 }
+      );
+      targets.forEach(({ el }) => jumpObserver!.observe(el));
+    }
+
+    // Slide the fixed "On This Page" panel in once the Tour Overview section is
+    // actually on screen (not just a sliver at the bottom edge), and keep it
+    // visible for the rest of the content section until it scrolls out of view.
+    const pageNav = document.querySelector<HTMLElement>(".on-page-nav");
+    const overviewSection = document.getElementById("overview");
+    const pageContent = document.getElementById("page-content");
+    if (pageNav && overviewSection && pageContent) {
+      let reachedOverview = false;
+      let withinPageContent = false;
+      const updateNavVisibility = () => {
+        pageNav.classList.toggle("is-visible", reachedOverview && withinPageContent);
+      };
+
+      overviewObserver = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              reachedOverview = true;
+            } else if (entry.boundingClientRect.top > 0) {
+              // Overview hasn't been scrolled to yet (still below the viewport) — keep hidden.
+              reachedOverview = false;
+            }
+            // Otherwise Overview has been scrolled past (above the viewport) — stays revealed.
+            updateNavVisibility();
+          });
+        },
+        { rootMargin: "0px 0px -50% 0px", threshold: 0 }
+      );
+      overviewObserver.observe(overviewSection);
+
+      pageContentObserver = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            withinPageContent = entry.isIntersecting;
+            updateNavVisibility();
+          });
+        },
+        { rootMargin: "-50% 0px 0px 0px", threshold: 0 }
+      );
+      pageContentObserver.observe(pageContent);
+    }
+  }
+
+  document.addEventListener("astro:page-load", initOnPageNav);
+</script>

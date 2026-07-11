@@ -1,0 +1,64 @@
+---
+import PackagesListingPage from "../../components/packages/PackagesListingPage.astro";
+import {
+  loadPackageCards,
+  getBuckets,
+  filterCards,
+  bucketPageHref,
+  PAGE_SIZE,
+  type Bucket,
+  type PackageCard,
+} from "../../lib/packages";
+
+interface PageProps {
+  bucket: Bucket;
+  page: number;
+  totalPages: number;
+  pageCards: PackageCard[];
+  totalInBucket: number;
+}
+
+// Every combination of (all / country / country+state) x page number, except
+// the bare "/packages" (all packages, page 1) which src/pages/packages.astro
+// already serves. loadPackageCards() throws if a package slug would collide
+// with a reserved route ("usa", "canada", or a plain page number).
+export async function getStaticPaths() {
+  const cards = await loadPackageCards();
+  const buckets = getBuckets();
+  const paths: { params: { path: string }; props: PageProps }[] = [];
+
+  for (const bucket of buckets) {
+    const bucketCards = filterCards(cards, bucket);
+    const totalPages = Math.max(1, Math.ceil(bucketCards.length / PAGE_SIZE));
+
+    for (let page = 1; page <= totalPages; page++) {
+      if (bucket.basePath === "" && page === 1) continue;
+
+      const path = bucketPageHref(bucket, page).replace(/^\/packages\/?/, "");
+      const start = (page - 1) * PAGE_SIZE;
+      paths.push({
+        params: { path },
+        props: {
+          bucket,
+          page,
+          totalPages,
+          pageCards: bucketCards.slice(start, start + PAGE_SIZE),
+          totalInBucket: bucketCards.length,
+        },
+      });
+    }
+  }
+
+  return paths;
+}
+
+const { bucket, page, totalPages, pageCards, totalInBucket } = Astro.props as PageProps;
+---
+
+<PackagesListingPage
+  bucket={bucket}
+  page={page}
+  totalPages={totalPages}
+  pageCards={pageCards}
+  totalInBucket={totalInBucket}
+/>
