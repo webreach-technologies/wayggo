@@ -1,20 +1,20 @@
 ---
 import BaseLayout from "../../layouts/BaseLayout.astro";
 import PageHero from "../../components/sections/PageHero.astro";
-import PackageBookingForm from "../../components/react/PackageBookingForm";
+import TourBusBookingForm from "../../components/react/TourBusBookingForm";
 import { Zap } from "@lucide/astro";
 ---
 
 <BaseLayout
-  title="Request a Package — WAYGGO Ground Transportation"
-  description="Request one of WAYGGO's ready-to-book group tour packages. Confirm dates and group size and our operations team replies within 24 hours."
+  title="Request a Tour Bus — WAYGGO Ground Transportation"
+  description="Request one of WAYGGO's ready-to-book group tour bus itineraries. Confirm dates and group size and our operations team replies within 24 hours."
   noindex
 >
 
   <!-- Hero -->
   <PageHero
     badge="Get a Proposal"
-    heading={'Request Your<br /><span style="color: #FDEA01;">Tour Package</span>'}
+    heading={'Request Your<br /><span style="color: #FDEA01;">Tour Bus</span>'}
     subheading={'Confirm dates and group size below — our operations team replies within <strong class="text-white">24 hours</strong> with a detailed proposal.'}
   />
 
@@ -24,7 +24,7 @@ import { Zap } from "@lucide/astro";
       <div class="grid grid-cols-1 lg:grid-cols-3 gap-10">
         <div class="lg:col-span-2">
           <div class="bg-white rounded-3xl border border-gray-100 p-5 sm:p-8 lg:p-10" style="box-shadow: 0 4px 24px rgba(26,39,68,0.08);">
-            <PackageBookingForm client:only="react" />
+            <TourBusBookingForm client:only="react" />
           </div>
         </div>
         <div class="space-y-5">

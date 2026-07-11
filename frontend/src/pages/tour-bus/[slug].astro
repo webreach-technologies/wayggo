@@ -2,29 +2,29 @@
 import { getCollection, type CollectionEntry } from "astro:content";
 import { Image } from "astro:assets";
 import BaseLayout from "../../layouts/BaseLayout.astro";
-import PackageBookingForm from "../../components/react/PackageBookingForm";
-import WhyChooseUs from "../../components/packages/WhyChooseUs.astro";
-import PerfectForEveryGroup from "../../components/packages/PerfectForEveryGroup.astro";
-import WhyGroupsLoveThis from "../../components/packages/WhyGroupsLoveThis.astro";
-import OurFleet from "../../components/packages/OurFleet.astro";
-import PremiumAmenities from "../../components/packages/PremiumAmenities.astro";
-import RequestSidebar from "../../components/packages/RequestSidebar.astro";
-import OnPageNav from "../../components/packages/OnPageNav.astro";
-import RelatedTours from "../../components/packages/RelatedTours.astro";
+import TourBusBookingForm from "../../components/react/TourBusBookingForm";
+import WhyChooseUs from "../../components/tour-bus/WhyChooseUs.astro";
+import PerfectForEveryGroup from "../../components/tour-bus/PerfectForEveryGroup.astro";
+import WhyGroupsLoveThis from "../../components/tour-bus/WhyGroupsLoveThis.astro";
+import OurFleet from "../../components/tour-bus/OurFleet.astro";
+import PremiumAmenities from "../../components/tour-bus/PremiumAmenities.astro";
+import RequestSidebar from "../../components/tour-bus/RequestSidebar.astro";
+import OnPageNav from "../../components/tour-bus/OnPageNav.astro";
+import RelatedTours from "../../components/tour-bus/RelatedTours.astro";
 import { Star, ChevronDown, Zap } from "@lucide/astro";
-// Placeholder hero image — used for any package that doesn't set its own heroImage yet.
+// Placeholder hero image — used for any entry that doesn't set its own heroImage yet.
 import defaultHeroImg from "../../assets/images/hero-bus.png";
 
 export async function getStaticPaths() {
-  const packages = await getCollection("packages");
-  return packages.map((entry) => ({
+  const tourBusEntries = await getCollection("tourBus");
+  return tourBusEntries.map((entry) => ({
     params: { slug: entry.id },
     props: { entry },
   }));
 }
 
 interface Props {
-  entry: CollectionEntry<"packages">;
+  entry: CollectionEntry<"tourBus">;
 }
 
 const { entry } = Astro.props;
@@ -37,10 +37,10 @@ const pageURL = new URL(Astro.url.pathname, siteOrigin).href;
 const priceValue = Number(pkg.price.replace(/[^0-9.]/g, ""));
 
 // Related tours are pulled from the content collection (not hand-typed per
-// package) so this stays accurate as packages are added or removed. Same-state
+// entry) so this stays accurate as entries are added or removed. Same-state
 // matches rank first, then same-country, then anything else.
-const otherPackages = await getCollection("packages", (e) => e.id !== entry.id);
-const relatedPackages = otherPackages
+const otherEntries = await getCollection("tourBus", (e) => e.id !== entry.id);
+const relatedEntries = otherEntries
   .map((e) => ({
     entry: e,
     score: e.data.state === pkg.state ? 2 : e.data.country === pkg.country ? 1 : 0,
@@ -105,7 +105,7 @@ const jumpLinks = [
   { href: "#why-groups-love", label: "Why Groups Love It" },
   { href: "#fleet", label: "Our Fleet" },
   { href: "#amenities", label: "Amenities" },
-  ...(relatedPackages.length > 0 ? [{ href: "#related", label: "Related Tours" }] : []),
+  ...(relatedEntries.length > 0 ? [{ href: "#related", label: "Related Tours" }] : []),
   { href: "#faq", label: "FAQ" },
   { href: "#testimonials", label: "Reviews" },
 ];
@@ -115,7 +115,7 @@ const jumpLinks = [
   title={pkg.seoTitle}
   description={pkg.seoDescription}
   canonical={pageURL}
-  breadcrumbs={[{ name: "Packages", path: "/packages" }, { name: pkg.name, path: `/packages/${entry.id}` }]}
+  breadcrumbs={[{ name: "Tour Bus", path: "/tour-bus" }, { name: pkg.name, path: `/tour-bus/${entry.id}` }]}
 >
   <script is:inline type="application/ld+json" set:html={JSON.stringify(touristTripSchema)} />
   <script is:inline type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
@@ -154,7 +154,7 @@ const jumpLinks = [
         </div>
 
         <div class="flex flex-col sm:flex-row gap-4">
-          <a href="#request" class="btn-primary">Request This Package</a>
+          <a href="#request" class="btn-primary">Request This Tour Bus</a>
           <a href="#itinerary" class="btn-outline-white">View Full Itinerary</a>
         </div>
       </div>
@@ -206,14 +206,14 @@ const jumpLinks = [
 
   <PerfectForEveryGroup />
 
-  <!-- Package highlights + itinerary, side by side -->
+  <!-- Tour bus highlights + itinerary, side by side -->
   <section id="itinerary" class="py-16 lg:py-20" style="background-color: #F9F7F2;">
     <div class="container">
       <div class="main-content">
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16">
           <div>
             <span class="section-label">What Makes This Route</span>
-            <h2 class="text-3xl font-black mt-4 mb-8" style="color: #1A2744;">Package Highlights</h2>
+            <h2 class="text-3xl font-black mt-4 mb-8" style="color: #1A2744;">Tour Bus Highlights</h2>
             <div class="grid grid-cols-1 gap-3">
               {pkg.tourHighlights.map((h) => (
                 <div class="flex items-center gap-3 rounded-xl p-4 bg-white">
@@ -271,8 +271,8 @@ const jumpLinks = [
           Confirm your dates and group size and our operations team will send a detailed proposal within 24 hours.
         </p>
         <div class="flex flex-col sm:flex-row gap-4 justify-center">
-          <a href="#request" class="btn-primary">Request This Package</a>
-          <a href="/packages" class="btn-outline-white">View All Packages</a>
+          <a href="#request" class="btn-primary">Request This Tour Bus</a>
+          <a href="/tour-bus" class="btn-outline-white">View All Tour Bus</a>
         </div>
       </div>
     </div>
@@ -280,7 +280,7 @@ const jumpLinks = [
 
   <OnPageNav jumpLinks={jumpLinks} />
 
-  <RelatedTours related={relatedPackages} />
+  <RelatedTours related={relatedEntries} />
 
   <!-- FAQ -->
   <section id="faq" class="py-16 lg:py-20" style="background-color: white;">
@@ -350,14 +350,14 @@ const jumpLinks = [
     <div class="container">
       <div class="text-center mb-12 max-w-2xl mx-auto">
         <span class="section-label">Get a Proposal</span>
-        <h2 class="text-3xl lg:text-4xl font-black mt-4" style="color: #1A2744;">Request the {pkg.name} Package</h2>
+        <h2 class="text-3xl lg:text-4xl font-black mt-4" style="color: #1A2744;">Request the {pkg.name} Tour Bus</h2>
         <p class="text-gray-500 mt-3">Confirm dates and group size below — our operations team replies within 24 hours with a detailed proposal.</p>
       </div>
 
       <div class="grid grid-cols-1 lg:grid-cols-3 gap-10">
         <div class="lg:col-span-2">
           <div class="bg-white rounded-3xl border border-gray-100 p-5 sm:p-8 lg:p-10" style="box-shadow: 0 4px 24px rgba(26,39,68,0.08);">
-            <PackageBookingForm client:load packageLabel={pkg.groupPackageLabel} />
+            <TourBusBookingForm client:load tourBusLabel={pkg.tourBusLabel} />
           </div>
         </div>
         <RequestSidebar />

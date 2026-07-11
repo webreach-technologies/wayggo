@@ -1,13 +1,13 @@
 import { defineCollection, z } from "astro:content";
 import { glob } from "astro/loaders";
 
-const packages = defineCollection({
-  loader: glob({ pattern: "**/*.md", base: "./src/content/packages" }),
+const tourBus = defineCollection({
+  loader: glob({ pattern: "**/*.md", base: "./src/content/tour-bus" }),
   schema: ({ image }) =>
     z.object({
-      // Card / listing info (used on /packages)
+      // Card / listing info (used on /tour-bus)
       name: z.string(),
-      groupPackageLabel: z.string(),
+      tourBusLabel: z.string(),
       tagline: z.string(),
       days: z.number(),
       size: z.string(),
@@ -40,8 +40,8 @@ const packages = defineCollection({
 
       // Route-specific content (Why Choose Us, Perfect for Every Group, Why
       // Groups Love It, Our Fleet, Premium Amenities, and Related Tours are all
-      // company-wide content and are NOT stored per-package — see
-      // src/components/packages/ for those, and RelatedTours is now computed
+      // company-wide content and are NOT stored per-entry — see
+      // src/components/tour-bus/ for those, and RelatedTours is now computed
       // live from this collection instead of hand-typed per entry.)
       tourHighlights: z.array(z.string()),
       itinerary: z.array(
@@ -60,4 +60,4 @@ const packages = defineCollection({
     }),
 });
 
-export const collections = { packages };
+export const collections = { tourBus };

@@ -184,7 +184,7 @@ const vehicles = [
       </p>
       <div class="flex flex-col sm:flex-row gap-4 justify-center">
         <a href="/contact" class="btn-primary">Discuss Custom Requirements</a>
-        <a href="/packages" class="btn-outline-white">Browse Tour Packages</a>
+        <a href="/tour-bus" class="btn-outline-white">Browse Tour Bus</a>
       </div>
     </div>
   </section>
@@ -194,7 +194,7 @@ const vehicles = [
     // execute once per browser session. window.fleetShowAll/fleetShow are safe to
     // define once (they do fresh DOM lookups on every call), but wrapping the whole
     // setup in astro:page-load keeps this file consistent with the same pattern used
-    // for the filter bar in packages.astro.
+    // for the filter bar in tour-bus.astro.
     document.addEventListener('astro:page-load', initOnPageNav);
 
     function initOnPageNav() {

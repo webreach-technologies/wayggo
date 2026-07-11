@@ -21,22 +21,22 @@ export default defineConfig({
   integrations: [
     react(),
     // Portal pages are a login-gated dashboard with mock data — excluded from
-    // the public sitemap, along with the noindex'd package-request page.
+    // the public sitemap, along with the noindex'd tour-bus-request page.
     // Matches "/portal" itself and any "/portal/..." sub-path (not just
     // "/portal/", which trailingSlash:"never" means the index page no longer has).
     //
-    // /packages/usa, /packages/usa/ny, etc. (country/state filter pages) are
+    // /tour-bus/usa, /tour-bus/usa/ny, etc. (country/state filter pages) are
     // useful on-site navigation but intentionally noindex'd — see the
-    // `noindex` logic in PackagesListingPage.astro — so they're kept out of
-    // the sitemap too. The plain /packages listing, its numbered pages
-    // (/packages/2, /packages/3, ...), and individual package pages
-    // (/packages/nyc-icons) are unaffected since none of them start with
-    // "/packages/usa" or "/packages/canada".
+    // `noindex` logic in TourBusListingPage.astro — so they're kept out of
+    // the sitemap too. The plain /tour-bus listing, its numbered pages
+    // (/tour-bus/2, /tour-bus/3, ...), and individual entry pages
+    // (/tour-bus/nyc-icons) are unaffected since none of them start with
+    // "/tour-bus/usa" or "/tour-bus/canada".
     sitemap({
       filter: (page) =>
         !/\/portal(\/|$)/.test(page) &&
-        !page.includes("/packages/request") &&
-        !/\/packages\/(usa|canada)(\/|$)/.test(page),
+        !page.includes("/tour-bus/request") &&
+        !/\/tour-bus\/(usa|canada)(\/|$)/.test(page),
     }),
   ],
 });

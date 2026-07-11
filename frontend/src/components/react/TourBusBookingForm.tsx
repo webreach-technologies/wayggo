@@ -10,7 +10,7 @@ import motorcoachImg from "../../assets/fleet/motorcoach.png";
 type BookingType = "Instant Booking" | "Request a Quote" | "";
 
 type FormData = {
-  groupPackage: string;
+  groupTourBus: string;
   tripType: "One-way" | "Round Trip" | "";
   pickupAddress: string;
   pickupDateTime: Date | null;
@@ -25,7 +25,7 @@ type FormData = {
   bookingType: BookingType;
 };
 
-const blank: Omit<FormData, "groupPackage"> = {
+const blank: Omit<FormData, "groupTourBus"> = {
   tripType: "",
   pickupAddress: "",
   pickupDateTime: null,
@@ -55,21 +55,21 @@ const busOptions: { capacity: number; pricePerDay: number; vehicleType: string; 
 
 const DEPOSIT_RATE = 0.2;
 
-// Package pages pass packageLabel directly. When the form is used on its own
-// (e.g. the /packages/request page), it resolves the label itself from the
-// ?package=<id> / ?name=<label> query string so every page shares one component.
-const packageLabelsById: Record<string, string> = {
+// Tour bus pages pass tourBusLabel directly. When the form is used on its own
+// (e.g. the /tour-bus/request page), it resolves the label itself from the
+// ?tourBus=<id> / ?name=<label> query string so every page shares one component.
+const tourBusLabelsById: Record<string, string> = {
   "nyc-icons": "New York City Icons",
   "niagara-toronto": "Niagara Falls & Toronto Explorer",
 };
 
-function resolvePackageLabel(packageLabel?: string): string {
-  if (packageLabel) return packageLabel;
+function resolveTourBusLabel(tourBusLabel?: string): string {
+  if (tourBusLabel) return tourBusLabel;
   if (typeof window === "undefined") return "";
   const params = new URLSearchParams(window.location.search);
-  const id = params.get("package");
+  const id = params.get("tourBus");
   const name = params.get("name");
-  return (id && packageLabelsById[id]) || name || "Custom Package";
+  return (id && tourBusLabelsById[id]) || name || "Custom Tour Bus";
 }
 
 const inputStyle: React.CSSProperties = {
@@ -531,13 +531,13 @@ function BookingTypeNotice({ bookingType, capacity }: { bookingType: BookingType
   );
 }
 
-export default function PackageBookingForm({
-  packageLabel,
+export default function TourBusBookingForm({
+  tourBusLabel,
 }: {
-  packageLabel?: string;
+  tourBusLabel?: string;
 }) {
   const [step, setStep] = useState(1);
-  const [data, setData] = useState<FormData>({ groupPackage: resolvePackageLabel(packageLabel), ...blank });
+  const [data, setData] = useState<FormData>({ groupTourBus: resolveTourBusLabel(tourBusLabel), ...blank });
   const [errors, setErrors] = useState<Partial<Record<keyof FormData, string>>>({});
   const [submitted, setSubmitted] = useState(false);
 
@@ -603,7 +603,7 @@ export default function PackageBookingForm({
           Request Received!
         </h3>
         <p style={{ color: "#6B7280", marginBottom: "0.5rem" }}>
-          Thanks, <strong>{data.fullName}</strong> — we've received your <strong>{data.tripType}</strong> request for the <strong>{data.groupPackage}</strong> package.
+          Thanks, <strong>{data.fullName}</strong> — we've received your <strong>{data.tripType}</strong> request for the <strong>{data.groupTourBus}</strong> tour bus.
         </p>
         <p style={{ color: "#6B7280", fontSize: "0.875rem", marginBottom: "0.35rem" }}>
           Pickup at <strong>{data.pickupAddress}</strong> on <strong>{data.pickupDateTime?.toLocaleString()}</strong>.
@@ -736,11 +736,11 @@ export default function PackageBookingForm({
             Trip Basics
           </h3>
           <p style={{ color: "#6B7280", fontSize: "0.875rem", marginBottom: "1.25rem" }}>
-            Let's start with the essentials for your {data.groupPackage} package.
+            Let's start with the essentials for your {data.groupTourBus} tour bus.
           </p>
           <div style={{ display: "grid", gap: "1rem" }}>
-            <Field label="Group Package" hint="Auto-filled based on the package you're chooseing.">
-              <LockedField value={data.groupPackage} />
+            <Field label="Group Tour Bus" hint="Auto-filled based on the tour bus you're chooseing.">
+              <LockedField value={data.groupTourBus} />
             </Field>
             <Field label="Trip Type *" error={errors.tripType}>
               <TripTypeToggle value={data.tripType} onChange={(v) => update("tripType", v)} />

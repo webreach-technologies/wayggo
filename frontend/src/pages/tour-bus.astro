@@ -1,15 +1,15 @@
 ---
-import PackagesListingPage from "../components/packages/PackagesListingPage.astro";
-import { loadPackageCards, getBuckets, filterCards, PAGE_SIZE } from "../lib/packages";
+import TourBusListingPage from "../components/tour-bus/TourBusListingPage.astro";
+import { loadTourBusCards, getBuckets, filterCards, PAGE_SIZE } from "../lib/tourBus";
 
-const cards = await loadPackageCards();
-const bucket = getBuckets()[0]; // the "all packages" bucket
+const cards = await loadTourBusCards();
+const bucket = getBuckets()[0]; // the "all tour bus" bucket
 const bucketCards = filterCards(cards, bucket);
 const totalPages = Math.max(1, Math.ceil(bucketCards.length / PAGE_SIZE));
 const pageCards = bucketCards.slice(0, PAGE_SIZE);
 ---
 
-<PackagesListingPage
+<TourBusListingPage
   bucket={bucket}
   page={1}
   totalPages={totalPages}

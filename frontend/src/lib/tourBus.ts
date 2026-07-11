@@ -1,10 +1,10 @@
 import { getCollection } from "astro:content";
 import type { ImageMetadata } from "astro";
-import { assertNoReservedSlugConflicts } from "./packageBuckets";
+import { assertNoReservedSlugConflicts } from "./tourBusBuckets";
 
-export * from "./packageBuckets";
+export * from "./tourBusBuckets";
 
-export interface PackageCard {
+export interface TourBusCard {
   id: string;
   detailHref: string;
   name: string;
@@ -22,12 +22,12 @@ export interface PackageCard {
   included: string[];
 }
 
-export async function loadPackageCards(): Promise<PackageCard[]> {
-  const entries = await getCollection("packages");
+export async function loadTourBusCards(): Promise<TourBusCard[]> {
+  const entries = await getCollection("tourBus");
   assertNoReservedSlugConflicts(entries.map((e) => e.id));
   return entries.map((entry) => ({
     id: entry.id,
-    detailHref: `/packages/${entry.id}`,
+    detailHref: `/tour-bus/${entry.id}`,
     name: entry.data.name,
     days: entry.data.days,
     size: entry.data.size,

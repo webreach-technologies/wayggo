@@ -1,29 +1,29 @@
 ---
-import PackagesListingPage from "../../components/packages/PackagesListingPage.astro";
+import TourBusListingPage from "../../components/tour-bus/TourBusListingPage.astro";
 import {
-  loadPackageCards,
+  loadTourBusCards,
   getBuckets,
   filterCards,
   bucketPageHref,
   PAGE_SIZE,
   type Bucket,
-  type PackageCard,
-} from "../../lib/packages";
+  type TourBusCard,
+} from "../../lib/tourBus";
 
 interface PageProps {
   bucket: Bucket;
   page: number;
   totalPages: number;
-  pageCards: PackageCard[];
+  pageCards: TourBusCard[];
   totalInBucket: number;
 }
 
 // Every combination of (all / country / country+state) x page number, except
-// the bare "/packages" (all packages, page 1) which src/pages/packages.astro
-// already serves. loadPackageCards() throws if a package slug would collide
+// the bare "/tour-bus" (all tour bus, page 1) which src/pages/tour-bus.astro
+// already serves. loadTourBusCards() throws if a slug would collide
 // with a reserved route ("usa", "canada", or a plain page number).
 export async function getStaticPaths() {
-  const cards = await loadPackageCards();
+  const cards = await loadTourBusCards();
   const buckets = getBuckets();
   const paths: { params: { path: string }; props: PageProps }[] = [];
 
@@ -34,7 +34,7 @@ export async function getStaticPaths() {
     for (let page = 1; page <= totalPages; page++) {
       if (bucket.basePath === "" && page === 1) continue;
 
-      const path = bucketPageHref(bucket, page).replace(/^\/packages\/?/, "");
+      const path = bucketPageHref(bucket, page).replace(/^\/tour-bus\/?/, "");
       const start = (page - 1) * PAGE_SIZE;
       paths.push({
         params: { path },
@@ -55,7 +55,7 @@ export async function getStaticPaths() {
 const { bucket, page, totalPages, pageCards, totalInBucket } = Astro.props as PageProps;
 ---
 
-<PackagesListingPage
+<TourBusListingPage
   bucket={bucket}
   page={page}
   totalPages={totalPages}

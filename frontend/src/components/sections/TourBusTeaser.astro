@@ -1,8 +1,8 @@
-﻿---
+---
 import { Image } from "astro:assets";
 import { ArrowRight } from "@lucide/astro";
 
-interface Package {
+interface TourBusEntry {
   name: string;
   days: number;
   size: string;
@@ -17,15 +17,15 @@ interface Props {
   heading?: string;
   viewAllHref?: string;
   viewAllLabel?: string;
-  packages?: Package[];
+  tourBuses?: TourBusEntry[];
 }
 
 const {
-  badge = "Popular Packages",
-  heading = "Ready-to-Book\nGroup Tour Packages",
-  viewAllHref = "/packages",
-  viewAllLabel = "View All 12 Packages",
-  packages = [
+  badge = "Popular Tour Bus",
+  heading = "Ready-to-Book\nGroup Tour Bus",
+  viewAllHref = "/tour-bus",
+  viewAllLabel = "View All 12 Tour Bus",
+  tourBuses = [
     {
       name: "East Coast Grand Tour",
       days: 10,
@@ -80,7 +80,7 @@ const headingLines = heading.split("\n");
     </div>
 
     <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-      {packages.map((pkg) => (
+      {tourBuses.map((pkg) => (
         <div class="rounded-2xl overflow-hidden card-hover bg-white"
           style="box-shadow: 0 4px 24px rgba(26,39,68,0.09);">
           <!-- Card header: image if provided, else gradient placeholder -->
@@ -119,7 +119,7 @@ const headingLines = heading.split("\n");
             </div>
             <a href={viewAllHref} class="btn-secondary w-full justify-center"
               style="padding: 0.65rem 1.5rem; font-size: 0.72rem;">
-              View Package Details
+              View Tour Bus Details
             </a>
           </div>
         </div>

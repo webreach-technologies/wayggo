@@ -1,5 +1,5 @@
 ---
-import { countries, bucketPageHref, type Bucket } from "../../lib/packages";
+import { countries, bucketPageHref, type Bucket } from "../../lib/tourBus";
 
 interface Props {
   bucket: Bucket;
@@ -14,11 +14,11 @@ const activeCountry = countries.find((c) => c.code === bucket.country) ?? null;
   <div class="container">
     <div class="flex overflow-x-auto md:flex-wrap md:justify-center gap-3 py-4">
       <a
-        href="/packages"
+        href="/tour-bus"
         class="filter-btn shrink-0 px-6 py-2.5 rounded-full text-sm font-bold uppercase tracking-widest transition-all"
         style={`background-color: ${!bucket.country ? "#1A2744" : "transparent"}; color: ${!bucket.country ? "white" : "#1A2744"}; border: 2px solid ${!bucket.country ? "#1A2744" : "#E5E7EB"};`}
       >
-        All Packages
+        All Tour Bus
       </a>
       {countries.map((country) => (
         <a

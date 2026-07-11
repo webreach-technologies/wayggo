@@ -28,7 +28,7 @@ function ExpandIcon({ small }: { small?: boolean }) {
   );
 }
 
-export default function PackageGallery({ images, visibleCount = 3, layout = "bento" }: Props) {
+export default function TourBusGallery({ images, visibleCount = 3, layout = "bento" }: Props) {
   const [activeIndex, setActiveIndex] = useState<number | null>(null);
 
   const close = useCallback(() => setActiveIndex(null), []);

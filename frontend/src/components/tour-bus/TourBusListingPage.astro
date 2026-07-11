@@ -1,9 +1,9 @@
 ---
 import BaseLayout from "../../layouts/BaseLayout.astro";
 import PageHero from "../sections/PageHero.astro";
-import PackagesFilterBar from "./PackagesFilterBar.astro";
-import PackagesGrid from "./PackagesGrid.astro";
-import PackagesPagination from "./PackagesPagination.astro";
+import TourBusFilterBar from "./TourBusFilterBar.astro";
+import TourBusGrid from "./TourBusGrid.astro";
+import TourBusPagination from "./TourBusPagination.astro";
 import { Plus } from "@lucide/astro";
 import {
   PAGE_SIZE,
@@ -11,14 +11,14 @@ import {
   bucketSeo,
   bucketBreadcrumbs,
   type Bucket,
-  type PackageCard,
-} from "../../lib/packages";
+  type TourBusCard,
+} from "../../lib/tourBus";
 
 interface Props {
   bucket: Bucket;
   page: number;
   totalPages: number;
-  pageCards: PackageCard[];
+  pageCards: TourBusCard[];
   totalInBucket: number;
 }
 
@@ -28,12 +28,12 @@ const seo = bucketSeo(bucket, page, totalInBucket);
 const breadcrumbs = bucketBreadcrumbs(bucket);
 // Country/state filter pages (bucket.country set) are real, useful nav
 // targets but not meant to be a separate indexable surface — only the main
-// /packages listing (and its numbered pages) and individual package pages
-// are indexable. `follow` still lets crawlers reach the linked package pages.
+// /tour-bus listing (and its numbered pages) and individual entry pages
+// are indexable. `follow` still lets crawlers reach the linked entry pages.
 const noindex = !!bucket.country;
 
 const siteOrigin = Astro.site ?? new URL("https://wayggo.com");
-const packagesItemListSchema = {
+const tourBusItemListSchema = {
   "@context": "https://schema.org",
   "@type": "ItemList",
   itemListElement: pageCards.map((pkg, i) => ({
@@ -53,23 +53,23 @@ const packagesItemListSchema = {
   prevHref={page > 1 ? bucketPageHref(bucket, page - 1) : undefined}
   nextHref={page < totalPages ? bucketPageHref(bucket, page + 1) : undefined}
 >
-  <script is:inline type="application/ld+json" set:html={JSON.stringify(packagesItemListSchema)} />
+  <script is:inline type="application/ld+json" set:html={JSON.stringify(tourBusItemListSchema)} />
 
   <!-- Hero -->
   <PageHero
     badge={seo.badge}
-    heading={'Group Tour Packages<br /><span style="color: #FDEA01;">Across North America</span>'}
-    subheading="Curated ground transportation packages for international tour operators. All vehicles, all drivers, all transfers — included. Request any package or mix and match cities for a custom itinerary."
+    heading={'Group Tour Bus<br /><span style="color: #FDEA01;">Across North America</span>'}
+    subheading="Curated ground transportation tour bus itineraries for international tour operators. All vehicles, all drivers, all transfers — included. Request any tour bus or mix and match cities for a custom itinerary."
   />
 
   <!-- Filter bar -->
-  <PackagesFilterBar bucket={bucket} />
+  <TourBusFilterBar bucket={bucket} />
 
-  <!-- Packages -->
+  <!-- Tour bus listings -->
   <section class="py-16 lg:py-20" style="background-color: white;">
     <div class="container">
-      <PackagesGrid cards={pageCards} />
-      <PackagesPagination bucket={bucket} currentPage={page} totalPages={totalPages} />
+      <TourBusGrid cards={pageCards} />
+      <TourBusPagination bucket={bucket} currentPage={page} totalPages={totalPages} />
     </div>
   </section>
 

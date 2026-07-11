@@ -1,10 +1,10 @@
 ---
 import { Image } from "astro:assets";
 import { Van, Bus, BusFront } from "@lucide/astro";
-import type { PackageCard } from "../../lib/packages";
+import type { TourBusCard } from "../../lib/tourBus";
 
 interface Props {
-  cards: PackageCard[];
+  cards: TourBusCard[];
 }
 
 const { cards } = Astro.props;
@@ -19,7 +19,7 @@ const vehicleIconComponents: Record<string, typeof Van> = {
 
 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
   {cards.map((pkg) => (
-    <div class="package-card bg-white rounded-2xl overflow-hidden card-hover border border-gray-100 flex flex-col">
+    <div class="tour-bus-card bg-white rounded-2xl overflow-hidden card-hover border border-gray-100 flex flex-col">
       <!-- Card image / header -->
       <div class="relative h-44 overflow-hidden shrink-0">
         {pkg.image ? (
@@ -92,11 +92,11 @@ const vehicleIconComponents: Record<string, typeof Van> = {
             View Full Itinerary
           </a>
           <a
-            href={`/packages/request?package=${pkg.id}&name=${encodeURIComponent(pkg.name)}`}
+            href={`/tour-bus/request?tourBus=${pkg.id}&name=${encodeURIComponent(pkg.name)}`}
             class="btn-secondary w-full justify-center"
             style="padding: 0.625rem 1.5rem; font-size: 0.75rem;"
           >
-            Request This Package
+            Request This Tour Bus
           </a>
         </div>
       </div>
@@ -106,7 +106,7 @@ const vehicleIconComponents: Record<string, typeof Van> = {
 
 {cards.length === 0 && (
   <div class="text-center py-16">
-    <p class="text-gray-500 text-sm mb-2">No packages published for this location yet.</p>
-    <p class="text-gray-400 text-xs">More state and provincial packages are coming soon — tell us the cities and we'll build a custom itinerary.</p>
+    <p class="text-gray-500 text-sm mb-2">No tour bus listings published for this location yet.</p>
+    <p class="text-gray-400 text-xs">More state and provincial tour bus listings are coming soon — tell us the cities and we'll build a custom itinerary.</p>
   </div>
 )}

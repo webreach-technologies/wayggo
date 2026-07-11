@@ -1,7 +1,7 @@
 ---
 name: "New York City Icons"
-groupPackageLabel: "New York City Icons"
-tagline: "5-Day Small Group NYC Landmarks Package"
+tourBusLabel: "New York City Icons"
+tagline: "5-Day Small Group NYC Landmarks Tour Bus"
 days: 5
 size: "8–20 passengers"
 vehicle: "Luxury Van or Minibus"
@@ -26,18 +26,18 @@ included:
   - "Airport transfers"
   - "Hotel pickups daily"
 
-seoTitle: "New York City Icons — 5-Day Package — WAYGGO"
-seoDescription: "A 5-day, small-group ground transportation package covering New York City's essential landmarks — Times Square, the Statue of Liberty, Central Park, 9/11 Memorial, and Brooklyn."
+seoTitle: "New York City Icons — 5-Day Tour Bus — WAYGGO"
+seoDescription: "A 5-day, small-group ground transportation tour bus covering New York City's essential landmarks — Times Square, the Statue of Liberty, Central Park, 9/11 Memorial, and Brooklyn."
 
-heroImageAlt: "New York City Icons package"
+heroImageAlt: "New York City Icons tour bus"
 heroHeadingLine1: "New York City"
 heroHeadingLine2: "Icons"
 heroDescription: "Every must-see landmark in one van, one driver, and one itinerary. WAYGGO handles the traffic, the parking, and the pickups — your travelers just show up and see the city."
 
 overviewHeading: "One Van, Every NYC Icon"
 overviewParagraphs:
-  - "This package moves your group through Manhattan and Brooklyn's essential landmarks over five days — without a single subway transfer or taxi line. From Times Square to the Statue of Liberty, Central Park to Top of the Rock, your driver handles the route, the traffic, and the drop-offs."
-  - "Built for international tour operators booking small groups of 8–20 travelers, the package includes the vehicle, a professional driver, and daily hotel pickups — so you can quote one line item and let WAYGGO run the city."
+  - "This tour bus moves your group through Manhattan and Brooklyn's essential landmarks over five days — without a single subway transfer or taxi line. From Times Square to the Statue of Liberty, Central Park to Top of the Rock, your driver handles the route, the traffic, and the drop-offs."
+  - "Built for international tour operators booking small groups of 8–20 travelers, the tour bus includes the vehicle, a professional driver, and daily hotel pickups — so you can quote one line item and let WAYGGO run the city."
   - "Whether you're running a single group or coordinating multiple departures across the week, WAYGGO scales the vehicle to match — from an intimate 6-passenger Luxury Van to a 40-passenger Full-Size Bus for larger delegations. Every itinerary starts from this five-day template, but timing, stops, and pacing are yours to adjust before we confirm."
   - "Your driver stays with the group for the full five days, learning your travelers' pace after day one and adjusting drop-off points, waiting spots, and walking distances accordingly. No new driver to brief, no repeated instructions — just one point of contact who already knows the plan."
 
@@ -69,14 +69,14 @@ itinerary:
     desc: "Top of the Rock observation deck, last-minute shopping, then airport or hotel drop-off."
 
 faqs:
-  - q: "What's the minimum and maximum group size for this package?"
+  - q: "What's the minimum and maximum group size for this tour bus?"
     a: "8–20 passengers in a Luxury Van or Minibus. For larger delegations, ask about our Full-Size Bus options."
-  - q: "Does this package include a tour guide?"
+  - q: "Does this tour bus include a tour guide?"
     a: "The price includes a professional driver. An English or multilingual guide can be added for an additional daily rate — let us know in your request."
   - q: "Are hotel stays or attraction tickets included?"
-    a: "No — this is a ground transportation package. Attraction admission (Liberty cruise, museums, observatories) is booked separately or through your local guide."
+    a: "No — this is a ground transportation tour bus. Attraction admission (Liberty cruise, museums, observatories) is booked separately or through your local guide."
   - q: "Can we customize the itinerary or swap a day?"
-    a: "Yes. Every package is a starting template. Tell us your changes in the request form below and we'll send back a revised proposal."
+    a: "Yes. Every tour bus is a starting template. Tell us your changes in the request form below and we'll send back a revised proposal."
   - q: "How does parking and drop-off work in Manhattan?"
     a: "Our drivers know the city's loading zones and attraction entrances, so your group is dropped as close as legally possible without circling for parking."
   - q: "How far in advance should we confirm?"

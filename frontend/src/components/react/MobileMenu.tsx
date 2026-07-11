@@ -69,7 +69,7 @@ export default function MobileMenu() {
             {[
               { href: "/", label: "Home" },
               { href: "/fleet", label: "Fleet & Capabilities" },
-              { href: "/packages", label: "Tour Packages" },
+              { href: "/tour-bus", label: "Tour Bus" },
               { href: "/network", label: "Our Network" },
               { href: "/about", label: "About Wayggo" },
               { href: "/contact", label: "Contact Us" },
