@@ -1,13 +1,13 @@
 ---
 // Company-wide claims, identical for every tour bus page — not stored per-entry
 // in the content collection since none of it is city/route specific.
-import { Bus, ShieldCheck, Wifi, Clock, MapPin, Headphones } from "@lucide/astro";
+import { Bus, ShieldCheck, Handshake, BadgeDollarSign, MapPin, Headphones } from "@lucide/astro";
 
 const items = [
   { icon: Bus, title: "Modern Charter Fleet", desc: "Clean, late-model vans and minibuses maintained to a strict inspection schedule." },
   { icon: ShieldCheck, title: "Licensed, Vetted Drivers", desc: "Locally experienced drivers, background-checked and fully licensed for city driving." },
-  { icon: Wifi, title: "Free WiFi Onboard", desc: "Stay connected between stops with complimentary WiFi on every vehicle." },
-  { icon: Clock, title: "On-Time Guarantee", desc: "Built-in buffer time for city traffic keeps your itinerary on schedule." },
+  { icon: Handshake, title: "Tour Fulfillment Promise", desc: "Confirmed vehicle, driver, and itinerary — exactly as booked. If we can't deliver it as promised, we make it right." },
+  { icon: BadgeDollarSign, title: "Lowest Rate Guarantee", desc: "Find a lower verified rate for the same tour bus and we'll match it — no hidden fees, no surprise add-ons." },
   { icon: MapPin, title: "Local Route Expertise", desc: "Drivers who know which entrances, drop-offs, and shortcuts save your group time." },
   { icon: Headphones, title: "24/7 Support Line", desc: "A real person answers if plans change mid-tour — any day, any hour." },
 ];
@@ -17,8 +17,8 @@ const items = [
   <div class="container">
     <div class="main-content">
       <div class="text-center mb-12 max-w-2xl mx-auto">
-        <span class="section-label">Why Ride With Us</span>
-        <h2 class="text-3xl lg:text-4xl font-black mt-4" style="color: #1A2744;">Why Choose Our Bus Service</h2>
+        <span class="section-label">Our Forever Promise</span>
+        <h2 class="text-3xl lg:text-4xl font-black mt-4" style="color: #1A2744;">Why Choose Our Tour Bus</h2>
       </div>
       <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
         {items.map((item) => (

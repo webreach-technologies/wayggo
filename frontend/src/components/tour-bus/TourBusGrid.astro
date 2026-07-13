@@ -1,6 +1,6 @@
 ---
 import { Image } from "astro:assets";
-import { Van, Bus, BusFront } from "@lucide/astro";
+import { Van, Bus, BusFront, Star, ShipWheel } from "@lucide/astro";
 import type { TourBusCard } from "../../lib/tourBus";
 
 interface Props {
@@ -9,12 +9,15 @@ interface Props {
 
 const { cards } = Astro.props;
 
-const vehicleIconComponents: Record<string, typeof Van> = {
-  van: Van,
-  bus: Bus,
-  fullbus: BusFront,
-  motorcoach: BusFront,
-};
+// Same 4-vehicle fleet lineup shown company-wide (see OurFleet.astro) — every
+// tour bus can be run with any of these, so the card advertises the full
+// fleet rather than a single vehicle type.
+const fleetTypes = [
+  { label: "Luxury Van", icon: Van },
+  { label: "Minibus", icon: Bus },
+  { label: "Charter Shuttle", icon: Bus },
+  { label: "Full-Size Bus", icon: BusFront },
+];
 ---
 
 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -36,9 +39,15 @@ const vehicleIconComponents: Record<string, typeof Van> = {
         {pkg.image && <div class="absolute inset-0" style="background: linear-gradient(to top, rgba(0,0,0,0.55) 0%, transparent 60%);" />}
         <!-- Overlay content -->
         <div class="relative z-10 h-full p-5 flex flex-col justify-between">
-          <div class="flex justify-between items-start">
+          <div class="flex justify-between items-center">
             <span class="badge badge-navy" style="background-color: rgba(255,255,255,0.15); color: white;">{pkg.country} · {pkg.state}</span>
-            <span class="badge badge-yellow">{pkg.days} Days</span>
+            <a
+              href={`${pkg.detailHref}#testimonials`}
+              class="badge badge-yellow gap-1"
+            >
+              <!-- <Star size={11} fill="#1A2744" stroke="none" /> -->
+              Rating & Reviews
+            </a>
           </div>
           <div>
             <a href={pkg.detailHref} class="hover:underline">
@@ -57,7 +66,7 @@ const vehicleIconComponents: Record<string, typeof Van> = {
             Group: <strong class="text-gray-700">{pkg.size}</strong>
           </div>
           <div class="text-xs text-gray-400">
-            From <strong class="text-[#1A2744] text-sm">{pkg.price}/pax/day</strong>
+            Start From <strong class="text-[#1A2744] text-sm">{pkg.price}{pkg.priceUnit}</strong>
           </div>
         </div>
 
@@ -76,10 +85,20 @@ const vehicleIconComponents: Record<string, typeof Van> = {
           )}
         </div>
 
-        <!-- Vehicle badge -->
-        <div class="flex items-center gap-2 mb-5 py-2.5 px-3 rounded-xl" style="background-color: #F9F7F2;">
-          {(() => { const VehicleIcon = vehicleIconComponents[pkg.iconKey]; return <VehicleIcon size={16} color="#1A2744" class="shrink-0" />; })()}
-          <span class="text-xs font-semibold text-gray-600">{pkg.vehicle}</span>
+        <!-- Fleet available -->
+        <div class="flex items-center justify-between gap-2 mb-2 py-2.5 px-3 rounded-xl" style="background-color: #F9F7F2;">
+          {fleetTypes.map((v) => (
+            <div class="flex flex-col items-center gap-1" title={v.label}>
+              <v.icon size={16} color="#1A2744" class="shrink-0" />
+              <span class="text-[0.6rem] font-semibold text-gray-600 text-center leading-tight">{v.label}</span>
+            </div>
+          ))}
+        </div>
+
+        <!-- Operator network -->
+        <div class="flex items-center gap-2 mb-5 px-1">
+          <ShipWheel size={16} color="#374151" class="shrink-0" />
+          <span class="text-xs font-bold text-gray-700">Served by 10+ Bus Operators</span>
         </div>
 
         <!-- CTA -->
@@ -89,14 +108,14 @@ const vehicleIconComponents: Record<string, typeof Van> = {
             class="btn-outline-navy w-full justify-center"
             style="padding: 0.625rem 1.5rem; font-size: 0.75rem;"
           >
-            View Full Itinerary
+            Know More Details
           </a>
           <a
             href={`/tour-bus/request?tourBus=${pkg.id}&name=${encodeURIComponent(pkg.name)}`}
             class="btn-secondary w-full justify-center"
             style="padding: 0.625rem 1.5rem; font-size: 0.75rem;"
           >
-            Request This Tour Bus
+            Request Quote / Book Now
           </a>
         </div>
       </div>

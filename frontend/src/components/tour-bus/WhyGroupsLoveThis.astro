@@ -1,30 +1,34 @@
 ---
-// Generic value props, identical across every entry — not stored per-entry.
-import { House, CircleParking, Users, MapPin, Camera } from "@lucide/astro";
+// Things-to-do list is route-specific (pkg.thingsToDo) — deliberately separate
+// content from tourHighlights above, which are the confirmed itinerary stops.
+// This section is optional add-on experiences around the route, not a repeat
+// of it, so styled on a dark panel to read as a distinct block on the page.
+interface Props {
+  tourName: string;
+  thingsToDo: { title: string; desc: string }[];
+}
 
-const items = [
-  { icon: House, label: "Door-to-Door Pickups & Drop-offs" },
-  { icon: CircleParking, label: "Zero Parking Hassles" },
-  { icon: Users, label: "Kid & Senior Friendly" },
-  { icon: MapPin, label: "Flexible Multi-Stop Routing" },
-  { icon: Camera, label: "Photo-Ready Landmark Stops" },
-];
+const { tourName, thingsToDo } = Astro.props;
 ---
 
-<section id="why-groups-love" class="py-16 lg:py-20" style="background-color: white;">
-  <div class="container">
+<section id="why-groups-love" class="py-16 lg:py-20 diagonal-lines relative overflow-hidden" style="background-color: #1A2744;">
+  <div class="container relative">
     <div class="main-content">
-      <div class="text-center mb-12">
-        <span class="section-label">Traveler Favorites</span>
-        <h2 class="text-3xl lg:text-4xl font-black mt-4" style="color: #1A2744;">Why Groups Love to Frequently Visit This Place</h2>
+      <div class="text-center mb-12 max-w-2xl mx-auto">
+        <span class="section-label-white">Why Traveler Favorites</span>
+        <h2 class="text-3xl lg:text-4xl font-black text-white mt-4">Things to Do Around {tourName}</h2>
+        <p class="text-white/60 mt-3">Optional extras your group can slot in alongside the confirmed itinerary.</p>
       </div>
-      <div class="flex flex-wrap justify-center gap-x-10 gap-y-8">
-        {items.map((item) => (
-          <div class="flex flex-col items-center text-center w-32">
-            <div class="w-16 h-16 rounded-full flex items-center justify-center mb-3" style="background-color: #1A2744;">
-              <item.icon size={24} color="#FDEA01" stroke-width={2} />
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 max-w-4xl mx-auto">
+        {thingsToDo.map((t, i) => (
+          <div class="flex gap-4 rounded-2xl p-5" style="background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.12);">
+            <div class="w-9 h-9 rounded-full flex items-center justify-center shrink-0 text-xs font-black" style="background-color: #FDEA01; color: #1A2744;">
+              {i + 1}
             </div>
-            <span class="text-xs font-bold leading-snug" style="color: #1A2744;">{item.label}</span>
+            <div>
+              <h4 class="font-black text-sm text-white mb-1">{t.title}</h4>
+              <p class="text-xs leading-relaxed" style="color: rgba(255,255,255,0.6);">{t.desc}</p>
+            </div>
           </div>
         ))}
       </div>

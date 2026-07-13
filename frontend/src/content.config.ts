@@ -38,12 +38,16 @@ const tourBus = defineCollection({
       overviewHeading: z.string(),
       overviewParagraphs: z.array(z.string()),
 
-      // Route-specific content (Why Choose Us, Perfect for Every Group, Why
-      // Groups Love It, Our Fleet, Premium Amenities, and Related Tours are all
-      // company-wide content and are NOT stored per-entry — see
-      // src/components/tour-bus/ for those, and RelatedTours is now computed
-      // live from this collection instead of hand-typed per entry.)
+      // Route-specific content (Why Choose Us, Perfect for Every Group, Our
+      // Fleet, Premium Amenities, and Related Tours are all company-wide
+      // content and are NOT stored per-entry — see src/components/tour-bus/
+      // for those, and RelatedTours is now computed live from this collection
+      // instead of hand-typed per entry.)
       tourHighlights: z.array(z.string()),
+      // Extra experiences near the route, distinct from tourHighlights (the
+      // confirmed stops already on the itinerary) — shown in the Why Groups
+      // Love It / "Things to Do" section.
+      thingsToDo: z.array(z.object({ title: z.string(), desc: z.string() })),
       itinerary: z.array(
         z.object({ day: z.string(), title: z.string(), desc: z.string() })
       ),

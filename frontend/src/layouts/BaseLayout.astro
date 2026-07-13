@@ -8,7 +8,7 @@ import { ChevronUp } from "@lucide/astro";
 
 interface Breadcrumb {
   name: string;
-  /** Path relative to the site root, e.g. "/tours/corporate". */
+  /** Path relative to the site root, e.g. "/tour-services/corporate". */
   path: string;
 }
 
@@ -18,7 +18,7 @@ interface Props {
   ogImage?: string;
   canonical?: string;
   noindex?: boolean;
-  /** Trail from (but excluding) Home to this page, e.g. [{name:"Tours",path:"/tours"},{name:"Corporate",path:"/tours/corporate"}]. Omit on the homepage. */
+  /** Trail from (but excluding) Home to this page, e.g. [{name:"Tour Services",path:"/tour-services"},{name:"Corporate",path:"/tour-services/corporate"}]. Omit on the homepage. */
   breadcrumbs?: Breadcrumb[];
   /** rel="prev"/"next" links for paginated listings, e.g. /tour-bus/usa/2. */
   prevHref?: string;

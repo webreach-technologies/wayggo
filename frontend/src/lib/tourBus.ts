@@ -11,6 +11,7 @@ export interface TourBusCard {
   days: number;
   size: string;
   price: string;
+  priceUnit: string;
   vehicle: string;
   iconKey: "van" | "bus" | "fullbus" | "motorcoach";
   image: ImageMetadata | null;
@@ -32,6 +33,7 @@ export async function loadTourBusCards(): Promise<TourBusCard[]> {
     days: entry.data.days,
     size: entry.data.size,
     price: entry.data.price,
+    priceUnit: entry.data.priceUnit,
     vehicle: entry.data.vehicle,
     iconKey: entry.data.iconKey,
     image: entry.data.cardImage ?? null,
