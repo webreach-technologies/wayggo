@@ -11,7 +11,6 @@ const tourBus = defineCollection({
       tagline: z.string(),
       days: z.number(),
       size: z.string(),
-      vehicle: z.string(),
       price: z.string(),
       priceUnit: z.string(),
       country: z.string(),
@@ -35,6 +34,7 @@ const tourBus = defineCollection({
       heroDescription: z.string(),
 
       // Overview section copy
+      overviewImage: image().optional(),
       overviewHeading: z.string(),
       overviewParagraphs: z.array(z.string()),
 

@@ -1,9 +1,10 @@
 ---
 // Lightweight quick-request modal, opened from any element on the page that
-// carries `data-qqm-open` (currently just the hero CTA). Kept as a native
-// <dialog> instead of a React island since the form has no branching state —
-// just four fields and a fake client-side "submitted" swap, same pattern as
-// TourBusBookingForm's success screen but without the multi-step wizard.
+// carries `data-qqm-open` (the hero's "Submit Itinerary" CTA). Kept as a
+// native <dialog> instead of a React island since the form has no branching
+// state — just a handful of fields and a fake client-side "submitted" swap,
+// same pattern as TourBusBookingForm's success screen but without the
+// multi-step wizard.
 import { X, Send, Check } from "@lucide/astro";
 
 interface Props {
@@ -40,6 +41,10 @@ const { tourBusLabel } = Astro.props;
         <div class="qqm-field">
           <label for="qqm-info">Additional Info / Itinerary</label>
           <textarea id="qqm-info" name="info" rows="3" placeholder="Travel dates, group size, stops you'd like to hit..."></textarea>
+        </div>
+        <div class="qqm-field">
+          <label for="qqm-attachment">Itinerary Attachment</label>
+          <input id="qqm-attachment" name="attachment" type="file" accept=".pdf,.doc,.docx,.jpg,.jpeg,.png" />
         </div>
         <button type="submit" class="btn-primary qqm-submit">
           Submit Request

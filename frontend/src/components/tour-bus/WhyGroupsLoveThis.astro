@@ -3,6 +3,8 @@
 // content from tourHighlights above, which are the confirmed itinerary stops.
 // This section is optional add-on experiences around the route, not a repeat
 // of it, so styled on a dark panel to read as a distinct block on the page.
+import { Sparkles } from "@lucide/astro";
+
 interface Props {
   tourName: string;
   thingsToDo: { title: string; desc: string }[];
@@ -20,10 +22,10 @@ const { tourName, thingsToDo } = Astro.props;
         <p class="text-white/60 mt-3">Optional extras your group can slot in alongside the confirmed itinerary.</p>
       </div>
       <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 max-w-4xl mx-auto">
-        {thingsToDo.map((t, i) => (
+        {thingsToDo.map((t) => (
           <div class="flex gap-4 rounded-2xl p-5" style="background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.12);">
-            <div class="w-9 h-9 rounded-full flex items-center justify-center shrink-0 text-xs font-black" style="background-color: #FDEA01; color: #1A2744;">
-              {i + 1}
+            <div class="w-9 h-9 rounded-full flex items-center justify-center shrink-0" style="background-color: #FDEA01;">
+              <Sparkles size={16} color="#1A2744" stroke-width={2} />
             </div>
             <div>
               <h4 class="font-black text-sm text-white mb-1">{t.title}</h4>

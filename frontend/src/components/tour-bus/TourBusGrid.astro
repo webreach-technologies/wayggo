@@ -1,7 +1,8 @@
 ---
 import { Image } from "astro:assets";
-import { Van, Bus, BusFront, Star, ShipWheel } from "@lucide/astro";
-import type { TourBusCard } from "../../lib/tourBus";
+import { Van, Bus, BusFront, Star } from "@lucide/astro";
+import SteeringWheel from "../icons/SteeringWheel.astro";
+import { operatorCount, type TourBusCard } from "../../lib/tourBus";
 
 interface Props {
   cards: TourBusCard[];
@@ -13,10 +14,10 @@ const { cards } = Astro.props;
 // tour bus can be run with any of these, so the card advertises the full
 // fleet rather than a single vehicle type.
 const fleetTypes = [
-  { label: "Luxury Van", icon: Van },
+  { label: "Van", icon: Van },
   { label: "Minibus", icon: Bus },
-  { label: "Charter Shuttle", icon: Bus },
-  { label: "Full-Size Bus", icon: BusFront },
+  { label: "Mini Coach", icon: Bus },
+  { label: "Motor Coach", icon: BusFront },
 ];
 ---
 
@@ -29,8 +30,9 @@ const fleetTypes = [
           <Image
             src={pkg.image}
             alt={pkg.name}
-            width={480}
-            height={176}
+            widths={[400, 480, 960]}
+            sizes="(min-width: 1024px) 33vw, (min-width: 768px) 50vw, 100vw"
+            loading="lazy"
             class="absolute inset-0 w-full h-full object-cover"
           />
         ) : (
@@ -46,13 +48,11 @@ const fleetTypes = [
               class="badge badge-yellow gap-1"
             >
               <!-- <Star size={11} fill="#1A2744" stroke="none" /> -->
-              Rating & Reviews
+              Ratings & Reviews
             </a>
           </div>
           <div>
-            <a href={pkg.detailHref} class="hover:underline">
-              <h3 class="text-base font-black text-white leading-tight">{pkg.name}</h3>
-            </a>
+            <h3 class="text-base font-black text-white leading-tight">{pkg.name}</h3>
             <p class="text-white/60 text-xs mt-1">{pkg.cities.join(" · ")}</p>
           </div>
         </div>
@@ -63,7 +63,7 @@ const fleetTypes = [
         <!-- Stats -->
         <div class="flex items-center justify-between mb-4 pb-4 border-b border-gray-100">
           <div class="text-xs text-gray-400">
-            Group: <strong class="text-gray-700">{pkg.size}</strong>
+            Ideal For: <strong class="text-gray-700">{pkg.size}</strong>
           </div>
           <div class="text-xs text-gray-400">
             Start From <strong class="text-[#1A2744] text-sm">{pkg.price}{pkg.priceUnit}</strong>
@@ -97,8 +97,8 @@ const fleetTypes = [
 
         <!-- Operator network -->
         <div class="flex items-center gap-2 mb-5 px-1">
-          <ShipWheel size={16} color="#374151" class="shrink-0" />
-          <span class="text-xs font-bold text-gray-700">Served by 10+ Bus Operators</span>
+          <SteeringWheel size={16} color="#374151" class="shrink-0" />
+          <span class="text-xs font-bold text-gray-700">Served by {operatorCount(pkg.id)}+ Bus Operators</span>
         </div>
 
         <!-- CTA -->

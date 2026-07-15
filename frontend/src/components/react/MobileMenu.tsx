@@ -2,12 +2,12 @@ import { useState, useEffect } from "react";
 import { X, ChevronDown } from "lucide-react";
 
 const tourLinks = [
-  { href: "/tour-services/sightseeing", label: "Sightseeing & City Tours" },
-  { href: "/tour-services/educational", label: "Educational & Student Tours" },
-  { href: "/tour-services/religious", label: "Religious & Pilgrimage Groups" },
-  { href: "/tour-services/corporate", label: "Corporate & Convention Travel" },
-  { href: "/tour-services/sports", label: "Sports Teams & Fan Groups" },
-  { href: "/tour-services/weddings", label: "Wedding & Special Events" },
+  { href: "/services/sightseeing", label: "Sightseeing & City Tours" },
+  { href: "/services/educational", label: "Educational & Student Tours" },
+  { href: "/services/religious", label: "Religious & Pilgrimage Groups" },
+  { href: "/services/corporate", label: "Corporate & Convention Travel" },
+  { href: "/services/sports", label: "Sports Teams & Fan Groups" },
+  { href: "/services/weddings", label: "Wedding & Special Events" },
 ];
 
 export default function MobileMenu() {
@@ -18,12 +18,12 @@ export default function MobileMenu() {
   useEffect(() => {
     const path = window.location.pathname;
     setCurrentPath(path);
-    if (path.startsWith("/tour-services")) {
+    if (path.startsWith("/services")) {
       setToursOpen(true);
     }
   }, []);
 
-  const onToursPage = currentPath.startsWith("/tour-services");
+  const onToursPage = currentPath.startsWith("/services");
 
   return (
     <>
@@ -109,7 +109,7 @@ export default function MobileMenu() {
                   color: onToursPage ? "#FDEA01" : undefined,
                 }}
               >
-                <span>Tour Services</span>
+                <span>Services</span>
                 <ChevronDown
                   size={16}
                   className={`transition-transform duration-200 ${toursOpen ? "rotate-180" : ""}`}

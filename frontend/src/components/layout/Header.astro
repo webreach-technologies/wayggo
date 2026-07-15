@@ -33,12 +33,12 @@ const {
     { href: "/contact", label: "Contact" },
   ],
   tourLinks = [
-    { href: "/tour-services/sightseeing", label: "Sightseeing & City Tours", icon: Camera },
-    { href: "/tour-services/educational", label: "Educational & Student Tours", icon: BookOpen },
-    { href: "/tour-services/religious", label: "Religious & Pilgrimage Groups", icon: Church },
-    { href: "/tour-services/corporate", label: "Corporate & Convention Travel", icon: Building2 },
-    { href: "/tour-services/sports", label: "Sports Teams & Fan Groups", icon: Trophy },
-    { href: "/tour-services/weddings", label: "Wedding & Special Events", icon: Gem },
+    { href: "/services/sightseeing", label: "Sightseeing & City Tours", icon: Camera },
+    { href: "/services/educational", label: "Educational & Student Tours", icon: BookOpen },
+    { href: "/services/religious", label: "Religious & Pilgrimage Groups", icon: Church },
+    { href: "/services/corporate", label: "Corporate & Convention Travel", icon: Building2 },
+    { href: "/services/sports", label: "Sports Teams & Fan Groups", icon: Trophy },
+    { href: "/services/weddings", label: "Wedding & Special Events", icon: Gem },
   ],
   primaryCta = { label: "Request a Quote", href: "/contact" },
   partnerLoginHref = "/portal",
@@ -80,17 +80,17 @@ const currentPath = Astro.url.pathname;
           </a>
         ))}
 
-        <!-- Tour Services Dropdown -->
+        <!-- Services Dropdown -->
         <div class="nav-group">
           <button
             class={`flex items-center gap-1 px-4 py-2 rounded-lg text-sm font-medium transition-all duration-200 ${
-              currentPath.startsWith("/tour-services")
+              currentPath.startsWith("/services")
                 ? "text-yellow"
                 : "text-white/75 hover:text-yellow"
             }`}
             style=""
           >
-            Tour Services
+            Services
             <ChevronDown size={14} class="mt-0.5" />
           </button>
           <div class="nav-dropdown">

@@ -1,0 +1,107 @@
+---
+name: "Gulf Coast Serenity Journey"
+tourBusLabel: "Gulf Coast Serenity Journey"
+tagline: "Gulf Coast Serenity Journey"
+days: 3
+size: "8–56 passengers"
+price: "$850"
+priceUnit: "/bus/day"
+country: "USA"
+state: "AL"
+cities:
+  - "Gulf State Park"
+iconKey: "bus"
+cardGradient: "linear-gradient(135deg, #0c4a6e, #0369a1)"
+cardHighlights:
+  - "Gulf State Park Pier (1,540 ft.)"
+  - "Hugh S. Branyon Backcountry Trail"
+  - "Gulf State Park Interpretive Center"
+  - "Lake Shelby & the Nature Center"
+  - "Two Miles of White Sand Beach"
+  - "Bon Secour Wildlife Refuge"
+included:
+  - "Minibus/van for all 3 days"
+  - "Licensed driver"
+  - "Airport transfers"
+  - "Hotel pickups daily"
+
+seoTitle: "Gulf State Park Tour Bus Rental — Gulf Coast Serenity Journey — WAYGGO"
+seoDescription: "Book a Gulf State Park tour bus rental for your group — 6,150 acres of Alabama Gulf Coast beach, the Hugh S. Branyon Backcountry Trail, and the 1,540-ft Gulf State Park Pier, vehicle and driver included."
+
+heroImageAlt: "Gulf State Park tour bus rental"
+heroHeadingLine1: "Gulf State Park"
+heroHeadingLine2: "Tour Bus Rental"
+heroDescription: "6,150 acres of beach, trails, and pier on Alabama's Gulf Coast — one van, one driver, and a route built around Gulf State Park's biggest landmarks. WAYGGO handles the driving so your travelers just show up."
+
+overviewHeading: "Your Group's Way Into Gulf State Park"
+overviewParagraphs:
+  - "Gulf State Park covers 6,150 acres in Gulf Shores, Alabama, on the state's Gulf of Mexico coastline. Within its boundaries are nine distinct ecosystems — two miles of white sand beach, pine flatwoods, freshwater marsh, and three spring-fed lakes (Lake Shelby, Middle Lake, and Little Lake) — making it one of the largest and most ecologically varied state parks on the Gulf Coast. The park first opened to the public in 1939, with its earliest cabins and facilities built by the Civilian Conservation Corps in the 1930s."
+  - "The park's most recognizable landmark is the Gulf State Park Pier, extending 1,540 feet into the Gulf of Mexico — the longest fishing pier on the Gulf Coast. The current structure opened in 2009 as part of a $14.8 million rebuild after the original pier was destroyed by Hurricane Ivan in 2004, one of several storms the park has weathered and rebuilt from over its history."
+  - "Inland, the Hugh S. Branyon Backcountry Trail links the park's ecosystems with 28 miles of paved, multi-use trail, while the LEED-certified Interpretive Center — one of Alabama's most environmentally advanced public buildings — houses a Nature Center with live alligators, owls, hawks, and turtles. Overnight options range from The Lodge at Gulf State Park, a Hilton property built with sustainable practices like turtle-safe outdoor lighting, to a 496-site campground along Middle Lake."
+  - "WAYGGO's promise is simple: show up, and we handle everything on wheels. Each booking pairs your group with a licensed, English-speaking driver who already knows Gulf State Park's parking, entrances, and best staging spots near the pier, the trailheads, and Lake Shelby — so international operators can hand off the Gulf Coast leg with full confidence, no matter how the group's plans shift."
+
+tourHighlights:
+  - "Gulf State Park Pier (1,540 ft., longest on the Gulf)"
+  - "Hugh S. Branyon Backcountry Trail (28+ miles)"
+  - "Gulf State Park Interpretive Center"
+  - "Lake Shelby & the Nature Center"
+  - "Two Miles of White Sand Beach"
+  - "Bon Secour National Wildlife Refuge"
+  - "The Hangout Beachfront Entertainment Complex"
+  - "Orange Beach Waterfront"
+
+thingsToDo:
+  - title: "Fish the Gulf State Park Pier"
+    desc: "At 1,540 feet, it's the longest pier on the Gulf of Mexico — free evenings here mean your group can fish or watch the sunset without changing the daytime schedule."
+  - title: "Bike the Hugh S. Branyon Backcountry Trail"
+    desc: "This paved 28-mile trail network runs through the park's nine ecosystems — rent bikes for a half-day loop between beach stops."
+  - title: "Meet the Wildlife at the Nature Center"
+    desc: "See live alligators, owls, hawks, and turtles at the Interpretive Center's Nature Center, housed in one of Alabama's most environmentally advanced public buildings."
+  - title: "Kayak Lake Shelby"
+    desc: "Skip a beach afternoon and paddle the park's largest freshwater lake instead — calmer water, same coastline."
+  - title: "Explore Bon Secour Wildlife Refuge"
+    desc: "A short drive from the park for birdwatching and quiet dune trails along the same stretch of coast."
+  - title: "Sunset at The Hangout"
+    desc: "Extend a beach day into the evening with live music and casual dining right on the Gulf Shores sand."
+
+itinerary:
+  - day: "Day 1"
+    title: "Arrival & Gulf State Park Beach"
+    desc: "Airport pickup, hotel check-in, and an afternoon on Gulf State Park's two-mile beach, with an evening stop at the Pier for sunset."
+  - day: "Day 2"
+    title: "Backcountry Trail & Interpretive Center"
+    desc: "Morning ride along the Hugh S. Branyon Backcountry Trail, a stop at the Interpretive Center and Nature Center, then an afternoon at Lake Shelby."
+  - day: "Day 3"
+    title: "Orange Beach & Departure"
+    desc: "Morning at the Orange Beach waterfront, a stop at Bon Secour National Wildlife Refuge, then airport or hotel drop-off."
+
+faqs:
+  - q: "What is Gulf State Park known for?"
+    a: "Gulf State Park is a 6,150-acre state park in Gulf Shores, Alabama, known for its two miles of white sand beach, the 1,540-foot Gulf State Park Pier (the longest on the Gulf of Mexico), the 28-mile Hugh S. Branyon Backcountry Trail, and a LEED-certified Interpretive Center covering the park's nine ecosystems."
+  - q: "How big is Gulf State Park, and how much of it does this tour cover?"
+    a: "The park spans 6,150 acres — too large to see on foot in a few days. This three-day tour bus rental is built around its main landmarks: the beach, the Pier, the Backcountry Trail, the Interpretive Center, and Lake Shelby, plus nearby Orange Beach and Bon Secour Wildlife Refuge."
+  - q: "Can we see wildlife at Gulf State Park?"
+    a: "Yes — the Nature Center at the Interpretive Center has live alligators, owls, hawks, and turtles, and the surrounding marshland and Bon Secour National Wildlife Refuge are active birdwatching spots. Sea turtles also nest on the beach in season."
+  - q: "Are Gulf State Park entry, pier fishing, or trail rental fees included in the price?"
+    a: "No — this is ground transportation only. Your driver gets the group to the door, but pier fishing fees, bike rentals, and any Interpretive Center program fees are booked separately or through your local guide."
+  - q: "Can we swap a stop for something else, like Foley outlet shopping or a seafood dinner?"
+    a: "Yes. This itinerary is a starting template — tell us what you'd like to swap or add in the request form below and we'll send back a revised proposal."
+  - q: "What's the minimum and maximum group size for this route?"
+    a: "8–56 passengers depending on vehicle, from a Luxury Van up to a Full-Size Bus. Tell us your group size and we'll match the right vehicle."
+  - q: "How does pickup and drop-off work near Gulf State Park and Gulf Shores hotels?"
+    a: "Our drivers know the park's entrances and the local resort pickup points, so your group is dropped as close as possible to the beach, the Pier, or the trailhead without circling for parking."
+  - q: "What's the best time of year to visit Gulf State Park?"
+    a: "Spring and fall bring milder weather and lighter crowds on the beach and trails. Summer (Jun–Aug) is the busiest window for the Pier and beach — confirm 6+ weeks out during that period."
+
+testimonials:
+  - quote: "Three days, every beach and trail stop on time, and the driver knew exactly where to park near the pier. Our clients keep asking for this route again."
+    name: "Rachel Coleman"
+    role: "Group Travel Manager"
+    company: "Southern Charm Tours"
+    flag: "🇬🇧"
+  - quote: "The driver staged perfectly for The Hangout and the wildlife refuge — saved us close to an hour each day compared to our old operator."
+    name: "Hans Mueller"
+    role: "Tour Director"
+    company: "Küstenreisen GmbH"
+    flag: "🇩🇪"
+---

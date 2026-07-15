@@ -4,7 +4,6 @@ tourBusLabel: "New York City Icons"
 tagline: "5-Day Small Group NYC Landmarks Tour Bus"
 days: 5
 size: "8–56 passengers"
-vehicle: "Luxury Van or Minibus"
 price: "$950"
 priceUnit: "/bus/day"
 country: "USA"
@@ -39,7 +38,7 @@ overviewParagraphs:
   - "This tour bus moves your group through Manhattan and Brooklyn's essential landmarks over five days — without a single subway transfer or taxi line. From Times Square to the Statue of Liberty, Central Park to Top of the Rock, your driver handles the route, the traffic, and the drop-offs."
   - "Built for international tour operators booking small groups of 8–20 travelers, the tour bus includes the vehicle, a professional driver, and daily hotel pickups — so you can quote one line item and let WAYGGO run the city."
   - "Whether you're running a single group or coordinating multiple departures across the week, WAYGGO scales the vehicle to match — from an intimate 6-passenger Luxury Van to a 40-passenger Full-Size Bus for larger delegations. Every itinerary starts from this five-day template, but timing, stops, and pacing are yours to adjust before we confirm."
-  - "Your driver stays with the group for the full five days, learning your travelers' pace after day one and adjusting drop-off points, waiting spots, and walking distances accordingly. No new driver to brief, no repeated instructions — just one point of contact who already knows the plan."
+  - "WAYGGO's promise is simple: show up, and we handle everything on wheels. Each booking pairs your group with a licensed, English-speaking driver who already knows Manhattan and Brooklyn's traffic, loading zones, and best staging spots near every landmark — so international operators can hand off the city leg with full confidence, no matter how the group's plans shift."
 
 tourHighlights:
   - "Times Square & Broadway Theater District"
@@ -84,7 +83,7 @@ itinerary:
 
 faqs:
   - q: "What landmarks are covered on the New York City Icons tour?"
-    a: "All five days are built around NYC's core icons — Times Square, the Statue of Liberty & Ellis Island, Central Park, the 9/11 Memorial, the Empire State Building, Brooklyn Bridge, and Rockefeller Center. See the Tour Bus Highlights above for the full stop list."
+    a: "All five days are built around NYC's core icons — Times Square, the Statue of Liberty & Ellis Island, Central Park, the 9/11 Memorial, the Empire State Building, Brooklyn Bridge, and Rockefeller Center. See the Attractions Highlights above for the full stop list."
   - q: "Are attraction tickets like the Liberty cruise or 9/11 Memorial included in the price?"
     a: "No — this is ground transportation only. Your driver gets the group to the door, but cruise tickets, museum admission, and observatory access (Liberty, 9/11 Memorial, Empire State, Top of the Rock) are booked separately or through your local guide."
   - q: "Can we swap a landmark for something else, like Chinatown or a Broadway show?"
