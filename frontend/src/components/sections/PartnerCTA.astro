@@ -1,4 +1,6 @@
 ---
+import { withBase } from '../../lib/url';
+
 interface TrustCard {
   title: string;
   desc: string;
@@ -53,8 +55,8 @@ const {
           {subheading}
         </p>
         <div class="flex flex-col sm:flex-row gap-4">
-          <a href={primaryCta.href} class="btn-primary">{primaryCta.label}</a>
-          <a href={secondaryCta.href} class="btn-outline-white">{secondaryCta.label}</a>
+          <a href={withBase(primaryCta.href)} class="btn-primary">{primaryCta.label}</a>
+          <a href={withBase(secondaryCta.href)} class="btn-outline-white">{secondaryCta.label}</a>
         </div>
       </div>
 

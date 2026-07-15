@@ -13,6 +13,7 @@ import {
   type Bucket,
   type TourBusCard,
 } from "../../lib/tourBus";
+import { withBase } from "../../lib/url";
 
 interface Props {
   bucket: Bucket;
@@ -50,8 +51,8 @@ const tourBusItemListSchema = {
   description={seo.description}
   breadcrumbs={breadcrumbs}
   noindex={noindex}
-  prevHref={page > 1 ? bucketPageHref(bucket, page - 1) : undefined}
-  nextHref={page < totalPages ? bucketPageHref(bucket, page + 1) : undefined}
+  prevHref={page > 1 ? withBase(bucketPageHref(bucket, page - 1)) : undefined}
+  nextHref={page < totalPages ? withBase(bucketPageHref(bucket, page + 1)) : undefined}
 >
   <script is:inline type="application/ld+json" set:html={JSON.stringify(tourBusItemListSchema)} />
 
@@ -88,8 +89,8 @@ const tourBusItemListSchema = {
           Don't see exactly what your client needs? Tell us the cities, the dates, and the group size — our operations team will design a bespoke transportation itinerary within 24 hours.
         </p>
         <div class="flex flex-col sm:flex-row gap-4 justify-center">
-          <a href="/contact" class="btn-primary">Request Custom Itinerary</a>
-          <a href="/network" class="btn-outline-white">View Our Coverage</a>
+          <a href={withBase("/contact")} class="btn-primary">Request Custom Itinerary</a>
+          <a href={withBase("/network")} class="btn-outline-white">View Our Coverage</a>
         </div>
       </div>
     </div>

@@ -8,6 +8,7 @@ import imgReligious from "../../assets/tourtype/Religious & Pilgrimage Groups.pn
 import imgCorporate from "../../assets/tourtype/Corporate & Convention Travel.png";
 import imgSports from "../../assets/tourtype/Sports Teams & Fan Group Travel.png";
 import imgWeddings from "../../assets/tourtype/Wedding & Special Events.png";
+import { withBase } from "../../lib/url";
 
 interface TourType {
   image: ImageMetadata;
@@ -96,7 +97,7 @@ const {
     <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
       {tourTypes.map((t) => (
         <a
-          href={t.href}
+          href={withBase(t.href)}
           class="group relative rounded-2xl overflow-hidden border border-white/10 hover:border-yellow transition-all duration-300 hover:-translate-y-1"
         >
           <div class="relative h-48 overflow-hidden">

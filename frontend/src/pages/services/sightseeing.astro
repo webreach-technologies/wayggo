@@ -3,6 +3,7 @@ import BaseLayout from "../../layouts/BaseLayout.astro";
 import { Image } from "astro:assets";
 import heroImg from "../../assets/tourtype/Sightseeing & City Tours.png";
 import { Bus, User, Mic, MapPin } from "@lucide/astro";
+import { withBase } from "../../lib/url";
 
 const routes = [
   { city: "New York City", highlights: ["Times Square", "Statue of Liberty", "Central Park", "9/11 Memorial", "Empire State Building", "Brooklyn Bridge"], vehicle: "Minibus or Motorcoach", days: "3–7 days" },
@@ -79,7 +80,7 @@ const serviceSchema = {
         <p class="text-white/65 text-lg leading-relaxed max-w-2xl mb-8">
           From the Manhattan skyline to the Pacific coast, WAYGGO's sightseeing fleet connects international groups to North America's most iconic landmarks with professional drivers and optional expert guides.
         </p>
-        <a href="/contact" class="btn-primary">Request Sightseeing Quote</a>
+        <a href={withBase("/contact")} class="btn-primary">Request Sightseeing Quote</a>
       </div>
     </div>
   </section>
@@ -159,7 +160,7 @@ const serviceSchema = {
           ))}
         </div>
         <div class="mt-8 text-center">
-          <a href="/contact" class="btn-primary">Request This Itinerary</a>
+          <a href={withBase("/contact")} class="btn-primary">Request This Itinerary</a>
         </div>
       </div>
     </div>
@@ -190,8 +191,8 @@ const serviceSchema = {
         Tell us your cities, group size, and dates. We'll match you with the perfect vehicle and operator within 24 hours.
       </p>
       <div class="flex flex-col sm:flex-row gap-4 justify-center">
-        <a href="/contact" class="btn-primary">Request a Quote</a>
-        <a href="/tour-bus" class="btn-outline-navy">Browse Tour Bus</a>
+        <a href={withBase("/contact")} class="btn-primary">Request a Quote</a>
+        <a href={withBase("/tour-bus")} class="btn-outline-navy">Browse Tour Bus</a>
       </div>
     </div>
   </section>

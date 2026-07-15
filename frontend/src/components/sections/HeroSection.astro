@@ -7,6 +7,7 @@ import imgReligious  from '../../assets/tourtype/Religious & Pilgrimage Groups.p
 import imgSightseeing from '../../assets/tourtype/Sightseeing & City Tours.png';
 import imgSports     from '../../assets/tourtype/Sports Teams & Fan Group Travel.png';
 import imgWedding    from '../../assets/tourtype/Wedding & Special Events.png';
+import { withBase } from '../../lib/url';
 
 interface Props {
   badge?: string;
@@ -91,11 +92,11 @@ const cyclingWords = [
         </p>
 
         <div class="flex flex-col sm:flex-row gap-4 mb-10 animate-fade-up delay-300">
-          <a href={primaryCta.href} class="btn-primary">
+          <a href={withBase(primaryCta.href)} class="btn-primary">
             <MessageSquare size={16} stroke-width={2.5} />
             {primaryCta.label}
           </a>
-          <a href={secondaryCta.href} class="btn-outline-white">
+          <a href={withBase(secondaryCta.href)} class="btn-outline-white">
             <Users size={16} stroke-width={2.5} />
             {secondaryCta.label}
           </a>

@@ -5,6 +5,7 @@
 // link based on whether this list is empty.
 import { ArrowRight } from "@lucide/astro";
 import type { CollectionEntry } from "astro:content";
+import { withBase } from "../../lib/url";
 
 interface Props {
   related: CollectionEntry<"tourBus">[];
@@ -22,14 +23,14 @@ const { related: ranked } = Astro.props;
             <span class="section-label mb-3 inline-flex">Related Tours</span>
             <h2 class="text-3xl font-black" style="color: #1A2744;">Other Tours You May Like</h2>
           </div>
-          <a href="/tour-bus" class="hidden sm:flex items-center gap-2 font-bold text-sm uppercase tracking-widest text-gray-400 hover:text-navy transition-all">
+          <a href={withBase("/tour-bus")} class="hidden sm:flex items-center gap-2 font-bold text-sm uppercase tracking-widest text-gray-400 hover:text-navy transition-all">
             View All Tour Bus
             <ArrowRight size={16} stroke-width={2.5} />
           </a>
         </div>
         <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
           {ranked.map((rp) => (
-            <a href={`/tour-bus/${rp.id}`} class="rounded-2xl overflow-hidden card-hover block bg-white border border-gray-100" style="box-shadow: 0 4px 24px rgba(26,39,68,0.08);">
+            <a href={withBase(`/tour-bus/${rp.id}`)} class="rounded-2xl overflow-hidden card-hover block bg-white border border-gray-100" style="box-shadow: 0 4px 24px rgba(26,39,68,0.08);">
               <div class="h-32 relative">
                 <div class="absolute inset-0" style={`background: ${rp.data.cardGradient};`} />
                 <div class="absolute inset-0 diagonal-lines" />

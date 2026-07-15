@@ -5,6 +5,12 @@ import TopBar from "../components/layout/TopBar.astro";
 import Header from "../components/layout/Header.astro";
 import Footer from "../components/layout/Footer.astro";
 import { ChevronUp } from "@lucide/astro";
+import { withBase } from "../lib/url";
+
+// The GitHub Pages preview build (STAGING=true, see astro.config.mjs) is a
+// temporary client-review deployment that must never be indexed — it
+// overrides whatever `noindex` a page passes in.
+const isStaging = import.meta.env.STAGING === "true";
 
 interface Breadcrumb {
   name: string;
@@ -91,7 +97,9 @@ const breadcrumbSchema = breadcrumbs && breadcrumbs.length > 0 ? {
     <meta name="generator" content={Astro.generator} />
     <title>{title}</title>
     <meta name="description" content={description} />
-    {noindex && <meta name="robots" content="noindex, follow" />}
+    {isStaging
+      ? <meta name="robots" content="noindex, nofollow" />
+      : noindex && <meta name="robots" content="noindex, follow" />}
     <meta property="og:site_name" content="WAYGGO" />
     <meta property="og:title" content={title} />
     <meta property="og:description" content={description} />
@@ -102,12 +110,12 @@ const breadcrumbSchema = breadcrumbs && breadcrumbs.length > 0 ? {
     <meta name="twitter:title" content={title} />
     <meta name="twitter:description" content={description} />
     <meta name="twitter:image" content={ogImage} />
-<link rel="preload" href="/fonts/nunito-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin />
+<link rel="preload" href={withBase("/fonts/nunito-latin-wght-normal.woff2")} as="font" type="font/woff2" crossorigin />
     <link rel="canonical" href={canonicalURL} />
     {prevHref && <link rel="prev" href={new URL(prevHref, siteOrigin).href} />}
     {nextHref && <link rel="next" href={new URL(nextHref, siteOrigin).href} />}
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <link rel="icon" href="/favicon.ico" />
+    <link rel="icon" type="image/svg+xml" href={withBase("/favicon.svg")} />
+    <link rel="icon" href={withBase("/favicon.ico")} />
     <script is:inline type="application/ld+json" set:html={JSON.stringify(organizationSchema)} />
     {breadcrumbSchema && (
       <script is:inline type="application/ld+json" set:html={JSON.stringify(breadcrumbSchema)} />

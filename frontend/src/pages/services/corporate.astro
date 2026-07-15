@@ -3,6 +3,7 @@ import BaseLayout from "../../layouts/BaseLayout.astro";
 import { Image } from "astro:assets";
 import heroImg from "../../assets/tourtype/Corporate & Convention Travel.png";
 import { Send, RefreshCw, Award, Clipboard, Moon, FileText } from "@lucide/astro";
+import { withBase } from "../../lib/url";
 
 const conventions = [
   { name: "CES — Consumer Electronics Show", city: "Las Vegas, NV", months: "January", size: "Up to 120,000 attendees", vehicle: "Motorcoach fleet" },
@@ -87,7 +88,7 @@ const serviceSchema = {
         <p class="text-white/65 text-lg leading-relaxed max-w-2xl mb-8">
           When your delegation lands in North America, every minute counts. WAYGGO delivers precision ground logistics for corporate groups, industry conventions, and executive travel programs — managing complexity so your clients experience nothing but seamless movement.
         </p>
-        <a href="/contact" class="btn-primary">Request Corporate Quote</a>
+        <a href={withBase("/contact")} class="btn-primary">Request Corporate Quote</a>
       </div>
     </div>
   </section>
@@ -151,8 +152,8 @@ const serviceSchema = {
         Submit your delegation size, convention dates, and hotel locations. We'll build a precision transport plan within 24 hours.
       </p>
       <div class="flex flex-col sm:flex-row gap-4 justify-center">
-        <a href="/contact" class="btn-primary">Request a Corporate Quote</a>
-        <a href="/portal" class="btn-outline-white">Register as Corporate Partner</a>
+        <a href={withBase("/contact")} class="btn-primary">Request a Corporate Quote</a>
+        <a href={withBase("/portal")} class="btn-outline-white">Register as Corporate Partner</a>
       </div>
     </div>
   </section>

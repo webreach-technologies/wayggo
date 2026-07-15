@@ -1,5 +1,0 @@
-User-agent: *
-Allow: /
-Disallow: /portal/
-
-Sitemap: https://wayggo.com/sitemap-index.xml

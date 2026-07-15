@@ -14,6 +14,7 @@ import RelatedTours from "../../components/tour-bus/RelatedTours.astro";
 import QuickQuoteModal from "../../components/tour-bus/QuickQuoteModal.astro";
 import { Star, ChevronDown, Zap } from "@lucide/astro";
 import { operatorCount } from "../../lib/tourBus";
+import { withBase } from "../../lib/url";
 // Placeholder hero image — used for any entry that doesn't set its own heroImage yet.
 import defaultHeroImg from "../../assets/images/hero-bus.png";
 
@@ -273,7 +274,7 @@ const jumpLinks = [
         </p>
         <div class="flex flex-col sm:flex-row gap-4 justify-center">
           <a href="#request" class="btn-primary">Request This Tour Bus</a>
-          <a href="/tour-bus" class="btn-outline-white">View All Tour Bus</a>
+          <a href={withBase("/tour-bus")} class="btn-outline-white">View All Tour Bus</a>
         </div>
       </div>
     </div>

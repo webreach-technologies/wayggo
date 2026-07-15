@@ -21,6 +21,7 @@ import {
   Building,
   MapPin,
 } from "@lucide/astro";
+import { withBase } from "../../lib/url";
 
 const vehicleIconComponents: Record<string, typeof Van> = {
   van: Van,
@@ -172,7 +173,7 @@ const VehicleIcon = vehicleIconComponents[iconKey];
           ))}
         </div>
 
-        <a href="/contact" class="btn-primary">
+        <a href={withBase("/contact")} class="btn-primary">
           Request This Vehicle
         </a>
       </div>

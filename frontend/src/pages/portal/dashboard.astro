@@ -3,6 +3,7 @@ import { Image } from "astro:assets";
 import { Truck, Calendar, Check, Clock, Plus, FileText, MapPin, Mail, Phone } from "@lucide/astro";
 import PortalLayout from "../../layouts/PortalLayout.astro";
 import Logo from "../../assets/images/wayggo-logo.png";
+import { withBase } from "../../lib/url";
 
 const stats = [
   {
@@ -42,7 +43,7 @@ const quotes = [
 
 const quickActions = [
   {
-    label: "New Quote Request", href: "/contact", primary: true,
+    label: "New Quote Request", href: withBase("/contact"), primary: true,
     icon: Plus,
   },
   {
@@ -71,7 +72,7 @@ const quickActions = [
   <header class="dash-header">
     <div class="dash-header-inner">
       <div class="dash-header-left">
-        <a href="/" aria-label="WAYGGO Home" class="dash-logo-link">
+        <a href={withBase("/")} aria-label="WAYGGO Home" class="dash-logo-link">
           <Image src={Logo} alt="WAYGGO" class="dash-logo" loading="eager" draggable="false" />
         </a>
         <span class="dash-header-sep" aria-hidden="true"></span>
@@ -79,7 +80,7 @@ const quickActions = [
       </div>
 
       <div class="dash-header-right">
-        <a href="/contact" class="btn-primary dash-new-quote-btn">
+        <a href={withBase("/contact")} class="btn-primary dash-new-quote-btn">
           <Plus size={12} stroke-width={3} aria-hidden="true" />
           New Quote
         </a>

@@ -1,6 +1,7 @@
 ﻿---
 import { Image } from "astro:assets";
 import { ArrowRight } from "@lucide/astro";
+import { withBase } from "../../lib/url";
 import luxuryvanImg from "../../assets/fleet/luxuryvan.png";
 import minibusImg from "../../assets/fleet/minibus.png";
 import fullsizebusImg from "../../assets/fleet/fullsizebus.png";
@@ -60,7 +61,7 @@ const gradientCSS = vehicles.map((v, i) =>
           ))}
         </h2>
       </div>
-      <a href={viewAllHref}
+      <a href={withBase(viewAllHref)}
         class="self-start lg:self-auto flex items-center gap-2 font-bold text-sm uppercase tracking-widest transition-all hover:gap-4"
         style="color: #1A2744;">
         {viewAllLabel}
@@ -107,7 +108,7 @@ const gradientCSS = vehicles.map((v, i) =>
                 Capacity: <strong class="text-gray-800">{v.capacity}</strong>
               </div>
             </div>
-            <a href={viewAllHref} class="btn-secondary w-full justify-center"
+            <a href={withBase(viewAllHref)} class="btn-secondary w-full justify-center"
               style="padding: 0.65rem 1.5rem; font-size: 0.72rem;">
               View Full Specs
             </a>

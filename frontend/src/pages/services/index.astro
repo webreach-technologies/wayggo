@@ -2,6 +2,7 @@
 import BaseLayout from "../../layouts/BaseLayout.astro";
 import PageHero from "../../components/sections/PageHero.astro";
 import { ArrowRight } from "@lucide/astro";
+import { withBase } from "../../lib/url";
 
 const categories = [
   {
@@ -86,7 +87,7 @@ const categories = [
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
         {categories.map((cat) => (
           <a
-            href={cat.href}
+            href={withBase(cat.href)}
             class="group bg-white rounded-2xl overflow-hidden card-hover border-2 border-transparent hover:border-[#FDEA01] transition-all duration-300"
           >
             <!-- Header -->
@@ -139,7 +140,7 @@ const categories = [
       <p class="text-base mb-8 max-w-xl mx-auto" style="color: rgba(26,39,68,0.7);">
         Tell us your itinerary and we'll recommend the right vehicle and tour structure for your group.
       </p>
-      <a href="/contact" class="btn-secondary">Get a Custom Recommendation</a>
+      <a href={withBase("/contact")} class="btn-secondary">Get a Custom Recommendation</a>
     </div>
   </section>
 

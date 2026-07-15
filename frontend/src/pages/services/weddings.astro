@@ -3,6 +3,7 @@ import BaseLayout from "../../layouts/BaseLayout.astro";
 import { Image } from "astro:assets";
 import heroImg from "../../assets/tourtype/Wedding & Special Events.png";
 import { Star, User, Clock, Heart, RefreshCw, Bus, Send, Sunrise, LayoutGrid, MapPin } from "@lucide/astro";
+import { withBase } from "../../lib/url";
 
 const highlights = [
   {
@@ -97,7 +98,7 @@ const serviceSchema = {
         <p class="text-white/65 text-lg leading-relaxed max-w-2xl mb-8">
           Your clients are traveling from across the world for one perfect day. WAYGGO ensures every guest moves elegantly from ceremony to reception, hotel to venue, arrival to farewell — without a single logistical worry.
         </p>
-        <a href="/contact" class="btn-primary">Request Wedding Transport</a>
+        <a href={withBase("/contact")} class="btn-primary">Request Wedding Transport</a>
       </div>
     </div>
   </section>
@@ -160,7 +161,7 @@ const serviceSchema = {
       <p class="text-white/60 max-w-lg mx-auto mb-8">
         Share the wedding date, guest count, and venues. We'll design an elegant transport plan that blends seamlessly into your event.
       </p>
-      <a href="/contact" class="btn-primary">Request Wedding Transport Quote</a>
+      <a href={withBase("/contact")} class="btn-primary">Request Wedding Transport Quote</a>
     </div>
   </section>
 

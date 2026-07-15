@@ -3,6 +3,7 @@ import { Image } from "astro:assets";
 import { Zap, LayoutGrid, FileText, User, Globe, Mail, Lock } from "@lucide/astro";
 import PortalLayout from "../../layouts/PortalLayout.astro";
 import Logo from "../../assets/images/wayggo-logo.png";
+import { withBase } from "../../lib/url";
 
 const benefits = [
   {
@@ -43,7 +44,7 @@ const benefits = [
   <!-- ── Left dark panel ── -->
   <aside class="portal-panel diagonal-lines">
 
-    <a href="/" class="portal-logo-link" aria-label="WAYGGO Home">
+    <a href={withBase("/")} class="portal-logo-link" aria-label="WAYGGO Home">
       <Image src={Logo} alt="WAYGGO" class="portal-logo-img" loading="eager" draggable="false" />
     </a>
 
@@ -82,7 +83,7 @@ const benefits = [
 
     <!-- Mobile top bar with logo (dark bg so logo is visible) -->
     <div class="portal-mobile-bar">
-      <a href="/" aria-label="WAYGGO Home">
+      <a href={withBase("/")} aria-label="WAYGGO Home">
         <Image src={Logo} alt="WAYGGO" class="portal-logo-img" loading="eager" draggable="false" />
       </a>
     </div>
@@ -132,7 +133,7 @@ const benefits = [
 
         <div class="portal-divider">
           <p class="portal-register-label">Not a partner yet?</p>
-          <a href="/contact" class="btn-outline-navy w-full justify-center">
+          <a href={withBase("/contact")} class="btn-outline-navy w-full justify-center">
             Register Your Agency
           </a>
         </div>

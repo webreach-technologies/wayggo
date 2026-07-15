@@ -1,6 +1,7 @@
 ---
 import { ArrowRight } from "@lucide/astro";
 import CoverageMap from "../react/CoverageMap";
+import { withBase } from "../../lib/url";
 
 interface Props {
   badge?: string;
@@ -61,7 +62,7 @@ const stats = [
         <p class="font-subheading leading-relaxed mb-8" style="color: rgba(255,255,255,0.52); font-size: 0.95rem;">
           {subheading}
         </p>
-        <a href={ctaHref} class="btn-primary">
+        <a href={withBase(ctaHref)} class="btn-primary">
           {ctaLabel}
           <ArrowRight size={16} stroke-width={2.5} />
         </a>

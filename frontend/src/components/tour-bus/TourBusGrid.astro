@@ -3,6 +3,7 @@ import { Image } from "astro:assets";
 import { Van, Bus, BusFront, Star } from "@lucide/astro";
 import SteeringWheel from "../icons/SteeringWheel.astro";
 import { operatorCount, type TourBusCard } from "../../lib/tourBus";
+import { withBase } from "../../lib/url";
 
 interface Props {
   cards: TourBusCard[];
@@ -44,7 +45,7 @@ const fleetTypes = [
           <div class="flex justify-between items-center">
             <span class="badge badge-navy" style="background-color: rgba(255,255,255,0.15); color: white;">{pkg.country} · {pkg.state}</span>
             <a
-              href={`${pkg.detailHref}#testimonials`}
+              href={`${withBase(pkg.detailHref)}#testimonials`}
               class="badge badge-yellow gap-1"
             >
               <!-- <Star size={11} fill="#1A2744" stroke="none" /> -->
@@ -104,14 +105,14 @@ const fleetTypes = [
         <!-- CTA -->
         <div class="flex flex-col gap-2">
           <a
-            href={pkg.detailHref}
+            href={withBase(pkg.detailHref)}
             class="btn-outline-navy w-full justify-center"
             style="padding: 0.625rem 1.5rem; font-size: 0.75rem;"
           >
             Know More Details
           </a>
           <a
-            href={`/tour-bus/request?tourBus=${pkg.id}&name=${encodeURIComponent(pkg.name)}`}
+            href={withBase(`/tour-bus/request?tourBus=${pkg.id}&name=${encodeURIComponent(pkg.name)}`)}
             class="btn-secondary w-full justify-center"
             style="padding: 0.625rem 1.5rem; font-size: 0.75rem;"
           >

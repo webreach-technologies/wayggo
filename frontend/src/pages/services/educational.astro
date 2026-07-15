@@ -3,6 +3,7 @@ import BaseLayout from "../../layouts/BaseLayout.astro";
 import { Image } from "astro:assets";
 import heroImg from "../../assets/tourtype/Educational & Student Tours.png";
 import { ShieldCheck, Users, Clock, Smartphone } from "@lucide/astro";
+import { withBase } from "../../lib/url";
 
 const destinations = [
   { city: "Washington D.C.", ideal: "History, Science, Government", sites: ["Smithsonian Institution", "National Air & Space Museum", "US Capitol", "Library of Congress", "National Zoo"] },
@@ -77,7 +78,7 @@ const serviceSchema = {
         <p class="text-white/65 text-lg leading-relaxed max-w-2xl mb-8">
           Moving student groups requires precise timing, safe vehicles, and drivers who understand the responsibility. WAYGGO's educational tour fleet is purpose-built for schools, universities, and youth travel operators worldwide.
         </p>
-        <a href="/contact" class="btn-primary">Plan a Student Tour</a>
+        <a href={withBase("/contact")} class="btn-primary">Plan a Student Tour</a>
       </div>
     </div>
   </section>
@@ -134,8 +135,8 @@ const serviceSchema = {
         Share your school's travel itinerary and we'll build the safest, most educational ground transport plan.
       </p>
       <div class="flex flex-col sm:flex-row gap-4 justify-center">
-        <a href="/contact" class="btn-primary">Request a Student Tour Quote</a>
-        <a href="/fleet" class="btn-outline-white">View Suitable Vehicles</a>
+        <a href={withBase("/contact")} class="btn-primary">Request a Student Tour Quote</a>
+        <a href={withBase("/fleet")} class="btn-outline-white">View Suitable Vehicles</a>
       </div>
     </div>
   </section>

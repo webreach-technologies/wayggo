@@ -3,6 +3,7 @@ import BaseLayout from "../layouts/BaseLayout.astro";
 import PageHero from "../components/sections/PageHero.astro";
 import QuoteForm from "../components/react/QuoteForm";
 import { Mail, Phone, MessageSquare, Users, ChevronDown } from "@lucide/astro";
+import { withBase } from "../lib/url";
 
 const pageURL = new URL(Astro.url.pathname, Astro.site ?? "https://wayggo.com").href;
 const contactPageSchema = {
@@ -82,7 +83,7 @@ const contactPageSchema = {
                 </div>
               </a>
               <!-- Partner Portal -->
-              <a href="/portal" class="flex items-start gap-3 group">
+              <a href={withBase("/portal")} class="flex items-start gap-3 group">
                 <div class="flex-shrink-0 w-7 h-7 flex items-center justify-center">
                   <Users size={20} class="text-gray-400 group-hover:text-[#1A2744] transition-colors" />
                 </div>

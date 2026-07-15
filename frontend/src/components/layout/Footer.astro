@@ -2,6 +2,7 @@
 import { Image } from "astro:assets";
 import logoImg from "../../assets/images/wayggo-logo.png";
 import { Star, Mail, Phone } from "@lucide/astro";
+import { withBase } from "../../lib/url";
 
 const navLinks = [
   { href: "/",        label: "Home"     },
@@ -45,7 +46,7 @@ const legalLinks = ["Privacy Policy", "Terms of Service", "Cookie Policy"];
       <!-- Brand column -->
       <div class="lg:col-span-4">
         <div class="mb-5">
-          <a href="/" aria-label="WAYGGO Home">
+          <a href={withBase("/")} aria-label="WAYGGO Home">
             <Image src={logoImg} alt="WAYGGO" class="w-auto h-10" style="object-fit: contain;" />
           </a>
         </div>
@@ -85,7 +86,7 @@ const legalLinks = ["Privacy Policy", "Terms of Service", "Cookie Policy"];
         <ul class="space-y-3">
           {navLinks.map((link) => (
             <li>
-              <a href={link.href} class="text-sm text-white/50 transition-colors hover:text-yellow"
+              <a href={withBase(link.href)} class="text-sm text-white/50 transition-colors hover:text-yellow"
                 style="">
                 {link.label}
               </a>
@@ -102,7 +103,7 @@ const legalLinks = ["Privacy Policy", "Terms of Service", "Cookie Policy"];
         <ul class="space-y-3">
           {tourLinks.map((link) => (
             <li>
-              <a href={link.href} class="text-sm text-white/50 transition-colors hover:text-yellow"
+              <a href={withBase(link.href)} class="text-sm text-white/50 transition-colors hover:text-yellow"
                 style="">
                 {link.label}
               </a>
@@ -136,7 +137,7 @@ const legalLinks = ["Privacy Policy", "Terms of Service", "Cookie Policy"];
             );
           })}
           <li class="mt-6">
-            <a href="/contact" class="btn-primary" style="padding: 0.7rem 1.5rem; font-size: 0.7rem;">
+            <a href={withBase("/contact")} class="btn-primary" style="padding: 0.7rem 1.5rem; font-size: 0.7rem;">
               Request a Quote
             </a>
           </li>

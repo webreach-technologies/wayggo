@@ -1,5 +1,6 @@
 ---
 import { Shield, Star, Users, type AstroComponent } from "@lucide/astro";
+import { withBase } from "../../lib/url";
 
 interface Pillar {
   icon: AstroComponent;
@@ -64,7 +65,7 @@ const headingLines = heading.split("\n");
         <p class="font-subheading text-base leading-relaxed mb-8" style="color: #6B7280;">
           {subheading}
         </p>
-        <a href="/about" class="btn-secondary">Learn Our Story</a>
+        <a href={withBase("/about")} class="btn-secondary">Learn Our Story</a>
       </div>
 
       <!-- Right: 3 pillar cards -->

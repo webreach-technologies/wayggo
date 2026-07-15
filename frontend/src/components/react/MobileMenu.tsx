@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import { X, ChevronDown } from "lucide-react";
+import { withBase } from "../../lib/url";
 
 const tourLinks = [
   { href: "/services/sightseeing", label: "Sightseeing & City Tours" },
@@ -18,12 +19,12 @@ export default function MobileMenu() {
   useEffect(() => {
     const path = window.location.pathname;
     setCurrentPath(path);
-    if (path.startsWith("/services")) {
+    if (path.startsWith(withBase("/services"))) {
       setToursOpen(true);
     }
   }, []);
 
-  const onToursPage = currentPath.startsWith("/services");
+  const onToursPage = currentPath.startsWith(withBase("/services"));
 
   return (
     <>
@@ -74,11 +75,11 @@ export default function MobileMenu() {
               { href: "/about", label: "About Wayggo" },
               { href: "/contact", label: "Contact Us" },
             ].map((link) => {
-              const isActive = currentPath === link.href;
+              const isActive = currentPath === withBase(link.href);
               return (
                 <a
                   key={link.href}
-                  href={link.href}
+                  href={withBase(link.href)}
                   className={`flex items-center px-4 py-3 rounded-xl transition-all font-medium text-sm ${
                     isActive
                       ? "bg-white/10 font-semibold"
@@ -118,11 +119,11 @@ export default function MobileMenu() {
               {toursOpen && (
                 <div className="mt-1 ml-4 space-y-1">
                   {tourLinks.map((link) => {
-                    const isTourActive = currentPath === link.href;
+                    const isTourActive = currentPath === withBase(link.href);
                     return (
                       <a
                         key={link.href}
-                        href={link.href}
+                        href={withBase(link.href)}
                         className={`flex items-center px-4 py-2.5 rounded-xl transition-all text-sm ${
                           isTourActive
                             ? "bg-white/10 font-semibold"
@@ -150,7 +151,7 @@ export default function MobileMenu() {
           {/* Bottom CTAs */}
           <div className="px-4 pb-6 space-y-3 border-t border-white/10 pt-5">
             <a
-              href="/portal"
+              href={withBase("/portal")}
               className="flex items-center justify-center px-4 py-3 rounded-xl border border-white/30 text-white text-sm font-semibold hover:bg-white/10 transition-all"
               style={{}}
               onClick={() => setOpen(false)}
@@ -158,7 +159,7 @@ export default function MobileMenu() {
               Partner Login
             </a>
             <a
-              href="/contact"
+              href={withBase("/contact")}
               className="flex items-center justify-center px-4 py-3 rounded-xl text-sm font-bold transition-all hover:-translate-y-0.5"
               style={{ backgroundColor: "#FDEA01", color: "#1A2744",}}
               onClick={() => setOpen(false)}
