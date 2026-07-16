@@ -2,57 +2,28 @@
 import { Image } from "astro:assets";
 import { ArrowRight } from "@lucide/astro";
 import { withBase } from "../../lib/url";
-
-interface TourBusEntry {
-  name: string;
-  days: number;
-  size: string;
-  gradient: string;
-  price: string;
-  cities: string[];
-  image?: string;
-}
+import { loadTourBusCards } from "../../lib/tourBus";
 
 interface Props {
   badge?: string;
   heading?: string;
   viewAllHref?: string;
   viewAllLabel?: string;
-  tourBuses?: TourBusEntry[];
+  /** Max number of tour bus cards to show. Defaults to 3. */
+  limit?: number;
 }
 
 const {
   badge = "Popular Tour Bus",
   heading = "Ready-to-Book\nGroup Tour Bus",
   viewAllHref = "/tour-bus",
-  viewAllLabel = "View All 12 Tour Bus",
-  tourBuses = [
-    {
-      name: "East Coast Grand Tour",
-      days: 10,
-      size: "21–56 pax",
-      price: "$145/person/day",
-      gradient: "linear-gradient(135deg, #0A1628 0%, #1A2744 100%)",
-      cities: ["New York","Boston","Philadelphia","Washington D.C."],
-    },
-    {
-      name: "New York City Icons",
-      days: 5,
-      size: "8–20 pax",
-      price: "$180/person/day",
-      gradient: "linear-gradient(135deg, #2D1B00 0%, #4A2E00 100%)",
-      cities: ["Manhattan","Brooklyn","Statue of Liberty","Midtown"],
-    },
-    {
-      name: "Canada Panorama",
-      days: 10,
-      size: "21–56 pax",
-      price: "$155/person/day",
-      gradient: "linear-gradient(135deg, #1A0A0A 0%, #3D1A1A 100%)",
-      cities: ["Toronto","Montreal","Quebec City","Ottawa"],
-    },
-  ],
+  viewAllLabel,
+  limit = 3,
 } = Astro.props;
+
+const allTourBuses = await loadTourBusCards();
+const tourBuses = allTourBuses.slice(0, limit);
+const resolvedViewAllLabel = viewAllLabel ?? `View All ${allTourBuses.length} Tour Bus`;
 
 const headingLines = heading.split("\n");
 ---
@@ -75,7 +46,7 @@ const headingLines = heading.split("\n");
       <a href={withBase(viewAllHref)}
         class="self-start lg:self-auto flex items-center gap-2 font-bold text-sm uppercase tracking-widest transition-all hover:gap-4"
         style="color: #1A2744;">
-        {viewAllLabel}
+        {resolvedViewAllLabel}
         <ArrowRight size={16} stroke-width={2.5} />
       </a>
     </div>
@@ -93,13 +64,12 @@ const headingLines = heading.split("\n");
               </>
             ) : (
               <div class="absolute inset-0"
-                style={`background: ${pkg.gradient};`}>
+                style={`background: ${pkg.gradientStyle};`}>
                 <div class="absolute inset-0 opacity-20"
                   style="background: repeating-linear-gradient(-45deg, transparent, transparent 20px, rgba(255,255,255,0.03) 20px, rgba(255,255,255,0.03) 21px);"></div>
               </div>
             )}
             <div class="absolute bottom-0 left-0 right-0 p-7 z-10">
-              <span class="badge badge-yellow mb-2 text-xs">{pkg.days} Days</span>
               <h3 class="text-base font-black text-white" style="">{pkg.name}</h3>
             </div>
           </div>
@@ -115,10 +85,10 @@ const headingLines = heading.split("\n");
                 Group: <strong class="text-gray-800">{pkg.size}</strong>
               </div>
               <div class="text-sm font-black" style="color: #1A2744;">
-                From {pkg.price}
+                From {pkg.price}{pkg.priceUnit}
               </div>
             </div>
-            <a href={withBase(viewAllHref)} class="btn-secondary w-full justify-center"
+            <a href={withBase(pkg.detailHref)} class="btn-secondary w-full justify-center"
               style="padding: 0.65rem 1.5rem; font-size: 0.72rem;">
               View Tour Bus Details
             </a>
@@ -126,5 +96,11 @@ const headingLines = heading.split("\n");
         </div>
       ))}
     </div>
+
+    {tourBuses.length === 0 && (
+      <p class="text-center text-gray-500 text-sm py-10">
+        Tour bus itineraries are coming soon — check back shortly.
+      </p>
+    )}
   </div>
 </section>

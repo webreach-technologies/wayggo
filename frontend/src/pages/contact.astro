@@ -16,7 +16,7 @@ const contactPageSchema = {
 
 <BaseLayout
   title="Request a Quote — WAYGGO Ground Transportation"
-  description="Get a ground transportation quote for your international tour group in North America. Complete our 4-step form and receive a detailed proposal within 24 hours."
+  description="Get a ground transportation quote for your international tour group in North America. Send us a message and receive a detailed proposal within 24 hours."
   breadcrumbs={[{ name: "Contact", path: "/contact" }]}
 >
   <script is:inline type="application/ld+json" set:html={JSON.stringify(contactPageSchema)} />
@@ -25,7 +25,7 @@ const contactPageSchema = {
   <PageHero
     badge="Get Started"
     heading={'Request a Ground<br /><span style="color: #FDEA01;">Transportation Quote</span>'}
-    subheading={'Fill in the 4-step form below. Our operations team responds within <strong class="text-white">24 hours</strong> with a detailed, itemized proposal — no obligation.'}
+    subheading={'Send us a message below. Our operations team responds within <strong class="text-white">24 hours</strong> with a detailed, itemized proposal — no obligation.'}
   />
 
   <!-- Form + Info -->
@@ -93,52 +93,6 @@ const contactPageSchema = {
                   <p class="text-xs text-gray-400 mt-0.5">Fast-track quote — 4hr response</p>
                 </div>
               </a>
-            </div>
-          </div>
-
-          <!-- Response promise -->
-          <div class="rounded-2xl p-6" style="background-color: #FDEA01;">
-            <div class="flex items-center gap-3 mb-3">
-              <div class="text-2xl">⚡</div>
-              <h3 class="font-black text-base" style="color: #1A2744;">
-                24-Hour Response Guarantee
-              </h3>
-            </div>
-            <p class="text-sm leading-relaxed" style="color: rgba(26,39,68,0.75);">
-              Every quote request is personally reviewed by our operations team. You'll receive a detailed proposal — with vehicle options, pricing, and operator profile — within 24 hours of submission.
-            </p>
-          </div>
-
-          <!-- What to expect -->
-          <div class="bg-white rounded-2xl p-6 border border-gray-100">
-            <h3 class="font-black text-sm uppercase tracking-widest mb-4" style="color: #1A2744;">
-              What Happens Next
-            </h3>
-            <div class="space-y-3">
-              {[
-                { step: "1", text: "We review your itinerary and group requirements" },
-                { step: "2", text: "We match your request with the best available operators in each city" },
-                { step: "3", text: "We send a detailed proposal with pricing, vehicle details, and operator profile" },
-                { step: "4", text: "You confirm and we coordinate everything — one invoice, one contact" },
-              ].map((s) => (
-                <div class="flex items-start gap-3">
-                  <div class="w-6 h-6 rounded-full flex items-center justify-center flex-shrink-0 text-xs font-black" style="background-color: #FDEA01; color: #1A2744;">{s.step}</div>
-                  <p class="text-sm text-gray-500 leading-relaxed" style="">{s.text}</p>
-                </div>
-              ))}
-            </div>
-          </div>
-
-          <!-- Countries served -->
-          <div class="bg-white rounded-2xl p-6 border border-gray-100">
-            <h3 class="font-black text-sm uppercase tracking-widest mb-3" style="color: #1A2744;">
-              Partner Agencies From
-            </h3>
-            <div class="flex flex-wrap gap-2">
-              {["🇮🇳", "🇬🇧", "🇯🇵", "🇩🇪", "🇦🇺", "🇧🇷", "🇰🇷", "🇸🇦", "🇫🇷", "🇮🇹", "🇵🇹", "🇮🇩", "🇲🇽", "🇿🇦", "🇨🇳", "🇸🇬", "🇦🇪", "🇵🇭"].map((flag) => (
-                <span class="text-xl">{flag}</span>
-              ))}
-              <span class="text-xs text-gray-400 self-center" style="">+25 more</span>
             </div>
           </div>
         </div>

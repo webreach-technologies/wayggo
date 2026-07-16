@@ -6,7 +6,6 @@ import luxuryvanImg from "../assets/fleet/luxuryvan.png";
 import minibusImg from "../assets/fleet/minibus.png";
 import fullsizebusImg from "../assets/fleet/fullsizebus.png";
 import motorcoachImg from "../assets/fleet/motorcoach.png";
-import chartershuttleImg from "../assets/fleet/chartershuttle.png";
 import { Van, Bus, BusFront, Settings2 } from "@lucide/astro";
 import { withBase } from "../lib/url";
 
@@ -20,10 +19,10 @@ const vehicleIconComponents: Record<string, typeof Van> = {
 
 const vehicles = [
   {
-    id: "luxury-van",
+    id: "van",
     iconKey: "van",
     image: luxuryvanImg,
-    name: "Luxury Van",
+    name: "Van",
     tagline: "Premium small-group travel",
     capacity: { passengers: "6–14", luggage: "8–12 bags" },
     features: [
@@ -56,48 +55,12 @@ const vehicles = [
     color: "#243460",
   },
   {
-    id: "full-size-bus",
+    id: "mini-coach",
     iconKey: "fullbus",
-    image: fullsizebusImg,
-    name: "Full-Size Bus",
-    tagline: "Mid-size comfort for regional tours",
-    capacity: { passengers: "29–40", luggage: "28–36 bags" },
-    features: [
-      { iconKey: "armchair", label: "High-Back Reclining Seats" },
-      { iconKey: "droplet",  label: "Onboard Restroom" },
-      { iconKey: "monitor",  label: "Front Monitor Screen" },
-      { iconKey: "snowflake",label: "Full Air Suspension & AC" },
-      { iconKey: "zap",      label: "USB Charging at Every Row" },
-      { iconKey: "mic",      label: "PA System for Guides" },
-    ],
-    idealFor: ["Regional Multi-Day Tours", "Student & School Groups", "Religious Group Travel", "Convention Transfers", "Sports Team Charters"],
-    color: "#0D1B3E",
-  },
-  {
-    id: "motorcoach",
-    iconKey: "motorcoach",
     image: motorcoachImg,
-    name: "Motorcoach",
-    tagline: "Full luxury for large groups",
-    capacity: { passengers: "41–56", luggage: "44–56 bags" },
-    features: [
-      { iconKey: "armchair",  label: "56 Premium Reclining Seats" },
-      { iconKey: "monitor",   label: "Multiple HD Monitors" },
-      { iconKey: "megaphone", label: "Professional PA System" },
-      { iconKey: "droplet",   label: "Full Onboard Restroom" },
-      { iconKey: "wifi",      label: "High-Speed WiFi" },
-      { iconKey: "snowflake", label: "Climate Control Throughout" },
-    ],
-    idealFor: ["Long-Distance Interstate Tours", "Large Group Sightseeing", "Multi-City Grand Tours", "Sports Fan Charters", "Convention & Conference Groups"],
-    color: "#1A2744",
-  },
-  {
-    id: "shuttle",
-    iconKey: "van",
-    image: chartershuttleImg,
-    name: "Charter Shuttle",
-    tagline: "Fast, flexible point-to-point service",
-    capacity: { passengers: "8–16", luggage: "8–14 bags" },
+    name: "Mini Coach",
+    tagline: "Airport-ready, flexible for hotel-hop routing",
+    capacity: { passengers: "29–35", luggage: "28–34 bags" },
     features: [
       { iconKey: "plane",    label: "Airport-Ready Configuration" },
       { iconKey: "building", label: "Hotel Door-to-Door" },
@@ -107,7 +70,25 @@ const vehicles = [
       { iconKey: "mappin",   label: "Flexible Route Stops" },
     ],
     idealFor: ["Airport–Hotel Transfers", "Convention Center Shuttles", "Cruise Terminal Connections", "Hotel Loop Shuttles", "Small Event Transport"],
-    color: "#243460",
+    color: "#0D1B3E",
+  },
+  {
+    id: "motor-coach",
+    iconKey: "motorcoach",
+    image: fullsizebusImg,
+    name: "Motor Coach",
+    tagline: "Full luxury for large groups",
+    capacity: { passengers: "36–56", luggage: "40–56 bags" },
+    features: [
+      { iconKey: "armchair",  label: "Premium Reclining Seats" },
+      { iconKey: "monitor",   label: "Multiple HD Monitors" },
+      { iconKey: "megaphone", label: "Professional PA System" },
+      { iconKey: "droplet",   label: "Full Onboard Restroom" },
+      { iconKey: "wifi",      label: "High-Speed WiFi" },
+      { iconKey: "snowflake", label: "Climate Control Throughout" },
+    ],
+    idealFor: ["Long-Distance Interstate Tours", "Large Group Sightseeing", "Multi-City Grand Tours", "Sports Fan Charters", "Convention & Conference Groups"],
+    color: "#1A2744",
   },
 ];
 ---
@@ -126,7 +107,7 @@ const vehicles = [
   />
 
   <!-- Filter bar -->
-  <div style="background-color: #F9F7F2; border-bottom: 1px solid #E5E7EB; position: sticky; top: 72px; z-index: 40;">
+  <div style="background-color: #F9F7F2; border-bottom: 1px solid #E5E7EB;">
     <div class="container">
       <div class="flex overflow-x-auto md:flex-wrap md:justify-center gap-3 py-4">
         <button
@@ -203,7 +184,7 @@ const vehicles = [
       (window as any).fleetShow = fleetShow;
     }
 
-    const vehicleIds = ['luxury-van', 'minibus', 'full-size-bus', 'motorcoach', 'shuttle'];
+    const vehicleIds = ['van', 'minibus', 'mini-coach', 'motor-coach'];
 
     function fleetSetActive(activeId: string) {
       // Reset all vehicle buttons

@@ -6,7 +6,6 @@ import luxuryvanImg from "../../assets/fleet/luxuryvan.png";
 import minibusImg from "../../assets/fleet/minibus.png";
 import fullsizebusImg from "../../assets/fleet/fullsizebus.png";
 import motorcoachImg from "../../assets/fleet/motorcoach.png";
-import chartershuttleImg from "../../assets/fleet/chartershuttle.png";
 
 interface Vehicle {
   tag: string;
@@ -31,11 +30,10 @@ const {
   viewAllHref = "/fleet",
   viewAllLabel = "Full Specs & Pricing",
   vehicles = [
-    { name: "Luxury Van",      capacity: "6–14 pax",  tag: "Small Group", color: "#1A2744", features: ["Premium leather seating","WiFi & USB charging","Climate control","Luggage space"], image: luxuryvanImg },
-    { name: "Minibus",         capacity: "15–28 pax", tag: "Mid Group",   color: "#243460", features: ["Panoramic windows","PA system","AC throughout","Tour guide seat"], image: minibusImg },
-    { name: "Full-Size Bus",   capacity: "29–40 pax", tag: "Large Group", color: "#0D1B3E", features: ["Overhead storage","Reading lights","Air suspension","Coach toilet"], image: fullsizebusImg },
-    { name: "Motorcoach",      capacity: "41–56 pax", tag: "Mega Group",  color: "#1A2744", features: ["Premium reclining seats","Entertainment system","PA + restroom","WiFi onboard"], image: motorcoachImg },
-    { name: "Charter Shuttle", capacity: "8–16 pax",  tag: "Transfer",    color: "#243460", features: ["Airport-ready","Hotel door stops","Luggage rack","Flexible routing"], image: chartershuttleImg },
+    { name: "Van",         capacity: "6–14 passengers",  tag: "Small Group", color: "#1A2744", features: ["Premium leather seating","WiFi & USB charging","Climate control","Luggage space"], image: luxuryvanImg },
+    { name: "Minibus",     capacity: "15–28 passengers", tag: "Mid Group",   color: "#243460", features: ["Panoramic windows","PA system","AC throughout","Tour guide seat"], image: minibusImg },
+    { name: "Mini Coach",  capacity: "29–35 passengers", tag: "Large Group", color: "#0D1B3E", features: ["Airport-ready","Hotel door stops","Luggage rack","Flexible routing"], image: motorcoachImg },
+    { name: "Motor Coach", capacity: "36–56 passengers", tag: "Mega Group",  color: "#1A2744", features: ["Premium reclining seats","Entertainment system","PA + restroom","WiFi onboard"], image: fullsizebusImg },
   ],
 } = Astro.props;
 
@@ -70,7 +68,7 @@ const gradientCSS = vehicles.map((v, i) =>
     </div>
 
     <style set:html={gradientCSS}></style>
-    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
       {vehiclesWithIndex.map((v) => (
         <div class="group rounded-2xl overflow-hidden card-hover bg-white"
           style="box-shadow: 0 4px 24px rgba(26,39,68,0.09);">
@@ -105,7 +103,7 @@ const gradientCSS = vehicles.map((v, i) =>
             </div>
             <div class="flex items-center justify-between mb-5">
               <div class="text-sm text-gray-500" style="">
-                Capacity: <strong class="text-gray-800">{v.capacity}</strong>
+                Ideal For: <strong class="text-gray-800">{v.capacity}</strong>
               </div>
             </div>
             <a href={withBase(viewAllHref)} class="btn-secondary w-full justify-center"
