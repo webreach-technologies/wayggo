@@ -7,17 +7,18 @@ import { Sparkles } from "@lucide/astro";
 
 interface Props {
   tourName: string;
+  placeName: string;
   thingsToDo: { title: string; desc: string }[];
 }
 
-const { tourName, thingsToDo } = Astro.props;
+const { tourName, placeName, thingsToDo } = Astro.props;
 ---
 
 <section id="why-groups-love" class="py-16 lg:py-20 diagonal-lines relative overflow-hidden" style="background-color: #1A2744;">
   <div class="container relative">
     <div class="main-content">
       <div class="text-center mb-12 max-w-2xl mx-auto">
-        <span class="section-label-white">Why Traveler Favorites</span>
+        <span class="section-label-white">Why {placeName} Travelers Favorites</span>
         <h2 class="text-3xl lg:text-4xl font-black text-white mt-4">Things to Do Around {tourName}</h2>
         <p class="text-white/60 mt-3">Optional extras your group can slot in alongside the confirmed itinerary.</p>
       </div>

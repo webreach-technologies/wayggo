@@ -72,8 +72,6 @@ export default function MobileMenu() {
               { href: "/fleet", label: "Fleet & Capabilities" },
               { href: "/tour-bus", label: "Tour Bus" },
               { href: "/network", label: "Our Network" },
-              { href: "/about", label: "About Wayggo" },
-              { href: "/contact", label: "Contact Us" },
             ].map((link) => {
               const isActive = currentPath === withBase(link.href);
               return (
@@ -146,6 +144,30 @@ export default function MobileMenu() {
                 </div>
               )}
             </div>
+
+            {[
+              { href: "/about", label: "About Wayggo" },
+              { href: "/contact", label: "Contact Us" },
+            ].map((link) => {
+              const isActive = currentPath === withBase(link.href);
+              return (
+                <a
+                  key={link.href}
+                  href={withBase(link.href)}
+                  className={`flex items-center px-4 py-3 rounded-xl transition-all font-medium text-sm ${
+                    isActive
+                      ? "bg-white/10 font-semibold"
+                      : "text-white/80 hover:text-white hover:bg-white/10"
+                  }`}
+                  style={{
+                    color: isActive ? "#FDEA01" : undefined,
+                  }}
+                  onClick={() => setOpen(false)}
+                >
+                  {link.label}
+                </a>
+              );
+            })}
           </nav>
 
           {/* Bottom CTAs */}

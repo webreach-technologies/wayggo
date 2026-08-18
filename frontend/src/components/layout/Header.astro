@@ -19,6 +19,7 @@ interface TourLink {
 
 interface Props {
   navLinks?: NavLink[];
+  navLinksAfterServices?: NavLink[];
   tourLinks?: TourLink[];
   primaryCta?: { label: string; href: string };
   partnerLoginHref?: string;
@@ -30,6 +31,8 @@ const {
     { href: "/fleet", label: "Fleet" },
     { href: "/tour-bus", label: "Tour Bus" },
     { href: "/network", label: "Network" },
+  ],
+  navLinksAfterServices = [
     { href: "/about", label: "About" },
     { href: "/contact", label: "Contact" },
   ],
@@ -111,6 +114,20 @@ const currentPath = Astro.url.pathname;
             })}
           </div>
         </div>
+
+        {navLinksAfterServices.map((link) => (
+          <a
+            href={withBase(link.href)}
+            class={`px-4 py-2 rounded-lg text-sm font-medium transition-all duration-200 ${
+              currentPath === withBase(link.href)
+                ? "text-yellow"
+                : "text-white/75 hover:text-yellow"
+            }`}
+            style=""
+          >
+            {link.label}
+          </a>
+        ))}
       </nav>
 
       <!-- Desktop CTAs -->

@@ -149,7 +149,7 @@ const jumpLinks = [
         <!-- Quick stats -->
         <div class="flex flex-wrap gap-3 mb-9">
           {[
-            { label: `Served by ${operatorCount(entry.id)}+ Bus Operators` },
+            { label: `${operatorCount(entry.id)}+ Bus Operators` },
             { label: "Small to Large Groups" },
             { label: "Van" },
             { label: "Minibus" },
@@ -237,7 +237,7 @@ const jumpLinks = [
     <div class="container">
       <div class="main-content">
         <div class="text-center mb-10 max-w-2xl mx-auto">
-          <span class="section-label">What Makes This Perfect</span>
+          <span class="section-label">What Makes {pkg.heroHeadingLine1} Perfect</span>
           <h2 class="text-3xl lg:text-4xl font-black mt-4" style="color: #1A2744;">Attractions Highlights</h2>
         </div>
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 max-w-4xl mx-auto">
@@ -252,7 +252,7 @@ const jumpLinks = [
     </div>
   </section>
 
-  <WhyGroupsLoveThis tourName={pkg.name} thingsToDo={pkg.thingsToDo} />
+  <WhyGroupsLoveThis tourName={pkg.name} placeName={pkg.heroHeadingLine1} thingsToDo={pkg.thingsToDo} />
 
   <OurFleet />
 

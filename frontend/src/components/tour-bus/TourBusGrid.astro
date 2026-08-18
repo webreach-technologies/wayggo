@@ -67,7 +67,7 @@ const fleetTypes = [
             Ideal For: <strong class="text-gray-700">{pkg.size}</strong>
           </div>
           <div class="text-xs text-gray-400">
-            Start From <strong class="text-[#1A2744] text-sm">{pkg.price}{pkg.priceUnit}</strong>
+            Start From <strong class="text-navy text-sm">{pkg.price}{pkg.priceUnit}</strong>
           </div>
         </div>
 
@@ -99,7 +99,7 @@ const fleetTypes = [
         <!-- Operator network -->
         <div class="flex items-center gap-2 mb-5 px-1">
           <SteeringWheel size={16} color="#374151" class="shrink-0" />
-          <span class="text-xs font-bold text-gray-700">Served by {operatorCount(pkg.id)}+ Bus Operators</span>
+          <span class="text-xs font-bold text-gray-700">{operatorCount(pkg.id)}+ Bus Operators</span>
         </div>
 
         <!-- CTA -->
