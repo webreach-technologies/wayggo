@@ -9,7 +9,7 @@ export const usStates = [
   "HI", "ID", "IL", "IN", "IA", "KS", "KY", "LA", "ME", "MD",
   "MA", "MI", "MN", "MS", "MO", "MT", "NE", "NV", "NH", "NJ",
   "NM", "NY", "NC", "ND", "OH", "OK", "OR", "PA", "RI", "SC",
-  "SD", "TN", "TX", "UT", "VT", "VA", "WA", "WV", "WI", "WY", "DC",
+  "SD", "TN", "TX", "UT", "VT", "VA", "WA", "WV", "WI", "WY",
 ];
 
 export const caProvinces = [
@@ -81,12 +81,53 @@ export function getBuckets(): Bucket[] {
   return buckets;
 }
 
+/** Great-circle distance between two lat/lng points, in miles (Haversine formula). */
+export function distanceMiles(aLat: number, aLng: number, bLat: number, bLng: number): number {
+  const EARTH_RADIUS_MILES = 3958.8;
+  const toRad = (deg: number) => (deg * Math.PI) / 180;
+  const dLat = toRad(bLat - aLat);
+  const dLng = toRad(bLng - aLng);
+  const h =
+    Math.sin(dLat / 2) ** 2 +
+    Math.cos(toRad(aLat)) * Math.cos(toRad(bLat)) * Math.sin(dLng / 2) ** 2;
+  return 2 * EARTH_RADIUS_MILES * Math.asin(Math.sqrt(h));
+}
+
 export function filterCards<T extends BucketableCard>(cards: T[], bucket: Bucket): T[] {
   return cards.filter((card) => {
     const matchesCountry = !bucket.country || card.country === bucket.country;
     const matchesState = !bucket.state || card.state === bucket.state;
     return matchesCountry && matchesState;
   });
+}
+
+export type PaginationToken = number | "ellipsis";
+
+// Bounded pager: page 1, last page, current ± siblingCount, gaps collapsed to "ellipsis" — stays ~7-9 items regardless of totalPages.
+export function getPaginationRange(
+  current: number,
+  totalPages: number,
+  siblingCount = 1,
+  boundaryCount = 1
+): PaginationToken[] {
+  if (totalPages <= 0) return [];
+
+  const shown = new Set<number>();
+  for (let i = 1; i <= boundaryCount; i++) shown.add(i);
+  for (let i = totalPages - boundaryCount + 1; i <= totalPages; i++) shown.add(i);
+  for (let i = current - siblingCount; i <= current + siblingCount; i++) shown.add(i);
+
+  const tokens: PaginationToken[] = [];
+  let prev = 0;
+  for (let page = 1; page <= totalPages; page++) {
+    if (!shown.has(page)) continue;
+    const gap = page - prev;
+    if (gap === 2) tokens.push(prev + 1);
+    else if (gap > 2) tokens.push("ellipsis");
+    tokens.push(page);
+    prev = page;
+  }
+  return tokens;
 }
 
 /** Site-relative URL for a given bucket + 1-based page number. */

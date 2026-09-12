@@ -1,6 +1,7 @@
-import { MapContainer, TileLayer, Marker, Tooltip, ZoomControl } from "react-leaflet";
-import L from "leaflet";
-import "leaflet/dist/leaflet.css";
+/// <reference types="google.maps" />
+import { useState } from "react";
+import { APIProvider, Map, Marker, InfoWindow, useApiIsLoaded } from "@vis.gl/react-google-maps";
+import darkMapStyle from "../../../google-maps-dark-style.json";
 
 interface City {
   name: string;
@@ -36,15 +37,78 @@ const cities: City[] = [
   { name: "Quebec City",     country: "CA", lat: 46.81, lng: -71.21  },
 ];
 
-function makeIcon(major: boolean): L.DivIcon {
-  const cls = major ? "hub-dot is-major" : "hub-dot";
-  return L.divIcon({
-    className: "hub-icon",
-    html: `<span class="${cls}"><span class="hub-ring"></span><span class="hub-ring is-outer"></span></span>`,
-    iconSize: [40, 40],
-    iconAnchor: [20, 20],
-    popupAnchor: [0, -22],
-  });
+// Requires a free key from console.cloud.google.com (Maps JavaScript API
+// enabled + billing on the project) — see frontend/.env.example.
+const GOOGLE_MAPS_API_KEY = import.meta.env.PUBLIC_GOOGLE_MAPS_API_KEY as string | undefined;
+
+const US_CANADA_BOUNDS = { north: 80, south: -15, west: -175, east: -35 };
+
+// Plain classic markers (no Map ID) so the dark `styles` JSON below applies
+// directly — Google only allows inline styling when no Map ID is set.
+// The icon's pixel size also sets Google's marker hit-box, so the pulsing
+// rings animate *within* the existing glow radius rather than growing past
+// it (unlike the old CSS version) to avoid overlapping nearby markers' hit
+// areas.
+function pulseRing(cx: number, cy: number, fromR: number, toR: number, delay: number, duration: number): string {
+  return (
+    `<circle cx="${cx}" cy="${cy}" r="${fromR}" fill="none" stroke="#FDEA01" stroke-width="1.5" opacity="0.75">` +
+    `<animate attributeName="r" values="${fromR};${toR}" dur="${duration}s" begin="${delay}s" repeatCount="indefinite"/>` +
+    `<animate attributeName="opacity" values="0.75;0" dur="${duration}s" begin="${delay}s" repeatCount="indefinite"/>` +
+    `</circle>`
+  );
+}
+
+function hubIconUrl(major: boolean): string {
+  const dotRadius = major ? 7 : 5;
+  const glowRadius = major ? 18 : 14;
+  const ringMaxR = glowRadius - 2;
+  const size = glowRadius * 2;
+  const svg =
+    `<svg xmlns="http://www.w3.org/2000/svg" width="${size}" height="${size}" viewBox="0 0 ${size} ${size}">` +
+    `<defs><radialGradient id="g" cx="50%" cy="50%" r="50%">` +
+    `<stop offset="0%" stop-color="#FDEA01" stop-opacity="0.9"/>` +
+    `<stop offset="40%" stop-color="#FDEA01" stop-opacity="0.3"/>` +
+    `<stop offset="100%" stop-color="#FDEA01" stop-opacity="0"/>` +
+    `</radialGradient></defs>` +
+    `<circle cx="${glowRadius}" cy="${glowRadius}" r="${glowRadius}" fill="url(#g)"/>` +
+    pulseRing(glowRadius, glowRadius, dotRadius, ringMaxR, 0, 2) +
+    pulseRing(glowRadius, glowRadius, dotRadius, ringMaxR, 0.55, 2.7) +
+    `<circle cx="${glowRadius}" cy="${glowRadius}" r="${dotRadius}" fill="#FDEA01"/>` +
+    `</svg>`;
+  return `data:image/svg+xml;charset=UTF-8,${encodeURIComponent(svg)}`;
+}
+
+function HubMarker({ city }: { city: City }) {
+  const [hovered, setHovered] = useState(false);
+  const apiLoaded = useApiIsLoaded();
+  const size = (city.major ? 18 : 14) * 2;
+
+  return (
+    <>
+      <Marker
+        position={{ lat: city.lat, lng: city.lng }}
+        onMouseOver={() => setHovered(true)}
+        onMouseOut={() => setHovered(false)}
+        icon={apiLoaded ? {
+          url: hubIconUrl(!!city.major),
+          scaledSize: new google.maps.Size(size, size),
+          anchor: new google.maps.Point(size / 2, size / 2),
+        } : undefined}
+      />
+      {hovered && (
+        <InfoWindow
+          position={{ lat: city.lat, lng: city.lng }}
+          pixelOffset={[0, -(city.major ? 22 : 18)]}
+          disableAutoPan
+        >
+          <div className="wayggo-tooltip-name">{city.name}</div>
+          <div className="wayggo-tooltip-sub">
+            {city.country === "US" ? "United States" : "Canada"} &middot; WAYGGO Hub
+          </div>
+        </InfoWindow>
+      )}
+    </>
+  );
 }
 
 export default function CoverageMap() {
@@ -97,47 +161,34 @@ export default function CoverageMap() {
         </span>
       </div>
 
-      <MapContainer
-        center={[44, -97]}
-        zoom={3}
-        scrollWheelZoom={false}
-        zoomControl={false}
-        style={{ height: "100%", width: "100%", background: "#080E1C" }}
-        maxBounds={[[-15, -175], [80, -35]]}
-        maxBoundsViscosity={0.85}
-        minZoom={2}
-      >
-        {/* Zoom control — top-right to avoid our brand overlay */}
-        <ZoomControl position="topright" />
-
-        {/* CARTO Dark Matter tiles — free, no API key */}
-        <TileLayer
-          url="https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png"
-          attribution='&copy; <a href="https://www.openstreetmap.org/copyright" target="_blank">OpenStreetMap</a> &copy; <a href="https://carto.com/attributions" target="_blank">CARTO</a>'
-          subdomains="abcd"
-          maxZoom={20}
-        />
-
-        {cities.map((city) => (
-          <Marker
-            key={city.name}
-            position={[city.lat, city.lng]}
-            icon={makeIcon(!!city.major)}
+      {!GOOGLE_MAPS_API_KEY ? (
+        <div style={{
+          height: "100%", width: "100%", background: "#080E1C",
+          display: "flex", alignItems: "center", justifyContent: "center",
+          color: "rgba(255,255,255,0.4)", fontSize: "13px", textAlign: "center", padding: "0 32px",
+        }}>
+          Set PUBLIC_GOOGLE_MAPS_API_KEY in frontend/.env to load the map.
+        </div>
+      ) : (
+        <APIProvider apiKey={GOOGLE_MAPS_API_KEY}>
+          <Map
+            defaultCenter={{ lat: 44, lng: -97 }}
+            defaultZoom={3}
+            minZoom={2}
+            scrollwheel={false}
+            gestureHandling="greedy"
+            disableDefaultUI={true}
+            zoomControl={true}
+            restriction={{ latLngBounds: US_CANADA_BOUNDS, strictBounds: false }}
+            styles={darkMapStyle}
+            style={{ height: "100%", width: "100%" }}
           >
-            <Tooltip
-              direction="top"
-              offset={[0, -18]}
-              opacity={1}
-              className="wayggo-tooltip"
-            >
-              <div className="wayggo-tooltip-name">{city.name}</div>
-              <div className="wayggo-tooltip-sub">
-                {city.country === "US" ? "United States" : "Canada"} &middot; WAYGGO Hub
-              </div>
-            </Tooltip>
-          </Marker>
-        ))}
-      </MapContainer>
+            {cities.map((city) => (
+              <HubMarker key={city.name} city={city} />
+            ))}
+          </Map>
+        </APIProvider>
+      )}
     </div>
   );
 }

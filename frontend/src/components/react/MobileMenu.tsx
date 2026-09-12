@@ -69,6 +69,7 @@ export default function MobileMenu() {
           <nav className="flex-1 overflow-y-auto px-4 py-6 space-y-1">
             {[
               { href: "/", label: "Home" },
+              { href: "/about", label: "About Wayggo" },
               { href: "/fleet", label: "Fleet & Capabilities" },
               { href: "/tour-bus", label: "Tour Bus" },
               { href: "/network", label: "Our Network" },
@@ -146,7 +147,6 @@ export default function MobileMenu() {
             </div>
 
             {[
-              { href: "/about", label: "About Wayggo" },
               { href: "/contact", label: "Contact Us" },
             ].map((link) => {
               const isActive = currentPath === withBase(link.href);

@@ -59,7 +59,6 @@ const DEPOSIT_RATE = 0.2;
 // (e.g. the /tour-bus/request page), it resolves the label itself from the
 // ?tourBus=<id> / ?name=<label> query string so every page shares one component.
 const tourBusLabelsById: Record<string, string> = {
-  "nyc-icons": "New York City Icons",
   "niagara-toronto": "Niagara Falls & Toronto Explorer",
 };
 

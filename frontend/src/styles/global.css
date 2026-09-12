@@ -8,7 +8,6 @@
   font-display: swap;
 }
 
-@import "leaflet/dist/leaflet.css";
 @import "react-datepicker/dist/react-datepicker.css";
 
 @theme {
@@ -457,68 +456,25 @@ h1, h2, h3, h4, h5, h6 {
   background-color: #F9F7F2;
 }
 
-/* ── Leaflet hub markers ── */
-.hub-icon {
-  background: transparent !important;
-  border: none !important;
-  overflow: visible !important;
+/* ── Google Maps hub tooltip (InfoWindow) — WAYGGO brand style ── */
+.gm-style .gm-style-iw-c {
+  background: #FDEA01 !important;
+  border-radius: 9px !important;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.55) !important;
+  padding: 9px 14px !important;
 }
 
-.hub-dot {
-  display: block;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 10px;
-  height: 10px;
-  border-radius: 50%;
-  background: #FDEA01;
-  box-shadow: 0 0 8px rgba(255, 208, 0, 0.65);
+.gm-style .gm-style-iw-d {
+  overflow: hidden !important;
+  padding: 0 !important;
 }
 
-.hub-dot.is-major {
-  width: 14px;
-  height: 14px;
-  box-shadow: 0 0 12px rgba(255, 208, 0, 0.85), 0 0 24px rgba(255, 208, 0, 0.3);
+.gm-style .gm-style-iw-t::after {
+  background: #FDEA01 !important;
 }
 
-.hub-ring {
-  display: block;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 100%;
-  height: 100%;
-  border-radius: 50%;
-  border: 1.5px solid rgba(255, 208, 0, 0.75);
-  animation: hubRingPulse 2s ease-out infinite;
-  transform: translate(-50%, -50%) scale(1);
-}
-
-.hub-ring.is-outer {
-  animation-duration: 2.7s;
-  animation-delay: 0.55s;
-}
-
-@keyframes hubRingPulse {
-  0%   { transform: translate(-50%, -50%) scale(1);   opacity: 0.75; }
-  72%  { transform: translate(-50%, -50%) scale(3.4); opacity: 0;    }
-  100% { transform: translate(-50%, -50%) scale(3.4); opacity: 0;    }
-}
-
-/* ── Leaflet tooltip — WAYGGO brand style ── */
-.wayggo-tooltip.leaflet-tooltip {
-  background: #FDEA01;
-  border: none;
-  border-radius: 9px;
-  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.55);
-  padding: 9px 14px;
-  white-space: nowrap;
-}
-
-.wayggo-tooltip.leaflet-tooltip-top::before {
-  border-top-color: #FDEA01;
+.gm-style .gm-ui-hover-effect {
+  display: none !important;
 }
 
 .wayggo-tooltip-name {
@@ -536,31 +492,6 @@ h1, h2, h3, h4, h5, h6 {
   margin-top: 2px;
 }
 
-/* Leaflet zoom control — match dark theme */
-.leaflet-control-zoom a {
-  background: rgba(8, 14, 28, 0.85) !important;
-  color: rgba(255, 255, 255, 0.7) !important;
-  border-color: rgba(255, 255, 255, 0.12) !important;
-  backdrop-filter: blur(6px);
-  transition: background 0.2s, color 0.2s;
-}
-
-.leaflet-control-zoom a:hover {
-  background: rgba(255, 208, 0, 0.9) !important;
-  color: #111E40 !important;
-}
-
-/* Leaflet attribution — subtle on dark map */
-.leaflet-control-attribution {
-  background: rgba(8, 14, 28, 0.65) !important;
-  color: rgba(255, 255, 255, 0.35) !important;
-  backdrop-filter: blur(4px);
-  font-size: 9px !important;
-}
-
-.leaflet-control-attribution a {
-  color: rgba(255, 208, 0, 0.5) !important;
-}
 
 /* ── react-datepicker — WAYGGO brand theme ── */
 .wayggo-datepicker-popper {

@@ -15,6 +15,10 @@ const tourBus = defineCollection({
       priceUnit: z.string(),
       country: z.string(),
       state: z.string(),
+      // Real-world coordinates of the destination, used to rank Related
+      // Tours by actual geographic proximity instead of just state/country.
+      lat: z.number(),
+      lng: z.number(),
       cities: z.array(z.string()),
       iconKey: z.enum(["van", "bus", "fullbus", "motorcoach"]),
       cardGradient: z.string(),
