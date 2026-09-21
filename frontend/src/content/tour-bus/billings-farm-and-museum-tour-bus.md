@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Billings Farm & Museum Tour Bus Rental — Farm Life Through the Ages — WAYGGO"
+seoTitle: "Billings Farm & Museum Tour Bus Rental — Farm Life Through the Ages — WAYGGO Charters"
 seoDescription: "Book a Billings Farm & Museum tour bus rental for your group — one of Vermont's memorable educational and cultural destinations, vehicle and driver included."
 
 heroImageAlt: "Billings Farm & Museum tour bus rental"

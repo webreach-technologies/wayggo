@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Broadway Entertainment District Tour Bus Rental — Nashville Nights Entertainment Escape — WAYGGO"
+seoTitle: "Broadway Entertainment District Tour Bus Rental — Nashville Nights Entertainment Escape — WAYGGO Charters"
 seoDescription: "Book a Broadway Entertainment District tour bus rental for your group — Nashville's most exciting entertainment area, vehicle and driver included."
 
 heroImageAlt: "Broadway Entertainment District tour bus rental"

@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Seattle Waterfront Tour Bus Rental — Emerald City Waterfront Escape — WAYGGO"
+seoTitle: "Seattle Waterfront Tour Bus Rental — Emerald City Waterfront Escape — WAYGGO Charters"
 seoDescription: "Book a Seattle Waterfront tour bus rental for your group — one of Seattle's most memorable sightseeing areas, vehicle and driver included."
 
 heroImageAlt: "Seattle Waterfront tour bus rental"

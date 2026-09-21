@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Gillette Castle State Park Tour Bus Rental — Riverfront Castle Heritage Journey — WAYGGO"
+seoTitle: "Gillette Castle State Park Tour Bus Rental — Riverfront Castle Heritage Journey — WAYGGO Charters"
 seoDescription: "Book a Gillette Castle State Park tour bus rental for your group — a unique stone castle and scenic Connecticut River views, vehicle and driver included."
 
 heroImageAlt: "Gillette Castle State Park tour bus rental"

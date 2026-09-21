@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Space Needle Tour Bus Rental — Skyline Icon Discovery — WAYGGO"
+seoTitle: "Space Needle Tour Bus Rental — Skyline Icon Discovery — WAYGGO Charters"
 seoDescription: "Book a Space Needle tour bus rental for your group — one of Seattle's most memorable landmarks, vehicle and driver included."
 
 heroImageAlt: "Space Needle tour bus rental"

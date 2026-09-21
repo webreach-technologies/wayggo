@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Brown v. Board of Education National Historical Park Tour Bus Rental — Civil Rights Legacy Education Journey Experience — WAYGGO"
+seoTitle: "Brown v. Board of Education National Historical Park Tour Bus Rental — Civil Rights Legacy Education Journey Experience — WAYGGO Charters"
 seoDescription: "Book a Brown v. Board of Education National Historical Park tour bus rental for your group — civil rights history at the former Monroe Elementary School in Topeka, vehicle and driver included."
 
 heroImageAlt: "Brown v. Board of Education National Historical Park tour bus rental"

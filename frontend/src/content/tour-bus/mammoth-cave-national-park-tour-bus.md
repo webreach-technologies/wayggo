@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Mammoth Cave National Park Tour Bus Rental — Underground Limestone Labyrinth Discovery Experience — WAYGGO"
+seoTitle: "Mammoth Cave National Park Tour Bus Rental — Underground Limestone Labyrinth Discovery Experience — WAYGGO Charters"
 seoDescription: "Book a Mammoth Cave National Park tour bus rental for your group — guided cave experiences and scenic Kentucky hiking trails, vehicle and driver included."
 
 heroImageAlt: "Mammoth Cave National Park tour bus rental"

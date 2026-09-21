@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Devil's Lake State Park Tour Bus Rental — Bluffs & Lakes Adventure — WAYGGO"
+seoTitle: "Devil's Lake State Park Tour Bus Rental — Bluffs & Lakes Adventure — WAYGGO Charters"
 seoDescription: "Book a Devil's Lake State Park tour bus rental for your group — one of Wisconsin's most memorable natural destinations, vehicle and driver included."
 
 heroImageAlt: "Devil's Lake State Park tour bus rental"

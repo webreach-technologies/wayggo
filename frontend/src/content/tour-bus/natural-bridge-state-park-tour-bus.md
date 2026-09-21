@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Natural Bridge State Park Tour Bus Rental — Bridge Carved by Nature Adventure — WAYGGO"
+seoTitle: "Natural Bridge State Park Tour Bus Rental — Bridge Carved by Nature Adventure — WAYGGO Charters"
 seoDescription: "Book a Natural Bridge State Park tour bus rental for your group — one of Virginia's memorable natural destinations, vehicle and driver included."
 
 heroImageAlt: "Natural Bridge State Park tour bus rental"

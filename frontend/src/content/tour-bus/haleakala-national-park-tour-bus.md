@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Haleakalā National Park Tour Bus Rental — Sacred Mountain Trail Escape — WAYGGO"
+seoTitle: "Haleakalā National Park Tour Bus Rental — Sacred Mountain Trail Escape — WAYGGO Charters"
 seoDescription: "Book a Haleakalā National Park tour bus rental for your group — a volcanic summit crater, sunrise views, and stargazing on Maui, vehicle and driver included."
 
 heroImageAlt: "Haleakalā National Park tour bus rental"

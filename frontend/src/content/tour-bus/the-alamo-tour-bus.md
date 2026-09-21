@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "The Alamo Tour Bus Rental — Legacy of Texas Freedom — WAYGGO"
+seoTitle: "The Alamo Tour Bus Rental — Legacy of Texas Freedom — WAYGGO Charters"
 seoDescription: "Book a The Alamo tour bus rental for your group — one of Texas's most important historical landmarks, vehicle and driver included."
 
 heroImageAlt: "The Alamo tour bus rental"

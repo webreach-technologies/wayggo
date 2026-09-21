@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Albuquerque Old Town Tour Bus Rental — Old Town Heritage Journey — WAYGGO"
+seoTitle: "Albuquerque Old Town Tour Bus Rental — Old Town Heritage Journey — WAYGGO Charters"
 seoDescription: "Book an Albuquerque Old Town tour bus rental for your group — a historic and culturally rich destination in New Mexico, vehicle and driver included."
 
 heroImageAlt: "Albuquerque Old Town tour bus rental"

@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Mackinac Island Tour Bus Rental — Island Time Heritage Escape — WAYGGO"
+seoTitle: "Mackinac Island Tour Bus Rental — Island Time Heritage Escape — WAYGGO Charters"
 seoDescription: "Book a Mackinac Island tour bus rental for your group — historic charm and Great Lakes scenery in Northern Michigan, vehicle and driver included."
 
 heroImageAlt: "Mackinac Island tour bus rental"

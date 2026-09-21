@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Sunken Gardens Tour Bus Rental — Garden Oasis Experience — WAYGGO"
+seoTitle: "Sunken Gardens Tour Bus Rental — Garden Oasis Experience — WAYGGO Charters"
 seoDescription: "Book a Sunken Gardens tour bus rental for your group — colorful flowers and seasonal landscaping in Lincoln, vehicle and driver included."
 
 heroImageAlt: "Sunken Gardens tour bus rental"

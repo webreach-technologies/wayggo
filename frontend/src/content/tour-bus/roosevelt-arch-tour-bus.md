@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Roosevelt Arch Tour Bus Rental — Archway to Adventure — WAYGGO"
+seoTitle: "Roosevelt Arch Tour Bus Rental — Archway to Adventure — WAYGGO Charters"
 seoDescription: "Book a Roosevelt Arch tour bus rental for your group — historic stone architecture at Yellowstone's gateway, vehicle and driver included."
 
 heroImageAlt: "Roosevelt Arch tour bus rental"

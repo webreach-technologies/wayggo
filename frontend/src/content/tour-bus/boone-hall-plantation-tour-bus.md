@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Boone Hall Plantation Tour Bus Rental — Avenue of Oaks Discovery — WAYGGO"
+seoTitle: "Boone Hall Plantation Tour Bus Rental — Avenue of Oaks Discovery — WAYGGO Charters"
 seoDescription: "Book a Boone Hall Plantation tour bus rental for your group — historic architecture and Lowcountry atmosphere near Charleston, vehicle and driver included."
 
 heroImageAlt: "Boone Hall Plantation tour bus rental"

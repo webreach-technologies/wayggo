@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Café du Monde Area Tour Bus Rental — Beignets & Bayou Traditions — WAYGGO"
+seoTitle: "Café du Monde Area Tour Bus Rental — Beignets & Bayou Traditions — WAYGGO Charters"
 seoDescription: "Book a Café du Monde area tour bus rental for your group — classic New Orleans treats and riverfront scenery near the French Market, vehicle and driver included."
 
 heroImageAlt: "Café du Monde area tour bus rental"

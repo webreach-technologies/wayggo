@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Split Rock Lighthouse State Park Tour Bus Rental — Beacon on the Cliffs Adventure — WAYGGO"
+seoTitle: "Split Rock Lighthouse State Park Tour Bus Rental — Beacon on the Cliffs Adventure — WAYGGO Charters"
 seoDescription: "Book a Split Rock Lighthouse State Park tour bus rental for your group — historic lighthouse and Lake Superior shoreline, vehicle and driver included."
 
 heroImageAlt: "Split Rock Lighthouse State Park tour bus rental"

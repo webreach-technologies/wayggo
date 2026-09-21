@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Mississippi State Capitol Tour Bus Rental — Capitol Heritage Discovery — WAYGGO"
+seoTitle: "Mississippi State Capitol Tour Bus Rental — Capitol Heritage Discovery — WAYGGO Charters"
 seoDescription: "Book a Mississippi State Capitol tour bus rental for your group — government history and architecture in Jackson, vehicle and driver included."
 
 heroImageAlt: "Mississippi State Capitol tour bus rental"

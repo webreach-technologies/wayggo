@@ -103,7 +103,7 @@ function HubMarker({ city }: { city: City }) {
         >
           <div className="wayggo-tooltip-name">{city.name}</div>
           <div className="wayggo-tooltip-sub">
-            {city.country === "US" ? "United States" : "Canada"} &middot; WAYGGO Hub
+            {city.country === "US" ? "United States" : "Canada"} &middot; WAYGGO Charters Hub
           </div>
         </InfoWindow>
       )}
@@ -125,7 +125,7 @@ export default function CoverageMap() {
           fontSize: "11px", letterSpacing: "2.5px",
           color: "rgba(255,255,255,0.45)", marginBottom: "4px",
         }}>
-          WAYGGO COVERAGE NETWORK
+          WAYGGO CHARTERS COVERAGE NETWORK
         </div>
         <div style={{
           fontSize: "10px",

@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Fort McHenry National Monument Tour Bus Rental — Star-Spangled Heritage Journey — WAYGGO"
+seoTitle: "Fort McHenry National Monument Tour Bus Rental — Star-Spangled Heritage Journey — WAYGGO Charters"
 seoDescription: "Book a Fort McHenry tour bus rental for your group — historic fortifications and War of 1812 heritage along Baltimore's harbor, vehicle and driver included."
 
 heroImageAlt: "Fort McHenry National Monument tour bus rental"

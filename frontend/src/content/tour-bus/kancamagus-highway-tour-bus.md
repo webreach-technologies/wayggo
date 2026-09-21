@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Kancamagus Highway Tour Bus Rental — White Mountains Scenic Byway — WAYGGO"
+seoTitle: "Kancamagus Highway Tour Bus Rental — White Mountains Scenic Byway — WAYGGO Charters"
 seoDescription: "Book a Kancamagus Highway tour bus rental for your group — spectacular White Mountains scenery and seasonal foliage, vehicle and driver included."
 
 heroImageAlt: "Kancamagus Highway tour bus rental"

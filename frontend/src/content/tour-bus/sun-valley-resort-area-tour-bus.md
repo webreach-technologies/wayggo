@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Sun Valley Resort Area Tour Bus Rental — Mountain Luxury Alpine Leisure Escape — WAYGGO"
+seoTitle: "Sun Valley Resort Area Tour Bus Rental — Mountain Luxury Alpine Leisure Escape — WAYGGO Charters"
 seoDescription: "Book a Sun Valley Resort Area tour bus rental for your group — mountain scenery, resort amenities, and Wood River Valley charm, vehicle and driver included."
 
 heroImageAlt: "Sun Valley Resort Area tour bus rental"

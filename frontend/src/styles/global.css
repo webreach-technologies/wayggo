@@ -456,7 +456,7 @@ h1, h2, h3, h4, h5, h6 {
   background-color: #F9F7F2;
 }
 
-/* ── Google Maps hub tooltip (InfoWindow) — WAYGGO brand style ── */
+/* ── Google Maps hub tooltip (InfoWindow) — WAYGGO Charters brand style ── */
 .gm-style .gm-style-iw-c {
   background: #FDEA01 !important;
   border-radius: 9px !important;
@@ -493,7 +493,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 
-/* ── react-datepicker — WAYGGO brand theme ── */
+/* ── react-datepicker — WAYGGO Charters brand theme ── */
 .wayggo-datepicker-popper {
   z-index: 50;
 }

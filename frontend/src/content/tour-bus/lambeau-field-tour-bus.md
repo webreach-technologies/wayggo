@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Lambeau Field Tour Bus Rental — Home of Football Legends — WAYGGO"
+seoTitle: "Lambeau Field Tour Bus Rental — Home of Football Legends — WAYGGO Charters"
 seoDescription: "Book a Lambeau Field tour bus rental for your group — one of Wisconsin's most iconic sports destinations, vehicle and driver included."
 
 heroImageAlt: "Lambeau Field tour bus rental"

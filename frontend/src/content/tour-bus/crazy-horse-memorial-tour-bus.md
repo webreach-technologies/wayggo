@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Crazy Horse Memorial Tour Bus Rental — Monument to a Living Legacy — WAYGGO"
+seoTitle: "Crazy Horse Memorial Tour Bus Rental — Monument to a Living Legacy — WAYGGO Charters"
 seoDescription: "Book a Crazy Horse Memorial tour bus rental for your group — one of South Dakota's most remarkable landmarks, vehicle and driver included."
 
 heroImageAlt: "Crazy Horse Memorial tour bus rental"

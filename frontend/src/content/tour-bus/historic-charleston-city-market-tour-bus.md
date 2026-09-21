@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Historic Charleston City Market Tour Bus Rental — Charleston Market Heritage Journey — WAYGGO"
+seoTitle: "Historic Charleston City Market Tour Bus Rental — Charleston Market Heritage Journey — WAYGGO Charters"
 seoDescription: "Book a Historic Charleston City Market tour bus rental for your group — historic downtown shopping and culture, vehicle and driver included."
 
 heroImageAlt: "Historic Charleston City Market tour bus rental"

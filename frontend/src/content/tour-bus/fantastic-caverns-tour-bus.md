@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Fantastic Caverns Tour Bus Rental — Underground Wonders Explorer — WAYGGO"
+seoTitle: "Fantastic Caverns Tour Bus Rental — Underground Wonders Explorer — WAYGGO Charters"
 seoDescription: "Book a Fantastic Caverns tour bus rental for your group — underground geological formations in the Ozarks, vehicle and driver included."
 
 heroImageAlt: "Fantastic Caverns tour bus rental"

@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Old Faithful Geyser Tour Bus Rental — Eruption of Nature’s Power — WAYGGO"
+seoTitle: "Old Faithful Geyser Tour Bus Rental — Eruption of Nature’s Power — WAYGGO Charters"
 seoDescription: "Book an Old Faithful Geyser tour bus rental for your group — one of Yellowstone National Park's most famous natural attractions, vehicle and driver included."
 
 heroImageAlt: "Old Faithful Geyser tour bus rental"

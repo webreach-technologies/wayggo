@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Ark Encounter Tour Bus Rental — Biblical Scale Ark Experience Journey — WAYGGO"
+seoTitle: "Ark Encounter Tour Bus Rental — Biblical Scale Ark Experience Journey — WAYGGO Charters"
 seoDescription: "Book an Ark Encounter tour bus rental for your group — a full-size ark structure with themed exhibits near Williamstown, vehicle and driver included."
 
 heroImageAlt: "Ark Encounter tour bus rental"

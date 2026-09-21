@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "North Shore Tour Bus Rental — Surf Coast Adventure Ride — WAYGGO"
+seoTitle: "North Shore Tour Bus Rental — Surf Coast Adventure Ride — WAYGGO Charters"
 seoDescription: "Book a North Shore tour bus rental for your group — legendary big-wave beaches and coastal scenery on Oʻahu, vehicle and driver included."
 
 heroImageAlt: "North Shore tour bus rental"

@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Antelope Island State Park Tour Bus Rental — Island in the Great Salt Lake Escape — WAYGGO"
+seoTitle: "Antelope Island State Park Tour Bus Rental — Island in the Great Salt Lake Escape — WAYGGO Charters"
 seoDescription: "Book an Antelope Island State Park tour bus rental for your group — one of northern Utah's memorable outdoor destinations, vehicle and driver included."
 
 heroImageAlt: "Antelope Island State Park tour bus rental"

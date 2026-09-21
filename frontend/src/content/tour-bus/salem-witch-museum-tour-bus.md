@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Salem Witch Museum Tour Bus Rental — Mysteries of Salem Journey — WAYGGO"
+seoTitle: "Salem Witch Museum Tour Bus Rental — Mysteries of Salem Journey — WAYGGO Charters"
 seoDescription: "Book a Salem Witch Museum tour bus rental for your group — a fascinating Massachusetts destination for the 1692 witch trials and colonial history, vehicle and driver included."
 
 heroImageAlt: "Salem Witch Museum tour bus rental"

@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Missouri Botanical Garden Tour Bus Rental — Blooming Heritage Escape — WAYGGO"
+seoTitle: "Missouri Botanical Garden Tour Bus Rental — Blooming Heritage Escape — WAYGGO Charters"
 seoDescription: "Book a Missouri Botanical Garden tour bus rental for your group — diverse plants and landscaped gardens in St. Louis, vehicle and driver included."
 
 heroImageAlt: "Missouri Botanical Garden tour bus rental"

@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Flint Hills Scenic Byway Tour Bus Rental — Rolling Prairie Grassland Horizon Drive Experience — WAYGGO"
+seoTitle: "Flint Hills Scenic Byway Tour Bus Rental — Rolling Prairie Grassland Horizon Drive Experience — WAYGGO Charters"
 seoDescription: "Book a Flint Hills Scenic Byway tour bus rental for your group — sweeping prairie vistas and rolling hills across Kansas, vehicle and driver included."
 
 heroImageAlt: "Flint Hills Scenic Byway tour bus rental"

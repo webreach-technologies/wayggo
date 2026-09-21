@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Bryce Canyon National Park Tour Bus Rental — Amphitheater of Stone Wonders — WAYGGO"
+seoTitle: "Bryce Canyon National Park Tour Bus Rental — Amphitheater of Stone Wonders — WAYGGO Charters"
 seoDescription: "Book a Bryce Canyon National Park tour bus rental for your group — one of Utah's most remarkable natural destinations, vehicle and driver included."
 
 heroImageAlt: "Bryce Canyon National Park tour bus rental"

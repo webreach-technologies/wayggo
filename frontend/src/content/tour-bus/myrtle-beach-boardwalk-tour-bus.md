@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Myrtle Beach Boardwalk Tour Bus Rental — Oceanfront Boardwalk Adventure — WAYGGO"
+seoTitle: "Myrtle Beach Boardwalk Tour Bus Rental — Oceanfront Boardwalk Adventure — WAYGGO Charters"
 seoDescription: "Book a Myrtle Beach Boardwalk tour bus rental for your group — coastal entertainment and ocean views, vehicle and driver included."
 
 heroImageAlt: "Myrtle Beach Boardwalk tour bus rental"

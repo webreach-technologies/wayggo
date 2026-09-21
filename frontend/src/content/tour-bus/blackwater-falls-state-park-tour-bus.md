@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Blackwater Falls State Park Tour Bus Rental — Mountain Waterfalls Escape — WAYGGO"
+seoTitle: "Blackwater Falls State Park Tour Bus Rental — Mountain Waterfalls Escape — WAYGGO Charters"
 seoDescription: "Book a Blackwater Falls State Park tour bus rental for your group — one of West Virginia's most memorable natural destinations, vehicle and driver included."
 
 heroImageAlt: "Blackwater Falls State Park tour bus rental"

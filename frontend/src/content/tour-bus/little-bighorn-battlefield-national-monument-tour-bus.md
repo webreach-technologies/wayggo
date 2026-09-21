@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Little Bighorn Battlefield National Monument Tour Bus Rental — Legends of the Last Stand Tour — WAYGGO"
+seoTitle: "Little Bighorn Battlefield National Monument Tour Bus Rental — Legends of the Last Stand Tour — WAYGGO Charters"
 seoDescription: "Book a Little Bighorn Battlefield tour bus rental for your group — historical landscape and memorials, vehicle and driver included."
 
 heroImageAlt: "Little Bighorn Battlefield National Monument tour bus rental"

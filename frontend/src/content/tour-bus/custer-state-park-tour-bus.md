@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Custer State Park Tour Bus Rental — Wildlife & Granite Peaks Adventure — WAYGGO"
+seoTitle: "Custer State Park Tour Bus Rental — Wildlife & Granite Peaks Adventure — WAYGGO Charters"
 seoDescription: "Book a Custer State Park tour bus rental for your group — South Dakota's scenic Black Hills and wildlife, vehicle and driver included."
 
 heroImageAlt: "Custer State Park tour bus rental"

@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Park Loop Road Tour Bus Rental — Coastal Panorama Journey — WAYGGO"
+seoTitle: "Park Loop Road Tour Bus Rental — Coastal Panorama Journey — WAYGGO Charters"
 seoDescription: "Book a Park Loop Road tour bus rental for your group — a scenic drive through Acadia's coastal and mountain landscapes, vehicle and driver included."
 
 heroImageAlt: "Park Loop Road tour bus rental"

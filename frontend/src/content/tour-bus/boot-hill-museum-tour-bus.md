@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Boot Hill Museum Tour Bus Rental — Wild West Frontier Town History Experience — WAYGGO"
+seoTitle: "Boot Hill Museum Tour Bus Rental — Wild West Frontier Town History Experience — WAYGGO Charters"
 seoDescription: "Book a Boot Hill Museum tour bus rental for your group — Old West heritage and frontier history in Dodge City, vehicle and driver included."
 
 heroImageAlt: "Boot Hill Museum tour bus rental"

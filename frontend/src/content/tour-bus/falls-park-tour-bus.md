@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Falls Park Tour Bus Rental — Heart of Sioux Falls Discovery — WAYGGO"
+seoTitle: "Falls Park Tour Bus Rental — Heart of Sioux Falls Discovery — WAYGGO Charters"
 seoDescription: "Book a Falls Park tour bus rental for your group — one of South Dakota's most recognizable outdoor destinations, vehicle and driver included."
 
 heroImageAlt: "Falls Park tour bus rental"

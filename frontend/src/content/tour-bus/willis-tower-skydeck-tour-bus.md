@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Willis Tower Skydeck Tour Bus Rental — Skyline Glass View Thrill Experience — WAYGGO"
+seoTitle: "Willis Tower Skydeck Tour Bus Rental — Skyline Glass View Thrill Experience — WAYGGO Charters"
 seoDescription: "Book a Willis Tower Skydeck tour bus rental for your group — panoramic Chicago views and The Ledge glass boxes, vehicle and driver included."
 
 heroImageAlt: "Willis Tower Skydeck tour bus rental"

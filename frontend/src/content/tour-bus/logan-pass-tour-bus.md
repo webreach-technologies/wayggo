@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Logan Pass Tour Bus Rental — Alpine Summit Explorer — WAYGGO"
+seoTitle: "Logan Pass Tour Bus Rental — Alpine Summit Explorer — WAYGGO Charters"
 seoDescription: "Book a Logan Pass tour bus rental for your group — dramatic mountain peaks and alpine meadows, vehicle and driver included."
 
 heroImageAlt: "Logan Pass tour bus rental"

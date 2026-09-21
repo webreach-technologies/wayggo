@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Houston Museum District Tour Bus Rental — Culture & Discovery Journey — WAYGGO"
+seoTitle: "Houston Museum District Tour Bus Rental — Culture & Discovery Journey — WAYGGO Charters"
 seoDescription: "Book a Houston Museum District tour bus rental for your group — one of Texas's leading cultural and educational destinations, vehicle and driver included."
 
 heroImageAlt: "Houston Museum District tour bus rental"

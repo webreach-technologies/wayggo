@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Lost River Gorge & Boulder Caves Tour Bus Rental — Boulders & Hidden Passages Adventure — WAYGGO"
+seoTitle: "Lost River Gorge & Boulder Caves Tour Bus Rental — Boulders & Hidden Passages Adventure — WAYGGO Charters"
 seoDescription: "Book a Lost River Gorge & Boulder Caves tour bus rental for your group — dramatic rock formations in the White Mountains, vehicle and driver included."
 
 heroImageAlt: "Lost River Gorge & Boulder Caves tour bus rental"

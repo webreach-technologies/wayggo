@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "National WWI Museum and Memorial Tour Bus Rental — Valor & Victory Heritage Tour — WAYGGO"
+seoTitle: "National WWI Museum and Memorial Tour Bus Rental — Valor & Victory Heritage Tour — WAYGGO Charters"
 seoDescription: "Book a National WWI Museum and Memorial tour bus rental for your group — World War I history in Kansas City, vehicle and driver included."
 
 heroImageAlt: "National WWI Museum and Memorial tour bus rental"

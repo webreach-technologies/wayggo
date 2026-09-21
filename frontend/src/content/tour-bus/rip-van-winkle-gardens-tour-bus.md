@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Rip Van Winkle Gardens Tour Bus Rental — Garden Serenity Explorer — WAYGGO"
+seoTitle: "Rip Van Winkle Gardens Tour Bus Rental — Garden Serenity Explorer — WAYGGO Charters"
 seoDescription: "Book a Rip Van Winkle Gardens tour bus rental for your group — peaceful landscaped gardens near Lake Peigneur, vehicle and driver included."
 
 heroImageAlt: "Rip Van Winkle Gardens tour bus rental"

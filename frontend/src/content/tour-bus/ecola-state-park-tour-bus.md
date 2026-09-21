@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Ecola State Park Tour Bus Rental — Clifftop Coastal Panorama — WAYGGO"
+seoTitle: "Ecola State Park Tour Bus Rental — Clifftop Coastal Panorama — WAYGGO Charters"
 seoDescription: "Book an Ecola State Park tour bus rental for your group — forested headlands and dramatic Oregon Coast views, vehicle and driver included."
 
 heroImageAlt: "Ecola State Park tour bus rental"

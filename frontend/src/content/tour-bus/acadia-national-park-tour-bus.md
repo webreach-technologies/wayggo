@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Acadia National Park Tour Bus Rental — Summit to Sea Adventure — WAYGGO"
+seoTitle: "Acadia National Park Tour Bus Rental — Summit to Sea Adventure — WAYGGO Charters"
 seoDescription: "Book an Acadia National Park tour bus rental for your group — rugged Atlantic coastline and granite mountains in Maine, vehicle and driver included."
 
 heroImageAlt: "Acadia National Park tour bus rental"

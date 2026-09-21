@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Wilmington Riverwalk Tour Bus Rental — Riverfront Heritage Stroll — WAYGGO"
+seoTitle: "Wilmington Riverwalk Tour Bus Rental — Riverfront Heritage Stroll — WAYGGO Charters"
 seoDescription: "Book a Wilmington Riverwalk tour bus rental for your group — waterfront scenery and historic surroundings, vehicle and driver included."
 
 heroImageAlt: "Wilmington Riverwalk tour bus rental"

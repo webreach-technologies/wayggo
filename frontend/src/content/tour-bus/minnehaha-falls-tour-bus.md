@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Minnehaha Falls Tour Bus Rental — Urban Waterfall Escape — WAYGGO"
+seoTitle: "Minnehaha Falls Tour Bus Rental — Urban Waterfall Escape — WAYGGO Charters"
 seoDescription: "Book a Minnehaha Falls tour bus rental for your group — a dramatic waterfall and scenic parkland in Minneapolis, vehicle and driver included."
 
 heroImageAlt: "Minnehaha Falls tour bus rental"

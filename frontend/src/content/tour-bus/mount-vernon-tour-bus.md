@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Mount Vernon Tour Bus Rental — Home of the First President — WAYGGO"
+seoTitle: "Mount Vernon Tour Bus Rental — Home of the First President — WAYGGO Charters"
 seoDescription: "Book a Mount Vernon tour bus rental for your group — one of Virginia's most memorable historic destinations, vehicle and driver included."
 
 heroImageAlt: "Mount Vernon tour bus rental"

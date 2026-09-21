@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Battleship New Jersey Museum Tour Bus Rental — Battleship Legends Experience — WAYGGO"
+seoTitle: "Battleship New Jersey Museum Tour Bus Rental — Battleship Legends Experience — WAYGGO Charters"
 seoDescription: "Book a Battleship New Jersey Museum tour bus rental for your group — a historic naval vessel and maritime heritage in Camden, vehicle and driver included."
 
 heroImageAlt: "Battleship New Jersey Museum tour bus rental"

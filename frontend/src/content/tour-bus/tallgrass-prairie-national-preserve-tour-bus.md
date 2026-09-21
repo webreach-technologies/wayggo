@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Tallgrass Prairie National Preserve Tour Bus Rental — Endless Prairie Horizon Wildlife Escape Experience — WAYGGO"
+seoTitle: "Tallgrass Prairie National Preserve Tour Bus Rental — Endless Prairie Horizon Wildlife Escape Experience — WAYGGO Charters"
 seoDescription: "Book a Tallgrass Prairie National Preserve tour bus rental for your group — native prairie and Flint Hills scenery in Kansas, vehicle and driver included."
 
 heroImageAlt: "Tallgrass Prairie National Preserve tour bus rental"

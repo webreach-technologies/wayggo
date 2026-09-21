@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Biloxi Beach Tour Bus Rental — Gulf Coast Sands Escape — WAYGGO"
+seoTitle: "Biloxi Beach Tour Bus Rental — Gulf Coast Sands Escape — WAYGGO Charters"
 seoDescription: "Book a Biloxi Beach tour bus rental for your group — Gulf Coast shoreline and scenic waterfront views, vehicle and driver included."
 
 heroImageAlt: "Biloxi Beach tour bus rental"

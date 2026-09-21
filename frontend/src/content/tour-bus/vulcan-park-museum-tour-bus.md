@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Vulcan Park & Museum Tour Bus Rental — Skyline Sentinel Experience — WAYGGO"
+seoTitle: "Vulcan Park & Museum Tour Bus Rental — Skyline Sentinel Experience — WAYGGO Charters"
 seoDescription: "Book a Vulcan Park & Museum tour bus rental for your group — the world's largest cast-iron statue and 360-degree views over Birmingham from Red Mountain, vehicle and driver included."
 
 heroImageAlt: "Vulcan Park & Museum tour bus rental"

@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Holy City of the Wichitas Tour Bus Rental — Sacred Hills Heritage Tour — WAYGGO"
+seoTitle: "Holy City of the Wichitas Tour Bus Rental — Sacred Hills Heritage Tour — WAYGGO Charters"
 seoDescription: "Book a Holy City of the Wichitas tour bus rental for your group — religious heritage and scenic mountain surroundings, vehicle and driver included."
 
 heroImageAlt: "Holy City of the Wichitas tour bus rental"

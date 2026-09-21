@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Mount Equinox Skyline Drive Tour Bus Rental — Skyline Above Vermont Adventure — WAYGGO"
+seoTitle: "Mount Equinox Skyline Drive Tour Bus Rental — Skyline Above Vermont Adventure — WAYGGO Charters"
 seoDescription: "Book a Mount Equinox Skyline Drive tour bus rental for your group — a scenic adventure in southern Vermont, vehicle and driver included."
 
 heroImageAlt: "Mount Equinox Skyline Drive tour bus rental"

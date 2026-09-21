@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Biltmore Village Tour Bus Rental — Historic Village Charm Tour — WAYGGO"
+seoTitle: "Biltmore Village Tour Bus Rental — Historic Village Charm Tour — WAYGGO Charters"
 seoDescription: "Book a Biltmore Village tour bus rental for your group — historic architecture, local shops, and dining in Asheville, vehicle and driver included."
 
 heroImageAlt: "Biltmore Village tour bus rental"

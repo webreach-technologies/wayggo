@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Delaware Water Gap National Recreation Area Tour Bus Rental — River & Mountain Wilderness Escape — WAYGGO"
+seoTitle: "Delaware Water Gap National Recreation Area Tour Bus Rental — River & Mountain Wilderness Escape — WAYGGO Charters"
 seoDescription: "Book a Delaware Water Gap National Recreation Area tour bus rental for your group — river scenery, mountains, and forest trails, vehicle and driver included."
 
 heroImageAlt: "Delaware Water Gap National Recreation Area tour bus rental"

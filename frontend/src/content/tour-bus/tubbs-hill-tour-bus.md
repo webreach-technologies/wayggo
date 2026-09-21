@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Tubbs Hill Tour Bus Rental — Lakeside Forest Cliff Walk Escape — WAYGGO"
+seoTitle: "Tubbs Hill Tour Bus Rental — Lakeside Forest Cliff Walk Escape — WAYGGO Charters"
 seoDescription: "Book a Tubbs Hill tour bus rental for your group — wooded trails and rocky shoreline views of Lake Coeur d'Alene, vehicle and driver included."
 
 heroImageAlt: "Tubbs Hill tour bus rental"

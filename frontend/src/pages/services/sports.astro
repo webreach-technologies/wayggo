@@ -44,15 +44,15 @@ const serviceSchema = {
   name: "Sports Team & Fan Group Transportation",
   description: "Game day transportation, team charters, and fan group buses across North America.",
   url: pageURL,
-  provider: { "@type": "Organization", name: "WAYGGO", url: new URL("/", Astro.site ?? "https://wayggo.com").href },
+  provider: { "@type": "Organization", name: "WAYGGO Charters", url: new URL("/", Astro.site ?? "https://wayggo.com").href },
   areaServed: ["United States", "Canada"],
   serviceType: "Sports Group Ground Transportation",
 };
 ---
 
 <BaseLayout
-  title="Sports Teams & Fan Group Transportation — WAYGGO"
-  description="Game day transportation, team charters, and fan group buses across North America. WAYGGO serves sports teams, fan clubs, and tour operators bringing international groups to major sporting events."
+  title="Sports Teams & Fan Group Transportation — WAYGGO Charters"
+  description="Game day transportation, team charters, and fan group buses across North America. WAYGGO Charters serves sports teams, fan clubs, and tour operators bringing international groups to major sporting events."
   breadcrumbs={[{ name: "Services", path: "/services" }, { name: "Sports Teams & Fan Group Travel", path: "/services/sports" }]}
 >
   <script is:inline type="application/ld+json" set:html={JSON.stringify(serviceSchema)} />
@@ -60,7 +60,7 @@ const serviceSchema = {
   <section class="relative py-24 overflow-hidden" style="background-color: #1A2744;">
     <Image
       src={heroImg}
-      alt="Sports team and fan group transportation — WAYGGO"
+      alt="Sports team and fan group transportation — WAYGGO Charters"
       width={1600}
       height={600}
       quality=25
@@ -76,7 +76,7 @@ const serviceSchema = {
           <span style="color: #FDEA01;">Fan Group Travel</span>
         </h1>
         <p class="text-white/65 text-lg leading-relaxed max-w-2xl mb-8">
-          From the Super Bowl to the NBA Finals, from baseball road trips to international soccer friendlies — WAYGGO moves sports groups to stadiums across North America with game-day precision.
+          From the Super Bowl to the NBA Finals, from baseball road trips to international soccer friendlies — WAYGGO Charters moves sports groups to stadiums across North America with game-day precision.
         </p>
         <a href={withBase("/contact")} class="btn-primary">Plan Your Sports Tour</a>
       </div>

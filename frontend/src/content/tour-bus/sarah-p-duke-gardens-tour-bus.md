@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Sarah P. Duke Gardens Tour Bus Rental — Blooms & Beauty Discovery — WAYGGO"
+seoTitle: "Sarah P. Duke Gardens Tour Bus Rental — Blooms & Beauty Discovery — WAYGGO Charters"
 seoDescription: "Book a Sarah P. Duke Gardens tour bus rental for your group — beautiful landscapes and plant collections in Durham, vehicle and driver included."
 
 heroImageAlt: "Sarah P. Duke Gardens tour bus rental"

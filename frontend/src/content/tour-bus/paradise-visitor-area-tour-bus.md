@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Paradise Visitor Area Tour Bus Rental — Wildflower Meadows & Mountain Views — WAYGGO"
+seoTitle: "Paradise Visitor Area Tour Bus Rental — Wildflower Meadows & Mountain Views — WAYGGO Charters"
 seoDescription: "Book a Paradise Visitor Area tour bus rental for your group — a convenient mountain adventure in Washington, vehicle and driver included."
 
 heroImageAlt: "Paradise Visitor Area tour bus rental"

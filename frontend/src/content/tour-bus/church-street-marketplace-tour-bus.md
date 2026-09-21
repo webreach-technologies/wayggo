@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Church Street Marketplace Tour Bus Rental — Marketplace in the Green Mountains — WAYGGO"
+seoTitle: "Church Street Marketplace Tour Bus Rental — Marketplace in the Green Mountains — WAYGGO Charters"
 seoDescription: "Book a Church Street Marketplace tour bus rental for your group — one of Burlington's popular downtown destinations, vehicle and driver included."
 
 heroImageAlt: "Church Street Marketplace tour bus rental"

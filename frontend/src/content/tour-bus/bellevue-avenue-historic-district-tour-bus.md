@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Bellevue Avenue Historic District Tour Bus Rental — Avenue of Historic Estates — WAYGGO"
+seoTitle: "Bellevue Avenue Historic District Tour Bus Rental — Avenue of Historic Estates — WAYGGO Charters"
 seoDescription: "Book a Bellevue Avenue Historic District tour bus rental for your group — Newport's famous architecture and Gilded Age landmarks, vehicle and driver included."
 
 heroImageAlt: "Bellevue Avenue Historic District tour bus rental"

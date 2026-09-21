@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Natchez Historic District Tour Bus Rental — Antebellum Treasures Explorer — WAYGGO"
+seoTitle: "Natchez Historic District Tour Bus Rental — Antebellum Treasures Explorer — WAYGGO Charters"
 seoDescription: "Book a Natchez Historic District tour bus rental for your group — historic architecture and Mississippi River scenery, vehicle and driver included."
 
 heroImageAlt: "Natchez Historic District tour bus rental"

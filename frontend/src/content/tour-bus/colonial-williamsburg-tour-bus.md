@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Colonial Williamsburg Tour Bus Rental — Colonial America Living History — WAYGGO"
+seoTitle: "Colonial Williamsburg Tour Bus Rental — Colonial America Living History — WAYGGO Charters"
 seoDescription: "Book a Colonial Williamsburg tour bus rental for your group — one of Virginia's most memorable historic destinations, vehicle and driver included."
 
 heroImageAlt: "Colonial Williamsburg tour bus rental"

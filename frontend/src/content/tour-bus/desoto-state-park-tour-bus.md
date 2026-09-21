@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "DeSoto State Park Tour Bus Rental — Forest Falls Explorer Ride — WAYGGO"
+seoTitle: "DeSoto State Park Tour Bus Rental — Forest Falls Explorer Ride — WAYGGO Charters"
 seoDescription: "Book a DeSoto State Park tour bus rental for your group — DeSoto Falls, Indian Falls, and miles of hiking trails atop Lookout Mountain, vehicle and driver included."
 
 heroImageAlt: "DeSoto State Park tour bus rental"

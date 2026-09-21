@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Graceland Tour Bus Rental — Home of the King Discovery — WAYGGO"
+seoTitle: "Graceland Tour Bus Rental — Home of the King Discovery — WAYGGO Charters"
 seoDescription: "Book a Graceland tour bus rental for your group — one of Tennessee's most famous cultural destinations, vehicle and driver included."
 
 heroImageAlt: "Graceland tour bus rental"

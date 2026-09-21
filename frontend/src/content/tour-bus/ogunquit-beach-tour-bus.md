@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Ogunquit Beach Tour Bus Rental — Seaside Sands Getaway — WAYGGO"
+seoTitle: "Ogunquit Beach Tour Bus Rental — Seaside Sands Getaway — WAYGGO Charters"
 seoDescription: "Book an Ogunquit Beach tour bus rental for your group — sandy shoreline and Atlantic views in southern Maine, vehicle and driver included."
 
 heroImageAlt: "Ogunquit Beach tour bus rental"

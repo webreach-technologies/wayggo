@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Hurricane Ridge Tour Bus Rental — Ridge Above the Clouds Adventure — WAYGGO"
+seoTitle: "Hurricane Ridge Tour Bus Rental — Ridge Above the Clouds Adventure — WAYGGO Charters"
 seoDescription: "Book a Hurricane Ridge tour bus rental for your group — a convenient mountain adventure in Washington, vehicle and driver included."
 
 heroImageAlt: "Hurricane Ridge tour bus rental"

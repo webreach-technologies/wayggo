@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Indianapolis Motor Speedway Museum Tour Bus Rental — Racing Heritage Speed Legacy Experience — WAYGGO"
+seoTitle: "Indianapolis Motor Speedway Museum Tour Bus Rental — Racing Heritage Speed Legacy Experience — WAYGGO Charters"
 seoDescription: "Book an Indianapolis Motor Speedway Museum tour bus rental for your group — historic race cars and Indianapolis 500 heritage, vehicle and driver included."
 
 heroImageAlt: "Indianapolis Motor Speedway Museum tour bus rental"

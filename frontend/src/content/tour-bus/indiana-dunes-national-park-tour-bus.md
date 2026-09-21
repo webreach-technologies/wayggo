@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Indiana Dunes National Park Tour Bus Rental — Lake Michigan Sand Dunes Shoreline Escape Experience — WAYGGO"
+seoTitle: "Indiana Dunes National Park Tour Bus Rental — Lake Michigan Sand Dunes Shoreline Escape Experience — WAYGGO Charters"
 seoDescription: "Book an Indiana Dunes National Park tour bus rental for your group — beaches, dunes, and Lake Michigan scenery, vehicle and driver included."
 
 heroImageAlt: "Indiana Dunes National Park tour bus rental"

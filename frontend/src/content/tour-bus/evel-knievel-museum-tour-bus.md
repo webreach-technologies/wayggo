@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Evel Knievel Museum Tour Bus Rental — Stunt Legend Daredevil Heritage Experience — WAYGGO"
+seoTitle: "Evel Knievel Museum Tour Bus Rental — Stunt Legend Daredevil Heritage Experience — WAYGGO Charters"
 seoDescription: "Book an Evel Knievel Museum tour bus rental for your group — legendary motorcycles and stunt memorabilia in Topeka, vehicle and driver included."
 
 heroImageAlt: "Evel Knievel Museum tour bus rental"

@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Point Judith Lighthouse Area Tour Bus Rental — Beacon of the Coast Discovery — WAYGGO"
+seoTitle: "Point Judith Lighthouse Area Tour Bus Rental — Beacon of the Coast Discovery — WAYGGO Charters"
 seoDescription: "Book a Point Judith Lighthouse Area tour bus rental for your group — Rhode Island's coastal scenery, maritime character, and dramatic ocean views, vehicle and driver included."
 
 heroImageAlt: "Point Judith Lighthouse Area tour bus rental"

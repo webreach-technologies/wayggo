@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Mohegan Bluffs Tour Bus Rental — Bluffs Above the Atlantic Journey — WAYGGO"
+seoTitle: "Mohegan Bluffs Tour Bus Rental — Bluffs Above the Atlantic Journey — WAYGGO Charters"
 seoDescription: "Book a Mohegan Bluffs tour bus rental for your group — the dramatic coastal scenery of Block Island, vehicle and driver included."
 
 heroImageAlt: "Mohegan Bluffs tour bus rental"

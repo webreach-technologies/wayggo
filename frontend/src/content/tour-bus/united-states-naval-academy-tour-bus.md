@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "United States Naval Academy Tour Bus Rental — Naval Legacy Discovery — WAYGGO"
+seoTitle: "United States Naval Academy Tour Bus Rental — Naval Legacy Discovery — WAYGGO Charters"
 seoDescription: "Book a United States Naval Academy tour bus rental for your group — historic naval campus and Chesapeake Bay heritage in Annapolis, vehicle and driver included."
 
 heroImageAlt: "United States Naval Academy tour bus rental"

@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Bricktown Entertainment District Tour Bus Rental — Canals & City Lights Experience — WAYGGO"
+seoTitle: "Bricktown Entertainment District Tour Bus Rental — Canals & City Lights Experience — WAYGGO Charters"
 seoDescription: "Book a Bricktown Entertainment District tour bus rental for your group — dining, entertainment, and downtown sightseeing, vehicle and driver included."
 
 heroImageAlt: "Bricktown Entertainment District tour bus rental"

@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Marble House Tour Bus Rental — Mansion of Marble Elegance — WAYGGO"
+seoTitle: "Marble House Tour Bus Rental — Mansion of Marble Elegance — WAYGGO Charters"
 seoDescription: "Book a Marble House tour bus rental for your group — one of Newport's best-known Gilded Age landmarks, vehicle and driver included."
 
 heroImageAlt: "Marble House tour bus rental"

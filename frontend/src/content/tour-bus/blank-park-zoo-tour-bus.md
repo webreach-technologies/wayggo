@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Blank Park Zoo Tour Bus Rental — Wildlife Discovery Family Nature Escape Experience — WAYGGO"
+seoTitle: "Blank Park Zoo Tour Bus Rental — Wildlife Discovery Family Nature Escape Experience — WAYGGO Charters"
 seoDescription: "Book a Blank Park Zoo tour bus rental for your group — animal habitats and wildlife conservation in Des Moines, vehicle and driver included."
 
 heroImageAlt: "Blank Park Zoo tour bus rental"

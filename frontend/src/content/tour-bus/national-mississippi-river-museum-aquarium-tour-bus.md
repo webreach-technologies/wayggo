@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "National Mississippi River Museum & Aquarium Tour Bus Rental — River Heritage Aquatic Discovery Experience — WAYGGO"
+seoTitle: "National Mississippi River Museum & Aquarium Tour Bus Rental — River Heritage Aquatic Discovery Experience — WAYGGO Charters"
 seoDescription: "Book a National Mississippi River Museum & Aquarium tour bus rental for your group — river wildlife and aquatic discovery in Dubuque, vehicle and driver included."
 
 heroImageAlt: "National Mississippi River Museum & Aquarium tour bus rental"

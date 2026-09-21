@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "National WWII Museum Tour Bus Rental — Heroes & History Journey — WAYGGO"
+seoTitle: "National WWII Museum Tour Bus Rental — Heroes & History Journey — WAYGGO Charters"
 seoDescription: "Book a National WWII Museum tour bus rental for your group — powerful WWII exhibits and personal stories in New Orleans, vehicle and driver included."
 
 heroImageAlt: "National WWII Museum tour bus rental"

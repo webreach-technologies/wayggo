@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Georgia O'Keeffe Museum Tour Bus Rental — Desert Visionaries Tour — WAYGGO"
+seoTitle: "Georgia O'Keeffe Museum Tour Bus Rental — Desert Visionaries Tour — WAYGGO Charters"
 seoDescription: "Book a Georgia O'Keeffe Museum tour bus rental for your group — a compelling Santa Fe destination dedicated to American modernism, vehicle and driver included."
 
 heroImageAlt: "Georgia O'Keeffe Museum tour bus rental"

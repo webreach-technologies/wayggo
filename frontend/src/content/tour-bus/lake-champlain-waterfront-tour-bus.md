@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Lake Champlain Waterfront Tour Bus Rental — Champlain Shoreline Escape — WAYGGO"
+seoTitle: "Lake Champlain Waterfront Tour Bus Rental — Champlain Shoreline Escape — WAYGGO Charters"
 seoDescription: "Book a Lake Champlain Waterfront tour bus rental for your group — one of Burlington's scenic destinations, vehicle and driver included."
 
 heroImageAlt: "Lake Champlain Waterfront tour bus rental"

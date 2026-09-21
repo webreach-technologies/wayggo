@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Boston Common Tour Bus Rental — America's First Park Discovery — WAYGGO"
+seoTitle: "Boston Common Tour Bus Rental — America's First Park Discovery — WAYGGO Charters"
 seoDescription: "Book a Boston Common tour bus rental for your group — one of Boston's most recognizable public spaces, vehicle and driver included."
 
 heroImageAlt: "Boston Common tour bus rental"

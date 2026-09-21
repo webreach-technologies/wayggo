@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Grand Ole Opry Tour Bus Rental — Country Music Legends Night — WAYGGO"
+seoTitle: "Grand Ole Opry Tour Bus Rental — Country Music Legends Night — WAYGGO Charters"
 seoDescription: "Book a Grand Ole Opry tour bus rental for your group — one of Nashville's most famous music destinations, vehicle and driver included."
 
 heroImageAlt: "Grand Ole Opry tour bus rental"

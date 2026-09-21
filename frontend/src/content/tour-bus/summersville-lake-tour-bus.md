@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Summersville Lake Tour Bus Rental — Crystal Waters Adventure — WAYGGO"
+seoTitle: "Summersville Lake Tour Bus Rental — Crystal Waters Adventure — WAYGGO Charters"
 seoDescription: "Book a Summersville Lake tour bus rental for your group — one of West Virginia's most memorable outdoor destinations, vehicle and driver included."
 
 heroImageAlt: "Summersville Lake tour bus rental"

@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Myriad Botanical Gardens Tour Bus Rental — Urban Garden Oasis Discovery — WAYGGO"
+seoTitle: "Myriad Botanical Gardens Tour Bus Rental — Urban Garden Oasis Discovery — WAYGGO Charters"
 seoDescription: "Book a Myriad Botanical Gardens tour bus rental for your group — plants, gardens, and urban nature in Oklahoma City, vehicle and driver included."
 
 heroImageAlt: "Myriad Botanical Gardens tour bus rental"

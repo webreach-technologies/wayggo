@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Grand Central Terminal Tour Bus Rental — Grand Gateway Heritage Tour — WAYGGO"
+seoTitle: "Grand Central Terminal Tour Bus Rental — Grand Gateway Heritage Tour — WAYGGO Charters"
 seoDescription: "Book a Grand Central Terminal tour bus rental for your group — historic architecture and transportation heritage in Midtown, vehicle and driver included."
 
 heroImageAlt: "Grand Central Terminal tour bus rental"

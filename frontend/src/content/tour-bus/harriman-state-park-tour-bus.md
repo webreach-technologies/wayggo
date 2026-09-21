@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Harriman State Park Tour Bus Rental — Wild Meadows Lakeside Retreat Experience — WAYGGO"
+seoTitle: "Harriman State Park Tour Bus Rental — Wild Meadows Lakeside Retreat Experience — WAYGGO Charters"
 seoDescription: "Book a Harriman State Park tour bus rental for your group — Henrys Fork river scenery, meadows, and wildlife in eastern Idaho, vehicle and driver included."
 
 heroImageAlt: "Harriman State Park tour bus rental"

@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Vicksburg National Military Park Tour Bus Rental — Echoes of Valor Journey — WAYGGO"
+seoTitle: "Vicksburg National Military Park Tour Bus Rental — Echoes of Valor Journey — WAYGGO Charters"
 seoDescription: "Book a Vicksburg National Military Park tour bus rental for your group — Civil War history and battlefield landscape, vehicle and driver included."
 
 heroImageAlt: "Vicksburg National Military Park tour bus rental"

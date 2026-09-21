@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Door County Coastal Villages Tour Bus Rental — Peninsula Coastal Charm Journey — WAYGGO"
+seoTitle: "Door County Coastal Villages Tour Bus Rental — Peninsula Coastal Charm Journey — WAYGGO Charters"
 seoDescription: "Book a Door County Coastal Villages tour bus rental for your group — one of Wisconsin's most scenic regions, vehicle and driver included."
 
 heroImageAlt: "Door County Coastal Villages tour bus rental"

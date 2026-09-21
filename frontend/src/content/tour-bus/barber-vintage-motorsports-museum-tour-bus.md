@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Barber Vintage Motorsports Museum Tour Bus Rental — Vintage Speed Legacy Tour — WAYGGO"
+seoTitle: "Barber Vintage Motorsports Museum Tour Bus Rental — Vintage Speed Legacy Tour — WAYGGO Charters"
 seoDescription: "Book a Barber Vintage Motorsports Museum tour bus rental for your group — the world's largest motorcycle collection and Lotus race cars in Leeds, Alabama, vehicle and driver included."
 
 heroImageAlt: "Barber Vintage Motorsports Museum tour bus rental"

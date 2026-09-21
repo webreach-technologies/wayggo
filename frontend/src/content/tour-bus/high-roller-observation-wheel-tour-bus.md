@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "High Roller Observation Wheel Tour Bus Rental — Skyline Views Adventure — WAYGGO"
+seoTitle: "High Roller Observation Wheel Tour Bus Rental — Skyline Views Adventure — WAYGGO Charters"
 seoDescription: "Book a High Roller Observation Wheel tour bus rental for your group — elevated Las Vegas skyline views, vehicle and driver included."
 
 heroImageAlt: "High Roller Observation Wheel tour bus rental"

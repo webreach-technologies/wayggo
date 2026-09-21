@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Old Market District Tour Bus Rental — Cobblestone Market Heritage — WAYGGO"
+seoTitle: "Old Market District Tour Bus Rental — Cobblestone Market Heritage — WAYGGO Charters"
 seoDescription: "Book an Old Market District tour bus rental for your group — historic architecture and local shops in Omaha, vehicle and driver included."
 
 heroImageAlt: "Old Market District tour bus rental"

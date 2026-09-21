@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Blue Ridge Parkway (Virginia Section) Tour Bus Rental — Virginia's Mountain Majesty Drive — WAYGGO"
+seoTitle: "Blue Ridge Parkway (Virginia Section) Tour Bus Rental — Virginia's Mountain Majesty Drive — WAYGGO Charters"
 seoDescription: "Book a Blue Ridge Parkway tour bus rental for your group — a scenic adventure through Virginia's mountain landscapes, vehicle and driver included."
 
 heroImageAlt: "Blue Ridge Parkway tour bus rental"

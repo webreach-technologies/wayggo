@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Cannon Mountain Aerial Tramway Tour Bus Rental — Summit Views Sky Ride — WAYGGO"
+seoTitle: "Cannon Mountain Aerial Tramway Tour Bus Rental — Summit Views Sky Ride — WAYGGO Charters"
 seoDescription: "Book a Cannon Mountain Aerial Tramway tour bus rental for your group — panoramic White Mountains views, vehicle and driver included."
 
 heroImageAlt: "Cannon Mountain Aerial Tramway tour bus rental"

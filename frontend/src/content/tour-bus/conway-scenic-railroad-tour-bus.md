@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Conway Scenic Railroad Tour Bus Rental — Rails Through the White Mountains — WAYGGO"
+seoTitle: "Conway Scenic Railroad Tour Bus Rental — Rails Through the White Mountains — WAYGGO Charters"
 seoDescription: "Book a Conway Scenic Railroad tour bus rental for your group — classic rail atmosphere and White Mountains scenery, vehicle and driver included."
 
 heroImageAlt: "Conway Scenic Railroad tour bus rental"

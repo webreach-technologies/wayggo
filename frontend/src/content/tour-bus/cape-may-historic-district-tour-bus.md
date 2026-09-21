@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Cape May Historic District Tour Bus Rental — Victorian Coast Heritage Journey — WAYGGO"
+seoTitle: "Cape May Historic District Tour Bus Rental — Victorian Coast Heritage Journey — WAYGGO Charters"
 seoDescription: "Book a Cape May Historic District tour bus rental for your group — Victorian architecture and preserved coastal streets, vehicle and driver included."
 
 heroImageAlt: "Cape May Historic District tour bus rental"

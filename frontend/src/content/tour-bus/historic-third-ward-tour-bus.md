@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Historic Third Ward Tour Bus Rental — Warehouse District Revival Journey — WAYGGO"
+seoTitle: "Historic Third Ward Tour Bus Rental — Warehouse District Revival Journey — WAYGGO Charters"
 seoDescription: "Book a Historic Third Ward tour bus rental for your group — one of Milwaukee's most distinctive neighborhoods, vehicle and driver included."
 
 heroImageAlt: "Historic Third Ward tour bus rental"

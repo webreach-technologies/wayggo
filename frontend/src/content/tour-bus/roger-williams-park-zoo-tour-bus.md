@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Roger Williams Park Zoo Tour Bus Rental — Wildlife Kingdom Adventure — WAYGGO"
+seoTitle: "Roger Williams Park Zoo Tour Bus Rental — Wildlife Kingdom Adventure — WAYGGO Charters"
 seoDescription: "Book a Roger Williams Park Zoo tour bus rental for your group — one of Rhode Island's popular wildlife and family-friendly destinations, vehicle and driver included."
 
 heroImageAlt: "Roger Williams Park Zoo tour bus rental"

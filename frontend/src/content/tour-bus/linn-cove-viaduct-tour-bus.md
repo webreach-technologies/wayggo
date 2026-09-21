@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Linn Cove Viaduct Tour Bus Rental — Engineering Above the Clouds — WAYGGO"
+seoTitle: "Linn Cove Viaduct Tour Bus Rental — Engineering Above the Clouds — WAYGGO Charters"
 seoDescription: "Book a Linn Cove Viaduct tour bus rental for your group — distinctive roadway design and mountain landscapes on the Blue Ridge Parkway, vehicle and driver included."
 
 heroImageAlt: "Linn Cove Viaduct tour bus rental"

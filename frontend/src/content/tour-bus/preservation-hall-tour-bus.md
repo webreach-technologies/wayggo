@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Preservation Hall Tour Bus Rental — Jazz Legacy Experience — WAYGGO"
+seoTitle: "Preservation Hall Tour Bus Rental — Jazz Legacy Experience — WAYGGO Charters"
 seoDescription: "Book a Preservation Hall tour bus rental for your group — traditional New Orleans jazz in an intimate French Quarter venue, vehicle and driver included."
 
 heroImageAlt: "Preservation Hall tour bus rental"

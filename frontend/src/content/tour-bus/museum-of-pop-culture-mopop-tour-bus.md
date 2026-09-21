@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Museum of Pop Culture (MoPOP) Tour Bus Rental — Pop Culture Legends Journey — WAYGGO"
+seoTitle: "Museum of Pop Culture (MoPOP) Tour Bus Rental — Pop Culture Legends Journey — WAYGGO Charters"
 seoDescription: "Book a Museum of Pop Culture tour bus rental for your group — one of Seattle's most memorable cultural attractions, vehicle and driver included."
 
 heroImageAlt: "Museum of Pop Culture tour bus rental"

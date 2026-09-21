@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Georgia Aquarium Tour Bus Rental — Ocean Giants Discovery Journey — WAYGGO"
+seoTitle: "Georgia Aquarium Tour Bus Rental — Ocean Giants Discovery Journey — WAYGGO Charters"
 seoDescription: "Book a Georgia Aquarium tour bus rental for your group — whale sharks, immersive habitats, and marine discovery in downtown Atlanta, vehicle and driver included."
 
 heroImageAlt: "Georgia Aquarium tour bus rental"

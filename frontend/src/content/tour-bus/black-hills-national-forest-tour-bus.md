@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Black Hills National Forest Tour Bus Rental — Pine-Covered Peaks Explorer — WAYGGO"
+seoTitle: "Black Hills National Forest Tour Bus Rental — Pine-Covered Peaks Explorer — WAYGGO Charters"
 seoDescription: "Book a Black Hills National Forest tour bus rental for your group — South Dakota's forests and scenic landscapes, vehicle and driver included."
 
 heroImageAlt: "Black Hills National Forest tour bus rental"

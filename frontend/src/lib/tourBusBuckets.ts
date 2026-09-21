@@ -144,7 +144,7 @@ export function bucketSeo(bucket: Bucket, page: number, totalInBucket: number) {
 
   if (!bucket.country) {
     return {
-      title: `Group Tour Bus — WAYGGO North America Ground Transportation${pageSuffix}`,
+      title: `Group Tour Bus — WAYGGO Charters North America Ground Transportation${pageSuffix}`,
       description:
         "Ready-to-book group tour bus itineraries for international travelers across the USA and Canada. Motorcoaches, buses, and vans included.",
       badge: `${totalInBucket} Ready-to-Book Tour Bus${plural(totalInBucket)}`,
@@ -152,13 +152,13 @@ export function bucketSeo(bucket: Bucket, page: number, totalInBucket: number) {
   }
   if (!bucket.state) {
     return {
-      title: `${bucket.country} Group Tour Bus — WAYGGO${pageSuffix}`,
+      title: `${bucket.country} Group Tour Bus — WAYGGO Charters${pageSuffix}`,
       description: `Ready-to-book group tour bus itineraries in ${bucket.country} for international travelers. Motorcoaches, buses, and vans included.`,
       badge: `${totalInBucket} ${bucket.country} Tour Bus${plural(totalInBucket)}`,
     };
   }
   return {
-    title: `${bucket.country} · ${bucket.state} Group Tour Bus — WAYGGO${pageSuffix}`,
+    title: `${bucket.country} · ${bucket.state} Group Tour Bus — WAYGGO Charters${pageSuffix}`,
     description: `Ready-to-book group tour bus itineraries in ${bucket.state}, ${bucket.country} for international travelers. Motorcoaches, buses, and vans included.`,
     badge: `${totalInBucket} ${bucket.country} · ${bucket.state} Tour Bus${plural(totalInBucket)}`,
   };

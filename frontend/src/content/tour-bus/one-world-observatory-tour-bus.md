@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "One World Observatory Tour Bus Rental — Views from the Top of Freedom — WAYGGO"
+seoTitle: "One World Observatory Tour Bus Rental — Views from the Top of Freedom — WAYGGO Charters"
 seoDescription: "Book a One World Observatory tour bus rental for your group — panoramic Lower Manhattan views from One World Trade Center, vehicle and driver included."
 
 heroImageAlt: "One World Observatory tour bus rental"

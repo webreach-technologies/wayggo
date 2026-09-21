@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Scotts Bluff National Monument Tour Bus Rental — Bluffs of the Frontier Journey — WAYGGO"
+seoTitle: "Scotts Bluff National Monument Tour Bus Rental — Bluffs of the Frontier Journey — WAYGGO Charters"
 seoDescription: "Book a Scotts Bluff National Monument tour bus rental for your group — dramatic geological formations and Great Plains scenery, vehicle and driver included."
 
 heroImageAlt: "Scotts Bluff National Monument tour bus rental"

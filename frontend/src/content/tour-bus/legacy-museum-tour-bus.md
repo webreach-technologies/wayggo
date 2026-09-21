@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Legacy Museum Tour Bus Rental — Legacy of Justice Journey — WAYGGO"
+seoTitle: "Legacy Museum Tour Bus Rental — Legacy of Justice Journey — WAYGGO Charters"
 seoDescription: "Book a Legacy Museum tour bus rental for your group — the Legacy Museum and the National Memorial for Peace and Justice in downtown Montgomery, vehicle and driver included."
 
 heroImageAlt: "Legacy Museum tour bus rental"
@@ -98,7 +98,7 @@ testimonials:
     role: "Nonprofit Program Director"
     company: "Justice & Memory Initiative"
     flag: "🇺🇸"
-  - quote: "Our congregation needed a reflective pace, and WAYGGO built the whole day around that without us having to ask twice."
+  - quote: "Our congregation needed a reflective pace, and WAYGGO Charters built the whole day around that without us having to ask twice."
     name: "Rev. Deborah Lewis"
     role: "Associate Pastor"
     company: "Mount Olive Baptist Church"

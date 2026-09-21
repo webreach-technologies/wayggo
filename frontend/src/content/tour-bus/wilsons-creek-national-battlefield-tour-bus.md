@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Wilson’s Creek National Battlefield Tour Bus Rental — Battlefields of the Ozarks Tour — WAYGGO"
+seoTitle: "Wilson’s Creek National Battlefield Tour Bus Rental — Battlefields of the Ozarks Tour — WAYGGO Charters"
 seoDescription: "Book a Wilson’s Creek National Battlefield tour bus rental for your group — Civil War history and historic landscape, vehicle and driver included."
 
 heroImageAlt: "Wilson’s Creek National Battlefield tour bus rental"

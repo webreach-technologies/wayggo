@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Chaco Culture National Historical Park Tour Bus Rental — Ancient Skies Heritage Tour — WAYGGO"
+seoTitle: "Chaco Culture National Historical Park Tour Bus Rental — Ancient Skies Heritage Tour — WAYGGO Charters"
 seoDescription: "Book a Chaco Culture National Historical Park tour bus rental for your group — an extraordinary northwestern New Mexico destination for ancient Puebloan architecture, vehicle and driver included."
 
 heroImageAlt: "Chaco Culture National Historical Park tour bus rental"

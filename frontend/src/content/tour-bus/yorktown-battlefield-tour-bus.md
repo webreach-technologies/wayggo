@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Yorktown Battlefield Tour Bus Rental — Victory of a Nation Discovery — WAYGGO"
+seoTitle: "Yorktown Battlefield Tour Bus Rental — Victory of a Nation Discovery — WAYGGO Charters"
 seoDescription: "Book a Yorktown Battlefield tour bus rental for your group — one of Virginia's most important historic destinations, vehicle and driver included."
 
 heroImageAlt: "Yorktown Battlefield tour bus rental"

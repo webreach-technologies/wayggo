@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Philadelphia Museum of Art Tour Bus Rental — Masterpieces of the City Tour — WAYGGO"
+seoTitle: "Philadelphia Museum of Art Tour Bus Rental — Masterpieces of the City Tour — WAYGGO Charters"
 seoDescription: "Book a Philadelphia Museum of Art tour bus rental for your group — an iconic collection along Benjamin Franklin Parkway, vehicle and driver included."
 
 heroImageAlt: "Philadelphia Museum of Art tour bus rental"

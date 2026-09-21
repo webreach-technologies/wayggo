@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Rock & Roll Hall of Fame Tour Bus Rental — Legends of Rock & Rhythm — WAYGGO"
+seoTitle: "Rock & Roll Hall of Fame Tour Bus Rental — Legends of Rock & Rhythm — WAYGGO Charters"
 seoDescription: "Book a Rock & Roll Hall of Fame tour bus rental for your group — music history and influential artists in Cleveland, vehicle and driver included."
 
 heroImageAlt: "Rock & Roll Hall of Fame tour bus rental"

@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Brooklyn Bridge Tour Bus Rental — Bridge Between Boroughs Adventure — WAYGGO"
+seoTitle: "Brooklyn Bridge Tour Bus Rental — Bridge Between Boroughs Adventure — WAYGGO Charters"
 seoDescription: "Book a Brooklyn Bridge tour bus rental for your group — historic architecture and East River views connecting Manhattan and Brooklyn, vehicle and driver included."
 
 heroImageAlt: "Brooklyn Bridge tour bus rental"

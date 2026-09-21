@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Museum of the Rockies Tour Bus Rental — Dinosaurs & Discovery Experience — WAYGGO"
+seoTitle: "Museum of the Rockies Tour Bus Rental — Dinosaurs & Discovery Experience — WAYGGO Charters"
 seoDescription: "Book a Museum of the Rockies tour bus rental for your group — dinosaur fossils and paleontology in Bozeman, vehicle and driver included."
 
 heroImageAlt: "Museum of the Rockies tour bus rental"

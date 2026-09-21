@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Jackson Town Square Tour Bus Rental — Western Town Square Experience — WAYGGO"
+seoTitle: "Jackson Town Square Tour Bus Rental — Western Town Square Experience — WAYGGO Charters"
 seoDescription: "Book a Jackson Town Square tour bus rental for your group — one of Wyoming's most recognizable destinations, vehicle and driver included."
 
 heroImageAlt: "Jackson Town Square tour bus rental"

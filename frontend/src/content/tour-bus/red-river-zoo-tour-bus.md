@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Red River Zoo Tour Bus Rental — Wildlife on the Red River Journey — WAYGGO"
+seoTitle: "Red River Zoo Tour Bus Rental — Wildlife on the Red River Journey — WAYGGO Charters"
 seoDescription: "Book a Red River Zoo tour bus rental for your group — wildlife, education, and outdoor exploration in Fargo, vehicle and driver included."
 
 heroImageAlt: "Red River Zoo tour bus rental"

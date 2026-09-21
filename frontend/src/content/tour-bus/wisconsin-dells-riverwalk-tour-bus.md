@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Wisconsin Dells Riverwalk Tour Bus Rental — Riverwalk of the Dells Discovery — WAYGGO"
+seoTitle: "Wisconsin Dells Riverwalk Tour Bus Rental — Riverwalk of the Dells Discovery — WAYGGO Charters"
 seoDescription: "Book a Wisconsin Dells Riverwalk tour bus rental for your group — one of Wisconsin's most popular travel areas, vehicle and driver included."
 
 heroImageAlt: "Wisconsin Dells Riverwalk tour bus rental"

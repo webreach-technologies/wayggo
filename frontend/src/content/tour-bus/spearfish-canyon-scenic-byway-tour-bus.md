@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Spearfish Canyon Scenic Byway Tour Bus Rental — Canyon of Hidden Waterfalls — WAYGGO"
+seoTitle: "Spearfish Canyon Scenic Byway Tour Bus Rental — Canyon of Hidden Waterfalls — WAYGGO Charters"
 seoDescription: "Book a Spearfish Canyon Scenic Byway tour bus rental for your group — dramatic canyon scenery in South Dakota's Black Hills, vehicle and driver included."
 
 heroImageAlt: "Spearfish Canyon Scenic Byway tour bus rental"

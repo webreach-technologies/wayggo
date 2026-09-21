@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Mormon Row Historic District Tour Bus Rental — Frontier Homesteads Discovery — WAYGGO"
+seoTitle: "Mormon Row Historic District Tour Bus Rental — Frontier Homesteads Discovery — WAYGGO Charters"
 seoDescription: "Book a Mormon Row Historic District tour bus rental for your group — one of Wyoming's most recognizable historic and scenic destinations, vehicle and driver included."
 
 heroImageAlt: "Mormon Row Historic District tour bus rental"

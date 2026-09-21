@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Magnificent Mile Tour Bus Rental — Luxury Shopping Boulevard Stroll Experience — WAYGGO"
+seoTitle: "Magnificent Mile Tour Bus Rental — Luxury Shopping Boulevard Stroll Experience — WAYGGO Charters"
 seoDescription: "Book a Magnificent Mile tour bus rental for your group — North Michigan Avenue shopping, dining, and architecture, vehicle and driver included."
 
 heroImageAlt: "Magnificent Mile tour bus rental"

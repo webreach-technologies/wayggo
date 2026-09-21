@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Washington Park Tour Bus Rental — Portland Parks & Nature Escape — WAYGGO"
+seoTitle: "Washington Park Tour Bus Rental — Portland Parks & Nature Escape — WAYGGO Charters"
 seoDescription: "Book a Washington Park tour bus rental for your group — the Oregon Zoo, Japanese Garden, Rose Garden, and more in one Portland park, vehicle and driver included."
 
 heroImageAlt: "Washington Park tour bus rental"

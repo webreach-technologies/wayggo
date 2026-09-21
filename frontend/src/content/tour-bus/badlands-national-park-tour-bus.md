@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Badlands National Park Tour Bus Rental — Badlands Beyond the Horizon — WAYGGO"
+seoTitle: "Badlands National Park Tour Bus Rental — Badlands Beyond the Horizon — WAYGGO Charters"
 seoDescription: "Book a Badlands National Park tour bus rental for your group — one of South Dakota's most dramatic natural landscapes, vehicle and driver included."
 
 heroImageAlt: "Badlands National Park tour bus rental"

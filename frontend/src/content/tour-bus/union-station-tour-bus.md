@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Union Station Tour Bus Rental — Grand Rail Legacy Tour — WAYGGO"
+seoTitle: "Union Station Tour Bus Rental — Grand Rail Legacy Tour — WAYGGO Charters"
 seoDescription: "Book a Union Station tour bus rental for your group — railway heritage and historic architecture in St. Louis, vehicle and driver included."
 
 heroImageAlt: "Union Station tour bus rental"

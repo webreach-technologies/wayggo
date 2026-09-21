@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Asbury Park Boardwalk Tour Bus Rental — Classic Shoreline Boardwalk Escape — WAYGGO"
+seoTitle: "Asbury Park Boardwalk Tour Bus Rental — Classic Shoreline Boardwalk Escape — WAYGGO Charters"
 seoDescription: "Book an Asbury Park Boardwalk tour bus rental for your group — ocean views, musical heritage, and classic Jersey Shore character, vehicle and driver included."
 
 heroImageAlt: "Asbury Park Boardwalk tour bus rental"

@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Tallulah Gorge State Park Tour Bus Rental — Canyon Gorge Adventure & Suspension Bridge Journey — WAYGGO"
+seoTitle: "Tallulah Gorge State Park Tour Bus Rental — Canyon Gorge Adventure & Suspension Bridge Journey — WAYGGO Charters"
 seoDescription: "Book a Tallulah Gorge State Park tour bus rental for your group — dramatic cliffs, waterfalls, and hiking in North Georgia, vehicle and driver included."
 
 heroImageAlt: "Tallulah Gorge State Park tour bus rental"

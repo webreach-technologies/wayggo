@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Shenandoah National Park Tour Bus Rental — Valley & Mountain Wilderness Escape — WAYGGO"
+seoTitle: "Shenandoah National Park Tour Bus Rental — Valley & Mountain Wilderness Escape — WAYGGO Charters"
 seoDescription: "Book a Shenandoah National Park tour bus rental for your group — one of Virginia's most memorable natural destinations, vehicle and driver included."
 
 heroImageAlt: "Shenandoah National Park tour bus rental"

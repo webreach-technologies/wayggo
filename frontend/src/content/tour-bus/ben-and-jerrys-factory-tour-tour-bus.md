@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Ben & Jerry’s Factory Tour Tour Bus Rental — Sweet Scoops Factory Experience — WAYGGO"
+seoTitle: "Ben & Jerry’s Factory Tour Tour Bus Rental — Sweet Scoops Factory Experience — WAYGGO Charters"
 seoDescription: "Book a Ben & Jerry's Factory Tour tour bus rental for your group — one of Vermont's popular attractions, vehicle and driver included."
 
 heroImageAlt: "Ben & Jerry’s Factory Tour tour bus rental"

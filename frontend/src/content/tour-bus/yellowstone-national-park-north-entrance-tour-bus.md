@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Yellowstone National Park North Entrance Tour Bus Rental — Gateway to Yellowstone Wilderness — WAYGGO"
+seoTitle: "Yellowstone National Park North Entrance Tour Bus Rental — Gateway to Yellowstone Wilderness — WAYGGO Charters"
 seoDescription: "Book a Yellowstone North Entrance tour bus rental for your group — Montana mountain scenery and wildlife, vehicle and driver included."
 
 heroImageAlt: "Yellowstone National Park North Entrance tour bus rental"

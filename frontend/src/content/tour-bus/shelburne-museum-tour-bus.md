@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Shelburne Museum Tour Bus Rental — Art, History & Americana Experience — WAYGGO"
+seoTitle: "Shelburne Museum Tour Bus Rental — Art, History & Americana Experience — WAYGGO Charters"
 seoDescription: "Book a Shelburne Museum tour bus rental for your group — one of Vermont's memorable cultural destinations, vehicle and driver included."
 
 heroImageAlt: "Shelburne Museum tour bus rental"

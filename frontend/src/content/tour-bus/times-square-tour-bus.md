@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Times Square Tour Bus Rental — Crossroads of the World Experience — WAYGGO"
+seoTitle: "Times Square Tour Bus Rental — Crossroads of the World Experience — WAYGGO Charters"
 seoDescription: "Book a Times Square tour bus rental for your group — dazzling displays, Broadway theaters, and iconic Midtown energy, vehicle and driver included."
 
 heroImageAlt: "Times Square tour bus rental"

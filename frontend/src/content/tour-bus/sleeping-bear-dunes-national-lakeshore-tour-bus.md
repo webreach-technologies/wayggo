@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Sleeping Bear Dunes National Lakeshore Tour Bus Rental — Dunes Above the Lake Adventure — WAYGGO"
+seoTitle: "Sleeping Bear Dunes National Lakeshore Tour Bus Rental — Dunes Above the Lake Adventure — WAYGGO Charters"
 seoDescription: "Book a Sleeping Bear Dunes National Lakeshore tour bus rental for your group — dramatic dunes and Lake Michigan shoreline, vehicle and driver included."
 
 heroImageAlt: "Sleeping Bear Dunes National Lakeshore tour bus rental"

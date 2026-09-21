@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Millennium Park Tour Bus Rental — Urban Art & Skyline Reflection Escape — WAYGGO"
+seoTitle: "Millennium Park Tour Bus Rental — Urban Art & Skyline Reflection Escape — WAYGGO Charters"
 seoDescription: "Book a Millennium Park tour bus rental for your group — public art, gardens, and skyline views in downtown Chicago, vehicle and driver included."
 
 heroImageAlt: "Millennium Park tour bus rental"

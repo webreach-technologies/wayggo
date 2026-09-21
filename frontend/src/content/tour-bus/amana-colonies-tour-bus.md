@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Amana Colonies Tour Bus Rental — German Heritage Village Culture Walk Experience — WAYGGO"
+seoTitle: "Amana Colonies Tour Bus Rental — German Heritage Village Culture Walk Experience — WAYGGO Charters"
 seoDescription: "Book an Amana Colonies tour bus rental for your group — historic German heritage villages in eastern Iowa, vehicle and driver included."
 
 heroImageAlt: "Amana Colonies tour bus rental"

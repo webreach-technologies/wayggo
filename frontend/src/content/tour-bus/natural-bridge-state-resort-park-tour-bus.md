@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Natural Bridge State Resort Park Tour Bus Rental — Sandstone Arch Forest Hike Experience — WAYGGO"
+seoTitle: "Natural Bridge State Resort Park Tour Bus Rental — Sandstone Arch Forest Hike Experience — WAYGGO Charters"
 seoDescription: "Book a Natural Bridge State Resort Park tour bus rental for your group — a massive sandstone arch and forested trails in eastern Kentucky, vehicle and driver included."
 
 heroImageAlt: "Natural Bridge State Resort Park tour bus rental"

@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Marsh-Billings-Rockefeller National Historical Park Tour Bus Rental — Conservation & Heritage Journey — WAYGGO"
+seoTitle: "Marsh-Billings-Rockefeller National Historical Park Tour Bus Rental — Conservation & Heritage Journey — WAYGGO Charters"
 seoDescription: "Book a Marsh-Billings-Rockefeller National Historical Park tour bus rental for your group — one of Vermont's important historic and cultural destinations, vehicle and driver included."
 
 heroImageAlt: "Marsh-Billings-Rockefeller National Historical Park tour bus rental"

@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Bellagio Fountains Tour Bus Rental — Dancing Waters Elegance — WAYGGO"
+seoTitle: "Bellagio Fountains Tour Bus Rental — Dancing Waters Elegance — WAYGGO Charters"
 seoDescription: "Book a Bellagio Fountains tour bus rental for your group — spectacular water displays on the Las Vegas Strip, vehicle and driver included."
 
 heroImageAlt: "Bellagio Fountains tour bus rental"

@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Titanic Museum Attraction Tour Bus Rental — Legendary Voyage Experience — WAYGGO"
+seoTitle: "Titanic Museum Attraction Tour Bus Rental — Legendary Voyage Experience — WAYGGO Charters"
 seoDescription: "Book a Titanic Museum Attraction tour bus rental for your group — one of Pigeon Forge's memorable attractions, vehicle and driver included."
 
 heroImageAlt: "Titanic Museum Attraction tour bus rental"

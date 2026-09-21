@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Buffalo Bill Ranch State Historical Park Tour Bus Rental — Frontier Legend Heritage Tour — WAYGGO"
+seoTitle: "Buffalo Bill Ranch State Historical Park Tour Bus Rental — Frontier Legend Heritage Tour — WAYGGO Charters"
 seoDescription: "Book a Buffalo Bill Ranch State Historical Park tour bus rental for your group — frontier heritage and ranch history in North Platte, vehicle and driver included."
 
 heroImageAlt: "Buffalo Bill Ranch State Historical Park tour bus rental"

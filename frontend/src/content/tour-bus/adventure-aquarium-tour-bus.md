@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Adventure Aquarium Tour Bus Rental — Underwater Wonders Journey — WAYGGO"
+seoTitle: "Adventure Aquarium Tour Bus Rental — Underwater Wonders Journey — WAYGGO Charters"
 seoDescription: "Book an Adventure Aquarium tour bus rental for your group — aquatic exhibits and marine-life experiences in Camden, vehicle and driver included."
 
 heroImageAlt: "Adventure Aquarium tour bus rental"

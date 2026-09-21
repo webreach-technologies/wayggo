@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Minnesota State Capitol Tour Bus Rental — Capitol Legacy Experience — WAYGGO"
+seoTitle: "Minnesota State Capitol Tour Bus Rental — Capitol Legacy Experience — WAYGGO Charters"
 seoDescription: "Book a Minnesota State Capitol tour bus rental for your group — government history and architecture in Saint Paul, vehicle and driver included."
 
 heroImageAlt: "Minnesota State Capitol tour bus rental"

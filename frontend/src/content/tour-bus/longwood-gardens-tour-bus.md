@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Longwood Gardens Tour Bus Rental — Gardens in Bloom Escape — WAYGGO"
+seoTitle: "Longwood Gardens Tour Bus Rental — Gardens in Bloom Escape — WAYGGO Charters"
 seoDescription: "Book a Longwood Gardens tour bus rental for your group — extensive gardens and seasonal displays in Kennett Square, vehicle and driver included."
 
 heroImageAlt: "Longwood Gardens tour bus rental"

@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Reptile Gardens Tour Bus Rental — Reptiles & Wonders Experience — WAYGGO"
+seoTitle: "Reptile Gardens Tour Bus Rental — Reptiles & Wonders Experience — WAYGGO Charters"
 seoDescription: "Book a Reptile Gardens tour bus rental for your group — a popular Black Hills wildlife destination, vehicle and driver included."
 
 heroImageAlt: "Reptile Gardens tour bus rental"

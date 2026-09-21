@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Old Idaho Penitentiary Tour Bus Rental — Historic Iron Walls Heritage Walk Experience — WAYGGO"
+seoTitle: "Old Idaho Penitentiary Tour Bus Rental — Historic Iron Walls Heritage Walk Experience — WAYGGO Charters"
 seoDescription: "Book an Old Idaho Penitentiary tour bus rental for your group — preserved cell blocks and Idaho's correctional history in Boise, vehicle and driver included."
 
 heroImageAlt: "Old Idaho Penitentiary tour bus rental"

@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Museum of Science and Industry Tour Bus Rental — Innovation & Discovery Hands-On Experience — WAYGGO"
+seoTitle: "Museum of Science and Industry Tour Bus Rental — Innovation & Discovery Hands-On Experience — WAYGGO Charters"
 seoDescription: "Book a Museum of Science and Industry tour bus rental for your group — interactive STEM exhibits in Chicago's Hyde Park, vehicle and driver included."
 
 heroImageAlt: "Museum of Science and Industry tour bus rental"

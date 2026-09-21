@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Frederik Meijer Gardens & Sculpture Park Tour Bus Rental — Art & Nature Wonderland — WAYGGO"
+seoTitle: "Frederik Meijer Gardens & Sculpture Park Tour Bus Rental — Art & Nature Wonderland — WAYGGO Charters"
 seoDescription: "Book a Frederik Meijer Gardens tour bus rental for your group — gardens and sculpture in Grand Rapids, vehicle and driver included."
 
 heroImageAlt: "Frederik Meijer Gardens & Sculpture Park tour bus rental"

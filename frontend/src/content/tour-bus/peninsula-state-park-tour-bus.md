@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Peninsula State Park Tour Bus Rental — Green Bay Shoreline Escape — WAYGGO"
+seoTitle: "Peninsula State Park Tour Bus Rental — Green Bay Shoreline Escape — WAYGGO Charters"
 seoDescription: "Book a Peninsula State Park tour bus rental for your group — one of Wisconsin's most memorable natural destinations, vehicle and driver included."
 
 heroImageAlt: "Peninsula State Park tour bus rental"

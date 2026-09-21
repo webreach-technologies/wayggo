@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Deadwood Historic District Tour Bus Rental — Gold Rush Legends Journey — WAYGGO"
+seoTitle: "Deadwood Historic District Tour Bus Rental — Gold Rush Legends Journey — WAYGGO Charters"
 seoDescription: "Book a Deadwood Historic District tour bus rental for your group — South Dakota's rich Gold Rush history, vehicle and driver included."
 
 heroImageAlt: "Deadwood Historic District tour bus rental"

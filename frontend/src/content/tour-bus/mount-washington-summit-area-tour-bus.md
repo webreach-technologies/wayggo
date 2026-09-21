@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Mount Washington Summit Area Tour Bus Rental — Peak of New England Experience — WAYGGO"
+seoTitle: "Mount Washington Summit Area Tour Bus Rental — Peak of New England Experience — WAYGGO Charters"
 seoDescription: "Book a Mount Washington Summit Area tour bus rental for your group — dramatic alpine landscape and mountain views, vehicle and driver included."
 
 heroImageAlt: "Mount Washington Summit Area tour bus rental"

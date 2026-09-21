@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Monument Circle Tour Bus Rental — Downtown Civic Glow Landmark Experience — WAYGGO"
+seoTitle: "Monument Circle Tour Bus Rental — Downtown Civic Glow Landmark Experience — WAYGGO Charters"
 seoDescription: "Book a Monument Circle tour bus rental for your group — the iconic Soldiers and Sailors Monument in downtown Indianapolis, vehicle and driver included."
 
 heroImageAlt: "Monument Circle tour bus rental"

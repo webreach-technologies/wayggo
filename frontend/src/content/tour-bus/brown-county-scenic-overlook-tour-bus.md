@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Brown County Scenic Overlook Tour Bus Rental — Golden Valley Panorama Viewpoint Escape Experience — WAYGGO"
+seoTitle: "Brown County Scenic Overlook Tour Bus Rental — Golden Valley Panorama Viewpoint Escape Experience — WAYGGO Charters"
 seoDescription: "Book a Brown County Scenic Overlook tour bus rental for your group — panoramic hillside views and seasonal foliage in southern Indiana, vehicle and driver included."
 
 heroImageAlt: "Brown County Scenic Overlook tour bus rental"

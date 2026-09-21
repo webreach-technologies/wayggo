@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Chihuly Garden and Glass Tour Bus Rental — Glass Art in Bloom Experience — WAYGGO"
+seoTitle: "Chihuly Garden and Glass Tour Bus Rental — Glass Art in Bloom Experience — WAYGGO Charters"
 seoDescription: "Book a Chihuly Garden and Glass tour bus rental for your group — one of Seattle's most memorable cultural attractions, vehicle and driver included."
 
 heroImageAlt: "Chihuly Garden and Glass tour bus rental"

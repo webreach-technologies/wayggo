@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "International Peace Garden Tour Bus Rental — Garden of International Friendship — WAYGGO"
+seoTitle: "International Peace Garden Tour Bus Rental — Garden of International Friendship — WAYGGO Charters"
 seoDescription: "Book an International Peace Garden tour bus rental for your group — nature, horticulture, and international significance, vehicle and driver included."
 
 heroImageAlt: "International Peace Garden tour bus rental"

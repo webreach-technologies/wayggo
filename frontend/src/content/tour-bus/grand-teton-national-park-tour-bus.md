@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Grand Teton National Park Tour Bus Rental — Peaks of the Tetons Explorer — WAYGGO"
+seoTitle: "Grand Teton National Park Tour Bus Rental — Peaks of the Tetons Explorer — WAYGGO Charters"
 seoDescription: "Book a Grand Teton National Park tour bus rental for your group — one of Wyoming's most spectacular natural destinations, vehicle and driver included."
 
 heroImageAlt: "Grand Teton National Park tour bus rental"

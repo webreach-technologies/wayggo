@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "The Breakers Tour Bus Rental — Gilded Age Grandeur Experience — WAYGGO"
+seoTitle: "The Breakers Tour Bus Rental — Gilded Age Grandeur Experience — WAYGGO Charters"
 seoDescription: "Book a The Breakers tour bus rental for your group — one of Newport's most famous historic landmarks, vehicle and driver included."
 
 heroImageAlt: "The Breakers tour bus rental"

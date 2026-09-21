@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Medora Musical Area Tour Bus Rental — Western Legends & Music Experience — WAYGGO"
+seoTitle: "Medora Musical Area Tour Bus Rental — Western Legends & Music Experience — WAYGGO Charters"
 seoDescription: "Book a Medora Musical Area tour bus rental for your group — live entertainment and western heritage in the North Dakota badlands, vehicle and driver included."
 
 heroImageAlt: "Medora Musical Area tour bus rental"

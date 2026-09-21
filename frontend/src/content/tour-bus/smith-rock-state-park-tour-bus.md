@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Smith Rock State Park Tour Bus Rental — Red Rock Cliffs Adventure — WAYGGO"
+seoTitle: "Smith Rock State Park Tour Bus Rental — Red Rock Cliffs Adventure — WAYGGO Charters"
 seoDescription: "Book a Smith Rock State Park tour bus rental for your group — dramatic cliffs and Crooked River scenery in Central Oregon, vehicle and driver included."
 
 heroImageAlt: "Smith Rock State Park tour bus rental"

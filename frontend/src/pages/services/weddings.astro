@@ -64,14 +64,14 @@ const serviceSchema = {
   name: "Wedding & Special Event Group Transportation",
   description: "Luxury coach and shuttle services for destination weddings, wedding parties, and special events across North America.",
   url: pageURL,
-  provider: { "@type": "Organization", name: "WAYGGO", url: new URL("/", Astro.site ?? "https://wayggo.com").href },
+  provider: { "@type": "Organization", name: "WAYGGO Charters", url: new URL("/", Astro.site ?? "https://wayggo.com").href },
   areaServed: ["United States", "Canada"],
   serviceType: "Wedding & Event Group Ground Transportation",
 };
 ---
 
 <BaseLayout
-  title="Wedding & Special Event Transportation — WAYGGO"
+  title="Wedding & Special Event Transportation — WAYGGO Charters"
   description="Luxury coach and shuttle services for destination weddings, wedding parties, and special events across North America. Elegant, punctual, professionally managed."
   breadcrumbs={[{ name: "Services", path: "/services" }, { name: "Wedding & Special Events", path: "/services/weddings" }]}
 >
@@ -80,7 +80,7 @@ const serviceSchema = {
   <section class="relative py-24 overflow-hidden" style="background-color: #1A2744;">
     <Image
       src={heroImg}
-      alt="Wedding and special event group transportation — WAYGGO"
+      alt="Wedding and special event group transportation — WAYGGO Charters"
       width={1600}
       height={600}
       quality=25
@@ -96,7 +96,7 @@ const serviceSchema = {
           <span style="color: #FDEA01;">Special Events</span>
         </h1>
         <p class="text-white/65 text-lg leading-relaxed max-w-2xl mb-8">
-          Your clients are traveling from across the world for one perfect day. WAYGGO ensures every guest moves elegantly from ceremony to reception, hotel to venue, arrival to farewell — without a single logistical worry.
+          Your clients are traveling from across the world for one perfect day. WAYGGO Charters ensures every guest moves elegantly from ceremony to reception, hotel to venue, arrival to farewell — without a single logistical worry.
         </p>
         <a href={withBase("/contact")} class="btn-primary">Request Wedding Transport</a>
       </div>

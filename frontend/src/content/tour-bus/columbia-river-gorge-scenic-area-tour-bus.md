@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Columbia River Gorge Scenic Area Tour Bus Rental — Gorge of Endless Views Journey — WAYGGO"
+seoTitle: "Columbia River Gorge Scenic Area Tour Bus Rental — Gorge of Endless Views Journey — WAYGGO Charters"
 seoDescription: "Book a Columbia River Gorge Scenic Area tour bus rental for your group — waterfalls, cliffs, and river views, vehicle and driver included."
 
 heroImageAlt: "Columbia River Gorge Scenic Area tour bus rental"

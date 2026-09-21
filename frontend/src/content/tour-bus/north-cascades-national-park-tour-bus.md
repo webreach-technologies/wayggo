@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "North Cascades National Park Tour Bus Rental — Cascades Wilderness Discovery — WAYGGO"
+seoTitle: "North Cascades National Park Tour Bus Rental — Cascades Wilderness Discovery — WAYGGO Charters"
 seoDescription: "Book a North Cascades National Park tour bus rental for your group — one of Washington's most memorable natural destinations, vehicle and driver included."
 
 heroImageAlt: "North Cascades National Park tour bus rental"

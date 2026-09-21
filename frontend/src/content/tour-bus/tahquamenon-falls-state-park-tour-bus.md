@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Tahquamenon Falls State Park Tour Bus Rental — Cascading Wilderness Escape — WAYGGO"
+seoTitle: "Tahquamenon Falls State Park Tour Bus Rental — Cascading Wilderness Escape — WAYGGO Charters"
 seoDescription: "Book a Tahquamenon Falls State Park tour bus rental for your group — spectacular waterfalls and Upper Peninsula forests, vehicle and driver included."
 
 heroImageAlt: "Tahquamenon Falls State Park tour bus rental"

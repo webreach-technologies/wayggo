@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Chicago Riverwalk Tour Bus Rental — Urban Riverside Glow Stroll Experience — WAYGGO"
+seoTitle: "Chicago Riverwalk Tour Bus Rental — Urban Riverside Glow Stroll Experience — WAYGGO Charters"
 seoDescription: "Book a Chicago Riverwalk tour bus rental for your group — waterfront paths, architecture, and river scenery in downtown Chicago, vehicle and driver included."
 
 heroImageAlt: "Chicago Riverwalk tour bus rental"

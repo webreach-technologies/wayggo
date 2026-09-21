@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Turner Falls Park Tour Bus Rental — Waterfalls of Oklahoma Escape — WAYGGO"
+seoTitle: "Turner Falls Park Tour Bus Rental — Waterfalls of Oklahoma Escape — WAYGGO Charters"
 seoDescription: "Book a Turner Falls Park tour bus rental for your group — waterfalls and rock formations in the Arbuckle Mountains, vehicle and driver included."
 
 heroImageAlt: "Turner Falls Park tour bus rental"

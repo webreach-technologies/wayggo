@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Mississippi Civil Rights Museum Tour Bus Rental — Voices of Change Journey — WAYGGO"
+seoTitle: "Mississippi Civil Rights Museum Tour Bus Rental — Voices of Change Journey — WAYGGO Charters"
 seoDescription: "Book a Mississippi Civil Rights Museum tour bus rental for your group — Civil Rights Movement history in Jackson, vehicle and driver included."
 
 heroImageAlt: "Mississippi Civil Rights Museum tour bus rental"

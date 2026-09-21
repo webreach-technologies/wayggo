@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Cleveland Museum of Art Tour Bus Rental — Masterpieces of Cleveland Journey — WAYGGO"
+seoTitle: "Cleveland Museum of Art Tour Bus Rental — Masterpieces of Cleveland Journey — WAYGGO Charters"
 seoDescription: "Book a Cleveland Museum of Art tour bus rental for your group — art, history, and world cultures, vehicle and driver included."
 
 heroImageAlt: "Cleveland Museum of Art tour bus rental"

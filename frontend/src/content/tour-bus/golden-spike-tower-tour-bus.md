@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Golden Spike Tower Tour Bus Rental — Railway Giants Overlook — WAYGGO"
+seoTitle: "Golden Spike Tower Tour Bus Rental — Railway Giants Overlook — WAYGGO Charters"
 seoDescription: "Book a Golden Spike Tower tour bus rental for your group — elevated railroad views and active train operations, vehicle and driver included."
 
 heroImageAlt: "Golden Spike Tower tour bus rental"

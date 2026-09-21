@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Ocean City Boardwalk Tour Bus Rental — Boardwalk by the Sea Adventure — WAYGGO"
+seoTitle: "Ocean City Boardwalk Tour Bus Rental — Boardwalk by the Sea Adventure — WAYGGO Charters"
 seoDescription: "Book an Ocean City Boardwalk tour bus rental for your group — Atlantic views and classic seaside entertainment, vehicle and driver included."
 
 heroImageAlt: "Ocean City Boardwalk tour bus rental"

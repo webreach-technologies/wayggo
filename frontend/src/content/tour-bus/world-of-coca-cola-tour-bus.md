@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "World of Coca-Cola Tour Bus Rental — Eternal Taste Journey — WAYGGO"
+seoTitle: "World of Coca-Cola Tour Bus Rental — Eternal Taste Journey — WAYGGO Charters"
 seoDescription: "Book a World of Coca-Cola tour bus rental for your group — historic memorabilia, interactive exhibits, and global flavors in downtown Atlanta, vehicle and driver included."
 
 heroImageAlt: "World of Coca-Cola tour bus rental"

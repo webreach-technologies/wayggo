@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Dignity of Earth and Sky Statue Tour Bus Rental — Spirit of the Plains Experience — WAYGGO"
+seoTitle: "Dignity of Earth and Sky Statue Tour Bus Rental — Spirit of the Plains Experience — WAYGGO Charters"
 seoDescription: "Book a Dignity of Earth and Sky Statue tour bus rental for your group — one of South Dakota's most distinctive modern landmarks, vehicle and driver included."
 
 heroImageAlt: "Dignity of Earth and Sky Statue tour bus rental"

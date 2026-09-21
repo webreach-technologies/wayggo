@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Stowe Village Historic District Tour Bus Rental — Historic Village Charm Explorer — WAYGGO"
+seoTitle: "Stowe Village Historic District Tour Bus Rental — Historic Village Charm Explorer — WAYGGO Charters"
 seoDescription: "Book a Stowe Village Historic District tour bus rental for your group — one of Vermont's memorable historic destinations, vehicle and driver included."
 
 heroImageAlt: "Stowe Village Historic District tour bus rental"

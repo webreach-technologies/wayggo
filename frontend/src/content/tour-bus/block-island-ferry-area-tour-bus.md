@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Block Island Ferry Area Tour Bus Rental — Island Bound Ferry Adventure — WAYGGO"
+seoTitle: "Block Island Ferry Area Tour Bus Rental — Island Bound Ferry Adventure — WAYGGO Charters"
 seoDescription: "Book a Block Island Ferry Area tour bus rental for your group — a convenient way to begin a Rhode Island coastal adventure, vehicle and driver included."
 
 heroImageAlt: "Block Island Ferry Area tour bus rental"

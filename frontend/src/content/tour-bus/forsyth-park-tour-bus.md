@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Forsyth Park Tour Bus Rental — Historic Garden Fountain Experience Journey — WAYGGO"
+seoTitle: "Forsyth Park Tour Bus Rental — Historic Garden Fountain Experience Journey — WAYGGO Charters"
 seoDescription: "Book a Forsyth Park tour bus rental for your group — the iconic fountain, oak-lined paths, and gardens in the heart of Savannah, vehicle and driver included."
 
 heroImageAlt: "Forsyth Park tour bus rental"

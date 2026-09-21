@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Sawtooth National Recreation Area Tour Bus Rental — Alpine Peaks Mirror Lake Escape Experience — WAYGGO"
+seoTitle: "Sawtooth National Recreation Area Tour Bus Rental — Alpine Peaks Mirror Lake Escape Experience — WAYGGO Charters"
 seoDescription: "Book a Sawtooth National Recreation Area tour bus rental for your group — rugged peaks, alpine lakes, and central Idaho wilderness, vehicle and driver included."
 
 heroImageAlt: "Sawtooth National Recreation Area tour bus rental"

@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Palace of Kings & Queens Cultural Tour Bus Rental — Hawaiian Royal Legacy Journey — WAYGGO"
+seoTitle: "Palace of Kings & Queens Cultural Tour Bus Rental — Hawaiian Royal Legacy Journey — WAYGGO Charters"
 seoDescription: "Book an Iolani Palace tour bus rental for your group — Hawaii's royal heritage, historic architecture, and cultural traditions, vehicle and driver included."
 
 heroImageAlt: "Iolani Palace tour bus rental"

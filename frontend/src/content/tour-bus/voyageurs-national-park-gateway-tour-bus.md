@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Voyageurs National Park Gateway Tour Bus Rental — Voyage Into the Wilderness — WAYGGO"
+seoTitle: "Voyageurs National Park Gateway Tour Bus Rental — Voyage Into the Wilderness — WAYGGO Charters"
 seoDescription: "Book a Voyageurs National Park Gateway tour bus rental for your group — northern Minnesota lake country and wilderness scenery, vehicle and driver included."
 
 heroImageAlt: "Voyageurs National Park Gateway tour bus rental"

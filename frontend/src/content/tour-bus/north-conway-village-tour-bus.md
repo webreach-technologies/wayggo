@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "North Conway Village Tour Bus Rental — Mountain Village Charm Escape — WAYGGO"
+seoTitle: "North Conway Village Tour Bus Rental — Mountain Village Charm Escape — WAYGGO Charters"
 seoDescription: "Book a North Conway Village tour bus rental for your group — White Mountains scenery and local shops, vehicle and driver included."
 
 heroImageAlt: "North Conway Village tour bus rental"

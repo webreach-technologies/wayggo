@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Chincoteague National Wildlife Refuge Tour Bus Rental — Wild Ponies & Coastal Marshes — WAYGGO"
+seoTitle: "Chincoteague National Wildlife Refuge Tour Bus Rental — Wild Ponies & Coastal Marshes — WAYGGO Charters"
 seoDescription: "Book a Chincoteague National Wildlife Refuge tour bus rental for your group — one of Virginia's memorable coastal destinations, vehicle and driver included."
 
 heroImageAlt: "Chincoteague National Wildlife Refuge tour bus rental"

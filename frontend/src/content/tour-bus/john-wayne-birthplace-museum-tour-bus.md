@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "John Wayne Birthplace Museum Tour Bus Rental — Hollywood Legend Western Heritage Journey Experience — WAYGGO"
+seoTitle: "John Wayne Birthplace Museum Tour Bus Rental — Hollywood Legend Western Heritage Journey Experience — WAYGGO Charters"
 seoDescription: "Book a John Wayne Birthplace Museum tour bus rental for your group — Hollywood memorabilia and Iowa roots in Winterset, vehicle and driver included."
 
 heroImageAlt: "John Wayne Birthplace Museum tour bus rental"

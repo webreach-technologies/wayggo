@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Bellingham Waterfront Tour Bus Rental — Bayfront Charm & Coastal Views — WAYGGO"
+seoTitle: "Bellingham Waterfront Tour Bus Rental — Bayfront Charm & Coastal Views — WAYGGO Charters"
 seoDescription: "Book a Bellingham Waterfront tour bus rental for your group — one of Northwest Washington's memorable waterfront destinations, vehicle and driver included."
 
 heroImageAlt: "Bellingham Waterfront tour bus rental"

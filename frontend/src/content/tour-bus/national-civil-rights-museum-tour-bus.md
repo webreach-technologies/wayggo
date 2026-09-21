@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "National Civil Rights Museum Tour Bus Rental — Journey Through Freedom's Story — WAYGGO"
+seoTitle: "National Civil Rights Museum Tour Bus Rental — Journey Through Freedom's Story — WAYGGO Charters"
 seoDescription: "Book a National Civil Rights Museum tour bus rental for your group — an important cultural and historical destination in Memphis, vehicle and driver included."
 
 heroImageAlt: "National Civil Rights Museum tour bus rental"

@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Santa Fe Plaza Tour Bus Rental — Heart of the Southwest Journey — WAYGGO"
+seoTitle: "Santa Fe Plaza Tour Bus Rental — Heart of the Southwest Journey — WAYGGO Charters"
 seoDescription: "Book a Santa Fe Plaza tour bus rental for your group — the historic heart of Santa Fe, New Mexico, vehicle and driver included."
 
 heroImageAlt: "Santa Fe Plaza tour bus rental"

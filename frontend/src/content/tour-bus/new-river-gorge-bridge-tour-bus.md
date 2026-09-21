@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "New River Gorge Bridge Tour Bus Rental — Icon of the Appalachian Highlands — WAYGGO"
+seoTitle: "New River Gorge Bridge Tour Bus Rental — Icon of the Appalachian Highlands — WAYGGO Charters"
 seoDescription: "Book a New River Gorge Bridge tour bus rental for your group — one of West Virginia's most memorable landmarks, vehicle and driver included."
 
 heroImageAlt: "New River Gorge Bridge tour bus rental"

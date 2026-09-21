@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Scandinavian Heritage Park Tour Bus Rental — Nordic Traditions Discovery — WAYGGO"
+seoTitle: "Scandinavian Heritage Park Tour Bus Rental — Nordic Traditions Discovery — WAYGGO Charters"
 seoDescription: "Book a Scandinavian Heritage Park tour bus rental for your group — Scandinavian culture, traditions, and architecture in Minot, vehicle and driver included."
 
 heroImageAlt: "Scandinavian Heritage Park tour bus rental"

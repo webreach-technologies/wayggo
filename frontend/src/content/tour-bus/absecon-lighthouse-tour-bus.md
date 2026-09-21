@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Absecon Lighthouse Tour Bus Rental — Beacon of the Jersey Shore — WAYGGO"
+seoTitle: "Absecon Lighthouse Tour Bus Rental — Beacon of the Jersey Shore — WAYGGO Charters"
 seoDescription: "Book an Absecon Lighthouse tour bus rental for your group — historic architecture and maritime heritage in Atlantic City, vehicle and driver included."
 
 heroImageAlt: "Absecon Lighthouse tour bus rental"

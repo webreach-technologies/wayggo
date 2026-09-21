@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Waikiki Beach Tour Bus Rental — Tropical Surf & Diamond Head Experience Journey — WAYGGO"
+seoTitle: "Waikiki Beach Tour Bus Rental — Tropical Surf & Diamond Head Experience Journey — WAYGGO Charters"
 seoDescription: "Book a Waikiki Beach tour bus rental for your group — golden sand, Pacific surf, and Diamond Head views in Honolulu, vehicle and driver included."
 
 heroImageAlt: "Waikiki Beach tour bus rental"

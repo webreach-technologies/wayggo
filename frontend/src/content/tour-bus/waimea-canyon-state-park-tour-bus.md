@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Waimea Canyon Tour Bus Rental — Grand Canyon of the Pacific Scenic Journey — WAYGGO"
+seoTitle: "Waimea Canyon Tour Bus Rental — Grand Canyon of the Pacific Scenic Journey — WAYGGO Charters"
 seoDescription: "Book a Waimea Canyon tour bus rental for your group — colorful cliffs and dramatic mountain scenery known as the Grand Canyon of the Pacific, vehicle and driver included."
 
 heroImageAlt: "Waimea Canyon State Park tour bus rental"

@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Avery Island (TABASCO Factory) Tour Bus Rental — Pepper Heritage Discovery — WAYGGO"
+seoTitle: "Avery Island (TABASCO Factory) Tour Bus Rental — Pepper Heritage Discovery — WAYGGO Charters"
 seoDescription: "Book an Avery Island tour bus rental for your group — the TABASCO factory and scenic natural surroundings in southern Louisiana, vehicle and driver included."
 
 heroImageAlt: "Avery Island TABASCO Factory tour bus rental"

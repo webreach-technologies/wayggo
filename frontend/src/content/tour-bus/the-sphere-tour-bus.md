@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "The Sphere Tour Bus Rental — Future of Entertainment Journey — WAYGGO"
+seoTitle: "The Sphere Tour Bus Rental — Future of Entertainment Journey — WAYGGO Charters"
 seoDescription: "Book a Sphere tour bus rental for your group — distinctive architecture and immersive entertainment in Las Vegas, vehicle and driver included."
 
 heroImageAlt: "The Sphere tour bus rental"

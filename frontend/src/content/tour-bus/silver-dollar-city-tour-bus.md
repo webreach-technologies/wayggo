@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Silver Dollar City Tour Bus Rental — Ozark Thrills Adventure — WAYGGO"
+seoTitle: "Silver Dollar City Tour Bus Rental — Ozark Thrills Adventure — WAYGGO Charters"
 seoDescription: "Book a Silver Dollar City tour bus rental for your group — rides, entertainment, and Ozarks crafts in Branson, vehicle and driver included."
 
 heroImageAlt: "Silver Dollar City tour bus rental"

@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Yellowstone National Park (South Entrance Area) Tour Bus Rental — Gateway to Yellowstone Wonders — WAYGGO"
+seoTitle: "Yellowstone National Park (South Entrance Area) Tour Bus Rental — Gateway to Yellowstone Wonders — WAYGGO Charters"
 seoDescription: "Book a Yellowstone National Park tour bus rental for your group — one of America's most extraordinary natural destinations, vehicle and driver included."
 
 heroImageAlt: "Yellowstone National Park tour bus rental"

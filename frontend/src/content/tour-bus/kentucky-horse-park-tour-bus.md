@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Kentucky Horse Park Tour Bus Rental — Equestrian Heritage Farm & Show Experience — WAYGGO"
+seoTitle: "Kentucky Horse Park Tour Bus Rental — Equestrian Heritage Farm & Show Experience — WAYGGO Charters"
 seoDescription: "Book a Kentucky Horse Park tour bus rental for your group — horse breed exhibits and equestrian heritage in Lexington's Bluegrass region, vehicle and driver included."
 
 heroImageAlt: "Kentucky Horse Park tour bus rental"

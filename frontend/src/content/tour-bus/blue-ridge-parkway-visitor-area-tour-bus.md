@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Blue Ridge Parkway Visitor Area Tour Bus Rental — Scenic Peaks Parkway Journey — WAYGGO"
+seoTitle: "Blue Ridge Parkway Visitor Area Tour Bus Rental — Scenic Peaks Parkway Journey — WAYGGO Charters"
 seoDescription: "Book a Blue Ridge Parkway Visitor Area tour bus rental for your group — mountain landscapes and scenic overlooks, vehicle and driver included."
 
 heroImageAlt: "Blue Ridge Parkway Visitor Area tour bus rental"

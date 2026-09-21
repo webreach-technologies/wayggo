@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Lake Erie Waterfront Tour Bus Rental — Great Lakes Waterfront Escape — WAYGGO"
+seoTitle: "Lake Erie Waterfront Tour Bus Rental — Great Lakes Waterfront Escape — WAYGGO Charters"
 seoDescription: "Book a Lake Erie Waterfront tour bus rental for your group — lake scenery and recreation across northern Ohio, vehicle and driver included."
 
 heroImageAlt: "Lake Erie Waterfront tour bus rental"

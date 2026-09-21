@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Hocking Hills State Park Tour Bus Rental — Caves, Cliffs & Cascades Escape — WAYGGO"
+seoTitle: "Hocking Hills State Park Tour Bus Rental — Caves, Cliffs & Cascades Escape — WAYGGO Charters"
 seoDescription: "Book a Hocking Hills State Park tour bus rental for your group — forests, cliffs, caves, and waterfalls, vehicle and driver included."
 
 heroImageAlt: "Hocking Hills State Park tour bus rental"

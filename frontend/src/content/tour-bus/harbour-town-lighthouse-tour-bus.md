@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Harbour Town Lighthouse Tour Bus Rental — Harbor Beacon Discovery — WAYGGO"
+seoTitle: "Harbour Town Lighthouse Tour Bus Rental — Harbor Beacon Discovery — WAYGGO Charters"
 seoDescription: "Book a Harbour Town Lighthouse tour bus rental for your group — one of Hilton Head Island's most recognizable landmarks, vehicle and driver included."
 
 heroImageAlt: "Harbour Town Lighthouse tour bus rental"

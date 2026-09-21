@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Forest Park Tour Bus Rental — Urban Oasis Discovery — WAYGGO"
+seoTitle: "Forest Park Tour Bus Rental — Urban Oasis Discovery — WAYGGO Charters"
 seoDescription: "Book a Forest Park tour bus rental for your group — expansive green spaces and cultural attractions in St. Louis, vehicle and driver included."
 
 heroImageAlt: "Forest Park tour bus rental"

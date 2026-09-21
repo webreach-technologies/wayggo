@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Ship Island Excursion Area Tour Bus Rental — Island Horizons Adventure — WAYGGO"
+seoTitle: "Ship Island Excursion Area Tour Bus Rental — Island Horizons Adventure — WAYGGO Charters"
 seoDescription: "Book a Ship Island Excursion Area tour bus rental for your group — Gulf Coast island scenery and beaches, vehicle and driver included."
 
 heroImageAlt: "Ship Island Excursion Area tour bus rental"

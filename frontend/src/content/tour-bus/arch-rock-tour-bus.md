@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Arch Rock Tour Bus Rental — Lakeshore Arch Discovery — WAYGGO"
+seoTitle: "Arch Rock Tour Bus Rental — Lakeshore Arch Discovery — WAYGGO Charters"
 seoDescription: "Book an Arch Rock tour bus rental for your group — a dramatic limestone formation on Mackinac Island, vehicle and driver included."
 
 heroImageAlt: "Arch Rock tour bus rental"

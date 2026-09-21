@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "MIT Campus Tour Bus Rental — Innovation Frontier Explorer — WAYGGO"
+seoTitle: "MIT Campus Tour Bus Rental — Innovation Frontier Explorer — WAYGGO Charters"
 seoDescription: "Book an MIT Campus tour bus rental for your group — a compelling Cambridge destination for science, technology, engineering, and innovation, vehicle and driver included."
 
 heroImageAlt: "MIT Campus tour bus rental"

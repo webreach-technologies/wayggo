@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Antietam National Battlefield Tour Bus Rental — Battlefields of Freedom Journey — WAYGGO"
+seoTitle: "Antietam National Battlefield Tour Bus Rental — Battlefields of Freedom Journey — WAYGGO Charters"
 seoDescription: "Book an Antietam National Battlefield tour bus rental for your group — Civil War history and historic landscapes in Maryland, vehicle and driver included."
 
 heroImageAlt: "Antietam National Battlefield tour bus rental"

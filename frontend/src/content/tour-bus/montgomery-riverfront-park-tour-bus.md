@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Montgomery Riverfront Park Tour Bus Rental — Riverfront Sunset Stroll — WAYGGO"
+seoTitle: "Montgomery Riverfront Park Tour Bus Rental — Riverfront Sunset Stroll — WAYGGO Charters"
 seoDescription: "Book a Montgomery Riverfront Park tour bus rental for your group — the Harriott II Riverboat, the Alabama River promenade, and downtown Montgomery landmarks, vehicle and driver included."
 
 heroImageAlt: "Montgomery Riverfront Park tour bus rental"

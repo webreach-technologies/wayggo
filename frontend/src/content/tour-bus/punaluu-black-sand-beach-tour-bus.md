@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Punaluʻu Black Sand Beach Tour Bus Rental — Turtle Haven Black Sand Escape Journey — WAYGGO"
+seoTitle: "Punaluʻu Black Sand Beach Tour Bus Rental — Turtle Haven Black Sand Escape Journey — WAYGGO Charters"
 seoDescription: "Book a Punaluʻu Black Sand Beach tour bus rental for your group — distinctive volcanic sand and sea turtle viewing on the Big Island, vehicle and driver included."
 
 heroImageAlt: "Punaluʻu Black Sand Beach tour bus rental"

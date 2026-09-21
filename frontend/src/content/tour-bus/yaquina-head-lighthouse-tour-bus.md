@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Yaquina Head Lighthouse Tour Bus Rental — Beacon of the Pacific Journey — WAYGGO"
+seoTitle: "Yaquina Head Lighthouse Tour Bus Rental — Beacon of the Pacific Journey — WAYGGO Charters"
 seoDescription: "Book a Yaquina Head Lighthouse tour bus rental for your group — a historic lighthouse on a dramatic Oregon coastal headland, vehicle and driver included."
 
 heroImageAlt: "Yaquina Head Lighthouse tour bus rental"

@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Dollywood Tour Bus Rental — Smoky Mountain Thrills Escape — WAYGGO"
+seoTitle: "Dollywood Tour Bus Rental — Smoky Mountain Thrills Escape — WAYGGO Charters"
 seoDescription: "Book a Dollywood tour bus rental for your group — one of Tennessee's best-known entertainment destinations, vehicle and driver included."
 
 heroImageAlt: "Dollywood tour bus rental"

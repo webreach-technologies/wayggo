@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Berkeley Springs State Park Tour Bus Rental — Historic Springs Wellness Escape — WAYGGO"
+seoTitle: "Berkeley Springs State Park Tour Bus Rental — Historic Springs Wellness Escape — WAYGGO Charters"
 seoDescription: "Book a Berkeley Springs State Park tour bus rental for your group — one of West Virginia's distinctive destinations, vehicle and driver included."
 
 heroImageAlt: "Berkeley Springs State Park tour bus rental"

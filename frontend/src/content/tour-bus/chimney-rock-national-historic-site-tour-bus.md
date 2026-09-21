@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Chimney Rock National Historic Site Tour Bus Rental — Pioneer Trail Landmark Adventure — WAYGGO"
+seoTitle: "Chimney Rock National Historic Site Tour Bus Rental — Pioneer Trail Landmark Adventure — WAYGGO Charters"
 seoDescription: "Book a Chimney Rock National Historic Site tour bus rental for your group — pioneer heritage and Great Plains landscape, vehicle and driver included."
 
 heroImageAlt: "Chimney Rock National Historic Site tour bus rental"

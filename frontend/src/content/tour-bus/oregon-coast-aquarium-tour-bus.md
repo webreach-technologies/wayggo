@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Oregon Coast Aquarium Tour Bus Rental — Ocean Discovery Adventure — WAYGGO"
+seoTitle: "Oregon Coast Aquarium Tour Bus Rental — Ocean Discovery Adventure — WAYGGO Charters"
 seoDescription: "Book an Oregon Coast Aquarium tour bus rental for your group — marine exhibits and hands-on learning in Newport, vehicle and driver included."
 
 heroImageAlt: "Oregon Coast Aquarium tour bus rental"

@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Annapolis Historic District Tour Bus Rental — Colonial Capital Explorer — WAYGGO"
+seoTitle: "Annapolis Historic District Tour Bus Rental — Colonial Capital Explorer — WAYGGO Charters"
 seoDescription: "Book an Annapolis Historic District tour bus rental for your group — preserved colonial architecture and waterfront charm, vehicle and driver included."
 
 heroImageAlt: "Annapolis Historic District tour bus rental"

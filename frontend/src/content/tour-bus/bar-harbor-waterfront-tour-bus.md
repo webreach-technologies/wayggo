@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Bar Harbor Waterfront Tour Bus Rental — Harborfront Charm Escape — WAYGGO"
+seoTitle: "Bar Harbor Waterfront Tour Bus Rental — Harborfront Charm Escape — WAYGGO Charters"
 seoDescription: "Book a Bar Harbor Waterfront tour bus rental for your group — harbor views, shops, and dining on Mount Desert Island, vehicle and driver included."
 
 heroImageAlt: "Bar Harbor Waterfront tour bus rental"

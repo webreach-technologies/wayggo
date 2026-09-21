@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "City Dock Tour Bus Rental — Chesapeake Waterfront Charm — WAYGGO"
+seoTitle: "City Dock Tour Bus Rental — Chesapeake Waterfront Charm — WAYGGO Charters"
 seoDescription: "Book a City Dock tour bus rental for your group — lively harbor scenery and maritime charm in downtown Annapolis, vehicle and driver included."
 
 heroImageAlt: "City Dock tour bus rental"

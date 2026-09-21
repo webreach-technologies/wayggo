@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "National Museum of the U.S. Air Force Tour Bus Rental — Wings of American Innovation — WAYGGO"
+seoTitle: "National Museum of the U.S. Air Force Tour Bus Rental — Wings of American Innovation — WAYGGO Charters"
 seoDescription: "Book a National Museum of the U.S. Air Force tour bus rental for your group — aviation and military history in Dayton, vehicle and driver included."
 
 heroImageAlt: "National Museum of the U.S. Air Force tour bus rental"

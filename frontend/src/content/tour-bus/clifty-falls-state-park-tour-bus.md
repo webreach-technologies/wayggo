@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Clifty Falls State Park Tour Bus Rental — Waterfall Gorge Cliffside Nature Escape Experience — WAYGGO"
+seoTitle: "Clifty Falls State Park Tour Bus Rental — Waterfall Gorge Cliffside Nature Escape Experience — WAYGGO Charters"
 seoDescription: "Book a Clifty Falls State Park tour bus rental for your group — waterfalls and rugged canyon scenery near Madison, Indiana, vehicle and driver included."
 
 heroImageAlt: "Clifty Falls State Park tour bus rental"

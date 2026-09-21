@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Skyline Drive Tour Bus Rental — Scenic Ridgeway Panorama — WAYGGO"
+seoTitle: "Skyline Drive Tour Bus Rental — Scenic Ridgeway Panorama — WAYGGO Charters"
 seoDescription: "Book a Skyline Drive tour bus rental for your group — a scenic adventure through Virginia's Blue Ridge Mountains, vehicle and driver included."
 
 heroImageAlt: "Skyline Drive tour bus rental"

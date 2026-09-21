@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Bighorn Canyon National Recreation Area Tour Bus Rental — Canyon Country Wilderness Escape — WAYGGO"
+seoTitle: "Bighorn Canyon National Recreation Area Tour Bus Rental — Canyon Country Wilderness Escape — WAYGGO Charters"
 seoDescription: "Book a Bighorn Canyon National Recreation Area tour bus rental for your group — one of the region's most impressive outdoor destinations, vehicle and driver included."
 
 heroImageAlt: "Bighorn Canyon National Recreation Area tour bus rental"

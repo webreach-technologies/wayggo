@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Cahokia Mounds State Historic Site Tour Bus Rental — Ancient Civilization Earthworks Discovery Experience — WAYGGO"
+seoTitle: "Cahokia Mounds State Historic Site Tour Bus Rental — Ancient Civilization Earthworks Discovery Experience — WAYGGO Charters"
 seoDescription: "Book a Cahokia Mounds tour bus rental for your group — North America's monumental earthworks and Indigenous history near St. Louis, vehicle and driver included."
 
 heroImageAlt: "Cahokia Mounds State Historic Site tour bus rental"

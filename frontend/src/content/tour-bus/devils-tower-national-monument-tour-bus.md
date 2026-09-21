@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Devil's Tower National Monument Tour Bus Rental — Monument of the Great Plains — WAYGGO"
+seoTitle: "Devil's Tower National Monument Tour Bus Rental — Monument of the Great Plains — WAYGGO Charters"
 seoDescription: "Book a Devil's Tower National Monument tour bus rental for your group — one of Wyoming's most extraordinary natural landmarks, vehicle and driver included."
 
 heroImageAlt: "Devil's Tower National Monument tour bus rental"

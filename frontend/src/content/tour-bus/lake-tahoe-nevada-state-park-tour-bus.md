@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Lake Tahoe Nevada State Park Tour Bus Rental — Sierra Lakeshore Escape — WAYGGO"
+seoTitle: "Lake Tahoe Nevada State Park Tour Bus Rental — Sierra Lakeshore Escape — WAYGGO Charters"
 seoDescription: "Book a Lake Tahoe Nevada State Park tour bus rental for your group — beautiful lake views and mountain landscapes, vehicle and driver included."
 
 heroImageAlt: "Lake Tahoe Nevada State Park tour bus rental"

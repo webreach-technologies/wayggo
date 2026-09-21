@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Stowe Mountain Resort Area Tour Bus Rental — Alpine Adventure Retreat — WAYGGO"
+seoTitle: "Stowe Mountain Resort Area Tour Bus Rental — Alpine Adventure Retreat — WAYGGO Charters"
 seoDescription: "Book a Stowe Mountain Resort Area tour bus rental for your group — one of northern Vermont's memorable mountain destinations, vehicle and driver included."
 
 heroImageAlt: "Stowe Mountain Resort Area tour bus rental"

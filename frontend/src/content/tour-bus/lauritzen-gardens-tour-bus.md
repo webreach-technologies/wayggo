@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Lauritzen Gardens Tour Bus Rental — Blooming Prairie Escape — WAYGGO"
+seoTitle: "Lauritzen Gardens Tour Bus Rental — Blooming Prairie Escape — WAYGGO Charters"
 seoDescription: "Book a Lauritzen Gardens tour bus rental for your group — beautiful plant displays and landscaped grounds in Omaha, vehicle and driver included."
 
 heroImageAlt: "Lauritzen Gardens tour bus rental"

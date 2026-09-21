@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Navy Pier Tour Bus Rental — Lakefront Lights & Skyline Cruise Escape — WAYGGO"
+seoTitle: "Navy Pier Tour Bus Rental — Lakefront Lights & Skyline Cruise Escape — WAYGGO Charters"
 seoDescription: "Book a Navy Pier tour bus rental for your group — Lake Michigan views, the Centennial Wheel, and waterfront entertainment, vehicle and driver included."
 
 heroImageAlt: "Navy Pier tour bus rental"

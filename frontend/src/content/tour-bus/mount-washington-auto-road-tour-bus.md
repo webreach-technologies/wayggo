@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Mount Washington Auto Road Tour Bus Rental — Road to the Clouds Adventure — WAYGGO"
+seoTitle: "Mount Washington Auto Road Tour Bus Rental — Road to the Clouds Adventure — WAYGGO Charters"
 seoDescription: "Book a Mount Washington Auto Road tour bus rental for your group — scenic mountain journey and panoramic views, vehicle and driver included."
 
 heroImageAlt: "Mount Washington Auto Road tour bus rental"

@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Kentucky Derby Museum Tour Bus Rental — Thoroughbred Racing Legacy Experience — WAYGGO"
+seoTitle: "Kentucky Derby Museum Tour Bus Rental — Thoroughbred Racing Legacy Experience — WAYGGO Charters"
 seoDescription: "Book a Kentucky Derby Museum tour bus rental for your group — racing memorabilia and Derby history at Churchill Downs in Louisville, vehicle and driver included."
 
 heroImageAlt: "Kentucky Derby Museum tour bus rental"

@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Stone Mountain Park Tour Bus Rental — Granite Summit Scenic Adventure Journey — WAYGGO"
+seoTitle: "Stone Mountain Park Tour Bus Rental — Granite Summit Scenic Adventure Journey — WAYGGO Charters"
 seoDescription: "Book a Stone Mountain Park tour bus rental for your group — a massive granite landmark, scenic hiking, and family attractions near Atlanta, vehicle and driver included."
 
 heroImageAlt: "Stone Mountain Park tour bus rental"

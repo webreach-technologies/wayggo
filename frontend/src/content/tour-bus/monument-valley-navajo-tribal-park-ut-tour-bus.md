@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Monument Valley Navajo Tribal Park Tour Bus Rental — Sacred Monuments of the Southwest — WAYGGO"
+seoTitle: "Monument Valley Navajo Tribal Park Tour Bus Rental — Sacred Monuments of the Southwest — WAYGGO Charters"
 seoDescription: "Book a Monument Valley Navajo Tribal Park tour bus rental for your group — one of the Southwest's most recognizable scenic destinations, vehicle and driver included."
 
 heroImageAlt: "Monument Valley Navajo Tribal Park tour bus rental"

@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Coeur d'Alene Lake Tour Bus Rental — Crystal Blue Lakeside Serenity Escape — WAYGGO"
+seoTitle: "Coeur d'Alene Lake Tour Bus Rental — Crystal Blue Lakeside Serenity Escape — WAYGGO Charters"
 seoDescription: "Book a Coeur d'Alene Lake tour bus rental for your group — scenic shoreline, boating, and downtown attractions in northern Idaho, vehicle and driver included."
 
 heroImageAlt: "Coeur d'Alene Lake tour bus rental"

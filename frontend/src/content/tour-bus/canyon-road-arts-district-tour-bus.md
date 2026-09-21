@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Canyon Road Arts District Tour Bus Rental — Artistic Pathways Discovery — WAYGGO"
+seoTitle: "Canyon Road Arts District Tour Bus Rental — Artistic Pathways Discovery — WAYGGO Charters"
 seoDescription: "Book a Canyon Road Arts District tour bus rental for your group — a celebrated Santa Fe destination for galleries, sculpture, and adobe architecture, vehicle and driver included."
 
 heroImageAlt: "Canyon Road Arts District tour bus rental"

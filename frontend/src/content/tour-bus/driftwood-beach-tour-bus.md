@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Driftwood Beach Tour Bus Rental — Driftwood Coastal Artscape Journey — WAYGGO"
+seoTitle: "Driftwood Beach Tour Bus Rental — Driftwood Coastal Artscape Journey — WAYGGO Charters"
 seoDescription: "Book a Driftwood Beach tour bus rental for your group — weathered trees and a striking, unusual coastal landscape on Jekyll Island, vehicle and driver included."
 
 heroImageAlt: "Driftwood Beach tour bus rental"

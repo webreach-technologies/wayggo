@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "National Corvette Museum Tour Bus Rental — American Sports Car Legacy Showcase Experience — WAYGGO"
+seoTitle: "National Corvette Museum Tour Bus Rental — American Sports Car Legacy Showcase Experience — WAYGGO Charters"
 seoDescription: "Book a National Corvette Museum tour bus rental for your group — remarkable Corvette automobiles and automotive history in Bowling Green, vehicle and driver included."
 
 heroImageAlt: "National Corvette Museum tour bus rental"

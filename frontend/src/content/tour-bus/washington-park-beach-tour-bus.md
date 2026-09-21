@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Washington Park Beach Tour Bus Rental — Lakeshore Sunset Sands Relaxation Experience — WAYGGO"
+seoTitle: "Washington Park Beach Tour Bus Rental — Lakeshore Sunset Sands Relaxation Experience — WAYGGO Charters"
 seoDescription: "Book a Washington Park Beach tour bus rental for your group — Lake Michigan shoreline and harbor views in Michigan City, vehicle and driver included."
 
 heroImageAlt: "Washington Park Beach tour bus rental"

@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Capitol Reef National Park Tour Bus Rental — Capitol of the Red Rocks Adventure — WAYGGO"
+seoTitle: "Capitol Reef National Park Tour Bus Rental — Capitol of the Red Rocks Adventure — WAYGGO Charters"
 seoDescription: "Book a Capitol Reef National Park tour bus rental for your group — one of Utah's remarkable natural destinations, vehicle and driver included."
 
 heroImageAlt: "Capitol Reef National Park tour bus rental"

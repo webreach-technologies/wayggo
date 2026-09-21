@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Lanier Mansion State Historic Site Tour Bus Rental — Greek Revival Riverside Heritage Estate Experience — WAYGGO"
+seoTitle: "Lanier Mansion State Historic Site Tour Bus Rental — Greek Revival Riverside Heritage Estate Experience — WAYGGO Charters"
 seoDescription: "Book a Lanier Mansion tour bus rental for your group — nineteenth-century Italianate architecture along the Ohio River in Madison, Indiana, vehicle and driver included."
 
 heroImageAlt: "Lanier Mansion State Historic Site tour bus rental"

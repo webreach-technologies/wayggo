@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Mall of America Tour Bus Rental — Retail Wonderland Adventure — WAYGGO"
+seoTitle: "Mall of America Tour Bus Rental — Retail Wonderland Adventure — WAYGGO Charters"
 seoDescription: "Book a Mall of America tour bus rental for your group — shopping, dining, and entertainment in the Twin Cities, vehicle and driver included."
 
 heroImageAlt: "Mall of America tour bus rental"

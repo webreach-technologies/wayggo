@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Plimoth Patuxet Museums Tour Bus Rental — Living History Discovery — WAYGGO"
+seoTitle: "Plimoth Patuxet Museums Tour Bus Rental — Living History Discovery — WAYGGO Charters"
 seoDescription: "Book a Plimoth Patuxet Museums tour bus rental for your group — a distinctive Massachusetts destination for living-history and Indigenous heritage, vehicle and driver included."
 
 heroImageAlt: "Plimoth Patuxet Museums tour bus rental"

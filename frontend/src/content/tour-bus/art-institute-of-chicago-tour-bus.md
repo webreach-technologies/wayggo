@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Art Institute of Chicago Tour Bus Rental — Masterpiece Gallery Cultural Discovery Experience — WAYGGO"
+seoTitle: "Art Institute of Chicago Tour Bus Rental — Masterpiece Gallery Cultural Discovery Experience — WAYGGO Charters"
 seoDescription: "Book an Art Institute of Chicago tour bus rental for your group — extensive art collections beside Grant Park, vehicle and driver included."
 
 heroImageAlt: "Art Institute of Chicago tour bus rental"

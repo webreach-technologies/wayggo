@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Houmas House Plantation Tour Bus Rental — Southern Manor Discovery — WAYGGO"
+seoTitle: "Houmas House Plantation Tour Bus Rental — Southern Manor Discovery — WAYGGO Charters"
 seoDescription: "Book a Houmas House Plantation tour bus rental for your group — a historic mansion and landscaped gardens along the Mississippi River, vehicle and driver included."
 
 heroImageAlt: "Houmas House Plantation tour bus rental"

@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Arlington National Cemetery Tour Bus Rental — Honor & Remembrance Heritage Tour — WAYGGO"
+seoTitle: "Arlington National Cemetery Tour Bus Rental — Honor & Remembrance Heritage Tour — WAYGGO Charters"
 seoDescription: "Book an Arlington National Cemetery tour bus rental for your group — one of Virginia's most significant national destinations, vehicle and driver included."
 
 heroImageAlt: "Arlington National Cemetery tour bus rental"

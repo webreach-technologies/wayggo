@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Callaway Gardens Tour Bus Rental — Botanical Gardens & Lakeside Retreat Journey — WAYGGO"
+seoTitle: "Callaway Gardens Tour Bus Rental — Botanical Gardens & Lakeside Retreat Journey — WAYGGO Charters"
 seoDescription: "Book a Callaway Gardens tour bus rental for your group — gardens, lakes, trails, and wildlife at Pine Mountain, Georgia, vehicle and driver included."
 
 heroImageAlt: "Callaway Gardens tour bus rental"

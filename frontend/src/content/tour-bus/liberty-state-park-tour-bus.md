@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Liberty State Park Tour Bus Rental — Harbor of Freedom Explorer — WAYGGO"
+seoTitle: "Liberty State Park Tour Bus Rental — Harbor of Freedom Explorer — WAYGGO Charters"
 seoDescription: "Book a Liberty State Park tour bus rental for your group — Manhattan skyline views and Statue of Liberty perspectives, vehicle and driver included."
 
 heroImageAlt: "Liberty State Park tour bus rental"

@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Grand Canyon of the Yellowstone Tour Bus Rental — Canyon of the Yellowstone Adventure — WAYGGO"
+seoTitle: "Grand Canyon of the Yellowstone Tour Bus Rental — Canyon of the Yellowstone Adventure — WAYGGO Charters"
 seoDescription: "Book a Grand Canyon of the Yellowstone tour bus rental for your group — one of Yellowstone National Park's most spectacular natural destinations, vehicle and driver included."
 
 heroImageAlt: "Grand Canyon of the Yellowstone tour bus rental"

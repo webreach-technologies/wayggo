@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Lake Winnipesaukee Tour Bus Rental — Lakeside Legends Journey — WAYGGO"
+seoTitle: "Lake Winnipesaukee Tour Bus Rental — Lakeside Legends Journey — WAYGGO Charters"
 seoDescription: "Book a Lake Winnipesaukee tour bus rental for your group — beautiful water and mountain scenery in New Hampshire's Lakes Region, vehicle and driver included."
 
 heroImageAlt: "Lake Winnipesaukee tour bus rental"

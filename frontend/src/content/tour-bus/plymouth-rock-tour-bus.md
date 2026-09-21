@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Plymouth Rock Tour Bus Rental — Foundations of America Tour — WAYGGO"
+seoTitle: "Plymouth Rock Tour Bus Rental — Foundations of America Tour — WAYGGO Charters"
 seoDescription: "Book a Plymouth Rock tour bus rental for your group — one of Massachusetts' most recognizable historic landmarks, vehicle and driver included."
 
 heroImageAlt: "Plymouth Rock tour bus rental"

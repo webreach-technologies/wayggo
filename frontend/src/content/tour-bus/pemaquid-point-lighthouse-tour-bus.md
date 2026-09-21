@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Pemaquid Point Lighthouse Tour Bus Rental — Rockbound Beacon Adventure — WAYGGO"
+seoTitle: "Pemaquid Point Lighthouse Tour Bus Rental — Rockbound Beacon Adventure — WAYGGO Charters"
 seoDescription: "Book a Pemaquid Point Lighthouse tour bus rental for your group — a historic lighthouse and dramatic rocky shoreline in Midcoast Maine, vehicle and driver included."
 
 heroImageAlt: "Pemaquid Point Lighthouse tour bus rental"

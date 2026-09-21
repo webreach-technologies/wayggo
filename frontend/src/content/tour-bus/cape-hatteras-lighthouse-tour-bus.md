@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Cape Hatteras Lighthouse Tour Bus Rental — Beacon of the Atlantic Coast — WAYGGO"
+seoTitle: "Cape Hatteras Lighthouse Tour Bus Rental — Beacon of the Atlantic Coast — WAYGGO Charters"
 seoDescription: "Book a Cape Hatteras Lighthouse tour bus rental for your group — maritime history and distinctive architecture on the Outer Banks, vehicle and driver included."
 
 heroImageAlt: "Cape Hatteras Lighthouse tour bus rental"

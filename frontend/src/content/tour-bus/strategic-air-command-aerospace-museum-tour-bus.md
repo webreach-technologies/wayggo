@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Strategic Air Command & Aerospace Museum Tour Bus Rental — Flight & Innovation Discovery — WAYGGO"
+seoTitle: "Strategic Air Command & Aerospace Museum Tour Bus Rental — Flight & Innovation Discovery — WAYGGO Charters"
 seoDescription: "Book a Strategic Air Command & Aerospace Museum tour bus rental for your group — aircraft and aerospace technology, vehicle and driver included."
 
 heroImageAlt: "Strategic Air Command & Aerospace Museum tour bus rental"

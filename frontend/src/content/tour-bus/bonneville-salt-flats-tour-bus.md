@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Bonneville Salt Flats Tour Bus Rental — Salt Flats Horizon Explorer — WAYGGO"
+seoTitle: "Bonneville Salt Flats Tour Bus Rental — Salt Flats Horizon Explorer — WAYGGO Charters"
 seoDescription: "Book a Bonneville Salt Flats tour bus rental for your group — one of Utah's most distinctive natural landscapes, vehicle and driver included."
 
 heroImageAlt: "Bonneville Salt Flats tour bus rental"

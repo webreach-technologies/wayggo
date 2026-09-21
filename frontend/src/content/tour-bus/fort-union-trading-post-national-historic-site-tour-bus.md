@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Fort Union Trading Post National Historic Site Tour Bus Rental — Fur Trade Frontier Discovery — WAYGGO"
+seoTitle: "Fort Union Trading Post National Historic Site Tour Bus Rental — Fur Trade Frontier Discovery — WAYGGO Charters"
 seoDescription: "Book a Fort Union Trading Post tour bus rental for your group — fur trade and regional history along the Upper Missouri River, vehicle and driver included."
 
 heroImageAlt: "Fort Union Trading Post National Historic Site tour bus rental"

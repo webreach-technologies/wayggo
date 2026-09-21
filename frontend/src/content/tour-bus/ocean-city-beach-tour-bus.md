@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Ocean City Beach Tour Bus Rental — Atlantic Shore Escape — WAYGGO"
+seoTitle: "Ocean City Beach Tour Bus Rental — Atlantic Shore Escape — WAYGGO Charters"
 seoDescription: "Book an Ocean City Beach tour bus rental for your group — Atlantic Ocean scenery and sandy shoreline in Maryland, vehicle and driver included."
 
 heroImageAlt: "Ocean City Beach tour bus rental"

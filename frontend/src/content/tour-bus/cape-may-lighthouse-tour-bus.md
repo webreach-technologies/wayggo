@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Cape May Lighthouse Tour Bus Rental — Cape Beacon Discovery — WAYGGO"
+seoTitle: "Cape May Lighthouse Tour Bus Rental — Cape Beacon Discovery — WAYGGO Charters"
 seoDescription: "Book a Cape May Lighthouse tour bus rental for your group — historic tower, maritime heritage, and panoramic coastal views, vehicle and driver included."
 
 heroImageAlt: "Cape May Lighthouse tour bus rental"

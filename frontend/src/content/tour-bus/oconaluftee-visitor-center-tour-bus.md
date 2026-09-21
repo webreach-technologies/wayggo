@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Oconaluftee Visitor Center Tour Bus Rental — Mountain Heritage Discovery — WAYGGO"
+seoTitle: "Oconaluftee Visitor Center Tour Bus Rental — Mountain Heritage Discovery — WAYGGO Charters"
 seoDescription: "Book an Oconaluftee Visitor Center tour bus rental for your group — Appalachian heritage and mountain scenery, vehicle and driver included."
 
 heroImageAlt: "Oconaluftee Visitor Center tour bus rental"

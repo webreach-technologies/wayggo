@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Atlantic City Boardwalk Tour Bus Rental — Boardwalk by the Atlantic Adventure — WAYGGO"
+seoTitle: "Atlantic City Boardwalk Tour Bus Rental — Boardwalk by the Atlantic Adventure — WAYGGO Charters"
 seoDescription: "Book an Atlantic City Boardwalk tour bus rental for your group — ocean views, seaside attractions, and classic Jersey Shore fun, vehicle and driver included."
 
 heroImageAlt: "Atlantic City Boardwalk tour bus rental"

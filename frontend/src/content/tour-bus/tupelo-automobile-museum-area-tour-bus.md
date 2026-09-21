@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Tupelo Automobile Museum Area Tour Bus Rental — Classic Wheels Showcase — WAYGGO"
+seoTitle: "Tupelo Automobile Museum Area Tour Bus Rental — Classic Wheels Showcase — WAYGGO Charters"
 seoDescription: "Book a Tupelo Automobile Museum Area tour bus rental for your group — classic vehicles and transportation history, vehicle and driver included."
 
 heroImageAlt: "Tupelo Automobile Museum Area tour bus rental"

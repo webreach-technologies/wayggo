@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Cold Hollow Cider Mill Tour Bus Rental — Cider Country Heritage Journey — WAYGGO"
+seoTitle: "Cold Hollow Cider Mill Tour Bus Rental — Cider Country Heritage Journey — WAYGGO Charters"
 seoDescription: "Book a Cold Hollow Cider Mill tour bus rental for your group — one of Vermont's memorable attractions, vehicle and driver included."
 
 heroImageAlt: "Cold Hollow Cider Mill tour bus rental"

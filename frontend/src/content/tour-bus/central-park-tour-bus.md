@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Central Park Tour Bus Rental — Urban Oasis Discovery — WAYGGO"
+seoTitle: "Central Park Tour Bus Rental — Urban Oasis Discovery — WAYGGO Charters"
 seoDescription: "Book a Central Park tour bus rental for your group — landscapes, pathways, and iconic city views in the heart of Manhattan, vehicle and driver included."
 
 heroImageAlt: "Central Park tour bus rental"

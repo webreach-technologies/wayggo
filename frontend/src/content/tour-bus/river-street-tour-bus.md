@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "River Street Tour Bus Rental — Historic Riverfront Waterfront Experience Journey — WAYGGO"
+seoTitle: "River Street Tour Bus Rental — Historic Riverfront Waterfront Experience Journey — WAYGGO Charters"
 seoDescription: "Book a River Street tour bus rental for your group — Savannah's historic waterfront, river views, and lively pedestrian district, vehicle and driver included."
 
 heroImageAlt: "River Street tour bus rental"

@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Branson Landing Tour Bus Rental — Waterfront Entertainment Journey — WAYGGO"
+seoTitle: "Branson Landing Tour Bus Rental — Waterfront Entertainment Journey — WAYGGO Charters"
 seoDescription: "Book a Branson Landing tour bus rental for your group — waterfront shopping, dining, and entertainment, vehicle and driver included."
 
 heroImageAlt: "Branson Landing tour bus rental"

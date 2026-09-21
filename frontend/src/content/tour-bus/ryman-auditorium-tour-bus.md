@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Ryman Auditorium Tour Bus Rental — Mother Church of Music Experience — WAYGGO"
+seoTitle: "Ryman Auditorium Tour Bus Rental — Mother Church of Music Experience — WAYGGO Charters"
 seoDescription: "Book a Ryman Auditorium tour bus rental for your group — one of Nashville's most recognizable music and cultural destinations, vehicle and driver included."
 
 heroImageAlt: "Ryman Auditorium tour bus rental"

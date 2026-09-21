@@ -33,7 +33,7 @@ const services = [
   {
     icon: Clipboard,
     title: "On-Site Coordinator",
-    desc: "A WAYGGO coordinator on the ground for groups of 50+ delegates.",
+    desc: "A WAYGGO Charters coordinator on the ground for groups of 50+ delegates.",
   },
   {
     icon: Moon,
@@ -54,15 +54,15 @@ const serviceSchema = {
   name: "Corporate & Convention Group Transportation",
   description: "Professional ground transportation for corporate delegations and convention groups in Las Vegas, NYC, Chicago, and San Francisco.",
   url: pageURL,
-  provider: { "@type": "Organization", name: "WAYGGO", url: new URL("/", Astro.site ?? "https://wayggo.com").href },
+  provider: { "@type": "Organization", name: "WAYGGO Charters", url: new URL("/", Astro.site ?? "https://wayggo.com").href },
   areaServed: ["United States", "Canada"],
   serviceType: "Corporate Group Ground Transportation",
 };
 ---
 
 <BaseLayout
-  title="Corporate & Convention Travel — WAYGGO Group Transportation"
-  description="Professional ground transportation for corporate delegations and convention groups in Las Vegas, NYC, Chicago, and San Francisco. WAYGGO handles CES, SXSW, NAB, and more."
+  title="Corporate & Convention Travel — WAYGGO Charters Group Transportation"
+  description="Professional ground transportation for corporate delegations and convention groups in Las Vegas, NYC, Chicago, and San Francisco. WAYGGO Charters handles CES, SXSW, NAB, and more."
   breadcrumbs={[{ name: "Services", path: "/services" }, { name: "Corporate & Convention Travel", path: "/services/corporate" }]}
 >
   <script is:inline type="application/ld+json" set:html={JSON.stringify(serviceSchema)} />
@@ -70,7 +70,7 @@ const serviceSchema = {
   <section class="relative py-24 overflow-hidden" style="background-color: #1A2744;">
     <Image
       src={heroImg}
-      alt="Corporate and convention group transportation — WAYGGO"
+      alt="Corporate and convention group transportation — WAYGGO Charters"
       width={1600}
       height={600}
       quality=25
@@ -86,7 +86,7 @@ const serviceSchema = {
           <span style="color: #FDEA01;">Convention Travel</span>
         </h1>
         <p class="text-white/65 text-lg leading-relaxed max-w-2xl mb-8">
-          When your delegation lands in North America, every minute counts. WAYGGO delivers precision ground logistics for corporate groups, industry conventions, and executive travel programs — managing complexity so your clients experience nothing but seamless movement.
+          When your delegation lands in North America, every minute counts. WAYGGO Charters delivers precision ground logistics for corporate groups, industry conventions, and executive travel programs — managing complexity so your clients experience nothing but seamless movement.
         </p>
         <a href={withBase("/contact")} class="btn-primary">Request Corporate Quote</a>
       </div>

@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Abraham Lincoln Presidential Library & Museum Tour Bus Rental — Presidential Legacy & Civil War History Experience — WAYGGO"
+seoTitle: "Abraham Lincoln Presidential Library & Museum Tour Bus Rental — Presidential Legacy & Civil War History Experience — WAYGGO Charters"
 seoDescription: "Book an Abraham Lincoln Presidential Library & Museum tour bus rental for your group — immersive exhibits on Lincoln's life and legacy in Springfield, vehicle and driver included."
 
 heroImageAlt: "Abraham Lincoln Presidential Library & Museum tour bus rental"

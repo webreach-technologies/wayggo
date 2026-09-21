@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Potomac River Overlook Tour Bus Rental — Rivers from Above Discovery — WAYGGO"
+seoTitle: "Potomac River Overlook Tour Bus Rental — Rivers from Above Discovery — WAYGGO Charters"
 seoDescription: "Book a Potomac River Overlook tour bus rental for your group — a convenient scenic adventure in West Virginia, vehicle and driver included."
 
 heroImageAlt: "Potomac River Overlook tour bus rental"

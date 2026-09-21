@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Birmingham Civil Rights Institute Tour Bus Rental — Freedom Legacy Journey — WAYGGO"
+seoTitle: "Birmingham Civil Rights Institute Tour Bus Rental — Freedom Legacy Journey — WAYGGO Charters"
 seoDescription: "Book a Birmingham Civil Rights Institute tour bus rental for your group — the institute, Kelly Ingram Park, and the 16th Street Baptist Church in Birmingham's Civil Rights District, vehicle and driver included."
 
 heroImageAlt: "Birmingham Civil Rights Institute tour bus rental"

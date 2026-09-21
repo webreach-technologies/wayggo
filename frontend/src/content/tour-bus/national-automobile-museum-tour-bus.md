@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "National Automobile Museum Tour Bus Rental — Classic Cars Through Time — WAYGGO"
+seoTitle: "National Automobile Museum Tour Bus Rental — Classic Cars Through Time — WAYGGO Charters"
 seoDescription: "Book a National Automobile Museum tour bus rental for your group — historic automobiles and transportation heritage in Reno, vehicle and driver included."
 
 heroImageAlt: "National Automobile Museum tour bus rental"

@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Chesapeake Bay Maritime Museum Tour Bus Rental — Bay Heritage Explorer — WAYGGO"
+seoTitle: "Chesapeake Bay Maritime Museum Tour Bus Rental — Bay Heritage Explorer — WAYGGO Charters"
 seoDescription: "Book a Chesapeake Bay Maritime Museum tour bus rental for your group — historic vessels and maritime heritage in St. Michaels, vehicle and driver included."
 
 heroImageAlt: "Chesapeake Bay Maritime Museum tour bus rental"

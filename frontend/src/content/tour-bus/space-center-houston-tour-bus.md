@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Space Center Houston Tour Bus Rental — Gateway to Space Exploration — WAYGGO"
+seoTitle: "Space Center Houston Tour Bus Rental — Gateway to Space Exploration — WAYGGO Charters"
 seoDescription: "Book a Space Center Houston tour bus rental for your group — one of Texas's most exciting science and educational destinations, vehicle and driver included."
 
 heroImageAlt: "Space Center Houston tour bus rental"

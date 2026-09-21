@@ -44,14 +44,14 @@ const serviceSchema = {
   name: "Educational & Student Group Transportation",
   description: "Safe, organized ground transportation for student groups and educational tours across North America.",
   url: pageURL,
-  provider: { "@type": "Organization", name: "WAYGGO", url: new URL("/", Astro.site ?? "https://wayggo.com").href },
+  provider: { "@type": "Organization", name: "WAYGGO Charters", url: new URL("/", Astro.site ?? "https://wayggo.com").href },
   areaServed: ["United States", "Canada"],
   serviceType: "Educational Group Ground Transportation",
 };
 ---
 
 <BaseLayout
-  title="Educational & Student Tours — WAYGGO Group Transportation"
+  title="Educational & Student Tours — WAYGGO Charters Group Transportation"
   description="Safe, organized ground transportation for student groups and educational tours across North America. Smithsonian, Ivy League campuses, Silicon Valley, and more."
   breadcrumbs={[{ name: "Services", path: "/services" }, { name: "Educational & Student Tours", path: "/services/educational" }]}
 >
@@ -60,7 +60,7 @@ const serviceSchema = {
   <section class="relative py-24 overflow-hidden" style="background-color: #1A2744;">
     <Image
       src={heroImg}
-      alt="Educational and student group tour transportation — WAYGGO"
+      alt="Educational and student group tour transportation — WAYGGO Charters"
       width={1600}
       height={600}
       quality=25
@@ -76,7 +76,7 @@ const serviceSchema = {
           <span style="color: #FDEA01;">Student Tours</span>
         </h1>
         <p class="text-white/65 text-lg leading-relaxed max-w-2xl mb-8">
-          Moving student groups requires precise timing, safe vehicles, and drivers who understand the responsibility. WAYGGO's educational tour fleet is purpose-built for schools, universities, and youth travel operators worldwide.
+          Moving student groups requires precise timing, safe vehicles, and drivers who understand the responsibility. WAYGGO Charters' educational tour fleet is purpose-built for schools, universities, and youth travel operators worldwide.
         </p>
         <a href={withBase("/contact")} class="btn-primary">Plan a Student Tour</a>
       </div>

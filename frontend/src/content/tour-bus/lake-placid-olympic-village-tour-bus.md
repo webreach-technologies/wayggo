@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Lake Placid Olympic Village Tour Bus Rental — Olympic Legacy Discovery — WAYGGO"
+seoTitle: "Lake Placid Olympic Village Tour Bus Rental — Olympic Legacy Discovery — WAYGGO Charters"
 seoDescription: "Book a Lake Placid Olympic Village tour bus rental for your group — Olympic heritage and mountain scenery in the Adirondacks, vehicle and driver included."
 
 heroImageAlt: "Lake Placid Olympic Village tour bus rental"

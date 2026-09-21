@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Country Music Hall of Fame and Museum Tour Bus Rental — Heart of Country Music Heritage — WAYGGO"
+seoTitle: "Country Music Hall of Fame and Museum Tour Bus Rental — Heart of Country Music Heritage — WAYGGO Charters"
 seoDescription: "Book a Country Music Hall of Fame and Museum tour bus rental for your group — one of Nashville's most recognizable music destinations, vehicle and driver included."
 
 heroImageAlt: "Country Music Hall of Fame and Museum tour bus rental"

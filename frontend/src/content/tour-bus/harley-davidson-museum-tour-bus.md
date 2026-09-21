@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Harley-Davidson Museum Tour Bus Rental — Legends of the Open Road — WAYGGO"
+seoTitle: "Harley-Davidson Museum Tour Bus Rental — Legends of the Open Road — WAYGGO Charters"
 seoDescription: "Book a Harley-Davidson Museum tour bus rental for your group — one of Milwaukee's most recognizable cultural attractions, vehicle and driver included."
 
 heroImageAlt: "Harley-Davidson Museum tour bus rental"

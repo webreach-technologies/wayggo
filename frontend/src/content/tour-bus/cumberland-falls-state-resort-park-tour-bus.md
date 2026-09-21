@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Cumberland Falls State Resort Park Tour Bus Rental — Moonbow Waterfall Wilderness Escape Experience — WAYGGO"
+seoTitle: "Cumberland Falls State Resort Park Tour Bus Rental — Moonbow Waterfall Wilderness Escape Experience — WAYGGO Charters"
 seoDescription: "Book a Cumberland Falls State Resort Park tour bus rental for your group — a dramatic waterfall and Appalachian scenery in southeastern Kentucky, vehicle and driver included."
 
 heroImageAlt: "Cumberland Falls State Resort Park tour bus rental"

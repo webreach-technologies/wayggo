@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Roswell UFO Museum Area Tour Bus Rental — Mysteries Beyond Earth — WAYGGO"
+seoTitle: "Roswell UFO Museum Area Tour Bus Rental — Mysteries Beyond Earth — WAYGGO Charters"
 seoDescription: "Book a Roswell UFO Museum Area tour bus rental for your group — one of New Mexico's most distinctive tourism destinations, vehicle and driver included."
 
 heroImageAlt: "Roswell UFO Museum Area tour bus rental"

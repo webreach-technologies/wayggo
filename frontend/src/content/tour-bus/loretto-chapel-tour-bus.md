@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Loretto Chapel Tour Bus Rental — Mystery & Heritage Experience — WAYGGO"
+seoTitle: "Loretto Chapel Tour Bus Rental — Mystery & Heritage Experience — WAYGGO Charters"
 seoDescription: "Book a Loretto Chapel tour bus rental for your group — a historic Santa Fe landmark known for its famous spiral staircase, vehicle and driver included."
 
 heroImageAlt: "Loretto Chapel tour bus rental"

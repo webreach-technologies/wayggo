@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Fremont Street Experience Tour Bus Rental — Vintage Vegas Lights Experience — WAYGGO"
+seoTitle: "Fremont Street Experience Tour Bus Rental — Vintage Vegas Lights Experience — WAYGGO Charters"
 seoDescription: "Book a Fremont Street Experience tour bus rental for your group — spectacular lights and downtown Las Vegas atmosphere, vehicle and driver included."
 
 heroImageAlt: "Fremont Street Experience tour bus rental"

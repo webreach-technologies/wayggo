@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Monument Rocks Tour Bus Rental — Ancient Chalk Towers Desert Sculpture Escape Experience — WAYGGO"
+seoTitle: "Monument Rocks Tour Bus Rental — Ancient Chalk Towers Desert Sculpture Escape Experience — WAYGGO Charters"
 seoDescription: "Book a Monument Rocks National Natural Landmark tour bus rental for your group — striking chalk formations on the western Kansas prairie, vehicle and driver included."
 
 heroImageAlt: "Monument Rocks National Natural Landmark tour bus rental"

@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Snowshoe Mountain Resort Area Tour Bus Rental — Highland Peaks Retreat — WAYGGO"
+seoTitle: "Snowshoe Mountain Resort Area Tour Bus Rental — Highland Peaks Retreat — WAYGGO Charters"
 seoDescription: "Book a Snowshoe Mountain Resort Area tour bus rental for your group — a convenient mountain adventure in West Virginia, vehicle and driver included."
 
 heroImageAlt: "Snowshoe Mountain Resort Area tour bus rental"

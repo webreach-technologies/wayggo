@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "White Sands National Park Tour Bus Rental — Dunes of White Wonder — WAYGGO"
+seoTitle: "White Sands National Park Tour Bus Rental — Dunes of White Wonder — WAYGGO Charters"
 seoDescription: "Book a White Sands National Park tour bus rental for your group — a spectacular southern New Mexico destination known for brilliant gypsum dunes, vehicle and driver included."
 
 heroImageAlt: "White Sands National Park tour bus rental"

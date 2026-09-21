@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Historic Salem District Tour Bus Rental — Witch City Heritage Walk — WAYGGO"
+seoTitle: "Historic Salem District Tour Bus Rental — Witch City Heritage Walk — WAYGGO Charters"
 seoDescription: "Book a Historic Salem District tour bus rental for your group — a captivating Massachusetts destination for colonial history, architecture, and maritime heritage, vehicle and driver included."
 
 heroImageAlt: "Historic Salem District tour bus rental"

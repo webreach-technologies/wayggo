@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Saint Louis Zoo Tour Bus Rental — Wildlife Wonders Journey — WAYGGO"
+seoTitle: "Saint Louis Zoo Tour Bus Rental — Wildlife Wonders Journey — WAYGGO Charters"
 seoDescription: "Book a Saint Louis Zoo tour bus rental for your group — wildlife and animal habitats in Forest Park, vehicle and driver included."
 
 heroImageAlt: "Saint Louis Zoo tour bus rental"

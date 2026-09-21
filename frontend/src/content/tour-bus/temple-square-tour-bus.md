@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Temple Square Tour Bus Rental — Heart of Pioneer Heritage — WAYGGO"
+seoTitle: "Temple Square Tour Bus Rental — Heart of Pioneer Heritage — WAYGGO Charters"
 seoDescription: "Book a Temple Square tour bus rental for your group — one of Salt Lake City's most recognizable cultural and historical destinations, vehicle and driver included."
 
 heroImageAlt: "Temple Square tour bus rental"

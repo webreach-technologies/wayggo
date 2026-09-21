@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Great Smoky Mountains National Park (NC Gateway) Tour Bus Rental — Gateway to the Smokies Adventure — WAYGGO"
+seoTitle: "Great Smoky Mountains National Park (NC Gateway) Tour Bus Rental — Gateway to the Smokies Adventure — WAYGGO Charters"
 seoDescription: "Book a Great Smoky Mountains tour bus rental for your group — forests, wildlife, and mountain landscapes from the North Carolina side, vehicle and driver included."
 
 heroImageAlt: "Great Smoky Mountains National Park (NC Gateway) tour bus rental"

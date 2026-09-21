@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Cliff Walk Tour Bus Rental — Oceanfront Cliffside Adventure — WAYGGO"
+seoTitle: "Cliff Walk Tour Bus Rental — Oceanfront Cliffside Adventure — WAYGGO Charters"
 seoDescription: "Book a Cliff Walk tour bus rental for your group — Newport's famous coastal scenery, historic architecture, and Atlantic Ocean views, vehicle and driver included."
 
 heroImageAlt: "Cliff Walk tour bus rental"

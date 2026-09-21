@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Phipps Conservatory and Botanical Gardens Tour Bus Rental — Glasshouse Garden Wonders — WAYGGO"
+seoTitle: "Phipps Conservatory and Botanical Gardens Tour Bus Rental — Glasshouse Garden Wonders — WAYGGO Charters"
 seoDescription: "Book a Phipps Conservatory and Botanical Gardens tour bus rental for your group — lush indoor gardens in Pittsburgh, vehicle and driver included."
 
 heroImageAlt: "Phipps Conservatory and Botanical Gardens tour bus rental"

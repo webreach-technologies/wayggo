@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Indiana Dunes State Park Tour Bus Rental — Lakeside Dune Climb Nature Escape Experience — WAYGGO"
+seoTitle: "Indiana Dunes State Park Tour Bus Rental — Lakeside Dune Climb Nature Escape Experience — WAYGGO Charters"
 seoDescription: "Book an Indiana Dunes State Park tour bus rental for your group — rolling dunes and sandy Lake Michigan beaches, vehicle and driver included."
 
 heroImageAlt: "Indiana Dunes State Park tour bus rental"

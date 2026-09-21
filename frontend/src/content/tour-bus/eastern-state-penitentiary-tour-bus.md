@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Eastern State Penitentiary Tour Bus Rental — Behind Historic Walls Explorer — WAYGGO"
+seoTitle: "Eastern State Penitentiary Tour Bus Rental — Behind Historic Walls Explorer — WAYGGO Charters"
 seoDescription: "Book an Eastern State Penitentiary tour bus rental for your group — a distinctive historic landmark in Philadelphia, vehicle and driver included."
 
 heroImageAlt: "Eastern State Penitentiary tour bus rental"

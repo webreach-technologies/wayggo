@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Greater Des Moines Botanical Garden Tour Bus Rental — Glass Dome Tropical Garden Bloom Escape Experience — WAYGGO"
+seoTitle: "Greater Des Moines Botanical Garden Tour Bus Rental — Glass Dome Tropical Garden Bloom Escape Experience — WAYGGO Charters"
 seoDescription: "Book a Greater Des Moines Botanical Garden tour bus rental for your group — plant collections and seasonal displays in Iowa's capital city, vehicle and driver included."
 
 heroImageAlt: "Greater Des Moines Botanical Garden tour bus rental"

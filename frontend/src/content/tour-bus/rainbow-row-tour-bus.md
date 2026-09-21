@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Rainbow Row Tour Bus Rental — Pastel Streets & Southern Charm — WAYGGO"
+seoTitle: "Rainbow Row Tour Bus Rental — Pastel Streets & Southern Charm — WAYGGO Charters"
 seoDescription: "Book a Rainbow Row tour bus rental for your group — Charleston's colorful historic streetscape, vehicle and driver included."
 
 heroImageAlt: "Rainbow Row tour bus rental"

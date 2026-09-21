@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Zion National Park Tour Bus Rental — Canyon of Giants Adventure — WAYGGO"
+seoTitle: "Zion National Park Tour Bus Rental — Canyon of Giants Adventure — WAYGGO Charters"
 seoDescription: "Book a Zion National Park tour bus rental for your group — one of Utah's most remarkable natural destinations, vehicle and driver included."
 
 heroImageAlt: "Zion National Park tour bus rental"

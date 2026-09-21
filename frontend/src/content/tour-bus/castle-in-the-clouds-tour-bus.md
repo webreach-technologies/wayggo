@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Castle in the Clouds Tour Bus Rental — Castle Above the Clouds Tour — WAYGGO"
+seoTitle: "Castle in the Clouds Tour Bus Rental — Castle Above the Clouds Tour — WAYGGO Charters"
 seoDescription: "Book a Castle in the Clouds tour bus rental for your group — historic estate and panoramic mountain views, vehicle and driver included."
 
 heroImageAlt: "Castle in the Clouds tour bus rental"

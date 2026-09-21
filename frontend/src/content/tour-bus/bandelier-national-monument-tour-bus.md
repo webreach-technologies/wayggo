@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Bandelier National Monument Tour Bus Rental — Ancient Cliff Dwellings Discovery — WAYGGO"
+seoTitle: "Bandelier National Monument Tour Bus Rental — Ancient Cliff Dwellings Discovery — WAYGGO Charters"
 seoDescription: "Book a Bandelier National Monument tour bus rental for your group — a fascinating northern New Mexico destination for ancient dwellings and canyon landscapes, vehicle and driver included."
 
 heroImageAlt: "Bandelier National Monument tour bus rental"

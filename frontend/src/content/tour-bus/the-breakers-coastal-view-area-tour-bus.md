@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "The Breakers Coastal View Area Tour Bus Rental — Gilded Coast Grandeur — WAYGGO"
+seoTitle: "The Breakers Coastal View Area Tour Bus Rental — Gilded Coast Grandeur — WAYGGO Charters"
 seoDescription: "Book a The Breakers Coastal View Area tour bus rental for your group — a spectacular New England sightseeing destination for Gilded Age architecture and coastal scenery, vehicle and driver included."
 
 heroImageAlt: "The Breakers Coastal View Area tour bus rental"

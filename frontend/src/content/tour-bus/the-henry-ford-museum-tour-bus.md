@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "The Henry Ford Museum Tour Bus Rental — American Innovation Journey — WAYGGO"
+seoTitle: "The Henry Ford Museum Tour Bus Rental — American Innovation Journey — WAYGGO Charters"
 seoDescription: "Book a Henry Ford Museum tour bus rental for your group — American innovation and transportation history in Dearborn, vehicle and driver included."
 
 heroImageAlt: "The Henry Ford Museum tour bus rental"

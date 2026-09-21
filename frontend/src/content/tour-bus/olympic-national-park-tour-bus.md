@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Olympic National Park Tour Bus Rental — Rainforests to Coastlines Explorer — WAYGGO"
+seoTitle: "Olympic National Park Tour Bus Rental — Rainforests to Coastlines Explorer — WAYGGO Charters"
 seoDescription: "Book an Olympic National Park tour bus rental for your group — one of Washington's most memorable natural destinations, vehicle and driver included."
 
 heroImageAlt: "Olympic National Park tour bus rental"

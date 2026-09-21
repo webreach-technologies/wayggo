@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Sand Harbor Beach Tour Bus Rental — Crystal Cove Beach Retreat — WAYGGO"
+seoTitle: "Sand Harbor Beach Tour Bus Rental — Crystal Cove Beach Retreat — WAYGGO Charters"
 seoDescription: "Book a Sand Harbor Beach tour bus rental for your group — clear water and granite scenery on Lake Tahoe's Nevada shoreline, vehicle and driver included."
 
 heroImageAlt: "Sand Harbor Beach tour bus rental"

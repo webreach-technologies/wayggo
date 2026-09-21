@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Historic Downtown Natchitoches Tour Bus Rental — Cane River Heritage Journey — WAYGGO"
+seoTitle: "Historic Downtown Natchitoches Tour Bus Rental — Cane River Heritage Journey — WAYGGO Charters"
 seoDescription: "Book a Historic Downtown Natchitoches tour bus rental for your group — preserved architecture and Cane River waterfront scenery, vehicle and driver included."
 
 heroImageAlt: "Historic Downtown Natchitoches tour bus rental"

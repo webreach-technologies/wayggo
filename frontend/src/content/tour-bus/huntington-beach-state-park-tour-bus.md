@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Huntington Beach State Park Tour Bus Rental — Wild Coast Nature Retreat — WAYGGO"
+seoTitle: "Huntington Beach State Park Tour Bus Rental — Wild Coast Nature Retreat — WAYGGO Charters"
 seoDescription: "Book a Huntington Beach State Park tour bus rental for your group — South Carolina's coastal scenery and natural attractions, vehicle and driver included."
 
 heroImageAlt: "Huntington Beach State Park tour bus rental"

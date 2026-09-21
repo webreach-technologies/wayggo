@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Grounds For Sculpture Tour Bus Rental — Art Beyond the Gallery Experience — WAYGGO"
+seoTitle: "Grounds For Sculpture Tour Bus Rental — Art Beyond the Gallery Experience — WAYGGO Charters"
 seoDescription: "Book a Grounds For Sculpture tour bus rental for your group — contemporary sculpture and landscaped gardens in Hamilton, vehicle and driver included."
 
 heroImageAlt: "Grounds For Sculpture tour bus rental"

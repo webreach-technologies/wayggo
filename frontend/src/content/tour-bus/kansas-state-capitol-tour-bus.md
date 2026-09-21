@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Kansas State Capitol Tour Bus Rental — Golden Dome Civic Heritage Walk Experience — WAYGGO"
+seoTitle: "Kansas State Capitol Tour Bus Rental — Golden Dome Civic Heritage Walk Experience — WAYGGO Charters"
 seoDescription: "Book a Kansas State Capitol tour bus rental for your group — the distinctive dome and grand architecture in downtown Topeka, vehicle and driver included."
 
 heroImageAlt: "Kansas State Capitol tour bus rental"

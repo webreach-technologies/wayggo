@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Strawbery Banke Museum Tour Bus Rental — Colonial Seaport Heritage — WAYGGO"
+seoTitle: "Strawbery Banke Museum Tour Bus Rental — Colonial Seaport Heritage — WAYGGO Charters"
 seoDescription: "Book a Strawbery Banke Museum tour bus rental for your group — historic neighborhood and preserved buildings in Portsmouth, vehicle and driver included."
 
 heroImageAlt: "Strawbery Banke Museum tour bus rental"

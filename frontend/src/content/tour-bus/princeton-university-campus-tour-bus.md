@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Princeton University Campus Tour Bus Rental — Ivy Traditions Discovery — WAYGGO"
+seoTitle: "Princeton University Campus Tour Bus Rental — Ivy Traditions Discovery — WAYGGO Charters"
 seoDescription: "Book a Princeton University Campus tour bus rental for your group — historic architecture and landscaped grounds, vehicle and driver included."
 
 heroImageAlt: "Princeton University Campus tour bus rental"

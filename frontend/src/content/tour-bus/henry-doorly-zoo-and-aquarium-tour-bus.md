@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Henry Doorly Zoo and Aquarium Tour Bus Rental — Wild Kingdom Discovery — WAYGGO"
+seoTitle: "Henry Doorly Zoo and Aquarium Tour Bus Rental — Wild Kingdom Discovery — WAYGGO Charters"
 seoDescription: "Book a Henry Doorly Zoo and Aquarium tour bus rental for your group — wildlife and aquatic exhibits in Omaha, vehicle and driver included."
 
 heroImageAlt: "Henry Doorly Zoo and Aquarium tour bus rental"

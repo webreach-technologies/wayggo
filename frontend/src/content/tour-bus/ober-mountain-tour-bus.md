@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Ober Mountain Tour Bus Rental — Smoky Peaks Adventure — WAYGGO"
+seoTitle: "Ober Mountain Tour Bus Rental — Smoky Peaks Adventure — WAYGGO Charters"
 seoDescription: "Book an Ober Mountain tour bus rental for your group — scenic mountain attractions in Gatlinburg, vehicle and driver included."
 
 heroImageAlt: "Ober Mountain tour bus rental"

@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Rowan Oak Tour Bus Rental — Literary Legacy Explorer — WAYGGO"
+seoTitle: "Rowan Oak Tour Bus Rental — Literary Legacy Explorer — WAYGGO Charters"
 seoDescription: "Book a Rowan Oak tour bus rental for your group — literary heritage and William Faulkner's historic home in Oxford, vehicle and driver included."
 
 heroImageAlt: "Rowan Oak tour bus rental"

@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Prescott Park Tour Bus Rental — Harbor Gardens & History — WAYGGO"
+seoTitle: "Prescott Park Tour Bus Rental — Harbor Gardens & History — WAYGGO Charters"
 seoDescription: "Book a Prescott Park tour bus rental for your group — landscaped gardens and Portsmouth waterfront views, vehicle and driver included."
 
 heroImageAlt: "Prescott Park tour bus rental"

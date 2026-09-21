@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Keeneland Race Course Tour Bus Rental — Bluegrass Horse Racing Estate Experience — WAYGGO"
+seoTitle: "Keeneland Race Course Tour Bus Rental — Bluegrass Horse Racing Estate Experience — WAYGGO Charters"
 seoDescription: "Book a Keeneland Race Course tour bus rental for your group — historic Thoroughbred racing traditions in Lexington's Bluegrass horse country, vehicle and driver included."
 
 heroImageAlt: "Keeneland Race Course tour bus rental"

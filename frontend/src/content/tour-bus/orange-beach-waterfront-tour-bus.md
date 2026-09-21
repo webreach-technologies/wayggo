@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickups daily"
 
-seoTitle: "Orange Beach Waterfront Tour Bus Rental — Sunset Harbor Escape — WAYGGO"
+seoTitle: "Orange Beach Waterfront Tour Bus Rental — Sunset Harbor Escape — WAYGGO Charters"
 seoDescription: "Book an Orange Beach Waterfront tour bus rental for your group — The Wharf, Perdido Pass, dolphin cruises, and Gulf Coast marinas in Orange Beach, Alabama, vehicle and driver included."
 
 heroImageAlt: "Orange Beach Waterfront tour bus rental"

@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Fort Morgan Historic Site Tour Bus Rental — Fortress Legacy Expedition — WAYGGO"
+seoTitle: "Fort Morgan Historic Site Tour Bus Rental — Fortress Legacy Expedition — WAYGGO Charters"
 seoDescription: "Book a Fort Morgan Historic Site tour bus rental for your group — the 1834 masonry fort, Battle of Mobile Bay history, and Gulf Coast peninsula views, vehicle and driver included."
 
 heroImageAlt: "Fort Morgan Historic Site tour bus rental"

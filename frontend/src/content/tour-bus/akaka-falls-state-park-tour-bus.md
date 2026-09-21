@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Akaka Falls State Park Tour Bus Rental — Rainforest Waterfall Majesty Journey — WAYGGO"
+seoTitle: "Akaka Falls State Park Tour Bus Rental — Rainforest Waterfall Majesty Journey — WAYGGO Charters"
 seoDescription: "Book an ʻAkaka Falls State Park tour bus rental for your group — a lush rainforest walk to one of the Big Island's most recognizable waterfalls, vehicle and driver included."
 
 heroImageAlt: "ʻAkaka Falls State Park tour bus rental"

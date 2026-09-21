@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Harvard University Tour Bus Rental — Ivy Legacy Experience — WAYGGO"
+seoTitle: "Harvard University Tour Bus Rental — Ivy Legacy Experience — WAYGGO Charters"
 seoDescription: "Book a Harvard University tour bus rental for your group — a renowned Cambridge destination for education, history, and academic architecture, vehicle and driver included."
 
 heroImageAlt: "Harvard University tour bus rental"

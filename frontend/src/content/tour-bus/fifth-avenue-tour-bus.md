@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Fifth Avenue Tour Bus Rental — Avenue of Elegance Experience — WAYGGO"
+seoTitle: "Fifth Avenue Tour Bus Rental — Avenue of Elegance Experience — WAYGGO Charters"
 seoDescription: "Book a Fifth Avenue tour bus rental for your group — famous architecture, shopping, and museums through the heart of Manhattan, vehicle and driver included."
 
 heroImageAlt: "Fifth Avenue tour bus rental"

@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Mount Rushmore National Memorial Tour Bus Rental — Faces of a Nation Journey — WAYGGO"
+seoTitle: "Mount Rushmore National Memorial Tour Bus Rental — Faces of a Nation Journey — WAYGGO Charters"
 seoDescription: "Book a Mount Rushmore National Memorial tour bus rental for your group — one of South Dakota's most famous landmarks, vehicle and driver included."
 
 heroImageAlt: "Mount Rushmore National Memorial tour bus rental"

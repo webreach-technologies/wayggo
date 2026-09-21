@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Whitefish Mountain Resort Area Tour Bus Rental — Mountain Retreat Adventure — WAYGGO"
+seoTitle: "Whitefish Mountain Resort Area Tour Bus Rental — Mountain Retreat Adventure — WAYGGO Charters"
 seoDescription: "Book a Whitefish Mountain Resort Area tour bus rental for your group — mountain scenery and seasonal recreation, vehicle and driver included."
 
 heroImageAlt: "Whitefish Mountain Resort Area tour bus rental"

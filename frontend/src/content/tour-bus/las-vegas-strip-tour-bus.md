@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Las Vegas Strip Tour Bus Rental — Neon Nights Spectacular — WAYGGO"
+seoTitle: "Las Vegas Strip Tour Bus Rental — Neon Nights Spectacular — WAYGGO Charters"
 seoDescription: "Book a Las Vegas Strip tour bus rental for your group — spectacular resorts and illuminated scenery, vehicle and driver included."
 
 heroImageAlt: "Las Vegas Strip tour bus rental"

@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Mobile Carnival Museum Tour Bus Rental — Masks & Majesty Journey — WAYGGO"
+seoTitle: "Mobile Carnival Museum Tour Bus Rental — Masks & Majesty Journey — WAYGGO Charters"
 seoDescription: "Book a Mobile Carnival Museum tour bus rental for your group — explore America's oldest Mardi Gras tradition inside the historic Bernstein-Bush Mansion in downtown Mobile, vehicle and driver included."
 
 heroImageAlt: "Mobile Carnival Museum tour bus rental"

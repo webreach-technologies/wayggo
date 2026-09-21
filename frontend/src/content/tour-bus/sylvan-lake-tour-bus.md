@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Sylvan Lake Tour Bus Rental — Granite Lake Serenity Escape — WAYGGO"
+seoTitle: "Sylvan Lake Tour Bus Rental — Granite Lake Serenity Escape — WAYGGO Charters"
 seoDescription: "Book a Sylvan Lake tour bus rental for your group — scenic beauty in South Dakota's Black Hills, vehicle and driver included."
 
 heroImageAlt: "Sylvan Lake tour bus rental"

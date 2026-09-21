@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "The Wichita Gardens Tour Bus Rental — Botanical Bloom Riverside Serenity Escape Experience — WAYGGO"
+seoTitle: "The Wichita Gardens Tour Bus Rental — Botanical Bloom Riverside Serenity Escape Experience — WAYGGO Charters"
 seoDescription: "Book a Wichita Gardens tour bus rental for your group — landscaped spaces and flowering plants for a relaxing Kansas outing, vehicle and driver included."
 
 heroImageAlt: "The Wichita Gardens tour bus rental"

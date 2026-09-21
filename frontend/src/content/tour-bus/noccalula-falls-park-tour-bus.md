@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Noccalula Falls Park Tour Bus Rental — Cascading Wonder Explorer Ride — WAYGGO"
+seoTitle: "Noccalula Falls Park Tour Bus Rental — Cascading Wonder Explorer Ride — WAYGGO Charters"
 seoDescription: "Book a Noccalula Falls Park tour bus rental for your group — the 90-foot waterfall, Pioneer Village, and botanical gardens in Gadsden, Alabama, vehicle and driver included."
 
 heroImageAlt: "Noccalula Falls Park tour bus rental"

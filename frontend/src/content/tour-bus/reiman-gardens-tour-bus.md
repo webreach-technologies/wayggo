@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Reiman Gardens Tour Bus Rental — Floral Glasshouse Blooming Wonderland Experience — WAYGGO"
+seoTitle: "Reiman Gardens Tour Bus Rental — Floral Glasshouse Blooming Wonderland Experience — WAYGGO Charters"
 seoDescription: "Book a Reiman Gardens tour bus rental for your group — themed landscapes and plant collections at Iowa State University in Ames, vehicle and driver included."
 
 heroImageAlt: "Reiman Gardens tour bus rental"

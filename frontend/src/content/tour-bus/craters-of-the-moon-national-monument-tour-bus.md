@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Craters of the Moon Tour Bus Rental — Lava Field Cosmic Landscape Escape — WAYGGO"
+seoTitle: "Craters of the Moon Tour Bus Rental — Lava Field Cosmic Landscape Escape — WAYGGO Charters"
 seoDescription: "Book a Craters of the Moon National Monument tour bus rental for your group — lava flows, volcanic cones, and caves in central Idaho, vehicle and driver included."
 
 heroImageAlt: "Craters of the Moon National Monument tour bus rental"

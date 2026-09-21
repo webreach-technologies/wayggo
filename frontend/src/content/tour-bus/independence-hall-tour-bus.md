@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Independence Hall Tour Bus Rental — Birthplace of Independence Journey — WAYGGO"
+seoTitle: "Independence Hall Tour Bus Rental — Birthplace of Independence Journey — WAYGGO Charters"
 seoDescription: "Book an Independence Hall tour bus rental for your group — the birthplace of American independence in historic Philadelphia, vehicle and driver included."
 
 heroImageAlt: "Independence Hall tour bus rental"

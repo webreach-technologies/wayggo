@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Mississippi Aquarium Tour Bus Rental — Marine Wonders Explorer — WAYGGO"
+seoTitle: "Mississippi Aquarium Tour Bus Rental — Marine Wonders Explorer — WAYGGO Charters"
 seoDescription: "Book a Mississippi Aquarium tour bus rental for your group — aquatic wildlife and conservation education on the Gulf Coast, vehicle and driver included."
 
 heroImageAlt: "Mississippi Aquarium tour bus rental"

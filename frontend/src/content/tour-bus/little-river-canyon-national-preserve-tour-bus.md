@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Little River Canyon National Preserve Tour Bus Rental — Canyon Vista Explorer Ride — WAYGGO"
+seoTitle: "Little River Canyon National Preserve Tour Bus Rental — Canyon Vista Explorer Ride — WAYGGO Charters"
 seoDescription: "Book a Little River Canyon National Preserve tour bus rental for your group — Little River Falls, the Canyon Rim Parkway, and Lookout Mountain hiking trails, vehicle and driver included."
 
 heroImageAlt: "Little River Canyon National Preserve tour bus rental"

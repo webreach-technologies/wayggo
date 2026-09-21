@@ -9,13 +9,13 @@ const pageURL = new URL(Astro.url.pathname, Astro.site ?? "https://wayggo.com").
 const contactPageSchema = {
   "@context": "https://schema.org",
   "@type": "ContactPage",
-  name: "Request a Quote — WAYGGO Ground Transportation",
+  name: "Request a Quote — WAYGGO Charters Ground Transportation",
   url: pageURL,
 };
 ---
 
 <BaseLayout
-  title="Request a Quote — WAYGGO Ground Transportation"
+  title="Request a Quote — WAYGGO Charters Ground Transportation"
   description="Get a ground transportation quote for your international tour group in North America. Send us a message and receive a detailed proposal within 24 hours."
   breadcrumbs={[{ name: "Contact", path: "/contact" }]}
 >
@@ -114,7 +114,7 @@ const contactPageSchema = {
           { q: "Do I need to be a registered partner to request a quote?", a: "No — anyone can request a quote using the form above. However, registered partner agencies receive faster response times (under 4 hours) and additional benefits. Registration is free." },
           { q: "How far in advance should I book?", a: "We recommend booking at least 4–6 weeks in advance for group sizes over 30. For peak travel seasons (June–September, December–January), 8–12 weeks is preferred. We can sometimes accommodate shorter notice for smaller groups." },
           { q: "Can you handle multi-city tours with different vehicles in each city?", a: "Absolutely — this is one of our core capabilities. We coordinate different operators and vehicle types across all cities on your itinerary, presenting it as one seamless service with one invoice." },
-          { q: "Do you provide tour guides, or just transportation?", a: "WAYGGO's core service is ground transportation. However, we have a network of licensed guides in major cities and can coordinate guide services alongside transportation on request." },
+          { q: "Do you provide tour guides, or just transportation?", a: "WAYGGO Charters' core service is ground transportation. However, we have a network of licensed guides in major cities and can coordinate guide services alongside transportation on request." },
           { q: "What currencies do you invoice in?", a: "We invoice primarily in USD. CAD is available for Canada-only bookings. Payments from international operators can be processed in multiple currencies via wire transfer or our payment portal." },
         ].map((faq) => (
           <details class="rounded-2xl border border-gray-100 group" style="background: white;">

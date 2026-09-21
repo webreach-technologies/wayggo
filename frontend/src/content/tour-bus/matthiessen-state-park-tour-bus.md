@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Matthiessen State Park Tour Bus Rental — Hidden Canyon Waterfall Nature Escape — WAYGGO"
+seoTitle: "Matthiessen State Park Tour Bus Rental — Hidden Canyon Waterfall Nature Escape — WAYGGO Charters"
 seoDescription: "Book a Matthiessen State Park tour bus rental for your group — wooded trails and sandstone canyons in Illinois' peaceful Illinois Valley, vehicle and driver included."
 
 heroImageAlt: "Matthiessen State Park tour bus rental"

@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "WaterFire Tour Bus Rental — Rivers of Light Experience — WAYGGO"
+seoTitle: "WaterFire Tour Bus Rental — Rivers of Light Experience — WAYGGO Charters"
 seoDescription: "Book a WaterFire tour bus rental for your group — one of Providence's most recognizable cultural attractions, vehicle and driver included."
 
 heroImageAlt: "WaterFire tour bus rental"

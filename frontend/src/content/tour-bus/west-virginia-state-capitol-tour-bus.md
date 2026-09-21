@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "West Virginia State Capitol Tour Bus Rental — Capitol of the Mountain State — WAYGGO"
+seoTitle: "West Virginia State Capitol Tour Bus Rental — Capitol of the Mountain State — WAYGGO Charters"
 seoDescription: "Book a West Virginia State Capitol tour bus rental for your group — one of the state's most important landmarks, vehicle and driver included."
 
 heroImageAlt: "West Virginia State Capitol tour bus rental"

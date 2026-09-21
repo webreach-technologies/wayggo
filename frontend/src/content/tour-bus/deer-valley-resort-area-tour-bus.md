@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Deer Valley Resort Area Tour Bus Rental — Alpine Luxury Retreat — WAYGGO"
+seoTitle: "Deer Valley Resort Area Tour Bus Rental — Alpine Luxury Retreat — WAYGGO Charters"
 seoDescription: "Book a Deer Valley Resort Area tour bus rental for your group — one of northern Utah's memorable mountain destinations, vehicle and driver included."
 
 heroImageAlt: "Deer Valley Resort Area tour bus rental"

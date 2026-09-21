@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Noah's Ark Waterpark Tour Bus Rental — America’s Waterpark Capital Adventure — WAYGGO"
+seoTitle: "Noah's Ark Waterpark Tour Bus Rental — America’s Waterpark Capital Adventure — WAYGGO Charters"
 seoDescription: "Book a Noah's Ark Waterpark tour bus rental for your group — one of Wisconsin's most popular attractions, vehicle and driver included."
 
 heroImageAlt: "Noah's Ark Waterpark tour bus rental"

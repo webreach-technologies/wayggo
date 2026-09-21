@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Flathead Lake Tour Bus Rental — Big Sky Lakeshore Escape — WAYGGO"
+seoTitle: "Flathead Lake Tour Bus Rental — Big Sky Lakeshore Escape — WAYGGO Charters"
 seoDescription: "Book a Flathead Lake tour bus rental for your group — expansive waters and mountain scenery in northwestern Montana, vehicle and driver included."
 
 heroImageAlt: "Flathead Lake tour bus rental"

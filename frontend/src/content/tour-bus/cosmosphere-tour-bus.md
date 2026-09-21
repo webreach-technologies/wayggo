@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Cosmosphere Tour Bus Rental — Space Exploration Rocket Science Discovery Experience — WAYGGO"
+seoTitle: "Cosmosphere Tour Bus Rental — Space Exploration Rocket Science Discovery Experience — WAYGGO Charters"
 seoDescription: "Book a Cosmosphere tour bus rental for your group — space exploration exhibits and historic artifacts in Hutchinson, Kansas, vehicle and driver included."
 
 heroImageAlt: "Cosmosphere tour bus rental"

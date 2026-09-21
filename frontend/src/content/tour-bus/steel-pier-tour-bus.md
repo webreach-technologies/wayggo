@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Steel Pier Tour Bus Rental — Seaside Thrills Experience — WAYGGO"
+seoTitle: "Steel Pier Tour Bus Rental — Seaside Thrills Experience — WAYGGO Charters"
 seoDescription: "Book a Steel Pier tour bus rental for your group — oceanfront amusement attractions and classic Atlantic City views, vehicle and driver included."
 
 heroImageAlt: "Steel Pier tour bus rental"

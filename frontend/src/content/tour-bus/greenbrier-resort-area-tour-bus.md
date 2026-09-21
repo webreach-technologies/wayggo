@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Greenbrier Resort Area Tour Bus Rental — Mountain Luxury & Tradition — WAYGGO"
+seoTitle: "Greenbrier Resort Area Tour Bus Rental — Mountain Luxury & Tradition — WAYGGO Charters"
 seoDescription: "Book a Greenbrier Resort Area tour bus rental for your group — one of West Virginia's best-known travel destinations, vehicle and driver included."
 
 heroImageAlt: "Greenbrier Resort Area tour bus rental"

@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Assateague Island National Seashore Tour Bus Rental — Wild Coast Discovery — WAYGGO"
+seoTitle: "Assateague Island National Seashore Tour Bus Rental — Wild Coast Discovery — WAYGGO Charters"
 seoDescription: "Book an Assateague Island tour bus rental for your group — wild horses, beaches, and coastal wildlife on Maryland's barrier island, vehicle and driver included."
 
 heroImageAlt: "Assateague Island National Seashore tour bus rental"

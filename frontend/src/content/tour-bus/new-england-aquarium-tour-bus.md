@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "New England Aquarium Tour Bus Rental — Atlantic Ocean Wonders — WAYGGO"
+seoTitle: "New England Aquarium Tour Bus Rental — Atlantic Ocean Wonders — WAYGGO Charters"
 seoDescription: "Book a New England Aquarium tour bus rental for your group — a popular Boston destination for marine life, ocean science, and family-friendly exploration, vehicle and driver included."
 
 heroImageAlt: "New England Aquarium tour bus rental"
