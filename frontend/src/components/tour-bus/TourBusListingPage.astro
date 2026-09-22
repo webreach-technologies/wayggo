@@ -27,11 +27,12 @@ const { bucket, page, totalPages, pageCards, totalInBucket } = Astro.props;
 
 const seo = bucketSeo(bucket, page, totalInBucket);
 const breadcrumbs = bucketBreadcrumbs(bucket);
-// Country/state filter pages (bucket.country set) are real, useful nav
-// targets but not meant to be a separate indexable surface — only the main
-// /tour-bus listing (and its numbered pages) and individual entry pages
-// are indexable. `follow` still lets crawlers reach the linked entry pages.
-const noindex = !!bucket.country;
+// Page 1 of every bucket (all / country / country+state) is a real,
+// indexable landing page — /tour-bus, /tour-bus/usa, /tour-bus/usa/ny.
+// Page 2+ of any bucket just re-paginates the same entries and isn't worth
+// a separate indexable URL. `follow` still lets crawlers reach the linked
+// entry pages from a noindex'd page.
+const noindex = page > 1;
 
 const siteOrigin = Astro.site ?? new URL("https://wayggo.com");
 const tourBusItemListSchema = {

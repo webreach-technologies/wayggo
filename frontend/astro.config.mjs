@@ -38,18 +38,20 @@ export default defineConfig({
     // Matches "/portal" itself and any "/portal/..." sub-path (not just
     // "/portal/", which trailingSlash:"never" means the index page no longer has).
     //
-    // /tour-bus/usa, /tour-bus/usa/ny, etc. (country/state filter pages) are
-    // useful on-site navigation but intentionally noindex'd — see the
-    // `noindex` logic in TourBusListingPage.astro — so they're kept out of
-    // the sitemap too. The plain /tour-bus listing, its numbered pages
-    // (/tour-bus/2, /tour-bus/3, ...), and individual entry pages
-    // (/tour-bus/nyc-icons) are unaffected since none of them start with
-    // "/tour-bus/usa" or "/tour-bus/canada".
+    // Every /tour-bus bucket (all / country / country+state) is indexable on
+    // its own page 1 — /tour-bus, /tour-bus/usa, /tour-bus/usa/ny, and
+    // individual entry pages (/tour-bus/nyc-icons) all stay in. Only page 2+
+    // of any bucket is excluded, since it's a duplicate re-slice of content
+    // that's already indexed elsewhere — see the `noindex` logic in
+    // TourBusListingPage.astro. Those paginated URLs always end in a plain
+    // numeric segment ("/2", "/usa/2", "/usa/ny/3", ...), which real slugs
+    // can never collide with (see assertNoReservedSlugConflicts in
+    // tourBusBuckets.ts), so matching on that trailing segment is safe.
     sitemap({
       filter: (page) =>
         !/\/portal(\/|$)/.test(page) &&
         !page.includes("/tour-bus/request") &&
-        !/\/tour-bus\/(usa|canada)(\/|$)/.test(page),
+        !/\/tour-bus\/(?:[^/]+\/)*\d+\/?$/.test(page),
     }),
   ],
 });
