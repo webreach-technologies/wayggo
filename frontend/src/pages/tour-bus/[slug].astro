@@ -39,6 +39,12 @@ const siteOrigin = Astro.site ?? new URL("https://wayggo.com");
 const pageURL = new URL(Astro.url.pathname, siteOrigin).href;
 const priceValue = Number(pkg.price.replace(/[^0-9.]/g, ""));
 
+// schema.org wants ISO 3166-1 alpha-2 for addressCountry, not the "USA"/
+// "Canada" labels this collection stores — map to match tourBusBuckets.ts's
+// two supported countries (see CountryConfig there).
+const countryCodes: Record<string, string> = { USA: "US", Canada: "CA" };
+const countryCode = countryCodes[pkg.country] ?? pkg.country;
+
 // Related tours are pulled from the content collection (not hand-typed per
 // entry) so this stays accurate as entries are added or removed. Ranked by
 // real-world distance from this destination's lat/lng — nearest first.
@@ -63,6 +69,24 @@ const touristTripSchema = {
     "@type": "Organization",
     name: "WAYGGO Charters",
     url: new URL("/", siteOrigin).href,
+  },
+  // Geographic hierarchy (city -> state/province -> country) plus exact
+  // coordinates, so search engines can place this trip on the map and match
+  // it to location-qualified queries instead of just keyword-matching.
+  about: {
+    "@type": "TouristAttraction",
+    name: pkg.cities[0],
+    address: {
+      "@type": "PostalAddress",
+      addressLocality: pkg.cities[0],
+      addressRegion: pkg.state,
+      addressCountry: countryCode,
+    },
+    geo: {
+      "@type": "GeoCoordinates",
+      latitude: pkg.lat,
+      longitude: pkg.lng,
+    },
   },
   itinerary: {
     "@type": "ItemList",
