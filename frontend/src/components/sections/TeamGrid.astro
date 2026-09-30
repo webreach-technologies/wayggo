@@ -1,0 +1,37 @@
+---
+import SectionHeading from "./SectionHeading.astro";
+
+interface Member {
+  initials: string;
+  name: string;
+  role: string;
+  note: string;
+}
+
+interface Props {
+  badge?: string;
+  heading: string;
+  members: Member[];
+}
+
+const { badge = "Leadership", heading, members } = Astro.props;
+---
+
+<section class="py-20" style="background-color: #F9F7F2;">
+  <div class="container">
+    <SectionHeading badge={badge} heading={heading} />
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-5">
+      {members.map((person) => (
+        <div class="bg-white rounded-2xl p-6 text-center card-hover">
+          <div class="w-16 h-16 rounded-2xl flex items-center justify-center mx-auto mb-4 font-black text-xl"
+            style="background-color: #1A2744; color: #FDEA01;">
+            {person.initials}
+          </div>
+          <h3 class="font-black text-sm mb-0.5" style="color: #1A2744;">{person.name}</h3>
+          <p class="text-xs font-semibold mb-1" style="color: #6B7280;">{person.role}</p>
+          <p class="text-xs text-gray-400">{person.note}</p>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>

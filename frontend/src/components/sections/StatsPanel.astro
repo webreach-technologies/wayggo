@@ -1,0 +1,33 @@
+---
+interface Stat {
+  value: string;
+  label: string;
+}
+
+interface Props {
+  badge?: string;
+  heading: string;
+  text?: string;
+  stats: Stat[];
+}
+
+const { badge, heading, text, stats } = Astro.props;
+---
+
+<section class="py-20" style="background-color: white;">
+  <div class="container">
+    <div class="max-w-3xl mx-auto text-center">
+      {badge && <span class="section-label mb-4 inline-flex mx-auto">{badge}</span>}
+      <h2 class="text-4xl font-black mb-6" style="color: #1A2744;">{heading}</h2>
+      {text && <p class="text-gray-500 leading-relaxed mb-8">{text}</p>}
+      <div class="grid grid-cols-2 sm:grid-cols-4 gap-4">
+        {stats.map((s) => (
+          <div class="rounded-2xl p-5 text-center" style="background-color: #F9F7F2;">
+            <div class="text-2xl font-black mb-1" style="color: #1A2744;">{s.value}</div>
+            <div class="text-xs text-gray-500">{s.label}</div>
+          </div>
+        ))}
+      </div>
+    </div>
+  </div>
+</section>

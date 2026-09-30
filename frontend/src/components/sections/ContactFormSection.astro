@@ -1,0 +1,52 @@
+---
+import QuoteForm from "../react/QuoteForm";
+import { Mail, Phone, MessageSquare, Users } from "@lucide/astro";
+import { withBase } from "../../lib/url";
+
+const channels = [
+  { icon: Mail, label: "Email", value: "operations@wayggo.com", note: "Response within 24 hours", href: "mailto:operations@wayggo.com" },
+  { icon: Phone, label: "Phone", value: "+1 (800) 555-9248", note: "Mon–Fri, 8am–8pm ET", href: "tel:+18005559248" },
+  { icon: MessageSquare, label: "WhatsApp", value: "Quick Chat", note: "Often answered within 2 hours", href: "https://wa.me/18005559248" },
+  { icon: Users, label: "Partner Portal", value: "Already a partner?", note: "Fast-track quote — 4hr response", href: withBase("/portal") },
+];
+---
+
+<section class="py-16" style="background-color: #F9F7F2;">
+  <div class="container">
+    <div class="grid grid-cols-1 lg:grid-cols-3 gap-10">
+
+      <!-- Multi-step form -->
+      <div class="lg:col-span-2">
+        <div class="bg-white rounded-3xl shadow-lg p-8 sm:p-10">
+          <QuoteForm client:load />
+        </div>
+      </div>
+
+      <!-- Sidebar -->
+      <div class="space-y-5">
+        <div class="bg-white rounded-2xl p-6 border border-gray-100">
+          <h3 class="font-black text-sm uppercase tracking-widest mb-5" style="color: #1A2744;">
+            Other Ways to Reach Us
+          </h3>
+          <div class="space-y-4">
+            {channels.map((c) => {
+              const Icon = c.icon;
+              return (
+                <a href={c.href} class="flex items-start gap-3 group">
+                  <div class="shrink-0 w-7 h-7 flex items-center justify-center">
+                    <Icon size={20} class="text-gray-400 group-hover:text-[#1A2744] transition-colors" />
+                  </div>
+                  <div>
+                    <p class="text-xs text-gray-400 mb-0.5">{c.label}</p>
+                    <p class="text-sm font-semibold group-hover:text-[#1A2744] transition-colors" style="color: #374151;">{c.value}</p>
+                    <p class="text-xs text-gray-400 mt-0.5">{c.note}</p>
+                  </div>
+                </a>
+              );
+            })}
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

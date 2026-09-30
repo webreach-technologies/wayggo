@@ -1,9 +1,12 @@
-﻿---
+---
 import BaseLayout from "../layouts/BaseLayout.astro";
 import PageHero from "../components/sections/PageHero.astro";
-import CoverageMap from "../components/react/CoverageMap";
+import TrustBar from "../components/sections/TrustBar.astro";
+import CoverageMapTeaser from "../components/sections/CoverageMapTeaser.astro";
+import HubGrid from "../components/sections/HubGrid.astro";
+import IconCardGrid from "../components/sections/IconCardGrid.astro";
+import PartnerCTA from "../components/sections/PartnerCTA.astro";
 import { Clipboard, ShieldCheck, Search, Users } from "@lucide/astro";
-import { withBase } from "../lib/url";
 
 const usHubs = [
   { city: "New York City", state: "NY", note: "East Coast hub — JFK, LGA, EWR airports" },
@@ -69,143 +72,52 @@ const vetDetails = [
     subheading="From Vancouver to Miami, from Boston to Los Angeles — WAYGGO Charters' vetted operator network ensures your group is covered in every city on your itinerary. 15 US hubs. 6 Canadian hubs. One contact."
   />
 
-  <!-- Trust numbers -->
-  <section style="background: #FDEA01;">
-    <div class="container">
-      <div class="py-10 grid grid-cols-2 lg:grid-cols-4 gap-0 lg:divide-x divide-[rgba(26,39,68,0.15)]">
-        {[
-          { stat: "500+", label: "Vetted Operators" },
-          { stat: "21", label: "Major Hub Cities" },
-          { stat: "12-Point", label: "Vetting Process" },
-          { stat: "98.7%", label: "On-Time Rate" },
-        ].map((item) => (
-          <div class="text-center px-0 lg:px-8 py-2">
-            <div class="text-3xl lg:text-4xl font-black leading-none mb-1" style="color: #1A2744;" data-counter={item.stat}>{item.stat}</div>
-            <div class="text-xs font-bold uppercase tracking-widest" style="color: rgba(26,39,68,0.55);">{item.label}</div>
-          </div>
-        ))}
-      </div>
-    </div>
-  </section>
+  <TrustBar
+    intro={false}
+    stats={[
+      { value: "500+", label: "Vetted Operators" },
+      { value: "21", label: "Major Hub Cities" },
+      { value: "12", label: "Point Vetting Process" },
+      { value: "98.7%", label: "On-Time Rate" },
+    ]}
+  />
 
-  <!-- Interactive Map -->
-  <section class="py-20" style="background-color: #0D1B3E;">
-    <div class="container">
-      <div class="text-center mb-10">
-        <span class="section-label-white mb-4 inline-flex">Interactive Map</span>
-        <h2 class="text-3xl font-black text-white" style="">
-          Our Hub City Network
-        </h2>
-      </div>
-      <CoverageMap client:only="react" />
-    </div>
-  </section>
+  <CoverageMapTeaser
+    badge="Interactive Map"
+    heading={"Our Hub City\nNetwork"}
+    ctaHref="/contact"
+    ctaLabel="Check Availability"
+  />
 
-  <!-- US Hubs -->
-  <section class="py-20" style="background-color: white;">
-    <div class="container">
-      <div class="text-center mb-12">
-        <span class="section-label">United States</span>
-        <h2 class="text-3xl font-black mt-4" style="color: #1A2744;">
-          US Hub Cities
-        </h2>
-      </div>
+  <HubGrid
+    badge="United States"
+    heading="US Hub Cities"
+    hubs={usHubs.map((h) => ({ city: h.city, code: h.state, note: h.note }))}
+  />
 
-      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
-        {usHubs.map((hub) => (
-          <div class="flex items-start gap-4 p-5 rounded-2xl border border-gray-100 hover:border-[#FDEA01] hover:shadow-md transition-all">
-            <div
-              class="w-10 h-10 rounded-xl flex items-center justify-center flex-shrink-0"
-              style="background-color: #FDEA01;"
-            >
-              <span class="text-xs font-black" style="color: #1A2744;">{hub.state}</span>
-            </div>
-            <div>
-              <h3 class="font-black text-sm" style="color: #1A2744;">{hub.city}</h3>
-              <p class="text-xs text-gray-400 mt-0.5" style="">{hub.note}</p>
-            </div>
-          </div>
-        ))}
-      </div>
-    </div>
-  </section>
+  <HubGrid
+    badge="Canada"
+    heading="Canadian Hub Cities"
+    background="cream"
+    hubs={canadaHubs.map((h) => ({ city: h.city, code: h.prov, note: h.note }))}
+  />
 
-  <!-- Canada Hubs -->
-  <section class="py-20" style="background-color: #F9F7F2;">
-    <div class="container">
-      <div class="text-center mb-12">
-        <span class="section-label">Canada</span>
-        <h2 class="text-3xl font-black mt-4" style="color: #1A2744;">
-          Canadian Hub Cities
-        </h2>
-      </div>
+  <IconCardGrid
+    badge="Quality Assurance"
+    heading="How We Vet Our Operators"
+    subheading="Every operator in our network passes a rigorous 12-point vetting process before their first assignment — and undergoes annual re-certification."
+    items={vetDetails}
+    columns={2}
+  />
 
-      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
-        {canadaHubs.map((hub) => (
-          <div class="flex items-start gap-4 p-5 rounded-2xl bg-white border border-gray-100 hover:border-[#FDEA01] hover:shadow-md transition-all">
-            <div
-              class="w-10 h-10 rounded-xl flex items-center justify-center flex-shrink-0"
-              style="background-color: #FDEA01;"
-            >
-              <span class="text-xs font-black" style="color: #1A2744;">{hub.prov}</span>
-            </div>
-            <div>
-              <h3 class="font-black text-sm" style="color: #1A2744;">{hub.city}</h3>
-              <p class="text-xs text-gray-400 mt-0.5" style="">{hub.note}</p>
-            </div>
-          </div>
-        ))}
-      </div>
-    </div>
-  </section>
-
-  <!-- How We Vet -->
-  <section class="py-20" style="background-color: white;">
-    <div class="container">
-      <div class="text-center mb-12">
-        <span class="section-label">Quality Assurance</span>
-        <h2 class="text-3xl font-black mt-4" style="color: #1A2744;">
-          How We Vet Our Operators
-        </h2>
-        <p class="text-gray-500 mt-3 max-w-xl mx-auto" style="">
-          Every operator in our network passes a rigorous 12-point vetting process before their first assignment — and undergoes annual re-certification.
-        </p>
-      </div>
-
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-        {vetDetails.map((v) => (
-          <div class="flex gap-5 p-7 rounded-2xl border-2 border-gray-100 hover:border-[#FDEA01] transition-all">
-            <div
-              class="w-12 h-12 rounded-xl flex items-center justify-center shrink-0"
-              style="background-color: #FDEA01; color: #1A2744;"
-            >
-              <v.icon size={24} />
-            </div>
-            <div>
-              <h3 class="font-black text-base mb-2" style="color: #1A2744;">{v.title}</h3>
-              <p class="text-sm text-gray-500 leading-relaxed" style="">{v.desc}</p>
-            </div>
-          </div>
-        ))}
-      </div>
-    </div>
-  </section>
-
-  <!-- CTA -->
-  <section class="py-20 diagonal-lines" style="background-color: #1A2744;">
-    <div class="container text-center">
-      <h2 class="text-3xl font-black text-white mb-4" style="">
-        Your City. Our Operator. Zero Guesswork.
-      </h2>
-      <p class="text-white/60 max-w-lg mx-auto mb-8" style="">
-        Tell us your tour cities and we'll confirm operator availability within 24 hours.
-      </p>
-      <div class="flex flex-col sm:flex-row gap-4 justify-center">
-        <a href={withBase("/contact")} class="btn-primary">Request a Quote</a>
-        <a href={withBase("/tour-bus")} class="btn-outline-white">Browse Tour Bus</a>
-      </div>
-    </div>
-  </section>
+  <PartnerCTA
+    badge="Check Coverage"
+    heading="Your City. Our Operator."
+    headingHighlight="Zero Guesswork."
+    subheading="Tell us your tour cities and we'll confirm operator availability within 24 hours."
+    primaryCta={{ label: "Request a Quote", href: "/contact" }}
+    secondaryCta={{ label: "Browse Tour Bus", href: "/tour-bus" }}
+  />
 
   <script>
     import { initCounters } from '../utils/counterAnimation.js';

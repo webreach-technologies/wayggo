@@ -1,0 +1,46 @@
+---
+interface Milestone {
+  year: string;
+  event: string;
+}
+
+interface Props {
+  badge?: string;
+  heading: string;
+  paragraphs: string[];
+  milestones: Milestone[];
+}
+
+const { badge, heading, paragraphs, milestones } = Astro.props;
+---
+
+<section class="py-20" style="background-color: white;">
+  <div class="container">
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+      <div>
+        {badge && <span class="section-label mb-4 inline-flex">{badge}</span>}
+        <h2 class="text-4xl font-black mb-6" style="color: #1A2744;">{heading}</h2>
+        <div class="space-y-5 text-gray-600" style="line-height: 1.8;">
+          {paragraphs.map((p) => <p>{p}</p>)}
+        </div>
+      </div>
+
+      <div>
+        {milestones.map((m, i) => (
+          <div class="flex gap-4">
+            <div class="flex flex-col items-center">
+              <div class="w-10 h-10 rounded-full flex items-center justify-center shrink-0" style="background-color: #FDEA01;">
+                <span class="text-xs font-black" style="color: #1A2744;">{m.year.slice(2)}</span>
+              </div>
+              {i < milestones.length - 1 && <div class="w-px flex-1 my-1" style="background-color: #E5E7EB; min-height: 32px;"></div>}
+            </div>
+            <div class="pb-6">
+              <div class="text-xs font-black uppercase tracking-widest mb-1" style="color: #1A2744;">{m.year}</div>
+              <p class="text-sm text-gray-500 leading-relaxed">{m.event}</p>
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+  </div>
+</section>

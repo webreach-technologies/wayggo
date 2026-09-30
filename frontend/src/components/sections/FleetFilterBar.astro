@@ -1,0 +1,92 @@
+---
+// Pill filter that shows one FleetVehicleRow at a time (rows are matched by id).
+import { Van, Bus, BusFront } from "@lucide/astro";
+
+interface Vehicle {
+  id: string;
+  iconKey: string;
+  name: string;
+}
+
+interface Props {
+  vehicles: Vehicle[];
+}
+
+const { vehicles } = Astro.props;
+
+const vehicleIconComponents: Record<string, typeof Van> = {
+  van: Van,
+  bus: Bus,
+  fullbus: BusFront,
+  motorcoach: BusFront,
+};
+---
+
+<div style="background-color: #F9F7F2; border-bottom: 1px solid #E5E7EB;">
+  <div class="container">
+    <div class="flex overflow-x-auto md:flex-wrap md:justify-center gap-3 py-4" data-fleet-filter-bar>
+      <button type="button" data-fleet-filter="all" class="fleet-filter-btn is-active">
+        All Vehicles
+      </button>
+      {vehicles.map((v) => {
+        const VehicleIcon = vehicleIconComponents[v.iconKey];
+        return (
+          <button type="button" data-fleet-filter={v.id} class="fleet-filter-btn">
+            {VehicleIcon && <VehicleIcon size={16} />}
+            {v.name}
+          </button>
+        );
+      })}
+    </div>
+  </div>
+</div>
+
+<style>
+  .fleet-filter-btn {
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.625rem 1.25rem;
+    border-radius: 9999px;
+    font-size: 0.875rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    transition: all 0.2s;
+    background-color: transparent;
+    color: #1A2744;
+    border: 2px solid #E5E7EB;
+  }
+  .fleet-filter-btn.is-active {
+    background-color: #1A2744;
+    color: white;
+    border-color: #1A2744;
+  }
+</style>
+
+<script>
+  // With the site's <ClientRouter /> (View Transitions) enabled, script tags only
+  // execute once per browser session, so wire the bar up on every page load.
+  function initFleetFilter() {
+    const bar = document.querySelector<HTMLElement>("[data-fleet-filter-bar]");
+    if (!bar || bar.dataset.ready) return;
+    bar.dataset.ready = "1";
+
+    const buttons = Array.from(bar.querySelectorAll<HTMLButtonElement>("[data-fleet-filter]"));
+    const ids = buttons.map((b) => b.dataset.fleetFilter!).filter((id) => id !== "all");
+
+    bar.addEventListener("click", (e) => {
+      const btn = (e.target as HTMLElement).closest<HTMLButtonElement>("[data-fleet-filter]");
+      if (!btn) return;
+      const active = btn.dataset.fleetFilter!;
+      buttons.forEach((b) => b.classList.toggle("is-active", b === btn));
+      ids.forEach((id) => {
+        const row = document.getElementById(id);
+        if (row) row.style.display = active === "all" || active === id ? "" : "none";
+      });
+    });
+  }
+
+  document.addEventListener("astro:page-load", initFleetFilter);
+</script>

@@ -1,0 +1,27 @@
+---
+// Centered badge + heading + optional subheading used at the top of content sections.
+interface Props {
+  badge?: string;
+  heading: string;
+  subheading?: string;
+  /** White text for navy backgrounds. */
+  dark?: boolean;
+}
+
+const { badge, heading, subheading, dark = false } = Astro.props;
+---
+
+<div class="text-center mb-12">
+  {badge && <span class={dark ? "section-label-white" : "section-label"}>{badge}</span>}
+  <h2
+    class:list={["text-3xl lg:text-4xl font-black", { "mt-4": badge }, { "text-white": dark }]}
+    style={dark ? undefined : "color: #1A2744;"}
+  >
+    {heading}
+  </h2>
+  {subheading && (
+    <p class:list={["font-subheading mt-3 max-w-xl mx-auto", dark ? "text-white/60" : "text-gray-500"]}>
+      {subheading}
+    </p>
+  )}
+</div>

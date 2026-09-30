@@ -1,0 +1,50 @@
+---
+import SectionHeading from "./SectionHeading.astro";
+
+interface Column {
+  key: string;
+  label: string;
+  /** How cells in this column render. Defaults to plain text. */
+  variant?: "strong" | "badge" | "muted";
+}
+
+interface Props {
+  badge?: string;
+  heading: string;
+  subheading?: string;
+  columns: Column[];
+  rows: Record<string, string>[];
+  background?: "white" | "cream";
+}
+
+const { badge, heading, subheading, columns, rows, background = "white" } = Astro.props;
+
+const bg = background === "cream" ? "#F9F7F2" : "white";
+---
+
+<section class="py-20" style={`background-color: ${bg};`}>
+  <div class="container">
+    <SectionHeading badge={badge} heading={heading} subheading={subheading} />
+    <div class="overflow-x-auto">
+      <table class="table-clean w-full">
+        <thead>
+          <tr>
+            {columns.map((col) => <th>{col.label}</th>)}
+          </tr>
+        </thead>
+        <tbody>
+          {rows.map((row) => (
+            <tr>
+              {columns.map((col) => (
+                col.variant === "strong" ? <td class="font-semibold" style="color: #1A2744;">{row[col.key]}</td>
+                : col.variant === "badge" ? <td><span class="badge badge-yellow">{row[col.key]}</span></td>
+                : col.variant === "muted" ? <td style="color: #6B7280;">{row[col.key]}</td>
+                : <td>{row[col.key]}</td>
+              ))}
+            </tr>
+          ))}
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>

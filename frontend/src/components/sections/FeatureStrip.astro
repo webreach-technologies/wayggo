@@ -1,0 +1,47 @@
+---
+import type { AstroComponent } from "@lucide/astro";
+
+interface Feature {
+  icon: AstroComponent;
+  title: string;
+  desc: string;
+}
+
+interface Props {
+  heading?: string;
+  text?: string;
+  features?: Feature[];
+}
+
+const { heading, text, features = [] } = Astro.props;
+---
+
+<section class="py-20" style="background-color: #FDEA01;">
+  <div class="container">
+    {(heading || text) && (
+      <div class:list={["max-w-3xl mx-auto text-center", { "mb-10": features.length > 0 }]}>
+        {heading && (
+          <h2 class="text-3xl lg:text-4xl font-black mb-4" style="color: #1A2744;">{heading}</h2>
+        )}
+        {text && (
+          <p class="font-subheading text-lg leading-relaxed" style="color: rgba(26,39,68,0.8);">{text}</p>
+        )}
+      </div>
+    )}
+
+    {features.length > 0 && (
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+        {features.map((item) => {
+          const Icon = item.icon;
+          return (
+            <div>
+              <div class="mb-3 flex justify-center" style="color: #1A2744;"><Icon size={28} stroke-width={1.5} /></div>
+              <h3 class="font-black text-sm mb-1" style="color: #1A2744;">{item.title}</h3>
+              <p class="text-xs" style="color: rgba(26,39,68,0.65);">{item.desc}</p>
+            </div>
+          );
+        })}
+      </div>
+    )}
+  </div>
+</section>

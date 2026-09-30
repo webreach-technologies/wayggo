@@ -1,0 +1,41 @@
+---
+import SectionHeading from "./SectionHeading.astro";
+
+interface Hub {
+  city: string;
+  /** State or province code shown in the yellow chip. */
+  code: string;
+  note: string;
+}
+
+interface Props {
+  badge?: string;
+  heading: string;
+  subheading?: string;
+  hubs: Hub[];
+  background?: "white" | "cream";
+}
+
+const { badge, heading, subheading, hubs, background = "white" } = Astro.props;
+
+const bg = background === "cream" ? "#F9F7F2" : "white";
+---
+
+<section class="py-20" style={`background-color: ${bg};`}>
+  <div class="container">
+    <SectionHeading badge={badge} heading={heading} subheading={subheading} />
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+      {hubs.map((hub) => (
+        <div class="flex items-start gap-4 p-5 rounded-2xl bg-white border border-gray-100 hover:border-[#FDEA01] hover:shadow-md transition-all">
+          <div class="w-10 h-10 rounded-xl flex items-center justify-center shrink-0" style="background-color: #FDEA01;">
+            <span class="text-xs font-black" style="color: #1A2744;">{hub.code}</span>
+          </div>
+          <div>
+            <h3 class="font-black text-sm" style="color: #1A2744;">{hub.city}</h3>
+            <p class="text-xs text-gray-400 mt-0.5">{hub.note}</p>
+          </div>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>

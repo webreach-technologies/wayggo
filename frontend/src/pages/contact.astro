@@ -1,9 +1,8 @@
-﻿---
+---
 import BaseLayout from "../layouts/BaseLayout.astro";
 import PageHero from "../components/sections/PageHero.astro";
-import QuoteForm from "../components/react/QuoteForm";
-import { Mail, Phone, MessageSquare, Users, ChevronDown } from "@lucide/astro";
-import { withBase } from "../lib/url";
+import ContactFormSection from "../components/sections/ContactFormSection.astro";
+import FaqSection from "../components/sections/FaqSection.astro";
 
 const pageURL = new URL(Astro.url.pathname, Astro.site ?? "https://wayggo.com").href;
 const contactPageSchema = {
@@ -12,6 +11,13 @@ const contactPageSchema = {
   name: "Request a Quote — WAYGGO Charters Ground Transportation",
   url: pageURL,
 };
+const faqs = [
+  { q: "Do I need to be a registered partner to request a quote?", a: "No — anyone can request a quote using the form above. However, registered partner agencies receive faster response times (under 4 hours) and additional benefits. Registration is free." },
+  { q: "How far in advance should I book?", a: "We recommend booking at least 4–6 weeks in advance for group sizes over 30. For peak travel seasons (June–September, December–January), 8–12 weeks is preferred. We can sometimes accommodate shorter notice for smaller groups." },
+  { q: "Can you handle multi-city tours with different vehicles in each city?", a: "Absolutely — this is one of our core capabilities. We coordinate different operators and vehicle types across all cities on your itinerary, presenting it as one seamless service with one invoice." },
+  { q: "Do you provide tour guides, or just transportation?", a: "WAYGGO Charters' core service is ground transportation. However, we have a network of licensed guides in major cities and can coordinate guide services alongside transportation on request." },
+  { q: "What currencies do you invoice in?", a: "We invoice primarily in USD. CAD is available for Canada-only bookings. Payments from international operators can be processed in multiple currencies via wire transfer or our payment portal." },
+];
 ---
 
 <BaseLayout
@@ -28,107 +34,8 @@ const contactPageSchema = {
     subheading={'Send us a message below. Our operations team responds within <strong class="text-white">24 hours</strong> with a detailed, itemized proposal — no obligation.'}
   />
 
-  <!-- Form + Info -->
-  <section class="py-16" style="background-color: #F9F7F2;">
-    <div class="container">
-      <div class="grid grid-cols-1 lg:grid-cols-3 gap-10">
+  <ContactFormSection />
 
-        <!-- Multi-step form -->
-        <div class="lg:col-span-2">
-          <div class="bg-white rounded-3xl shadow-lg p-8 sm:p-10">
-            <QuoteForm client:load />
-          </div>
-        </div>
-
-        <!-- Sidebar -->
-        <div class="space-y-5">
-
-          <!-- Contact methods -->
-          <div class="bg-white rounded-2xl p-6 border border-gray-100">
-            <h3 class="font-black text-sm uppercase tracking-widest mb-5" style="color: #1A2744;">
-              Other Ways to Reach Us
-            </h3>
-            <div class="space-y-4">
-              <!-- Email -->
-              <a href="mailto:operations@wayggo.com" class="flex items-start gap-3 group">
-                <div class="flex-shrink-0 w-7 h-7 flex items-center justify-center">
-                  <Mail size={20} class="text-gray-400 group-hover:text-[#1A2744] transition-colors" />
-                </div>
-                <div>
-                  <p class="text-xs text-gray-400 mb-0.5">Email</p>
-                  <p class="text-sm font-semibold group-hover:text-[#1A2744] transition-colors" style="color: #374151;">operations@wayggo.com</p>
-                  <p class="text-xs text-gray-400 mt-0.5">Response within 24 hours</p>
-                </div>
-              </a>
-              <!-- Phone -->
-              <a href="tel:+18005559248" class="flex items-start gap-3 group">
-                <div class="flex-shrink-0 w-7 h-7 flex items-center justify-center">
-                  <Phone size={20} class="text-gray-400 group-hover:text-[#1A2744] transition-colors" />
-                </div>
-                <div>
-                  <p class="text-xs text-gray-400 mb-0.5">Phone</p>
-                  <p class="text-sm font-semibold group-hover:text-[#1A2744] transition-colors" style="color: #374151;">+1 (800) 555-9248</p>
-                  <p class="text-xs text-gray-400 mt-0.5">Mon–Fri, 8am–8pm ET</p>
-                </div>
-              </a>
-              <!-- WhatsApp -->
-              <a href="https://wa.me/18005559248" class="flex items-start gap-3 group">
-                <div class="flex-shrink-0 w-7 h-7 flex items-center justify-center">
-                  <MessageSquare size={20} class="text-gray-400 group-hover:text-[#1A2744] transition-colors" />
-                </div>
-                <div>
-                  <p class="text-xs text-gray-400 mb-0.5">WhatsApp</p>
-                  <p class="text-sm font-semibold group-hover:text-[#1A2744] transition-colors" style="color: #374151;">Quick Chat</p>
-                  <p class="text-xs text-gray-400 mt-0.5">Often answered within 2 hours</p>
-                </div>
-              </a>
-              <!-- Partner Portal -->
-              <a href={withBase("/portal")} class="flex items-start gap-3 group">
-                <div class="flex-shrink-0 w-7 h-7 flex items-center justify-center">
-                  <Users size={20} class="text-gray-400 group-hover:text-[#1A2744] transition-colors" />
-                </div>
-                <div>
-                  <p class="text-xs text-gray-400 mb-0.5">Partner Portal</p>
-                  <p class="text-sm font-semibold group-hover:text-[#1A2744] transition-colors" style="color: #374151;">Already a partner?</p>
-                  <p class="text-xs text-gray-400 mt-0.5">Fast-track quote — 4hr response</p>
-                </div>
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- FAQ -->
-  <section class="py-16" style="background-color: white;">
-    <div class="container">
-      <div class="text-center mb-10">
-        <span class="section-label">Common Questions</span>
-        <h2 class="text-3xl font-black mt-4" style="color: #1A2744;">
-          Frequently Asked Questions
-        </h2>
-      </div>
-      <div class="max-w-3xl mx-auto space-y-4">
-        {[
-          { q: "Do I need to be a registered partner to request a quote?", a: "No — anyone can request a quote using the form above. However, registered partner agencies receive faster response times (under 4 hours) and additional benefits. Registration is free." },
-          { q: "How far in advance should I book?", a: "We recommend booking at least 4–6 weeks in advance for group sizes over 30. For peak travel seasons (June–September, December–January), 8–12 weeks is preferred. We can sometimes accommodate shorter notice for smaller groups." },
-          { q: "Can you handle multi-city tours with different vehicles in each city?", a: "Absolutely — this is one of our core capabilities. We coordinate different operators and vehicle types across all cities on your itinerary, presenting it as one seamless service with one invoice." },
-          { q: "Do you provide tour guides, or just transportation?", a: "WAYGGO Charters' core service is ground transportation. However, we have a network of licensed guides in major cities and can coordinate guide services alongside transportation on request." },
-          { q: "What currencies do you invoice in?", a: "We invoice primarily in USD. CAD is available for Canada-only bookings. Payments from international operators can be processed in multiple currencies via wire transfer or our payment portal." },
-        ].map((faq) => (
-          <details class="rounded-2xl border border-gray-100 group" style="background: white;">
-            <summary class="flex items-center justify-between px-6 py-5 cursor-pointer select-none">
-              <span class="font-semibold text-sm pr-4" style="color: #1A2744;">{faq.q}</span>
-              <ChevronDown size={20} class="flex-shrink-0 transition-transform group-open:rotate-180" style="color: #6B7280;" />
-            </summary>
-            <div class="px-6 pb-5">
-              <p class="text-sm text-gray-500 leading-relaxed" style="">{faq.a}</p>
-            </div>
-          </details>
-        ))}
-      </div>
-    </div>
-  </section>
+  <FaqSection faqs={faqs} />
 
 </BaseLayout>

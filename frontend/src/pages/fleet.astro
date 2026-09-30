@@ -1,21 +1,13 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
 import PageHero from "../components/sections/PageHero.astro";
+import FleetFilterBar from "../components/sections/FleetFilterBar.astro";
 import FleetVehicleRow from "../components/sections/FleetVehicleRow.astro";
+import PartnerCTA from "../components/sections/PartnerCTA.astro";
 import luxuryvanImg from "../assets/fleet/luxuryvan.png";
 import minibusImg from "../assets/fleet/minibus.png";
 import fullsizebusImg from "../assets/fleet/fullsizebus.png";
 import motorcoachImg from "../assets/fleet/motorcoach.png";
-import { Van, Bus, BusFront, Settings2 } from "@lucide/astro";
-import { withBase } from "../lib/url";
-
-// Vehicle icon components (rendered directly in the filter bar)
-const vehicleIconComponents: Record<string, typeof Van> = {
-  van: Van,
-  bus: Bus,
-  fullbus: BusFront,
-  motorcoach: BusFront,
-};
 
 const vehicles = [
   {
@@ -106,32 +98,7 @@ const vehicles = [
     subheading="6 passengers or 56. Airport transfer or 12-day cross-country tour. WAYGGO Charters sources the exact vehicle your itinerary demands — all meticulously maintained, fully insured, and operated by vetted professionals."
   />
 
-  <!-- Filter bar -->
-  <div style="background-color: #F9F7F2; border-bottom: 1px solid #E5E7EB;">
-    <div class="container">
-      <div class="flex overflow-x-auto md:flex-wrap md:justify-center gap-3 py-4">
-        <button
-          id="fleet-btn-all"
-          onclick="fleetShowAll()"
-          class="shrink-0 flex items-center gap-2 px-5 py-2.5 rounded-full text-sm font-bold uppercase tracking-widest transition-all"
-          style="background-color: #1A2744; color: white; border: 2px solid #1A2744; "
-        >
-          All Vehicles
-        </button>
-        {vehicles.map((v) => (
-          <button
-            id={`fleet-btn-${v.id}`}
-            onclick={`fleetShow('${v.id}')`}
-            class="shrink-0 flex items-center gap-2 px-5 py-2.5 rounded-full text-sm font-bold uppercase tracking-widest transition-all"
-            style="background-color: transparent; color: #1A2744; border: 2px solid #E5E7EB; "
-          >
-            {(() => { const VehicleIcon = vehicleIconComponents[v.iconKey]; return <VehicleIcon size={16} />; })()}
-            {v.name}
-          </button>
-        ))}
-      </div>
-    </div>
-  </div>
+  <FleetFilterBar vehicles={vehicles} />
 
   <!-- Vehicle Sections -->
   {vehicles.map((v, i) => (
@@ -149,83 +116,13 @@ const vehicles = [
     />
   ))}
 
-  <!-- Custom Fleet CTA -->
-  <section class="py-20 diagonal-lines" style="background-color: #1A2744;">
-    <div class="container text-center">
-      <div
-        class="inline-flex items-center justify-center w-16 h-16 rounded-2xl mb-6"
-        style="background-color: #FDEA01;"
-      >
-        <Settings2 size={28} color="#1A2744" stroke-width={2.5} />
-      </div>
-      <h2 class="text-3xl lg:text-4xl font-black text-white mb-4" style="">
-        Can't Find the Right Fit?
-      </h2>
-      <p class="text-white/60 max-w-xl mx-auto mb-8 leading-relaxed" style="">
-        Large delegations, back-to-back multi-city legs, mixed fleet for different group sizes — we build custom configurations for complex itineraries every day.
-      </p>
-      <div class="flex flex-col sm:flex-row gap-4 justify-center">
-        <a href={withBase("/contact")} class="btn-primary">Discuss Custom Requirements</a>
-        <a href={withBase("/tour-bus")} class="btn-outline-white">Browse Tour Bus</a>
-      </div>
-    </div>
-  </section>
-
-  <script>
-    // With the site's <ClientRouter /> (View Transitions) enabled, script tags only
-    // execute once per browser session. window.fleetShowAll/fleetShow are safe to
-    // define once (they do fresh DOM lookups on every call), but wrapping the whole
-    // setup in astro:page-load keeps this file consistent with the same pattern used
-    // for the filter bar in tour-bus.astro.
-    document.addEventListener('astro:page-load', initOnPageNav);
-
-    function initOnPageNav() {
-      (window as any).fleetShowAll = fleetShowAll;
-      (window as any).fleetShow = fleetShow;
-    }
-
-    const vehicleIds = ['van', 'minibus', 'mini-coach', 'motor-coach'];
-
-    function fleetSetActive(activeId: string) {
-      // Reset all vehicle buttons
-      vehicleIds.forEach((id) => {
-        const btn = document.getElementById('fleet-btn-' + id);
-        if (!btn) return;
-        btn.style.backgroundColor = 'transparent';
-        btn.style.color = '#1A2744';
-        btn.style.borderColor = '#E5E7EB';
-      });
-      // Reset "All" button
-      const allBtn = document.getElementById('fleet-btn-all');
-      if (!allBtn) return;
-      allBtn.style.backgroundColor = 'transparent';
-      allBtn.style.color = '#1A2744';
-      allBtn.style.borderColor = '#E5E7EB';
-
-      // Activate target
-      const target = activeId === 'all' ? allBtn : document.getElementById('fleet-btn-' + activeId);
-      if (target) {
-        target.style.backgroundColor = '#1A2744';
-        target.style.color = 'white';
-        target.style.borderColor = '#1A2744';
-      }
-    }
-
-    function fleetShowAll() {
-      vehicleIds.forEach((id) => {
-        const section = document.getElementById(id);
-        if (section) section.style.display = '';
-      });
-      fleetSetActive('all');
-    }
-
-    function fleetShow(id: string) {
-      vehicleIds.forEach((vid) => {
-        const section = document.getElementById(vid);
-        if (section) section.style.display = vid === id ? '' : 'none';
-      });
-      fleetSetActive(id);
-    }
-  </script>
+  <PartnerCTA
+    badge="Custom Configurations"
+    heading="Can't Find"
+    headingHighlight="the Right Fit?"
+    subheading="Large delegations, back-to-back multi-city legs, mixed fleet for different group sizes — we build custom configurations for complex itineraries every day."
+    primaryCta={{ label: "Discuss Custom Requirements", href: "/contact" }}
+    secondaryCta={{ label: "Browse Tour Bus", href: "/tour-bus" }}
+  />
 
 </BaseLayout>

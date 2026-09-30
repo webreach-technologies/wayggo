@@ -1,0 +1,36 @@
+---
+import { ChevronDown } from "@lucide/astro";
+import SectionHeading from "./SectionHeading.astro";
+
+interface Faq {
+  q: string;
+  a: string;
+}
+
+interface Props {
+  badge?: string;
+  heading?: string;
+  faqs: Faq[];
+}
+
+const { badge = "Common Questions", heading = "Frequently Asked Questions", faqs } = Astro.props;
+---
+
+<section class="py-16" style="background-color: white;">
+  <div class="container">
+    <SectionHeading badge={badge} heading={heading} />
+    <div class="max-w-3xl mx-auto space-y-4">
+      {faqs.map((faq) => (
+        <details class="rounded-2xl border border-gray-100 group" style="background: white;">
+          <summary class="flex items-center justify-between px-6 py-5 cursor-pointer select-none">
+            <span class="font-semibold text-sm pr-4" style="color: #1A2744;">{faq.q}</span>
+            <ChevronDown size={20} class="shrink-0 transition-transform group-open:rotate-180" style="color: #6B7280;" />
+          </summary>
+          <div class="px-6 pb-5">
+            <p class="text-sm text-gray-500 leading-relaxed">{faq.a}</p>
+          </div>
+        </details>
+      ))}
+    </div>
+  </div>
+</section>

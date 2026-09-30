@@ -1,0 +1,51 @@
+---
+import type { AstroComponent } from "@lucide/astro";
+import SectionHeading from "./SectionHeading.astro";
+
+interface Item {
+  icon: AstroComponent;
+  title: string;
+  desc: string;
+  /** Optional badge under the description, e.g. a recommended vehicle. */
+  tag?: string;
+}
+
+interface Props {
+  badge?: string;
+  heading: string;
+  subheading?: string;
+  items: Item[];
+  columns?: 2 | 3;
+  background?: "white" | "cream";
+}
+
+const { badge, heading, subheading, items, columns = 3, background = "white" } = Astro.props;
+
+const bg = background === "cream" ? "#F9F7F2" : "white";
+const gridClass = columns === 2 ? "md:grid-cols-2" : "md:grid-cols-2 lg:grid-cols-3";
+// On white, cards need a border to separate them from the page.
+const cardBorder = background === "white" ? "border-2 border-gray-100 hover:border-[#FDEA01] transition-all" : "";
+---
+
+<section class="py-20" style={`background-color: ${bg};`}>
+  <div class="container">
+    <SectionHeading badge={badge} heading={heading} subheading={subheading} />
+
+    <div class={`grid grid-cols-1 ${gridClass} gap-6`}>
+      {items.map((item) => {
+        const Icon = item.icon;
+        return (
+          <div class={`bg-white rounded-2xl p-7 card-hover ${cardBorder}`}>
+            <div class="w-12 h-12 rounded-xl flex items-center justify-center mb-4"
+              style="background-color: #FDEA01; color: #1A2744;">
+              <Icon size={24} stroke-width={2} />
+            </div>
+            <h3 class="text-lg font-black mb-2" style="color: #1A2744;">{item.title}</h3>
+            <p class="text-sm text-gray-500 leading-relaxed">{item.desc}</p>
+            {item.tag && <span class="badge badge-navy mt-4 inline-flex">{item.tag}</span>}
+          </div>
+        );
+      })}
+    </div>
+  </div>
+</section>

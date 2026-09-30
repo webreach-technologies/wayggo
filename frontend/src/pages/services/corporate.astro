@@ -1,9 +1,12 @@
 ---
 import BaseLayout from "../../layouts/BaseLayout.astro";
-import { Image } from "astro:assets";
+import PageHero from "../../components/sections/PageHero.astro";
+import IconCardGrid from "../../components/sections/IconCardGrid.astro";
+import TableSection from "../../components/sections/TableSection.astro";
+import HowItWorks from "../../components/sections/HowItWorks.astro";
+import PartnerCTA from "../../components/sections/PartnerCTA.astro";
 import heroImg from "../../assets/tourtype/Corporate & Convention Travel.png";
 import { Send, RefreshCw, Award, Clipboard, Moon, FileText } from "@lucide/astro";
-import { withBase } from "../../lib/url";
 
 const conventions = [
   { name: "CES — Consumer Electronics Show", city: "Las Vegas, NV", months: "January", size: "Up to 120,000 attendees", vehicle: "Motorcoach fleet" },
@@ -15,36 +18,12 @@ const conventions = [
 ];
 
 const services = [
-  {
-    icon: Send,
-    title: "Airport Delegation Pickup",
-    desc: "Coordinated arrivals across multiple flights, terminals, and airlines — zero delegates left behind.",
-  },
-  {
-    icon: RefreshCw,
-    title: "Shuttle Loop Management",
-    desc: "Continuous hotel-to-venue loops timed to session breaks, with real-time adjustments.",
-  },
-  {
-    icon: Award,
-    title: "VIP Executive Transfer",
-    desc: "Luxury van service for C-suite delegates, speakers, and VIP guests.",
-  },
-  {
-    icon: Clipboard,
-    title: "On-Site Coordinator",
-    desc: "A WAYGGO Charters coordinator on the ground for groups of 50+ delegates.",
-  },
-  {
-    icon: Moon,
-    title: "Evening Event Transport",
-    desc: "After-hours gala and dinner transport with precise scheduling.",
-  },
-  {
-    icon: FileText,
-    title: "Consolidated Invoicing",
-    desc: "One invoice per delegation — simplified billing for corporate travel managers.",
-  },
+  { icon: Send, title: "Airport Delegation Pickup", desc: "Coordinated arrivals across multiple flights, terminals, and airlines — zero delegates left behind." },
+  { icon: RefreshCw, title: "Shuttle Loop Management", desc: "Continuous hotel-to-venue loops timed to session breaks, with real-time adjustments." },
+  { icon: Award, title: "VIP Executive Transfer", desc: "Luxury van service for C-suite delegates, speakers, and VIP guests." },
+  { icon: Clipboard, title: "On-Site Coordinator", desc: "A WAYGGO Charters coordinator on the ground for groups of 50+ delegates." },
+  { icon: Moon, title: "Evening Event Transport", desc: "After-hours gala and dinner transport with precise scheduling." },
+  { icon: FileText, title: "Consolidated Invoicing", desc: "One invoice per delegation — simplified billing for corporate travel managers." },
 ];
 
 const pageURL = new URL(Astro.url.pathname, Astro.site ?? "https://wayggo.com").href;
@@ -67,95 +46,42 @@ const serviceSchema = {
 >
   <script is:inline type="application/ld+json" set:html={JSON.stringify(serviceSchema)} />
 
-  <section class="relative py-24 overflow-hidden" style="background-color: #1A2744;">
-    <Image
-      src={heroImg}
-      alt="Corporate and convention group transportation — WAYGGO Charters"
-      width={1600}
-      height={600}
-      quality=25
-      loading="eager"
-      class="absolute inset-0 w-full h-full object-cover opacity-25"
-    />
-    <div class="absolute inset-0 diagonal-lines pointer-events-none" />
-    <div class="container relative z-10">
-      <div class="max-w-3xl">
-        <span class="section-label-white mb-5 inline-flex">For Corporate Operators</span>
-        <h1 class="text-5xl lg:text-6xl font-black text-white mb-5">
-          Corporate &<br />
-          <span style="color: #FDEA01;">Convention Travel</span>
-        </h1>
-        <p class="text-white/65 text-lg leading-relaxed max-w-2xl mb-8">
-          When your delegation lands in North America, every minute counts. WAYGGO Charters delivers precision ground logistics for corporate groups, industry conventions, and executive travel programs — managing complexity so your clients experience nothing but seamless movement.
-        </p>
-        <a href={withBase("/contact")} class="btn-primary">Request Corporate Quote</a>
-      </div>
-    </div>
-  </section>
+  <PageHero
+    badge="For Corporate Operators"
+    heading={'Corporate &amp;<br /><span style="color: #FDEA01;">Convention Travel</span>'}
+    subheading="When your delegation lands in North America, every minute counts. WAYGGO Charters delivers precision ground logistics for corporate groups, industry conventions, and executive travel programs — managing complexity so your clients experience nothing but seamless movement."
+    image={heroImg}
+    imageAlt="Corporate and convention group transportation — WAYGGO Charters"
+    cta={{ label: "Request Corporate Quote", href: "/contact" }}
+  />
 
-  <section class="py-20" style="background-color: #F9F7F2;">
-    <div class="container">
-      <div class="text-center mb-12">
-        <span class="section-label">Our Services</span>
-        <h2 class="text-4xl font-black mt-4" style="color: #1A2744;">Complete Corporate Transport Solutions</h2>
-      </div>
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
-        {services.map((s) => {
-          const Icon = s.icon;
-          return (
-            <div class="bg-white rounded-2xl p-6 card-hover">
-              <div class="mb-4" style="color: #1A2744;"><Icon size={28} stroke-width={1.5} /></div>
-              <h3 class="text-base font-black mb-2" style="color: #1A2744;">{s.title}</h3>
-              <p class="text-sm text-gray-500 leading-relaxed">{s.desc}</p>
-            </div>
-          );
-        })}
-      </div>
-    </div>
-  </section>
+  <IconCardGrid
+    badge="Our Services"
+    heading="Complete Corporate Transport Solutions"
+    items={services}
+  />
 
-  <section class="py-20" style="background-color: white;">
-    <div class="container">
-      <div class="text-center mb-12">
-        <span class="section-label">Event Experience</span>
-        <h2 class="text-4xl font-black mt-4" style="color: #1A2744;">Major Conventions We Serve</h2>
-      </div>
-      <div class="overflow-x-auto">
-        <table class="table-clean w-full">
-          <thead>
-            <tr>
-              <th>Convention</th>
-              <th>City</th>
-              <th>Month</th>
-              <th>Recommended Vehicle</th>
-            </tr>
-          </thead>
-          <tbody>
-            {conventions.map((c) => (
-              <tr>
-                <td class="font-semibold" style="color: #1A2744;">{c.name}</td>
-                <td>{c.city}</td>
-                <td><span class="badge badge-yellow">{c.months}</span></td>
-                <td style="color: #6B7280;">{c.vehicle}</td>
-              </tr>
-            ))}
-          </tbody>
-        </table>
-      </div>
-    </div>
-  </section>
+  <TableSection
+    badge="Event Experience"
+    heading="Major Conventions We Serve"
+    background="cream"
+    columns={[
+      { key: "name", label: "Convention", variant: "strong" },
+      { key: "city", label: "City" },
+      { key: "months", label: "Month", variant: "badge" },
+      { key: "vehicle", label: "Recommended Vehicle", variant: "muted" },
+    ]}
+    rows={conventions}
+  />
 
-  <section class="py-16 diagonal-lines" style="background-color: #1A2744;">
-    <div class="container text-center">
-      <h2 class="text-3xl font-black text-white mb-4">Planning a Corporate Tour or Convention?</h2>
-      <p class="text-white/60 max-w-lg mx-auto mb-8">
-        Submit your delegation size, convention dates, and hotel locations. We'll build a precision transport plan within 24 hours.
-      </p>
-      <div class="flex flex-col sm:flex-row gap-4 justify-center">
-        <a href={withBase("/contact")} class="btn-primary">Request a Corporate Quote</a>
-        <a href={withBase("/portal")} class="btn-outline-white">Register as Corporate Partner</a>
-      </div>
-    </div>
-  </section>
+  <HowItWorks />
 
+  <PartnerCTA
+    badge="Corporate Travel"
+    heading="Planning a Corporate"
+    headingHighlight="Tour or Convention?"
+    subheading="Submit your delegation size, convention dates, and hotel locations. We'll build a precision transport plan within 24 hours."
+    primaryCta={{ label: "Request a Corporate Quote", href: "/contact" }}
+    secondaryCta={{ label: "Register as Corporate Partner", href: "/portal" }}
+  />
 </BaseLayout>

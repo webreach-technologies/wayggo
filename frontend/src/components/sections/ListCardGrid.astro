@@ -1,0 +1,68 @@
+---
+import SectionHeading from "./SectionHeading.astro";
+
+interface Card {
+  /** Small badge above the title. */
+  eyebrow?: string;
+  title: string;
+  subtitle?: string;
+  desc?: string;
+  /** Bulleted list, e.g. highlights or stops. */
+  points?: string[];
+  /** Footer line, e.g. { label: "Vehicle", value: "Minibus" }. */
+  meta?: { label: string; value: string };
+  /** Footer badge, right-aligned. */
+  tag?: string;
+}
+
+interface Props {
+  badge?: string;
+  heading: string;
+  subheading?: string;
+  cards: Card[];
+  background?: "white" | "cream";
+}
+
+const { badge, heading, subheading, cards, background = "white" } = Astro.props;
+
+const bg = background === "cream" ? "#F9F7F2" : "white";
+---
+
+<section class="py-20" style={`background-color: ${bg};`}>
+  <div class="container">
+    <SectionHeading badge={badge} heading={heading} subheading={subheading} />
+
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+      {cards.map((card) => (
+        <div class="flex flex-col bg-white border-2 border-gray-100 rounded-2xl p-6 card-hover hover:border-[#FDEA01] transition-all">
+          {card.eyebrow && (
+            <span class="badge badge-navy mb-3 self-start" style="font-size: 0.65rem;">{card.eyebrow}</span>
+          )}
+          <h3 class="text-lg font-black" style="color: #1A2744;">{card.title}</h3>
+          {card.subtitle && <p class="text-xs text-gray-400 mt-1">{card.subtitle}</p>}
+          {card.desc && <p class="text-sm text-gray-500 leading-relaxed mt-3">{card.desc}</p>}
+          {card.points && (
+            <ul class="space-y-1.5 mt-4">
+              {card.points.map((point) => (
+                <li class="flex items-center gap-2 text-sm text-gray-500">
+                  <span class="w-1.5 h-1.5 rounded-full shrink-0" style="background: #FDEA01;"></span>
+                  {point}
+                </li>
+              ))}
+            </ul>
+          )}
+          {(card.meta || card.tag) && (
+            <div class="mt-auto pt-4">
+              <div class="pt-4 border-t border-gray-100 flex items-center justify-between gap-3 text-xs">
+                {card.meta && (
+                  <span class="text-gray-400">{card.meta.label}: <strong class="text-gray-700">{card.meta.value}</strong></span>
+                )}
+                {card.tag && <span class="badge badge-navy">{card.tag}</span>}
+              </div>
+            </div>
+          )}
+        </div>
+      ))}
+    </div>
+  </div>
+</section>

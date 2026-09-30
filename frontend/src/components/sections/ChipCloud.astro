@@ -1,0 +1,27 @@
+---
+import SectionHeading from "./SectionHeading.astro";
+
+interface Props {
+  badge?: string;
+  heading: string;
+  subheading?: string;
+  items: string[];
+  background?: "white" | "cream";
+}
+
+const { badge, heading, subheading, items, background = "cream" } = Astro.props;
+
+const bg = background === "cream" ? "#F9F7F2" : "white";
+---
+
+<section class="py-20" style={`background-color: ${bg};`}>
+  <div class="container">
+    <SectionHeading badge={badge} heading={heading} subheading={subheading} />
+    <div class="flex flex-wrap gap-3 justify-center">
+      {items.map((item) => (
+        <span class="px-5 py-2.5 rounded-full border-2 font-semibold text-sm bg-white transition-all hover:border-[#FDEA01]"
+          style="border-color: #E5E7EB; color: #1A2744;">{item}</span>
+      ))}
+    </div>
+  </div>
+</section>
