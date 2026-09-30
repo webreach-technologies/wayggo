@@ -53,8 +53,8 @@ const cyclingWords = [
 ---
 
 <section
-  class="relative flex items-center diagonal-lines overflow-hidden"
-  style="background-color: #1A2744; min-height: calc(100vh - 108px);"
+  class="hero-section relative flex items-center diagonal-lines overflow-hidden"
+  style="background-color: #1A2744;"
 >
   <div class="absolute top-0 right-0 w-150 h-150 rounded-full opacity-10 blur-3xl pointer-events-none"
     style="background: radial-gradient(circle, #FDEA01 0%, transparent 70%); transform: translate(30%, -30%);"/>
@@ -102,6 +102,12 @@ const cyclingWords = [
 </section>
 
 <style>
+  /* Full screen below the header; a little shorter on desktop */
+  .hero-section { min-height: calc(100vh - 108px); }
+  @media (min-width: 1024px) {
+    .hero-section { min-height: calc(100vh - 148px); }
+  }
+
   /* ── Cycling word track ── */
   .word-track {
     display: inline-block;
