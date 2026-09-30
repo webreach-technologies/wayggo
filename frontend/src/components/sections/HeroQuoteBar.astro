@@ -3,6 +3,7 @@
 // Same native-form + fake client-side "submitted" swap as QuickQuoteModal —
 // no React island needed for a single flat form.
 import { Send, Check } from "@lucide/astro";
+import DateTimeField from "../react/DateTimeField";
 ---
 
 <section class="hqb-section">
@@ -32,20 +33,20 @@ import { Send, Check } from "@lucide/astro";
             <input id="hqb-pax" name="passengers" type="number" min="1" required placeholder="e.g. 45" />
           </div>
           <div class="hqb-field">
-            <label for="hqb-pickup">Pickup Location *</label>
-            <input id="hqb-pickup" name="pickup" type="text" required placeholder="e.g. New York, NY" />
+            <label for="hqb-pickup">Full Pickup Address *</label>
+            <input id="hqb-pickup" name="pickup" type="text" required placeholder="Street, city, state / province" />
           </div>
           <div class="hqb-field">
-            <label for="hqb-pickup-date">Pickup Date *</label>
-            <input id="hqb-pickup-date" name="pickupDate" type="date" required />
+            <label for="hqb-pickup-date">Pickup Date &amp; Time *</label>
+            <DateTimeField client:visible id="hqb-pickup-date" name="pickupDateTime" placeholder="Select date & time" required />
           </div>
           <div class="hqb-field">
-            <label for="hqb-dropoff">Destination Location *</label>
-            <input id="hqb-dropoff" name="destination" type="text" required placeholder="e.g. Washington, DC" />
+            <label for="hqb-dropoff">Full Destination Address *</label>
+            <input id="hqb-dropoff" name="destination" type="text" required placeholder="Street, city, state / province" />
           </div>
           <div class="hqb-field">
-            <label for="hqb-return-date">Return Date</label>
-            <input id="hqb-return-date" name="returnDate" type="date" />
+            <label for="hqb-return-date">Return Date &amp; Time</label>
+            <DateTimeField client:visible id="hqb-return-date" name="returnDateTime" placeholder="Select date & time" minFrom="pickupDateTime" />
           </div>
           <div class="hqb-field hqb-field-wide">
             <label for="hqb-itinerary">Brief Itinerary</label>
@@ -145,8 +146,14 @@ import { Send, Check } from "@lucide/astro";
     box-shadow: 0 0 0 3px rgba(26, 39, 68, 0.08);
   }
 
-  .hqb-field input:invalid.hqb-touched {
-    border-color: #EF4444;
+  .hqb-field input:invalid.hqb-touched,
+  .hqb-field :global([data-dtf][data-invalid] input) {
+    border-color: #EF4444 !important;
+  }
+
+  .hqb-field :global(.dtf-wrapper) {
+    display: block;
+    width: 100%;
   }
 
   .hqb-submit {
@@ -196,18 +203,20 @@ import { Send, Check } from "@lucide/astro";
     const successView = document.querySelector("[data-hqb-success-view]") as HTMLElement;
     const successMsg = document.querySelector("[data-hqb-success-msg]") as HTMLElement;
 
-    const pickupDate = form.querySelector("#hqb-pickup-date") as HTMLInputElement;
-    const returnDate = form.querySelector("#hqb-return-date") as HTMLInputElement;
-    pickupDate.min = returnDate.min = new Date().toISOString().split("T")[0];
-    // Return can't be before pickup.
-    pickupDate.addEventListener("change", () => {
-      if (pickupDate.value) returnDate.min = pickupDate.value;
-    });
 
     form.addEventListener("submit", (e) => {
       e.preventDefault();
       form.querySelectorAll("input").forEach((el) => el.classList.add("hqb-touched"));
-      if (!form.checkValidity()) return;
+      // Date-time pickers are React islands with read-only inputs, which
+      // native validation skips — check their hidden value instead.
+      let pickersValid = true;
+      form.querySelectorAll<HTMLElement>("[data-dtf][data-required]").forEach((wrap) => {
+        const hidden = wrap.querySelector('input[type="hidden"]') as HTMLInputElement | null;
+        if (hidden?.value) return;
+        wrap.setAttribute("data-invalid", "");
+        pickersValid = false;
+      });
+      if (!form.checkValidity() || !pickersValid) return;
 
       const email = (form.querySelector("#hqb-email") as HTMLInputElement).value.trim();
       successMsg.textContent = `Thanks — we've received your request and will send a quote to ${email} within 24 hours.`;
