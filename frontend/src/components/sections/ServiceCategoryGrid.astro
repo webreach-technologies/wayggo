@@ -24,7 +24,7 @@ const { categories } = Astro.props;
       {categories.map((cat) => (
         <a
           href={withBase(cat.href)}
-          class="group bg-white rounded-2xl overflow-hidden card-hover border-2 border-transparent hover:border-[#FDEA01] transition-all duration-300"
+          class="group bg-white rounded-2xl overflow-hidden card-hover border-2 border-transparent hover:border-yellow transition-all duration-300"
         >
           <div class="p-7 pb-0">
             <div class="text-4xl mb-4">{cat.icon}</div>
