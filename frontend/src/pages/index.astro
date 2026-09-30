@@ -1,6 +1,7 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
 import HeroSection from "../components/sections/HeroSection.astro";
+import HeroQuoteBar from "../components/sections/HeroQuoteBar.astro";
 import TrustBar from "../components/sections/TrustBar.astro";
 import HowItWorks from "../components/sections/HowItWorks.astro";
 import FleetOverview from "../components/sections/FleetOverview.astro";
@@ -26,6 +27,7 @@ const websiteSchema = {
   <script is:inline type="application/ld+json" set:html={JSON.stringify(websiteSchema)} />
   <HeroSection />
   <TrustBar />
+  <HeroQuoteBar />
   <HowItWorks />
   <FleetOverview />
   <TourTypes />

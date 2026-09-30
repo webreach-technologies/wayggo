@@ -1,0 +1,221 @@
+---
+// Inline quick-quote strip that sits below the homepage trust bar.
+// Same native-form + fake client-side "submitted" swap as QuickQuoteModal —
+// no React island needed for a single flat form.
+import { Send, Check } from "@lucide/astro";
+---
+
+<section class="hqb-section">
+  <div class="container">
+    <div class="hqb-card">
+      <div data-hqb-form-view>
+        <div class="hqb-head">
+          <h2 class="hqb-title">Get Quick Quote</h2>
+          <p class="hqb-sub">Tell us the basics and our operations team replies within 24 hours.</p>
+        </div>
+
+        <form class="hqb-form" data-hqb-form novalidate>
+          <div class="hqb-field">
+            <label for="hqb-name">Name *</label>
+            <input id="hqb-name" name="name" type="text" required placeholder="Jane Smith" />
+          </div>
+          <div class="hqb-field">
+            <label for="hqb-email">Email *</label>
+            <input id="hqb-email" name="email" type="email" required placeholder="you@agency.com" />
+          </div>
+          <div class="hqb-field">
+            <label for="hqb-phone">Phone *</label>
+            <input id="hqb-phone" name="phone" type="tel" required placeholder="+1 416 555 0123" />
+          </div>
+          <div class="hqb-field">
+            <label for="hqb-pax">Passengers *</label>
+            <input id="hqb-pax" name="passengers" type="number" min="1" required placeholder="e.g. 45" />
+          </div>
+          <div class="hqb-field">
+            <label for="hqb-pickup">Pickup Location *</label>
+            <input id="hqb-pickup" name="pickup" type="text" required placeholder="e.g. New York, NY" />
+          </div>
+          <div class="hqb-field">
+            <label for="hqb-pickup-date">Pickup Date *</label>
+            <input id="hqb-pickup-date" name="pickupDate" type="date" required />
+          </div>
+          <div class="hqb-field">
+            <label for="hqb-dropoff">Destination Location *</label>
+            <input id="hqb-dropoff" name="destination" type="text" required placeholder="e.g. Washington, DC" />
+          </div>
+          <div class="hqb-field">
+            <label for="hqb-return-date">Return Date</label>
+            <input id="hqb-return-date" name="returnDate" type="date" />
+          </div>
+          <div class="hqb-field hqb-field-wide">
+            <label for="hqb-itinerary">Brief Itinerary</label>
+            <input id="hqb-itinerary" name="itinerary" type="text" placeholder="Stops, timings, luggage, special requests..." />
+          </div>
+          <button type="submit" class="btn-primary hqb-submit">
+            Get Quote
+            <Send size={16} stroke-width={2} />
+          </button>
+        </form>
+      </div>
+
+      <div class="hqb-success" data-hqb-success-view hidden>
+        <div class="hqb-success-icon">
+          <Check size={24} color="#1A2744" stroke-width={3} />
+        </div>
+        <p class="hqb-success-msg" data-hqb-success-msg>
+          Thanks — we've received your request and will follow up within 24 hours.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  .hqb-section {
+    background-color: #1A2744;
+    padding: 3rem 0;
+  }
+
+  .hqb-card {
+    background: white;
+    border-radius: 20px;
+    padding: 1.5rem;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  }
+
+  .hqb-head {
+    margin-bottom: 1rem;
+  }
+
+  .hqb-title {
+    color: #1A2744;
+    font-size: 1.25rem;
+    font-weight: 900;
+    margin-bottom: 0.25rem;
+  }
+
+  .hqb-sub {
+    color: #6B7280;
+    font-size: 0.875rem;
+  }
+
+  .hqb-form {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 0.875rem;
+    align-items: end;
+  }
+
+  @media (min-width: 640px) {
+    .hqb-form { grid-template-columns: repeat(2, 1fr); }
+    .hqb-field-wide { grid-column: span 2; }
+  }
+
+  @media (min-width: 1024px) {
+    .hqb-form { grid-template-columns: repeat(4, 1fr); }
+    .hqb-field-wide { grid-column: span 3; }
+  }
+
+  .hqb-field label {
+    display: block;
+    font-weight: 600;
+    font-size: 0.75rem;
+    color: #1A2744;
+    margin-bottom: 0.3rem;
+    letter-spacing: 0.02em;
+  }
+
+  .hqb-field input {
+    display: block;
+    width: 100%;
+    padding: 0.7rem 0.875rem;
+    border: 2px solid #E5E7EB;
+    border-radius: 10px;
+    font-size: 0.9375rem;
+    font-family: inherit;
+    color: #0D0D0D;
+    background: white;
+    outline: none;
+    box-sizing: border-box;
+    transition: border-color 0.2s, box-shadow 0.2s;
+  }
+
+  .hqb-field input:focus {
+    border-color: #1A2744;
+    box-shadow: 0 0 0 3px rgba(26, 39, 68, 0.08);
+  }
+
+  .hqb-field input:invalid.hqb-touched {
+    border-color: #EF4444;
+  }
+
+  .hqb-submit {
+    width: 100%;
+    justify-content: center;
+    white-space: nowrap;
+  }
+
+  @media (min-width: 640px) and (max-width: 1023px) {
+    .hqb-submit { grid-column: span 2; }
+  }
+
+  .hqb-success {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    padding: 1rem 0;
+  }
+
+  .hqb-success[hidden] { display: none; }
+
+  .hqb-success-icon {
+    flex-shrink: 0;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background: #FDEA01;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .hqb-success-msg {
+    color: #1A2744;
+    font-weight: 600;
+  }
+</style>
+
+<script>
+  function initHeroQuoteBar() {
+    const form = document.querySelector("[data-hqb-form]") as HTMLFormElement | null;
+    if (!form || form.dataset.hqbReady) return;
+    form.dataset.hqbReady = "1";
+
+    const formView = document.querySelector("[data-hqb-form-view]") as HTMLElement;
+    const successView = document.querySelector("[data-hqb-success-view]") as HTMLElement;
+    const successMsg = document.querySelector("[data-hqb-success-msg]") as HTMLElement;
+
+    const pickupDate = form.querySelector("#hqb-pickup-date") as HTMLInputElement;
+    const returnDate = form.querySelector("#hqb-return-date") as HTMLInputElement;
+    pickupDate.min = returnDate.min = new Date().toISOString().split("T")[0];
+    // Return can't be before pickup.
+    pickupDate.addEventListener("change", () => {
+      if (pickupDate.value) returnDate.min = pickupDate.value;
+    });
+
+    form.addEventListener("submit", (e) => {
+      e.preventDefault();
+      form.querySelectorAll("input").forEach((el) => el.classList.add("hqb-touched"));
+      if (!form.checkValidity()) return;
+
+      const email = (form.querySelector("#hqb-email") as HTMLInputElement).value.trim();
+      successMsg.textContent = `Thanks — we've received your request and will send a quote to ${email} within 24 hours.`;
+      formView.hidden = true;
+      successView.hidden = false;
+    });
+  }
+
+  initHeroQuoteBar();
+  document.addEventListener("astro:page-load", initHeroQuoteBar);
+</script>

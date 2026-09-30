@@ -55,7 +55,7 @@ const relatedEntries = otherEntries
     distance: distanceMiles(pkg.lat, pkg.lng, e.data.lat, e.data.lng),
   }))
   .sort((a, b) => a.distance - b.distance)
-  .slice(0, 4)
+  .slice(0, 3)
   .map((r) => r.entry);
 
 const touristTripSchema = {
