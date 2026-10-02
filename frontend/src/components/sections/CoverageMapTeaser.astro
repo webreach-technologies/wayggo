@@ -14,9 +14,9 @@ interface Props {
 }
 
 const {
-  badge = "Our Coverage",
-  heading = "We Cover All of\nNorth America",
-  subheading = "From the Pacific Coast to the Atlantic, from the Canadian Rockies to the Florida Keys — our network of 500+ vetted operators ensures your group never waits on the ground, in any city, any season.",
+  badge = "Our Reach",
+  heading = "One Network \nAcross North America",
+  subheading = "WAYGGO's network currently spans the United States and Canada, connecting transportation operators across major travel markets and supporting itineraries that move between destinations.\nOur current network includes 500+ operators across 50 U.S. states and 10 Canadian provinces, with 21 listed hub cities across both countries.",
   ctaHref = "/network",
   ctaLabel = "Explore Full Network",
   usCities = ["New York City","Los Angeles","Chicago","Las Vegas","Miami","Orlando","San Francisco","Washington D.C.","Boston","Seattle","Dallas","Denver","Atlanta","Phoenix","Houston"],
@@ -24,6 +24,7 @@ const {
 } = Astro.props;
 
 const headingLines = heading.split("\n");
+const subheadingParagraphs = subheading.split("\n");
 
 const stats = [
   { label: "Operators in Network", value: "500+" },
@@ -32,7 +33,7 @@ const stats = [
 ];
 ---
 
-<section class="py-28 relative overflow-hidden" style="background: #0D1B3E;">
+<section class="py-14 relative overflow-hidden" style="background: #0D1B3E;">
 
   <!-- Subtle background radial -->
   <div class="absolute inset-0 pointer-events-none"
@@ -47,7 +48,7 @@ const stats = [
       <div class="lg:col-span-5">
         <span class="section-label-white">{badge}</span>
         <h2
-          class="text-4xl lg:text-5xl font-black mt-5 mb-5 text-white leading-tight"
+          class="text-4xl lg:text-4xl font-black mt-5 mb-5 text-white leading-tight"
           style=""
         >
           {headingLines.map((line, i) => (
@@ -59,9 +60,13 @@ const stats = [
             </>
           ))}
         </h2>
-        <p class="font-subheading leading-relaxed mb-8" style="color: rgba(255,255,255,0.52); font-size: 0.95rem;">
-          {subheading}
-        </p>
+        <div class="space-y-4 mb-8">
+          {subheadingParagraphs.map((p) => (
+            <p class="font-subheading leading-relaxed" style="color: rgba(255,255,255,0.52); font-size: 0.95rem;">
+              {p}
+            </p>
+          ))}
+        </div>
         <a href={withBase(ctaHref)} class="btn-primary">
           {ctaLabel}
           <ArrowRight size={16} stroke-width={2.5} />

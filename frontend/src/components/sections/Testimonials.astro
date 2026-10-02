@@ -7,7 +7,6 @@ interface Testimonial {
   company: string;
   country: string;
   role: string;
-  flag: string;
 }
 
 interface Props {
@@ -17,31 +16,28 @@ interface Props {
 }
 
 const {
-  badge = "Partner Stories",
-  heading = "Trusted by Operators\non Every Continent",
+  badge = "Happy Clients",
+  heading = "Trusted by Tour Operators, Travel companies, \n Businesses and Group Travelers",
   testimonials = [
-    {
-      quote: "WAYGGO Charters handled our 14-day, 6-city USA tour for 48 passengers flawlessly. One point of contact, zero surprises. Our clients rated ground transport 9.8/10.",
-      name: "Priya Sharma",
-      role: "Director of Operations",
-      company: "Horizon Voyages Pvt. Ltd.",
-      flag: "🇮🇳",
-      country: "India",
-    },
     {
       quote: "As a UK operator sending 3–4 groups to North America every month, WAYGGO Charters is non-negotiable. They understand our schedule sensitivity and deliver every time.",
       name: "James Whitmore",
       role: "Senior Tour Manager",
       company: "Albion Travel Group",
-      flag: "🇬🇧",
       country: "United Kingdom",
+    },
+    {
+      quote: "WAYGGO Charters handled our 14-day, 6-city USA tour for 48 passengers flawlessly. One point of contact, zero surprises. Our clients rated ground transport 9.8/10.",
+      name: "Priya Sharma",
+      role: "Director of Operations",
+      company: "Horizon Voyages Pvt. Ltd.",
+      country: "India",
     },
     {
       quote: "Japanese travelers have exacting standards. WAYGGO Charters' drivers are punctual, professional, and their coaches are spotless. We've been partners for six years.",
       name: "Kenji Tanaka",
       role: "Managing Director",
       company: "Fuji Global Tours K.K.",
-      flag: "🇯🇵",
       country: "Japan",
     },
   ],
@@ -50,7 +46,7 @@ const {
 const headingLines = heading.split("\n");
 ---
 
-<section class="py-28" style="background: #F9F7F2;">
+<section class="py-14" style="background: #F9F7F2;">
   <div class="container">
     <div class="text-center mb-16">
       <span class="section-label">{badge}</span>
@@ -94,7 +90,6 @@ const headingLines = heading.split("\n");
               {testimonials[0].role} · {testimonials[0].company}
             </p>
           </div>
-          <div class="ml-auto text-2xl text-white">{testimonials[0].flag}</div>
         </div>
       </div>
     </div>
@@ -121,7 +116,6 @@ const headingLines = heading.split("\n");
               <p class="text-sm font-bold" style="color: #1A2744;">{t.name}</p>
               <p class="text-xs text-gray-400" style="">{t.role} · {t.company}</p>
             </div>
-            <div class="ml-auto text-xl">{t.flag}</div>
           </div>
         </div>
       ))}

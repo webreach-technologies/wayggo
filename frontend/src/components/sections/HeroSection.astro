@@ -22,25 +22,31 @@ interface Props {
 const {
   badge = "Your Gateway to Great Destinations",
   heading = "North America's",
-  headingEnd = "Group Bus Rental Network",
-  subheading = "500+ vetted operators across every major US & Canadian city. One call. Every vehicle type.",
+  headingEnd = "Group Bus Rental",
+  subheading = "WAYGGO connects each type of journey with the transportation it requires, helping groups travel together while giving the people planning the trip a simpler way to manage the ground operation.",
   primaryCta = { label: "Request a Quote", href: "/contact" },
   secondaryCta = { label: "Become a Partner", href: "/portal" },
 } = Astro.props;
 
 const slides = [
   { img: imgCorporate,   label: "Corporate & Convention",   color: "#4A9EFF",
-    desc: "Shuttles and coaches for conferences, conventions and executive groups, timed to every session and airport run." },
+    desc: "Keep meetings, venues, hotels, airports, and group movements connected with transportation planned around the business itinerary.",
+    cta: { label: "Explore Corporate Transportation", href: "/services/corporate" } },
   { img: imgSightseeing, label: "Sightseeing & City Tours", color: "#FF7A45",
-    desc: "Motorcoaches and minibuses for city tours and multi-day itineraries, with drivers who know the route." },
+    desc: "Move groups comfortably between landmarks, attractions, hotels, and planned stops while keeping the itinerary organized from one destination to the next.",
+    cta: { label: "Explore Sightseeing Transportation", href: "/services/sightseeing" } },
   { img: imgWedding,     label: "Wedding & Special Events", color: "#FF6B9D",
-    desc: "Guest shuttles and party buses that move everyone between venues and keep the celebration on schedule." },
+    desc: "Coordinate guest transportation between hotels, ceremony locations, receptions, and other venues with a plan built around the event schedule.",
+    cta: { label: "Explore Wedding Transportation", href: "/services/weddings" } },
   { img: imgSports,      label: "Sports & Fan Travel",      color: "#7ED321",
-    desc: "Team buses and fan coaches for game days, tournaments and away trips, with room for the gear." },
+    desc: "Keep teams, supporters, and event groups moving between hotels, venues, stadiums, and scheduled activities.",
+    cta: { label: "Explore Sports Transportation", href: "/services/sports" } },
   { img: imgEducation,   label: "Educational & Student",    color: "#F5A623",
-    desc: "Vetted coaches for school trips, student exchanges and campus tours, driven by operators used to young groups." },
+    desc: "Support student groups, teachers, and chaperones with organized transportation for educational visits, campus tours, museums, and multi-stop itineraries.",
+    cta: { label: "Explore Educational Transportation", href: "/services/educational" } },
   { img: imgReligious,   label: "Religious & Pilgrimage",   color: "#BD9FE0",
-    desc: "Respectful, punctual transportation for pilgrimages, church groups and faith-based tours." },
+    desc: "Help faith-based groups travel together between places of worship, sacred destinations, accommodations, and planned activities with transportation handled thoughtfully and respectfully.",
+    cta: { label: "Explore Religious Transportation", href: "/services/religious" } },
 ];
 
 const cyclingWords = [
@@ -49,6 +55,7 @@ const cyclingWords = [
   "Most Connected",
   "Most Flexible",
   "Most Efficient",
+  "Most Affordable",
 ];
 ---
 
@@ -69,7 +76,7 @@ const cyclingWords = [
         <div class="section-label-white mb-5 animate-fade-up">{badge}</div>
 
         <h1
-          class="text-4xl sm:text-5xl lg:text-5xl xl:text-6xl font-black leading-tight mb-6 animate-fade-up delay-100 text-white"
+          class="text-4xl sm:text-5xl lg:text-5xl xl:text-6xl font-black leading-tight mb-4 animate-fade-up delay-100 text-white"
         >
           {heading}<br />
           <span class="word-track" aria-live="polite">
@@ -78,7 +85,7 @@ const cyclingWords = [
           {headingEnd}
         </h1>
 
-        <p class="font-subheading text-base sm:text-lg text-white/60 max-w-md mb-8 leading-relaxed animate-fade-up delay-200">
+        <p class="font-subheading text-base sm:text-base text-white/60 max-w-lg mb-8 leading-relaxed animate-fade-up delay-200">
           {subheading}
         </p>
 

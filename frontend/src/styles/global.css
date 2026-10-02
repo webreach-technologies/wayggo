@@ -383,6 +383,11 @@ h1, h2, h3, h4, h5, h6 {
   color: var(--color-navy);
 }
 
+.badge-red {
+  background-color: var(--color-red);
+  color: white;
+}
+
 .badge-navy {
   background-color: var(--color-navy);
   color: white;

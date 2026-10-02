@@ -1,27 +1,84 @@
 ---
 import BaseLayout from "../../layouts/BaseLayout.astro";
 import PageHero from "../../components/sections/PageHero.astro";
+import HeroQuoteBar from "../../components/sections/HeroQuoteBar.astro";
 import FeatureStrip from "../../components/sections/FeatureStrip.astro";
 import ListCardGrid from "../../components/sections/ListCardGrid.astro";
-import HowItWorks from "../../components/sections/HowItWorks.astro";
+import ChipCloud from "../../components/sections/ChipCloud.astro";
+import FleetOverview from "../../components/sections/FleetOverview.astro";
 import PartnerCTA from "../../components/sections/PartnerCTA.astro";
+import ClosingStatement from "../../components/sections/ClosingStatement.astro";
 import heroImg from "../../assets/tourtype/Sports Teams & Fan Group Travel.png";
 import { MapPin, Luggage, Calendar, Zap } from "@lucide/astro";
 
 const features = [
-  { icon: MapPin, title: "Stadium Door Drops", desc: "Precise gate-level drop-off and pick-up timing" },
-  { icon: Luggage, title: "Team Equipment Capable", desc: "Large luggage hold for gear and equipment bags" },
-  { icon: Calendar, title: "Multi-Game Scheduling", desc: "Multi-city sports tour packages across 5–10 days" },
-  { icon: Zap, title: "Fan Group Energy", desc: "Fun, safe coaches for enthusiastic supporter groups" },
+  { icon: MapPin, title: "Stadium Door Drops", desc: "Coordinate pickup and drop-off timing around the venue and the group's schedule. Where venue access and local regulations permit, transportation planning can account for the most practical group loading and unloading locations." },
+  { icon: Luggage, title: "Team Equipment Capable", desc: "Teams may travel with equipment bags, uniforms, cases, and other gear that require more space than a typical sightseeing group. Vehicle selection can take luggage and equipment requirements into account." },
+  { icon: Calendar, title: "Multi-Game Scheduling", desc: "A sports tour can span several games and several cities. WAYGGO can help coordinate transportation across multi-day itineraries, including the different vehicle requirements that may arise along the way." },
+  { icon: Zap, title: "Fan Group Transportation", desc: "Supporter groups bring their own energy to the journey. Transportation can be organized around organized fan travel, pre-game gatherings, stadium transfers, and post-game departures." },
+];
+
+const groups = [
+  {
+    title: "For Sports Teams",
+    desc: "Transportation planning can account for:",
+    points: ["Players and coaching staff", "Equipment and gear", "Hotel-to-stadium movements", "Practice facilities", "Multiple games", "Airport transfers", "Multi-city road trips", "Post-game transportation"],
+  },
+  {
+    title: "For Fan Groups",
+    desc: "Transportation can account for:",
+    points: ["Supporter groups", "Hotel-to-stadium transfers", "Airport arrivals and departures", "Pre-game gatherings", "Post-game departures", "Multi-game itineraries", "Sightseeing between games", "Group dining and evening events"],
+  },
 ];
 
 const tours = [
-  { sport: "NFL Experience", cities: ["New York (MetLife)", "Chicago (Soldier Field)", "Dallas (AT&T Stadium)", "Los Angeles (SoFi Stadium)"], vehicle: "Motorcoach" },
-  { sport: "MLB Baseball Tour", cities: ["NYC (Yankee Stadium)", "Chicago (Wrigley Field)", "Boston (Fenway Park)", "Toronto (Rogers Centre)"], vehicle: "Full-Size Bus" },
-  { sport: "NBA City Hopper", cities: ["Chicago (United Center)", "Miami (Kaseya Center)", "Los Angeles (Crypto.com Arena)", "New York (MSG)"], vehicle: "Full-Size Bus" },
-  { sport: "Soccer Fan Tour", cities: ["Toronto FC", "LA Galaxy", "New York Red Bulls", "Chicago Fire"], vehicle: "Minibus or Full-Size Bus" },
-  { sport: "NHL Ice Tour", cities: ["Toronto (Scotiabank)", "Montreal (Bell Centre)", "Chicago (United Center)", "Boston (TD Garden)"], vehicle: "Full-Size Bus" },
-  { sport: "Grand Slam Tennis", cities: ["New York (US Open)", "Cincinnati Masters", "Miami Open", "Indian Wells Masters"], vehicle: "Minibus or Van" },
+  { sport: "NFL Experience", cities: "New York · Chicago · Dallas · Los Angeles", vehicle: "Motorcoach", desc: "A football-focused itinerary can connect major stadium destinations across several cities." },
+  { sport: "MLB Baseball Tour", cities: "New York · Chicago · Boston · Toronto", vehicle: "Full-Size Bus", desc: "A baseball road trip can combine multiple games with hotel transfers, sightseeing, meals, and intercity transportation." },
+  { sport: "NBA City Hopper", cities: "Chicago · Miami · Los Angeles · New York", vehicle: "Full-Size Bus", desc: "A basketball itinerary can connect multiple major markets while keeping transportation coordinated throughout the trip." },
+  { sport: "Soccer Fan Tour", cities: "Toronto · Los Angeles · New York · Chicago", vehicle: "Minibus or Full-Size Bus", desc: "Soccer supporters may travel between cities for multiple matches, creating a combination of stadium transportation, hotel movements, and intercity travel." },
+  { sport: "NHL Ice Tour", cities: "Toronto · Montreal · Chicago · Boston", vehicle: "Full-Size Bus", desc: "A hockey-focused itinerary can connect multiple cities and arenas over several days." },
+  { sport: "Grand Slam Tennis", cities: "New York · Cincinnati · Miami · Indian Wells", vehicle: "Minibus or Van", desc: "Tennis travel can involve smaller groups and a combination of tournament attendance, hotel transportation, and sightseeing." },
+];
+
+const beyondGameDay = [
+  { title: "Airport Transfers", desc: "Move teams, fans, and sports travel groups between airports and hotels." },
+  { title: "Hotel Transportation", desc: "Coordinate daily transportation between accommodations, venues, practices, and scheduled activities." },
+  { title: "Stadium Transfers", desc: "Organize group transportation around game start and end times." },
+  { title: "Intercity Travel", desc: "Connect multiple sports destinations without requiring the group to arrange a new transportation relationship in every city." },
+  { title: "Sightseeing", desc: "Add destination experiences around the sporting schedule." },
+  { title: "Dining & Events", desc: "Coordinate transportation for restaurants, fan gatherings, team functions, and evening activities." },
+];
+
+const equipment = [
+  "Equipment bags",
+  "Uniforms and personal luggage",
+  "Training equipment",
+  "Medical or support equipment",
+  "Team staff",
+  "Multiple days of travel",
+  "Storage requirements between destinations",
+];
+
+const networkCoverage = [
+  "Airport transportation",
+  "Hotel transfers",
+  "Stadium transportation",
+  "Practice facility transfers",
+  "Equipment movements",
+  "Intercity travel",
+  "Fan transportation",
+  "Multi-game road trips",
+];
+
+const planning = [
+  { title: "Sport & Event", desc: "What sport, league, tournament, game, or event is the group attending?" },
+  { title: "Group Size", desc: "How many players, staff, fans, or other travelers are involved?" },
+  { title: "Equipment", desc: "What equipment, luggage, or gear will travel with the group?" },
+  { title: "Game Schedule", desc: "What are the game dates, start times, and venue locations?" },
+  { title: "Hotels", desc: "Where will the group stay before and after each event?" },
+  { title: "Cities", desc: "Is this a single-destination trip or a multi-city sports tour?" },
+  { title: "Additional Activities", desc: "Will the group have sightseeing, meals, fan events, practices, or other scheduled activities?" },
+  { title: "Vehicle Requirements", desc: "Does the group need one vehicle or different transportation configurations for different parts of the itinerary?" },
 ];
 
 const pageURL = new URL(Astro.url.pathname, Astro.site ?? "https://wayggo.com").href;
@@ -45,31 +102,115 @@ const serviceSchema = {
   <script is:inline type="application/ld+json" set:html={JSON.stringify(serviceSchema)} />
 
   <PageHero
-    badge="Sports Group Travel"
+    badge="Our Service"
     heading={'Sports Teams &amp;<br /><span style="color: #FDEA01;">Fan Group Travel</span>'}
-    subheading="From the Super Bowl to the NBA Finals, from baseball road trips to international soccer friendlies — WAYGGO Charters moves sports groups to stadiums across North America with game-day precision."
+    subheading="Transportation That Keeps Game Day Moving"
     image={heroImg}
     imageAlt="Sports team and fan group transportation — WAYGGO Charters"
     cta={{ label: "Plan Your Sports Tour", href: "/contact" }}
   />
 
-  <FeatureStrip features={features} />
-
-  <ListCardGrid
-    badge="Sports Experiences"
-    heading="Popular Sports Tour Routes"
-    background="cream"
-    cards={tours.map((t) => ({ title: t.sport, points: t.cities, tag: t.vehicle }))}
+  <ClosingStatement
+    heading={false}
+    paragraph={"Sports travel runs on schedules.\nTeams need to arrive with their players and equipment. Fans need to reach the stadium together and on time. Multi-game tours may involve different cities, hotels, venues, and transportation requirements along the way.\nWAYGGO Charters helps international tour operators, travel agencies, sports travel organizers, teams, and fan groups coordinate transportation for sporting events across the United States and Canada.\nFrom a single game-day transfer to a multi-city sports tour, transportation can be planned around the group, the equipment, the venue, and the schedule."}
   />
 
-  <HowItWorks />
+  <HeroQuoteBar heading="Get a Sports Tour Quote in Minutes *" />
+
+  <FeatureStrip
+    compact
+    badge="Built Around the Game-Day Schedule"
+    heading="Transportation for the Way Sports Groups Actually Travel"
+    text={"Sports transportation is rarely just a hotel-to-stadium transfer.\nThere may be equipment to carry, scheduled arrivals, parking and loading considerations, multiple games, team and fan movements, and tight departure windows after the event."}
+    features={features}
+  />
+
+  <ListCardGrid
+    compact
+    badge="Team Travel & Fan Travel"
+    heading="Two Groups. Different Transportation Needs."
+    subheading={"Sports travel is not one-size-fits-all.\nA professional or amateur team may need space for equipment and a schedule built around practices and games. A fan group may need flexible transportation between hotels, stadiums, restaurants, and other activities."}
+    cards={groups}
+    footnote="The transportation plan should reflect what the group is actually doing—not simply how many people are traveling."
+  />
+
+  <ListCardGrid
+    compact
+    badge="Popular Sports Tour Routes"
+    heading="Follow the Season Across North America"
+    subheading={"Sports travel can turn a single event into a broader North American itinerary.\nWAYGGO's current sports programs highlight several examples of multi-city sports travel."}
+    background="cream"
+    cards={tours.map((t) => ({
+      title: t.sport,
+      subtitle: t.cities,
+      desc: t.desc,
+      meta: { label: "Typical Vehicle", value: t.vehicle },
+    }))}
+  />
+
+  <ListCardGrid
+    compact
+    badge="More Than Game-Day Transportation"
+    heading="Build the Sports Experience Around the Event"
+    subheading={"A sports tour does not necessarily begin when the group reaches the stadium.\nTravelers may arrive early, stay several nights, visit local attractions, attend multiple games, and travel between cities.\nTransportation can therefore be coordinated for the complete itinerary."}
+    cards={beyondGameDay}
+    footnote="The game may be the reason for the journey, but the transportation plan needs to support everything around it."
+  />
+
+  <ChipCloud
+    compact
+    badge="Planning for Equipment"
+    heading="Space Matters When the Group Travels With Gear"
+    subheading="For sports teams, passenger capacity is only one part of vehicle selection. The transportation plan may also need to account for:"
+    items={equipment}
+    footnote={"A vehicle that fits the number of passengers may not necessarily provide the right amount of usable luggage or equipment space.\nThat is why equipment requirements should be discussed alongside passenger numbers when planning team transportation."}
+  />
+
+  <FleetOverview
+    badge="Choosing the Right Vehicle"
+    heading="Match the Vehicle to the Group and the Trip"
+    paragraphs={[
+      "Different sports programs call for different transportation configurations.",
+      "Some sports programs require more than one vehicle type. A team, support staff, VIP group, and fan delegation may have different transportation requirements during the same event. WAYGGO can help consider the transportation plan as a whole rather than forcing every movement into the same vehicle configuration.",
+    ]}
+  />
+
+  <ChipCloud
+    compact
+    badge="When the Team or Fans Travel Across Cities"
+    heading="One Network Behind the Sports Tour"
+    subheading={"Multi-city sports travel can create a familiar problem: every destination may have a different transportation provider, process, and set of arrangements.\nWAYGGO's network model is designed to help travel professionals coordinate transportation across multiple North American destinations through one relationship.\nThat can include:"}
+    background="white"
+    items={networkCoverage}
+    footnote={"The city may change. The stadium may change. The transportation relationship can remain coordinated throughout the itinerary.\nOne relationship. A coordinated transportation network behind the tour."}
+  />
+
+  <ClosingStatement
+    badge="When Game Day Changes"
+    heading="Sports Schedules Can Move"
+    paragraph={"Sports travel can involve changes.\nGame times can shift. Events can run longer than expected. Weather can affect schedules. Travel plans may need to adjust around updated information.\nThat makes communication particularly important.\nWAYGGO's role is to help coordinate the transportation relationship around the itinerary, keeping the broader plan in view when individual movements change.\nThe goal is not to pretend that every sports itinerary will run exactly according to plan.\nIt is to have transportation organized so changes can be addressed as part of the overall journey."}
+  />
+
+  <ListCardGrid
+    compact
+    badge="Planning Your Sports Tour"
+    heading="Start With the Schedule"
+    subheading="When arranging sports transportation, it helps to provide:"
+    cards={planning}
+    footnote="With these details, transportation can be planned around the actual sports journey."
+  />
 
   <PartnerCTA
-    badge="Game Day Ready"
-    heading="Book Your"
-    headingHighlight="Sports Group Transport"
-    subheading="Tell us which sport, which city, and how many fans. We'll get you there on time, every time."
+    badge="Plan Your Sports Group Transportation"
+    heading="Tell Us Which Sport, Which Cities,"
+    headingHighlight="and How the Group Is Traveling"
+    subheading={"Whether you're arranging transportation for a team, fan group, tournament, or multi-city sports tour, WAYGGO can help work through the transportation requirements.\nShare the sport, cities, dates, group size, equipment needs, and itinerary. From there, the transportation plan can be built around the journey."}
     primaryCta={{ label: "Request a Sports Tour Quote", href: "/contact" }}
-    secondaryCta={{ label: "Register as Travel Partner", href: "/portal" }}
+    secondaryCta={{ label: "Explore Fleet & Capabilities", href: "/fleet" }}
+  />
+
+  <ClosingStatement
+    heading="WAYGGO Sports Teams & Fan Group Travel"
+    paragraph={"Sports travel combines people, places, schedules, equipment, and events.\nWAYGGO helps travel professionals coordinate the transportation connecting all of those pieces across the United States and Canada.\nFor teams, that means considering players, staff, equipment, venues, and schedules.\nFor fans, it means coordinating the journey between airports, hotels, stadiums, cities, and everything happening around the game.\nYou organize the sports experience. WAYGGO helps coordinate the transportation behind it.\nOne transportation relationship. A coordinated way to move the group."}
   />
 </BaseLayout>

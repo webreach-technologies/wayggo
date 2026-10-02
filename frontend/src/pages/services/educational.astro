@@ -1,27 +1,73 @@
 ---
 import BaseLayout from "../../layouts/BaseLayout.astro";
 import PageHero from "../../components/sections/PageHero.astro";
+import HeroQuoteBar from "../../components/sections/HeroQuoteBar.astro";
 import FeatureStrip from "../../components/sections/FeatureStrip.astro";
 import ListCardGrid from "../../components/sections/ListCardGrid.astro";
-import HowItWorks from "../../components/sections/HowItWorks.astro";
+import ChipCloud from "../../components/sections/ChipCloud.astro";
+import FleetOverview from "../../components/sections/FleetOverview.astro";
 import PartnerCTA from "../../components/sections/PartnerCTA.astro";
+import ClosingStatement from "../../components/sections/ClosingStatement.astro";
 import heroImg from "../../assets/tourtype/Educational & Student Tours.png";
 import { ShieldCheck, Users, Clock, Smartphone } from "@lucide/astro";
 
-const destinations = [
-  { city: "Washington D.C.", ideal: "History, Science, Government", sites: ["Smithsonian Institution", "National Air & Space Museum", "US Capitol", "Library of Congress", "National Zoo"] },
-  { city: "Boston & Cambridge", ideal: "Higher Education, History", sites: ["Harvard University", "MIT Campus", "Freedom Trail", "Museum of Science", "Boston Public Library"] },
-  { city: "Silicon Valley", ideal: "Tech, Innovation, Business", sites: ["Computer History Museum", "Stanford University", "NASA Ames", "Apple HQ", "Google Campus"] },
-  { city: "Toronto, Canada", ideal: "Science, Arts, Education", sites: ["ROM (Royal Ontario Museum)", "University of Toronto", "Ontario Science Centre", "OCAD University", "CN Tower"] },
-  { city: "Chicago", ideal: "Science, Arts, Culture", sites: ["Field Museum", "Shedd Aquarium", "Adler Planetarium", "Art Institute", "University of Chicago"] },
-  { city: "New York City", ideal: "Arts, Diplomacy, History", sites: ["American Museum of Natural History", "Columbia University", "MoMA", "UN Headquarters", "Metropolitan Museum"] },
+const features = [
+  { icon: ShieldCheck, title: "Background-Checked Drivers", desc: "WAYGGO's current educational transportation program specifies driver background screening and student transportation compliance checks. The goal is to give school and tour coordinators greater visibility into the transportation requirements behind the journey." },
+  { icon: Users, title: "Chaperone Coordination", desc: "Chaperones play an important role in keeping student groups organized. Transportation planning can account for reserved seating, communication protocols, group organization, and the practical needs of teachers and chaperones." },
+  { icon: Clock, title: "Curriculum-Timed Routing", desc: "Educational itineraries often run to a fixed schedule. Transportation can be planned around museum reservations, campus visits, educational programs, scheduled meals, and other itinerary commitments." },
+  { icon: Smartphone, title: "Parent Tracking Available", desc: "Real-time GPS updates are available for school coordinators where supported by the transportation arrangement, providing another way to keep responsible parties informed about the group's progress." },
 ];
 
-const features = [
-  { icon: ShieldCheck, title: "Background-Checked Drivers", desc: "All drivers pass student transport compliance checks" },
-  { icon: Users, title: "Chaperone Coordination", desc: "Reserved seats and communication protocols for chaperones" },
-  { icon: Clock, title: "Curriculum-Timed Routing", desc: "We time stops to match your educational program" },
-  { icon: Smartphone, title: "Parent Tracking Available", desc: "Real-time GPS updates for school coordinators" },
+const themes = [
+  { title: "History & Government", desc: "Washington, D.C. can bring lessons in American history and government into the real world." },
+  { title: "Science & Innovation", desc: "Boston, Chicago, Silicon Valley, and other major destinations offer opportunities to connect classroom subjects with institutions, museums, universities, and technology organizations." },
+  { title: "Higher Education", desc: "University visits can form an important part of student travel, particularly for college and university preparation programs." },
+  { title: "Arts & Culture", desc: "Museums, galleries, cultural institutions, and historic districts can become part of a broader educational itinerary." },
+];
+
+const destinations = [
+  { city: "Washington D.C.", ideal: "History · Science · Government", sites: ["Smithsonian Institution", "National Air & Space Museum", "U.S. Capitol", "Library of Congress", "National Zoo"] },
+  { city: "Boston & Cambridge", ideal: "Higher Education · History", sites: ["Harvard University", "MIT Campus", "Freedom Trail", "Museum of Science", "Boston Public Library"] },
+  { city: "Silicon Valley", ideal: "Technology · Innovation · Business", sites: ["Computer History Museum", "Stanford University", "NASA Ames", "Apple", "Google"] },
+  { city: "Toronto, Canada", ideal: "Science · Arts · Education", sites: ["Royal Ontario Museum", "University of Toronto", "Ontario Science Centre", "OCAD University", "CN Tower"] },
+  { city: "Chicago", ideal: "Science · Arts · Culture", sites: ["Field Museum", "Shedd Aquarium", "Adler Planetarium", "Art Institute of Chicago", "University of Chicago"] },
+  { city: "New York City", ideal: "Arts · Diplomacy · History", sites: ["American Museum of Natural History", "Columbia University", "Museum of Modern Art", "United Nations Headquarters", "Metropolitan Museum of Art"] },
+];
+
+const planning = [
+  { title: "Group Size", desc: "How many students, teachers, chaperones, and other travelers will be moving together?" },
+  { title: "Schedule", desc: "Are there fixed admission times, campus appointments, performances, meals, or educational programs that the transportation schedule needs to support?" },
+  { title: "Luggage & Equipment", desc: "Will students be traveling with luggage, instruments, sports equipment, project materials, or other belongings?" },
+  { title: "Multiple Stops", desc: "How many locations will the group visit each day, and how much time is available between activities?" },
+  { title: "Chaperone Requirements", desc: "Does the group need a particular seating or communication arrangement to help teachers and chaperones manage the journey?" },
+  { title: "Vehicle Requirements", desc: "Would a van, minibus, mini coach, or motor coach make the most practical sense for the group and itinerary?" },
+];
+
+const programs = [
+  { title: "School Field Trips", desc: "Day trips to museums, cultural institutions, science centers, historic sites, and other educational destinations." },
+  { title: "University & College Visits", desc: "Transportation between campuses, hotels, airports, and scheduled student activities." },
+  { title: "Multi-Day Educational Tours", desc: "Transportation for programs that combine multiple destinations over several days." },
+  { title: "International Student Groups", desc: "Ground transportation for international educational groups traveling through the United States or Canada." },
+  { title: "Academic & Cultural Programs", desc: "Transportation connecting students with museums, performances, cultural sites, research institutions, and other learning experiences." },
+  { title: "Youth Travel Programs", desc: "Coordinated transportation for organized youth groups and educational travel operators." },
+];
+
+const coordination = [
+  "Airport and hotel transfers",
+  "Daily sightseeing and educational activities",
+  "Intercity transportation",
+  "University visits",
+  "Museum and attraction schedules",
+  "Multi-day programs",
+  "Different vehicle requirements throughout the trip",
+];
+
+const whatToInclude = [
+  { title: "Group Information", desc: "Number of students, teachers, chaperones, and other travelers." },
+  { title: "Travel Dates", desc: "Departure and arrival dates, including any multi-day requirements." },
+  { title: "Destinations", desc: "Cities, campuses, museums, attractions, hotels, and other scheduled locations." },
+  { title: "Program Schedule", desc: "Known arrival times, reservations, campus appointments, and other fixed activities." },
+  { title: "Special Requirements", desc: "Luggage, equipment, accessibility considerations, or other transportation needs." },
 ];
 
 const pageURL = new URL(Astro.url.pathname, Astro.site ?? "https://wayggo.com").href;
@@ -45,31 +91,102 @@ const serviceSchema = {
   <script is:inline type="application/ld+json" set:html={JSON.stringify(serviceSchema)} />
 
   <PageHero
-    badge="For Schools & Universities"
+    badge="Our Service"
     heading={'Educational &amp;<br /><span style="color: #FDEA01;">Student Tours</span>'}
-    subheading="Moving student groups requires precise timing, safe vehicles, and drivers who understand the responsibility. WAYGGO Charters' educational tour fleet is purpose-built for schools, universities, and youth travel operators worldwide."
+    subheading="Transportation Planned Around the Learning Journey"
     image={heroImg}
     imageAlt="Educational and student group tour transportation — WAYGGO Charters"
     cta={{ label: "Plan a Student Tour", href: "/contact" }}
   />
 
-  <FeatureStrip heading="Built for Student Safety & Learning" features={features} />
+  <ClosingStatement
+    heading={false}
+    paragraph={"Moving students requires more than getting a group from one destination to another.\nEducational travel often involves fixed schedules, multiple stops, teachers and chaperones, students of different ages, luggage or equipment, and attractions with specific arrival times.\nWAYGGO Charters helps schools, universities, educational travel companies, and tour operators coordinate the ground transportation behind those programs across the United States and Canada.\nFrom museum visits and university tours to multi-city educational programs, transportation can be planned around the itinerary, the group, and the requirements of the people responsible for the journey."}
+  />
+
+  <HeroQuoteBar heading="Get a Student Tour Quote in Minutes *" />
+
+  <FeatureStrip
+    compact
+    badge="Built for Student Safety & Learning"
+    heading="Transportation That Supports the Program"
+    text={"A successful educational trip depends on more than the destination.\nThe transportation plan needs to work alongside the educational schedule, allowing students and chaperones to move between activities without making transportation a separate problem for the people organizing the trip."}
+    features={features}
+  />
 
   <ListCardGrid
-    badge="Top Destinations"
-    heading="Knowledge-Rich Destinations"
+    compact
+    badge="More Than Transportation"
+    heading="Make the Journey Part of the Program"
+    subheading={"Educational travel can connect classroom learning with places students can experience firsthand.\nA transportation plan should support that experience rather than compete with it.\nWhether the itinerary focuses on American history, science, government, technology, higher education, the arts, or cultural experiences, WAYGGO can help coordinate the transportation connecting the program's scheduled destinations."}
+    cards={themes}
+  />
+
+  <ListCardGrid
+    compact
+    badge="Knowledge-Rich Destinations"
+    heading="Popular Educational Travel Destinations"
+    subheading={"WAYGGO's transportation network supports educational programs in destinations across the United States and Canada.\nThe destination is only one part of the planning process. The transportation requirements depend on the group's size, itinerary, scheduled activities, and time available at each stop."}
     background="cream"
     cards={destinations.map((d) => ({ title: d.city, subtitle: d.ideal, points: d.sites }))}
   />
 
-  <HowItWorks />
+  <ListCardGrid
+    compact
+    badge="Planning for the Group"
+    heading="Every Student Itinerary Has Different Requirements"
+    subheading={"The same vehicle does not necessarily make sense for every educational trip.\nWhen planning transportation, it helps to consider:"}
+    cards={planning}
+    footnote="The earlier these requirements are understood, the easier it is to build transportation around the educational program."
+  />
+
+  <ListCardGrid
+    compact
+    badge="Transportation for Different Educational Programs"
+    heading="One Service, Different Learning Journeys"
+    subheading={"Educational travel can take many forms.\nWAYGGO can support transportation planning for:"}
+    background="cream"
+    cards={programs}
+  />
+
+  <ChipCloud
+    compact
+    badge="Coordinating the Journey"
+    heading="One Transportation Relationship for the Itinerary"
+    subheading={"Educational trips can become complicated when transportation is arranged separately for every city or activity.\nWAYGGO's network model is designed to provide travel professionals with a more coordinated way to manage ground transportation across multiple destinations.\nInstead of treating every transportation leg as an entirely separate relationship, the itinerary can be considered as a whole.\nThat can make it easier to coordinate:"}
+    background="white"
+    items={coordination}
+    footnote="One itinerary. One transportation relationship. A coordinated network behind it."
+  />
+
+  <FleetOverview
+    badge="Choosing the Right Vehicle"
+    heading="Match Transportation to the Students and the Journey"
+    paragraphs={[
+      "Vehicle selection starts with the number of passengers, but it should not end there. For educational programs, the transportation plan may also need to account for luggage, equipment, journey length, number of stops, and the amount of time students spend on the road.",
+    ]}
+  />
+
+  <ListCardGrid
+    compact
+    badge="A Better Way to Plan Student Transportation"
+    heading="Start With the Itinerary"
+    subheading={"The most useful transportation conversations begin with the journey—not simply the vehicle.\nTell WAYGGO about the group, dates, destinations, scheduled activities, and transportation requirements.\nFrom there, the transportation plan can be considered around the actual educational program."}
+    cards={whatToInclude}
+    footnote="The more complete the itinerary, the easier it is to understand the transportation requirements behind it."
+  />
 
   <PartnerCTA
-    badge="Student Group Travel"
-    heading="Ready to Plan Your"
-    headingHighlight="Educational Tour?"
-    subheading="Share your school's travel itinerary and we'll build the safest, most educational ground transport plan."
+    badge="Ready to Plan Your Educational Tour?"
+    heading="Tell Us About"
+    headingHighlight="the Journey"
+    subheading="Share your school's or group's itinerary with WAYGGO and our team can work through the transportation requirements with you."
     primaryCta={{ label: "Request a Student Tour Quote", href: "/contact" }}
     secondaryCta={{ label: "View Suitable Vehicles", href: "/fleet" }}
+  />
+
+  <ClosingStatement
+    heading="WAYGGO Educational & Student Tours"
+    paragraph={"Educational travel gives students the opportunity to experience what they learn beyond the classroom.\nWAYGGO helps the people organizing those journeys coordinate the transportation that connects the experience—from the first pickup to the final destination.\nFor schools, universities, international tour operators, and educational travel professionals, that means transportation can be planned around the program, the students, the schedule, and the people responsible for making the trip work.\nThe learning is the purpose. Transportation is what helps connect it.\nOne transportation relationship. A coordinated way to move the group."}
   />
 </BaseLayout>

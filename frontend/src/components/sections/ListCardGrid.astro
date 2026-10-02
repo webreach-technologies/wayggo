@@ -1,5 +1,6 @@
 ---
 import SectionHeading from "./SectionHeading.astro";
+import SectionFootnote from "./SectionFootnote.astro";
 
 interface Card {
   /** Small badge above the title. */
@@ -19,16 +20,20 @@ interface Props {
   badge?: string;
   heading: string;
   subheading?: string;
+  /** Closing copy under the section. Separate paragraphs with "\n". */
+  footnote?: string;
   cards: Card[];
   background?: "white" | "cream";
+  /** Use the home page's tighter vertical padding (py-14) instead of py-20. */
+  compact?: boolean;
 }
 
-const { badge, heading, subheading, cards, background = "white" } = Astro.props;
+const { badge, heading, subheading, footnote, cards, background = "white", compact = false } = Astro.props;
 
 const bg = background === "cream" ? "#F9F7F2" : "white";
 ---
 
-<section class="py-20" style={`background-color: ${bg};`}>
+<section class={compact ? "py-14" : "py-20"} style={`background-color: ${bg};`}>
   <div class="container">
     <SectionHeading badge={badge} heading={heading} subheading={subheading} />
 
@@ -64,5 +69,6 @@ const bg = background === "cream" ? "#F9F7F2" : "white";
         </div>
       ))}
     </div>
+    {footnote && <SectionFootnote text={footnote} />}
   </div>
 </section>

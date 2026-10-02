@@ -9,6 +9,10 @@ interface Props {
 }
 
 const { badge, heading, subheading, dark = false } = Astro.props;
+
+// Separate paragraphs with "\n"; multi-paragraph copy gets a wider measure.
+const paragraphs = subheading ? subheading.split("\n") : [];
+const widthClass = paragraphs.length > 1 ? "max-w-3xl" : "max-w-xl";
 ---
 
 <div class="text-center mb-12">
@@ -19,9 +23,9 @@ const { badge, heading, subheading, dark = false } = Astro.props;
   >
     {heading}
   </h2>
-  {subheading && (
-    <p class:list={["font-subheading mt-3 max-w-xl mx-auto", dark ? "text-white/60" : "text-gray-500"]}>
-      {subheading}
+  {paragraphs.map((p) => (
+    <p class:list={["font-subheading mt-3 mx-auto", widthClass, dark ? "text-white/60" : "text-gray-500"]}>
+      {p}
     </p>
-  )}
+  ))}
 </div>

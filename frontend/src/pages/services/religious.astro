@@ -1,27 +1,69 @@
 ---
 import BaseLayout from "../../layouts/BaseLayout.astro";
 import PageHero from "../../components/sections/PageHero.astro";
+import HeroQuoteBar from "../../components/sections/HeroQuoteBar.astro";
 import FeatureStrip from "../../components/sections/FeatureStrip.astro";
 import ListCardGrid from "../../components/sections/ListCardGrid.astro";
-import HowItWorks from "../../components/sections/HowItWorks.astro";
+import ChipCloud from "../../components/sections/ChipCloud.astro";
+import FleetOverview from "../../components/sections/FleetOverview.astro";
 import PartnerCTA from "../../components/sections/PartnerCTA.astro";
+import ClosingStatement from "../../components/sections/ClosingStatement.astro";
 import heroImg from "../../assets/tourtype/Religious & Pilgrimage Groups.png";
 import { Heart, Clock, Utensils, VolumeX } from "@lucide/astro";
 
-const sites = [
-  { name: "Temple Square", city: "Salt Lake City, UT", faith: "Latter-day Saints", desc: "The spiritual heart of the LDS Church, featuring the iconic Salt Lake Temple and Tabernacle." },
-  { name: "Washington National Cathedral", city: "Washington D.C.", faith: "Interfaith", desc: "One of the largest cathedrals in the world — a place of beauty, prayer, and national remembrance." },
-  { name: "Notre-Dame Basilica", city: "Montreal, QC", faith: "Catholic", desc: "A breathtaking Gothic Revival masterpiece and one of North America's most visited sacred sites." },
-  { name: "St. Patrick's Cathedral", city: "New York City, NY", faith: "Catholic", desc: "Manhattan's iconic neo-Gothic cathedral on Fifth Avenue, a cornerstone of American Catholic heritage." },
-  { name: "Niagara Falls Pilgrimage", city: "Niagara Falls, NY/ON", faith: "Multi-faith", desc: "A site of natural wonder and spiritual renewal, often incorporated into multi-faith pilgrimage routes." },
-  { name: "University of Notre Dame", city: "South Bend, IN", faith: "Catholic", desc: "America's most famous Catholic university, home to the Golden Dome and Grotto of Our Lady of Lourdes." },
+const values = [
+  { icon: Heart, title: "Cultural Sensitivity", desc: "Drivers and transportation teams can be briefed on relevant group customs, cultural expectations, and special requirements before the journey begins." },
+  { icon: Clock, title: "Prayer Time Awareness", desc: "Prayer and worship may be central to the itinerary. Transportation schedules can be planned with known prayer obligations, worship services, religious ceremonies, and other fixed activities in mind." },
+  { icon: Utensils, title: "Dietary Coordination", desc: "Group meals may need to accommodate halal, kosher, vegetarian, or other dietary requirements. Where relevant, these considerations can be included as part of the overall itinerary and transportation planning process." },
+  { icon: VolumeX, title: "Quiet, Composed Service", desc: "Some journeys call for a different atmosphere from a conventional group tour. Professional, discreet transportation helps keep the focus on the group and its purpose while maintaining the practical coordination required to move everyone throughout the itinerary." },
 ];
 
-const values = [
-  { icon: Heart, title: "Cultural Sensitivity", desc: "Drivers briefed on group customs and requirements" },
-  { icon: Clock, title: "Prayer Time Awareness", desc: "Flexible scheduling respects daily prayer obligations" },
-  { icon: Utensils, title: "Dietary Coordination", desc: "We note halal, kosher, vegetarian requirements" },
-  { icon: VolumeX, title: "Quiet, Composed Service", desc: "Discreet drivers who understand the tone of sacred travel" },
+const journeyParts = [
+  { title: "Airport Transfers", desc: "Coordinating arrivals and departures for groups traveling together." },
+  { title: "Hotel Transportation", desc: "Connecting the group between accommodations, worship locations, meals, and scheduled activities." },
+  { title: "Sacred-Site Visits", desc: "Planning transportation around scheduled visits, access times, group arrival requirements, and departure windows." },
+  { title: "Multi-City Pilgrimages", desc: "Coordinating transportation as an itinerary moves between destinations." },
+  { title: "Daily Group Movement", desc: "Keeping transportation aligned with worship, sightseeing, meals, and other scheduled activities." },
+  { title: "Intercity Travel", desc: "Providing transportation between destinations when the journey itself is part of the program." },
+];
+
+const sites = [
+  { name: "Temple Square", city: "Salt Lake City, Utah", faith: "Latter-day Saints", desc: "Temple Square is an important destination for Latter-day Saint travelers and can form part of a broader Salt Lake City or regional faith-based itinerary. Transportation planning can include hotel transfers, group movements, scheduled visits, and connections to other destinations." },
+  { name: "Washington National Cathedral", city: "Washington, D.C.", faith: "Interfaith", desc: "A major religious and architectural destination in the nation's capital, Washington National Cathedral can be incorporated into broader faith, history, or interfaith programs. Transportation can be coordinated alongside other scheduled Washington, D.C. destinations." },
+  { name: "Notre-Dame Basilica", city: "Montreal, Quebec", faith: "Catholic", desc: "Montreal's Notre-Dame Basilica is a prominent Catholic destination and can be incorporated into a broader Montreal or Quebec itinerary. Group transportation can connect the basilica with hotels, airports, meals, and other scheduled stops." },
+  { name: "St. Patrick's Cathedral", city: "New York City, New York", faith: "Catholic", desc: "Located on Fifth Avenue in Manhattan, St. Patrick's Cathedral can form part of a Catholic pilgrimage or broader New York group itinerary. Transportation planning can account for the cathedral visit alongside the group's other scheduled destinations." },
+  { name: "Niagara Falls Pilgrimage", city: "Niagara Falls, New York / Ontario", faith: "Multi-Faith", desc: "Niagara Falls can serve as part of a broader faith-based itinerary combining pilgrimage, reflection, sightseeing, and group travel. Because the destination spans the U.S.–Canada region, transportation planning can be considered as part of the complete itinerary." },
+  { name: "University of Notre Dame", city: "South Bend, Indiana", faith: "Catholic", desc: "The University of Notre Dame is an important destination for Catholic groups and can be incorporated into educational, cultural, or pilgrimage itineraries. Transportation can connect the campus with surrounding accommodations and other scheduled destinations." },
+];
+
+const groupTypes = [
+  { title: "Parish & Church Groups", desc: "Transportation for congregations traveling to religious sites, conferences, retreats, services, and group events." },
+  { title: "Pilgrimage Tours", desc: "Multi-day journeys centered around sacred places, religious history, worship, and reflection." },
+  { title: "Faith-Based Tour Operators", desc: "Transportation coordination for professional tour operators arranging religious travel programs for groups from around the world." },
+  { title: "Interfaith Programs", desc: "Transportation for groups visiting religious, cultural, and historical destinations as part of interfaith programs." },
+  { title: "Religious Conferences & Gatherings", desc: "Group transportation between airports, hotels, venues, places of worship, and scheduled activities." },
+  { title: "Youth & Family Faith Groups", desc: "Transportation for organized religious groups traveling with children, families, or multiple generations." },
+];
+
+const networkCoverage = [
+  "Airport arrivals and departures",
+  "Hotel transfers",
+  "Daily sacred-site transportation",
+  "Intercity travel",
+  "Multi-day pilgrimage programs",
+  "Group meal transportation",
+  "Worship and ceremony transportation",
+  "Cross-destination itinerary coordination",
+];
+
+const whatToShare = [
+  { title: "Group Size", desc: "Number of travelers and any relevant group divisions." },
+  { title: "Dates & Travel Window", desc: "Arrival, departure, and daily transportation requirements." },
+  { title: "Sacred Sites", desc: "Places of worship, pilgrimage destinations, and scheduled visits." },
+  { title: "Daily Schedule", desc: "Prayer times, worship services, meals, ceremonies, sightseeing, and other fixed activities." },
+  { title: "Hotels & Airports", desc: "Pickup and drop-off locations throughout the journey." },
+  { title: "Special Requirements", desc: "Mobility considerations, dietary requirements, luggage, equipment, or other group needs." },
+  { title: "Multi-City Routing", desc: "Any cities or regions included in the complete itinerary." },
 ];
 
 const pageURL = new URL(Astro.url.pathname, Astro.site ?? "https://wayggo.com").href;
@@ -45,31 +87,94 @@ const serviceSchema = {
   <script is:inline type="application/ld+json" set:html={JSON.stringify(serviceSchema)} />
 
   <PageHero
-    badge="Sacred Journeys"
+    badge="Our Service"
     heading={'Religious &amp;<br /><span style="color: #FDEA01;">Pilgrimage Groups</span>'}
-    subheading="We understand that religious travel carries profound significance. WAYGGO Charters provides respectful, composed, and perfectly timed ground transportation for faith groups making sacred journeys across North America."
+    subheading="Transportation for Journeys That Matter"
     image={heroImg}
     imageAlt="Religious and pilgrimage group tour transportation — WAYGGO Charters"
     cta={{ label: "Plan a Pilgrimage Tour", href: "/contact" }}
   />
 
-  <FeatureStrip features={values} />
+  <ClosingStatement
+    heading={false}
+    paragraph={"Religious travel is about more than reaching a destination. Pilgrimages and faith-based group journeys can involve sacred sites, scheduled worship, prayer times, cultural practices, multiple generations of travelers, and carefully planned itineraries.\nWAYGGO Charters helps international tour operators, travel agencies, religious organizations, and group travel professionals coordinate the transportation behind these journeys across the United States and Canada.\nWhether the itinerary involves a single sacred destination or a multi-city pilgrimage, transportation can be planned around the group, the schedule, and the significance of the journey."}
+  />
+
+  <HeroQuoteBar heading="Get a Pilgrimage Tour Quote in Minutes *" />
+
+  <FeatureStrip
+    compact
+    badge="Thoughtful Transportation for Faith-Based Travel"
+    heading="The Details Matter"
+    text={"Religious groups can have requirements that are different from those of a conventional sightseeing tour.\nWAYGGO's role is to understand those requirements early and coordinate transportation around them."}
+    features={values}
+  />
 
   <ListCardGrid
-    badge="Key Sites"
-    heading="Sacred Sites We Serve"
+    compact
+    badge="Planning Beyond the Vehicle"
+    heading="A Pilgrimage Is an Itinerary, Not a Single Transfer"
+    subheading={"A pilgrimage may involve airports, hotels, places of worship, sacred sites, restaurants, group gatherings, and multiple cities.\nThat means transportation needs to work across the entire journey. WAYGGO can help travel professionals consider:"}
+    cards={journeyParts}
+    footnote="The goal is to make transportation feel like part of the itinerary rather than a series of separate arrangements."
+  />
+
+  <ListCardGrid
+    compact
+    badge="Sacred Sites We Serve"
+    heading="Faith Journeys Across North America"
+    subheading={"North America offers a wide range of destinations important to different religious communities.\nWAYGGO's transportation network can support group travel to sacred sites and faith-based destinations across the United States and Canada."}
     background="cream"
     cards={sites.map((s) => ({ eyebrow: s.faith, title: s.name, subtitle: s.city, desc: s.desc }))}
   />
 
-  <HowItWorks />
+  <ListCardGrid
+    compact
+    badge="Different Groups. Different Journeys."
+    heading="Transportation for Faith-Based Travel Programs"
+    subheading="Religious group travel takes many forms. WAYGGO can support transportation planning for:"
+    cards={groupTypes}
+  />
+
+  <FleetOverview
+    badge="Planning the Right Transportation"
+    heading="Start With the Group and the Journey"
+    paragraphs={[
+      "Passenger count is only the beginning of vehicle selection. For religious travel, the transportation plan may also need to consider luggage, mobility requirements, prayer schedules, the number of daily stops, journey length, and how the group needs to move between sacred and non-sacred destinations.",
+    ]}
+  />
+
+  <ChipCloud
+    compact
+    badge="When the Journey Crosses Cities"
+    heading="One Network Behind a Multi-Destination Pilgrimage"
+    subheading={"Pilgrimage itineraries can span several cities, regions, or even the U.S.–Canada border.\nArranging a different transportation relationship at every destination can add another layer of coordination to an already detailed itinerary.\nWAYGGO's network model is designed to help travel professionals coordinate transportation across multiple destinations through one relationship.\nThat can include:"}
+    background="white"
+    items={networkCoverage}
+    footnote="The destination may change. The transportation relationship does not have to."
+  />
+
+  <ListCardGrid
+    compact
+    badge="What to Share With WAYGGO"
+    heading="Help Us Understand the Journey"
+    subheading={"The more clearly the itinerary is defined, the easier it is to understand the transportation requirements behind it.\nWhen requesting transportation, it helps to provide:"}
+    background="cream"
+    cards={whatToShare}
+    footnote="This allows transportation to be considered as part of the journey rather than arranged one segment at a time."
+  />
 
   <PartnerCTA
-    badge="Sacred Journeys"
-    heading="Arrange Your"
-    headingHighlight="Pilgrimage Transportation"
-    subheading="Share your sacred sites, group size, and travel dates. We will respond within 24 hours with a respectful, tailored plan."
+    badge="Arrange Your Pilgrimage Transportation"
+    heading="Tell Us About"
+    headingHighlight="the Journey"
+    subheading={"Share your sacred sites, group size, travel dates, and itinerary requirements with WAYGGO.\nOur team can work through the transportation requirements and help coordinate the appropriate transportation relationships for the journey."}
     primaryCta={{ label: "Request a Quote", href: "/contact" }}
-    secondaryCta={{ label: "Register as Travel Partner", href: "/portal" }}
+    secondaryCta={{ label: "View Fleet & Capabilities", href: "/fleet" }}
+  />
+
+  <ClosingStatement
+    heading="WAYGGO Religious & Pilgrimage Groups"
+    paragraph={"A pilgrimage carries meaning beyond the transportation required to reach the destination.\nWAYGGO helps travel professionals coordinate the practical side of the journey—connecting groups with transportation operators, vehicles, and local transportation capability across the United States and Canada.\nFor religious organizations, tour operators, travel agencies, and group travel professionals, that means the transportation plan can be built around the character of the journey.\nRespect the journey. Coordinate the details. Keep the group moving.\nOne transportation relationship. A coordinated way to move the group."}
   />
 </BaseLayout>

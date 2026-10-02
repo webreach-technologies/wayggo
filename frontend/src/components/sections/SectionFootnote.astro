@@ -1,0 +1,15 @@
+---
+// Centered closing copy shown under a section's cards or chips.
+interface Props {
+  /** Separate paragraphs with "\n". */
+  text: string;
+}
+
+const { text } = Astro.props;
+---
+
+<div class="mt-10 space-y-3 text-center">
+  {text.split("\n").map((p) => (
+    <p class="font-subheading text-gray-500 max-w-3xl mx-auto">{p}</p>
+  ))}
+</div>

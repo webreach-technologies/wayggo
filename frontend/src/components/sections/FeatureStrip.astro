@@ -8,23 +8,34 @@ interface Feature {
 }
 
 interface Props {
+  badge?: string;
   heading?: string;
+  /** Separate paragraphs with "\n". */
   text?: string;
   features?: Feature[];
+  /** Use the home page's tighter vertical padding (py-14) instead of py-20. */
+  compact?: boolean;
 }
 
-const { heading, text, features = [] } = Astro.props;
+const { badge, heading, text, features = [], compact = false } = Astro.props;
+
+const paragraphs = text ? text.split("\n") : [];
 ---
 
-<section class="py-20" style="background-color: #FDEA01;">
+<section class={compact ? "py-14" : "py-20"} style="background-color: #FDEA01;">
   <div class="container">
     {(heading || text) && (
       <div class:list={["max-w-3xl mx-auto text-center", { "mb-10": features.length > 0 }]}>
+        {badge && <span class="section-label mb-4">{badge}</span>}
         {heading && (
           <h2 class="text-3xl lg:text-4xl font-black mb-4" style="color: #1A2744;">{heading}</h2>
         )}
-        {text && (
-          <p class="font-subheading text-lg leading-relaxed" style="color: rgba(26,39,68,0.8);">{text}</p>
+        {paragraphs.length > 0 && (
+          <div class="space-y-3">
+            {paragraphs.map((p) => (
+              <p class="font-subheading text-lg leading-relaxed" style="color: rgba(26,39,68,0.8);">{p}</p>
+            ))}
+          </div>
         )}
       </div>
     )}

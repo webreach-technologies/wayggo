@@ -22,65 +22,67 @@ interface Props {
   badge?: string;
   heading?: string;
   headingHighlight?: string;
-  subheading?: string;
+  paragraphs?: string[];
   tourTypes?: TourType[];
 }
 
 const {
-  badge = "Services",
-  heading = "Built for Every",
-  headingHighlight = "Kind of Group",
-  subheading = "From pilgrimage groups to Fortune 500 conventions — our network serves every travel purpose with precision.",
+  badge = "Services We Offer",
+  heading = "Group Transportation",
+  headingHighlight = "Built Around Your Journey",
+  paragraphs = [
+    "Every group travels differently. A corporate delegation may need coordinated movement between hotels, meeting venues, and airports. A sightseeing group may move through several destinations over the course of a tour. A wedding, sports group, student trip, or religious journey can bring its own schedule and transportation requirements. WAYGGO Charters helps tour operators, travel companies, businesses, and group organizers coordinate ground transportation across cities, destinations, and itineraries. Through a network of vetted transportation operators and a range of vehicle types. Explore from various services we offfer.",
+  ],
   tourTypes = [
     {
       image: imgSightseeing,
       alt: "Sightseeing & City Tours",
       name: "Sightseeing & City Tours",
-      desc: "NYC, LA, Chicago, Las Vegas — iconic landmarks with expert guides.",
+      desc: "Move groups comfortably between landmarks, attractions, hotels, and planned stops while keeping the itinerary organized from one destination to the next.",
       href: "/services/sightseeing",
     },
     {
       image: imgEducational,
       alt: "Educational Tours",
       name: "Educational Tours",
-      desc: "Smithsonian, MIT, Silicon Valley — knowledge-first journeys for student groups.",
+      desc: "Support student groups, teachers, and chaperones with organized transportation for educational visits, campus tours, museums, and multi-stop itineraries.",
       href: "/services/educational",
     },
     {
       image: imgReligious,
       alt: "Religious & Pilgrimage Tours",
       name: "Religious & Pilgrimage",
-      desc: "Sacred sites across America handled with care, respect, and punctuality.",
+      desc: "Help faith-based groups travel together between places of worship, sacred destinations, accommodations, and planned activities with transportation handled thoughtfully and respectfully.",
       href: "/services/religious",
     },
     {
       image: imgCorporate,
       alt: "Corporate & Convention Tours",
       name: "Corporate & Convention",
-      desc: "Las Vegas conventions, NYC roadshows — professional group movement at scale.",
+      desc: "Keep meetings, venues, hotels, airports, and group movements connected with transportation planned around the business itinerary.",
       href: "/services/corporate",
     },
     {
       image: imgSports,
       alt: "Sports & Fan Group Tours",
       name: "Sports & Fan Groups",
-      desc: "Stadium transfers, team charters, game-day transportation for fan groups.",
+      desc: "Keep teams, supporters, and event groups moving between hotels, venues, stadiums, and scheduled activities.",
       href: "/services/sports",
     },
     {
       image: imgWeddings,
       alt: "Wedding & Special Events",
       name: "Wedding & Special Events",
-      desc: "Luxury coaches for wedding parties, guest shuttles, venue transfers.",
+      desc: "Coordinate guest transportation between hotels, ceremony locations, receptions, and other venues with a plan built around the event schedule.",
       href: "/services/weddings",
     },
   ],
 } = Astro.props;
 ---
 
-<section class="py-24 diagonal-lines" style="background-color: #1A2744;">
+<section class="py-14 diagonal-lines" style="background-color: #1A2744;">
   <div class="container">
-    <div class="text-center mb-14">
+    <div class="text-center mb-10">
       <span class="section-label-white">{badge}</span>
       <h2
         class="text-4xl lg:text-5xl font-black mt-4 mb-4"
@@ -89,16 +91,18 @@ const {
         {heading}<br />
         <span style="color: #FDEA01;">{headingHighlight}</span>
       </h2>
-      <p class="font-subheading text-white/60 max-w-xl mx-auto">
-        {subheading}
-      </p>
+      {paragraphs.map((p) => (
+        <p class="font-subheading text-white/60 leading-relaxed mx-auto mt-4">
+          {p}
+        </p>
+      ))}
     </div>
 
     <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
       {tourTypes.map((t) => (
         <a
           href={withBase(t.href)}
-          class="group relative rounded-2xl overflow-hidden border border-white/10 hover:border-yellow transition-all duration-300 hover:-translate-y-1"
+          class="group relative flex flex-col rounded-2xl overflow-hidden border border-white/10 hover:border-yellow transition-all duration-300 hover:-translate-y-1"
         >
           <div class="relative h-48 overflow-hidden">
             <Image
@@ -115,7 +119,7 @@ const {
           </div>
 
           <div
-            class="relative p-7 border-t-0"
+            class="relative flex flex-col flex-1 p-7 border-t-0"
             style="background-color: rgba(255,255,255,0.04);"
           >
             <div
@@ -132,7 +136,7 @@ const {
               {t.desc}
             </p>
             <div
-              class="flex items-center gap-1.5 text-xs font-bold uppercase tracking-widest opacity-60 group-hover:opacity-100 transition-opacity"
+              class="mt-auto flex items-center gap-1.5 text-xs font-bold uppercase tracking-widest opacity-60 group-hover:opacity-100 transition-opacity"
               style=" color: #FDEA01;"
             >
               Explore

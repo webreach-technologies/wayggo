@@ -1,20 +1,25 @@
 ---
 import SectionHeading from "./SectionHeading.astro";
+import SectionFootnote from "./SectionFootnote.astro";
 
 interface Props {
   badge?: string;
   heading: string;
   subheading?: string;
+  /** Closing copy under the section. Separate paragraphs with "\n". */
+  footnote?: string;
   items: string[];
   background?: "white" | "cream";
+  /** Use the home page's tighter vertical padding (py-14) instead of py-20. */
+  compact?: boolean;
 }
 
-const { badge, heading, subheading, items, background = "cream" } = Astro.props;
+const { badge, heading, subheading, footnote, items, background = "cream", compact = false } = Astro.props;
 
 const bg = background === "cream" ? "#F9F7F2" : "white";
 ---
 
-<section class="py-20" style={`background-color: ${bg};`}>
+<section class={compact ? "py-14" : "py-20"} style={`background-color: ${bg};`}>
   <div class="container">
     <SectionHeading badge={badge} heading={heading} subheading={subheading} />
     <div class="flex flex-wrap gap-3 justify-center">
@@ -23,5 +28,6 @@ const bg = background === "cream" ? "#F9F7F2" : "white";
           style="border-color: #E5E7EB; color: #1A2744;">{item}</span>
       ))}
     </div>
+    {footnote && <SectionFootnote text={footnote} />}
   </div>
 </section>

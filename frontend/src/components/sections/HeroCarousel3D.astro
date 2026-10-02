@@ -3,12 +3,14 @@
 import { Image } from 'astro:assets';
 import type { ImageMetadata } from 'astro';
 import { ChevronLeft, ChevronRight } from '@lucide/astro';
+import { withBase } from '../../lib/url';
 
 interface Slide {
   img: ImageMetadata;
   label: string;
   color: string;
   desc: string;
+  cta?: { label: string; href: string };
 }
 
 interface Props {
@@ -48,7 +50,14 @@ function getSlot(i: number, total: number): string {
         <div class="c3d-chip">
           {s.label}
         </div>
-        <p class="c3d-desc">{s.desc}</p>
+        <div class="c3d-body">
+          <p class="c3d-desc">{s.desc}</p>
+          {s.cta && (
+            <a href={withBase(s.cta.href)} class="c3d-link" draggable="false">
+              {s.cta.label}
+            </a>
+          )}
+        </div>
       </div>
     ))}
   </div>
@@ -167,19 +176,38 @@ function getSlot(i: number, total: number): string {
     .c3d-chip { top: 18px; right: 18px; font-size: 11px; padding: 6px 14px; }
   }
 
-  .c3d-desc {
+  .c3d-body {
     position: absolute;
     left: 16px;
     right: 16px;
     bottom: 14px;
+  }
+  .c3d-desc {
     font-size: 0.72rem;
     font-weight: 500;
     line-height: 1.4;
     color: #e2e8f0;
     text-shadow: 0 1px 6px rgba(0,0,0,0.6);
   }
+  .c3d-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    margin-top: 8px;
+    font-size: 0.72rem;
+    font-weight: 700;
+    color: #FDEA01;
+    text-shadow: 0 1px 6px rgba(0,0,0,0.6);
+    /* Only the front card's link is clickable; side cards just rotate into view */
+    pointer-events: none;
+  }
+  .c3d-card[data-slot="0"] .c3d-link { pointer-events: auto; }
+  .c3d-link { transition: transform 0.25s ease; }
+  .c3d-link:hover { transform: translateX(4px); }
   @media (min-width: 640px) {
-    .c3d-desc { left: 20px; right: 20px; bottom: 18px; font-size: 0.875rem; }
+    .c3d-body { left: 20px; right: 20px; bottom: 18px; }
+    .c3d-desc { font-size: 0.875rem; }
+    .c3d-link { margin-top: 10px; font-size: 0.8125rem; }
   }
 
   /* Slot positions (mobile first: one card peeks on each side) */

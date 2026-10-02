@@ -6,7 +6,7 @@ interface Pillar {
   icon: AstroComponent;
   num: string;
   title: string;
-  tagline: string;
+  tagline?: string;
   desc: string;
 }
 
@@ -17,43 +17,44 @@ interface Props {
 }
 
 const {
-  heading = "Why Operators\nChoose WAYGGO Charters",
-  subheading = "We're not a booking platform. We're your dedicated ground operations team for North America — one relationship that covers every city, every group, every season.",
+  heading = "More Than a \n Booking Platform",
+  subheading = "WAYGGO is designed to be a dedicated ground transportation partner for North American group travel.\nInstead of requiring travel professionals to manage transportation relationships market by market, WAYGGO brings the coordination together through one relationship.",
   pillars = [
     {
       icon: Shield,
       num: "01",
       title: "One Point of Contact",
-      tagline: "Your single connection on the ground.",
-      desc: "One dedicated coordinator handles every city, every operator, every leg. No juggling vendors across time zones. One email. One invoice. Total clarity.",
+      desc: "A single transportation relationship can simplify communication across multiple cities, operators, and itinerary legs. Instead of managing several transportation providers independently, you have one place to coordinate the ground operation.",
     },
     {
       icon: Star,
       num: "02",
-      title: "Infinite Flexibility",
-      tagline: "From VIP vans to 56-seat motorcoaches.",
-      desc: "12 passengers or 120 — split across multiple vehicles, multiple cities. We configure the exact fleet your itinerary demands, with zero minimum orders.",
+      title: "Flexibility Around the Itinerary",
+      desc: "Different groups require different transportation solutions. From smaller vans to full-size motor coaches, and from single-city movements to multi-destination itineraries, transportation can be organized around the requirements of the journey.",
     },
     {
       icon: Users,
       num: "03",
-      title: "Vetted Reliability",
-      tagline: "500+ trusted partners. Zero guesswork.",
-      desc: "Every operator passes our rigorous 12-point vetting: licensing, insurance, vehicle inspection, driver background checks, and client references.",
+      title: "A Vetted Transportation Network",
+      desc: "WAYGGO's network is built around transportation operators that go through an established vetting process covering areas such as licensing, insurance, vehicle inspection, driver background checks, and client references.",
     },
   ],
 } = Astro.props;
 
 const headingLines = heading.split("\n");
+const subheadingParagraphs = subheading.split("\n");
+
+// "Learn More About WAYGGO" button hidden for now; set true to show it again
+const SHOW_CTA = false;
 ---
 
-<section class="py-28" style="background: #F9F7F2;">
+<section class="py-14" style="background: white;">
   <div class="container">
     <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
       <!-- Left heading column -->
       <div class="lg:col-span-4">
-        <span class="section-label">Why Us</span>
-        <h2 class="text-4xl lg:text-5xl font-black mt-5 mb-6 leading-tight"
+        <span class="section-label">Why WAYGGO</span>
+        <h2 class="text-4xl lg:text-4xl font-black mt-5 mb-6 leading-tight"
           style="color: #1A2744;">
           {headingLines.map((line, i) => (
             <>
@@ -62,10 +63,16 @@ const headingLines = heading.split("\n");
             </>
           ))}
         </h2>
-        <p class="font-subheading text-base leading-relaxed mb-8" style="color: #6B7280;">
-          {subheading}
-        </p>
-        <a href={withBase("/about")} class="btn-secondary">Learn Our Story</a>
+        <div class="space-y-4 mb-8">
+          {subheadingParagraphs.map((p) => (
+            <p class="font-subheading text-base leading-relaxed" style="color: #6B7280;">
+              {p}
+            </p>
+          ))}
+        </div>
+        {SHOW_CTA && (
+          <a href={withBase("/about")} class="btn-secondary">Learn More About WAYGGO</a>
+        )}
       </div>
 
       <!-- Right: 3 pillar cards -->
@@ -84,7 +91,9 @@ const headingLines = heading.split("\n");
                 <span class="font-heading text-xs font-black uppercase tracking-widest" style="color: #FDEA01;">{pillar.num}</span>
                 <h3 class="text-lg font-black" style="color: #1A2744;">{pillar.title}</h3>
               </div>
-              <p class="text-sm font-semibold italic mb-2" style="color: rgba(26,39,68,0.5);">"{pillar.tagline}"</p>
+              {pillar.tagline && (
+                <p class="text-sm font-semibold italic mb-2" style="color: rgba(26,39,68,0.5);">"{pillar.tagline}"</p>
+              )}
               <p class="text-sm leading-relaxed" style="color: #6B7280;">{pillar.desc}</p>
             </div>
           </div>

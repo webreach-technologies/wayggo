@@ -16,35 +16,35 @@ interface Props {
 }
 
 const {
-  badge = "Simple Process",
-  heading = "Seamless From Start to Finish",
-  subheading = "We've built a frictionless process so you spend less time on logistics and more time designing unforgettable tours.",
+  badge = "Straightforward Process",
+  heading = "From Itinerary to Arrival",
+  subheading = "Group transportation should not require you to become a transportation expert. WAYGGO Charters keeps the process straightforward.",
   steps = [
     {
       num: "01",
       icon: FileText,
-      title: "Submit Your Itinerary",
-      desc: "Share your group size, travel dates, cities, and tour purpose. Our smart quote form captures everything we need to get started immediately.",
+      title: "Share Your Itinerary",
+      desc: "Tell us about your group, travel dates, destinations, cities, passenger count, and the purpose of the trip. The more we understand about the journey, the better we can coordinate the transportation around it.",
     },
     {
       num: "02",
       icon: Clock,
-      title: "We Match & Confirm",
-      desc: "Within 24 hours, our operations team sources the best-fit operator and vehicle from our vetted network and sends you a detailed proposal.",
+      title: "We Coordinate the Transportation",
+      desc: "Our operations team works through the WAYGGO network to identify an appropriate transportation operator and vehicle for the itinerary, then provides the details needed to move the trip forward.",
     },
     {
       num: "03",
       icon: ArrowRight,
       title: "Your Group Moves",
-      desc: "Professionally driven, on-time arrivals at every stop. We monitor in real-time and handle any on-the-ground changes so you never worry.",
+      desc: "Once the transportation is arranged, the group can focus on the journey itself. From scheduled departures to planned stops and destination changes, the transportation is organized around the itinerary rather than the other way around.",
     },
   ],
 } = Astro.props;
 ---
 
-<section class="py-24" style="background-color: white;">
+<section class="py-14" style="background-color: white;">
   <div class="container">
-    <div class="text-center mb-16">
+    <div class="text-center mb-14">
       <span class="section-label">{badge}</span>
       <h2
         class="text-4xl lg:text-5xl font-black mt-4 mb-4"

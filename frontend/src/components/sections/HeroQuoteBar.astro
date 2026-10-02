@@ -4,6 +4,13 @@
 // no React island needed for a single flat form.
 import { Send, Check } from "@lucide/astro";
 import DateTimeField from "../react/DateTimeField";
+
+interface Props {
+  /** Form title; service pages pass their own. */
+  heading?: string;
+}
+
+const { heading = "Get Quick Quote in Minutes *" } = Astro.props;
 ---
 
 <section class="hqb-section">
@@ -11,13 +18,12 @@ import DateTimeField from "../react/DateTimeField";
     <div class="hqb-card">
       <div data-hqb-form-view>
         <div class="hqb-head">
-          <h2 class="hqb-title">Get Quick Quote</h2>
-          <p class="hqb-sub">Tell us the basics and our operations team replies within 24 hours.</p>
+          <h2 class="hqb-title">{heading}</h2>
         </div>
 
         <form class="hqb-form" data-hqb-form novalidate>
           <div class="hqb-field">
-            <label for="hqb-name">Name *</label>
+            <label for="hqb-name">Full Name *</label>
             <input id="hqb-name" name="name" type="text" required placeholder="Jane Smith" />
           </div>
           <div class="hqb-field">
@@ -29,7 +35,7 @@ import DateTimeField from "../react/DateTimeField";
             <input id="hqb-phone" name="phone" type="tel" required placeholder="+1 416 555 0123" />
           </div>
           <div class="hqb-field">
-            <label for="hqb-pax">Passengers *</label>
+            <label for="hqb-pax">No. of Passengers *</label>
             <input id="hqb-pax" name="passengers" type="number" min="1" required placeholder="e.g. 45" />
           </div>
           <div class="hqb-field">
@@ -49,8 +55,8 @@ import DateTimeField from "../react/DateTimeField";
             <DateTimeField client:visible id="hqb-return-date" name="returnDateTime" placeholder="Select date & time" minFrom="pickupDateTime" />
           </div>
           <div class="hqb-field hqb-field-wide">
-            <label for="hqb-itinerary">Brief Itinerary</label>
-            <input id="hqb-itinerary" name="itinerary" type="text" placeholder="Stops, timings, luggage, special requests..." />
+            <label for="hqb-itinerary">Brief Itinerary *</label>
+            <input id="hqb-itinerary" name="itinerary" type="text" required placeholder="Stops, timings, luggage, special requests..." />
           </div>
           <button type="submit" class="btn-primary hqb-submit">
             Get Quote

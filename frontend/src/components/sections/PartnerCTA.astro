@@ -20,16 +20,18 @@ const {
   badge = "Join Our Partner Network",
   heading = "Ready to Simplify Your",
   headingHighlight = "North American Tours?",
-  subheading = "Join 200+ active partner agencies from 40+ countries who trust WAYGGO Charters to move their clients safely, on time, every leg of the journey.",
+  subheading = "When transportation is spread across several cities, destinations, and vehicle requirements, having the right transportation partner can make a meaningful difference.\nWAYGGO works with travel professionals and group organizers to coordinate ground transportation across North America through a single relationship.\nWhether you have an itinerary ready to quote or are looking for a transportation partner for future group travel, we're ready to start the conversation.",
   primaryCta = { label: "Request a Quote — It's Free", href: "/contact" },
-  secondaryCta = { label: "Register as Travel Partner", href: "/portal" },
+  secondaryCta = { label: "Register as a Travel Partner", href: "/portal" },
   trustCards = [
-    { title: "No Registration Fee",       desc: "Free to become a partner. No onboarding costs, no contracts." },
-    { title: "24-Hour Response",           desc: "Guaranteed quote turnaround within one business day." },
-    { title: "Dedicated Account Manager", desc: "Your single point of contact for every operation." },
-    { title: "Custom Invoicing",           desc: "Net-30 terms, multi-currency, consolidated billing available." },
+    { title: "No Registration Fee",          desc: "Become a WAYGGO partner without registration or onboarding fees." },
+    { title: "Responsive Coordination",      desc: "Get a transportation team focused on your itinerary and its requirements." },
+    { title: "Dedicated Account Management", desc: "Maintain a consistent point of contact for your transportation operations." },
+    { title: "Flexible Invoicing",           desc: "Explore consolidated billing and other invoicing arrangements available for qualifying partner relationships." },
   ],
 } = Astro.props;
+
+const subheadingParagraphs = subheading.split("\n");
 ---
 
 <section class="relative overflow-hidden" style="background: #1A2744;">
@@ -40,7 +42,7 @@ const {
     style="background: radial-gradient(ellipse at 50% 60%, rgba(255,208,0,0.07) 0%, transparent 65%);"></div>
 
   <div class="container relative z-10">
-    <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center py-24">
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center py-14">
 
       <!-- Left: Copy -->
       <div>
@@ -50,10 +52,14 @@ const {
           {heading}<br />
           <span style="color: #FDEA01;">{headingHighlight}</span>
         </h2>
-        <p class="font-subheading text-base leading-relaxed mb-10"
-          style="color: rgba(255,255,255,0.55); max-width: 460px;">
-          {subheading}
-        </p>
+        <div class="space-y-4 mb-10">
+          {subheadingParagraphs.map((p) => (
+            <p class="font-subheading text-base leading-relaxed"
+              style="color: rgba(255,255,255,0.55);">
+              {p}
+            </p>
+          ))}
+        </div>
         <div class="flex flex-col sm:flex-row gap-4">
           <a href={withBase(primaryCta.href)} class="btn-primary">{primaryCta.label}</a>
           <a href={withBase(secondaryCta.href)} class="btn-outline-white">{secondaryCta.label}</a>

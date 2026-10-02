@@ -1,34 +1,29 @@
 ---
 import BaseLayout from "../../layouts/BaseLayout.astro";
 import PageHero from "../../components/sections/PageHero.astro";
+import HeroQuoteBar from "../../components/sections/HeroQuoteBar.astro";
 import FeatureStrip from "../../components/sections/FeatureStrip.astro";
 import ListCardGrid from "../../components/sections/ListCardGrid.astro";
-import ItinerarySection from "../../components/sections/ItinerarySection.astro";
 import FleetOverview from "../../components/sections/FleetOverview.astro";
 import PartnerCTA from "../../components/sections/PartnerCTA.astro";
+import ClosingStatement from "../../components/sections/ClosingStatement.astro";
 import heroImg from "../../assets/tourtype/Sightseeing & City Tours.png";
 import { Bus, User, Mic, MapPin } from "@lucide/astro";
 
 const routes = [
-  { city: "New York City", highlights: ["Times Square", "Statue of Liberty", "Central Park", "9/11 Memorial", "Empire State Building", "Brooklyn Bridge"], vehicle: "Minibus or Motorcoach", days: "3–7 days" },
-  { city: "Los Angeles", highlights: ["Hollywood Walk of Fame", "Getty Center", "Santa Monica Pier", "Beverly Hills", "Universal Studios"], vehicle: "Minibus", days: "3–5 days" },
-  { city: "Chicago", highlights: ["Millennium Park", "Navy Pier", "The 606 Trail", "Art Institute", "Deep-Dish Pizza Tour"], vehicle: "Minibus or Full-Size Bus", days: "2–4 days" },
-  { city: "San Francisco", highlights: ["Golden Gate Bridge", "Alcatraz Island", "Fisherman's Wharf", "Chinatown", "Muir Woods"], vehicle: "Minibus", days: "3–5 days" },
-  { city: "Miami", highlights: ["Art Deco District", "Little Havana", "Wynwood Walls", "South Beach", "Everglades Day Trip"], vehicle: "Minibus or Luxury Van", days: "2–4 days" },
-  { city: "Las Vegas", highlights: ["The Strip", "Fremont Street", "Grand Canyon Day Trip", "Hoover Dam", "Red Rock Canyon"], vehicle: "Minibus", days: "3–5 days" },
-];
-
-const itinerary = [
-  { day: "Day 1", title: "Midtown Marvels", stops: ["Times Square", "Empire State Building", "Rockefeller Center", "St. Patrick's Cathedral", "Central Park"], vehicle: "Minibus (full day)" },
-  { day: "Day 2", title: "Downtown & History", stops: ["9/11 Memorial & Museum", "Wall Street", "Brooklyn Bridge Walk", "DUMBO Brooklyn", "Brooklyn Bridge Park"], vehicle: "Minibus (full day)" },
-  { day: "Day 3", title: "Icons & Boroughs", stops: ["Statue of Liberty Ferry", "Ellis Island", "High Line Park", "Chelsea Market", "Greenwich Village"], vehicle: "Minibus (half day) + ferry" },
+  { city: "New York City", desc: "New York sightseeing can take a group from Midtown landmarks to Lower Manhattan, Brooklyn, Central Park, and beyond in a single program.", highlights: ["Times Square", "Statue of Liberty", "Central Park", "9/11 Memorial", "Empire State Building", "Brooklyn Bridge"], vehicle: "Minibus or Motorcoach", days: "3–7 days" },
+  { city: "Los Angeles", desc: "Los Angeles sightseeing often combines major attractions with longer distances between neighborhoods, making transportation planning an important part of the day.", highlights: ["Hollywood Walk of Fame", "Getty Center", "Santa Monica Pier", "Beverly Hills", "Universal Studios"], vehicle: "Minibus", days: "3–5 days" },
+  { city: "Chicago", desc: "Chicago offers a combination of architecture, culture, food, waterfront attractions, and neighborhood experiences that can be connected through a structured sightseeing itinerary.", highlights: ["Millennium Park", "Navy Pier", "The 606 Trail", "Art Institute", "Deep-Dish Pizza Tour"], vehicle: "Minibus or Full-Size Bus", days: "2–4 days" },
+  { city: "San Francisco", desc: "San Francisco sightseeing can combine major city landmarks with attractions outside the immediate downtown area, making the transportation plan an important part of the overall itinerary.", highlights: ["Golden Gate Bridge", "Alcatraz Island", "Fisherman's Wharf", "Chinatown", "Muir Woods"], vehicle: "Minibus", days: "3–5 days" },
+  { city: "Miami", desc: "Miami sightseeing can move between historic neighborhoods, cultural districts, waterfront attractions, and excursions beyond the city.", highlights: ["Art Deco District", "Little Havana", "Wynwood Walls", "South Beach", "Everglades Day Trip"], vehicle: "Minibus or Luxury Van", days: "2–4 days" },
+  { city: "Las Vegas", desc: "Las Vegas programs can extend beyond the Strip to nearby attractions and day-trip destinations, creating a combination of city transportation and longer-distance travel.", highlights: ["The Strip", "Fremont Street", "Grand Canyon Day Trip", "Hoover Dam", "Red Rock Canyon"], vehicle: "Minibus", days: "3–5 days" },
 ];
 
 const features = [
-  { icon: Bus, title: "Modern Fleet", desc: "Clean, maintained, fully insured vehicles" },
-  { icon: User, title: "Pro Drivers", desc: "Licensed, vetted, punctual professionals" },
-  { icon: Mic, title: "Guide Coordination", desc: "We work with your tour guide or provide one" },
-  { icon: MapPin, title: "Real-Time Tracking", desc: "Operations monitor every trip live" },
+  { icon: Bus, title: "Modern Fleet", desc: "Clean, maintained, fully insured vehicles selected according to the requirements of the group and itinerary." },
+  { icon: User, title: "Professional Drivers", desc: "Licensed, vetted transportation professionals who understand that sightseeing transportation is about more than getting from one address to another." },
+  { icon: Mic, title: "Guide Coordination", desc: "WAYGGO can work with your existing tour guide or coordinate guide requirements as part of the transportation plan." },
+  { icon: MapPin, title: "Real-Time Trip Monitoring", desc: "Operations teams monitor trips in real time to help keep transportation coordinated as the itinerary unfolds." },
 ];
 
 const pageURL = new URL(Astro.url.pathname, Astro.site ?? "https://wayggo.com").href;
@@ -52,42 +47,54 @@ const serviceSchema = {
   <script is:inline type="application/ld+json" set:html={JSON.stringify(serviceSchema)} />
 
   <PageHero
-    badge="Tour Category"
+    badge="Our Service"
     heading={'Sightseeing &amp;<br /><span style="color: #FDEA01;">City Tours</span>'}
-    subheading="From the Manhattan skyline to the Pacific coast, WAYGGO Charters' sightseeing fleet connects international groups to North America's most iconic landmarks with professional drivers and optional expert guides."
+    subheading="See More of North America. Coordinate the Journey With Confidence."
     image={heroImg}
     imageAlt="Sightseeing and city tour group transportation — WAYGGO Charters"
     cta={{ label: "Request Sightseeing Quote", href: "/contact" }}
   />
 
-  <FeatureStrip heading="What Every Tour Includes" features={features} />
+  <ClosingStatement
+    heading={false}
+    paragraph={"Sightseeing groups move differently from point-to-point transfers.\nA typical city tour may involve multiple attractions, scheduled stops, hotel pickups, walking portions, guide coordination, and changing traffic conditions—all while keeping the group together and the itinerary moving.\nWAYGGO Charters helps international tour operators, travel agencies, and group travel professionals coordinate the transportation behind sightseeing programs across North America.\nFrom the Manhattan skyline to the Pacific coast, our transportation network connects groups with local operators and vehicles suited to the itinerary, group size, and destination."}
+  />
+
+  <HeroQuoteBar heading="Get a Sightseeing Tour Quote in Minutes *" />
+
+  <FeatureStrip heading="What Every Tour Includes" features={features} compact />
 
   <ListCardGrid
     badge="Top Destinations"
     heading="Popular City Routes"
+    compact
     cards={routes.map((r) => ({
       title: r.city,
+      desc: r.desc,
       points: r.highlights,
-      meta: { label: "Vehicle", value: r.vehicle },
+      meta: { label: "Typical Vehicle", value: r.vehicle },
       tag: r.days,
     }))}
   />
 
-  <ItinerarySection
-    heading="3-Day New York City Group Tour"
-    subheading="Recommended for 15–28 passengers · Minibus"
-    days={itinerary}
-    cta={{ label: "Request This Itinerary", href: "/contact" }}
+  <FleetOverview
+    badge="Choosing the Right Vehicle"
+    heading="Match the Vehicle to the Group and the Day"
+    paragraphs={[
+      "The right sightseeing vehicle depends on more than passenger count. The itinerary, luggage, duration, number of stops, road conditions, and amount of time spent traveling between attractions can all influence the appropriate transportation choice.",    ]}
   />
 
-  <FleetOverview badge="Right-Size Your Group" heading={"The Right Vehicle\nfor Every Group Size"} />
-
   <PartnerCTA
-    badge="Plan Your Tour"
-    heading="Plan Your"
-    headingHighlight="Sightseeing Tour Today"
-    subheading="Tell us your cities, group size, and dates. We'll match you with the perfect vehicle and operator within 24 hours."
+    badge="Plan Your Sightseeing Tour"
+    heading="Tell Us About the Group."
+    headingHighlight="We'll Help Coordinate the Transportation."
+    subheading={"Every sightseeing itinerary has its own requirements.\nTell WAYGGO your cities, group size, dates, and itinerary details. From there, the transportation plan can be considered alongside the journey itself—including vehicle requirements, local operator coordination, routing, and scheduled stops.\nFor travel professionals managing North American sightseeing programs, the goal is to make transportation one less fragmented part of the itinerary.\nYou plan the experience. WAYGGO helps coordinate the transportation behind it."}
     primaryCta={{ label: "Request a Quote", href: "/contact" }}
     secondaryCta={{ label: "Browse Tour Bus", href: "/tour-bus" }}
+  />
+
+  <ClosingStatement
+    heading="WAYGGO Sightseeing & City Tours"
+    paragraph={"Sightseeing is about what travelers experience when they arrive. Transportation is what helps connect those experiences.\nWAYGGO works with international tour operators, travel agencies, and group travel professionals to coordinate transportation for sightseeing programs across the United States and Canada.\nFrom a half-day city tour to a multi-city North American itinerary, the transportation requirements can be planned around the group, the route, and the experience.\nOne transportation relationship. A coordinated way to move the group."}
   />
 </BaseLayout>

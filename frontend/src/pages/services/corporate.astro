@@ -1,29 +1,80 @@
 ---
 import BaseLayout from "../../layouts/BaseLayout.astro";
 import PageHero from "../../components/sections/PageHero.astro";
+import HeroQuoteBar from "../../components/sections/HeroQuoteBar.astro";
 import IconCardGrid from "../../components/sections/IconCardGrid.astro";
-import TableSection from "../../components/sections/TableSection.astro";
-import HowItWorks from "../../components/sections/HowItWorks.astro";
+import ListCardGrid from "../../components/sections/ListCardGrid.astro";
+import ChipCloud from "../../components/sections/ChipCloud.astro";
+import FleetOverview from "../../components/sections/FleetOverview.astro";
 import PartnerCTA from "../../components/sections/PartnerCTA.astro";
+import ClosingStatement from "../../components/sections/ClosingStatement.astro";
 import heroImg from "../../assets/tourtype/Corporate & Convention Travel.png";
 import { Send, RefreshCw, Award, Clipboard, Moon, FileText } from "@lucide/astro";
 
-const conventions = [
-  { name: "CES — Consumer Electronics Show", city: "Las Vegas, NV", months: "January", size: "Up to 120,000 attendees", vehicle: "Motorcoach fleet" },
-  { name: "SXSW — South by Southwest", city: "Austin, TX", months: "March", size: "Up to 280,000 attendees", vehicle: "Shuttle loops + buses" },
-  { name: "NAB Show", city: "Las Vegas, NV", months: "April", size: "Up to 90,000 attendees", vehicle: "Motorcoach + shuttle" },
-  { name: "Dreamforce (Salesforce)", city: "San Francisco, CA", months: "September", size: "Up to 170,000 attendees", vehicle: "Shuttle loops" },
-  { name: "IMEX America", city: "Las Vegas, NV", months: "October", size: "Up to 14,000 attendees", vehicle: "VIP van + Motorcoach" },
-  { name: "Chicago Auto Show", city: "Chicago, IL", months: "February", size: "Up to 800,000 attendees", vehicle: "Convention shuttle" },
+const services = [
+  { icon: Send, title: "Airport Delegation Pickup", desc: "Coordinate arrivals across multiple flights, terminals, and airlines while keeping the delegation's transportation organized. Arrival schedules can be built around the group's flight information, hotel locations, and expected arrival windows." },
+  { icon: RefreshCw, title: "Shuttle Loop Management", desc: "Keep attendees moving between hotels and convention venues through scheduled shuttle loops. Transportation can be organized around conference schedules, session breaks, venue access times, and changes to the event program." },
+  { icon: Award, title: "VIP Executive Transfer", desc: "Provide dedicated transportation for C-suite delegates, speakers, executives, and other VIP guests. Luxury van transportation can provide a more private and flexible option when individual or small-group movement is required." },
+  { icon: Clipboard, title: "On-Site Coordinator", desc: "For groups of 50+ delegates, the current WAYGGO program includes an on-site coordinator to help manage transportation during the event. Having a transportation contact on the ground can make it easier to address schedule changes, arrivals, departures, and operational questions as they arise." },
+  { icon: Moon, title: "Evening Event Transport", desc: "Corporate programs often continue beyond the convention floor. Transportation can be coordinated for dinners, receptions, galas, networking events, and other evening activities with scheduled departure and return movements." },
+  { icon: FileText, title: "Consolidated Invoicing", desc: "Multiple transportation movements do not necessarily need to mean multiple disconnected billing processes. WAYGGO's corporate service includes consolidated invoicing, providing one invoice per delegation for simpler administration." },
 ];
 
-const services = [
-  { icon: Send, title: "Airport Delegation Pickup", desc: "Coordinated arrivals across multiple flights, terminals, and airlines — zero delegates left behind." },
-  { icon: RefreshCw, title: "Shuttle Loop Management", desc: "Continuous hotel-to-venue loops timed to session breaks, with real-time adjustments." },
-  { icon: Award, title: "VIP Executive Transfer", desc: "Luxury van service for C-suite delegates, speakers, and VIP guests." },
-  { icon: Clipboard, title: "On-Site Coordinator", desc: "A WAYGGO Charters coordinator on the ground for groups of 50+ delegates." },
-  { icon: Moon, title: "Evening Event Transport", desc: "After-hours gala and dinner transport with precise scheduling." },
-  { icon: FileText, title: "Consolidated Invoicing", desc: "One invoice per delegation — simplified billing for corporate travel managers." },
+const programStages = [
+  { title: "Arrival Transportation", desc: "Airport pickups organized around flight schedules and terminal information." },
+  { title: "Hotel Transfers", desc: "Transportation between airports, hotels, convention venues, and scheduled activities." },
+  { title: "Convention Shuttles", desc: "Recurring hotel-to-venue transportation during conference days." },
+  { title: "Executive Transportation", desc: "Dedicated vehicles for executives, speakers, VIP guests, and smaller groups." },
+  { title: "Event Transportation", desc: "Transportation to dinners, receptions, galas, and off-site corporate events." },
+  { title: "Departure Coordination", desc: "Scheduled transportation from hotels and venues back to airports." },
+];
+
+const programTypes = [
+  { title: "Executive Programs", desc: "Smaller executive groups may require flexible, private transportation between airports, hotels, meetings, restaurants, and events." },
+  { title: "Corporate Meetings", desc: "Meeting programs often involve recurring transportation between hotels and meeting venues, with movements tied closely to the event schedule." },
+  { title: "Industry Conventions", desc: "Large conventions can require shuttle loops, airport transportation, VIP movements, and evening event transportation operating at the same time." },
+  { title: "Incentive Travel", desc: "Incentive programs may combine sightseeing, dining, entertainment, and special events, requiring transportation that follows a more varied itinerary." },
+  { title: "International Delegations", desc: "International groups may arrive from different countries and flights, creating additional coordination requirements around arrival information, hotels, language needs, and the overall program schedule." },
+  { title: "Speaker & VIP Programs", desc: "Executives, speakers, and special guests may require dedicated transportation with different timing and routing from the larger delegation." },
+];
+
+const conventions = [
+  { name: "CES", where: "Las Vegas, Nevada · January", vehicle: "Motorcoach fleet", desc: "Large technology events can require transportation capable of moving groups between hotels, convention facilities, airports, and scheduled activities." },
+  { name: "SXSW", where: "Austin, Texas · March", vehicle: "Shuttle loops + buses", desc: "A distributed event environment can make recurring transportation between hotels, venues, and scheduled activities an important part of the program." },
+  { name: "NAB Show", where: "Las Vegas, Nevada · April", vehicle: "Motorcoach + shuttle", desc: "A combination of scheduled group movements and recurring shuttle service can support different transportation requirements throughout the event." },
+  { name: "Dreamforce", where: "San Francisco, California · September", vehicle: "Shuttle loops", desc: "Hotel-to-venue transportation can be organized around conference schedules and attendee movement." },
+  { name: "IMEX America", where: "Las Vegas, Nevada · October", vehicle: "VIP van + motorcoach", desc: "Large professional events can require a combination of delegation transportation and dedicated executive or VIP movements." },
+  { name: "Chicago Auto Show", where: "Chicago, Illinois · February", vehicle: "Convention shuttle", desc: "Scheduled shuttle transportation can connect hotels, venues, and event activities throughout the program." },
+];
+
+const planning = [
+  { title: "Delegation Size", desc: "How many people are traveling, and are there separate executive, VIP, or general-attendee groups?" },
+  { title: "Convention Dates", desc: "What are the arrival, event, and departure dates?" },
+  { title: "Hotel Locations", desc: "Where will the delegation stay, and are multiple hotels involved?" },
+  { title: "Venue Information", desc: "Where are the convention, meeting, and event locations?" },
+  { title: "Flight Information", desc: "Which airports, terminals, airlines, and arrival or departure times are involved?" },
+  { title: "Daily Schedule", desc: "When do sessions begin and end? Are there breaks, dinners, receptions, or off-site events?" },
+  { title: "VIP Requirements", desc: "Do executives, speakers, or other guests require dedicated transportation?" },
+  { title: "Vehicle Requirements", desc: "How many passengers need to move at each stage, and what vehicle types make sense for each movement?" },
+];
+
+const networkCoverage = [
+  "Airport transportation",
+  "Hotel transfers",
+  "Convention shuttles",
+  "Executive movements",
+  "Evening events",
+  "Intercity transportation",
+  "Multi-city corporate programs",
+];
+
+const shareDetails = [
+  { title: "Delegation Size", desc: "Number of attendees, executives, speakers, and VIP guests." },
+  { title: "Convention Dates", desc: "Arrival, event, and departure dates." },
+  { title: "Hotel Locations", desc: "Hotels and other accommodation locations." },
+  { title: "Venue Information", desc: "Convention centers, meeting facilities, restaurants, and event venues." },
+  { title: "Flight Details", desc: "Airport, terminal, and arrival/departure information." },
+  { title: "Program Schedule", desc: "Sessions, breaks, meetings, dinners, receptions, and other scheduled movements." },
 ];
 
 const pageURL = new URL(Astro.url.pathname, Astro.site ?? "https://wayggo.com").href;
@@ -47,41 +98,105 @@ const serviceSchema = {
   <script is:inline type="application/ld+json" set:html={JSON.stringify(serviceSchema)} />
 
   <PageHero
-    badge="For Corporate Operators"
+    badge="Our Service"
     heading={'Corporate &amp;<br /><span style="color: #FDEA01;">Convention Travel</span>'}
-    subheading="When your delegation lands in North America, every minute counts. WAYGGO Charters delivers precision ground logistics for corporate groups, industry conventions, and executive travel programs — managing complexity so your clients experience nothing but seamless movement."
+    subheading="Transportation That Keeps Business Moving"
     image={heroImg}
     imageAlt="Corporate and convention group transportation — WAYGGO Charters"
     cta={{ label: "Request Corporate Quote", href: "/contact" }}
   />
 
+  <ClosingStatement
+    heading={false}
+    paragraph={"When a corporate delegation arrives in North America, transportation is one part of the event that needs to work quietly in the background.\nMultiple flights. Multiple hotels. Convention venues. Executive guests. Speakers. Evening events. Changing schedules.\nWAYGGO Charters helps international tour operators, corporate travel planners, event organizers, and group travel professionals coordinate the ground transportation behind corporate programs and conventions across the United States and Canada.\nFrom airport arrivals to hotel shuttles and executive transfers, the transportation plan can be organized around the schedule, the delegation, and the demands of the event."}
+  />
+
+  <HeroQuoteBar heading="Get a Corporate Travel Quote in Minutes *" />
+
   <IconCardGrid
-    badge="Our Services"
-    heading="Complete Corporate Transport Solutions"
+    compact
+    badge="Complete Corporate Transport Solutions"
+    heading="Transportation Around the Event"
+    subheading={"Corporate transportation rarely consists of one simple transfer.\nWAYGGO can support the different transportation requirements that can arise before, during, and after a convention or corporate program."}
     items={services}
   />
 
-  <TableSection
-    badge="Event Experience"
-    heading="Major Conventions We Serve"
+  <ListCardGrid
+    compact
+    badge="From Airport to Closing Reception"
+    heading="One Transportation Plan for the Complete Program"
+    subheading={"Corporate travel becomes more complicated when transportation is planned one movement at a time.\nA delegation may arrive on different flights, stay at several hotels, attend sessions at different times, move to evening events, and depart on different schedules.\nThe transportation plan needs to connect all of those movements. WAYGGO can help coordinate:"}
     background="cream"
-    columns={[
-      { key: "name", label: "Convention", variant: "strong" },
-      { key: "city", label: "City" },
-      { key: "months", label: "Month", variant: "badge" },
-      { key: "vehicle", label: "Recommended Vehicle", variant: "muted" },
-    ]}
-    rows={conventions}
+    cards={programStages}
   />
 
-  <HowItWorks />
+  <ListCardGrid
+    compact
+    badge="Corporate Programs & Delegations"
+    heading="Transportation Built Around the Schedule"
+    subheading="Different corporate programs create different transportation requirements."
+    cards={programTypes}
+  />
+
+  <ListCardGrid
+    compact
+    badge="Major Conventions We Serve"
+    heading="Transportation for North America's Major Events"
+    subheading={"Convention transportation can change significantly depending on the event, venue layout, hotel locations, delegation size, and daily schedule.\nThe following examples illustrate the types of convention programs currently identified by WAYGGO's service offering."}
+    background="cream"
+    cards={conventions.map((c) => ({
+      title: c.name,
+      subtitle: c.where,
+      desc: c.desc,
+      meta: { label: "Transportation", value: c.vehicle },
+    }))}
+  />
+
+  <ListCardGrid
+    compact
+    badge="Planning the Transportation"
+    heading="Start With the Event Schedule"
+    subheading="The best transportation plan starts with understanding the event. For a corporate program or convention, it helps to provide:"
+    cards={planning}
+    footnote="These details allow transportation to be considered as one connected program rather than a series of individual bookings."
+  />
+
+  <ClosingStatement
+    badge="When the Schedule Changes"
+    heading="Corporate Events Don't Always Run Exactly to Plan"
+    paragraph={"Convention programs can change.\nSessions may run late. Flights may arrive early. Meetings can move. Evening events may extend beyond the original schedule.\nThat is why corporate transportation needs more than a vehicle and a pickup address.\nIt needs communication and coordination.\nWAYGGO's role is to help travel professionals and event organizers manage the transportation relationship behind the program, so changes can be addressed within the broader transportation plan.\nThe event can change. The transportation team should be prepared to coordinate with it."}
+  />
+
+  <FleetOverview
+    badge="Choosing the Right Vehicle"
+    heading="Match the Vehicle to Each Movement"
+    paragraphs={[
+      "A corporate program may use several different vehicle types during the same event. The right solution may involve one vehicle type—or a combination of vehicles across the program.",
+    ]}
+  />
+
+  <ChipCloud
+    compact
+    badge="One Relationship Behind the Program"
+    heading="Corporate Transportation Across North America"
+    subheading={"International corporate programs can become more difficult to coordinate when transportation changes from one destination to another.\nWAYGGO's North American operator network is designed to give travel professionals a coordinated transportation relationship across multiple destinations.\nThat can mean one transportation partner helping organize:"}
+    background="white"
+    items={networkCoverage}
+    footnote={"Instead of rebuilding the transportation relationship every time the itinerary changes cities, the network provides a broader framework for coordinating the journey.\nOne relationship. A coordinated transportation network behind the event."}
+  />
 
   <PartnerCTA
-    badge="Corporate Travel"
-    heading="Planning a Corporate"
-    headingHighlight="Tour or Convention?"
-    subheading="Submit your delegation size, convention dates, and hotel locations. We'll build a precision transport plan within 24 hours."
+    badge="Planning a Corporate Tour or Convention?"
+    heading="Give Us the Schedule."
+    headingHighlight="We'll Help Build the Transportation Plan."
+    subheading="Share your program details. From there, WAYGGO can work through the transportation requirements and develop a plan around the actual program."
     primaryCta={{ label: "Request a Corporate Quote", href: "/contact" }}
     secondaryCta={{ label: "Register as Corporate Partner", href: "/portal" }}
+    trustCards={shareDetails}
+  />
+
+  <ClosingStatement
+    heading="WAYGGO Corporate & Convention Travel"
+    paragraph={"Corporate transportation should not become another operational problem for the people responsible for the event.\nWAYGGO helps international tour operators, corporate travel planners, event organizers, and group travel professionals coordinate the transportation connecting airports, hotels, convention venues, meetings, and events across the United States and Canada.\nThe goal is not simply to provide a vehicle. It is to make the movement of the delegation easier to coordinate.\nThe event is the priority. WAYGGO helps keep the transportation moving behind it.\nOne transportation relationship. A coordinated way to move the group."}
   />
 </BaseLayout>

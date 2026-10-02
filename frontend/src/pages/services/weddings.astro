@@ -1,31 +1,97 @@
 ---
 import BaseLayout from "../../layouts/BaseLayout.astro";
 import PageHero from "../../components/sections/PageHero.astro";
+import HeroQuoteBar from "../../components/sections/HeroQuoteBar.astro";
 import FeatureStrip from "../../components/sections/FeatureStrip.astro";
 import IconCardGrid from "../../components/sections/IconCardGrid.astro";
+import ListCardGrid from "../../components/sections/ListCardGrid.astro";
 import ChipCloud from "../../components/sections/ChipCloud.astro";
-import HowItWorks from "../../components/sections/HowItWorks.astro";
+import FleetOverview from "../../components/sections/FleetOverview.astro";
 import PartnerCTA from "../../components/sections/PartnerCTA.astro";
+import ClosingStatement from "../../components/sections/ClosingStatement.astro";
 import heroImg from "../../assets/tourtype/Wedding & Special Events.png";
 import { Star, User, Clock, Heart, RefreshCw, Bus, Send, Sunrise, LayoutGrid, MapPin } from "@lucide/astro";
 
 const highlights = [
-  { icon: Star, title: "Elegantly Presented", desc: "Immaculate vehicles with optional floral or ribbon decoration" },
-  { icon: User, title: "Formally Dressed Drivers", desc: "Professional attire to match your event's formality" },
-  { icon: Clock, title: "Zero-Latency Timing", desc: "Synchronized with your ceremony and reception schedule" },
-  { icon: Heart, title: "Bridal Party Priority", desc: "Dedicated bridal coach with privacy partition available" },
+  { icon: Star, title: "Elegantly Presented", desc: "Clean, well-presented vehicles help transportation fit naturally into the atmosphere of the event. Where available and appropriate, vehicle presentation can also be coordinated with the occasion." },
+  { icon: User, title: "Professionally Presented Drivers", desc: "Drivers represent part of the guest experience. Professional, appropriately presented transportation staff help create a service experience that matches the formality of the occasion." },
+  { icon: Clock, title: "Schedule-Aware Coordination", desc: "Wedding schedules can be tightly structured. Transportation can be planned around ceremony times, reception schedules, hotel departures, photographs, dinner, and evening events." },
+  { icon: Heart, title: "Bridal Party Priority", desc: "The wedding party may have different transportation requirements from the wider guest group. Dedicated transportation can provide additional privacy and flexibility for the bridal party when the itinerary calls for it." },
 ];
 
 const services = [
-  { icon: RefreshCw, title: "Guest Shuttle Loops", desc: "Continuous loops between hotel blocks and venue throughout the day and evening.", tag: "Minibus or Shuttle" },
-  { icon: Bus, title: "Bridal Party Coach", desc: "Dedicated luxury coach for the wedding party — from getting ready to the ceremony.", tag: "Luxury Van" },
-  { icon: Send, title: "Airport Reception Transfers", desc: "Coordinated arrivals for out-of-town guests across multiple flight times.", tag: "Vans & Minibuses" },
-  { icon: Sunrise, title: "Farewell Transfers", desc: "Post-wedding morning transfers from hotel to airport or train station.", tag: "Vans & Buses" },
-  { icon: LayoutGrid, title: "Multi-Venue Events", desc: "Cocktail hour, dinner, and after-party at different venues — we handle all legs.", tag: "Fleet Mix" },
-  { icon: MapPin, title: "Destination Wedding Packages", desc: "Niagara Falls, Vegas, NYC, Miami — full transport package for destination weddings.", tag: "Custom Fleet" },
+  { icon: RefreshCw, title: "Guest Shuttle Loops", desc: "Continuous or scheduled transportation between hotel blocks and event venues can help guests move throughout the wedding program.", tag: "Minibus or Shuttle" },
+  { icon: Bus, title: "Bridal Party Transportation", desc: "Dedicated transportation for the wedding party can connect getting-ready locations, the ceremony, photographs, reception, and other scheduled movements.", tag: "Luxury Van" },
+  { icon: Send, title: "Airport Reception Transfers", desc: "Out-of-town guests may arrive on different flights and at different times. Transportation can be coordinated around arrival schedules and hotel destinations.", tag: "Vans & Minibuses" },
+  { icon: Sunrise, title: "Farewell Transfers", desc: "Transportation can continue the following morning, connecting guests from hotels to airports, train stations, or other departure points.", tag: "Vans & Buses" },
+  { icon: LayoutGrid, title: "Multi-Venue Events", desc: "When the ceremony, cocktail hour, dinner, reception, and after-party take place at different locations, transportation can be coordinated across the complete sequence.", tag: "Fleet Mix" },
+  { icon: MapPin, title: "Destination Wedding Programs", desc: "Destination weddings can involve airport arrivals, hotel transportation, wedding venues, group activities, and departure transfers across several days.", tag: "Custom Fleet" },
 ];
 
-const cities = ["Las Vegas, NV", "Niagara Falls, NY/ON", "New York City, NY", "Miami Beach, FL", "Napa Valley, CA", "Chicago, IL", "Sedona, AZ", "Savannah, GA", "Whistler, BC", "Montreal, QC", "Victoria, BC", "Banff, AB"];
+const stages = [
+  { title: "Welcome Events", desc: "Coordinate transportation for welcome dinners, gatherings, and pre-event activities." },
+  { title: "Rehearsal Transportation", desc: "Move wedding parties and selected guests between hotels, rehearsal locations, and dinner venues." },
+  { title: "Ceremony & Reception", desc: "Coordinate transportation between ceremony and reception locations while keeping guest movements aligned with the schedule." },
+  { title: "After-Party Transportation", desc: "Help guests travel safely between the reception, after-party, and their hotels." },
+  { title: "Next-Day Departures", desc: "Coordinate farewell transportation for guests departing by air or rail." },
+];
+
+const specialEvents = [
+  { title: "Anniversary Celebrations", desc: "Transportation for milestone celebrations, family gatherings, and multi-day events." },
+  { title: "Family Reunions", desc: "Group transportation between hotels, activities, restaurants, and event venues." },
+  { title: "Galas & Formal Events", desc: "Professional transportation for guests attending formal dinners, fundraising events, and evening programs." },
+  { title: "Private Celebrations", desc: "Transportation for birthdays, milestone events, cultural celebrations, and other private gatherings." },
+  { title: "Group Retreats", desc: "Transportation connecting accommodations, activities, restaurants, and event locations." },
+  { title: "Destination Events", desc: "Multi-day transportation programs for groups traveling to a destination to celebrate a special occasion." },
+];
+
+const cities = [
+  { title: "Las Vegas, Nevada", desc: "Destination weddings and celebrations can combine hotels, ceremony venues, receptions, restaurants, and evening entertainment." },
+  { title: "Niagara Falls, New York / Ontario", desc: "A cross-border destination where wedding transportation may involve hotels, ceremony locations, receptions, and activities on either side of the region." },
+  { title: "New York City, New York", desc: "From Manhattan hotels and ceremony venues to restaurants and event spaces, transportation planning can be an important part of the guest experience." },
+  { title: "Miami Beach, Florida", desc: "A destination suited to weddings and celebrations where hotels, beach venues, restaurants, and evening events may form part of the itinerary." },
+  { title: "Napa Valley, California", desc: "Wedding programs may connect hotels, wineries, ceremony locations, reception venues, and other destinations across the region." },
+  { title: "Chicago, Illinois", desc: "A major city destination with hotels, event venues, restaurants, and cultural attractions that can be incorporated into wedding and special-event programs." },
+  { title: "Sedona, Arizona", desc: "A destination where wedding transportation may connect hotels, ceremony venues, reception locations, and surrounding activities." },
+  { title: "Savannah, Georgia", desc: "Historic venues and hotels can create multi-stop transportation requirements throughout a wedding program." },
+  { title: "Whistler, British Columbia", desc: "A destination where transportation can connect hotels, event venues, and group activities throughout a multi-day celebration." },
+  { title: "Montreal, Quebec", desc: "A destination offering hotels, historic venues, restaurants, and event locations within a broader city itinerary." },
+  { title: "Victoria, British Columbia", desc: "Wedding and special-event programs can combine accommodations, waterfront locations, event venues, and group activities." },
+  { title: "Banff, Alberta", desc: "A destination where transportation planning can be particularly important when hotels, venues, and group activities are spread across the surrounding area." },
+];
+
+const planning = [
+  { title: "Guest Count", desc: "How many guests are traveling, and are there separate groups such as the wedding party, family members, VIP guests, or general attendees?" },
+  { title: "Hotels", desc: "Where are guests staying, and are they spread across multiple properties?" },
+  { title: "Venues", desc: "Where are the ceremony, reception, dinner, after-party, and other event locations?" },
+  { title: "Arrival Information", desc: "Which guests are arriving by air or rail, and when?" },
+  { title: "Event Schedule", desc: "What time do guests need to arrive, depart, transfer, or return?" },
+  { title: "Special Requirements", desc: "Are there accessibility, luggage, privacy, child-seat, or other transportation requirements?" },
+  { title: "Multiple Days", desc: "Does the event include welcome activities, rehearsals, excursions, or next-day departures?" },
+];
+
+const networkCoverage = [
+  "Airport arrivals",
+  "Hotel shuttles",
+  "Ceremony transportation",
+  "Reception transfers",
+  "Bridal-party transportation",
+  "Guest transportation",
+  "Evening events",
+  "Next-day departures",
+  "Multi-city destination programs",
+];
+
+const shareDetails = [
+  { title: "Event Date", desc: "When is the celebration taking place?" },
+  { title: "Guest Count", desc: "How many guests are traveling?" },
+  { title: "Hotels", desc: "Where will guests stay?" },
+  { title: "Venues", desc: "Where are the ceremony, reception, dinner, and other events taking place?" },
+  { title: "Arrival Information", desc: "Which guests are arriving from outside the destination?" },
+  { title: "Schedule", desc: "When do guests need to move between locations?" },
+  { title: "Special Requirements", desc: "Are there accessibility, luggage, privacy, or other transportation considerations?" },
+  { title: "Multi-Day Activities", desc: "Are there welcome events, rehearsals, excursions, or farewell activities?" },
+];
 
 const pageURL = new URL(Astro.url.pathname, Astro.site ?? "https://wayggo.com").href;
 const serviceSchema = {
@@ -48,32 +114,110 @@ const serviceSchema = {
   <script is:inline type="application/ld+json" set:html={JSON.stringify(serviceSchema)} />
 
   <PageHero
-    badge="Weddings & Events"
+    badge="Our Service"
     heading={'Wedding &amp;<br /><span style="color: #FDEA01;">Special Events</span>'}
-    subheading="Your clients are traveling from across the world for one perfect day. WAYGGO Charters ensures every guest moves elegantly from ceremony to reception, hotel to venue, arrival to farewell — without a single logistical worry."
+    subheading="Transportation That Lets the Event Take Center Stage"
     image={heroImg}
     imageAlt="Wedding and special event group transportation — WAYGGO Charters"
     cta={{ label: "Request Wedding Transport", href: "/contact" }}
   />
 
-  <FeatureStrip features={highlights} />
+  <ClosingStatement
+    heading={false}
+    paragraph={"For a wedding or special event, transportation is part of the experience.\nGuests may be arriving from different cities, staying at different hotels, attending a ceremony at one location and a reception at another, and traveling again at the end of the evening.\nWAYGGO Charters helps international tour operators, travel agencies, wedding planners, event organizers, and group travel professionals coordinate the transportation behind those moments across the United States and Canada.\nFrom guest shuttles and airport arrivals to bridal-party transportation and multi-venue events, the transportation plan can be built around the event rather than treated as a collection of separate transfers."}
+  />
+
+  <HeroQuoteBar heading="Get a Wedding Transport Quote in Minutes *" />
+
+  <FeatureStrip
+    compact
+    badge="A Thoughtful Transportation Experience"
+    heading="The Details Matter"
+    text="Wedding and special-event transportation needs to feel organized without becoming another thing guests have to think about."
+    features={highlights}
+  />
 
   <IconCardGrid
-    badge="Services"
-    heading="Complete Wedding Transport Services"
+    compact
+    badge="Complete Wedding Transportation"
+    heading="From the First Arrival to the Final Farewell"
+    subheading={"A wedding transportation plan often begins before the ceremony and continues after the reception.\nWAYGGO can help coordinate the different movements that make up the complete guest journey."}
     items={services}
   />
 
-  <ChipCloud heading="Top Destination Wedding Cities" items={cities} />
+  <ListCardGrid
+    compact
+    badge="More Than the Wedding Day"
+    heading="Transportation for the Complete Celebration"
+    subheading={"A destination wedding or special event can become a multi-day experience.\nGuests may arrive early, attend welcome events, explore the destination, participate in rehearsal activities, celebrate the wedding, and depart the following morning.\nTransportation can be planned around those different stages."}
+    background="cream"
+    cards={stages}
+    footnote="The transportation relationship can continue throughout the event rather than ending when the ceremony begins."
+  />
 
-  <HowItWorks />
+  <ListCardGrid
+    compact
+    badge="Weddings & Special Events"
+    heading="More Than Weddings"
+    subheading="The same transportation coordination that supports a wedding can also support a wide range of special events."
+    cards={specialEvents}
+  />
+
+  <ListCardGrid
+    compact
+    badge="Destination Wedding Cities"
+    heading="Popular North American Wedding Destinations"
+    subheading={"WAYGGO's current destination wedding program highlights locations across the United States and Canada.\nEach destination can create different transportation requirements depending on the venue locations, hotel blocks, guest arrival patterns, and event schedule."}
+    background="cream"
+    cards={cities}
+  />
+
+  <ListCardGrid
+    compact
+    badge="Planning the Guest Journey"
+    heading="Start With the Event, Not Just the Vehicle"
+    subheading="A successful transportation plan starts by understanding how the event is structured."
+    cards={planning}
+    footnote="Understanding these details helps transportation fit the event rather than forcing the event to fit the transportation."
+  />
+
+  <FleetOverview
+    badge="Choosing the Right Transportation"
+    heading="Match the Vehicle to Each Part of the Event"
+    paragraphs={[
+      "A wedding may use different transportation configurations at different stages.",
+      "A larger event may need several vehicle types at the same time. For example, a bridal party may require dedicated transportation while guest shuttles operate between multiple hotels and the venue. The right solution is not always one vehicle. It is the combination that best fits the event.",
+    ]}
+  />
+
+  <ChipCloud
+    compact
+    badge="One Relationship Behind the Celebration"
+    heading="Coordinating Transportation Across Destinations"
+    subheading={"Destination weddings and special events can become more complicated when transportation is arranged separately for every location.\nWAYGGO's transportation network is designed to help travel professionals coordinate local transportation relationships across the United States and Canada.\nThat can include:"}
+    background="white"
+    items={networkCoverage}
+    footnote={"The venue may change. The transportation requirements may change. The coordination behind the journey can remain connected.\nOne relationship. A coordinated transportation network behind the celebration."}
+  />
+
+  <ClosingStatement
+    badge="When the Schedule Changes"
+    heading="Events Are Carefully Planned. They Are Not Always Predictable."
+    paragraph={"Wedding and special-event schedules can change.\nCeremonies may run longer than expected. Photos can take additional time. Guests may need additional transfers. Reception and after-party schedules can shift.\nThat is why transportation planning needs communication as well as a vehicle.\nWAYGGO's role is to coordinate the transportation relationship around the event and keep the wider itinerary in view when individual timings change.\nThe goal is not to make the event feel rigid.\nIt is to give the people coordinating it a transportation plan that can respond to the realities of the day."}
+  />
 
   <PartnerCTA
-    badge="Weddings & Events"
-    heading="Let's Make It"
-    headingHighlight="Perfect"
-    subheading="Share the wedding date, guest count, and venues. We'll design an elegant transport plan that blends seamlessly into your event."
-    primaryCta={{ label: "Request Wedding Transport Quote", href: "/contact" }}
-    secondaryCta={{ label: "Register as Travel Partner", href: "/portal" }}
+    badge="Plan the Transportation Around Your Event"
+    heading="Tell Us About"
+    headingHighlight="the Celebration"
+    subheading="Share the details that matter. From there, WAYGGO can work through the transportation requirements and help build a coordinated plan around the celebration."
+    primaryCta={{ label: "Request a Wedding Transport Quote", href: "/contact" }}
+    secondaryCta={{ label: "Explore Fleet & Capabilities", href: "/fleet" }}
+    trustCards={shareDetails}
+  />
+
+  <ClosingStatement
+    heading="WAYGGO Wedding & Special Events"
+    paragraph={"The best event transportation is often the transportation guests barely have to think about.\nThey arrive when they need to arrive. They know where to go. The right vehicle is waiting. The next movement is already coordinated.\nWAYGGO helps travel professionals, wedding planners, event organizers, and group travel companies manage the transportation behind those details across the United States and Canada.\nBecause when the event matters, the transportation should support the experience—not compete with it.\nPlan the celebration. WAYGGO helps coordinate the journey.\nOne transportation relationship. A coordinated way to move the group."}
   />
 </BaseLayout>

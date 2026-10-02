@@ -33,7 +33,11 @@ const contactItems = [
   { icon: Phone, label: "Phone", value: "+1 (800) 555-WAYGGO", href: "tel:+18005559248" },
 ];
 
-const legalLinks = ["Privacy Policy", "Terms of Service", "Cookie Policy"];
+const legalLinks = [
+  { href: "/privacy-policy",   label: "Privacy Policy"   },
+  { href: "/terms-of-service", label: "Terms of Service" },
+  { href: "/cookie-policy",    label: "Cookie Policy"    },
+];
 ---
 
 <footer style="background-color: #070D1A; color: white;">
@@ -148,11 +152,11 @@ const legalLinks = ["Privacy Policy", "Terms of Service", "Cookie Policy"];
     <!-- Bottom bar -->
     <div class="py-6 flex flex-col sm:flex-row items-center justify-between gap-4">
       <p class="text-xs" style="color: rgba(255,255,255,0.3);">
-        © 2025 WAYGGO Charters Inc. All rights reserved. Serving USA & Canada Since 2008.
+        © 2008 - 2026 WAYGGO Charters Inc. All rights reserved.
       </p>
       <div class="flex items-center gap-6">
-        {legalLinks.map((label) => (
-          <a href="#" class="text-xs text-white/30 transition-colors hover:text-yellow"
+        {legalLinks.map(({ href, label }) => (
+          <a href={withBase(href)} class="text-xs text-white/30 transition-colors hover:text-yellow"
             style="">
             {label}
           </a>

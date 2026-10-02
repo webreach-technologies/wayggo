@@ -1,6 +1,5 @@
 ﻿---
 import { Image } from "astro:assets";
-import { ArrowRight } from "@lucide/astro";
 import { withBase } from "../../lib/url";
 import luxuryvanImg from "../../assets/fleet/luxuryvan.png";
 import minibusImg from "../../assets/fleet/minibus.png";
@@ -19,16 +18,18 @@ interface Vehicle {
 interface Props {
   badge?: string;
   heading?: string;
+  paragraphs?: string[];
   viewAllHref?: string;
-  viewAllLabel?: string;
   vehicles?: Vehicle[];
 }
 
 const {
-  badge = "Our Fleet",
-  heading = "Every Vehicle.\nEvery Journey.",
+  badge = "Fleet Options",
+  heading = "Find The Right Vehicle for the Journey",
+  paragraphs = [
+    "Group size is only part of the transportation decision. The route, luggage, schedule, stops, passenger needs, and overall itinerary can all influence what works best. WAYGGO provides access to multiple vehicle categories so transportation can be matched to the journey.",
+  ],
   viewAllHref = "/fleet",
-  viewAllLabel = "Full Specs & Pricing",
   vehicles = [
     { name: "Van",         capacity: "6–14 passengers",  tag: "Small Group", color: "#1A2744", features: ["Premium leather seating","WiFi & USB charging","Climate control","Luggage space"], image: luxuryvanImg },
     { name: "Minibus",     capacity: "15–28 passengers", tag: "Mid Group",   color: "#243460", features: ["Panoramic windows","PA system","AC throughout","Tour guide seat"], image: minibusImg },
@@ -44,27 +45,22 @@ const gradientCSS = vehicles.map((v, i) =>
 ).join("");
 ---
 
-<section class="py-28" style="background: white;">
+<section class="py-14" style="background: #F9F7F2;">
   <div class="container">
-    <div class="flex flex-col lg:flex-row lg:items-end justify-between mb-14 gap-4">
-      <div>
-        <span class="section-label">{badge}</span>
-        <h2 class="text-4xl lg:text-5xl font-black mt-5"
-          style="color: #1A2744;">
-          {headingLines.map((line, i) => (
-            <>
-              {line}
-              {i < headingLines.length - 1 && <br />}
-            </>
-          ))}
-        </h2>
-      </div>
-      <a href={withBase(viewAllHref)}
-        class="self-start lg:self-auto flex items-center gap-2 font-bold text-sm uppercase tracking-widest transition-all hover:gap-4"
+    <div class="mb-10">
+      <span class="section-label">{badge}</span>
+      <h2 class="text-4xl lg:text-5xl font-black mt-5"
         style="color: #1A2744;">
-        {viewAllLabel}
-        <ArrowRight size={16} stroke-width={2.5} />
-      </a>
+        {headingLines.map((line, i) => (
+          <>
+            {line}
+            {i < headingLines.length - 1 && <br />}
+          </>
+        ))}
+      </h2>
+      {paragraphs.map((p) => (
+        <p class="font-subheading text-gray-600 leading-relaxed mt-4">{p}</p>
+      ))}
     </div>
 
     <style set:html={gradientCSS}></style>
@@ -90,7 +86,7 @@ const gradientCSS = vehicles.map((v, i) =>
 
             <div class="absolute flex justify-between bottom-0 left-0 right-0 px-7 py-4 z-10">
               <h3 class="text-base font-black text-white">{v.name}</h3>
-              <span class="badge badge-yellow text-xs">{v.tag}</span>
+              <span class="badge badge-red text-xs">{v.tag}</span>
             </div>
           </div>
 

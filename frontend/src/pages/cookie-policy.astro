@@ -1,0 +1,190 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import PageHero from "../components/sections/PageHero.astro";
+import LegalContent from "../components/sections/LegalContent.astro";
+import { withBase } from "../lib/url";
+---
+
+<BaseLayout
+  title="Cookie Policy — WAYGGO Charters"
+  description="How the WAYGGO Charters website uses cookies and similar technologies, and the choices available to you."
+  breadcrumbs={[{ name: "Cookie Policy", path: "/cookie-policy" }]}
+>
+  <PageHero
+    badge="Legal"
+    heading="Cookie Policy"
+    subheading="A Clearer Explanation of How WAYGGO Uses Cookies"
+    size="sm"
+  />
+
+  <LegalContent>
+    <p>When you visit the WAYGGO website, certain technologies may be used to help the website function, understand how visitors use it, and improve the overall experience.</p>
+    <p>This Cookie Policy explains what cookies and similar technologies are, why they may be used on the WAYGGO website, and what choices may be available to you.</p>
+    <p>At WAYGGO, we believe privacy should be understandable.</p>
+    <p>You should be able to understand what these technologies do without having to work through unnecessary technical language.</p>
+
+    <h2>What Are Cookies?</h2>
+    <p>Cookies are small files or pieces of information that a website may store on your browser or device.</p>
+    <p>They can allow a website to recognize a browser, remember certain information, support functionality, or understand how visitors interact with the website.</p>
+    <p>Other technologies may perform similar functions, including pixels, tags, scripts, local storage, and other tracking technologies.</p>
+    <p>For simplicity, this policy refers to these technologies collectively as “cookies.”</p>
+
+    <h2>Why WAYGGO May Use Cookies</h2>
+    <p>Depending on how the WAYGGO website is configured, cookies may be used for several purposes.</p>
+    <h3>Essential Website Functions</h3>
+    <p>Some cookies or similar technologies may be necessary for the website to operate properly.</p>
+    <p>They may support functions such as:</p>
+    <ul>
+      <li>Page functionality</li>
+      <li>Security</li>
+      <li>Form functionality</li>
+      <li>Session management</li>
+      <li>Website preferences</li>
+      <li>Other essential website operations</li>
+    </ul>
+    <p>These technologies may be used because the website cannot function properly without them.</p>
+    <h3>Website Performance</h3>
+    <p>WAYGGO may use cookies to understand how the website performs. This can help us identify issues such as:</p>
+    <ul>
+      <li>Slow or unsuccessful pages</li>
+      <li>Broken website functions</li>
+      <li>Technical problems</li>
+      <li>Navigation difficulties</li>
+      <li>Other performance issues</li>
+    </ul>
+    <p>Understanding website performance helps us improve the experience for people researching WAYGGO services.</p>
+    <h3>Website Analytics</h3>
+    <p>WAYGGO may use analytics technologies to understand how visitors interact with the website.</p>
+    <p>Depending on the technologies actually implemented, this information may include:</p>
+    <ul>
+      <li>Pages visited</li>
+      <li>Approximate visit duration</li>
+      <li>Traffic sources</li>
+      <li>Device or browser information</li>
+      <li>General website interaction</li>
+      <li>Website navigation patterns</li>
+    </ul>
+    <p>Analytics information can help WAYGGO understand which parts of the website are useful and where the experience could be improved.</p>
+    <h3>Preferences</h3>
+    <p>Some cookies may allow the website to remember information such as preferences or settings.</p>
+    <p>This can make returning visits more convenient.</p>
+    <h3>Marketing and Advertising</h3>
+    <p>Where applicable, WAYGGO may use cookies or similar technologies in connection with marketing activities.</p>
+    <p>These technologies may help understand interactions with WAYGGO communications or campaigns and may support relevant advertising or measurement.</p>
+    <p>WAYGGO will only use such technologies in accordance with applicable law and the choices available to users.</p>
+
+    <h2>Types of Cookies</h2>
+    <p>Cookies can be grouped in different ways.</p>
+    <h3>First-Party Cookies</h3>
+    <p>These are cookies placed by the WAYGGO website or by services operating on WAYGGO's behalf.</p>
+    <h3>Third-Party Cookies</h3>
+    <p>These are cookies placed by third-party services that may be integrated into or used alongside the website.</p>
+    <p>Third-party services may have their own privacy and cookie policies.</p>
+    <p>WAYGGO does not control the privacy practices of third parties that operate independently from WAYGGO.</p>
+
+    <h2>Session and Persistent Cookies</h2>
+    <p>Cookies can also differ in how long they remain on your device.</p>
+    <h4>Session Cookies</h4>
+    <p>These generally remain active while you are using the website and may be removed when the browsing session ends.</p>
+    <h4>Persistent Cookies</h4>
+    <p>These may remain on your device for a specified period or until they are deleted.</p>
+    <p>The actual duration of a cookie depends on the technology and purpose for which it is used.</p>
+
+    <h2>Your Cookie Choices</h2>
+    <p>Depending on your location and the technologies used on the website, you may have different choices regarding cookies.</p>
+    <p>These may include:</p>
+    <ul>
+      <li>Accepting certain cookies</li>
+      <li>Rejecting optional cookies</li>
+      <li>Managing cookie preferences</li>
+      <li>Adjusting browser settings</li>
+      <li>Deleting cookies already stored on your device</li>
+    </ul>
+    <p>Where applicable law requires a consent mechanism, WAYGGO will provide an appropriate way to manage applicable cookie preferences.</p>
+
+    <h2>Managing Cookies Through Your Browser</h2>
+    <p>Most modern web browsers allow you to manage cookies through their settings.</p>
+    <p>You may be able to:</p>
+    <ul>
+      <li>Block cookies</li>
+      <li>Delete existing cookies</li>
+      <li>Allow cookies only from certain websites</li>
+      <li>Receive notifications before cookies are stored</li>
+      <li>Manage certain third-party cookies</li>
+    </ul>
+    <p>The exact controls depend on the browser and device you use.</p>
+    <p>If you disable certain cookies, some parts of the WAYGGO website may not function as intended.</p>
+
+    <h2>Do Not Track and Similar Privacy Signals</h2>
+    <p>Some browsers and devices provide privacy-related signals or preferences.</p>
+    <p>The way these signals are handled can vary depending on the technology and applicable law.</p>
+    <p>Where WAYGGO is required to recognize a particular privacy signal, we will do so in accordance with applicable requirements.</p>
+
+    <h2>Third-Party Services</h2>
+    <p>WAYGGO may use third-party services to support website functionality, analytics, communications, security, forms, or other business purposes.</p>
+    <p>These services may use cookies or similar technologies. Examples of categories that may be involved include:</p>
+    <ul>
+      <li>Website analytics</li>
+      <li>Website security</li>
+      <li>Embedded content</li>
+      <li>Communication tools</li>
+      <li>Form services</li>
+      <li>Marketing measurement</li>
+      <li>Advertising services</li>
+    </ul>
+    <p>The specific services used by WAYGGO may change over time.</p>
+
+    <h2>Cookies and Personal Information</h2>
+    <p>Some cookies may collect information that can be associated with a particular device, browser, or individual.</p>
+    <p>The way that information is handled is explained in the <a href={withBase("/privacy-policy")}>WAYGGO Privacy Policy</a>.</p>
+    <p>Our approach is consistent:</p>
+    <ul>
+      <li>Collect what we reasonably need.</li>
+      <li>Use it for legitimate purposes.</li>
+      <li>Be transparent about how information is handled.</li>
+      <li>Give people appropriate choices where required.</li>
+    </ul>
+
+    <h2>Cookies and Our Website Experience</h2>
+    <p>WAYGGO's website exists to help people understand our transportation services and connect with our team.</p>
+    <p>Cookies may help us make that experience more functional, reliable, and useful.</p>
+    <p>They may help us understand:</p>
+    <ul>
+      <li>Which information visitors find useful</li>
+      <li>How people navigate the website</li>
+      <li>Whether pages are functioning correctly</li>
+      <li>Where visitors encounter difficulties</li>
+      <li>How our digital communications perform</li>
+    </ul>
+    <p>This information can help us improve the website over time. We do not use cookies simply because they are available.</p>
+    <p>The purpose should be connected to a legitimate website, business, operational, security, or communication need.</p>
+
+    <h2>Changes to This Cookie Policy</h2>
+    <p>WAYGGO may update this Cookie Policy when:</p>
+    <ul>
+      <li>Website technologies change</li>
+      <li>New services are introduced</li>
+      <li>Cookie practices change</li>
+      <li>Privacy requirements change</li>
+      <li>We improve the clarity of our explanations</li>
+    </ul>
+    <p>When changes are made, the Last Updated date at the top of this page will be revised.</p>
+    <p>We encourage visitors to review this page periodically.</p>
+
+    <h2>Contact WAYGGO</h2>
+    <p>If you have questions about cookies or how information is handled on the WAYGGO website, please contact us.</p>
+    <p><strong>WAYGGO Charters Inc.</strong></p>
+    <p>You can reach our team through the <a href={withBase("/contact")}>WAYGGO contact page</a>.</p>
+    <p>For questions about how WAYGGO handles personal information more broadly, please also review our <a href={withBase("/privacy-policy")}>Privacy Policy</a>.</p>
+
+    <h2>Our Approach to Website Privacy</h2>
+    <p>WAYGGO is built around coordination and trust.</p>
+    <p>People visit our website because they may be planning a journey, arranging transportation for clients, evaluating a transportation partner, or looking for information about our services.</p>
+    <p>We believe the digital experience should reflect the same principle as the transportation relationship:</p>
+    <p><strong>Clear information. Responsible handling.</strong></p>
+    <p><strong>No unnecessary complexity.</strong></p>
+    <p>Cookies are one small part of how a modern website works.</p>
+    <p>Our responsibility is to be clear about them and to handle information responsibly.</p>
+    <p><strong>One relationship. Built on trust.</strong></p>
+  </LegalContent>
+</BaseLayout>
