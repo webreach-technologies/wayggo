@@ -61,12 +61,14 @@ interface Props {
   iconKey: string;
   name: string;
   tagline: string;
+  /** Intro paragraphs shown under the vehicle name. */
+  desc?: string[];
   capacity: { passengers: string; luggage: string };
   features: Feature[];
   idealFor: string[];
 }
 
-const { id, index, image, color, iconKey, name, tagline, capacity, features, idealFor } = Astro.props;
+const { id, index, image, color, iconKey, name, tagline, desc = [], capacity, features, idealFor } = Astro.props;
 
 const isReversed = index % 2 === 1;
 const VehicleIcon = vehicleIconComponents[iconKey];
@@ -130,6 +132,12 @@ const VehicleIcon = vehicleIconComponents[iconKey];
         >
           {name}
         </h2>
+
+        {desc.length > 0 && (
+          <div class="space-y-3 mb-8">
+            {desc.map((p) => <p class="text-gray-600 leading-relaxed">{p}</p>)}
+          </div>
+        )}
 
         <!-- Capacity -->
         <div class="flex gap-4 mb-8">

@@ -7,11 +7,16 @@ interface Stat {
 interface Props {
   badge?: string;
   heading: string;
+  /** Separate paragraphs with "\n". */
   text?: string;
   stats: Stat[];
+  /** Small print under the stats. */
+  note?: string;
 }
 
-const { badge, heading, text, stats } = Astro.props;
+const { badge, heading, text, stats, note } = Astro.props;
+
+const paragraphs = text ? text.split("\n") : [];
 ---
 
 <section class="py-20" style="background-color: white;">
@@ -19,7 +24,11 @@ const { badge, heading, text, stats } = Astro.props;
     <div class="max-w-3xl mx-auto text-center">
       {badge && <span class="section-label mb-4 inline-flex mx-auto">{badge}</span>}
       <h2 class="text-4xl font-black mb-6" style="color: #1A2744;">{heading}</h2>
-      {text && <p class="text-gray-500 leading-relaxed mb-8">{text}</p>}
+      {paragraphs.length > 0 && (
+        <div class="space-y-4 mb-8">
+          {paragraphs.map((p) => <p class="text-gray-500 leading-relaxed">{p}</p>)}
+        </div>
+      )}
       <div class="grid grid-cols-2 sm:grid-cols-4 gap-4">
         {stats.map((s) => (
           <div class="rounded-2xl p-5 text-center" style="background-color: #F9F7F2;">
@@ -28,6 +37,7 @@ const { badge, heading, text, stats } = Astro.props;
           </div>
         ))}
       </div>
+      {note && <p class="text-xs text-gray-400 mt-5">{note}</p>}
     </div>
   </div>
 </section>

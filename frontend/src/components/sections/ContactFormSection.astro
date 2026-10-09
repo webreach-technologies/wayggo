@@ -1,21 +1,54 @@
 ---
 import QuoteForm from "../react/QuoteForm";
+import SectionHeading from "./SectionHeading.astro";
 import { Mail, Phone, MessageSquare, Users } from "@lucide/astro";
 import { withBase } from "../../lib/url";
 
 const channels = [
-  { icon: Mail, label: "Email", value: "operations@wayggo.com", note: "Response within 24 hours", href: "mailto:operations@wayggo.com" },
-  { icon: Phone, label: "Phone", value: "+1 (800) 555-9248", note: "Mon–Fri, 8am–8pm ET", href: "tel:+18005559248" },
-  { icon: MessageSquare, label: "WhatsApp", value: "Quick Chat", note: "Often answered within 2 hours", href: "https://wa.me/18005559248" },
-  { icon: Users, label: "Partner Portal", value: "Already a partner?", note: "Fast-track quote — 4hr response", href: withBase("/portal") },
+  {
+    icon: Mail, label: "Email", value: "operations@wayggo.com", href: "mailto:operations@wayggo.com",
+    notes: ["For transportation inquiries, itinerary questions, and general operational communication.", "Response within 24 hours."],
+  },
+  {
+    icon: Phone, label: "Phone", value: "+1 (800) 555-9248", href: "tel:+18005559248",
+    notes: ["Monday–Friday, 8am–8pm ET", "Call when you'd prefer to discuss the itinerary directly with the team."],
+  },
+  {
+    icon: MessageSquare, label: "WhatsApp", value: "Quick Chat", href: "https://wa.me/18005559248",
+    notes: ["For customers and international travel professionals who prefer messaging.", "Often answered within two hours."],
+  },
+  {
+    icon: Users, label: "Partner Portal", value: "Already working with WAYGGO?", href: withBase("/portal"),
+    notes: ["Use the partner portal to access the applicable partner workflow and request transportation through your existing relationship."],
+  },
+];
+
+const tripDetails = [
+  "Travel dates",
+  "Number of passengers",
+  "Pickup locations",
+  "Destinations",
+  "Hotel locations",
+  "Airport information",
+  "Vehicle requirements",
+  "Luggage or equipment",
+  "Number of travel days",
+  "Multi-city routing",
+  "Event or tour schedule",
+  "Special transportation requirements",
 ];
 ---
 
-<section class="py-16" style="background-color: #F9F7F2;">
+<section id="quote-form" class="py-16" style="background-color: #F9F7F2;">
   <div class="container">
+    <SectionHeading
+      badge="Tell Us About the Trip"
+      heading="The More We Know, the Better We Can Understand the Transportation Requirements"
+    />
+
     <div class="grid grid-cols-1 lg:grid-cols-3 gap-10">
 
-      <!-- Multi-step form -->
+      <!-- Form -->
       <div class="lg:col-span-2">
         <div class="bg-white rounded-3xl shadow-lg p-8 sm:p-10">
           <QuoteForm client:load />
@@ -25,9 +58,27 @@ const channels = [
       <!-- Sidebar -->
       <div class="space-y-5">
         <div class="bg-white rounded-2xl p-6 border border-gray-100">
-          <h3 class="font-black text-sm uppercase tracking-widest mb-5" style="color: #1A2744;">
-            Other Ways to Reach Us
+          <h3 class="font-black text-sm uppercase tracking-widest mb-3" style="color: #1A2744;">
+            Useful Trip Details
           </h3>
+          <ul class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-1 gap-1.5 mb-4">
+            {tripDetails.map((item) => (
+              <li class="flex items-center gap-2 text-sm text-gray-500">
+                <span class="w-1.5 h-1.5 rounded-full shrink-0" style="background: #FDEA01;"></span>
+                {item}
+              </li>
+            ))}
+          </ul>
+          <p class="text-xs text-gray-400 leading-relaxed">
+            You do not need to have every detail finalized before contacting WAYGGO. If the itinerary is still being developed, tell us what you know and what you are trying to coordinate.
+          </p>
+        </div>
+
+        <div class="bg-white rounded-2xl p-6 border border-gray-100">
+          <h3 class="font-black text-sm uppercase tracking-widest mb-1" style="color: #1A2744;">
+            Other Ways to Reach WAYGGO
+          </h3>
+          <p class="text-xs text-gray-400 mb-5">Choose the Way That Works for You</p>
           <div class="space-y-4">
             {channels.map((c) => {
               const Icon = c.icon;
@@ -39,7 +90,9 @@ const channels = [
                   <div>
                     <p class="text-xs text-gray-400 mb-0.5">{c.label}</p>
                     <p class="text-sm font-semibold group-hover:text-navy transition-colors" style="color: #374151;">{c.value}</p>
-                    <p class="text-xs text-gray-400 mt-0.5">{c.note}</p>
+                    {c.notes.map((note) => (
+                      <p class="text-xs text-gray-400 mt-0.5 leading-relaxed">{note}</p>
+                    ))}
                   </div>
                 </a>
               );

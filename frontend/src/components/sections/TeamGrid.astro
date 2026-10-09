@@ -1,5 +1,6 @@
 ---
 import SectionHeading from "./SectionHeading.astro";
+import SectionFootnote from "./SectionFootnote.astro";
 
 interface Member {
   initials: string;
@@ -11,15 +12,19 @@ interface Member {
 interface Props {
   badge?: string;
   heading: string;
+  /** Separate paragraphs with "\n". */
+  subheading?: string;
   members: Member[];
+  /** Closing copy under the cards. */
+  footnote?: string;
 }
 
-const { badge = "Leadership", heading, members } = Astro.props;
+const { badge = "Leadership", heading, subheading, members, footnote } = Astro.props;
 ---
 
 <section class="py-20" style="background-color: #F9F7F2;">
   <div class="container">
-    <SectionHeading badge={badge} heading={heading} />
+    <SectionHeading badge={badge} heading={heading} subheading={subheading} />
     <div class="grid grid-cols-2 md:grid-cols-4 gap-5">
       {members.map((person) => (
         <div class="bg-white rounded-2xl p-6 text-center card-hover">
@@ -33,5 +38,6 @@ const { badge = "Leadership", heading, members } = Astro.props;
         </div>
       ))}
     </div>
+    {footnote && <SectionFootnote text={footnote} />}
   </div>
 </section>

@@ -4,6 +4,7 @@ import SectionHeading from "./SectionHeading.astro";
 
 interface Faq {
   q: string;
+  /** Separate paragraphs with a line break. */
   a: string;
 }
 
@@ -26,8 +27,10 @@ const { badge = "Common Questions", heading = "Frequently Asked Questions", faqs
             <span class="font-semibold text-sm pr-4" style="color: #1A2744;">{faq.q}</span>
             <ChevronDown size={20} class="shrink-0 transition-transform group-open:rotate-180" style="color: #6B7280;" />
           </summary>
-          <div class="px-6 pb-5">
-            <p class="text-sm text-gray-500 leading-relaxed">{faq.a}</p>
+          <div class="px-6 pb-5 space-y-3">
+            {faq.a.split("\n").map((p) => (
+              <p class="text-sm text-gray-500 leading-relaxed">{p}</p>
+            ))}
           </div>
         </details>
       ))}

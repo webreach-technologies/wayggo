@@ -5,56 +5,58 @@ import TrustBar from "../components/sections/TrustBar.astro";
 import CoverageMapTeaser from "../components/sections/CoverageMapTeaser.astro";
 import HubGrid from "../components/sections/HubGrid.astro";
 import IconCardGrid from "../components/sections/IconCardGrid.astro";
+import FeatureStrip from "../components/sections/FeatureStrip.astro";
 import PartnerCTA from "../components/sections/PartnerCTA.astro";
+import ClosingStatement from "../components/sections/ClosingStatement.astro";
 import { Clipboard, ShieldCheck, Search, Users } from "@lucide/astro";
 
 const usHubs = [
-  { city: "New York City", state: "NY", note: "East Coast hub — JFK, LGA, EWR airports" },
-  { city: "Los Angeles", state: "CA", note: "West Coast hub — LAX airport" },
-  { city: "Chicago", state: "IL", note: "Midwest hub — O'Hare + Midway" },
-  { city: "Las Vegas", state: "NV", note: "Convention capital — McCarran airport" },
-  { city: "Miami", state: "FL", note: "South Florida hub — MIA airport" },
-  { city: "Orlando", state: "FL", note: "Theme park & convention hub" },
-  { city: "San Francisco", state: "CA", note: "Bay Area — SFO + Oakland airports" },
-  { city: "Washington D.C.", state: "DC", note: "Capital hub — Reagan + Dulles airports" },
-  { city: "Boston", state: "MA", note: "New England hub — Logan airport" },
-  { city: "Seattle", state: "WA", note: "Pacific NW hub — SEA-TAC airport" },
-  { city: "Dallas", state: "TX", note: "Texas hub — DFW + Love Field" },
-  { city: "Houston", state: "TX", note: "Gulf Coast hub — IAH airport" },
-  { city: "Phoenix", state: "AZ", note: "Southwest hub — PHX airport" },
-  { city: "Denver", state: "CO", note: "Mountain hub — DEN airport" },
-  { city: "Atlanta", state: "GA", note: "Southeast hub — Hartsfield-Jackson (world's busiest)" },
+  { city: "New York City", state: "NY", note: "East Coast hub serving JFK, LGA, and EWR airport connections." },
+  { city: "Los Angeles", state: "CA", note: "West Coast hub serving LAX and the greater Los Angeles area." },
+  { city: "Chicago", state: "IL", note: "Midwest hub serving O'Hare and Midway airport connections." },
+  { city: "Las Vegas", state: "NV", note: "Convention and group travel hub serving the Las Vegas market." },
+  { city: "Miami", state: "FL", note: "South Florida hub serving MIA and surrounding group travel routes." },
+  { city: "Orlando", state: "FL", note: "Major destination for theme park, leisure, and convention groups." },
+  { city: "San Francisco", state: "CA", note: "Bay Area hub serving SFO, Oakland, and surrounding destinations." },
+  { city: "Washington D.C.", state: "DC", note: "Capital-region hub serving Reagan and Dulles airport connections." },
+  { city: "Boston", state: "MA", note: "New England hub serving Logan and surrounding group travel routes." },
+  { city: "Seattle", state: "WA", note: "Pacific Northwest hub serving SEA-TAC and the surrounding region." },
+  { city: "Dallas", state: "TX", note: "Texas hub serving DFW, Love Field, and surrounding destinations." },
+  { city: "Houston", state: "TX", note: "Gulf Coast hub serving IAH and the greater Houston area." },
+  { city: "Phoenix", state: "AZ", note: "Southwest hub serving PHX and surrounding destinations." },
+  { city: "Denver", state: "CO", note: "Mountain-region hub serving DEN and the surrounding area." },
+  { city: "Atlanta", state: "GA", note: "Southeast hub serving Hartsfield-Jackson and the greater Atlanta market." },
 ];
 
 const canadaHubs = [
-  { city: "Toronto", prov: "ON", note: "Eastern Canada hub — Pearson airport" },
-  { city: "Vancouver", prov: "BC", note: "Pacific Canada hub — YVR airport" },
-  { city: "Montreal", prov: "QC", note: "Quebec hub — Trudeau airport" },
-  { city: "Calgary", prov: "AB", note: "Alberta hub — YYC airport" },
-  { city: "Ottawa", prov: "ON", note: "Capital of Canada — YOW airport" },
-  { city: "Quebec City", prov: "QC", note: "Historic city — YQB airport" },
+  { city: "Toronto", prov: "ON", note: "Eastern Canada hub serving Pearson and surrounding destinations." },
+  { city: "Vancouver", prov: "BC", note: "Pacific Canada hub serving YVR and the surrounding region." },
+  { city: "Montreal", prov: "QC", note: "Quebec hub serving Trudeau and surrounding destinations." },
+  { city: "Calgary", prov: "AB", note: "Alberta hub serving YYC and the surrounding region." },
+  { city: "Ottawa", prov: "ON", note: "Canadian capital-region hub serving YOW and surrounding destinations." },
+  { city: "Quebec City", prov: "QC", note: "Historic Quebec destination serving YQB and surrounding group travel routes." },
 ];
 
 const vetDetails = [
   {
     icon: Clipboard,
     title: "Licensing & Compliance",
-    desc: "Every operator holds valid Federal Motor Carrier Safety Administration (FMCSA) registration in the US and Transport Canada certification, verified annually.",
+    desc: "Operators are required to maintain the applicable regulatory credentials, including FMCSA registration in the United States and Transport Canada certification in Canada, with verification conducted annually.",
   },
   {
     icon: ShieldCheck,
     title: "Insurance Verification",
-    desc: "Minimum $5M liability coverage for all motorcoach operators, $1M for vans and shuttles, verified with direct insurer confirmation.",
+    desc: "WAYGGO requires stated minimum liability coverage for its motorcoach, van, and shuttle operators, with insurance verified directly with the insurer.",
   },
   {
     icon: Search,
     title: "Vehicle Inspection Records",
-    desc: "We require annual DOT inspection certificates, maintenance logs, and a WAYGGO Charters physical inspection every 2 years.",
+    desc: "The process includes review of DOT inspection certificates and maintenance records, together with WAYGGO physical inspections on the stated schedule.",
   },
   {
     icon: Users,
     title: "Driver Background Checks",
-    desc: "All drivers pass TSA-equivalent background screening, CDL verification, driving record review, and annual drug testing.",
+    desc: "Driver requirements include background screening, CDL verification where applicable, driving-record review, and annual drug testing.",
   },
 ];
 ---
@@ -67,9 +69,9 @@ const vetDetails = [
 
   <!-- Hero -->
   <PageHero
-    badge="Our Coverage"
-    heading={'500+ Operators.<br /><span style="color: #FDEA01;">Every Corner of North America.</span>'}
-    subheading="From Vancouver to Miami, from Boston to Los Angeles — WAYGGO Charters' vetted operator network ensures your group is covered in every city on your itinerary. 15 US hubs. 6 Canadian hubs. One contact."
+    badge="Our Network"
+    heading={'500+ Operators.<br /><span style="color: #FDEA01;">One Coordinated Transportation Network.</span>'}
+    subheading={"A multi-city group itinerary can involve multiple transportation providers, different local requirements, and a long list of details to coordinate. WAYGGO brings those transportation relationships together through a vetted operator network across the United States and Canada.<br /><br />From Vancouver to Miami, Boston to Los Angeles, our network is designed to help international tour operators, travel agencies, and other group travel professionals arrange transportation across multiple destinations through one coordinated relationship."}
   />
 
   <TrustBar
@@ -83,8 +85,9 @@ const vetDetails = [
   />
 
   <CoverageMapTeaser
-    badge="Interactive Map"
-    heading={"Our Hub City\nNetwork"}
+    badge="Our Hub City Network"
+    heading={"Transportation Capability Across\nMajor North American Destinations"}
+    subheading={"WAYGGO's network connects travel professionals with local transportation operators in major destinations across the United States and Canada.\nThe value of the network is not simply the number of cities. It is the ability to coordinate transportation where the itinerary takes the group—while maintaining a consistent relationship and approach throughout the journey."}
     ctaHref="/contact"
     ctaLabel="Check Availability"
   />
@@ -105,18 +108,28 @@ const vetDetails = [
   <IconCardGrid
     badge="Quality Assurance"
     heading="How We Vet Our Operators"
-    subheading="Every operator in our network passes a rigorous 12-point vetting process before their first assignment — and undergoes annual re-certification."
+    subheading={"A transportation network is only as useful as the standards behind it.\nWAYGGO states that every operator in its network passes a 12-point vetting process before receiving a first assignment, followed by ongoing re-certification. The process is designed to evaluate the areas that matter when another company is responsible for moving a client's group."}
     items={vetDetails}
     columns={2}
   />
 
+  <FeatureStrip
+    heading="More Than a Name in a Database"
+    text={"For a travel professional, knowing that an operator exists in a destination is only the beginning. The more important question is whether that transportation relationship can support the itinerary with the standards and information required to coordinate the journey responsibly.\nThat is why WAYGGO's network is built around vetting, verification, and ongoing oversight rather than simply collecting transportation providers."}
+  />
+
   <PartnerCTA
-    badge="Check Coverage"
+    badge="Tell Us Where the Group Is Going"
     heading="Your City. Our Operator."
-    headingHighlight="Zero Guesswork."
-    subheading="Tell us your tour cities and we'll confirm operator availability within 24 hours."
+    headingHighlight="Less Guesswork."
+    subheading={"Multi-city transportation becomes more manageable when the local relationships are already part of a coordinated network.\nShare the cities, dates, group requirements, and itinerary details with WAYGGO. Our team can work through the transportation requirements with you and identify the appropriate local operator relationships for the journey.\nYou coordinate the trip. WAYGGO coordinates the transportation network behind it."}
     primaryCta={{ label: "Request a Quote", href: "/contact" }}
     secondaryCta={{ label: "Browse Tour Bus", href: "/tour-bus" }}
+  />
+
+  <ClosingStatement
+    heading="WAYGGO Network"
+    paragraph={"WAYGGO's network is built to solve a practical problem in group travel: transportation often becomes fragmented as an itinerary crosses cities, regions, and borders. By connecting travel professionals with transportation operators across the United States and Canada, WAYGGO provides a more coordinated way to manage that complexity.\nFor international tour operators and travel agencies, the network is not simply a list of vehicles or cities. It is the transportation relationship behind the itinerary.\nOne relationship. A coordinated transportation network."}
   />
 
   <script>

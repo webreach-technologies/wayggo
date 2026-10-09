@@ -2,7 +2,13 @@
 import BaseLayout from "../layouts/BaseLayout.astro";
 import PageHero from "../components/sections/PageHero.astro";
 import ContactFormSection from "../components/sections/ContactFormSection.astro";
+import HowItWorks from "../components/sections/HowItWorks.astro";
+import ListCardGrid from "../components/sections/ListCardGrid.astro";
+import ChipCloud from "../components/sections/ChipCloud.astro";
 import FaqSection from "../components/sections/FaqSection.astro";
+import PartnerCTA from "../components/sections/PartnerCTA.astro";
+import ClosingStatement from "../components/sections/ClosingStatement.astro";
+import { FileText, Search, Network, ClipboardCheck, ArrowRight } from "@lucide/astro";
 
 const pageURL = new URL(Astro.url.pathname, Astro.site ?? "https://wayggo.com").href;
 const contactPageSchema = {
@@ -11,12 +17,76 @@ const contactPageSchema = {
   name: "Request a Quote — WAYGGO Charters Ground Transportation",
   url: pageURL,
 };
+
+const nextSteps = [
+  { num: "01", icon: FileText, title: "Tell Us About the Journey", desc: "Send your group, dates, destinations, and transportation requirements through the form." },
+  { num: "02", icon: Search, title: "We Review the Requirements", desc: "The WAYGGO team reviews the itinerary and considers the transportation requirements behind it." },
+  { num: "03", icon: Network, title: "We Coordinate the Transportation", desc: "Where appropriate, WAYGGO works through its transportation network and local operator relationships to identify suitable transportation options." },
+  { num: "04", icon: ClipboardCheck, title: "You Review the Proposal", desc: "You'll receive the applicable transportation information, pricing, and terms for review." },
+  { num: "05", icon: ArrowRight, title: "The Journey Moves Forward", desc: "Once transportation is confirmed, the applicable operational details can be coordinated around the itinerary." },
+];
+
+const whoCanContact = [
+  { title: "International Tour Operators", desc: "Planning North American itineraries for groups arriving from around the world." },
+  { title: "Travel Agencies", desc: "Arranging transportation as part of a client's vacation, group tour, or travel program." },
+  { title: "Corporate & Event Planners", desc: "Coordinating transportation for meetings, conventions, delegations, and events." },
+  { title: "Educational Organizations", desc: "Planning transportation for student groups, university visits, and educational programs." },
+  { title: "Religious Organizations", desc: "Coordinating transportation for pilgrimages, faith groups, conferences, and religious travel." },
+  { title: "Sports Organizations", desc: "Arranging transportation for teams, tournaments, fan groups, and multi-city sporting programs." },
+  { title: "Wedding & Special-Event Planners", desc: "Coordinating guest transportation, venue transfers, airport arrivals, and multi-day celebrations." },
+  { title: "Other Group Travel Professionals", desc: "If your group transportation requirement does not fit neatly into one category, tell us what you're planning. The itinerary is what matters." },
+];
+
+const whatToInclude = [
+  { title: "Dates", desc: "When is the group traveling?" },
+  { title: "Passenger Count", desc: "How many people need transportation?" },
+  { title: "Cities & Destinations", desc: "Where does the group need to travel?" },
+  { title: "Hotels & Airports", desc: "Where are travelers arriving, staying, and departing?" },
+  { title: "Vehicle Requirements", desc: "Do you have a preferred vehicle type or passenger configuration?" },
+  { title: "Luggage & Equipment", desc: "Will the group have significant luggage, sports equipment, instruments, or other items?" },
+  { title: "Schedule", desc: "Are there fixed arrival times, attractions, meetings, events, or other commitments?" },
+  { title: "Special Requirements", desc: "Are there accessibility or other transportation considerations?" },
+];
+
+const beforeYouSend = [
+  "Travel dates",
+  "Number of passengers",
+  "Cities and destinations",
+  "Pickup and drop-off locations",
+  "Hotels",
+  "Flight information",
+  "Vehicle preference, if known",
+  "Luggage or equipment requirements",
+  "Daily itinerary",
+  "Special transportation requirements",
+];
+
 const faqs = [
-  { q: "Do I need to be a registered partner to request a quote?", a: "No — anyone can request a quote using the form above. However, registered partner agencies receive faster response times (under 4 hours) and additional benefits. Registration is free." },
-  { q: "How far in advance should I book?", a: "We recommend booking at least 4–6 weeks in advance for group sizes over 30. For peak travel seasons (June–September, December–January), 8–12 weeks is preferred. We can sometimes accommodate shorter notice for smaller groups." },
-  { q: "Can you handle multi-city tours with different vehicles in each city?", a: "Absolutely — this is one of our core capabilities. We coordinate different operators and vehicle types across all cities on your itinerary, presenting it as one seamless service with one invoice." },
-  { q: "Do you provide tour guides, or just transportation?", a: "WAYGGO Charters' core service is ground transportation. However, we have a network of licensed guides in major cities and can coordinate guide services alongside transportation on request." },
-  { q: "What currencies do you invoice in?", a: "We invoice primarily in USD. CAD is available for Canada-only bookings. Payments from international operators can be processed in multiple currencies via wire transfer or our payment portal." },
+  { q: "Do I need to be a registered partner to request a quote?", a: "No. Anyone can request a quote using the contact form.\nRegistered partner agencies receive faster response times and additional benefits, and registration is free." },
+  { q: "How quickly will WAYGGO respond?", a: "The operations team responds within 24 hours to quote requests.\nThere is also a faster response pathway for registered partner agencies and a WhatsApp option for quick questions.\nResponse times can depend on the request and the information provided." },
+  { q: "How far in advance should I contact WAYGGO?", a: "We recommend booking at least 4–6 weeks in advance for groups over 30, with 8–12 weeks preferred during peak travel periods (June–September and December–January).\nShorter-notice requests may sometimes be possible, particularly for smaller groups. Availability should always be confirmed for the specific itinerary." },
+  { q: "Can I contact WAYGGO if my itinerary isn't finalized?", a: "Yes. You can provide the information you have and explain what is still being developed.\nEarly conversations can help identify transportation requirements before the itinerary is finalized." },
+  { q: "Can WAYGGO handle a multi-city tour?", a: "Yes. Multi-city coordination is one of WAYGGO's core service propositions.\nWAYGGO coordinates different operators and vehicle types across cities while presenting the transportation as one coordinated service." },
+  { q: "Can WAYGGO arrange different vehicles in different cities?", a: "Yes, where appropriate transportation is available.\nA multi-city itinerary may require different vehicle types depending on passenger count, route, luggage, and local requirements. WAYGGO's network model is designed to coordinate those transportation relationships as part of the broader itinerary." },
+  { q: "Does WAYGGO provide the transportation directly?", a: "WAYGGO works through a network of transportation operators and partners.\nDepending on the specific arrangement, the vehicle and driver may be provided by a local transportation operator coordinated through WAYGGO. The applicable booking or proposal will identify the relevant transportation arrangement." },
+  { q: "Can WAYGGO help with tour guides?", a: "WAYGGO's core service is ground transportation. It also has a network of licensed guides in major cities that can be coordinated alongside transportation on request.\nGuide availability and arrangements should be confirmed for the specific itinerary." },
+  { q: "What types of vehicles can WAYGGO arrange?", a: "Depending on availability and the requirements of the journey, WAYGGO's fleet categories include vans, minibuses, mini coaches, and motor coaches.\nThe appropriate vehicle depends on passenger count, luggage, route, journey length, and other itinerary requirements." },
+  { q: "Can I request transportation for a small group?", a: "Yes. WAYGGO's transportation options include smaller vehicles suitable for groups that do not require a full-size motor coach.\nThe appropriate vehicle depends on the complete transportation requirement." },
+  { q: "Can WAYGGO coordinate airport transportation?", a: "Yes. Airport transportation can be part of a broader group itinerary, including arrivals, departures, hotel transfers, and multi-day programs.\nInclude airport, flight, terminal, and arrival/departure information when available." },
+  { q: "Can WAYGGO coordinate hotel-to-venue transportation?", a: "Yes. Hotel transfers and scheduled shuttle movements can be coordinated for sightseeing programs, conventions, weddings, sports events, educational trips, and other group travel." },
+  { q: "Can WAYGGO arrange transportation for events?", a: "Yes. WAYGGO provides transportation coordination for several event-related group travel needs, including corporate events, conventions, weddings, sports events, religious gatherings, and other special events." },
+  { q: "Can I request transportation for a wedding?", a: "Yes. Wedding transportation can include airport transfers, guest shuttles, bridal-party transportation, ceremony and reception transfers, and multi-day destination wedding programs." },
+  { q: "Can WAYGGO coordinate student transportation?", a: "Yes. Educational and student transportation can include field trips, university visits, multi-day educational tours, and other organized student travel.\nRelevant group and transportation requirements should be provided when requesting a quote." },
+  { q: "Can WAYGGO coordinate religious or pilgrimage transportation?", a: "Yes. WAYGGO supports transportation planning for religious groups and pilgrimage itineraries, including multi-city journeys.\nThe itinerary should identify sacred sites, worship schedules, group size, hotels, and other relevant transportation requirements where known." },
+  { q: "Can WAYGGO arrange sports team or fan transportation?", a: "Yes. Sports transportation can include teams, fan groups, tournaments, multi-game tours, stadium transfers, airport transportation, and equipment requirements.\nEquipment and luggage requirements should be included in the request." },
+  { q: "What currencies does WAYGGO invoice in?", a: "WAYGGO primarily invoices in USD, with CAD available for Canada-only bookings. International operators can make payments in multiple currencies through wire transfer or the payment portal.\nThe applicable currency and payment terms should be confirmed with the quote or invoice." },
+  { q: "What if I don't know which vehicle I need?", a: "That's okay. Passenger count is only one part of vehicle selection.\nTell WAYGGO the group size, luggage, itinerary, destinations, and travel requirements. The transportation conversation can then focus on what type of vehicle or combination of vehicles makes sense for the journey." },
+  { q: "Can I request transportation for multiple countries?", a: "WAYGGO's current network focuses on transportation across the United States and Canada.\nIf your itinerary involves multiple jurisdictions or cross-border travel, provide the complete route so the transportation requirements can be reviewed." },
+  { q: "Can I make changes after submitting a quote request?", a: "Yes. Contact the WAYGGO team as soon as possible if information changes.\nChanges to dates, passenger count, routing, vehicle requirements, or schedule may affect availability and pricing. A change should be considered confirmed only after WAYGGO acknowledges it." },
+  { q: "What if I need transportation urgently?", a: "Contact WAYGGO as soon as possible with the exact dates, group size, locations, and requirements.\nShorter-notice requests can sometimes be accommodated for smaller groups, but availability must be confirmed for each itinerary." },
+  { q: "Do I need to know the exact itinerary before requesting a quote?", a: "No. Provide the information you have.\nIf some destinations, passenger counts, or schedules are still being finalized, explain that in your message so the team understands what is confirmed and what may change." },
+  { q: "What happens after I submit the form?", a: "The WAYGGO team reviews the information provided and responds with the next steps for the transportation request.\nDepending on the itinerary, this may involve clarifying requirements, reviewing vehicle options, coordinating transportation availability, and preparing a proposal." },
+  { q: "Is requesting a quote a commitment?", a: "A quote request is an inquiry and does not by itself constitute a confirmed transportation booking.\nA booking becomes applicable when the relevant transportation arrangement has been confirmed under the applicable terms." },
 ];
 ---
 
@@ -29,13 +99,73 @@ const faqs = [
 
   <!-- Hero -->
   <PageHero
-    badge="Get Started"
-    heading={'Request a Ground<br /><span style="color: #FDEA01;">Transportation Quote</span>'}
-    subheading={'Send us a message below. Our operations team responds within <strong class="text-white">24 hours</strong> with a detailed, itemized proposal — no obligation.'}
+    badge="Contact WAYGGO"
+    heading={'Let\'s Plan the Transportation<br /><span style="color: #FDEA01;">Behind Your Journey</span>'}
+    subheading={"Every group trip is different. Tell us where the group is going, how many people are traveling, when the journey is taking place, and what the itinerary needs to accomplish. WAYGGO's team can then work through the transportation requirements with you—including vehicle needs, routing, local transportation coordination, and the different movements that make up the trip.<br /><br />Whether you're an international tour operator planning a multi-city itinerary, a travel agency arranging a group transfer, or an organization planning transportation for an event, start with the journey."}
+    cta={{ label: "Request a Ground Transportation Quote", href: "/contact#quote-form" }}
   />
 
   <ContactFormSection />
 
-  <FaqSection faqs={faqs} />
+  <HowItWorks
+    badge="What Happens Next?"
+    heading="From Request to Transportation Plan"
+    subheading="A quote request is the beginning of a conversation."
+    steps={nextSteps}
+  />
+
+  <ClosingStatement
+    badge="Are You Already a WAYGGO Partner?"
+    heading="Your Existing Relationship Can Make the Next Request Simpler"
+    paragraph={"If your agency or organization already works with WAYGGO, use the partner portal where applicable. Registered partner agencies receive a faster response pathway, along with additional partner benefits.\nIf you are not yet a partner, you can still request a quote."}
+    cta={{ label: "Partner Portal", href: "/portal" }}
+  />
+
+  <ListCardGrid
+    badge="Who Can Contact WAYGGO?"
+    heading="Transportation Starts With a Conversation"
+    subheading="WAYGGO works with a range of organizations arranging group transportation."
+    cards={whoCanContact}
+    compact
+  />
+
+  <ListCardGrid
+    badge="What Information Should I Include?"
+    heading="Don't Know Everything Yet? That's Okay."
+    subheading="You do not need a perfectly finalized itinerary to start a conversation. If available, include:"
+    background="cream"
+    cards={whatToInclude}
+    footnote="Even partial information can give the team a useful starting point."
+    compact
+  />
+
+  <FaqSection
+    badge="Frequently Asked Questions"
+    heading="Common Questions About Contacting WAYGGO"
+    faqs={faqs}
+  />
+
+  <ChipCloud
+    badge="Before You Send Your Request"
+    heading="A Few Details Can Make the Conversation Much Easier"
+    subheading="If you have them, include:"
+    items={beforeYouSend}
+    footnote="Don't worry if you don't have everything. Start with what you know."
+    compact
+  />
+
+  <PartnerCTA
+    badge="Let's Coordinate the Journey"
+    heading="Tell WAYGGO Where"
+    headingHighlight="the Group Is Going"
+    subheading={"The first step does not need to be complicated. Send us the group size, dates, destinations, and whatever you already know about the itinerary.\nWe'll use that information to understand the transportation requirements and determine the appropriate next step."}
+    primaryCta={{ label: "Request a Ground Transportation Quote", href: "/contact#quote-form" }}
+    secondaryCta={{ label: "Become a WAYGGO Partner", href: "/portal" }}
+  />
+
+  <ClosingStatement
+    heading="WAYGGO Contact"
+    paragraph={"WAYGGO exists to make group transportation easier to coordinate. That starts with a useful conversation.\nWhether you're arranging one airport transfer, a destination wedding, a student tour, a corporate convention, a sports trip, a pilgrimage, or a multi-city North American itinerary, tell us what the journey requires.\nYou bring the itinerary. WAYGGO helps coordinate the transportation behind it.\nOne transportation relationship. A coordinated way to move the group."}
+  />
 
 </BaseLayout>

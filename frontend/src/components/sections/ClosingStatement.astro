@@ -1,4 +1,6 @@
 ---
+import { withBase } from "../../lib/url";
+
 interface Props {
   badge?: string;
   /** Pass `false` to render the paragraphs only. */
@@ -7,10 +9,13 @@ interface Props {
   paragraph?: string;
   /** "left" runs the text full width, aligned left (like the trust bar intro). */
   align?: "center" | "left";
+  /** Optional button under the text. */
+  cta?: { label: string; href: string };
 }
 
 const {
   badge,
+  cta,
   heading = "Your ground transportation partner for group travel across North America.",
   align = "center",
   paragraph = "WAYGGO connects travel professionals and group organizers with a network of transportation operators across the United States and Canada, helping coordinate the vehicles, people, and movement behind the journey.",
@@ -38,6 +43,11 @@ const paragraphs = paragraph.split("\n");
           </p>
         ))}
       </div>
+      {cta && (
+        <div class="mt-6">
+          <a href={withBase(cta.href)} class="btn-secondary">{cta.label}</a>
+        </div>
+      )}
     </div>
   </div>
 </section>

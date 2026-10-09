@@ -60,7 +60,7 @@ const subheadingParagraphs = subheading.split("\n");
             </p>
           ))}
         </div>
-        <div class="flex flex-col sm:flex-row gap-4">
+        <div class="flex flex-col sm:flex-row sm:flex-wrap gap-4">
           <a href={withBase(primaryCta.href)} class="btn-primary">{primaryCta.label}</a>
           <a href={withBase(secondaryCta.href)} class="btn-outline-white">{secondaryCta.label}</a>
         </div>

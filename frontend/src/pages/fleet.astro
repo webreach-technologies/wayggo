@@ -3,7 +3,9 @@ import BaseLayout from "../layouts/BaseLayout.astro";
 import PageHero from "../components/sections/PageHero.astro";
 import FleetFilterBar from "../components/sections/FleetFilterBar.astro";
 import FleetVehicleRow from "../components/sections/FleetVehicleRow.astro";
+import ListCardGrid from "../components/sections/ListCardGrid.astro";
 import PartnerCTA from "../components/sections/PartnerCTA.astro";
+import ClosingStatement from "../components/sections/ClosingStatement.astro";
 import luxuryvanImg from "../assets/fleet/luxuryvan.png";
 import minibusImg from "../assets/fleet/minibus.png";
 import fullsizebusImg from "../assets/fleet/fullsizebus.png";
@@ -15,17 +17,21 @@ const vehicles = [
     iconKey: "van",
     image: luxuryvanImg,
     name: "Van",
-    tagline: "Premium small-group travel",
+    tagline: "Flexible Transportation for Smaller Groups",
+    desc: [
+      "For smaller groups, a van can provide the right balance of comfort, flexibility, and practical luggage capacity.",
+      "Vans are well suited to airport transfers, executive transportation, private sightseeing, wedding groups, and other journeys where a larger vehicle would not be necessary.",
+    ],
     capacity: { passengers: "6–14", luggage: "8–12 bags" },
     features: [
       { iconKey: "wifi",       label: "WiFi & Mobile Charging" },
-      { iconKey: "snowflake",  label: "Dual-zone Climate Control" },
+      { iconKey: "snowflake",  label: "Dual-Zone Climate Control" },
       { iconKey: "armchair",   label: "Captain's Leather Seats" },
       { iconKey: "volume",     label: "Premium Sound System" },
       { iconKey: "suitcase",   label: "Ample Luggage Space" },
-      { iconKey: "windowgrid", label: "Privacy Tinted Windows" },
+      { iconKey: "windowgrid", label: "Privacy-Tinted Windows" },
     ],
-    idealFor: ["Airport VIP Transfers", "Small Group City Tours", "Executive Group Travel", "Wedding Party Shuttles", "Intimate Private Tours"],
+    idealFor: ["Airport VIP Transfers", "Small-Group City Tours", "Executive Group Travel", "Wedding Party Shuttles", "Intimate Private Tours"],
     color: "#1A2744",
   },
   {
@@ -33,17 +39,21 @@ const vehicles = [
     iconKey: "bus",
     image: minibusImg,
     name: "Minibus",
-    tagline: "The workhorse of city touring",
+    tagline: "A Practical Choice for Mid-Sized Groups",
+    desc: [
+      "A minibus gives mid-sized groups more room to travel together while remaining practical for city routes, airport transfers, day excursions, and group visits.",
+      "For travel professionals coordinating groups that are too large for a van but do not require a full-size motor coach, the minibus can be a useful middle ground.",
+    ],
     capacity: { passengers: "15–28", luggage: "18–24 bags" },
     features: [
       { iconKey: "megaphone",  label: "PA Microphone System" },
-      { iconKey: "snowflake",  label: "Full Cabin Air Conditioning" },
-      { iconKey: "windowgrid", label: "Panoramic View Windows" },
+      { iconKey: "snowflake",  label: "Full-Cabin Air Conditioning" },
+      { iconKey: "windowgrid", label: "Panoramic-View Windows" },
       { iconKey: "lightbulb",  label: "Individual Reading Lights" },
       { iconKey: "wifi",       label: "WiFi Available" },
       { iconKey: "suitcase",   label: "Underbelly Luggage Hold" },
     ],
-    idealFor: ["City Sightseeing Tours", "Airport Group Transfers", "Day Trip Excursions", "University Campus Visits", "Cultural Group Outings"],
+    idealFor: ["City Sightseeing Tours", "Airport Group Transfers", "Day-Trip Excursions", "University Campus Visits", "Cultural Group Outings"],
     color: "#243460",
   },
   {
@@ -51,17 +61,21 @@ const vehicles = [
     iconKey: "fullbus",
     image: motorcoachImg,
     name: "Mini Coach",
-    tagline: "Airport-ready, flexible for hotel-hop routing",
+    tagline: "More Capacity for Flexible Group Routing",
+    desc: [
+      "Mini coaches provide additional capacity for groups that need more room than a minibus while maintaining flexibility for multi-stop itineraries.",
+      "They can be particularly useful for airport and hotel transfers, convention transportation, cruise connections, and event shuttle programs where groups may be moving between several locations.",
+    ],
     capacity: { passengers: "29–35", luggage: "28–34 bags" },
     features: [
       { iconKey: "plane",    label: "Airport-Ready Configuration" },
-      { iconKey: "building", label: "Hotel Door-to-Door" },
-      { iconKey: "suitcase", label: "Overhead & Rear Luggage" },
-      { iconKey: "snowflake",label: "Climate Controlled" },
+      { iconKey: "building", label: "Hotel Door-to-Door Service" },
+      { iconKey: "suitcase", label: "Overhead and Rear Luggage" },
+      { iconKey: "snowflake",label: "Climate Control" },
       { iconKey: "zap",      label: "USB Charging" },
       { iconKey: "mappin",   label: "Flexible Route Stops" },
     ],
-    idealFor: ["Airport–Hotel Transfers", "Convention Center Shuttles", "Cruise Terminal Connections", "Hotel Loop Shuttles", "Small Event Transport"],
+    idealFor: ["Airport–Hotel Transfers", "Convention Center Shuttles", "Cruise Terminal Connections", "Hotel Loop Shuttles", "Small Event Transportation"],
     color: "#0D1B3E",
   },
   {
@@ -69,7 +83,11 @@ const vehicles = [
     iconKey: "motorcoach",
     image: fullsizebusImg,
     name: "Motor Coach",
-    tagline: "Full luxury for large groups",
+    tagline: "Built for Larger Groups and Longer Journeys",
+    desc: [
+      "For larger groups and longer itineraries, a motor coach provides the capacity and onboard amenities needed to keep the group traveling together.",
+      "Motor coaches are suited to extended sightseeing programs, interstate travel, multi-city tours, sporting events, conventions, and other journeys where comfort and space become increasingly important over the course of the trip.",
+    ],
     capacity: { passengers: "36–56", luggage: "40–56 bags" },
     features: [
       { iconKey: "armchair",  label: "Premium Reclining Seats" },
@@ -79,9 +97,18 @@ const vehicles = [
       { iconKey: "wifi",      label: "High-Speed WiFi" },
       { iconKey: "snowflake", label: "Climate Control Throughout" },
     ],
-    idealFor: ["Long-Distance Interstate Tours", "Large Group Sightseeing", "Multi-City Grand Tours", "Sports Fan Charters", "Convention & Conference Groups"],
+    idealFor: ["Long-Distance Interstate Tours", "Large-Group Sightseeing", "Multi-City Grand Tours", "Sports and Fan Charters", "Convention and Conference Groups"],
     color: "#1A2744",
   },
+];
+
+const considerations = [
+  { title: "Group Size", desc: "How many travelers need to move together?" },
+  { title: "Luggage", desc: "How much luggage is traveling with the group, and how much space will it require?" },
+  { title: "Route", desc: "Is the vehicle covering a short transfer, a full day of sightseeing, or a multi-city itinerary?" },
+  { title: "Stops & Routing", desc: "Will the group make frequent stops, hotel changes, airport connections, or scheduled visits?" },
+  { title: "Journey Length", desc: "What level of onboard comfort and space makes sense for the amount of time travelers will spend on the road?" },
+  { title: "Trip Requirements", desc: "Are there specific features, accessibility considerations, equipment needs, or scheduling requirements that should be considered?" },
 ];
 ---
 
@@ -94,8 +121,8 @@ const vehicles = [
   <!-- Hero -->
   <PageHero
     badge="Fleet & Capabilities"
-    heading={'The Right Vehicle<br /><span style="color: #FDEA01;">For Every Group</span>'}
-    subheading="6 passengers or 56. Airport transfer or 12-day cross-country tour. WAYGGO Charters sources the exact vehicle your itinerary demands — all meticulously maintained, fully insured, and operated by vetted professionals."
+    heading={'The Right Vehicle<br /><span style="color: #FDEA01;">for the Journey</span>'}
+    subheading={"Group transportation is rarely just about how many people are traveling. The right vehicle depends on the group size, luggage, itinerary, distance, stops, travel style, and what the day needs to look like once everyone is on board.<br /><br />WAYGGO Charters helps travel professionals match those requirements with the appropriate transportation option—from smaller group transfers to full-size motor coaches for extended, multi-city journeys. Our network includes vehicles for groups ranging from 6 to 56 passengers, with configurations designed around different types of group travel."}
   />
 
   <FleetFilterBar vehicles={vehicles} />
@@ -110,19 +137,33 @@ const vehicles = [
       iconKey={v.iconKey}
       name={v.name}
       tagline={v.tagline}
+      desc={v.desc}
       capacity={v.capacity}
       features={v.features}
       idealFor={v.idealFor}
     />
   ))}
 
+  <ListCardGrid
+    badge="Choosing the Right Vehicle"
+    heading="Passenger Count Is Only the Starting Point"
+    subheading={"A group of 30 passengers does not automatically mean the same vehicle is right for every itinerary.\nThe transportation plan may also need to account for:"}
+    cards={considerations}
+    footnote="The goal is not simply to find a vehicle that can carry the group. It is to identify a transportation configuration that makes sense for the journey."
+  />
+
   <PartnerCTA
     badge="Custom Configurations"
     heading="Can't Find"
     headingHighlight="the Right Fit?"
-    subheading="Large delegations, back-to-back multi-city legs, mixed fleet for different group sizes — we build custom configurations for complex itineraries every day."
+    subheading={"Complex itineraries need more than a standard vehicle choice.\nSome group journeys do not fit neatly into one vehicle category. Large delegations, changing group sizes, back-to-back city legs, and itineraries that require different vehicle types may call for a more coordinated transportation plan.\nWAYGGO can work with travel professionals on custom transportation requirements, including mixed fleet arrangements for different stages of an itinerary. Tell us what the group needs to accomplish, where it is traveling, and how the itinerary is structured. We can help identify the transportation requirements that need to be considered."}
     primaryCta={{ label: "Discuss Custom Requirements", href: "/contact" }}
     secondaryCta={{ label: "Browse Tour Bus", href: "/tour-bus" }}
+  />
+
+  <ClosingStatement
+    heading="WAYGGO Fleet & Capabilities"
+    paragraph={"The right vehicle is one part of a successful group transportation plan. WAYGGO connects travel professionals with transportation options suited to different group sizes, luggage requirements, routes, and travel scenarios across the United States and Canada.\nFor international tour operators, travel agencies, and other professionals arranging group travel, that means transportation can be considered as part of the itinerary—not as a separate problem to solve at every destination.\nOne transportation relationship. A coordinated way to move the group."}
   />
 
 </BaseLayout>

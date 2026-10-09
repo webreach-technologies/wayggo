@@ -38,6 +38,13 @@ const labelStyle: React.CSSProperties = {
   letterSpacing: "0.02em",
 };
 
+const hintStyle: React.CSSProperties = {
+  color: "#9CA3AF",
+  fontSize: "0.75rem",
+  marginTop: "0.35rem",
+  lineHeight: 1.4,
+};
+
 const errorStyle: React.CSSProperties = {
   color: "#EF4444",
   fontSize: "0.75rem",
@@ -46,14 +53,15 @@ const errorStyle: React.CSSProperties = {
 };
 
 function Field({
-  label, error, children,
+  label, hint, error, children,
 }: {
-  label: string; error?: string; children: React.ReactNode;
+  label: string; hint?: string; error?: string; children: React.ReactNode;
 }) {
   return (
     <div>
       <label style={labelStyle}>{label}</label>
       {children}
+      {hint && <p style={hintStyle}>{hint}</p>}
       {error && <p style={errorStyle}>{error}</p>}
     </div>
   );
@@ -162,30 +170,27 @@ export default function QuoteForm() {
 
   return (
     <form onSubmit={submit}>
-      <h3 style={{ color: "#1A2744", fontSize: "1.25rem", fontWeight: 900, marginBottom: "0.25rem" }}>
-        Send Us a Message
-      </h3>
-      <p style={{ color: "#9CA3AF", fontSize: "0.875rem", marginBottom: "1.25rem" }}>
-        Tell us about your group and trip, and we'll get back to you within 24 hours.
+      <p style={{ color: "#6B7280", fontSize: "0.9375rem", marginBottom: "1.25rem" }}>
+        Use the form to send us the basic information about your group and journey.
       </p>
       <div style={{ display: "grid", gap: "1rem" }}>
         <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "1rem" }}>
-          <Field label="Your Full Name *" error={errors.name}>
+          <Field label="Your Name *" hint="Tell us who we should contact about the transportation request." error={errors.name}>
             <Input value={data.name} onChange={(v) => update("name", v)} placeholder="Jane Smith" />
           </Field>
-          <Field label="Email *" error={errors.email}>
+          <Field label="Email *" hint="Provide the best email address for your quote or follow-up." error={errors.email}>
             <Input value={data.email} onChange={(v) => update("email", v)} type="email" placeholder="you@agency.com" />
           </Field>
         </div>
         <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "1rem" }}>
-          <Field label="Phone / WhatsApp">
+          <Field label="Phone / WhatsApp" hint="Include a phone number or WhatsApp contact if you'd like the team to reach you that way.">
             <Input value={data.phone} onChange={(v) => update("phone", v)} type="tel" placeholder="+44 20 7946 0123" />
           </Field>
-          <Field label="Agency / Company Name">
+          <Field label="Agency / Company Name" hint="Tell us which organization you're representing.">
             <Input value={data.agencyName} onChange={(v) => update("agencyName", v)} placeholder="e.g. Sunrise Tours Ltd." />
           </Field>
         </div>
-        <Field label="Message *" error={errors.message}>
+        <Field label="Trip Details *" hint="Include as much information as you currently have." error={errors.message}>
           <Textarea
             value={data.message}
             onChange={(v) => update("message", v)}
@@ -217,7 +222,7 @@ export default function QuoteForm() {
             btn.style.boxShadow = "none";
           }}
         >
-          Send Message
+          Send Transportation Request
           <Send size={16} strokeWidth={2} fill="currentColor" />
         </button>
       </div>

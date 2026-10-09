@@ -1,6 +1,8 @@
 ---
 interface Milestone {
   year: string;
+  /** Short label shown after the year, e.g. "Where It Began". */
+  title?: string;
   event: string;
 }
 
@@ -9,9 +11,11 @@ interface Props {
   heading: string;
   paragraphs: string[];
   milestones: Milestone[];
+  /** Closing line under the timeline. */
+  footnote?: string;
 }
 
-const { badge, heading, paragraphs, milestones } = Astro.props;
+const { badge, heading, paragraphs, milestones, footnote } = Astro.props;
 ---
 
 <section class="py-20" style="background-color: white;">
@@ -35,11 +39,12 @@ const { badge, heading, paragraphs, milestones } = Astro.props;
               {i < milestones.length - 1 && <div class="w-px flex-1 my-1" style="background-color: #E5E7EB; min-height: 32px;"></div>}
             </div>
             <div class="pb-6">
-              <div class="text-xs font-black uppercase tracking-widest mb-1" style="color: #1A2744;">{m.year}</div>
+              <div class="text-xs font-black uppercase tracking-widest mb-1" style="color: #1A2744;">{m.year}{m.title && ` — ${m.title}`}</div>
               <p class="text-sm text-gray-500 leading-relaxed">{m.event}</p>
             </div>
           </div>
         ))}
+        {footnote && <p class="text-sm font-semibold leading-relaxed mt-2" style="color: #1A2744;">{footnote}</p>}
       </div>
     </div>
   </div>
