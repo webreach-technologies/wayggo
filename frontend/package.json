@@ -12,16 +12,16 @@
     "astro": "astro"
   },
   "dependencies": {
-    "@astrojs/react": "^6.0.5",
+    "@astrojs/react": "^7.0.1",
     "@astrojs/sitemap": "^3.7.4",
     "@fontsource-variable/nunito": "^5.3.0",
-    "@lucide/astro": "^1.45.0",
+    "@lucide/astro": "^1.53.0",
     "@tailwindcss/vite": "^4.3.3",
     "@types/react": "^19.3.0",
     "@types/react-dom": "^19.3.0",
-    "@vis.gl/react-google-maps": "^1.10.0",
-    "astro": "^7.3.2",
-    "lucide-react": "^1.45.0",
+    "@vis.gl/react-google-maps": "^1.10.1",
+    "astro": "^7.3.8",
+    "lucide-react": "^1.53.0",
     "react": "^19.3.0",
     "react-datepicker": "^9.1.0",
     "react-dom": "^19.3.0",
@@ -29,7 +29,7 @@
   },
   "devDependencies": {
     "@astrojs/check": "^0.9.10",
-    "playwright": "^1.63.0",
+    "playwright": "^1.64.0",
     "typescript": "^6.0.3"
   }
 }
