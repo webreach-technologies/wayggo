@@ -1,7 +1,10 @@
 ---
 import BaseLayout from "../../layouts/BaseLayout.astro";
 import PageHero from "../../components/sections/PageHero.astro";
+import ClosingStatement from "../../components/sections/ClosingStatement.astro";
+import HeroQuoteBar from "../../components/sections/HeroQuoteBar.astro";
 import ServiceCategoryGrid from "../../components/sections/ServiceCategoryGrid.astro";
+import FleetOverview from "../../components/sections/FleetOverview.astro";
 import HowItWorks from "../../components/sections/HowItWorks.astro";
 import PartnerCTA from "../../components/sections/PartnerCTA.astro";
 
@@ -71,14 +74,29 @@ const categories = [
 
   <!-- Hero -->
   <PageHero
-    badge="Our Specializations"
-    heading={'Every Tour Type.<br /><span style="color: #FDEA01;">One Trusted Partner.</span>'}
-    subheading="Whether you're moving a student group through D.C. museums or chauffeuring a Fortune 500 delegation across Las Vegas, WAYGGO Charters has the vehicle, the driver, and the local knowledge to make it seamless."
+    badge="Our Services"
+    heading={'Group Transportation Built<br /><span style="color: #FDEA01;">Around Your Journey</span>'}
+    subheading="Every group travels differently. A corporate delegation may need coordinated movement between hotels, meeting venues, and airports. A sightseeing group may move through several destinations over the course of a tour. A wedding, sports group, student trip, or religious journey can bring its own schedule and transportation requirements."
   />
+
+  <ClosingStatement
+    heading={false}
+    align="left"
+    paragraph={"WAYGGO connects each type of journey with the transportation it requires, helping groups travel together while giving the people planning the trip a simpler way to manage the ground operation. A vehicle is only one part of group transportation. The purpose of the journey shapes the way transportation needs to be planned.\nWhether the itinerary involves sightseeing across a major city, a multi-day educational program, a corporate convention, a pilgrimage, a sporting event, or a wedding, WAYGGO approaches transportation in the context of the trip itself. That means considering the group, the schedule, the destinations, the vehicle requirements, and the movement between each part of the itinerary."}
+  />
+
+  <HeroQuoteBar />
 
   <ServiceCategoryGrid categories={categories} />
 
+  <ClosingStatement
+    heading="Transportation That Understands the Purpose of the Trip"
+    paragraph="The transportation should support the journey — not become the journey."
+  />
+
   <HowItWorks />
+
+  <FleetOverview />
 
   <PartnerCTA
     badge="Custom Recommendation"
@@ -88,4 +106,6 @@ const categories = [
     primaryCta={{ label: "Get a Custom Recommendation", href: "/contact" }}
     secondaryCta={{ label: "Register as Travel Partner", href: "/portal" }}
   />
+
+  <ClosingStatement />
 </BaseLayout>
