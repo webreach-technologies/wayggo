@@ -5,30 +5,34 @@ interface Props {
   heading?: string | false;
   /** Separate paragraphs with "\n". */
   paragraph?: string;
+  /** "left" runs the text full width, aligned left (like the trust bar intro). */
+  align?: "center" | "left";
 }
 
 const {
   badge,
   heading = "Your ground transportation partner for group travel across North America.",
+  align = "center",
   paragraph = "WAYGGO connects travel professionals and group organizers with a network of transportation operators across the United States and Canada, helping coordinate the vehicles, people, and movement behind the journey.",
 } = Astro.props;
 
+const left = align === "left";
 const paragraphs = paragraph.split("\n");
 ---
 
 <section style="background: #FDEA01;">
   <div class="container">
-    <div class="py-10 text-center">
+    <div class:list={["py-10", left ? "text-left" : "text-center"]}>
       {badge && <span class="section-label mb-4">{badge}</span>}
       {heading && (
-        <h2 class="text-2xl lg:text-3xl font-black leading-tight mx-auto max-w-4xl mb-4"
+        <h2 class:list={["text-2xl lg:text-3xl font-black leading-tight mb-4", { "mx-auto max-w-4xl": !left }]}
           style="color: #1A2744;">
           {heading}
         </h2>
       )}
       <div class="space-y-3">
         {paragraphs.map((p) => (
-          <p class="text-lg lg:text-base font-bold leading-relaxed mx-auto max-w-4xl"
+          <p class:list={["text-lg lg:text-base font-bold leading-relaxed", { "mx-auto max-w-4xl": !left }]}
             style="color: rgba(26,39,68,0.7);">
             {p}
           </p>

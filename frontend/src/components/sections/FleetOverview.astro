@@ -66,7 +66,7 @@ const gradientCSS = vehicles.map((v, i) =>
     <style set:html={gradientCSS}></style>
     <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
       {vehiclesWithIndex.map((v) => (
-        <div class="group rounded-2xl overflow-hidden card-hover bg-white"
+        <div class="group flex flex-col rounded-2xl overflow-hidden card-hover bg-white"
           style="box-shadow: 0 4px 24px rgba(26,39,68,0.09);">
           <!-- Card header: gradient bg with vehicle PNG on top -->
           <div class="h-44 relative overflow-hidden">
@@ -90,7 +90,7 @@ const gradientCSS = vehicles.map((v, i) =>
             </div>
           </div>
 
-          <div class="p-6">
+          <div class="p-6 flex flex-col flex-1">
             <!-- Feature tags -->
             <div class="flex flex-wrap gap-1.5 mb-4">
               {v.features.map((f) => (
@@ -102,7 +102,7 @@ const gradientCSS = vehicles.map((v, i) =>
                 Ideal For: <strong class="text-gray-800">{v.capacity}</strong>
               </div>
             </div>
-            <a href={withBase(viewAllHref)} class="btn-secondary w-full justify-center"
+            <a href={withBase(viewAllHref)} class="btn-secondary w-full justify-center mt-auto"
               style="padding: 0.65rem 1.5rem; font-size: 0.72rem;">
               View Full Specs
             </a>
