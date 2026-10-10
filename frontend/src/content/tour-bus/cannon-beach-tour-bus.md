@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Cannon Beach Tour Bus Rental — Oregon Coast Icon Experience — WAYGGO Charters"
+seoTitle: "Cannon Beach Tour Bus Rental — WAYGGO Charters"
 seoDescription: "Book a Cannon Beach tour bus rental for your group — beautiful shoreline and iconic Haystack Rock views, vehicle and driver included."
 
 heroImageAlt: "Cannon Beach tour bus rental"

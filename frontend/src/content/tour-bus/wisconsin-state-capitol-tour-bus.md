@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Wisconsin State Capitol Tour Bus Rental — Capitol on the Isthmus Discovery — WAYGGO Charters"
+seoTitle: "Wisconsin State Capitol Tour Bus Rental — WAYGGO Charters"
 seoDescription: "Book a Wisconsin State Capitol tour bus rental for your group — one of the state's most important landmarks, vehicle and driver included."
 
 heroImageAlt: "Wisconsin State Capitol tour bus rental"

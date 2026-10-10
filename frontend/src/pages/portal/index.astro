@@ -93,7 +93,7 @@ const benefits = [
         <h1 class="portal-card-heading">Welcome Back</h1>
         <p class="portal-card-sub">Sign in to your WAYGGO Charters partner account.</p>
 
-        <form action="/portal/dashboard" method="GET" class="portal-form" novalidate>
+        <form action={withBase("/portal/dashboard")} method="GET" class="portal-form" novalidate>
 
           <!-- Email -->
           <div class="form-group">

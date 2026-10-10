@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "The Galleria Area Tour Bus Rental — Premier Shopping & Lifestyle Escape — WAYGGO Charters"
+seoTitle: "The Galleria Area Tour Bus Rental — WAYGGO Charters"
 seoDescription: "Book a Galleria area tour bus rental for your group — one of Houston's most popular shopping and entertainment areas, vehicle and driver included."
 
 heroImageAlt: "The Galleria Area tour bus rental"

@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Centennial Olympic Park Tour Bus Rental — Public Celebration & Legacy Park Journey — WAYGGO Charters"
+seoTitle: "Centennial Olympic Park Tour Bus Rental — WAYGGO Charters"
 seoDescription: "Book a Centennial Olympic Park tour bus rental for your group — the Fountain of Rings and Atlanta's 1996 Olympic legacy, vehicle and driver included."
 
 heroImageAlt: "Centennial Olympic Park tour bus rental"

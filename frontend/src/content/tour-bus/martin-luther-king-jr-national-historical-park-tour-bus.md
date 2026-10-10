@@ -27,8 +27,8 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Martin Luther King Jr. National Historical Park Tour Bus Rental — Civil Rights Heritage Journey — WAYGGO Charters"
-seoDescription: "Book a Martin Luther King Jr. National Historical Park tour bus rental for your group — Dr. King's birth home, Ebenezer Baptist Church, and Civil Rights history, vehicle and driver included."
+seoTitle: "Martin Luther King Jr. Historical Park Tour Bus Rental"
+seoDescription: "Book a Martin Luther King Jr. National Historical Park tour bus rental — Dr. King's birth home, Ebenezer Baptist Church, and Civil Rights history."
 
 heroImageAlt: "Martin Luther King Jr. National Historical Park tour bus rental"
 heroHeadingLine1: "Martin Luther King Jr."

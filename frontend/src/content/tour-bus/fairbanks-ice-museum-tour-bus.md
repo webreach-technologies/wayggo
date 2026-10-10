@@ -27,8 +27,8 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Fairbanks Ice Museum Tour Bus Rental — Northern Ice Magic Journey — WAYGGO Charters"
-seoDescription: "Book a Fairbanks Ice Museum tour bus rental for your group — year-round ice sculptures and the famous ice bar near Fairbanks, Alaska, vehicle and driver included."
+seoTitle: "Fairbanks Ice Museum Tour Bus Rental — WAYGGO Charters"
+seoDescription: "Book a Fairbanks Ice Museum tour bus rental — year-round ice sculptures and the famous ice bar near Fairbanks, Alaska, vehicle and driver included."
 
 heroImageAlt: "Fairbanks Ice Museum tour bus rental"
 heroHeadingLine1: "Fairbanks Ice Museum"

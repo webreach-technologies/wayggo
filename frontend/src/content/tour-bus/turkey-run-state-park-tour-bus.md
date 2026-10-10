@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Turkey Run State Park Tour Bus Rental — Sandstone Canyon Ravine Trek Experience — WAYGGO Charters"
+seoTitle: "Turkey Run State Park Tour Bus Rental — WAYGGO Charters"
 seoDescription: "Book a Turkey Run State Park tour bus rental for your group — sandstone ravines and Sugar Creek scenery in Indiana, vehicle and driver included."
 
 heroImageAlt: "Turkey Run State Park tour bus rental"

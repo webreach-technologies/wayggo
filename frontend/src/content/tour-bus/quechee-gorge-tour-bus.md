@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Quechee Gorge Tour Bus Rental — Vermont's Grand Canyon Discovery — WAYGGO Charters"
+seoTitle: "Quechee Gorge Tour Bus Rental — WAYGGO Charters"
 seoDescription: "Book a Quechee Gorge tour bus rental for your group — one of Vermont's memorable natural destinations, vehicle and driver included."
 
 heroImageAlt: "Quechee Gorge tour bus rental"

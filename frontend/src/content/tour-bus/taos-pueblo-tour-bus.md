@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Taos Pueblo Tour Bus Rental — Living Pueblo Traditions — WAYGGO Charters"
+seoTitle: "Taos Pueblo Tour Bus Rental — WAYGGO Charters"
 seoDescription: "Book a Taos Pueblo tour bus rental for your group — a remarkable cultural and historic destination in northern New Mexico, vehicle and driver included."
 
 heroImageAlt: "Taos Pueblo tour bus rental"

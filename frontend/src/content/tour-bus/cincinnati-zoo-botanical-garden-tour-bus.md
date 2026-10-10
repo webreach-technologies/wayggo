@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Cincinnati Zoo & Botanical Garden Tour Bus Rental — Zoo & Garden Wonders Journey — WAYGGO Charters"
+seoTitle: "Cincinnati Zoo & Botanical Garden Tour Bus Rental — WAYGGO"
 seoDescription: "Book a Cincinnati Zoo & Botanical Garden tour bus rental for your group — wildlife, gardens, and conservation, vehicle and driver included."
 
 heroImageAlt: "Cincinnati Zoo & Botanical Garden tour bus rental"

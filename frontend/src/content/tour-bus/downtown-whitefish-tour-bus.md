@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Downtown Whitefish Tour Bus Rental — Rocky Mountain Town Charm — WAYGGO Charters"
+seoTitle: "Downtown Whitefish Tour Bus Rental — WAYGGO Charters"
 seoDescription: "Book a Downtown Whitefish tour bus rental for your group — local shops and mountain-town charm, vehicle and driver included."
 
 heroImageAlt: "Downtown Whitefish tour bus rental"

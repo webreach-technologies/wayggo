@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Mines of Spain Recreation Area Tour Bus Rental — Bluff Trails River Valley Heritage Escape Experience — WAYGGO Charters"
+seoTitle: "Mines of Spain Recreation Area Tour Bus Rental — WAYGGO"
 seoDescription: "Book a Mines of Spain Recreation Area tour bus rental for your group — wooded trails, bluffs, and mining heritage near Dubuque, vehicle and driver included."
 
 heroImageAlt: "Mines of Spain Recreation Area tour bus rental"

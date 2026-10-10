@@ -27,8 +27,8 @@ included:
   - "Airport transfers"
   - "Hotel pickups daily"
 
-seoTitle: "Chena Hot Springs Resort Tour Bus Rental — Aurora Hot Springs Relaxation Journey — WAYGGO Charters"
-seoDescription: "Book a Chena Hot Springs Resort tour bus rental for your group — geothermal pools, the Aurora Ice Museum, and Northern Lights viewing near Fairbanks, vehicle and driver included."
+seoTitle: "Chena Hot Springs Resort Tour Bus Rental — WAYGGO Charters"
+seoDescription: "Book a Chena Hot Springs Resort tour bus rental for your group — geothermal pools, the Aurora Ice Museum, and Northern Lights viewing near Fairbanks."
 
 heroImageAlt: "Chena Hot Springs Resort tour bus rental"
 heroHeadingLine1: "Chena Hot Springs Resort"

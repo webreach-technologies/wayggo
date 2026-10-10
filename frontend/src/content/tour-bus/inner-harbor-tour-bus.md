@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Inner Harbor Tour Bus Rental — Harbor Lights Discovery — WAYGGO Charters"
+seoTitle: "Inner Harbor Tour Bus Rental — WAYGGO Charters"
 seoDescription: "Book an Inner Harbor tour bus rental for your group — waterfront scenery, museums, and dining in the heart of Baltimore, vehicle and driver included."
 
 heroImageAlt: "Inner Harbor tour bus rental"

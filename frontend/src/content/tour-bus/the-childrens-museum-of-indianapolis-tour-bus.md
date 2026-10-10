@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "The Children's Museum of Indianapolis Tour Bus Rental — Interactive Wonder Learning Adventure Experience — WAYGGO Charters"
+seoTitle: "The Children's Museum of Indianapolis Tour Bus Rental"
 seoDescription: "Book a Children's Museum of Indianapolis tour bus rental for your group — interactive science, history, and cultural exhibits, vehicle and driver included."
 
 heroImageAlt: "The Children's Museum of Indianapolis tour bus rental"

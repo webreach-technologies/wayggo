@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Thunder Hole Tour Bus Rental — Ocean Thunder Discovery — WAYGGO Charters"
+seoTitle: "Thunder Hole Tour Bus Rental — WAYGGO Charters"
 seoDescription: "Book a Thunder Hole tour bus rental for your group — dramatic wave activity and rocky coastal scenery in Acadia National Park, vehicle and driver included."
 
 heroImageAlt: "Thunder Hole tour bus rental"

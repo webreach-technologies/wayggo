@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Oklahoma City National Memorial & Museum Tour Bus Rental — Journey of Remembrance — WAYGGO Charters"
+seoTitle: "Oklahoma City National Memorial & Museum Tour Bus Rental"
 seoDescription: "Book an Oklahoma City National Memorial & Museum tour bus rental for your group — a reflective journey of history and resilience, vehicle and driver included."
 
 heroImageAlt: "Oklahoma City National Memorial & Museum tour bus rental"

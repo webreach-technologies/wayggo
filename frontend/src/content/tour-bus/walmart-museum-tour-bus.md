@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Walmart Museum Tour Bus Rental — Retail Legacy Discovery Journey — WAYGGO Charters"
+seoTitle: "Walmart Museum Tour Bus Rental — WAYGGO Charters"
 seoDescription: "Book a Walmart Museum tour bus rental for your group — Sam Walton's original 5&10 store on Bentonville's historic town square, vehicle and driver included."
 
 heroImageAlt: "Walmart Museum tour bus rental"

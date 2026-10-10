@@ -27,8 +27,8 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Antelope Canyon Tour Bus Rental — Lightbeam Canyon Explorer Ride — WAYGGO Charters"
-seoDescription: "Book an Antelope Canyon tour bus rental for your group — the famous light beams and sandstone slot canyons on Navajo Nation land near Page, vehicle and driver included."
+seoTitle: "Antelope Canyon Tour Bus Rental — WAYGGO Charters"
+seoDescription: "Book an Antelope Canyon tour bus rental — the famous light beams and sandstone slot canyons on Navajo Nation land near Page, vehicle and driver included."
 
 heroImageAlt: "Antelope Canyon tour bus rental"
 heroHeadingLine1: "Antelope Canyon"

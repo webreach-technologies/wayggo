@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Reading Terminal Market Tour Bus Rental — Flavors of Philadelphia Experience — WAYGGO Charters"
+seoTitle: "Reading Terminal Market Tour Bus Rental — WAYGGO Charters"
 seoDescription: "Book a Reading Terminal Market tour bus rental for your group — Philadelphia's historic public market, vehicle and driver included."
 
 heroImageAlt: "Reading Terminal Market tour bus rental"

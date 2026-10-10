@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Biltmore Estate Tour Bus Rental — Gilded Estate Grandeur — WAYGGO Charters"
+seoTitle: "Biltmore Estate Tour Bus Rental — WAYGGO Charters"
 seoDescription: "Book a Biltmore Estate tour bus rental for your group — historic architecture and beautiful gardens near Asheville, vehicle and driver included."
 
 heroImageAlt: "Biltmore Estate tour bus rental"

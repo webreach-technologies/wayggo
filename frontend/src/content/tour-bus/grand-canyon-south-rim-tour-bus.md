@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickups daily"
 
-seoTitle: "Grand Canyon South Rim Tour Bus Rental — South Rim Panorama Discovery Tour — WAYGGO Charters"
+seoTitle: "Grand Canyon South Rim Tour Bus Rental — WAYGGO Charters"
 seoDescription: "Book a Grand Canyon South Rim tour bus rental for your group — Mather Point, Bright Angel Trail, and Grand Canyon Village, vehicle and driver included."
 
 heroImageAlt: "Grand Canyon South Rim tour bus rental"

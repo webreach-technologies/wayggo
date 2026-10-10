@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Louisiana Boardwalk Tour Bus Rental — Riverfront Shopping Escape — WAYGGO Charters"
+seoTitle: "Louisiana Boardwalk Tour Bus Rental — WAYGGO Charters"
 seoDescription: "Book a Louisiana Boardwalk tour bus rental for your group — shopping, dining, and Red River scenery in Bossier City, vehicle and driver included."
 
 heroImageAlt: "Louisiana Boardwalk tour bus rental"

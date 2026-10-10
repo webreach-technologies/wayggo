@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "National Cowboy & Western Heritage Museum Tour Bus Rental — Spirit of the American West — WAYGGO Charters"
+seoTitle: "National Cowboy & Western Heritage Museum Tour Bus Rental"
 seoDescription: "Book a National Cowboy & Western Heritage Museum tour bus rental for your group — Western history, art, and culture, vehicle and driver included."
 
 heroImageAlt: "National Cowboy & Western Heritage Museum tour bus rental"

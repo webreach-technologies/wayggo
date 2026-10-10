@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "San Antonio River Walk Tour Bus Rental — Riverside Charm Discovery — WAYGGO Charters"
+seoTitle: "San Antonio River Walk Tour Bus Rental — WAYGGO Charters"
 seoDescription: "Book a San Antonio River Walk tour bus rental for your group — one of Texas's most popular sightseeing destinations, vehicle and driver included."
 
 heroImageAlt: "San Antonio River Walk tour bus rental"

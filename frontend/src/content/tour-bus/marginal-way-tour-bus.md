@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Marginal Way Tour Bus Rental — Clifftop Coastal Walk — WAYGGO Charters"
+seoTitle: "Marginal Way Tour Bus Rental — WAYGGO Charters"
 seoDescription: "Book a Marginal Way tour bus rental for your group — a scenic coastal walking path along Ogunquit's rocky shoreline, vehicle and driver included."
 
 heroImageAlt: "Marginal Way tour bus rental"

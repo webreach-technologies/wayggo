@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Sandia Peak Tramway Tour Bus Rental — Peaks Above the Desert Ride — WAYGGO Charters"
+seoTitle: "Sandia Peak Tramway Tour Bus Rental — WAYGGO Charters"
 seoDescription: "Book a Sandia Peak Tramway tour bus rental for your group — one of Albuquerque's most spectacular sightseeing experiences, vehicle and driver included."
 
 heroImageAlt: "Sandia Peak Tramway tour bus rental"

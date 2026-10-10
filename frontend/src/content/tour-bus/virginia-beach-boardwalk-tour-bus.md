@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Virginia Beach Boardwalk Tour Bus Rental — Atlantic Boardwalk Getaway — WAYGGO Charters"
+seoTitle: "Virginia Beach Boardwalk Tour Bus Rental — WAYGGO Charters"
 seoDescription: "Book a Virginia Beach Boardwalk tour bus rental for your group — one of Virginia's most popular coastal destinations, vehicle and driver included."
 
 heroImageAlt: "Virginia Beach Boardwalk tour bus rental"

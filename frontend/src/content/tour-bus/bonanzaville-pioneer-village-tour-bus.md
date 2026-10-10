@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Bonanzaville Pioneer Village Tour Bus Rental — Pioneers of the Prairie Experience — WAYGGO Charters"
+seoTitle: "Bonanzaville Pioneer Village Tour Bus Rental — WAYGGO"
 seoDescription: "Book a Bonanzaville Pioneer Village tour bus rental for your group — pioneer history and local heritage near Fargo, vehicle and driver included."
 
 heroImageAlt: "Bonanzaville Pioneer Village tour bus rental"

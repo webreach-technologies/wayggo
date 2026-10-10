@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Strataca Underground Salt Museum Tour Bus Rental — Subterranean Salt Mine Discovery Experience — WAYGGO Charters"
+seoTitle: "Strataca Underground Salt Museum Tour Bus Rental — WAYGGO"
 seoDescription: "Book a Strataca Underground Salt Museum tour bus rental for your group — a working salt mine deep beneath Hutchinson, Kansas, vehicle and driver included."
 
 heroImageAlt: "Strataca Underground Salt Museum tour bus rental"

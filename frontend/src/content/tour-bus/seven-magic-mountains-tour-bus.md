@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Seven Magic Mountains Tour Bus Rental — Desert Art & Color Experience — WAYGGO Charters"
+seoTitle: "Seven Magic Mountains Tour Bus Rental — WAYGGO Charters"
 seoDescription: "Book a Seven Magic Mountains tour bus rental for your group — colorful stacked sculptures in the Mojave Desert, vehicle and driver included."
 
 heroImageAlt: "Seven Magic Mountains tour bus rental"

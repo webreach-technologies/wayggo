@@ -27,8 +27,8 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Great Sand Dunes National Park Tour Bus Rental — Dune Desert Mountain Explorer Ride — WAYGGO Charters"
-seoDescription: "Book a Great Sand Dunes National Park tour bus rental for your group — North America's tallest sand dunes set against the Sangre de Cristo Mountains, vehicle and driver included."
+seoTitle: "Great Sand Dunes National Park Tour Bus Rental — WAYGGO"
+seoDescription: "Book a Great Sand Dunes National Park tour bus rental for your group — North America's tallest sand dunes set against the Sangre de Cristo Mountains."
 
 heroImageAlt: "Great Sand Dunes National Park tour bus rental"
 heroHeadingLine1: "Great Sand Dunes National Park"

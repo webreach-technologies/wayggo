@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Lake Compounce Tour Bus Rental — Family Thrill Park Experience Tour — WAYGGO Charters"
+seoTitle: "Lake Compounce Tour Bus Rental — WAYGGO Charters"
 seoDescription: "Book a Lake Compounce tour bus rental for your group — America's oldest amusement park with thrilling roller coasters, vehicle and driver included."
 
 heroImageAlt: "Lake Compounce tour bus rental"

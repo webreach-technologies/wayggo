@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Field of Dreams Movie Site Tour Bus Rental — Cornfield Cinema Nostalgia Heritage Experience — WAYGGO Charters"
+seoTitle: "Field of Dreams Movie Site Tour Bus Rental — WAYGGO Charters"
 seoDescription: "Book a Field of Dreams Movie Site tour bus rental for your group — the iconic baseball field near Dyersville, Iowa, vehicle and driver included."
 
 heroImageAlt: "Field of Dreams Movie Site tour bus rental"

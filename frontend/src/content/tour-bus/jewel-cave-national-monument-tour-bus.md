@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Jewel Cave National Monument Tour Bus Rental — Underground Crystal Caverns Adventure — WAYGGO Charters"
+seoTitle: "Jewel Cave National Monument Tour Bus Rental — WAYGGO"
 seoDescription: "Book a Jewel Cave National Monument tour bus rental for your group — one of South Dakota's remarkable natural attractions, vehicle and driver included."
 
 heroImageAlt: "Jewel Cave National Monument tour bus rental"

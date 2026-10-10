@@ -27,8 +27,8 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Cuyahoga Valley National Park Tour Bus Rental — Valley Trails & Waterfalls Adventure — WAYGGO Charters"
-seoDescription: "Book a Cuyahoga Valley National Park tour bus rental for your group — forests, waterfalls, and scenic trails between Cleveland and Akron, vehicle and driver included."
+seoTitle: "Cuyahoga Valley National Park Tour Bus Rental — WAYGGO"
+seoDescription: "Book a Cuyahoga Valley National Park tour bus rental — forests, waterfalls, and scenic trails between Cleveland and Akron, vehicle and driver included."
 
 heroImageAlt: "Cuyahoga Valley National Park tour bus rental"
 heroHeadingLine1: "Cuyahoga Valley"

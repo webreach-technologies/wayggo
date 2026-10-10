@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "National Elk Refuge Tour Bus Rental — Valley of the Elk Journey — WAYGGO Charters"
+seoTitle: "National Elk Refuge Tour Bus Rental — WAYGGO Charters"
 seoDescription: "Book a National Elk Refuge tour bus rental for your group — one of Wyoming's most distinctive wildlife destinations, vehicle and driver included."
 
 heroImageAlt: "National Elk Refuge tour bus rental"

@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Rockefeller Center Tour Bus Rental — Center of New York Splendor — WAYGGO Charters"
+seoTitle: "Rockefeller Center Tour Bus Rental — WAYGGO Charters"
 seoDescription: "Book a Rockefeller Center tour bus rental for your group — landmark architecture and public art in the heart of Midtown, vehicle and driver included."
 
 heroImageAlt: "Rockefeller Center tour bus rental"

@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Virginia City Historic District Tour Bus Rental — Silver Rush Heritage Journey — WAYGGO Charters"
+seoTitle: "Virginia City Historic District, NV Tour Bus Rental — WAYGGO"
 seoDescription: "Book a Virginia City Historic District tour bus rental for your group — Nevada mining heritage and Old West architecture, vehicle and driver included."
 
 heroImageAlt: "Virginia City Historic District tour bus rental"

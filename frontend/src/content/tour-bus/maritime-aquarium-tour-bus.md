@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Maritime Aquarium Tour Bus Rental — Ocean Life Exploration Journey — WAYGGO Charters"
+seoTitle: "Maritime Aquarium Tour Bus Rental — WAYGGO Charters"
 seoDescription: "Book a Maritime Aquarium tour bus rental for your group — sharks, seals, and Long Island Sound wildlife in South Norwalk, vehicle and driver included."
 
 heroImageAlt: "Maritime Aquarium tour bus rental"

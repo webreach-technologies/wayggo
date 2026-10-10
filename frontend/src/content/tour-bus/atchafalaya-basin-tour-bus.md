@@ -27,8 +27,8 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Atchafalaya Basin Tour Bus Rental — Bayou Wilderness Expedition — WAYGGO Charters"
-seoDescription: "Book an Atchafalaya Basin tour bus rental for your group — expansive wetlands, cypress trees, and wildlife in south-central Louisiana, vehicle and driver included."
+seoTitle: "Atchafalaya Basin Tour Bus Rental — WAYGGO Charters"
+seoDescription: "Book an Atchafalaya Basin tour bus rental — expansive wetlands, cypress trees, and wildlife in south-central Louisiana, vehicle and driver included."
 
 heroImageAlt: "Atchafalaya Basin tour bus rental"
 heroHeadingLine1: "Atchafalaya Basin"

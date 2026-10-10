@@ -27,8 +27,8 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "9/11 Memorial & Museum Tour Bus Rental — Resilience & Remembrance Journey — WAYGGO Charters"
-seoDescription: "Book a 9/11 Memorial & Museum tour bus rental for your group — historical exhibits, personal stories, and reflection in Lower Manhattan, vehicle and driver included."
+seoTitle: "9/11 Memorial & Museum Tour Bus Rental — WAYGGO Charters"
+seoDescription: "Book a 9/11 Memorial & Museum tour bus rental — historical exhibits, personal stories, and reflection in Lower Manhattan, vehicle and driver included."
 
 heroImageAlt: "9/11 Memorial & Museum tour bus rental"
 heroHeadingLine1: "9/11 Memorial"

@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Wynwood Walls Tour Bus Rental — Urban Street Art Discovery Journey — WAYGGO Charters"
+seoTitle: "Wynwood Walls Tour Bus Rental — WAYGGO Charters"
 seoDescription: "Book a Wynwood Walls tour bus rental for your group — large-scale murals and Miami's vibrant arts district, vehicle and driver included."
 
 heroImageAlt: "Wynwood Walls tour bus rental"

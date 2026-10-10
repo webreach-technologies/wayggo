@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Minneapolis Sculpture Garden Tour Bus Rental — Art in the Garden Discovery — WAYGGO Charters"
+seoTitle: "Minneapolis Sculpture Garden Tour Bus Rental — WAYGGO"
 seoDescription: "Book a Minneapolis Sculpture Garden tour bus rental for your group — large-scale outdoor artwork in landscaped surroundings, vehicle and driver included."
 
 heroImageAlt: "Minneapolis Sculpture Garden tour bus rental"

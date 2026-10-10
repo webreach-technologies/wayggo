@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Big Bend National Park Tour Bus Rental — Desert Peaks & Canyons Adventure — WAYGGO Charters"
+seoTitle: "Big Bend National Park Tour Bus Rental — WAYGGO Charters"
 seoDescription: "Book a Big Bend National Park tour bus rental for your group — one of Texas's most remarkable natural destinations, vehicle and driver included."
 
 heroImageAlt: "Big Bend National Park tour bus rental"

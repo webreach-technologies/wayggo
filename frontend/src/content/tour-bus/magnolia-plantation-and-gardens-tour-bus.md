@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Magnolia Plantation & Gardens Tour Bus Rental — Gardens of Southern Elegance — WAYGGO Charters"
+seoTitle: "Magnolia Plantation & Gardens Tour Bus Rental — WAYGGO"
 seoDescription: "Book a Magnolia Plantation & Gardens tour bus rental for your group — historic gardens and Lowcountry landscapes, vehicle and driver included."
 
 heroImageAlt: "Magnolia Plantation & Gardens tour bus rental"

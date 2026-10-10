@@ -27,8 +27,8 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Bethany Beach Boardwalk Tour Bus Rental — Seaside Boardwalk Serenity Journey — WAYGGO Charters"
-seoDescription: "Book a Bethany Beach Boardwalk tour bus rental for your group — a relaxed oceanfront boardwalk, local shops, and classic Delaware seaside charm, vehicle and driver included."
+seoTitle: "Bethany Beach Boardwalk Tour Bus Rental — WAYGGO Charters"
+seoDescription: "Book a Bethany Beach Boardwalk tour bus rental — a relaxed oceanfront boardwalk, local shops, and classic Delaware seaside charm, vehicle and driver included."
 
 heroImageAlt: "Bethany Beach Boardwalk tour bus rental"
 heroHeadingLine1: "Bethany Beach Boardwalk"

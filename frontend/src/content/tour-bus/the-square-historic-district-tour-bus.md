@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "The Square Historic District Tour Bus Rental — Southern Heritage Stroll — WAYGGO Charters"
+seoTitle: "The Square Historic District Tour Bus Rental — WAYGGO"
 seoDescription: "Book a Square Historic District tour bus rental for your group — historic architecture and downtown Oxford charm, vehicle and driver included."
 
 heroImageAlt: "The Square Historic District tour bus rental"

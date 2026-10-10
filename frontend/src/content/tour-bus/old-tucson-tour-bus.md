@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Old Tucson Tour Bus Rental — Wild West Movie Town Experience — WAYGGO Charters"
+seoTitle: "Old Tucson Tour Bus Rental — WAYGGO Charters"
 seoDescription: "Book an Old Tucson tour bus rental for your group — legendary Western movie sets and live stunt shows near Tucson, Arizona, vehicle and driver included."
 
 heroImageAlt: "Old Tucson tour bus rental"

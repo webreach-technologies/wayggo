@@ -27,8 +27,8 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Fenway Park Tour Bus Rental — Legends of the Green Monster — WAYGGO Charters"
-seoDescription: "Book a Fenway Park tour bus rental for your group — one of Boston's most recognizable landmarks and an exciting stop for baseball and sports history, vehicle and driver included."
+seoTitle: "Fenway Park Tour Bus Rental — WAYGGO Charters"
+seoDescription: "Book a Fenway Park tour bus rental for your group — one of Boston's most recognizable landmarks and an exciting stop for baseball and sports history."
 
 heroImageAlt: "Fenway Park tour bus rental"
 heroHeadingLine1: "Fenway Park"

@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Hot Springs State Park Tour Bus Rental — Healing Waters Heritage Tour — WAYGGO Charters"
+seoTitle: "Hot Springs State Park Tour Bus Rental — WAYGGO Charters"
 seoDescription: "Book a Hot Springs State Park tour bus rental for your group — one of Wyoming's distinctive natural destinations, vehicle and driver included."
 
 heroImageAlt: "Hot Springs State Park tour bus rental"

@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Lake Mead National Recreation Area Tour Bus Rental — Desert Waters Recreation Adventure — WAYGGO Charters"
+seoTitle: "Lake Mead National Recreation Area Tour Bus Rental — WAYGGO"
 seoDescription: "Book a Lake Mead National Recreation Area tour bus rental for your group — expansive reservoir and desert landscapes, vehicle and driver included."
 
 heroImageAlt: "Lake Mead National Recreation Area tour bus rental"

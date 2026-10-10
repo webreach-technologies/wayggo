@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Detroit Riverwalk Tour Bus Rental — Riverfront Revival Explorer — WAYGGO Charters"
+seoTitle: "Detroit Riverwalk Tour Bus Rental — WAYGGO Charters"
 seoDescription: "Book a Detroit Riverwalk tour bus rental for your group — waterfront scenery and skyline views along the Detroit River, vehicle and driver included."
 
 heroImageAlt: "Detroit Riverwalk tour bus rental"

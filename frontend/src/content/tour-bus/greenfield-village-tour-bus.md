@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Greenfield Village Tour Bus Rental — Living History Village Experience — WAYGGO Charters"
+seoTitle: "Greenfield Village Tour Bus Rental — WAYGGO Charters"
 seoDescription: "Book a Greenfield Village tour bus rental for your group — historic buildings and living-history demonstrations in Dearborn, vehicle and driver included."
 
 heroImageAlt: "Greenfield Village tour bus rental"

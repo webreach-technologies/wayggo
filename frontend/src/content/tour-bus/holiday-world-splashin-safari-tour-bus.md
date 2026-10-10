@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Holiday World & Splashin' Safari Tour Bus Rental — Thrill Rides & Waterpark Fun Fest Experience — WAYGGO Charters"
+seoTitle: "Holiday World & Splashin' Safari Tour Bus Rental — WAYGGO"
 seoDescription: "Book a Holiday World & Splashin' Safari tour bus rental for your group — roller coasters and waterpark fun in Santa Claus, Indiana, vehicle and driver included."
 
 heroImageAlt: "Holiday World & Splashin' Safari tour bus rental"

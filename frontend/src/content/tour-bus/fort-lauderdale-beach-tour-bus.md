@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Fort Lauderdale Beach Tour Bus Rental — Atlantic Palm Beachfront Escape Journey — WAYGGO Charters"
+seoTitle: "Fort Lauderdale Beach Tour Bus Rental — WAYGGO Charters"
 seoDescription: "Book a Fort Lauderdale Beach tour bus rental for your group — sandy Atlantic shoreline and waterfront promenade, vehicle and driver included."
 
 heroImageAlt: "Fort Lauderdale Beach tour bus rental"

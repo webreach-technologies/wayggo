@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Mallory Square Tour Bus Rental — Key West Sunset Celebration Journey — WAYGGO Charters"
+seoTitle: "Mallory Square Tour Bus Rental — WAYGGO Charters"
 seoDescription: "Book a Mallory Square tour bus rental for your group — Key West's famous sunsets, street performers, and waterfront atmosphere, vehicle and driver included."
 
 heroImageAlt: "Mallory Square tour bus rental"

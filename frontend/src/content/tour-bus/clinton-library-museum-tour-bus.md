@@ -27,8 +27,8 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Clinton Library & Museum Tour Bus Rental — Presidential Legacy Discovery Journey — WAYGGO Charters"
-seoDescription: "Book a William J. Clinton Presidential Library & Museum tour bus rental for your group — presidential history on the Arkansas River in downtown Little Rock, vehicle and driver included."
+seoTitle: "Clinton Library & Museum Tour Bus Rental — WAYGGO Charters"
+seoDescription: "Book a William J. Clinton Presidential Library & Museum tour bus rental for your group — presidential history on the Arkansas River in downtown Little Rock."
 
 heroImageAlt: "William J. Clinton Presidential Library & Museum tour bus rental"
 heroHeadingLine1: "William J. Clinton Presidential Library & Museum"

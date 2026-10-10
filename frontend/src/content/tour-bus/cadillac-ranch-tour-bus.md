@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Cadillac Ranch Tour Bus Rental — Route 66 Art & Americana Journey — WAYGGO Charters"
+seoTitle: "Cadillac Ranch Tour Bus Rental — WAYGGO Charters"
 seoDescription: "Book a Cadillac Ranch tour bus rental for your group — one of Texas's most distinctive roadside art attractions, vehicle and driver included."
 
 heroImageAlt: "Cadillac Ranch tour bus rental"

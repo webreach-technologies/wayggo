@@ -27,8 +27,8 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Historic Downtown Prescott Tour Bus Rental — Old West Heritage Walk — WAYGGO Charters"
-seoDescription: "Book a Historic Downtown Prescott tour bus rental for your group — Whiskey Row, Courthouse Plaza, and Arizona's first territorial capital, vehicle and driver included."
+seoTitle: "Historic Downtown Prescott Tour Bus Rental — WAYGGO Charters"
+seoDescription: "Book a Historic Downtown Prescott tour bus rental — Whiskey Row, Courthouse Plaza, and Arizona's first territorial capital, vehicle and driver included."
 
 heroImageAlt: "Historic Downtown Prescott tour bus rental"
 heroHeadingLine1: "Historic Downtown Prescott"

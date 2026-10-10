@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Gatlinburg SkyPark Tour Bus Rental — SkyBridge Summit Experience — WAYGGO Charters"
+seoTitle: "Gatlinburg SkyPark Tour Bus Rental — WAYGGO Charters"
 seoDescription: "Book a Gatlinburg SkyPark tour bus rental for your group — scenic beauty and exciting attractions in the Smoky Mountains, vehicle and driver included."
 
 heroImageAlt: "Gatlinburg SkyPark tour bus rental"

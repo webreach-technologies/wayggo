@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Rocky Steps Tour Bus Rental — Steps to Greatness Adventure — WAYGGO Charters"
+seoTitle: "Rocky Steps Tour Bus Rental — WAYGGO Charters"
 seoDescription: "Book a Rocky Steps tour bus rental for your group — the famous film landmark in front of the Philadelphia Museum of Art, vehicle and driver included."
 
 heroImageAlt: "Rocky Steps tour bus rental"

@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Six Flags Great Adventure Tour Bus Rental — Ultimate Theme Park Thrills — WAYGGO Charters"
+seoTitle: "Six Flags Great Adventure Tour Bus Rental — WAYGGO Charters"
 seoDescription: "Book a Six Flags Great Adventure tour bus rental for your group — rides, entertainment, and family fun in Jackson, vehicle and driver included."
 
 heroImageAlt: "Six Flags Great Adventure tour bus rental"

@@ -27,8 +27,8 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Glen Canyon Dam Overlook Tour Bus Rental — Canyon Dam Panorama Journey — WAYGGO Charters"
-seoDescription: "Book a Glen Canyon Dam Overlook tour bus rental for your group — panoramic views of the 710-foot dam and Colorado River near Page, Arizona, vehicle and driver included."
+seoTitle: "Glen Canyon Dam Overlook Tour Bus Rental — WAYGGO Charters"
+seoDescription: "Book a Glen Canyon Dam Overlook tour bus rental — panoramic views of the 710-foot dam and Colorado River near Page, Arizona, vehicle and driver included."
 
 heroImageAlt: "Glen Canyon Dam Overlook tour bus rental"
 heroHeadingLine1: "Glen Canyon Dam Overlook"

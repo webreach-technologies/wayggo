@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Iowa State Capitol Tour Bus Rental — Golden Dome Government Heritage Walk Experience — WAYGGO Charters"
+seoTitle: "Iowa State Capitol Tour Bus Rental — WAYGGO Charters"
 seoDescription: "Book an Iowa State Capitol tour bus rental for your group — the iconic golden dome and grand architecture in downtown Des Moines, vehicle and driver included."
 
 heroImageAlt: "Iowa State Capitol tour bus rental"

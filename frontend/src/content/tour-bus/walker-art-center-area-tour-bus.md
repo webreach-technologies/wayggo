@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Walker Art Center Area Tour Bus Rental — Modern Arts Explorer — WAYGGO Charters"
+seoTitle: "Walker Art Center Area Tour Bus Rental — WAYGGO Charters"
 seoDescription: "Book a Walker Art Center Area tour bus rental for your group — contemporary art and sculpture in Minneapolis, vehicle and driver included."
 
 heroImageAlt: "Walker Art Center Area tour bus rental"

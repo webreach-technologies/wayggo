@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Grand Haven State Park Tour Bus Rental — Sunset Pier Beach Retreat — WAYGGO Charters"
+seoTitle: "Grand Haven State Park Tour Bus Rental — WAYGGO Charters"
 seoDescription: "Book a Grand Haven State Park tour bus rental for your group — Lake Michigan beach and waterfront scenery, vehicle and driver included."
 
 heroImageAlt: "Grand Haven State Park tour bus rental"

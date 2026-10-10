@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Yellowstone Lake Tour Bus Rental — Alpine Waters Serenity Escape — WAYGGO Charters"
+seoTitle: "Yellowstone Lake Tour Bus Rental — WAYGGO Charters"
 seoDescription: "Book a Yellowstone Lake tour bus rental for your group — one of Yellowstone National Park's most scenic destinations, vehicle and driver included."
 
 heroImageAlt: "Yellowstone Lake tour bus rental"

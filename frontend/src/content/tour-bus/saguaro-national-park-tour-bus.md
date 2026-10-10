@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Saguaro National Park Tour Bus Rental — Saguaro Desert Explorer Ride — WAYGGO Charters"
+seoTitle: "Saguaro National Park Tour Bus Rental — WAYGGO Charters"
 seoDescription: "Book a Saguaro National Park tour bus rental for your group — towering cactus forests and Sonoran Desert scenery near Tucson, vehicle and driver included."
 
 heroImageAlt: "Saguaro National Park tour bus rental"

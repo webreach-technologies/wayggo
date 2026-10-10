@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Rhode Island State House Tour Bus Rental — Capitol of Rhode Island Heritage — WAYGGO Charters"
+seoTitle: "Rhode Island State House Tour Bus Rental — WAYGGO Charters"
 seoDescription: "Book a Rhode Island State House tour bus rental for your group — Providence's history, government, and impressive architecture, vehicle and driver included."
 
 heroImageAlt: "Rhode Island State House tour bus rental"

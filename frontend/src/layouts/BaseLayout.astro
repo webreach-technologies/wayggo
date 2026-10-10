@@ -5,7 +5,7 @@ import TopBar from "../components/layout/TopBar.astro";
 import Header from "../components/layout/Header.astro";
 import Footer from "../components/layout/Footer.astro";
 import { ChevronUp } from "@lucide/astro";
-import { withBase } from "../lib/url";
+import { withBase, withTrailingSlash } from "../lib/url";
 
 // The GitHub Pages preview build (STAGING=true, see astro.config.mjs) is a
 // temporary client-review deployment that must never be indexed — it
@@ -32,7 +32,7 @@ interface Props {
 }
 
 const {
-  title = "WAYGGO Charters — North America's #1 B2B Ground Transportation Partner",
+  title = "WAYGGO Charters — B2B Ground Transportation in North America",
   description = "WAYGGO Charters connects international tour operators and travel agents to 500+ vetted ground transportation operators across the USA and Canada. Motorcoaches, minibuses, vans, and shuttles for every group size.",
   ogImage = "/logo.png",
   canonical,
@@ -65,12 +65,10 @@ const organizationSchema = {
   },
 };
 
-// Every other URL on the site (canonical, sitemap — trailingSlash: "never" in
-// astro.config.mjs) resolves without a trailing slash, so breadcrumb item
-// URLs need to match — otherwise Google sees them as different URLs from the
-// canonical one. (The root "/" is exempt — a bare domain always normalizes
-// to a trailing slash per the URL spec, so "Home" below is unaffected.)
-const withoutTrailingSlash = (path: string) => (path.length > 1 ? path.replace(/\/+$/, "") : path);
+// Every other URL on the site (canonical, sitemap — trailingSlash: "always"
+// in astro.config.mjs) ends in a trailing slash, so breadcrumb item URLs need
+// to match — otherwise Google sees them as different URLs from the canonical
+// one.
 
 // Home + whatever trail the page supplies. Omitted entirely on pages that
 // don't pass `breadcrumbs` (e.g. the homepage itself).
@@ -83,7 +81,7 @@ const breadcrumbSchema = breadcrumbs && breadcrumbs.length > 0 ? {
       "@type": "ListItem",
       position: i + 2,
       name: crumb.name,
-      item: new URL(withoutTrailingSlash(crumb.path), siteOrigin).href,
+      item: new URL(withTrailingSlash(crumb.path), siteOrigin).href,
     })),
   ],
 } : null;

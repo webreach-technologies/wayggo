@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Cathedral of Saint Paul Tour Bus Rental — Cathedral Crown Heritage Tour — WAYGGO Charters"
+seoTitle: "Cathedral of Saint Paul Tour Bus Rental — WAYGGO Charters"
 seoDescription: "Book a Cathedral of Saint Paul tour bus rental for your group — impressive architecture and cultural heritage, vehicle and driver included."
 
 heroImageAlt: "Cathedral of Saint Paul tour bus rental"

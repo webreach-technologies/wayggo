@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "San Juan Island Ferry Area Tour Bus Rental — Gateway to Island Adventures — WAYGGO Charters"
+seoTitle: "San Juan Island Ferry Area Tour Bus Rental — WAYGGO Charters"
 seoDescription: "Book a San Juan Island Ferry Area tour bus rental for your group — a convenient island and coastal adventure in Washington, vehicle and driver included."
 
 heroImageAlt: "San Juan Island Ferry Area tour bus rental"

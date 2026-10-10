@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickups daily"
 
-seoTitle: "Yosemite Valley Tour Bus Rental — Granite Valley Explorer Ride — WAYGGO Charters"
+seoTitle: "Yosemite Valley Tour Bus Rental — WAYGGO Charters"
 seoDescription: "Book a Yosemite Valley tour bus rental for your group — El Capitan, Half Dome, and towering waterfalls in the Sierra Nevada, vehicle and driver included."
 
 heroImageAlt: "Yosemite Valley tour bus rental"

@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Canal Park Tour Bus Rental — Harborfront Adventure Hub — WAYGGO Charters"
+seoTitle: "Canal Park Tour Bus Rental — WAYGGO Charters"
 seoDescription: "Book a Canal Park tour bus rental for your group — Lake Superior waterfront and Duluth's maritime character, vehicle and driver included."
 
 heroImageAlt: "Canal Park tour bus rental"

@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Itasca State Park Tour Bus Rental — Headwaters Discovery Expedition — WAYGGO Charters"
+seoTitle: "Itasca State Park Tour Bus Rental — WAYGGO Charters"
 seoDescription: "Book an Itasca State Park tour bus rental for your group — forests, lakes, and the Mississippi River headwaters, vehicle and driver included."
 
 heroImageAlt: "Itasca State Park tour bus rental"

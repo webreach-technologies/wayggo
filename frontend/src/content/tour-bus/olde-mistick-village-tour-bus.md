@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Olde Mistick Village Tour Bus Rental — New England Village Charm Journey — WAYGGO Charters"
+seoTitle: "Olde Mistick Village Tour Bus Rental — WAYGGO Charters"
 seoDescription: "Book an Olde Mistick Village tour bus rental for your group — colonial-style shops and local dining in Mystic, Connecticut, vehicle and driver included."
 
 heroImageAlt: "Olde Mistick Village tour bus rental"

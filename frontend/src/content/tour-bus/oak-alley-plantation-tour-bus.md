@@ -27,8 +27,8 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Oak Alley Plantation Tour Bus Rental — Oak Canopy Heritage Journey — WAYGGO Charters"
-seoDescription: "Book an Oak Alley Plantation tour bus rental for your group — a historic mansion and famous live-oak avenue along the Mississippi River, vehicle and driver included."
+seoTitle: "Oak Alley Plantation Tour Bus Rental — WAYGGO Charters"
+seoDescription: "Book an Oak Alley Plantation tour bus rental — a historic mansion and famous live-oak avenue along the Mississippi River, vehicle and driver included."
 
 heroImageAlt: "Oak Alley Plantation tour bus rental"
 heroHeadingLine1: "Oak Alley Plantation"

@@ -27,8 +27,8 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Atlanta Botanical Garden Tour Bus Rental — Urban Botanical Oasis Journey — WAYGGO Charters"
-seoDescription: "Book an Atlanta Botanical Garden tour bus rental for your group — orchids, seasonal displays, and beautifully designed landscapes in Midtown Atlanta, vehicle and driver included."
+seoTitle: "Atlanta Botanical Garden Tour Bus Rental — WAYGGO Charters"
+seoDescription: "Book an Atlanta Botanical Garden tour bus rental for your group — orchids, seasonal displays, and beautifully designed landscapes in Midtown Atlanta."
 
 heroImageAlt: "Atlanta Botanical Garden tour bus rental"
 heroHeadingLine1: "Atlanta Botanical Garden"

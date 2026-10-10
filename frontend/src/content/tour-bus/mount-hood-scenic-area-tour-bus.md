@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Mount Hood Scenic Area Tour Bus Rental — Alpine Wilderness Escape — WAYGGO Charters"
+seoTitle: "Mount Hood Scenic Area Tour Bus Rental — WAYGGO Charters"
 seoDescription: "Book a Mount Hood Scenic Area tour bus rental for your group — alpine forests, mountain views, and outdoor recreation, vehicle and driver included."
 
 heroImageAlt: "Mount Hood Scenic Area tour bus rental"

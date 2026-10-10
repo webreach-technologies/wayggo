@@ -27,8 +27,8 @@ included:
   - "Airport transfers"
   - "Hotel pickups daily"
 
-seoTitle: "Prince William Sound Tour Bus Rental — Glacier Tide Explorer Experience — WAYGGO Charters"
-seoDescription: "Book a Prince William Sound tour bus rental for your group — tidewater glacier cruises, whales, and the Anton Anderson Memorial Tunnel to Whittier, vehicle and driver included."
+seoTitle: "Prince William Sound Tour Bus Rental — WAYGGO Charters"
+seoDescription: "Book a Prince William Sound tour bus rental for your group — tidewater glacier cruises, whales, and the Anton Anderson Memorial Tunnel to Whittier."
 
 heroImageAlt: "Prince William Sound tour bus rental"
 heroHeadingLine1: "Prince William Sound"

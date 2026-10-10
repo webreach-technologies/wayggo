@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Fargo Air Museum Tour Bus Rental — Aviation Through the Ages Tour — WAYGGO Charters"
+seoTitle: "Fargo Air Museum Tour Bus Rental — WAYGGO Charters"
 seoDescription: "Book a Fargo Air Museum tour bus rental for your group — aviation, technology, and military history in Fargo, vehicle and driver included."
 
 heroImageAlt: "Fargo Air Museum tour bus rental"

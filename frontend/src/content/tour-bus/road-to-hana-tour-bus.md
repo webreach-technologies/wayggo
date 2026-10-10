@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Road to Hana Tour Bus Rental — Waterfall Jungle Highway Adventure Journey — WAYGGO Charters"
+seoTitle: "Road to Hana Tour Bus Rental — WAYGGO Charters"
 seoDescription: "Book a Road to Hana tour bus rental for your group — Maui's famous rainforest drive with waterfalls and coastal scenery, vehicle and driver included."
 
 heroImageAlt: "Road to Hana tour bus rental"

@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Duquesne Incline Tour Bus Rental — Skyline on the Incline Experience — WAYGGO Charters"
+seoTitle: "Duquesne Incline Tour Bus Rental — WAYGGO Charters"
 seoDescription: "Book a Duquesne Incline tour bus rental for your group — one of Pittsburgh's best-known landmarks with memorable skyline views, vehicle and driver included."
 
 heroImageAlt: "Duquesne Incline tour bus rental"

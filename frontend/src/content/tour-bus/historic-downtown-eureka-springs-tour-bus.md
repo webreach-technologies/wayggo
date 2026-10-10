@@ -27,8 +27,8 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Historic Downtown Eureka Springs Tour Bus Rental — Ozark Charm Heritage Tour — WAYGGO Charters"
-seoDescription: "Book a Historic Downtown Eureka Springs tour bus rental for your group — Victorian architecture and Ozark charm in one of America's most unique mountain towns, vehicle and driver included."
+seoTitle: "Historic Downtown Eureka Springs Tour Bus Rental — WAYGGO"
+seoDescription: "Book a Historic Downtown Eureka Springs tour bus rental for your group — Victorian architecture and Ozark charm in one of America's most unique mountain towns."
 
 heroImageAlt: "Historic Downtown Eureka Springs tour bus rental"
 heroHeadingLine1: "Historic Downtown Eureka Springs"

@@ -27,8 +27,8 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Slide Rock State Park Tour Bus Rental — Arizona Natural Water Slide Adventure — WAYGGO Charters"
-seoDescription: "Book a Slide Rock State Park tour bus rental for your group — Arizona's famous natural water slide and the historic Pendley Homestead in Oak Creek Canyon, vehicle and driver included."
+seoTitle: "Slide Rock State Park Tour Bus Rental — WAYGGO Charters"
+seoDescription: "Book a Slide Rock State Park tour bus rental for your group — Arizona's famous natural water slide and the historic Pendley Homestead in Oak Creek Canyon."
 
 heroImageAlt: "Slide Rock State Park tour bus rental"
 heroHeadingLine1: "Slide Rock State Park"

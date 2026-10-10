@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "North Carolina Arboretum Tour Bus Rental — Gardens of the Blue Ridge Experience — WAYGGO Charters"
+seoTitle: "North Carolina Arboretum Tour Bus Rental — WAYGGO Charters"
 seoDescription: "Book a North Carolina Arboretum tour bus rental for your group — gardens and plant collections near Asheville, vehicle and driver included."
 
 heroImageAlt: "North Carolina Arboretum tour bus rental"

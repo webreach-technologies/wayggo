@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Empire State Building Tour Bus Rental — Skyline Icon Explorer — WAYGGO Charters"
+seoTitle: "Empire State Building Tour Bus Rental — WAYGGO Charters"
 seoDescription: "Book an Empire State Building tour bus rental for your group — legendary architecture and iconic Manhattan skyline views, vehicle and driver included."
 
 heroImageAlt: "Empire State Building tour bus rental"

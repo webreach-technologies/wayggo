@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Waterfront Park Tour Bus Rental — Harborfront Serenity Escape — WAYGGO Charters"
+seoTitle: "Waterfront Park, SC Tour Bus Rental — WAYGGO Charters"
 seoDescription: "Book a Waterfront Park tour bus rental for your group — scenic Charleston harbor views, vehicle and driver included."
 
 heroImageAlt: "Waterfront Park tour bus rental"

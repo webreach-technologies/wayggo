@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Valley Forge National Historical Park Tour Bus Rental — Patriots of the Revolution Tour — WAYGGO Charters"
+seoTitle: "Valley Forge National Historical Park Tour Bus Rental"
 seoDescription: "Book a Valley Forge National Historical Park tour bus rental for your group — the Continental Army's winter encampment site, vehicle and driver included."
 
 heroImageAlt: "Valley Forge National Historical Park tour bus rental"

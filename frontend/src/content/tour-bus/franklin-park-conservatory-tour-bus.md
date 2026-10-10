@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Franklin Park Conservatory Tour Bus Rental — Blooms Beneath the Glass — WAYGGO Charters"
+seoTitle: "Franklin Park Conservatory Tour Bus Rental — WAYGGO Charters"
 seoDescription: "Book a Franklin Park Conservatory tour bus rental for your group — plants, gardens, and art in Columbus, vehicle and driver included."
 
 heroImageAlt: "Franklin Park Conservatory tour bus rental"

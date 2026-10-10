@@ -27,8 +27,8 @@ included:
   - "Airport transfers"
   - "Hotel pickups daily"
 
-seoTitle: "Hot Springs National Park Tour Bus Rental — Natural Spa Springs Discovery Tour — WAYGGO Charters"
-seoDescription: "Book a Hot Springs National Park tour bus rental for your group — America's first protected thermal springs, the Grand Promenade, and Ouachita Mountain trails, vehicle and driver included."
+seoTitle: "Hot Springs National Park Tour Bus Rental — WAYGGO Charters"
+seoDescription: "Book a Hot Springs National Park tour bus rental for your group — America's first protected thermal springs, the Grand Promenade, and Ouachita Mountain trails."
 
 heroImageAlt: "Hot Springs National Park tour bus rental"
 heroHeadingLine1: "Hot Springs National Park"

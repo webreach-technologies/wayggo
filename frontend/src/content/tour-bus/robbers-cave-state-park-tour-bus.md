@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Robbers Cave State Park Tour Bus Rental — Outlaw Trails Discovery — WAYGGO Charters"
+seoTitle: "Robbers Cave State Park Tour Bus Rental — WAYGGO Charters"
 seoDescription: "Book a Robbers Cave State Park tour bus rental for your group — sandstone cliffs, forests, and rock formations, vehicle and driver included."
 
 heroImageAlt: "Robbers Cave State Park tour bus rental"

@@ -27,8 +27,8 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "SeaWorld Orlando Tour Bus Rental — Marine Life Adventure Journey — WAYGGO Charters"
-seoDescription: "Book a SeaWorld Orlando tour bus rental for your group — marine life exhibits, thrilling rides, and family entertainment in Orlando, vehicle and driver included."
+seoTitle: "SeaWorld Orlando Tour Bus Rental — WAYGGO Charters"
+seoDescription: "Book a SeaWorld Orlando tour bus rental — marine life exhibits, thrilling rides, and family entertainment in Orlando, vehicle and driver included."
 
 heroImageAlt: "SeaWorld Orlando tour bus rental"
 heroHeadingLine1: "SeaWorld Orlando"

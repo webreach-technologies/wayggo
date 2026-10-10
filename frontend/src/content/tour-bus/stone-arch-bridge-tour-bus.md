@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Stone Arch Bridge Tour Bus Rental — Riverfront Landmark Journey — WAYGGO Charters"
+seoTitle: "Stone Arch Bridge Tour Bus Rental — WAYGGO Charters"
 seoDescription: "Book a Stone Arch Bridge tour bus rental for your group — historic architecture and Mississippi River views, vehicle and driver included."
 
 heroImageAlt: "Stone Arch Bridge tour bus rental"

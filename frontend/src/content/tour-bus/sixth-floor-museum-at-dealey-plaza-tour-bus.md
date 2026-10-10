@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Sixth Floor Museum at Dealey Plaza Tour Bus Rental — History at Dealey Plaza Experience — WAYGGO Charters"
+seoTitle: "Sixth Floor Museum at Dealey Plaza Tour Bus Rental — WAYGGO"
 seoDescription: "Book a Sixth Floor Museum at Dealey Plaza tour bus rental for your group — an important historical destination in Dallas, vehicle and driver included."
 
 heroImageAlt: "Sixth Floor Museum at Dealey Plaza tour bus rental"

@@ -27,8 +27,8 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Hagley Museum & Library Tour Bus Rental — American Industry Legacy Discovery Tour — WAYGGO Charters"
-seoDescription: "Book a Hagley Museum & Library tour bus rental for your group — historic gunpowder mills and the birthplace of the DuPont Company along the Brandywine River, vehicle and driver included."
+seoTitle: "Hagley Museum & Library Tour Bus Rental — WAYGGO Charters"
+seoDescription: "Book a Hagley Museum & Library tour bus rental for your group — historic gunpowder mills and the birthplace of the DuPont Company along the Brandywine River."
 
 heroImageAlt: "Hagley Museum & Library tour bus rental"
 heroHeadingLine1: "Hagley Museum & Library"

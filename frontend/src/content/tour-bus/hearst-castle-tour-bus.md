@@ -27,8 +27,8 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Hearst Castle Tour Bus Rental — Hilltop Estate Luxury Discovery Ride — WAYGGO Charters"
-seoDescription: "Book a Hearst Castle tour bus rental for your group — William Randolph Hearst's opulent estate and the Neptune Pool overlooking California's Central Coast, vehicle and driver included."
+seoTitle: "Hearst Castle Tour Bus Rental — WAYGGO Charters"
+seoDescription: "Book a Hearst Castle tour bus rental for your group — William Randolph Hearst's opulent estate and the Neptune Pool overlooking California's Central Coast."
 
 heroImageAlt: "Hearst Castle tour bus rental"
 heroHeadingLine1: "Hearst Castle"

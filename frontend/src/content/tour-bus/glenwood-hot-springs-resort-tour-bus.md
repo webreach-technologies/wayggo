@@ -27,8 +27,8 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Glenwood Hot Springs Resort Tour Bus Rental — Thermal Wellness Springs Retreat Ride — WAYGGO Charters"
-seoDescription: "Book a Glenwood Hot Springs Resort tour bus rental for your group — the world's largest mineral hot springs pool in the Colorado Rockies, vehicle and driver included."
+seoTitle: "Glenwood Hot Springs Resort Tour Bus Rental — WAYGGO"
+seoDescription: "Book a Glenwood Hot Springs Resort tour bus rental — the world's largest mineral hot springs pool in the Colorado Rockies, vehicle and driver included."
 
 heroImageAlt: "Glenwood Hot Springs Resort tour bus rental"
 heroHeadingLine1: "Glenwood Hot Springs Resort"

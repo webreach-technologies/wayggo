@@ -27,8 +27,8 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Jekyll Island Historic District Tour Bus Rental — Gilded Age Island Heritage Journey — WAYGGO Charters"
-seoDescription: "Book a Jekyll Island Historic District tour bus rental for your group — preserved Gilded Age residences and coastal Georgia heritage, vehicle and driver included."
+seoTitle: "Jekyll Island Historic District Tour Bus Rental — WAYGGO"
+seoDescription: "Book a Jekyll Island Historic District tour bus rental — preserved Gilded Age residences and coastal Georgia heritage, vehicle and driver included."
 
 heroImageAlt: "Jekyll Island Historic District tour bus rental"
 heroHeadingLine1: "Jekyll Island Historic District"

@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Hampton Beach Tour Bus Rental — Atlantic Shore Getaway — WAYGGO Charters"
+seoTitle: "Hampton Beach Tour Bus Rental — WAYGGO Charters"
 seoDescription: "Book a Hampton Beach tour bus rental for your group — Atlantic shoreline and coastal atmosphere, vehicle and driver included."
 
 heroImageAlt: "Hampton Beach tour bus rental"

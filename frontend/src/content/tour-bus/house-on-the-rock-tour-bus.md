@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "House on the Rock Tour Bus Rental — Wonder Beyond Imagination — WAYGGO Charters"
+seoTitle: "House on the Rock Tour Bus Rental — WAYGGO Charters"
 seoDescription: "Book a House on the Rock tour bus rental for your group — one of Wisconsin's most distinctive attractions, vehicle and driver included."
 
 heroImageAlt: "House on the Rock tour bus rental"

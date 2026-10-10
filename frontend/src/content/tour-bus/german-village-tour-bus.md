@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "German Village Tour Bus Rental — Old World Village Charm — WAYGGO Charters"
+seoTitle: "German Village Tour Bus Rental — WAYGGO Charters"
 seoDescription: "Book a German Village tour bus rental for your group — historic architecture and local culture in Columbus, vehicle and driver included."
 
 heroImageAlt: "German Village tour bus rental"

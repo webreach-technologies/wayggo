@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Chimney Rock State Park Tour Bus Rental — Rock Summit Adventure — WAYGGO Charters"
+seoTitle: "Chimney Rock State Park Tour Bus Rental — WAYGGO Charters"
 seoDescription: "Book a Chimney Rock State Park tour bus rental for your group — dramatic rock formations and mountain landscapes, vehicle and driver included."
 
 heroImageAlt: "Chimney Rock State Park tour bus rental"

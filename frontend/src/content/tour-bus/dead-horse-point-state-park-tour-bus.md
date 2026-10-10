@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Dead Horse Point State Park Tour Bus Rental — Clifftop Views of the Colorado — WAYGGO Charters"
+seoTitle: "Dead Horse Point State Park Tour Bus Rental — WAYGGO"
 seoDescription: "Book a Dead Horse Point State Park tour bus rental for your group — one of Utah's most scenic outdoor destinations, vehicle and driver included."
 
 heroImageAlt: "Dead Horse Point State Park tour bus rental"

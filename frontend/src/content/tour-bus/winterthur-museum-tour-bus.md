@@ -27,8 +27,8 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Winterthur Museum Tour Bus Rental — Gilded Age Estate Heritage Journey — WAYGGO Charters"
-seoDescription: "Book a Winterthur Museum tour bus rental for your group — an extraordinary American decorative arts collection and expansive gardens in the Brandywine Valley, vehicle and driver included."
+seoTitle: "Winterthur Museum Tour Bus Rental — WAYGGO Charters"
+seoDescription: "Book a Winterthur Museum tour bus rental for your group — an extraordinary American decorative arts collection and expansive gardens in the Brandywine Valley."
 
 heroImageAlt: "Winterthur Museum tour bus rental"
 heroHeadingLine1: "Winterthur Museum"

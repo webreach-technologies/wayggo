@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Pike Place Market Tour Bus Rental — Market of Pacific Flavors — WAYGGO Charters"
+seoTitle: "Pike Place Market Tour Bus Rental — WAYGGO Charters"
 seoDescription: "Book a Pike Place Market tour bus rental for your group — one of Seattle's most memorable destinations, vehicle and driver included."
 
 heroImageAlt: "Pike Place Market tour bus rental"

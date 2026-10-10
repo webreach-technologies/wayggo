@@ -27,8 +27,8 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Anchorage Museum Tour Bus Rental — Arctic Heritage Discovery Ride — WAYGGO Charters"
-seoDescription: "Book an Anchorage Museum tour bus rental for your group — Alaska Native heritage, Arctic exploration, and art at the state's largest museum, vehicle and driver included."
+seoTitle: "Anchorage Museum Tour Bus Rental — WAYGGO Charters"
+seoDescription: "Book an Anchorage Museum tour bus rental — Alaska Native heritage, Arctic exploration, and art at the state's largest museum, vehicle and driver included."
 
 heroImageAlt: "Anchorage Museum tour bus rental"
 heroHeadingLine1: "Anchorage Museum"

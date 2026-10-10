@@ -27,8 +27,8 @@ included:
   - "Airport transfers"
   - "Hotel pickups daily"
 
-seoTitle: "Disneyland Park Tour Bus Rental — Magical Kingdom Dreams Journey — WAYGGO Charters"
-seoDescription: "Book a Disneyland Park tour bus rental for your group — Sleeping Beauty Castle, Star Wars: Galaxy's Edge, and the original Disney theme park in Anaheim, vehicle and driver included."
+seoTitle: "Disneyland Park Tour Bus Rental — WAYGGO Charters"
+seoDescription: "Book a Disneyland Park tour bus rental for your group — Sleeping Beauty Castle, Star Wars: Galaxy's Edge, and the original Disney theme park in Anaheim."
 
 heroImageAlt: "Disneyland Park tour bus rental"
 heroHeadingLine1: "Disneyland Park"

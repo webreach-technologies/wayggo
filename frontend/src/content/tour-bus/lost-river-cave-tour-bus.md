@@ -27,8 +27,8 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Lost River Cave Tour Bus Rental — Cave Passage Explorer — WAYGGO Charters"
-seoDescription: "Book a Lost River Cave tour bus rental for your group — underground cave passages and natural outdoor surroundings in Bowling Green, vehicle and driver included."
+seoTitle: "Lost River Cave Tour Bus Rental — WAYGGO Charters"
+seoDescription: "Book a Lost River Cave tour bus rental — underground cave passages and natural outdoor surroundings in Bowling Green, vehicle and driver included."
 
 heroImageAlt: "Lost River Cave tour bus rental"
 heroHeadingLine1: "Lost River Cave"

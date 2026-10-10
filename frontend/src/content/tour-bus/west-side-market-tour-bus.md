@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "West Side Market Tour Bus Rental — Market Traditions Explorer — WAYGGO Charters"
+seoTitle: "West Side Market Tour Bus Rental — WAYGGO Charters"
 seoDescription: "Book a West Side Market tour bus rental for your group — local food and neighborhood culture in Cleveland's Ohio City, vehicle and driver included."
 
 heroImageAlt: "West Side Market tour bus rental"

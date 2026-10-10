@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Cave Point County Park Tour Bus Rental — Cliffs Above Lake Michigan Adventure — WAYGGO Charters"
+seoTitle: "Cave Point County Park Tour Bus Rental — WAYGGO Charters"
 seoDescription: "Book a Cave Point County Park tour bus rental for your group — one of Door County's most memorable natural destinations, vehicle and driver included."
 
 heroImageAlt: "Cave Point County Park tour bus rental"

@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Duval Street Tour Bus Rental — Key West Nightlife & Culture Journey — WAYGGO Charters"
+seoTitle: "Duval Street Tour Bus Rental — WAYGGO Charters"
 seoDescription: "Book a Duval Street tour bus rental for your group — Key West's historic architecture, dining, and lively atmosphere, vehicle and driver included."
 
 heroImageAlt: "Duval Street tour bus rental"

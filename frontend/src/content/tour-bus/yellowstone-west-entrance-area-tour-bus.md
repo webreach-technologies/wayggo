@@ -27,8 +27,8 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Yellowstone West Entrance Tour Bus Rental — Gateway to Geysers Wilderness Passage Escape — WAYGGO Charters"
-seoDescription: "Book a Yellowstone West Entrance Area tour bus rental for your group — geothermal wonders, wildlife, and mountain scenery from the Idaho side, vehicle and driver included."
+seoTitle: "Yellowstone West Entrance Tour Bus Rental — WAYGGO Charters"
+seoDescription: "Book a Yellowstone West Entrance Area tour bus rental — geothermal wonders, wildlife, and mountain scenery from the Idaho side, vehicle and driver included."
 
 heroImageAlt: "Yellowstone West Entrance Area tour bus rental"
 heroHeadingLine1: "Yellowstone West"

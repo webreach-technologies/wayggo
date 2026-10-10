@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Smugglers' Notch Scenic Route Tour Bus Rental — Mountain Pass Scenic Adventure — WAYGGO Charters"
+seoTitle: "Smugglers' Notch Scenic Route Tour Bus Rental — WAYGGO"
 seoDescription: "Book a Smugglers' Notch Scenic Route tour bus rental for your group — one of Vermont's memorable mountain regions, vehicle and driver included."
 
 heroImageAlt: "Smugglers' Notch Scenic Route tour bus rental"

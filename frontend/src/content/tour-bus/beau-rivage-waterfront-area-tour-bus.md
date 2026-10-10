@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Beau Rivage Waterfront Area Tour Bus Rental — Waterfront Luxury Discovery — WAYGGO Charters"
+seoTitle: "Beau Rivage Waterfront Area Tour Bus Rental — WAYGGO"
 seoDescription: "Book a Beau Rivage Waterfront Area tour bus rental for your group — Gulf Coast atmosphere and waterfront scenery, vehicle and driver included."
 
 heroImageAlt: "Beau Rivage Waterfront Area tour bus rental"

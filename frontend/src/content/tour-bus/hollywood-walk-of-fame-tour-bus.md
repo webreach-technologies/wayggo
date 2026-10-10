@@ -27,8 +27,8 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Hollywood Walk of Fame Tour Bus Rental — Hollywood Star Walk Experience Ride — WAYGGO Charters"
-seoDescription: "Book a Hollywood Walk of Fame tour bus rental for your group — 2,700+ stars, the TCL Chinese Theatre, and the Dolby Theatre in Los Angeles, vehicle and driver included."
+seoTitle: "Hollywood Walk of Fame Tour Bus Rental — WAYGGO Charters"
+seoDescription: "Book a Hollywood Walk of Fame tour bus rental — 2,700+ stars, the TCL Chinese Theatre, and the Dolby Theatre in Los Angeles, vehicle and driver included."
 
 heroImageAlt: "Hollywood Walk of Fame tour bus rental"
 heroHeadingLine1: "Hollywood Walk of Fame"

@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Silverwood Theme Park Tour Bus Rental — Thrill Kingdom Rollercoaster Escape Experience — WAYGGO Charters"
+seoTitle: "Silverwood Theme Park Tour Bus Rental — WAYGGO Charters"
 seoDescription: "Book a Silverwood Theme Park tour bus rental for your group — amusement rides, roller coasters, and a waterpark in northern Idaho, vehicle and driver included."
 
 heroImageAlt: "Silverwood Theme Park tour bus rental"

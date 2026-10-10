@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Park City Historic Main Street Tour Bus Rental — Mountain Town Main Street Experience — WAYGGO Charters"
+seoTitle: "Park City Historic Main Street Tour Bus Rental — WAYGGO"
 seoDescription: "Book a Park City Historic Main Street tour bus rental for your group — one of Utah's memorable mountain-town destinations, vehicle and driver included."
 
 heroImageAlt: "Park City Historic Main Street tour bus rental"

@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Freedom Trail Tour Bus Rental — Path of Patriots Journey — WAYGGO Charters"
+seoTitle: "Freedom Trail Tour Bus Rental — WAYGGO Charters"
 seoDescription: "Book a Freedom Trail tour bus rental for your group — one of Boston's most iconic historic landmarks, vehicle and driver included."
 
 heroImageAlt: "Freedom Trail tour bus rental"

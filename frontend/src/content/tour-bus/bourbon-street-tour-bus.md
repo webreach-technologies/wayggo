@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Bourbon Street Tour Bus Rental — Rhythms of Bourbon Street — WAYGGO Charters"
+seoTitle: "Bourbon Street Tour Bus Rental — WAYGGO Charters"
 seoDescription: "Book a Bourbon Street tour bus rental for your group — colorful architecture and lively entertainment in the French Quarter, vehicle and driver included."
 
 heroImageAlt: "Bourbon Street tour bus rental"

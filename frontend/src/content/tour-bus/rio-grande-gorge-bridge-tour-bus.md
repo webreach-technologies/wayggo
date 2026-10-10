@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Rio Grande Gorge Bridge Tour Bus Rental — Bridge Above the Gorge Adventure — WAYGGO Charters"
+seoTitle: "Rio Grande Gorge Bridge Tour Bus Rental — WAYGGO Charters"
 seoDescription: "Book a Rio Grande Gorge Bridge tour bus rental for your group — one of northern New Mexico's most spectacular scenic destinations, vehicle and driver included."
 
 heroImageAlt: "Rio Grande Gorge Bridge tour bus rental"

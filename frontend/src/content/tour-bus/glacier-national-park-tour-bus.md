@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Glacier National Park Tour Bus Rental — Crown of the Rockies Adventure — WAYGGO Charters"
+seoTitle: "Glacier National Park Tour Bus Rental — WAYGGO Charters"
 seoDescription: "Book a Glacier National Park tour bus rental for your group — spectacular mountain landscapes and alpine lakes, vehicle and driver included."
 
 heroImageAlt: "Glacier National Park tour bus rental"

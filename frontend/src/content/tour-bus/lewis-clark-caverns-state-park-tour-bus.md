@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Lewis & Clark Caverns State Park Tour Bus Rental — Caverns Beneath the Frontier — WAYGGO Charters"
+seoTitle: "Lewis & Clark Caverns State Park Tour Bus Rental — WAYGGO"
 seoDescription: "Book a Lewis & Clark Caverns State Park tour bus rental for your group — underground formations and geological features, vehicle and driver included."
 
 heroImageAlt: "Lewis & Clark Caverns State Park tour bus rental"

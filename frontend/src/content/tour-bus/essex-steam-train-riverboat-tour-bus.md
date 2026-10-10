@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Essex Steam Train & Riverboat Tour Bus Rental — Steam & River Heritage Journey — WAYGGO Charters"
+seoTitle: "Essex Steam Train & Riverboat Tour Bus Rental — WAYGGO"
 seoDescription: "Book an Essex Steam Train & Riverboat tour bus rental for your group — a historic locomotive and scenic Connecticut River cruise, vehicle and driver included."
 
 heroImageAlt: "Essex Steam Train & Riverboat tour bus rental"

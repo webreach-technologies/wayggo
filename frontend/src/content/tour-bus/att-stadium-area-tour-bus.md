@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "AT&T Stadium Area Tour Bus Rental — Home of Texas Football Legends — WAYGGO Charters"
+seoTitle: "AT&T Stadium Area Tour Bus Rental — WAYGGO Charters"
 seoDescription: "Book an AT&T Stadium area tour bus rental for your group — one of North Texas's major sports and entertainment destinations, vehicle and driver included."
 
 heroImageAlt: "AT&T Stadium Area tour bus rental"

@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Busch Gardens Tampa Bay Tour Bus Rental — Roller Coaster & Wildlife Experience Ride — WAYGGO Charters"
+seoTitle: "Busch Gardens Tampa Bay Tour Bus Rental — WAYGGO Charters"
 seoDescription: "Book a Busch Gardens Tampa Bay tour bus rental for your group — thrilling rides and animal habitats in an African-inspired setting, vehicle and driver included."
 
 heroImageAlt: "Busch Gardens Tampa Bay tour bus rental"

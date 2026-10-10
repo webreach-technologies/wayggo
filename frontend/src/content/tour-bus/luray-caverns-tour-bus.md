@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Luray Caverns Tour Bus Rental — Underground Cathedral Explorer — WAYGGO Charters"
+seoTitle: "Luray Caverns Tour Bus Rental — WAYGGO Charters"
 seoDescription: "Book a Luray Caverns tour bus rental for your group — one of Virginia's most memorable natural attractions, vehicle and driver included."
 
 heroImageAlt: "Luray Caverns tour bus rental"

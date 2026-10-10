@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Louisville Waterfront Park Tour Bus Rental — Riverfront Skyline Leisure Escape Experience — WAYGGO Charters"
+seoTitle: "Louisville Waterfront Park Tour Bus Rental — WAYGGO Charters"
 seoDescription: "Book a Louisville Waterfront Park tour bus rental for your group — Ohio River scenery and skyline views in downtown Louisville, vehicle and driver included."
 
 heroImageAlt: "Louisville Waterfront Park tour bus rental"

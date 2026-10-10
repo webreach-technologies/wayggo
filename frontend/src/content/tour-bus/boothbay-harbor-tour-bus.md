@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Boothbay Harbor Tour Bus Rental — Harbor Village Explorer — WAYGGO Charters"
+seoTitle: "Boothbay Harbor Tour Bus Rental — WAYGGO Charters"
 seoDescription: "Book a Boothbay Harbor tour bus rental for your group — scenic waterfront, boats, and local charm in Midcoast Maine, vehicle and driver included."
 
 heroImageAlt: "Boothbay Harbor tour bus rental"

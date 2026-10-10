@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "The Island in Pigeon Forge Tour Bus Rental — Island Fun & Entertainment Journey — WAYGGO Charters"
+seoTitle: "The Island in Pigeon Forge Tour Bus Rental — WAYGGO Charters"
 seoDescription: "Book a The Island in Pigeon Forge tour bus rental for your group — one of Tennessee's popular entertainment destinations, vehicle and driver included."
 
 heroImageAlt: "The Island in Pigeon Forge tour bus rental"

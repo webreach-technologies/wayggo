@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Aerial Lift Bridge Tour Bus Rental — Gateway to the Great Lakes — WAYGGO Charters"
+seoTitle: "Aerial Lift Bridge Tour Bus Rental — WAYGGO Charters"
 seoDescription: "Book an Aerial Lift Bridge tour bus rental for your group — distinctive engineering and Duluth harbor views, vehicle and driver included."
 
 heroImageAlt: "Aerial Lift Bridge tour bus rental"

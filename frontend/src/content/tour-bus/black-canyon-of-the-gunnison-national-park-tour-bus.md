@@ -27,8 +27,8 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Black Canyon of the Gunnison National Park Tour Bus Rental — Deep Canyon Edge Explorer Ride — WAYGGO Charters"
-seoDescription: "Book a Black Canyon of the Gunnison National Park tour bus rental for your group — towering cliffs, dramatic overlooks, and dark skies in western Colorado, vehicle and driver included."
+seoTitle: "Black Canyon of the Gunnison National Park Tour Bus Rental"
+seoDescription: "Book a Black Canyon of the Gunnison National Park tour bus rental for your group — towering cliffs, dramatic overlooks, and dark skies in western Colorado."
 
 heroImageAlt: "Black Canyon of the Gunnison National Park tour bus rental"
 heroHeadingLine1: "Black Canyon of the Gunnison"

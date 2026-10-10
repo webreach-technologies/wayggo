@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Hoover Dam Tour Bus Rental — Engineering Marvel Discovery — WAYGGO Charters"
+seoTitle: "Hoover Dam Tour Bus Rental — WAYGGO Charters"
 seoDescription: "Book a Hoover Dam tour bus rental for your group — remarkable engineering and Colorado River scenery, vehicle and driver included."
 
 heroImageAlt: "Hoover Dam tour bus rental"

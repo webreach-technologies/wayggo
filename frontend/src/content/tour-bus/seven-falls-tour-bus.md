@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Seven Falls Tour Bus Rental — Canyon Waterfall Adventure Ride — WAYGGO Charters"
+seoTitle: "Seven Falls Tour Bus Rental — WAYGGO Charters"
 seoDescription: "Book a Seven Falls tour bus rental for your group — seven cascading waterfalls in South Cheyenne Cañon near Colorado Springs, vehicle and driver included."
 
 heroImageAlt: "Seven Falls tour bus rental"

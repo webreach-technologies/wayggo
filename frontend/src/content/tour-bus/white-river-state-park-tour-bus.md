@@ -27,8 +27,8 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "White River State Park Tour Bus Rental — Urban Green Riverfront Leisure Escape — WAYGGO Charters"
-seoDescription: "Book a White River State Park tour bus rental for your group — riverfront green space and cultural attractions in downtown Indianapolis, vehicle and driver included."
+seoTitle: "White River State Park Tour Bus Rental — WAYGGO Charters"
+seoDescription: "Book a White River State Park tour bus rental — riverfront green space and cultural attractions in downtown Indianapolis, vehicle and driver included."
 
 heroImageAlt: "White River State Park tour bus rental"
 heroHeadingLine1: "White River State Park"

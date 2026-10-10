@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Niagara Falls State Park Tour Bus Rental — Thunder of the Falls Adventure — WAYGGO Charters"
+seoTitle: "Niagara Falls State Park Tour Bus Rental — WAYGGO Charters"
 seoDescription: "Book a Niagara Falls State Park tour bus rental for your group — magnificent waterfalls and spectacular scenic viewpoints, vehicle and driver included."
 
 heroImageAlt: "Niagara Falls State Park tour bus rental"

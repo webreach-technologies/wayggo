@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Pappajohn Sculpture Park Tour Bus Rental — Urban Art Sculpture Skyline Stroll Experience — WAYGGO Charters"
+seoTitle: "Pappajohn Sculpture Park Tour Bus Rental — WAYGGO Charters"
 seoDescription: "Book a Pappajohn Sculpture Park tour bus rental for your group — large-scale contemporary art in downtown Des Moines, vehicle and driver included."
 
 heroImageAlt: "Pappajohn Sculpture Park tour bus rental"

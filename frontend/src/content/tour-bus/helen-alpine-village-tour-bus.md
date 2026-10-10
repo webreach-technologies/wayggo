@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Helen Alpine Village Tour Bus Rental — Alpine Bavarian Village Escape Journey — WAYGGO Charters"
+seoTitle: "Helen Alpine Village Tour Bus Rental — WAYGGO Charters"
 seoDescription: "Book a Helen Alpine Village tour bus rental for your group — Bavarian-inspired architecture and North Georgia mountain scenery, vehicle and driver included."
 
 heroImageAlt: "Helen Alpine Village tour bus rental"

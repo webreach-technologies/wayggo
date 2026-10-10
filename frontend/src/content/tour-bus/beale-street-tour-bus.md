@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Beale Street Tour Bus Rental — Rhythms of Memphis Adventure — WAYGGO Charters"
+seoTitle: "Beale Street Tour Bus Rental — WAYGGO Charters"
 seoDescription: "Book a Beale Street tour bus rental for your group — Memphis's most recognizable entertainment district, vehicle and driver included."
 
 heroImageAlt: "Beale Street tour bus rental"

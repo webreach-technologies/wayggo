@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "North Dakota State Capitol Tour Bus Rental — Capitol of the Great Plains Tour — WAYGGO Charters"
+seoTitle: "North Dakota State Capitol Tour Bus Rental — WAYGGO Charters"
 seoDescription: "Book a North Dakota State Capitol tour bus rental for your group — government, architecture, and state history in Bismarck, vehicle and driver included."
 
 heroImageAlt: "North Dakota State Capitol tour bus rental"

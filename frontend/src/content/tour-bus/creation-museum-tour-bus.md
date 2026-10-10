@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Creation Museum Tour Bus Rental — Natural History & Faith Exhibit Experience — WAYGGO Charters"
+seoTitle: "Creation Museum Tour Bus Rental — WAYGGO Charters"
 seoDescription: "Book a Creation Museum tour bus rental for your group — biblical history exhibits and gardens in Petersburg, Kentucky, vehicle and driver included."
 
 heroImageAlt: "Creation Museum tour bus rental"

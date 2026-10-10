@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Painted Canyon Overlook Tour Bus Rental — Colors of the Canyon Discovery — WAYGGO Charters"
+seoTitle: "Painted Canyon Overlook Tour Bus Rental — WAYGGO Charters"
 seoDescription: "Book a Painted Canyon Overlook tour bus rental for your group — colorful badlands formations and panoramic landscapes, vehicle and driver included."
 
 heroImageAlt: "Painted Canyon Overlook tour bus rental"

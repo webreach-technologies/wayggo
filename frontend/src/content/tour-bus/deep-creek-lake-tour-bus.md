@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Deep Creek Lake Tour Bus Rental — Mountain Lake Retreat — WAYGGO Charters"
+seoTitle: "Deep Creek Lake Tour Bus Rental — WAYGGO Charters"
 seoDescription: "Book a Deep Creek Lake tour bus rental for your group — mountain scenery and waterfront recreation in Western Maryland, vehicle and driver included."
 
 heroImageAlt: "Deep Creek Lake tour bus rental"

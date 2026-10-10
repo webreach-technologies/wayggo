@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Harry S. Truman Presidential Library & Museum Tour Bus Rental — Presidential Legacy Discovery — WAYGGO Charters"
+seoTitle: "Harry S. Truman Presidential Library Tour Bus Rental"
 seoDescription: "Book a Harry S. Truman Presidential Library & Museum tour bus rental for your group — presidential history in Independence, vehicle and driver included."
 
 heroImageAlt: "Harry S. Truman Presidential Library & Museum tour bus rental"

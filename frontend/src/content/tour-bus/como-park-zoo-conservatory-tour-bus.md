@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Como Park Zoo & Conservatory Tour Bus Rental — Wildlife & Gardens Discovery — WAYGGO Charters"
+seoTitle: "Como Park Zoo & Conservatory Tour Bus Rental — WAYGGO"
 seoDescription: "Book a Como Park Zoo & Conservatory tour bus rental for your group — animals and gardens in Saint Paul, vehicle and driver included."
 
 heroImageAlt: "Como Park Zoo & Conservatory tour bus rental"

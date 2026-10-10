@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Milwaukee Art Museum Tour Bus Rental — Wings of Art & Architecture — WAYGGO Charters"
+seoTitle: "Milwaukee Art Museum Tour Bus Rental — WAYGGO Charters"
 seoDescription: "Book a Milwaukee Art Museum tour bus rental for your group — one of Wisconsin's most memorable cultural attractions, vehicle and driver included."
 
 heroImageAlt: "Milwaukee Art Museum tour bus rental"

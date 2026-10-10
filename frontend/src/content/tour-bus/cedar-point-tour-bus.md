@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Cedar Point Tour Bus Rental — Ultimate Lakeside Thrills — WAYGGO Charters"
+seoTitle: "Cedar Point Tour Bus Rental — WAYGGO Charters"
 seoDescription: "Book a Cedar Point tour bus rental for your group — amusement rides and Lake Erie scenery in Sandusky, vehicle and driver included."
 
 heroImageAlt: "Cedar Point tour bus rental"

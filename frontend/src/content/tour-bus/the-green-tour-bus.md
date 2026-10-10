@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "The Green Tour Bus Rental — Historic Town Commons Heritage Journey — WAYGGO Charters"
+seoTitle: "The Green Tour Bus Rental — WAYGGO Charters"
 seoDescription: "Book a The Green tour bus rental for your group — historic churches and vibrant downtown atmosphere in New Haven, vehicle and driver included."
 
 heroImageAlt: "The Green tour bus rental"

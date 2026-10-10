@@ -27,8 +27,8 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Trail Ridge Road Tour Bus Rental — Skyline Alpine Drive Experience — WAYGGO Charters"
-seoDescription: "Book a Trail Ridge Road tour bus rental for your group — the highest continuous paved road in the U.S., alpine tundra, and panoramic Rocky Mountain vistas, vehicle and driver included."
+seoTitle: "Trail Ridge Road Tour Bus Rental — WAYGGO Charters"
+seoDescription: "Book a Trail Ridge Road tour bus rental for your group — the highest continuous paved road in the U.S., alpine tundra, and panoramic Rocky Mountain vistas."
 
 heroImageAlt: "Trail Ridge Road tour bus rental"
 heroHeadingLine1: "Trail Ridge Road"

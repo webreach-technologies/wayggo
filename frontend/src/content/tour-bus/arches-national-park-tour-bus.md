@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Arches National Park Tour Bus Rental — Arches of the Desert Sky — WAYGGO Charters"
+seoTitle: "Arches National Park Tour Bus Rental — WAYGGO Charters"
 seoDescription: "Book an Arches National Park tour bus rental for your group — one of Utah's most remarkable natural destinations, vehicle and driver included."
 
 heroImageAlt: "Arches National Park tour bus rental"

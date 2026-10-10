@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Bob Kerrey Pedestrian Bridge Tour Bus Rental — Bridging Two States Adventure — WAYGGO Charters"
+seoTitle: "Bob Kerrey Pedestrian Bridge Tour Bus Rental — WAYGGO"
 seoDescription: "Book a Bob Kerrey Pedestrian Bridge tour bus rental for your group — distinctive architecture and Missouri River views, vehicle and driver included."
 
 heroImageAlt: "Bob Kerrey Pedestrian Bridge tour bus rental"

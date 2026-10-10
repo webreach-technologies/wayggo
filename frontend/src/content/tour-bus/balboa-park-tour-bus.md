@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Balboa Park Tour Bus Rental — Cultural Gardens & Museums Journey — WAYGGO Charters"
+seoTitle: "Balboa Park Tour Bus Rental — WAYGGO Charters"
 seoDescription: "Book a Balboa Park tour bus rental for your group — 18+ museums and Spanish Colonial architecture in San Diego, vehicle and driver included."
 
 heroImageAlt: "Balboa Park tour bus rental"

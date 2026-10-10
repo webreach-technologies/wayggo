@@ -27,8 +27,8 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Rehoboth Beach Boardwalk Tour Bus Rental — Atlantic Boardwalk Beachfront Journey — WAYGGO Charters"
-seoDescription: "Book a Rehoboth Beach Boardwalk tour bus rental for your group — classic seaside attractions, oceanfront dining, and Delaware coastal charm, vehicle and driver included."
+seoTitle: "Rehoboth Beach Boardwalk Tour Bus Rental — WAYGGO Charters"
+seoDescription: "Book a Rehoboth Beach Boardwalk tour bus rental — classic seaside attractions, oceanfront dining, and Delaware coastal charm, vehicle and driver included."
 
 heroImageAlt: "Rehoboth Beach Boardwalk tour bus rental"
 heroHeadingLine1: "Rehoboth Beach Boardwalk"

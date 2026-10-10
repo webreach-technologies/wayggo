@@ -27,8 +27,8 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "USS North Carolina Battleship Tour Bus Rental — Battleship of Valor Experience — WAYGGO Charters"
-seoDescription: "Book a USS North Carolina Battleship tour bus rental for your group — naval history and a historic shipboard environment in Wilmington, vehicle and driver included."
+seoTitle: "USS North Carolina Battleship Tour Bus Rental — WAYGGO"
+seoDescription: "Book a USS North Carolina Battleship tour bus rental — naval history and a historic shipboard environment in Wilmington, vehicle and driver included."
 
 heroImageAlt: "USS North Carolina Battleship tour bus rental"
 heroHeadingLine1: "USS North Carolina"

@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Bridges of Madison County Tour Bus Rental — Rustic Romance Countryside Heritage Drive Experience — WAYGGO Charters"
+seoTitle: "Bridges of Madison County Tour Bus Rental — WAYGGO Charters"
 seoDescription: "Book a Bridges of Madison County tour bus rental for your group — historic covered bridges across central Iowa's countryside, vehicle and driver included."
 
 heroImageAlt: "Bridges of Madison County tour bus rental"

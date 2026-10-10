@@ -27,8 +27,8 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Garvan Woodland Gardens Tour Bus Rental — Lakeside Garden Walk Adventure Ride — WAYGGO Charters"
-seoDescription: "Book a Garvan Woodland Gardens tour bus rental for your group — Anthony Chapel, the Evans Tree House, and lakeside botanical displays in Hot Springs, vehicle and driver included."
+seoTitle: "Garvan Woodland Gardens Tour Bus Rental — WAYGGO Charters"
+seoDescription: "Book a Garvan Woodland Gardens tour bus rental for your group — Anthony Chapel, the Evans Tree House, and lakeside botanical displays in Hot Springs."
 
 heroImageAlt: "Garvan Woodland Gardens tour bus rental"
 heroHeadingLine1: "Garvan Woodland Gardens"

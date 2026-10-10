@@ -27,8 +27,8 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Ozark Folk Center State Park Tour Bus Rental — Ozark Heritage Crafts & Music Journey — WAYGGO Charters"
-seoDescription: "Book an Ozark Folk Center State Park tour bus rental for your group — traditional crafts and live mountain music in Mountain View, Arkansas, vehicle and driver included."
+seoTitle: "Ozark Folk Center State Park Tour Bus Rental — WAYGGO"
+seoDescription: "Book an Ozark Folk Center State Park tour bus rental — traditional crafts and live mountain music in Mountain View, Arkansas, vehicle and driver included."
 
 heroImageAlt: "Ozark Folk Center State Park tour bus rental"
 heroHeadingLine1: "Ozark Folk Center State Park"

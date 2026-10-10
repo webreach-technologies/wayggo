@@ -27,8 +27,8 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Exit Glacier Tour Bus Rental — Glacier Edge Explorer Ride — WAYGGO Charters"
-seoDescription: "Book an Exit Glacier tour bus rental for your group — the only road-accessible glacier in Kenai Fjords National Park, near Seward, Alaska, vehicle and driver included."
+seoTitle: "Exit Glacier Tour Bus Rental — WAYGGO Charters"
+seoDescription: "Book an Exit Glacier tour bus rental — the only road-accessible glacier in Kenai Fjords National Park, near Seward, Alaska, vehicle and driver included."
 
 heroImageAlt: "Exit Glacier tour bus rental"
 heroHeadingLine1: "Exit Glacier"

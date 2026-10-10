@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Findlay Market Tour Bus Rental — Market Street Heritage Tour — WAYGGO Charters"
+seoTitle: "Findlay Market Tour Bus Rental — WAYGGO Charters"
 seoDescription: "Book a Findlay Market tour bus rental for your group — local food, history, and neighborhood culture in Cincinnati, vehicle and driver included."
 
 heroImageAlt: "Findlay Market tour bus rental"

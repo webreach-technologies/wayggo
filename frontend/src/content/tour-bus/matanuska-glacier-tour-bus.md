@@ -27,8 +27,8 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Matanuska Glacier Tour Bus Rental — Blue Ice Glacier Trek Ride — WAYGGO Charters"
-seoDescription: "Book a Matanuska Glacier tour bus rental for your group — guided walks on the largest road-accessible glacier in the U.S., along the scenic Glenn Highway, vehicle and driver included."
+seoTitle: "Matanuska Glacier Tour Bus Rental — WAYGGO Charters"
+seoDescription: "Book a Matanuska Glacier tour bus rental for your group — guided walks on the largest road-accessible glacier in the U.S., along the scenic Glenn Highway."
 
 heroImageAlt: "Matanuska Glacier tour bus rental"
 heroHeadingLine1: "Matanuska Glacier"

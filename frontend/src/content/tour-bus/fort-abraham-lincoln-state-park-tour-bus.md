@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Fort Abraham Lincoln State Park Tour Bus Rental — Frontier Fort Heritage Adventure — WAYGGO Charters"
+seoTitle: "Fort Abraham Lincoln State Park Tour Bus Rental — WAYGGO"
 seoDescription: "Book a Fort Abraham Lincoln State Park tour bus rental for your group — North Dakota history and outdoor scenery near Mandan, vehicle and driver included."
 
 heroImageAlt: "Fort Abraham Lincoln State Park tour bus rental"

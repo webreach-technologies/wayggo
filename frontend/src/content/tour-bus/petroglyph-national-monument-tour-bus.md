@@ -27,8 +27,8 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Petroglyph National Monument Tour Bus Rental — Stories in Stone Adventure — WAYGGO Charters"
-seoDescription: "Book a Petroglyph National Monument tour bus rental for your group — an Albuquerque destination for ancient rock art and volcanic landscapes, vehicle and driver included."
+seoTitle: "Petroglyph National Monument Tour Bus Rental — WAYGGO"
+seoDescription: "Book a Petroglyph National Monument tour bus rental — an Albuquerque destination for ancient rock art and volcanic landscapes, vehicle and driver included."
 
 heroImageAlt: "Petroglyph National Monument tour bus rental"
 heroHeadingLine1: "Petroglyph National Monument"

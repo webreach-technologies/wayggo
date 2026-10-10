@@ -27,8 +27,8 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Little Rock River Market District Tour Bus Rental — Urban Mosaic Market Tour — WAYGGO Charters"
-seoDescription: "Book a Little Rock River Market District tour bus rental for your group — Ottenheimer Market Hall, Riverfront Park, and downtown Little Rock, vehicle and driver included."
+seoTitle: "Little Rock River Market District Tour Bus Rental — WAYGGO"
+seoDescription: "Book a Little Rock River Market District tour bus rental — Ottenheimer Market Hall, Riverfront Park, and downtown Little Rock, vehicle and driver included."
 
 heroImageAlt: "Little Rock River Market District tour bus rental"
 heroHeadingLine1: "Little Rock River Market District"

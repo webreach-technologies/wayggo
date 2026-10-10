@@ -27,8 +27,8 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Blanchard Springs Caverns Tour Bus Rental — Underground Crystal Cavern Journey — WAYGGO Charters"
-seoDescription: "Book a Blanchard Springs Caverns tour bus rental for your group — a living underground cave system in the Ozark National Forest near Mountain View, vehicle and driver included."
+seoTitle: "Blanchard Springs Caverns Tour Bus Rental — WAYGGO Charters"
+seoDescription: "Book a Blanchard Springs Caverns tour bus rental for your group — a living underground cave system in the Ozark National Forest near Mountain View."
 
 heroImageAlt: "Blanchard Springs Caverns tour bus rental"
 heroHeadingLine1: "Blanchard Springs Caverns"

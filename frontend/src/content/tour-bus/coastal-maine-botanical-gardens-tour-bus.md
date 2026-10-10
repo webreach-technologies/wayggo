@@ -27,8 +27,8 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Coastal Maine Botanical Gardens Tour Bus Rental — Blooming Coast Gardens Tour — WAYGGO Charters"
-seoDescription: "Book a Coastal Maine Botanical Gardens tour bus rental for your group — beautiful landscapes and seasonal plant displays near Boothbay Harbor, vehicle and driver included."
+seoTitle: "Coastal Maine Botanical Gardens Tour Bus Rental — WAYGGO"
+seoDescription: "Book a Coastal Maine Botanical Gardens tour bus rental — beautiful landscapes and seasonal plant displays near Boothbay Harbor, vehicle and driver included."
 
 heroImageAlt: "Coastal Maine Botanical Gardens tour bus rental"
 heroHeadingLine1: "Coastal Maine"

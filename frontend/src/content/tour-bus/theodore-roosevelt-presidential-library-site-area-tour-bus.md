@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Theodore Roosevelt Presidential Library Site Area Tour Bus Rental — Roosevelt Legacy Journey — WAYGGO Charters"
+seoTitle: "Theodore Roosevelt Presidential Library Area Tour Bus Rental"
 seoDescription: "Book a Theodore Roosevelt Presidential Library Site Area tour bus rental for your group — presidential history near Medora, vehicle and driver included."
 
 heroImageAlt: "Theodore Roosevelt Presidential Library Site Area tour bus rental"

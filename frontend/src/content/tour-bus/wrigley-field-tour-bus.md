@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Wrigley Field Tour Bus Rental — Historic Baseball Legacy Ballpark Experience — WAYGGO Charters"
+seoTitle: "Wrigley Field Tour Bus Rental — WAYGGO Charters"
 seoDescription: "Book a Wrigley Field tour bus rental for your group — the historic home of the Chicago Cubs and its iconic ivy-covered walls, vehicle and driver included."
 
 heroImageAlt: "Wrigley Field tour bus rental"

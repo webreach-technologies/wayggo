@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Motown Museum Tour Bus Rental — Sound of a Generation Tour — WAYGGO Charters"
+seoTitle: "Motown Museum Tour Bus Rental — WAYGGO Charters"
 seoDescription: "Book a Motown Museum tour bus rental for your group — musical legacy and Detroit cultural heritage, vehicle and driver included."
 
 heroImageAlt: "Motown Museum tour bus rental"

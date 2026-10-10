@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Presque Isle State Park Tour Bus Rental — Lake Erie Peninsula Escape — WAYGGO Charters"
+seoTitle: "Presque Isle State Park Tour Bus Rental — WAYGGO Charters"
 seoDescription: "Book a Presque Isle State Park tour bus rental for your group — Pennsylvania's Lake Erie shoreline and outdoor recreation, vehicle and driver included."
 
 heroImageAlt: "Presque Isle State Park tour bus rental"

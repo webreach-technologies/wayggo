@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "The Durham Museum Tour Bus Rental — Rails Through Time Journey — WAYGGO Charters"
+seoTitle: "The Durham Museum Tour Bus Rental — WAYGGO Charters"
 seoDescription: "Book a Durham Museum tour bus rental for your group — historical exhibits in Omaha's Union Station, vehicle and driver included."
 
 heroImageAlt: "The Durham Museum tour bus rental"

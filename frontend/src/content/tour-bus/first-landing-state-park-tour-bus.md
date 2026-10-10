@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "First Landing State Park Tour Bus Rental — Where America First Landed — WAYGGO Charters"
+seoTitle: "First Landing State Park Tour Bus Rental — WAYGGO Charters"
 seoDescription: "Book a First Landing State Park tour bus rental for your group — one of Virginia's memorable coastal destinations, vehicle and driver included."
 
 heroImageAlt: "First Landing State Park tour bus rental"

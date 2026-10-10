@@ -27,8 +27,8 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Griffith Observatory Tour Bus Rental — City of Stars Observatory Journey — WAYGGO Charters"
-seoDescription: "Book a Griffith Observatory tour bus rental for your group — astronomy exhibits and panoramic Los Angeles views from Mount Hollywood, vehicle and driver included."
+seoTitle: "Griffith Observatory Tour Bus Rental — WAYGGO Charters"
+seoDescription: "Book a Griffith Observatory tour bus rental — astronomy exhibits and panoramic Los Angeles views from Mount Hollywood, vehicle and driver included."
 
 heroImageAlt: "Griffith Observatory tour bus rental"
 heroHeadingLine1: "Griffith Observatory"

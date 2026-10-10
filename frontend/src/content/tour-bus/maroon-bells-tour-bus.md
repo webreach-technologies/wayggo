@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Maroon Bells Tour Bus Rental — Mirror Lake Peaks Explorer Ride — WAYGGO Charters"
+seoTitle: "Maroon Bells Tour Bus Rental — WAYGGO Charters"
 seoDescription: "Book a Maroon Bells tour bus rental for your group — iconic alpine peaks reflected in Maroon Lake near Aspen, Colorado, vehicle and driver included."
 
 heroImageAlt: "Maroon Bells tour bus rental"

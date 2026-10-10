@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Fallingwater Tour Bus Rental — Architecture Above the Falls — WAYGGO Charters"
+seoTitle: "Fallingwater Tour Bus Rental — WAYGGO Charters"
 seoDescription: "Book a Fallingwater tour bus rental for your group — Frank Lloyd Wright's celebrated architectural landmark, vehicle and driver included."
 
 heroImageAlt: "Fallingwater tour bus rental"

@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Gettysburg National Military Park Tour Bus Rental — Turning Point of History Journey — WAYGGO Charters"
+seoTitle: "Gettysburg National Military Park Tour Bus Rental — WAYGGO"
 seoDescription: "Book a Gettysburg National Military Park tour bus rental for your group — a significant Civil War battlefield, vehicle and driver included."
 
 heroImageAlt: "Gettysburg National Military Park tour bus rental"

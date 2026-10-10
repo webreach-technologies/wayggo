@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Pro Football Hall of Fame Tour Bus Rental — Champions of the Gridiron Experience — WAYGGO Charters"
+seoTitle: "Pro Football Hall of Fame Tour Bus Rental — WAYGGO Charters"
 seoDescription: "Book a Pro Football Hall of Fame tour bus rental for your group — football history and legendary careers in Canton, vehicle and driver included."
 
 heroImageAlt: "Pro Football Hall of Fame tour bus rental"

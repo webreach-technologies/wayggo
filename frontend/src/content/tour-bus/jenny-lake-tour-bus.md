@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Jenny Lake Tour Bus Rental — Crystal Lake & Mountain Views — WAYGGO Charters"
+seoTitle: "Jenny Lake Tour Bus Rental — WAYGGO Charters"
 seoDescription: "Book a Jenny Lake tour bus rental for your group — one of Grand Teton National Park's most scenic destinations, vehicle and driver included."
 
 heroImageAlt: "Jenny Lake tour bus rental"

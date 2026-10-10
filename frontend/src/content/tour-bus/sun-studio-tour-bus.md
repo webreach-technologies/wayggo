@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Sun Studio Tour Bus Rental — Birthplace of Rock 'n' Roll Tour — WAYGGO Charters"
+seoTitle: "Sun Studio Tour Bus Rental — WAYGGO Charters"
 seoDescription: "Book a Sun Studio tour bus rental for your group — one of Memphis's most recognizable music and cultural destinations, vehicle and driver included."
 
 heroImageAlt: "Sun Studio tour bus rental"

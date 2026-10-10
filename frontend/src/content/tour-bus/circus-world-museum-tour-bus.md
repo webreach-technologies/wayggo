@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Circus World Museum Tour Bus Rental — Greatest Show Heritage Tour — WAYGGO Charters"
+seoTitle: "Circus World Museum Tour Bus Rental — WAYGGO Charters"
 seoDescription: "Book a Circus World Museum tour bus rental for your group — one of Wisconsin's most distinctive cultural attractions, vehicle and driver included."
 
 heroImageAlt: "Circus World Museum tour bus rental"

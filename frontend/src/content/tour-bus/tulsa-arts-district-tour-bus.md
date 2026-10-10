@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Tulsa Arts District Tour Bus Rental — Creative Heart of Tulsa Journey — WAYGGO Charters"
+seoTitle: "Tulsa Arts District Tour Bus Rental — WAYGGO Charters"
 seoDescription: "Book a Tulsa Arts District tour bus rental for your group — art, culture, and entertainment in downtown Tulsa, vehicle and driver included."
 
 heroImageAlt: "Tulsa Arts District tour bus rental"

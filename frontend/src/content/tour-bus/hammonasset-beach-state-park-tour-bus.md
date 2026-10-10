@@ -27,8 +27,8 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Hammonasset Beach State Park Tour Bus Rental — Coastal Beachfront Escape Ride — WAYGGO Charters"
-seoDescription: "Book a Hammonasset Beach State Park tour bus rental for your group — sandy beaches and Long Island Sound views in Madison, Connecticut, vehicle and driver included."
+seoTitle: "Hammonasset Beach State Park Tour Bus Rental — WAYGGO"
+seoDescription: "Book a Hammonasset Beach State Park tour bus rental — sandy beaches and Long Island Sound views in Madison, Connecticut, vehicle and driver included."
 
 heroImageAlt: "Hammonasset Beach State Park tour bus rental"
 heroHeadingLine1: "Hammonasset Beach"

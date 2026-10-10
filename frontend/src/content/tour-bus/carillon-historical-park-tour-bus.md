@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Carillon Historical Park Tour Bus Rental — Heritage in Motion Discovery — WAYGGO Charters"
+seoTitle: "Carillon Historical Park Tour Bus Rental — WAYGGO Charters"
 seoDescription: "Book a Carillon Historical Park tour bus rental for your group — Dayton's history, innovation, and industry, vehicle and driver included."
 
 heroImageAlt: "Carillon Historical Park tour bus rental"

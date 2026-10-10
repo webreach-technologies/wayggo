@@ -27,8 +27,8 @@ included:
   - "Airport transfers"
   - "Hotel pickups daily"
 
-seoTitle: "Buffalo National River Tour Bus Rental — Wild River Bluffs Explorer Ride — WAYGGO Charters"
-seoDescription: "Book a Buffalo National River tour bus rental for your group — America's first national river, towering limestone bluffs, and Boxley Valley elk, vehicle and driver included."
+seoTitle: "Buffalo National River Tour Bus Rental — WAYGGO Charters"
+seoDescription: "Book a Buffalo National River tour bus rental — America's first national river, towering limestone bluffs, and Boxley Valley elk, vehicle and driver included."
 
 heroImageAlt: "Buffalo National River tour bus rental"
 heroHeadingLine1: "Buffalo National River"

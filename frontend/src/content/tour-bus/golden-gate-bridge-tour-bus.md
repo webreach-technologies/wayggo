@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Golden Gate Bridge Tour Bus Rental — Golden Gate Landmark Discovery Ride — WAYGGO Charters"
+seoTitle: "Golden Gate Bridge Tour Bus Rental — WAYGGO Charters"
 seoDescription: "Book a Golden Gate Bridge tour bus rental for your group — San Francisco's iconic suspension bridge and bay viewpoints, vehicle and driver included."
 
 heroImageAlt: "Golden Gate Bridge tour bus rental"

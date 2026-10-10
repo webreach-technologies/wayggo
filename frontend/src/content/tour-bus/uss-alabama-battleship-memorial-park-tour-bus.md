@@ -27,8 +27,8 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "USS Alabama Battleship Memorial Park Tour Bus Rental — Naval Legacy Expedition — WAYGGO Charters"
-seoDescription: "Book a USS Alabama Battleship Memorial Park tour bus rental for your group — tour the USS Alabama battleship, USS Drum submarine, and Aircraft Pavilion overlooking Mobile Bay, vehicle and driver included."
+seoTitle: "USS Alabama Battleship Memorial Park Tour Bus Rental"
+seoDescription: "Book a USS Alabama Battleship Memorial Park tour bus rental — tour the USS Alabama battleship, USS Drum submarine, and Aircraft Pavilion overlooking Mobile Bay."
 
 heroImageAlt: "USS Alabama Battleship Memorial Park tour bus rental"
 heroHeadingLine1: "USS Alabama Battleship Memorial Park"

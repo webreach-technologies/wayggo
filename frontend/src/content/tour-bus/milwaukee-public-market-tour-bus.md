@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Milwaukee Public Market Tour Bus Rental — Flavors of Milwaukee Experience — WAYGGO Charters"
+seoTitle: "Milwaukee Public Market Tour Bus Rental — WAYGGO Charters"
 seoDescription: "Book a Milwaukee Public Market tour bus rental for your group — one of Milwaukee's most popular destinations, vehicle and driver included."
 
 heroImageAlt: "Milwaukee Public Market tour bus rental"

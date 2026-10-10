@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Blackwater Falls Tour Bus Rental — Cascades of the Highlands Journey — WAYGGO Charters"
+seoTitle: "Blackwater Falls Tour Bus Rental — WAYGGO Charters"
 seoDescription: "Book a Blackwater Falls tour bus rental for your group — one of West Virginia's most memorable natural attractions, vehicle and driver included."
 
 heroImageAlt: "Blackwater Falls tour bus rental"

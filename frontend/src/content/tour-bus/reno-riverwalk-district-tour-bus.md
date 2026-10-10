@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Reno Riverwalk District Tour Bus Rental — Riverwalk in the Biggest Little City — WAYGGO Charters"
+seoTitle: "Reno Riverwalk District Tour Bus Rental — WAYGGO Charters"
 seoDescription: "Book a Reno Riverwalk District tour bus rental for your group — Truckee River scenery and downtown Reno atmosphere, vehicle and driver included."
 
 heroImageAlt: "Reno Riverwalk District tour bus rental"

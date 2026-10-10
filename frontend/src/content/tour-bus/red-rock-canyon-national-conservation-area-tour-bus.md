@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Red Rock Canyon National Conservation Area Tour Bus Rental — Red Rock Wilderness Escape — WAYGGO Charters"
+seoTitle: "Red Rock Canyon National Conservation Area Tour Bus Rental"
 seoDescription: "Book a Red Rock Canyon tour bus rental for your group — dramatic red sandstone formations near Las Vegas, vehicle and driver included."
 
 heroImageAlt: "Red Rock Canyon National Conservation Area tour bus rental"

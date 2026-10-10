@@ -27,8 +27,8 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Red River Gorge Geological Area Tour Bus Rental — Rock Arch Canyon Wilderness Trek Experience — WAYGGO Charters"
-seoDescription: "Book a Red River Gorge Geological Area tour bus rental for your group — natural arches and sandstone cliffs in the Daniel Boone National Forest, vehicle and driver included."
+seoTitle: "Red River Gorge Geological Area Tour Bus Rental — WAYGGO"
+seoDescription: "Book a Red River Gorge Geological Area tour bus rental — natural arches and sandstone cliffs in the Daniel Boone National Forest, vehicle and driver included."
 
 heroImageAlt: "Red River Gorge Geological Area tour bus rental"
 heroHeadingLine1: "Red River Gorge"

@@ -27,8 +27,8 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Cass Scenic Railroad State Park Tour Bus Rental — Rails Through the Mountains Experience — WAYGGO Charters"
-seoDescription: "Book a Cass Scenic Railroad State Park tour bus rental for your group — one of West Virginia's most distinctive historic attractions, vehicle and driver included."
+seoTitle: "Cass Scenic Railroad State Park Tour Bus Rental — WAYGGO"
+seoDescription: "Book a Cass Scenic Railroad State Park tour bus rental — one of West Virginia's most distinctive historic attractions, vehicle and driver included."
 
 heroImageAlt: "Cass Scenic Railroad State Park tour bus rental"
 heroHeadingLine1: "Cass Scenic Railroad"

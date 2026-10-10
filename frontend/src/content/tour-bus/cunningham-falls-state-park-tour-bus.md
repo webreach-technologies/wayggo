@@ -27,8 +27,8 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Cunningham Falls State Park Tour Bus Rental — Cascading Waters Adventure — WAYGGO Charters"
-seoDescription: "Book a Cunningham Falls State Park tour bus rental for your group — a scenic waterfall and wooded hiking trails in Maryland's Catoctin Mountains, vehicle and driver included."
+seoTitle: "Cunningham Falls State Park Tour Bus Rental — WAYGGO"
+seoDescription: "Book a Cunningham Falls State Park tour bus rental — a scenic waterfall and wooded hiking trails in Maryland's Catoctin Mountains, vehicle and driver included."
 
 heroImageAlt: "Cunningham Falls State Park tour bus rental"
 heroHeadingLine1: "Cunningham Falls"

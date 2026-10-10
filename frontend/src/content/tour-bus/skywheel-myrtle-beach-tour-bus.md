@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "SkyWheel Myrtle Beach Tour Bus Rental — Sky-High Coastal Views — WAYGGO Charters"
+seoTitle: "SkyWheel Myrtle Beach Tour Bus Rental — WAYGGO Charters"
 seoDescription: "Book a SkyWheel Myrtle Beach tour bus rental for your group — one of the area's most recognizable coastal attractions, vehicle and driver included."
 
 heroImageAlt: "SkyWheel Myrtle Beach tour bus rental"

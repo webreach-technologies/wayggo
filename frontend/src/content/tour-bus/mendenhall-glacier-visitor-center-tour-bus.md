@@ -27,8 +27,8 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Mendenhall Glacier Visitor Center Tour Bus Rental — Glacier Vista Discovery Ride — WAYGGO Charters"
-seoDescription: "Book a Mendenhall Glacier Visitor Center tour bus rental for your group — glacier views, Nugget Falls, and salmon-run wildlife near Juneau, Alaska, vehicle and driver included."
+seoTitle: "Mendenhall Glacier Visitor Center Tour Bus Rental — WAYGGO"
+seoDescription: "Book a Mendenhall Glacier Visitor Center tour bus rental for your group — glacier views, Nugget Falls, and salmon-run wildlife near Juneau, Alaska."
 
 heroImageAlt: "Mendenhall Glacier Visitor Center tour bus rental"
 heroHeadingLine1: "Mendenhall Glacier Visitor Center"

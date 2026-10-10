@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Shoshone Falls Tour Bus Rental — Canyon Mist Panorama Escape — WAYGGO Charters"
+seoTitle: "Shoshone Falls Tour Bus Rental — WAYGGO Charters"
 seoDescription: "Book a Shoshone Falls tour bus rental for your group — the 'Niagara of the West' and Snake River canyon scenery near Twin Falls, vehicle and driver included."
 
 heroImageAlt: "Shoshone Falls Park tour bus rental"

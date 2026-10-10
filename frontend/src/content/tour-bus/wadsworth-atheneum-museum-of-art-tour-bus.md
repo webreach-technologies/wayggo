@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Wadsworth Atheneum Museum of Art Tour Bus Rental — Fine Art Masterpieces Heritage Journey — WAYGGO Charters"
+seoTitle: "Wadsworth Atheneum Museum of Art Tour Bus Rental — WAYGGO"
 seoDescription: "Book a Wadsworth Atheneum Museum of Art tour bus rental for your group — America's oldest public art museum in Hartford, vehicle and driver included."
 
 heroImageAlt: "Wadsworth Atheneum Museum of Art tour bus rental"

@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Horseshoe Bend Tour Bus Rental — Riverbend Vista Journey — WAYGGO Charters"
+seoTitle: "Horseshoe Bend Tour Bus Rental — WAYGGO Charters"
 seoDescription: "Book a Horseshoe Bend tour bus rental for your group — the iconic 270-degree Colorado River overlook near Page, Arizona, vehicle and driver included."
 
 heroImageAlt: "Horseshoe Bend tour bus rental"

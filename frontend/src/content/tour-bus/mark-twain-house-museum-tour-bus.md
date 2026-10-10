@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Mark Twain House & Museum Tour Bus Rental — Literary Legend Heritage Journey — WAYGGO Charters"
+seoTitle: "Mark Twain House & Museum Tour Bus Rental — WAYGGO Charters"
 seoDescription: "Book a Mark Twain House & Museum tour bus rental for your group — a historic Victorian mansion and literary heritage in Hartford, vehicle and driver included."
 
 heroImageAlt: "Mark Twain House & Museum tour bus rental"

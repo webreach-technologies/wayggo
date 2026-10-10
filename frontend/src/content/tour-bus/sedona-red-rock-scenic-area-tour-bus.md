@@ -27,8 +27,8 @@ included:
   - "Airport transfers"
   - "Hotel pickups daily"
 
-seoTitle: "Sedona Red Rock Scenic Area Tour Bus Rental — Red Rock Vista Explorer Ride — WAYGGO Charters"
-seoDescription: "Book a Sedona Red Rock Scenic Area tour bus rental for your group — Cathedral Rock, Bell Rock, and Oak Creek Canyon in northern Arizona, vehicle and driver included."
+seoTitle: "Sedona Red Rock Scenic Area Tour Bus Rental — WAYGGO"
+seoDescription: "Book a Sedona Red Rock Scenic Area tour bus rental — Cathedral Rock, Bell Rock, and Oak Creek Canyon in northern Arizona, vehicle and driver included."
 
 heroImageAlt: "Sedona Red Rock Scenic Area tour bus rental"
 heroHeadingLine1: "Sedona Red Rock Scenic Area"

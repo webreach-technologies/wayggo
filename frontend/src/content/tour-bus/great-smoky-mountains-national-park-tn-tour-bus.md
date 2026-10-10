@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Great Smoky Mountains National Park Tour Bus Rental — Misty Mountains Discovery — WAYGGO Charters"
+seoTitle: "Great Smoky Mountains National Park Tour Bus Rental — WAYGGO"
 seoDescription: "Book a Great Smoky Mountains National Park tour bus rental for your group — Tennessee's remarkable mountain scenery, vehicle and driver included."
 
 heroImageAlt: "Great Smoky Mountains National Park tour bus rental"

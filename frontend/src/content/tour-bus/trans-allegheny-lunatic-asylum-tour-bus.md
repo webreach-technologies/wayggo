@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Trans-Allegheny Lunatic Asylum Tour Bus Rental — Legends Behind Historic Walls — WAYGGO Charters"
+seoTitle: "Trans-Allegheny Lunatic Asylum Tour Bus Rental — WAYGGO"
 seoDescription: "Book a Trans-Allegheny Lunatic Asylum tour bus rental for your group — one of West Virginia's most distinctive historic landmarks, vehicle and driver included."
 
 heroImageAlt: "Trans-Allegheny Lunatic Asylum tour bus rental"

@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Santa Monica Pier Tour Bus Rental — Pacific Pier Sunset Experience Ride — WAYGGO Charters"
+seoTitle: "Santa Monica Pier Tour Bus Rental — WAYGGO Charters"
 seoDescription: "Book a Santa Monica Pier tour bus rental for your group — Pacific Park, the historic carousel, and the end of Route 66, vehicle and driver included."
 
 heroImageAlt: "Santa Monica Pier tour bus rental"

@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "National Aquarium Tour Bus Rental — Ocean Wonders Explorer — WAYGGO Charters"
+seoTitle: "National Aquarium Tour Bus Rental — WAYGGO Charters"
 seoDescription: "Book a National Aquarium tour bus rental for your group — aquatic animals and marine science exhibits in Baltimore, vehicle and driver included."
 
 heroImageAlt: "National Aquarium tour bus rental"

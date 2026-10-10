@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Natural Bridge Caverns Tour Bus Rental — Caverns Beneath the Lone Star — WAYGGO Charters"
+seoTitle: "Natural Bridge Caverns Tour Bus Rental — WAYGGO Charters"
 seoDescription: "Book a Natural Bridge Caverns tour bus rental for your group — one of Texas's fascinating natural attractions, vehicle and driver included."
 
 heroImageAlt: "Natural Bridge Caverns tour bus rental"

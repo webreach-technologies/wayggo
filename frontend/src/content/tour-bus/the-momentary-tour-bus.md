@@ -27,8 +27,8 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "The Momentary Tour Bus Rental — Contemporary Art Experience Journey — WAYGGO Charters"
-seoDescription: "Book a The Momentary tour bus rental for your group — contemporary art, live performances, and rooftop views in a reimagined Bentonville industrial landmark, vehicle and driver included."
+seoTitle: "The Momentary Tour Bus Rental — WAYGGO Charters"
+seoDescription: "Book a The Momentary tour bus rental for your group — contemporary art, live performances, and rooftop views in a reimagined Bentonville industrial landmark."
 
 heroImageAlt: "The Momentary tour bus rental"
 heroHeadingLine1: "The Momentary"

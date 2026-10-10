@@ -27,8 +27,8 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Turpentine Creek Wildlife Refuge Tour Bus Rental — Wildlife Rescue Sanctuary Journey — WAYGGO Charters"
-seoDescription: "Book a Turpentine Creek Wildlife Refuge tour bus rental for your group — rescued big cats and wildlife conservation near Eureka Springs, Arkansas, vehicle and driver included."
+seoTitle: "Turpentine Creek Wildlife Refuge Tour Bus Rental — WAYGGO"
+seoDescription: "Book a Turpentine Creek Wildlife Refuge tour bus rental — rescued big cats and wildlife conservation near Eureka Springs, Arkansas, vehicle and driver included."
 
 heroImageAlt: "Turpentine Creek Wildlife Refuge tour bus rental"
 heroHeadingLine1: "Turpentine Creek Wildlife Refuge"

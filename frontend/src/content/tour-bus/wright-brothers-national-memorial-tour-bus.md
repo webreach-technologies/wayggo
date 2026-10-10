@@ -27,8 +27,8 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Wright Brothers National Memorial Tour Bus Rental — First Flight Legacy Journey — WAYGGO Charters"
-seoDescription: "Book a Wright Brothers National Memorial tour bus rental for your group — aviation history and engineering significance on the Outer Banks, vehicle and driver included."
+seoTitle: "Wright Brothers National Memorial Tour Bus Rental — WAYGGO"
+seoDescription: "Book a Wright Brothers National Memorial tour bus rental — aviation history and engineering significance on the Outer Banks, vehicle and driver included."
 
 heroImageAlt: "Wright Brothers National Memorial tour bus rental"
 heroHeadingLine1: "Wright Brothers"

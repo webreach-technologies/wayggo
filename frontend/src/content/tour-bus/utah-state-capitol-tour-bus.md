@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Utah State Capitol Tour Bus Rental — Capitol on the Wasatch Discovery — WAYGGO Charters"
+seoTitle: "Utah State Capitol Tour Bus Rental — WAYGGO Charters"
 seoDescription: "Book a Utah State Capitol tour bus rental for your group — one of Salt Lake City's important historical and governmental landmarks, vehicle and driver included."
 
 heroImageAlt: "Utah State Capitol tour bus rental"

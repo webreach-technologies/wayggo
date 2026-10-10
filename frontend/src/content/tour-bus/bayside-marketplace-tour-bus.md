@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Bayside Marketplace Tour Bus Rental — Miami Bayfront Entertainment Journey — WAYGGO Charters"
+seoTitle: "Bayside Marketplace Tour Bus Rental — WAYGGO Charters"
 seoDescription: "Book a Bayside Marketplace tour bus rental for your group — Biscayne Bay shopping, dining, and entertainment in downtown Miami, vehicle and driver included."
 
 heroImageAlt: "Bayside Marketplace tour bus rental"

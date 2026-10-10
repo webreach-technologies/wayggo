@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Olbrich Botanical Gardens Tour Bus Rental — Gardens of Madison Escape — WAYGGO Charters"
+seoTitle: "Olbrich Botanical Gardens Tour Bus Rental — WAYGGO Charters"
 seoDescription: "Book an Olbrich Botanical Gardens tour bus rental for your group — one of Madison's most beautiful natural attractions, vehicle and driver included."
 
 heroImageAlt: "Olbrich Botanical Gardens tour bus rental"

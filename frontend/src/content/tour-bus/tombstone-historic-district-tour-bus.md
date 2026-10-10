@@ -27,8 +27,8 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Tombstone Historic District Tour Bus Rental — Gunfight Legends Heritage Journey — WAYGGO Charters"
-seoDescription: "Book a Tombstone Historic District tour bus rental for your group — the O.K. Corral, Bird Cage Theatre, and Wild West history in southeastern Arizona, vehicle and driver included."
+seoTitle: "Tombstone Historic District Tour Bus Rental — WAYGGO"
+seoDescription: "Book a Tombstone Historic District tour bus rental for your group — the O.K. Corral, Bird Cage Theatre, and Wild West history in southeastern Arizona."
 
 heroImageAlt: "Tombstone Historic District tour bus rental"
 heroHeadingLine1: "Tombstone Historic District"

@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Padre Island National Seashore Tour Bus Rental — Untamed Gulf Coast Escape — WAYGGO Charters"
+seoTitle: "Padre Island National Seashore Tour Bus Rental — WAYGGO"
 seoDescription: "Book a Padre Island National Seashore tour bus rental for your group — one of Texas's memorable coastal destinations, vehicle and driver included."
 
 heroImageAlt: "Padre Island National Seashore tour bus rental"

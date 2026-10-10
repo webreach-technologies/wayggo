@@ -27,8 +27,8 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Fort Adams State Park Tour Bus Rental — Fortress by the Sea Journey — WAYGGO Charters"
-seoDescription: "Book a Fort Adams State Park tour bus rental for your group — Newport's military history, coastal scenery, and expansive waterfront views, vehicle and driver included."
+seoTitle: "Fort Adams State Park Tour Bus Rental — WAYGGO Charters"
+seoDescription: "Book a Fort Adams State Park tour bus rental — Newport's military history, coastal scenery, and expansive waterfront views, vehicle and driver included."
 
 heroImageAlt: "Fort Adams State Park tour bus rental"
 heroHeadingLine1: "Fort Adams State Park"

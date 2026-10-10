@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Clearwater Beach Tour Bus Rental — Gulf Coast Beachfront Escape Journey — WAYGGO Charters"
+seoTitle: "Clearwater Beach Tour Bus Rental — WAYGGO Charters"
 seoDescription: "Book a Clearwater Beach tour bus rental for your group — white-sand shoreline and Gulf Coast sunsets on Florida's west coast, vehicle and driver included."
 
 heroImageAlt: "Clearwater Beach tour bus rental"

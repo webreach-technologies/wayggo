@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "North Shore Scenic Drive Tour Bus Rental — Lake Superior Coastal Journey — WAYGGO Charters"
+seoTitle: "North Shore Scenic Drive Tour Bus Rental — WAYGGO Charters"
 seoDescription: "Book a North Shore Scenic Drive tour bus rental for your group — Lake Superior scenery, forests, and waterfalls, vehicle and driver included."
 
 heroImageAlt: "North Shore Scenic Drive tour bus rental"

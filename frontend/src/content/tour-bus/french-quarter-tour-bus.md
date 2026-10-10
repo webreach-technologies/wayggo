@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "French Quarter Tour Bus Rental — Jazz & Heritage Explorer — WAYGGO Charters"
+seoTitle: "French Quarter Tour Bus Rental — WAYGGO Charters"
 seoDescription: "Book a French Quarter tour bus rental for your group — historic architecture and lively New Orleans atmosphere, vehicle and driver included."
 
 heroImageAlt: "French Quarter tour bus rental"

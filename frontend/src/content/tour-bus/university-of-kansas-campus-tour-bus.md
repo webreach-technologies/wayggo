@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "University of Kansas Campus Tour Bus Rental — Jayhawk Spirit Campus Walk Experience — WAYGGO Charters"
+seoTitle: "University of Kansas Campus Tour Bus Rental — WAYGGO"
 seoDescription: "Book a University of Kansas Campus tour bus rental for your group — collegiate architecture and campus landmarks in Lawrence, vehicle and driver included."
 
 heroImageAlt: "University of Kansas Campus tour bus rental"

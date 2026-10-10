@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Biedenharn Coca-Cola Museum Tour Bus Rental — Birthplace of a Classic Discovery — WAYGGO Charters"
+seoTitle: "Biedenharn Coca-Cola Museum Tour Bus Rental — WAYGGO"
 seoDescription: "Book a Biedenharn Coca-Cola Museum tour bus rental for your group — beverage history and entrepreneurship in Vicksburg, vehicle and driver included."
 
 heroImageAlt: "Biedenharn Coca-Cola Museum tour bus rental"

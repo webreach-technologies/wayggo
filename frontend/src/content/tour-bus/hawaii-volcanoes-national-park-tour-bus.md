@@ -27,8 +27,8 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Hawaiʻi Volcanoes National Park Tour Bus Rental — Lava Land Discovery Expedition Journey — WAYGGO Charters"
-seoDescription: "Book a Hawaiʻi Volcanoes National Park tour bus rental for your group — dramatic craters, lava formations, and rainforest on the Big Island, vehicle and driver included."
+seoTitle: "Hawaiʻi Volcanoes National Park Tour Bus Rental — WAYGGO"
+seoDescription: "Book a Hawaiʻi Volcanoes National Park tour bus rental — dramatic craters, lava formations, and rainforest on the Big Island, vehicle and driver included."
 
 heroImageAlt: "Hawaiʻi Volcanoes National Park tour bus rental"
 heroHeadingLine1: "Hawaiʻi Volcanoes"

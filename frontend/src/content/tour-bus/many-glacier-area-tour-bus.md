@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Many Glacier Area Tour Bus Rental — Valley of Glaciers Discovery — WAYGGO Charters"
+seoTitle: "Many Glacier Area Tour Bus Rental — WAYGGO Charters"
 seoDescription: "Book a Many Glacier Area tour bus rental for your group — dramatic peaks and alpine lakes, vehicle and driver included."
 
 heroImageAlt: "Many Glacier Area tour bus rental"

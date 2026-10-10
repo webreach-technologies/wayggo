@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Country Club Plaza Tour Bus Rental — Plaza Elegance Experience — WAYGGO Charters"
+seoTitle: "Country Club Plaza Tour Bus Rental — WAYGGO Charters"
 seoDescription: "Book a Country Club Plaza tour bus rental for your group — distinctive architecture and shopping in Kansas City, vehicle and driver included."
 
 heroImageAlt: "Country Club Plaza tour bus rental"

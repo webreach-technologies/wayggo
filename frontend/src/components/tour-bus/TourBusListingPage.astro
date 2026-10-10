@@ -13,7 +13,7 @@ import {
   type Bucket,
   type TourBusCard,
 } from "../../lib/tourBus";
-import { withBase } from "../../lib/url";
+import { withBase, withTrailingSlash } from "../../lib/url";
 
 interface Props {
   bucket: Bucket;
@@ -41,7 +41,7 @@ const tourBusItemListSchema = {
   itemListElement: pageCards.map((pkg, i) => ({
     "@type": "ListItem",
     position: (page - 1) * PAGE_SIZE + i + 1,
-    url: new URL(pkg.detailHref, siteOrigin).href,
+    url: new URL(withTrailingSlash(pkg.detailHref), siteOrigin).href,
     name: pkg.name,
   })),
 };

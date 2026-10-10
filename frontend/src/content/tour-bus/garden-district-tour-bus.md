@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Garden District Tour Bus Rental — Southern Elegance Explorer — WAYGGO Charters"
+seoTitle: "Garden District Tour Bus Rental — WAYGGO Charters"
 seoDescription: "Book a Garden District tour bus rental for your group — grand historic homes and tree-lined streets in New Orleans, vehicle and driver included."
 
 heroImageAlt: "Garden District tour bus rental"

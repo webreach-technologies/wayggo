@@ -27,8 +27,8 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Air Mobility Command Museum Tour Bus Rental — Military Aviation Heritage Journey — WAYGGO Charters"
-seoDescription: "Book an Air Mobility Command Museum tour bus rental for your group — historic military aircraft and airlift history at Dover Air Force Base, vehicle and driver included."
+seoTitle: "Air Mobility Command Museum Tour Bus Rental — WAYGGO"
+seoDescription: "Book an Air Mobility Command Museum tour bus rental — historic military aircraft and airlift history at Dover Air Force Base, vehicle and driver included."
 
 heroImageAlt: "Air Mobility Command Museum tour bus rental"
 heroHeadingLine1: "Air Mobility Command Museum"

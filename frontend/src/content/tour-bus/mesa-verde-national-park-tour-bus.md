@@ -27,8 +27,8 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Mesa Verde National Park Tour Bus Rental — Ancient Cliff Dwellings Heritage Journey — WAYGGO Charters"
-seoDescription: "Book a Mesa Verde National Park tour bus rental for your group — ancient Ancestral Pueblo cliff dwellings and archaeological treasures in southwestern Colorado, vehicle and driver included."
+seoTitle: "Mesa Verde National Park Tour Bus Rental — WAYGGO Charters"
+seoDescription: "Book a Mesa Verde National Park tour bus rental for your group — ancient Ancestral Pueblo cliff dwellings and archaeological treasures in southwestern Colorado."
 
 heroImageAlt: "Mesa Verde National Park tour bus rental"
 heroHeadingLine1: "Mesa Verde National Park"

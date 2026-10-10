@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Holland State Park & Big Red Lighthouse Tour Bus Rental — Big Red Lakeshore Getaway — WAYGGO Charters"
+seoTitle: "Holland State Park & Big Red Lighthouse Tour Bus Rental"
 seoDescription: "Book a Holland State Park tour bus rental for your group — Lake Michigan beaches and the iconic Big Red Lighthouse, vehicle and driver included."
 
 heroImageAlt: "Holland State Park & Big Red Lighthouse tour bus rental"

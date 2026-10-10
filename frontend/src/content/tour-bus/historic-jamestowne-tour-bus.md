@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Historic Jamestowne Tour Bus Rental — Birthplace of English America Journey — WAYGGO Charters"
+seoTitle: "Historic Jamestowne Tour Bus Rental — WAYGGO Charters"
 seoDescription: "Book a Historic Jamestowne tour bus rental for your group — one of Virginia's most important historic destinations, vehicle and driver included."
 
 heroImageAlt: "Historic Jamestowne tour bus rental"

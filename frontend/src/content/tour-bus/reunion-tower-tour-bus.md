@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Reunion Tower Tour Bus Rental — Skyline Views of Dallas Adventure — WAYGGO Charters"
+seoTitle: "Reunion Tower Tour Bus Rental — WAYGGO Charters"
 seoDescription: "Book a Reunion Tower tour bus rental for your group — one of Dallas's most recognizable landmarks, vehicle and driver included."
 
 heroImageAlt: "Reunion Tower tour bus rental"

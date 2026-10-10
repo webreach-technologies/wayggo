@@ -27,8 +27,8 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Tony Knowles Coastal Trail Tour Bus Rental — Coastal Breeze Trail Explorer Ride — WAYGGO Charters"
-seoDescription: "Book a Tony Knowles Coastal Trail tour bus rental for your group — 11 miles of Anchorage shoreline, Cook Inlet views, and Denali sightlines, vehicle and driver included."
+seoTitle: "Tony Knowles Coastal Trail Tour Bus Rental — WAYGGO Charters"
+seoDescription: "Book a Tony Knowles Coastal Trail tour bus rental — 11 miles of Anchorage shoreline, Cook Inlet views, and Denali sightlines, vehicle and driver included."
 
 heroImageAlt: "Tony Knowles Coastal Trail tour bus rental"
 heroHeadingLine1: "Tony Knowles Coastal Trail"

@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Mount Rainier National Park Tour Bus Rental — Peaks of the Pacific Northwest Adventure — WAYGGO Charters"
+seoTitle: "Mount Rainier National Park Tour Bus Rental — WAYGGO"
 seoDescription: "Book a Mount Rainier National Park tour bus rental for your group — one of Washington's most memorable natural destinations, vehicle and driver included."
 
 heroImageAlt: "Mount Rainier National Park tour bus rental"

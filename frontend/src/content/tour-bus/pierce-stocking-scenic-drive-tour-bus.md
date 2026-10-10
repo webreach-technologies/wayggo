@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Pierce Stocking Scenic Drive Tour Bus Rental — Scenic Bluffs Panorama Drive — WAYGGO Charters"
+seoTitle: "Pierce Stocking Scenic Drive Tour Bus Rental — WAYGGO"
 seoDescription: "Book a Pierce Stocking Scenic Drive tour bus rental for your group — Lake Michigan overlooks and Sleeping Bear Dunes scenery, vehicle and driver included."
 
 heroImageAlt: "Pierce Stocking Scenic Drive tour bus rental"

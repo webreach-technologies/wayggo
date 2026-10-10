@@ -27,8 +27,8 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Grand Prismatic Spring Tour Bus Rental — Colors of the Earth Discovery — WAYGGO Charters"
-seoDescription: "Book a Grand Prismatic Spring tour bus rental for your group — one of Yellowstone National Park's most extraordinary natural attractions, vehicle and driver included."
+seoTitle: "Grand Prismatic Spring Tour Bus Rental — WAYGGO Charters"
+seoDescription: "Book a Grand Prismatic Spring tour bus rental — one of Yellowstone National Park's most extraordinary natural attractions, vehicle and driver included."
 
 heroImageAlt: "Grand Prismatic Spring tour bus rental"
 heroHeadingLine1: "Grand Prismatic Spring"

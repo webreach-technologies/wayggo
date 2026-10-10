@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Wichita Mountains Wildlife Refuge Tour Bus Rental — Wild Plains & Mountain Adventure — WAYGGO Charters"
+seoTitle: "Wichita Mountains Wildlife Refuge Tour Bus Rental — WAYGGO"
 seoDescription: "Book a Wichita Mountains Wildlife Refuge tour bus rental for your group — wildlife, mountains, and scenic landscapes, vehicle and driver included."
 
 heroImageAlt: "Wichita Mountains Wildlife Refuge tour bus rental"

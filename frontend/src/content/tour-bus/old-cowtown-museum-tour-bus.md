@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Old Cowtown Museum Tour Bus Rental — Frontier Town Living History Escape — WAYGGO Charters"
+seoTitle: "Old Cowtown Museum Tour Bus Rental — WAYGGO Charters"
 seoDescription: "Book an Old Cowtown Museum tour bus rental for your group — nineteenth-century Wichita living history, vehicle and driver included."
 
 heroImageAlt: "Old Cowtown Museum tour bus rental"

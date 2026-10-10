@@ -27,8 +27,8 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Carlsbad Caverns National Park Tour Bus Rental — Underground Kingdom Explorer — WAYGGO Charters"
-seoDescription: "Book a Carlsbad Caverns National Park tour bus rental for your group — a remarkable southern New Mexico destination for underground formations and geology, vehicle and driver included."
+seoTitle: "Carlsbad Caverns National Park Tour Bus Rental — WAYGGO"
+seoDescription: "Book a Carlsbad Caverns National Park tour bus rental for your group — a remarkable southern New Mexico destination for underground formations and geology."
 
 heroImageAlt: "Carlsbad Caverns National Park tour bus rental"
 heroHeadingLine1: "Carlsbad Caverns National Park"

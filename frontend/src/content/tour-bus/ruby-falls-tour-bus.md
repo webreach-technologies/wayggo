@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Ruby Falls Tour Bus Rental — Underground Waterfall Wonder — WAYGGO Charters"
+seoTitle: "Ruby Falls Tour Bus Rental — WAYGGO Charters"
 seoDescription: "Book a Ruby Falls tour bus rental for your group — one of Tennessee's unique natural attractions near Chattanooga, vehicle and driver included."
 
 heroImageAlt: "Ruby Falls tour bus rental"

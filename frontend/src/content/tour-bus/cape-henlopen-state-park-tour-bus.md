@@ -27,8 +27,8 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Cape Henlopen State Park Tour Bus Rental — Atlantic Shore Nature Adventure Journey — WAYGGO Charters"
-seoDescription: "Book a Cape Henlopen State Park tour bus rental for your group — beaches, maritime forests, and Fort Miles WWII history near Lewes, Delaware, vehicle and driver included."
+seoTitle: "Cape Henlopen State Park Tour Bus Rental — WAYGGO Charters"
+seoDescription: "Book a Cape Henlopen State Park tour bus rental — beaches, maritime forests, and Fort Miles WWII history near Lewes, Delaware, vehicle and driver included."
 
 heroImageAlt: "Cape Henlopen State Park tour bus rental"
 heroHeadingLine1: "Cape Henlopen State Park"

@@ -27,8 +27,8 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Flaming Gorge National Recreation Area Tour Bus Rental — Red Canyon Waters Adventure — WAYGGO Charters"
-seoDescription: "Book a Flaming Gorge National Recreation Area tour bus rental for your group — one of Wyoming's most impressive outdoor destinations, vehicle and driver included."
+seoTitle: "Flaming Gorge National Recreation Area Tour Bus Rental"
+seoDescription: "Book a Flaming Gorge National Recreation Area tour bus rental — one of Wyoming's most impressive outdoor destinations, vehicle and driver included."
 
 heroImageAlt: "Flaming Gorge National Recreation Area tour bus rental"
 heroHeadingLine1: "Flaming Gorge"

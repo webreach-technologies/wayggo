@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Chapel of the Holy Cross Tour Bus Rental — Cliffside Chapel Serenity Journey — WAYGGO Charters"
+seoTitle: "Chapel of the Holy Cross Tour Bus Rental — WAYGGO Charters"
 seoDescription: "Book a Chapel of the Holy Cross tour bus rental for your group — the iconic 1956 sanctuary built into Sedona's red rock cliffs, vehicle and driver included."
 
 heroImageAlt: "Chapel of the Holy Cross tour bus rental"

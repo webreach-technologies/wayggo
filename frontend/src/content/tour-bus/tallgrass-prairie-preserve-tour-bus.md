@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Tallgrass Prairie Preserve Tour Bus Rental — Sea of Grass Wilderness Journey — WAYGGO Charters"
+seoTitle: "Tallgrass Prairie Preserve Tour Bus Rental — WAYGGO Charters"
 seoDescription: "Book a Tallgrass Prairie Preserve tour bus rental for your group — native prairie, wildlife, and open landscapes, vehicle and driver included."
 
 heroImageAlt: "Tallgrass Prairie Preserve tour bus rental"

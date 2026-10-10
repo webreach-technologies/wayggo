@@ -27,8 +27,8 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Kenai Fjords National Park Tour Bus Rental — Glacier Fjord Explorer Ride — WAYGGO Charters"
-seoDescription: "Book a Kenai Fjords National Park tour bus rental for your group — Resurrection Bay glacier cruises, the Harding Icefield, and Seward's coastal scenery, vehicle and driver included."
+seoTitle: "Kenai Fjords National Park Tour Bus Rental — WAYGGO Charters"
+seoDescription: "Book a Kenai Fjords National Park tour bus rental for your group — Resurrection Bay glacier cruises, the Harding Icefield, and Seward's coastal scenery."
 
 heroImageAlt: "Kenai Fjords National Park tour bus rental"
 heroHeadingLine1: "Kenai Fjords National Park"

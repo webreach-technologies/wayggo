@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Haystack Rock Tour Bus Rental — Sea Stack Wonders Discovery — WAYGGO Charters"
+seoTitle: "Haystack Rock Tour Bus Rental — WAYGGO Charters"
 seoDescription: "Book a Haystack Rock tour bus rental for your group — a dramatic coastal landmark at Cannon Beach, vehicle and driver included."
 
 heroImageAlt: "Haystack Rock tour bus rental"

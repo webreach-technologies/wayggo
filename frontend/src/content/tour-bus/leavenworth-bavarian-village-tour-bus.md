@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Leavenworth Bavarian Village Tour Bus Rental — Bavarian Alps in Washington — WAYGGO Charters"
+seoTitle: "Leavenworth Bavarian Village Tour Bus Rental — WAYGGO"
 seoDescription: "Book a Leavenworth Bavarian Village tour bus rental for your group — one of Washington's most distinctive destinations, vehicle and driver included."
 
 heroImageAlt: "Leavenworth Bavarian Village tour bus rental"

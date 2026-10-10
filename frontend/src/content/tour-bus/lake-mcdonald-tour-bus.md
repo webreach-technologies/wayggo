@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Lake McDonald Tour Bus Rental — Crystal Waters of the Rockies Escape — WAYGGO Charters"
+seoTitle: "Lake McDonald Tour Bus Rental — WAYGGO Charters"
 seoDescription: "Book a Lake McDonald tour bus rental for your group — mountain scenery and clear waters in Glacier National Park, vehicle and driver included."
 
 heroImageAlt: "Lake McDonald tour bus rental"

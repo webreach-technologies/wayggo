@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Fell's Point Historic District Tour Bus Rental — Cobblestone Waterfront Escape — WAYGGO Charters"
+seoTitle: "Fell's Point Historic District Tour Bus Rental — WAYGGO"
 seoDescription: "Book a Fell's Point Historic District tour bus rental for your group — historic streets and waterfront charm in Baltimore, vehicle and driver included."
 
 heroImageAlt: "Fell's Point Historic District tour bus rental"

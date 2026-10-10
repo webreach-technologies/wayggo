@@ -27,8 +27,8 @@ included:
   - "Airport transfers"
   - "Hotel pickups daily"
 
-seoTitle: "Gulf State Park Tour Bus Rental — Gulf Coast Serenity Journey — WAYGGO Charters"
-seoDescription: "Book a Gulf State Park tour bus rental for your group — 6,150 acres of Alabama Gulf Coast beach, the Hugh S. Branyon Backcountry Trail, and the 1,540-ft Gulf State Park Pier, vehicle and driver included."
+seoTitle: "Gulf State Park Tour Bus Rental — WAYGGO Charters"
+seoDescription: "Book a Gulf State Park tour bus rental — 6,150 acres of Alabama Gulf Coast beach, the Hugh S. Branyon Backcountry Trail, and the 1,540-ft Gulf State Park Pier."
 
 heroImageAlt: "Gulf State Park tour bus rental"
 heroHeadingLine1: "Gulf State Park"

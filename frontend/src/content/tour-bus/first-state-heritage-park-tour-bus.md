@@ -27,8 +27,8 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "First State Heritage Park Tour Bus Rental — Delaware Colonial Heritage Journey — WAYGGO Charters"
-seoDescription: "Book a First State Heritage Park tour bus rental for your group — Delaware's interconnected historic sites throughout downtown Dover, vehicle and driver included."
+seoTitle: "First State Heritage Park Tour Bus Rental — WAYGGO Charters"
+seoDescription: "Book a First State Heritage Park tour bus rental — Delaware's interconnected historic sites throughout downtown Dover, vehicle and driver included."
 
 heroImageAlt: "First State Heritage Park tour bus rental"
 heroHeadingLine1: "First State Heritage Park"

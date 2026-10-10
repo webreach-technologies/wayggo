@@ -27,8 +27,8 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Cape Cod National Seashore Tour Bus Rental — Cape Coast Adventure — WAYGGO Charters"
-seoDescription: "Book a Cape Cod National Seashore tour bus rental for your group — a spectacular Massachusetts destination for beaches, dunes, and coastal scenery, vehicle and driver included."
+seoTitle: "Cape Cod National Seashore Tour Bus Rental — WAYGGO Charters"
+seoDescription: "Book a Cape Cod National Seashore tour bus rental for your group — a spectacular Massachusetts destination for beaches, dunes, and coastal scenery."
 
 heroImageAlt: "Cape Cod National Seashore tour bus rental"
 heroHeadingLine1: "Cape Cod National Seashore"

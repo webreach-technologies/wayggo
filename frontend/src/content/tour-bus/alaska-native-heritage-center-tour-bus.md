@@ -27,8 +27,8 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Alaska Native Heritage Center Tour Bus Rental — Indigenous Heritage Discovery Ride — WAYGGO Charters"
-seoDescription: "Book an Alaska Native Heritage Center tour bus rental for your group — living traditions, village sites, and cultural performances in Anchorage, vehicle and driver included."
+seoTitle: "Alaska Native Heritage Center Tour Bus Rental — WAYGGO"
+seoDescription: "Book an Alaska Native Heritage Center tour bus rental — living traditions, village sites, and cultural performances in Anchorage, vehicle and driver included."
 
 heroImageAlt: "Alaska Native Heritage Center tour bus rental"
 heroHeadingLine1: "Alaska Native Heritage Center"

@@ -27,8 +27,8 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Newport Harbor Tour Bus Rental — Sailing Harbor Discovery — WAYGGO Charters"
-seoDescription: "Book a Newport Harbor tour bus rental for your group — Rhode Island's coastal scenery, maritime atmosphere, and historic waterfront, vehicle and driver included."
+seoTitle: "Newport Harbor Tour Bus Rental — WAYGGO Charters"
+seoDescription: "Book a Newport Harbor tour bus rental — Rhode Island's coastal scenery, maritime atmosphere, and historic waterfront, vehicle and driver included."
 
 heroImageAlt: "Newport Harbor tour bus rental"
 heroHeadingLine1: "Newport Harbor"

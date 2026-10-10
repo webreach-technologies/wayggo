@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Chickasaw National Recreation Area Tour Bus Rental — Springs & Serenity Adventure — WAYGGO Charters"
+seoTitle: "Chickasaw National Recreation Area Tour Bus Rental — WAYGGO"
 seoDescription: "Book a Chickasaw National Recreation Area tour bus rental for your group — springs, streams, and forests in south-central Oklahoma, vehicle and driver included."
 
 heroImageAlt: "Chickasaw National Recreation Area tour bus rental"

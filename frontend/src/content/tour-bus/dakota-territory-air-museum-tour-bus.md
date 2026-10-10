@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Dakota Territory Air Museum Tour Bus Rental — Wings Over the Prairie Experience — WAYGGO Charters"
+seoTitle: "Dakota Territory Air Museum Tour Bus Rental — WAYGGO"
 seoDescription: "Book a Dakota Territory Air Museum tour bus rental for your group — aviation history and technology in Minot, vehicle and driver included."
 
 heroImageAlt: "Dakota Territory Air Museum tour bus rental"

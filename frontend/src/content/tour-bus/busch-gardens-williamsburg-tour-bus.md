@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Busch Gardens Williamsburg Tour Bus Rental — European-Themed Thrills Adventure — WAYGGO Charters"
+seoTitle: "Busch Gardens Williamsburg Tour Bus Rental — WAYGGO Charters"
 seoDescription: "Book a Busch Gardens Williamsburg tour bus rental for your group — one of Virginia's popular entertainment destinations, vehicle and driver included."
 
 heroImageAlt: "Busch Gardens Williamsburg tour bus rental"

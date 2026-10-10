@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Pictured Rocks National Lakeshore Tour Bus Rental — Painted Cliffs Coastal Adventure — WAYGGO Charters"
+seoTitle: "Pictured Rocks National Lakeshore Tour Bus Rental — WAYGGO"
 seoDescription: "Book a Pictured Rocks National Lakeshore tour bus rental for your group — dramatic sandstone cliffs and Lake Superior shoreline, vehicle and driver included."
 
 heroImageAlt: "Pictured Rocks National Lakeshore tour bus rental"

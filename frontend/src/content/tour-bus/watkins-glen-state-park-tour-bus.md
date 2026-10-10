@@ -27,8 +27,8 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Watkins Glen State Park Tour Bus Rental — Gorge Trail Wonders Escape — WAYGGO Charters"
-seoDescription: "Book a Watkins Glen State Park tour bus rental for your group — a dramatic gorge, waterfalls, and stone bridges in the Finger Lakes, vehicle and driver included."
+seoTitle: "Watkins Glen State Park Tour Bus Rental — WAYGGO Charters"
+seoDescription: "Book a Watkins Glen State Park tour bus rental — a dramatic gorge, waterfalls, and stone bridges in the Finger Lakes, vehicle and driver included."
 
 heroImageAlt: "Watkins Glen State Park tour bus rental"
 heroHeadingLine1: "Watkins Glen"

@@ -27,8 +27,8 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Universal Studios Hollywood Tour Bus Rental — Hollywood Movie Magic Adventure Ride — WAYGGO Charters"
-seoDescription: "Book a Universal Studios Hollywood tour bus rental for your group — the legendary Studio Tour and The Wizarding World of Harry Potter, vehicle and driver included."
+seoTitle: "Universal Studios Hollywood Tour Bus Rental — WAYGGO"
+seoDescription: "Book a Universal Studios Hollywood tour bus rental — the legendary Studio Tour and The Wizarding World of Harry Potter, vehicle and driver included."
 
 heroImageAlt: "Universal Studios Hollywood tour bus rental"
 heroHeadingLine1: "Universal Studios Hollywood"

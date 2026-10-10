@@ -27,8 +27,8 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Patriots Point Naval & Maritime Museum Tour Bus Rental — Naval Legends Experience — WAYGGO Charters"
-seoDescription: "Book a Patriots Point Naval & Maritime Museum tour bus rental for your group — naval history and historic vessels in Charleston Harbor, vehicle and driver included."
+seoTitle: "Patriots Point Naval & Maritime Museum Tour Bus Rental"
+seoDescription: "Book a Patriots Point Naval & Maritime Museum tour bus rental — naval history and historic vessels in Charleston Harbor, vehicle and driver included."
 
 heroImageAlt: "Patriots Point Naval & Maritime Museum tour bus rental"
 heroHeadingLine1: "Patriots Point Naval"

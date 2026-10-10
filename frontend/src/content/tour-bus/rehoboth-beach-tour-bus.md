@@ -27,8 +27,8 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Rehoboth Beach Tour Bus Rental — Atlantic Shore Beach Escape Journey — WAYGGO Charters"
-seoDescription: "Book a Rehoboth Beach tour bus rental for your group — sandy shoreline, downtown shopping and dining, and classic Delaware coastal charm, vehicle and driver included."
+seoTitle: "Rehoboth Beach Tour Bus Rental — WAYGGO Charters"
+seoDescription: "Book a Rehoboth Beach tour bus rental — sandy shoreline, downtown shopping and dining, and classic Delaware coastal charm, vehicle and driver included."
 
 heroImageAlt: "Rehoboth Beach tour bus rental"
 heroHeadingLine1: "Rehoboth Beach"

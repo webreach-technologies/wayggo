@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Jackson Square Tour Bus Rental — Historic Heartbeat Explorer — WAYGGO Charters"
+seoTitle: "Jackson Square Tour Bus Rental — WAYGGO Charters"
 seoDescription: "Book a Jackson Square tour bus rental for your group — historic architecture and public art in the heart of the French Quarter, vehicle and driver included."
 
 heroImageAlt: "Jackson Square tour bus rental"

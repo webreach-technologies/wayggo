@@ -27,8 +27,8 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Pearl Harbor National Memorial Tour Bus Rental — Pearl Harbor Historic Memorial Journey — WAYGGO Charters"
-seoDescription: "Book a Pearl Harbor National Memorial tour bus rental for your group — the USS Arizona Memorial and World War II history near Honolulu, vehicle and driver included."
+seoTitle: "Pearl Harbor National Memorial Tour Bus Rental — WAYGGO"
+seoDescription: "Book a Pearl Harbor National Memorial tour bus rental — the USS Arizona Memorial and World War II history near Honolulu, vehicle and driver included."
 
 heroImageAlt: "Pearl Harbor National Memorial tour bus rental"
 heroHeadingLine1: "Pearl Harbor"

@@ -27,8 +27,8 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Legacy Museum Tour Bus Rental — Legacy of Justice Journey — WAYGGO Charters"
-seoDescription: "Book a Legacy Museum tour bus rental for your group — the Legacy Museum and the National Memorial for Peace and Justice in downtown Montgomery, vehicle and driver included."
+seoTitle: "Legacy Museum Tour Bus Rental — WAYGGO Charters"
+seoDescription: "Book a Legacy Museum tour bus rental — the Legacy Museum and the National Memorial for Peace and Justice in downtown Montgomery, vehicle and driver included."
 
 heroImageAlt: "Legacy Museum tour bus rental"
 heroHeadingLine1: "Legacy Museum"

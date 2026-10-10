@@ -27,8 +27,8 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Savannah Historic District Tour Bus Rental — Southern Historic Squares & Heritage Journey — WAYGGO Charters"
-seoDescription: "Book a Savannah Historic District tour bus rental for your group — tree-lined squares, historic architecture, and centuries of Southern history, vehicle and driver included."
+seoTitle: "Savannah Historic District Tour Bus Rental — WAYGGO Charters"
+seoDescription: "Book a Savannah Historic District tour bus rental — tree-lined squares, historic architecture, and centuries of Southern history, vehicle and driver included."
 
 heroImageAlt: "Savannah Historic District tour bus rental"
 heroHeadingLine1: "Savannah Historic District"

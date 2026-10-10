@@ -27,8 +27,8 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Walt Disney World Resort Tour Bus Rental — Enchanted Theme Park Discovery Tour — WAYGGO Charters"
-seoDescription: "Book a Walt Disney World Resort tour bus rental for your group — four iconic theme parks and unforgettable entertainment in Central Florida, vehicle and driver included."
+seoTitle: "Walt Disney World Resort Tour Bus Rental — WAYGGO Charters"
+seoDescription: "Book a Walt Disney World Resort tour bus rental — four iconic theme parks and unforgettable entertainment in Central Florida, vehicle and driver included."
 
 heroImageAlt: "Walt Disney World Resort tour bus rental"
 heroHeadingLine1: "Walt Disney World Resort"

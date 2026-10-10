@@ -27,8 +27,8 @@ included:
   - "Airport transfers"
   - "Hotel pickups daily"
 
-seoTitle: "Lake Tahoe Tour Bus Rental — Crystal Lake Alpine Explorer Ride — WAYGGO Charters"
-seoDescription: "Book a Lake Tahoe tour bus rental for your group — the largest alpine lake in North America, Emerald Bay, and Sierra Nevada mountain scenery, vehicle and driver included."
+seoTitle: "Lake Tahoe Tour Bus Rental — WAYGGO Charters"
+seoDescription: "Book a Lake Tahoe tour bus rental — the largest alpine lake in North America, Emerald Bay, and Sierra Nevada mountain scenery, vehicle and driver included."
 
 heroImageAlt: "Lake Tahoe tour bus rental"
 heroHeadingLine1: "Lake Tahoe"

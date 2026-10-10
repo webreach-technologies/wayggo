@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Tybee Island Tour Bus Rental — Tybee Island Coastal Beach Escape Journey — WAYGGO Charters"
+seoTitle: "Tybee Island Tour Bus Rental — WAYGGO Charters"
 seoDescription: "Book a Tybee Island tour bus rental for your group — sandy beaches, the historic lighthouse, and coastal charm near Savannah, vehicle and driver included."
 
 heroImageAlt: "Tybee Island Beach tour bus rental"

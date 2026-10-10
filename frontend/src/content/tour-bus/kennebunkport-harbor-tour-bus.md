@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Kennebunkport Harbor Tour Bus Rental — New England Harbor Escape — WAYGGO Charters"
+seoTitle: "Kennebunkport Harbor Tour Bus Rental — WAYGGO Charters"
 seoDescription: "Book a Kennebunkport Harbor tour bus rental for your group — classic coastal waterfront and local charm in southern Maine, vehicle and driver included."
 
 heroImageAlt: "Kennebunkport Harbor tour bus rental"

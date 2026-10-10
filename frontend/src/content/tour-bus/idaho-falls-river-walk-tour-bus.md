@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Idaho Falls River Walk Tour Bus Rental — Riverside Glow Stroll Experience — WAYGGO Charters"
+seoTitle: "Idaho Falls River Walk Tour Bus Rental — WAYGGO Charters"
 seoDescription: "Book an Idaho Falls River Walk tour bus rental for your group — the Snake River, city waterfalls, and downtown scenery, vehicle and driver included."
 
 heroImageAlt: "Idaho Falls River Walk tour bus rental"

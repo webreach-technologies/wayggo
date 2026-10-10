@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "City Museum Tour Bus Rental — Imagination Unleashed Experience — WAYGGO Charters"
+seoTitle: "City Museum Tour Bus Rental — WAYGGO Charters"
 seoDescription: "Book a City Museum tour bus rental for your group — interactive architecture and artistic exploration in St. Louis, vehicle and driver included."
 
 heroImageAlt: "City Museum tour bus rental"

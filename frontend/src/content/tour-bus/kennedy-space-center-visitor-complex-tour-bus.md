@@ -27,8 +27,8 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Kennedy Space Center Visitor Complex Tour Bus Rental — Space Exploration Discovery Journey — WAYGGO Charters"
-seoDescription: "Book a Kennedy Space Center Visitor Complex tour bus rental for your group — historic spacecraft, rockets, and astronaut missions on Florida's Space Coast, vehicle and driver included."
+seoTitle: "Kennedy Space Center Visitor Complex Tour Bus Rental"
+seoDescription: "Book a Kennedy Space Center Visitor Complex tour bus rental for your group — historic spacecraft, rockets, and astronaut missions on Florida's Space Coast."
 
 heroImageAlt: "Kennedy Space Center Visitor Complex tour bus rental"
 heroHeadingLine1: "Kennedy Space Center"

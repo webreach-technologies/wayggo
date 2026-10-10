@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Desert View Watchtower Tour Bus Rental — Canyon Watchtower Panorama Ride — WAYGGO Charters"
+seoTitle: "Desert View Watchtower Tour Bus Rental — WAYGGO Charters"
 seoDescription: "Book a Desert View Watchtower tour bus rental for your group — Mary Colter's 1932 stone tower and Grand Canyon panoramas, vehicle and driver included."
 
 heroImageAlt: "Desert View Watchtower tour bus rental"

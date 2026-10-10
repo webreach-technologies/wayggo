@@ -27,8 +27,8 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Louisville Slugger Museum & Factory Tour Bus Rental — Baseball Bat Crafting Heritage Experience — WAYGGO Charters"
-seoDescription: "Book a Louisville Slugger Museum & Factory tour bus rental for your group — baseball history and bat-making craftsmanship in downtown Louisville, vehicle and driver included."
+seoTitle: "Louisville Slugger Museum & Factory Tour Bus Rental — WAYGGO"
+seoDescription: "Book a Louisville Slugger Museum & Factory tour bus rental — baseball history and bat-making craftsmanship in downtown Louisville, vehicle and driver included."
 
 heroImageAlt: "Louisville Slugger Museum & Factory tour bus rental"
 heroHeadingLine1: "Louisville Slugger Museum"

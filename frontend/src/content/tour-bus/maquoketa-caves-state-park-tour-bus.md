@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Maquoketa Caves State Park Tour Bus Rental — Underground Cave Trails Adventure Experience — WAYGGO Charters"
+seoTitle: "Maquoketa Caves State Park Tour Bus Rental — WAYGGO Charters"
 seoDescription: "Book a Maquoketa Caves State Park tour bus rental for your group — underground passages and limestone formations in eastern Iowa, vehicle and driver included."
 
 heroImageAlt: "Maquoketa Caves State Park tour bus rental"

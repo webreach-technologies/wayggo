@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Portland Head Light Tour Bus Rental — Beacon of the Coast Experience — WAYGGO Charters"
+seoTitle: "Portland Head Light Tour Bus Rental — WAYGGO Charters"
 seoDescription: "Book a Portland Head Light tour bus rental for your group — a historic lighthouse and Fort Williams Park in Cape Elizabeth, vehicle and driver included."
 
 heroImageAlt: "Portland Head Light tour bus rental"

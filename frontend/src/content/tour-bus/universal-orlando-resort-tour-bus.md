@@ -27,8 +27,8 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Universal Orlando Resort Tour Bus Rental — Cinematic Theme Park Adventure Journey — WAYGGO Charters"
-seoDescription: "Book a Universal Orlando Resort tour bus rental for your group — immersive theme parks, thrilling rides, and CityWalk entertainment in Orlando, vehicle and driver included."
+seoTitle: "Universal Orlando Resort Tour Bus Rental — WAYGGO Charters"
+seoDescription: "Book a Universal Orlando Resort tour bus rental — immersive theme parks, thrilling rides, and CityWalk entertainment in Orlando, vehicle and driver included."
 
 heroImageAlt: "Universal Orlando Resort tour bus rental"
 heroHeadingLine1: "Universal Orlando Resort"

@@ -27,8 +27,8 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Fisherman's Wharf Tour Bus Rental — Bayfront Seafood & Harbor Ride — WAYGGO Charters"
-seoDescription: "Book a Fisherman's Wharf tour bus rental for your group — Pier 39 sea lions, fresh seafood, and San Francisco's historic waterfront, vehicle and driver included."
+seoTitle: "Fisherman's Wharf Tour Bus Rental — WAYGGO Charters"
+seoDescription: "Book a Fisherman's Wharf tour bus rental — Pier 39 sea lions, fresh seafood, and San Francisco's historic waterfront, vehicle and driver included."
 
 heroImageAlt: "Fisherman's Wharf tour bus rental"
 heroHeadingLine1: "Fisherman's Wharf"

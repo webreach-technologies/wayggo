@@ -27,8 +27,8 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Cheaha State Park Tour Bus Rental — Summit Vista Explorer Ride — WAYGGO Charters"
-seoDescription: "Book a Cheaha State Park tour bus rental for your group — Alabama's highest peak, Bald Rock overlook, Cheaha Lake, and the Pinhoti Trail, vehicle and driver included."
+seoTitle: "Cheaha State Park Tour Bus Rental — WAYGGO Charters"
+seoDescription: "Book a Cheaha State Park tour bus rental — Alabama's highest peak, Bald Rock overlook, Cheaha Lake, and the Pinhoti Trail, vehicle and driver included."
 
 heroImageAlt: "Cheaha State Park tour bus rental"
 heroHeadingLine1: "Cheaha State Park"

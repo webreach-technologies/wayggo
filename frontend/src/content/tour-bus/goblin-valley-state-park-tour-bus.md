@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Goblin Valley State Park Tour Bus Rental — Valley of Stone Goblins Adventure — WAYGGO Charters"
+seoTitle: "Goblin Valley State Park Tour Bus Rental — WAYGGO Charters"
 seoDescription: "Book a Goblin Valley State Park tour bus rental for your group — one of Utah's distinctive desert destinations, vehicle and driver included."
 
 heroImageAlt: "Goblin Valley State Park tour bus rental"

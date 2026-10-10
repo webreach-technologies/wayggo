@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Weirs Beach Tour Bus Rental — Classic Beachfront Escape — WAYGGO Charters"
+seoTitle: "Weirs Beach Tour Bus Rental — WAYGGO Charters"
 seoDescription: "Book a Weirs Beach tour bus rental for your group — Lake Winnipesaukee waterfront and family-friendly recreation, vehicle and driver included."
 
 heroImageAlt: "Weirs Beach tour bus rental"

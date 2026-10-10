@@ -27,8 +27,8 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Rocky Mountain National Park Tour Bus Rental — Infinite Peaks Wilderness Journey — WAYGGO Charters"
-seoDescription: "Book a Rocky Mountain National Park tour bus rental for your group — Bear Lake, Trail Ridge Road, and soaring alpine peaks in the Colorado Rockies, vehicle and driver included."
+seoTitle: "Rocky Mountain National Park Tour Bus Rental — WAYGGO"
+seoDescription: "Book a Rocky Mountain National Park tour bus rental for your group — Bear Lake, Trail Ridge Road, and soaring alpine peaks in the Colorado Rockies."
 
 heroImageAlt: "Rocky Mountain National Park tour bus rental"
 heroHeadingLine1: "Rocky Mountain National Park"

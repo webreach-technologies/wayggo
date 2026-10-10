@@ -27,8 +27,8 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "New River Gorge National Park & Preserve Tour Bus Rental — Bridge & Gorge Wilderness Adventure — WAYGGO Charters"
-seoDescription: "Book a New River Gorge National Park & Preserve tour bus rental for your group — one of West Virginia's most memorable natural destinations, vehicle and driver included."
+seoTitle: "New River Gorge National Park & Preserve Tour Bus Rental"
+seoDescription: "Book a New River Gorge National Park & Preserve tour bus rental — one of West Virginia's most memorable natural destinations, vehicle and driver included."
 
 heroImageAlt: "New River Gorge National Park & Preserve tour bus rental"
 heroHeadingLine1: "New River Gorge National Park"

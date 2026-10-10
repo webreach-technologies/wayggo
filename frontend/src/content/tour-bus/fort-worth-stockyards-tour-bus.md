@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Fort Worth Stockyards Tour Bus Rental — Cowboy Heritage Roundup — WAYGGO Charters"
+seoTitle: "Fort Worth Stockyards Tour Bus Rental — WAYGGO Charters"
 seoDescription: "Book a Fort Worth Stockyards tour bus rental for your group — Texas's Western heritage and culture, vehicle and driver included."
 
 heroImageAlt: "Fort Worth Stockyards tour bus rental"

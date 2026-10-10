@@ -27,8 +27,8 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Brandywine Creek State Park Tour Bus Rental — Brandywine Valley Nature Discovery Ride — WAYGGO Charters"
-seoDescription: "Book a Brandywine Creek State Park tour bus rental for your group — scenic trails, meadows, and creek views at Delaware's first state park, vehicle and driver included."
+seoTitle: "Brandywine Creek State Park Tour Bus Rental — WAYGGO"
+seoDescription: "Book a Brandywine Creek State Park tour bus rental — scenic trails, meadows, and creek views at Delaware's first state park, vehicle and driver included."
 
 heroImageAlt: "Brandywine Creek State Park tour bus rental"
 heroHeadingLine1: "Brandywine Creek State Park"

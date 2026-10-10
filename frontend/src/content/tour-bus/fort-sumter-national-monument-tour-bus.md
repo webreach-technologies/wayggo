@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Fort Sumter National Monument Tour Bus Rental — Where the Civil War Began — WAYGGO Charters"
+seoTitle: "Fort Sumter National Monument Tour Bus Rental — WAYGGO"
 seoDescription: "Book a Fort Sumter National Monument tour bus rental for your group — a significant Civil War landmark in Charleston Harbor, vehicle and driver included."
 
 heroImageAlt: "Fort Sumter National Monument tour bus rental"

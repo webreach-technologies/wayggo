@@ -27,8 +27,8 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Delaware Children's Museum Riverfront Tour Bus Rental — Interactive STEAM Discovery Journey — WAYGGO Charters"
-seoDescription: "Book a Delaware Children's Museum Riverfront tour bus rental for your group — hands-on STEAM exhibits along Wilmington's Christina River, vehicle and driver included."
+seoTitle: "Delaware Children's Museum Riverfront Tour Bus Rental"
+seoDescription: "Book a Delaware Children's Museum Riverfront tour bus rental — hands-on STEAM exhibits along Wilmington's Christina River, vehicle and driver included."
 
 heroImageAlt: "Delaware Children's Museum Riverfront tour bus rental"
 heroHeadingLine1: "Delaware Children's Museum"

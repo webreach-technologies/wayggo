@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Franconia Notch State Park Tour Bus Rental — Mountain Pass Discovery — WAYGGO Charters"
+seoTitle: "Franconia Notch State Park Tour Bus Rental — WAYGGO Charters"
 seoDescription: "Book a Franconia Notch State Park tour bus rental for your group — dramatic mountain scenery and forests, vehicle and driver included."
 
 heroImageAlt: "Franconia Notch State Park tour bus rental"

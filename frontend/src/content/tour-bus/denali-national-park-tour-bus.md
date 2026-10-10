@@ -27,8 +27,8 @@ included:
   - "Airport transfers"
   - "Hotel pickups daily"
 
-seoTitle: "Denali National Park & Preserve Tour Bus Rental — Alpine Frontier Expedition — WAYGGO Charters"
-seoDescription: "Book a Denali National Park & Preserve tour bus rental for your group — North America's tallest peak, the Denali Park Road, and Alaska's iconic wildlife, vehicle and driver included."
+seoTitle: "Denali National Park & Preserve Tour Bus Rental — WAYGGO"
+seoDescription: "Book a Denali National Park & Preserve tour bus rental for your group — North America's tallest peak, the Denali Park Road, and Alaska's iconic wildlife."
 
 heroImageAlt: "Denali National Park & Preserve tour bus rental"
 heroHeadingLine1: "Denali National Park & Preserve"

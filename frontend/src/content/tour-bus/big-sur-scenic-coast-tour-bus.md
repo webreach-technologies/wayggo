@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickups daily"
 
-seoTitle: "Big Sur Scenic Coast Tour Bus Rental — Pacific Cliffside Explorer Ride — WAYGGO Charters"
+seoTitle: "Big Sur Scenic Coast Tour Bus Rental — WAYGGO Charters"
 seoDescription: "Book a Big Sur Scenic Coast tour bus rental for your group — Bixby Bridge, McWay Falls, and the legendary Highway 1 drive, vehicle and driver included."
 
 heroImageAlt: "Big Sur Scenic Coast tour bus rental"

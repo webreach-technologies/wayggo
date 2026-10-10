@@ -27,8 +27,8 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Durango & Silverton Tour Bus Rental — Historic Steam Railway Heritage Journey — WAYGGO Charters"
-seoDescription: "Book a Durango & Silverton tour bus rental for your group — the historic narrow gauge steam railroad through Colorado's San Juan Mountains, vehicle and driver included."
+seoTitle: "Durango & Silverton Tour Bus Rental — WAYGGO Charters"
+seoDescription: "Book a Durango & Silverton tour bus rental — the historic narrow gauge steam railroad through Colorado's San Juan Mountains, vehicle and driver included."
 
 heroImageAlt: "Durango & Silverton Historic District tour bus rental"
 heroHeadingLine1: "Durango & Silverton"

@@ -19,10 +19,11 @@ const GH_PAGES_REPO = "wayggo";
 export default defineConfig({
   // site: "https://wayggo.com", // domain not confirmed yet — set this once it is
   site: isGhPagesStaging ? `https://${GH_PAGES_OWNER}.github.io` : undefined,
-  // Canonical URLs, the sitemap, and Astro.url all resolve without a trailing
-  // slash (e.g. /about, not /about/) to match this setting.
   base: isGhPagesStaging ? `/${GH_PAGES_REPO}` : '/',
-  // trailingSlash: "never",
+  // Canonical URLs, the sitemap, internal links (see withBase() in
+  // src/lib/url.ts), and Astro.url all end in a trailing slash (e.g. /about/,
+  // not /about) to match this setting.
+  trailingSlash: "always",
 
   vite: {
     plugins: [tailwindcss()],
@@ -35,8 +36,7 @@ export default defineConfig({
     react(),
     // Portal pages are a login-gated dashboard with mock data — excluded from
     // the public sitemap, along with the noindex'd tour-bus-request page.
-    // Matches "/portal" itself and any "/portal/..." sub-path (not just
-    // "/portal/", which trailingSlash:"never" means the index page no longer has).
+    // Matches "/portal/" itself and any "/portal/..." sub-path.
     //
     // Every /tour-bus bucket (all / country / country+state) is indexable on
     // its own page 1 — /tour-bus, /tour-bus/usa, /tour-bus/usa/ny, and

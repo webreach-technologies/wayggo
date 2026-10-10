@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Gathering Place Tour Bus Rental — Gather, Play & Explore Adventure — WAYGGO Charters"
+seoTitle: "Gathering Place Tour Bus Rental — WAYGGO Charters"
 seoDescription: "Book a Gathering Place tour bus rental for your group — nature, recreation, and art along the Tulsa riverfront, vehicle and driver included."
 
 heroImageAlt: "Gathering Place tour bus rental"

@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Carhenge Tour Bus Rental — Automotive Art on the Prairie — WAYGGO Charters"
+seoTitle: "Carhenge Tour Bus Rental — WAYGGO Charters"
 seoDescription: "Book a Carhenge tour bus rental for your group — unusual automotive sculptures on the Nebraska prairie, vehicle and driver included."
 
 heroImageAlt: "Carhenge tour bus rental"

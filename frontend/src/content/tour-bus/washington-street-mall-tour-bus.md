@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Washington Street Mall Tour Bus Rental — Pedestrian Promenade Escape — WAYGGO Charters"
+seoTitle: "Washington Street Mall Tour Bus Rental — WAYGGO Charters"
 seoDescription: "Book a Washington Street Mall tour bus rental for your group — pedestrian-friendly shopping and dining in the heart of Cape May, vehicle and driver included."
 
 heroImageAlt: "Washington Street Mall tour bus rental"

@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Snoqualmie Falls Tour Bus Rental — Northwest Waterfall Wonder — WAYGGO Charters"
+seoTitle: "Snoqualmie Falls Tour Bus Rental — WAYGGO Charters"
 seoDescription: "Book a Snoqualmie Falls tour bus rental for your group — one of Washington's most memorable natural attractions, vehicle and driver included."
 
 heroImageAlt: "Snoqualmie Falls tour bus rental"

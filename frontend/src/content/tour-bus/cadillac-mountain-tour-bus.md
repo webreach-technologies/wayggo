@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Cadillac Mountain Tour Bus Rental — Sunrise Peak Explorer — WAYGGO Charters"
+seoTitle: "Cadillac Mountain Tour Bus Rental — WAYGGO Charters"
 seoDescription: "Book a Cadillac Mountain tour bus rental for your group — expansive coastal views and sunrise scenery on Mount Desert Island, vehicle and driver included."
 
 heroImageAlt: "Cadillac Mountain tour bus rental"

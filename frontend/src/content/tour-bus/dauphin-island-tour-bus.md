@@ -27,8 +27,8 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Dauphin Island Tour Bus Rental — Pelican Paradise Adventure — WAYGGO Charters"
-seoDescription: "Book a Dauphin Island tour bus rental for your group — Fort Gaines, the Alabama Aquarium, the Audubon Bird Sanctuary, and Gulf Coast beaches, vehicle and driver included."
+seoTitle: "Dauphin Island Tour Bus Rental — WAYGGO Charters"
+seoDescription: "Book a Dauphin Island tour bus rental — Fort Gaines, the Alabama Aquarium, the Audubon Bird Sanctuary, and Gulf Coast beaches, vehicle and driver included."
 
 heroImageAlt: "Dauphin Island tour bus rental"
 heroHeadingLine1: "Dauphin Island"

@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Arbor Day Farm Tour Bus Rental — Roots of Conservation Tour — WAYGGO Charters"
+seoTitle: "Arbor Day Farm Tour Bus Rental — WAYGGO Charters"
 seoDescription: "Book an Arbor Day Farm tour bus rental for your group — trees and gardens in Nebraska City, vehicle and driver included."
 
 heroImageAlt: "Arbor Day Farm tour bus rental"

@@ -27,8 +27,8 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Mystic Seaport Museum Tour Bus Rental — Maritime Heritage Seaport Journey — WAYGGO Charters"
-seoDescription: "Book a Mystic Seaport Museum tour bus rental for your group — historic ships and a recreated maritime village in Mystic, Connecticut, vehicle and driver included."
+seoTitle: "Mystic Seaport Museum Tour Bus Rental — WAYGGO Charters"
+seoDescription: "Book a Mystic Seaport Museum tour bus rental — historic ships and a recreated maritime village in Mystic, Connecticut, vehicle and driver included."
 
 heroImageAlt: "Mystic Seaport Museum tour bus rental"
 heroHeadingLine1: "Mystic Seaport Museum"

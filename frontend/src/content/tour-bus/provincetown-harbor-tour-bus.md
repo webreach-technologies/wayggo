@@ -27,8 +27,8 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Provincetown Harbor Tour Bus Rental — Harbor at Land's End Escape — WAYGGO Charters"
-seoDescription: "Book a Provincetown Harbor tour bus rental for your group — a scenic Cape Cod destination for waterfront views, maritime character, and local culture, vehicle and driver included."
+seoTitle: "Provincetown Harbor Tour Bus Rental — WAYGGO Charters"
+seoDescription: "Book a Provincetown Harbor tour bus rental for your group — a scenic Cape Cod destination for waterfront views, maritime character, and local culture."
 
 heroImageAlt: "Provincetown Harbor tour bus rental"
 heroHeadingLine1: "Provincetown Harbor"

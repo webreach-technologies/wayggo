@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Woodstock Village Historic District Tour Bus Rental — Classic New England Village Escape — WAYGGO Charters"
+seoTitle: "Woodstock Village Historic District Tour Bus Rental — WAYGGO"
 seoDescription: "Book a Woodstock Village Historic District tour bus rental for your group — one of Vermont's memorable historic communities, vehicle and driver included."
 
 heroImageAlt: "Woodstock Village Historic District tour bus rental"

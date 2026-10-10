@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Flume Gorge Tour Bus Rental — Gorge of Granite Wonders — WAYGGO Charters"
+seoTitle: "Flume Gorge Tour Bus Rental — WAYGGO Charters"
 seoDescription: "Book a Flume Gorge tour bus rental for your group — dramatic granite walls and waterfalls in the White Mountains, vehicle and driver included."
 
 heroImageAlt: "Flume Gorge tour bus rental"

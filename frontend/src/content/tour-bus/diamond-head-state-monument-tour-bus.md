@@ -27,8 +27,8 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Diamond Head State Monument Tour Bus Rental — Volcanic Crater Summit Adventure Journey — WAYGGO Charters"
-seoDescription: "Book a Diamond Head State Monument tour bus rental for your group — a volcanic crater hike with sweeping views of Waikiki and Honolulu, vehicle and driver included."
+seoTitle: "Diamond Head State Monument Tour Bus Rental — WAYGGO"
+seoDescription: "Book a Diamond Head State Monument tour bus rental — a volcanic crater hike with sweeping views of Waikiki and Honolulu, vehicle and driver included."
 
 heroImageAlt: "Diamond Head State Monument tour bus rental"
 heroHeadingLine1: "Diamond Head"

@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Nebraska State Capitol Tour Bus Rental — Capitol on the Plains Explorer — WAYGGO Charters"
+seoTitle: "Nebraska State Capitol Tour Bus Rental — WAYGGO Charters"
 seoDescription: "Book a Nebraska State Capitol tour bus rental for your group — distinctive architecture and government history in Lincoln, vehicle and driver included."
 
 heroImageAlt: "Nebraska State Capitol tour bus rental"

@@ -88,6 +88,21 @@ const faqs = [
   { q: "What happens after I submit the form?", a: "The WAYGGO team reviews the information provided and responds with the next steps for the transportation request.\nDepending on the itinerary, this may involve clarifying requirements, reviewing vehicle options, coordinating transportation availability, and preparing a proposal." },
   { q: "Is requesting a quote a commitment?", a: "A quote request is an inquiry and does not by itself constitute a confirmed transportation booking.\nA booking becomes applicable when the relevant transportation arrangement has been confirmed under the applicable terms." },
 ];
+
+// Mirrors the visible FAQ section below — answers separate paragraphs with
+// a line break for display, flattened to a single string here.
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: faqs.map((faq) => ({
+    "@type": "Question",
+    name: faq.q,
+    acceptedAnswer: {
+      "@type": "Answer",
+      text: faq.a.split("\n").join(" "),
+    },
+  })),
+};
 ---
 
 <BaseLayout
@@ -96,6 +111,7 @@ const faqs = [
   breadcrumbs={[{ name: "Contact", path: "/contact" }]}
 >
   <script is:inline type="application/ld+json" set:html={JSON.stringify(contactPageSchema)} />
+  <script is:inline type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
 
   <!-- Hero -->
   <PageHero

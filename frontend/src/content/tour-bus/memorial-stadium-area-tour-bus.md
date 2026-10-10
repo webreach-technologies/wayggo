@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Memorial Stadium Area Tour Bus Rental — Game Day Spirit Journey — WAYGGO Charters"
+seoTitle: "Memorial Stadium Area Tour Bus Rental — WAYGGO Charters"
 seoDescription: "Book a Memorial Stadium Area tour bus rental for your group — college football atmosphere and campus traditions in Lincoln, vehicle and driver included."
 
 heroImageAlt: "Memorial Stadium Area tour bus rental"

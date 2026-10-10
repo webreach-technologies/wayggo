@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Bethany Beach Tour Bus Rental — Atlantic Beach Serenity Journey — WAYGGO Charters"
+seoTitle: "Bethany Beach Tour Bus Rental — WAYGGO Charters"
 seoDescription: "Book a Bethany Beach tour bus rental for your group — sandy shoreline, an oceanfront boardwalk, and relaxed Delaware coastal charm, vehicle and driver included."
 
 heroImageAlt: "Bethany Beach tour bus rental"

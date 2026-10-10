@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Theodore Roosevelt National Park (South Unit) Tour Bus Rental — Badlands of Roosevelt Adventure — WAYGGO Charters"
+seoTitle: "Theodore Roosevelt Park (South Unit) Tour Bus Rental"
 seoDescription: "Book a Theodore Roosevelt National Park tour bus rental for your group — dramatic badlands and wildlife in western North Dakota, vehicle and driver included."
 
 heroImageAlt: "Theodore Roosevelt National Park (South Unit) tour bus rental"

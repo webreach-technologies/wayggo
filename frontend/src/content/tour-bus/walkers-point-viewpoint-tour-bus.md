@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Walker's Point Viewpoint Tour Bus Rental — Presidential Coastline Discovery — WAYGGO Charters"
+seoTitle: "Walker's Point Viewpoint Tour Bus Rental — WAYGGO Charters"
 seoDescription: "Book a Walker's Point Viewpoint tour bus rental for your group — scenic Atlantic coastline and local history near Kennebunkport, vehicle and driver included."
 
 heroImageAlt: "Walker's Point Viewpoint tour bus rental"

@@ -27,8 +27,8 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Nemours Estate Tour Bus Rental — French Estate Garden Heritage Journey — WAYGGO Charters"
-seoDescription: "Book a Nemours Estate tour bus rental for your group — a French-inspired mansion and magnificent formal gardens in Wilmington, Delaware, vehicle and driver included."
+seoTitle: "Nemours Estate Tour Bus Rental — WAYGGO Charters"
+seoDescription: "Book a Nemours Estate tour bus rental — a French-inspired mansion and magnificent formal gardens in Wilmington, Delaware, vehicle and driver included."
 
 heroImageAlt: "Nemours Estate tour bus rental"
 heroHeadingLine1: "Nemours Estate"

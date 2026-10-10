@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Makoshika State Park Tour Bus Rental — Badlands of the West Adventure — WAYGGO Charters"
+seoTitle: "Makoshika State Park Tour Bus Rental — WAYGGO Charters"
 seoDescription: "Book a Makoshika State Park tour bus rental for your group — rugged badlands and geological formations, vehicle and driver included."
 
 heroImageAlt: "Makoshika State Park tour bus rental"

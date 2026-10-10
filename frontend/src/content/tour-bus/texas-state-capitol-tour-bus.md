@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Texas State Capitol Tour Bus Rental — Lone Star Capitol Heritage Tour — WAYGGO Charters"
+seoTitle: "Texas State Capitol Tour Bus Rental — WAYGGO Charters"
 seoDescription: "Book a Texas State Capitol tour bus rental for your group — one of Austin's most important historical and governmental landmarks, vehicle and driver included."
 
 heroImageAlt: "Texas State Capitol tour bus rental"

@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Deception Pass State Park Tour Bus Rental — Bridge Between the Waters Journey — WAYGGO Charters"
+seoTitle: "Deception Pass State Park Tour Bus Rental — WAYGGO Charters"
 seoDescription: "Book a Deception Pass State Park tour bus rental for your group — one of Washington's most memorable coastal destinations, vehicle and driver included."
 
 heroImageAlt: "Deception Pass State Park tour bus rental"

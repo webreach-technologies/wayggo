@@ -27,8 +27,8 @@ included:
   - "Airport transfers"
   - "Hotel pickups daily"
 
-seoTitle: "Lake Powell Tour Bus Rental — Canyon Lake Explorer Ride — WAYGGO Charters"
-seoDescription: "Book a Lake Powell tour bus rental for your group — boating, sandstone canyon scenery, and Wahweap Marina on the Arizona-Utah border, vehicle and driver included."
+seoTitle: "Lake Powell Tour Bus Rental — WAYGGO Charters"
+seoDescription: "Book a Lake Powell tour bus rental — boating, sandstone canyon scenery, and Wahweap Marina on the Arizona-Utah border, vehicle and driver included."
 
 heroImageAlt: "Lake Powell tour bus rental"
 heroHeadingLine1: "Lake Powell"

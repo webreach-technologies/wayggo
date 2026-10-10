@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Botanica Tour Bus Rental — Floral Gardens Butterfly Bloom Escape Experience — WAYGGO Charters"
+seoTitle: "Botanica Tour Bus Rental — WAYGGO Charters"
 seoDescription: "Book a Botanica tour bus rental for your group — themed gardens and colorful plant collections in the heart of Wichita, vehicle and driver included."
 
 heroImageAlt: "Botanica tour bus rental"

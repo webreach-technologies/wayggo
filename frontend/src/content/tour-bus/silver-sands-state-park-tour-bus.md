@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Silver Sands State Park Tour Bus Rental — Silver Shoreline Discovery Ride — WAYGGO Charters"
+seoTitle: "Silver Sands State Park Tour Bus Rental — WAYGGO Charters"
 seoDescription: "Book a Silver Sands State Park tour bus rental for your group — sandy beaches and Charles Island views in Milford, Connecticut, vehicle and driver included."
 
 heroImageAlt: "Silver Sands State Park tour bus rental"

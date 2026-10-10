@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Hersheypark Tour Bus Rental — Sweet Thrills Adventure — WAYGGO Charters"
+seoTitle: "Hersheypark Tour Bus Rental — WAYGGO Charters"
 seoDescription: "Book a Hersheypark tour bus rental for your group — Pennsylvania's best-known family attraction, vehicle and driver included."
 
 heroImageAlt: "Hersheypark tour bus rental"

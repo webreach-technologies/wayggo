@@ -27,8 +27,8 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Alyeska Resort & Aerial Tram Tour Bus Rental — Sky Tram Summit Experience — WAYGGO Charters"
-seoDescription: "Book an Alyeska Resort & Aerial Tram tour bus rental for your group — panoramic Mount Alyeska summit views over Turnagain Arm in Girdwood, Alaska, vehicle and driver included."
+seoTitle: "Alyeska Resort & Aerial Tram Tour Bus Rental — WAYGGO"
+seoDescription: "Book an Alyeska Resort & Aerial Tram tour bus rental — panoramic Mount Alyeska summit views over Turnagain Arm in Girdwood, Alaska, vehicle and driver included."
 
 heroImageAlt: "Alyeska Resort & Aerial Tram tour bus rental"
 heroHeadingLine1: "Alyeska Resort & Aerial Tram"

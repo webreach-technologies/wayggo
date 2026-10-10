@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Waterfront Park Tour Bus Rental — Lakefront Leisure Discovery — WAYGGO Charters"
+seoTitle: "Waterfront Park, VT Tour Bus Rental — WAYGGO Charters"
 seoDescription: "Book a Waterfront Park tour bus rental for your group — one of Burlington's scenic outdoor destinations, vehicle and driver included."
 
 heroImageAlt: "Waterfront Park tour bus rental"

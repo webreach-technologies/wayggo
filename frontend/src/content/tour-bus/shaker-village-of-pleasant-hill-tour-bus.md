@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Shaker Village of Pleasant Hill Tour Bus Rental — Historic Shaker Community Living Heritage Experience — WAYGGO Charters"
+seoTitle: "Shaker Village of Pleasant Hill Tour Bus Rental — WAYGGO"
 seoDescription: "Book a Shaker Village of Pleasant Hill tour bus rental for your group — preserved historic buildings and gardens near Harrodsburg, vehicle and driver included."
 
 heroImageAlt: "Shaker Village of Pleasant Hill tour bus rental"

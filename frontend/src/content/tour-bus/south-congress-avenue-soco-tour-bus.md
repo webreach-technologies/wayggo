@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "South Congress Avenue (SoCo) Tour Bus Rental — South Congress Urban Vibes — WAYGGO Charters"
+seoTitle: "South Congress Avenue (SoCo) Tour Bus Rental — WAYGGO"
 seoDescription: "Book a South Congress Avenue tour bus rental for your group — one of Austin's most popular shopping and entertainment areas, vehicle and driver included."
 
 heroImageAlt: "South Congress Avenue (SoCo) tour bus rental"

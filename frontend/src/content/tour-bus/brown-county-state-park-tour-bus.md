@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Brown County State Park Tour Bus Rental — Rolling Hills Forest Scenic Escape Experience — WAYGGO Charters"
+seoTitle: "Brown County State Park Tour Bus Rental — WAYGGO Charters"
 seoDescription: "Book a Brown County State Park tour bus rental for your group — forested hills and scenic overlooks near Nashville, Indiana, vehicle and driver included."
 
 heroImageAlt: "Brown County State Park tour bus rental"

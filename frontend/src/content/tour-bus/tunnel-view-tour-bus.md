@@ -27,8 +27,8 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Tunnel View Tour Bus Rental — Yosemite Grand Reveal Viewpoint Ride — WAYGGO Charters"
-seoDescription: "Book a Tunnel View tour bus rental for your group — Yosemite's most iconic overlook featuring El Capitan, Half Dome, and Bridalveil Fall, vehicle and driver included."
+seoTitle: "Tunnel View Tour Bus Rental — WAYGGO Charters"
+seoDescription: "Book a Tunnel View tour bus rental — Yosemite's most iconic overlook featuring El Capitan, Half Dome, and Bridalveil Fall, vehicle and driver included."
 
 heroImageAlt: "Tunnel View tour bus rental"
 heroHeadingLine1: "Tunnel View"

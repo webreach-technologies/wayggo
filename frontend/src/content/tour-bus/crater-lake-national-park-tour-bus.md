@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Crater Lake National Park Tour Bus Rental — Lake of Deep Blue Wonders — WAYGGO Charters"
+seoTitle: "Crater Lake National Park Tour Bus Rental — WAYGGO Charters"
 seoDescription: "Book a Crater Lake National Park tour bus rental for your group — extraordinary volcanic scenery and deep blue lake views, vehicle and driver included."
 
 heroImageAlt: "Crater Lake National Park tour bus rental"

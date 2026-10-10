@@ -27,8 +27,8 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Portland Japanese Garden Tour Bus Rental — Zen Gardens of Portland — WAYGGO Charters"
-seoDescription: "Book a Portland Japanese Garden tour bus rental for your group — beautiful landscapes and Japanese culture in the hills of Portland, vehicle and driver included."
+seoTitle: "Portland Japanese Garden Tour Bus Rental — WAYGGO Charters"
+seoDescription: "Book a Portland Japanese Garden tour bus rental — beautiful landscapes and Japanese culture in the hills of Portland, vehicle and driver included."
 
 heroImageAlt: "Portland Japanese Garden tour bus rental"
 heroHeadingLine1: "Portland Japanese"

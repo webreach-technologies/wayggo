@@ -27,8 +27,8 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Polynesian Cultural Center Tour Bus Rental — Tropical Heritage Trail Ride — WAYGGO Charters"
-seoDescription: "Book a Polynesian Cultural Center tour bus rental for your group — immersive villages, cultural demonstrations, and music on Oʻahu's North Shore, vehicle and driver included."
+seoTitle: "Polynesian Cultural Center Tour Bus Rental — WAYGGO Charters"
+seoDescription: "Book a Polynesian Cultural Center tour bus rental — immersive villages, cultural demonstrations, and music on Oʻahu's North Shore, vehicle and driver included."
 
 heroImageAlt: "Polynesian Cultural Center tour bus rental"
 heroHeadingLine1: "Polynesian Cultural Center"

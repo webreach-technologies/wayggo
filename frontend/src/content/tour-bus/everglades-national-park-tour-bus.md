@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Everglades National Park Tour Bus Rental — Wetlands Ecosystem Discovery Journey — WAYGGO Charters"
+seoTitle: "Everglades National Park Tour Bus Rental — WAYGGO Charters"
 seoDescription: "Book an Everglades National Park tour bus rental for your group — wetlands, wildlife, and the River of Grass in South Florida, vehicle and driver included."
 
 heroImageAlt: "Everglades National Park tour bus rental"

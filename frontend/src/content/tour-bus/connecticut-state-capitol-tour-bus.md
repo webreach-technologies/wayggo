@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Connecticut State Capitol Tour Bus Rental — Civic Heritage Capitol Journey — WAYGGO Charters"
+seoTitle: "Connecticut State Capitol Tour Bus Rental — WAYGGO Charters"
 seoDescription: "Book a Connecticut State Capitol tour bus rental for your group — stunning Gothic architecture and a gold-leaf dome in Hartford, vehicle and driver included."
 
 heroImageAlt: "Connecticut State Capitol tour bus rental"

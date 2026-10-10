@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Nā Pali Coast Tour Bus Rental — Cliffside Ocean Majesty Expedition Journey — WAYGGO Charters"
+seoTitle: "Nā Pali Coast Tour Bus Rental — WAYGGO Charters"
 seoDescription: "Book a Nā Pali Coast tour bus rental for your group — towering cliffs, rugged valleys, and spectacular viewpoints on Kauaʻi, vehicle and driver included."
 
 heroImageAlt: "Nā Pali Coast State Wilderness Park tour bus rental"

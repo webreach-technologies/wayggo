@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Snow Canyon State Park Tour Bus Rental — Red Rock Desert Escape — WAYGGO Charters"
+seoTitle: "Snow Canyon State Park Tour Bus Rental — WAYGGO Charters"
 seoDescription: "Book a Snow Canyon State Park tour bus rental for your group — one of southern Utah's memorable outdoor destinations, vehicle and driver included."
 
 heroImageAlt: "Snow Canyon State Park tour bus rental"

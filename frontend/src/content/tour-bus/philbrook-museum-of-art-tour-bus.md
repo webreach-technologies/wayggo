@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Philbrook Museum of Art Tour Bus Rental — Art & Elegance Discovery — WAYGGO Charters"
+seoTitle: "Philbrook Museum of Art Tour Bus Rental — WAYGGO Charters"
 seoDescription: "Book a Philbrook Museum of Art tour bus rental for your group — art, architecture, and gardens in Tulsa, vehicle and driver included."
 
 heroImageAlt: "Philbrook Museum of Art tour bus rental"

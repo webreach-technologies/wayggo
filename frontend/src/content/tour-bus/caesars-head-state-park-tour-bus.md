@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Caesars Head State Park Tour Bus Rental — Mountain Rim Scenic Adventure — WAYGGO Charters"
+seoTitle: "Caesars Head State Park Tour Bus Rental — WAYGGO Charters"
 seoDescription: "Book a Caesars Head State Park tour bus rental for your group — South Carolina's mountain scenery and outdoor attractions, vehicle and driver included."
 
 heroImageAlt: "Caesars Head State Park tour bus rental"

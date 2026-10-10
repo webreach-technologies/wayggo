@@ -16,6 +16,29 @@ export const caProvinces = [
   "AB", "BC", "MB", "NB", "NL", "NS", "ON", "PE", "QC", "SK", "NT", "NU", "YT",
 ];
 
+// Full names for the codes above — used in SEO titles, descriptions, and
+// breadcrumbs, where "New York" matches what people search for and "NY" doesn't.
+const stateNames: Record<string, string> = {
+  AL: "Alabama", AK: "Alaska", AZ: "Arizona", AR: "Arkansas", CA: "California",
+  CO: "Colorado", CT: "Connecticut", DE: "Delaware", FL: "Florida", GA: "Georgia",
+  HI: "Hawaii", ID: "Idaho", IL: "Illinois", IN: "Indiana", IA: "Iowa",
+  KS: "Kansas", KY: "Kentucky", LA: "Louisiana", ME: "Maine", MD: "Maryland",
+  MA: "Massachusetts", MI: "Michigan", MN: "Minnesota", MS: "Mississippi", MO: "Missouri",
+  MT: "Montana", NE: "Nebraska", NV: "Nevada", NH: "New Hampshire", NJ: "New Jersey",
+  NM: "New Mexico", NY: "New York", NC: "North Carolina", ND: "North Dakota", OH: "Ohio",
+  OK: "Oklahoma", OR: "Oregon", PA: "Pennsylvania", RI: "Rhode Island", SC: "South Carolina",
+  SD: "South Dakota", TN: "Tennessee", TX: "Texas", UT: "Utah", VT: "Vermont",
+  VA: "Virginia", WA: "Washington", WV: "West Virginia", WI: "Wisconsin", WY: "Wyoming",
+  AB: "Alberta", BC: "British Columbia", MB: "Manitoba", NB: "New Brunswick",
+  NL: "Newfoundland and Labrador", NS: "Nova Scotia", ON: "Ontario", PE: "Prince Edward Island",
+  QC: "Quebec", SK: "Saskatchewan", NT: "Northwest Territories", NU: "Nunavut", YT: "Yukon",
+};
+
+/** Full state/province name for a code, e.g. "NY" -> "New York". Falls back to the code. */
+export function stateName(code: string): string {
+  return stateNames[code] ?? code;
+}
+
 export interface CountryConfig {
   code: "USA" | "Canada";
   slug: string;
@@ -144,7 +167,7 @@ export function bucketSeo(bucket: Bucket, page: number, totalInBucket: number) {
 
   if (!bucket.country) {
     return {
-      title: `Group Tour Bus — WAYGGO Charters North America Ground Transportation${pageSuffix}`,
+      title: `Group Tour Bus — USA & Canada${pageSuffix} — WAYGGO Charters`,
       description:
         "Ready-to-book group tour bus itineraries for international travelers across the USA and Canada. Motorcoaches, buses, and vans included.",
       badge: `${totalInBucket} Ready-to-Book Tour Bus${plural(totalInBucket)}`,
@@ -152,14 +175,14 @@ export function bucketSeo(bucket: Bucket, page: number, totalInBucket: number) {
   }
   if (!bucket.state) {
     return {
-      title: `${bucket.country} Group Tour Bus — WAYGGO Charters${pageSuffix}`,
+      title: `${bucket.country} Group Tour Bus${pageSuffix} — WAYGGO Charters`,
       description: `Ready-to-book group tour bus itineraries in ${bucket.country} for international travelers. Motorcoaches, buses, and vans included.`,
       badge: `${totalInBucket} ${bucket.country} Tour Bus${plural(totalInBucket)}`,
     };
   }
   return {
-    title: `${bucket.country} · ${bucket.state} Group Tour Bus — WAYGGO Charters${pageSuffix}`,
-    description: `Ready-to-book group tour bus itineraries in ${bucket.state}, ${bucket.country} for international travelers. Motorcoaches, buses, and vans included.`,
+    title: `${stateName(bucket.state)} Group Tour Bus${pageSuffix} — WAYGGO Charters`,
+    description: `Ready-to-book group tour bus itineraries in ${stateName(bucket.state)}, ${bucket.country} for international travelers. Motorcoaches, buses, and vans included.`,
     badge: `${totalInBucket} ${bucket.country} · ${bucket.state} Tour Bus${plural(totalInBucket)}`,
   };
 }
@@ -170,7 +193,7 @@ export function bucketBreadcrumbs(bucket: Bucket): { name: string; path: string 
     const country = countries.find((c) => c.code === bucket.country)!;
     crumbs.push({ name: country.label, path: `/tour-bus/${country.slug}` });
     if (bucket.state) {
-      crumbs.push({ name: bucket.state, path: `/tour-bus/${country.slug}/${bucket.state.toLowerCase()}` });
+      crumbs.push({ name: stateName(bucket.state), path: `/tour-bus/${country.slug}/${bucket.state.toLowerCase()}` });
     }
   }
   return crumbs;

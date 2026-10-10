@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Eastern Promenade Tour Bus Rental — Bay View Promenade Journey — WAYGGO Charters"
+seoTitle: "Eastern Promenade Tour Bus Rental — WAYGGO Charters"
 seoDescription: "Book an Eastern Promenade tour bus rental for your group — scenic Casco Bay views and open green spaces in Portland, vehicle and driver included."
 
 heroImageAlt: "Eastern Promenade tour bus rental"

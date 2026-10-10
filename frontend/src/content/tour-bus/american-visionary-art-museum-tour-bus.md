@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "American Visionary Art Museum Tour Bus Rental — Creative Vision Experience — WAYGGO Charters"
+seoTitle: "American Visionary Art Museum Tour Bus Rental — WAYGGO"
 seoDescription: "Book an American Visionary Art Museum tour bus rental for your group — imaginative visionary artwork in Baltimore, vehicle and driver included."
 
 heroImageAlt: "American Visionary Art Museum tour bus rental"

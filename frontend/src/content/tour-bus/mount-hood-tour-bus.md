@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Mount Hood Tour Bus Rental — Majestic Peak Explorer — WAYGGO Charters"
+seoTitle: "Mount Hood Tour Bus Rental — WAYGGO Charters"
 seoDescription: "Book a Mount Hood tour bus rental for your group — spectacular mountain scenery and easy connections to the Columbia River Gorge, vehicle and driver included."
 
 heroImageAlt: "Mount Hood tour bus rental"

@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Knife River Indian Villages National Historic Site Tour Bus Rental — Ancient Villages Heritage Tour — WAYGGO Charters"
+seoTitle: "Knife River Indian Villages Historic Site Tour Bus Rental"
 seoDescription: "Book a Knife River Indian Villages tour bus rental for your group — Indigenous history and traditional village life, vehicle and driver included."
 
 heroImageAlt: "Knife River Indian Villages National Historic Site tour bus rental"

@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Bowen's Wharf Tour Bus Rental — Wharfside Coastal Charm — WAYGGO Charters"
+seoTitle: "Bowen's Wharf Tour Bus Rental — WAYGGO Charters"
 seoDescription: "Book a Bowen's Wharf tour bus rental for your group — Newport's waterfront atmosphere, shopping, dining, and scenic harbor views, vehicle and driver included."
 
 heroImageAlt: "Bowen's Wharf tour bus rental"

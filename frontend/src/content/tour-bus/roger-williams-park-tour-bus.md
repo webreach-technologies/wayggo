@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Roger Williams Park Tour Bus Rental — Urban Park Escape — WAYGGO Charters"
+seoTitle: "Roger Williams Park Tour Bus Rental — WAYGGO Charters"
 seoDescription: "Book a Roger Williams Park tour bus rental for your group — one of Providence's most popular outdoor destinations, vehicle and driver included."
 
 heroImageAlt: "Roger Williams Park tour bus rental"

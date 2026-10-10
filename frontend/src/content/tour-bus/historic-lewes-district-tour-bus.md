@@ -27,8 +27,8 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Historic Lewes District Tour Bus Rental — Colonial Coastal Heritage Journey — WAYGGO Charters"
-seoDescription: "Book a Historic Lewes District tour bus rental for your group — preserved colonial architecture, maritime museums, and Delaware Bay waterfront charm, vehicle and driver included."
+seoTitle: "Historic Lewes District Tour Bus Rental — WAYGGO Charters"
+seoDescription: "Book a Historic Lewes District tour bus rental for your group — preserved colonial architecture, maritime museums, and Delaware Bay waterfront charm."
 
 heroImageAlt: "Historic Lewes District tour bus rental"
 heroHeadingLine1: "Historic Lewes District"

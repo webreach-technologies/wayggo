@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Seneca Rocks Tour Bus Rental — Towering Rock Formations Adventure — WAYGGO Charters"
+seoTitle: "Seneca Rocks Tour Bus Rental — WAYGGO Charters"
 seoDescription: "Book a Seneca Rocks tour bus rental for your group — one of West Virginia's most memorable natural landmarks, vehicle and driver included."
 
 heroImageAlt: "Seneca Rocks tour bus rental"

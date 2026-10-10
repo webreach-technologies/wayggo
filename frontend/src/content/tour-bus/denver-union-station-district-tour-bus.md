@@ -27,8 +27,8 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Denver Union Station District Tour Bus Rental — Historic Rail District Discovery Ride — WAYGGO Charters"
-seoDescription: "Book a Denver Union Station District tour bus rental for your group — historic architecture, LoDo dining and shopping, and downtown Denver attractions, vehicle and driver included."
+seoTitle: "Denver Union Station District Tour Bus Rental — WAYGGO"
+seoDescription: "Book a Denver Union Station District tour bus rental for your group — historic architecture, LoDo dining and shopping, and downtown Denver attractions."
 
 heroImageAlt: "Denver Union Station District tour bus rental"
 heroHeadingLine1: "Denver Union Station District"

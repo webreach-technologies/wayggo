@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Alcatraz Island Tour Bus Rental — Prison Island Mystery Journey — WAYGGO Charters"
+seoTitle: "Alcatraz Island Tour Bus Rental — WAYGGO Charters"
 seoDescription: "Book an Alcatraz Island tour bus rental for your group — the infamous federal penitentiary and San Francisco Bay views, vehicle and driver included."
 
 heroImageAlt: "Alcatraz Island tour bus rental"

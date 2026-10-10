@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Yale University Art Gallery Tour Bus Rental — Fine Arts Masterpiece Journey — WAYGGO Charters"
+seoTitle: "Yale University Art Gallery Tour Bus Rental — WAYGGO"
 seoDescription: "Book a Yale University Art Gallery tour bus rental for your group — world-class art collections in New Haven, vehicle and driver included."
 
 heroImageAlt: "Yale University Art Gallery tour bus rental"

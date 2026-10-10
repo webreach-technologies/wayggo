@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Grandfather Mountain Tour Bus Rental — Mile-High Nature Escape — WAYGGO Charters"
+seoTitle: "Grandfather Mountain Tour Bus Rental — WAYGGO Charters"
 seoDescription: "Book a Grandfather Mountain tour bus rental for your group — dramatic scenery and wildlife in the Blue Ridge Mountains, vehicle and driver included."
 
 heroImageAlt: "Grandfather Mountain tour bus rental"

@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Jockey's Ridge State Park Tour Bus Rental — Dunes of the Outer Banks Adventure — WAYGGO Charters"
+seoTitle: "Jockey's Ridge State Park Tour Bus Rental — WAYGGO Charters"
 seoDescription: "Book a Jockey's Ridge State Park tour bus rental for your group — expansive sand dunes and coastal landscapes, vehicle and driver included."
 
 heroImageAlt: "Jockey's Ridge State Park tour bus rental"

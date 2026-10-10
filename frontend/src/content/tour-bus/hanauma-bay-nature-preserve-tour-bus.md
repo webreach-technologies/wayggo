@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Hanauma Bay Marine Life Discovery Tour Bus Rental — Coral Reef Snorkel Escape — WAYGGO Charters"
+seoTitle: "Hanauma Bay Marine Life Discovery Tour Bus Rental — WAYGGO"
 seoDescription: "Book a Hanauma Bay tour bus rental for your group — clear waters, coral reefs, and snorkeling on Oʻahu's southeastern coast, vehicle and driver included."
 
 heroImageAlt: "Hanauma Bay Nature Preserve tour bus rental"

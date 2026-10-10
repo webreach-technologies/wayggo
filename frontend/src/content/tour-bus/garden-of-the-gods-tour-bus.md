@@ -27,8 +27,8 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Garden of the Gods Tour Bus Rental — Timeless Sandstone Majesty Tour — WAYGGO Charters"
-seoDescription: "Book a Garden of the Gods tour bus rental for your group — towering red sandstone formations and breathtaking Pikes Peak views in Colorado Springs, vehicle and driver included."
+seoTitle: "Garden of the Gods Tour Bus Rental — WAYGGO Charters"
+seoDescription: "Book a Garden of the Gods tour bus rental for your group — towering red sandstone formations and breathtaking Pikes Peak views in Colorado Springs."
 
 heroImageAlt: "Garden of the Gods tour bus rental"
 heroHeadingLine1: "Garden of the Gods"

@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Legislative Hall Tour Bus Rental — State Capitol Heritage Journey — WAYGGO Charters"
+seoTitle: "Legislative Hall Tour Bus Rental — WAYGGO Charters"
 seoDescription: "Book a Legislative Hall tour bus rental for your group — Delaware's state capitol and legislative history in downtown Dover, vehicle and driver included."
 
 heroImageAlt: "Legislative Hall tour bus rental"

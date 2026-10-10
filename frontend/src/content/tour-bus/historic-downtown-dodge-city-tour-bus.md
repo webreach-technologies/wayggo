@@ -27,8 +27,8 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Historic Downtown Dodge City Tour Bus Rental — Cowboy Heritage Main Street Time Travel Experience — WAYGGO Charters"
-seoDescription: "Book a Historic Downtown Dodge City tour bus rental for your group — frontier heritage, shopping, and dining in Kansas's legendary cowtown, vehicle and driver included."
+seoTitle: "Historic Downtown Dodge City Tour Bus Rental — WAYGGO"
+seoDescription: "Book a Historic Downtown Dodge City tour bus rental — frontier heritage, shopping, and dining in Kansas's legendary cowtown, vehicle and driver included."
 
 heroImageAlt: "Historic Downtown Dodge City tour bus rental"
 heroHeadingLine1: "Historic Downtown"

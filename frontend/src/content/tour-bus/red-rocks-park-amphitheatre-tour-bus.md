@@ -27,8 +27,8 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Red Rocks Park & Amphitheatre Tour Bus Rental — Natural Concert Venue Discovery Journey — WAYGGO Charters"
-seoDescription: "Book a Red Rocks Park & Amphitheatre tour bus rental for your group — legendary concert venue, towering sandstone formations, and Denver views, vehicle and driver included."
+seoTitle: "Red Rocks Park & Amphitheatre Tour Bus Rental — WAYGGO"
+seoDescription: "Book a Red Rocks Park & Amphitheatre tour bus rental — legendary concert venue, towering sandstone formations, and Denver views, vehicle and driver included."
 
 heroImageAlt: "Red Rocks Park & Amphitheatre tour bus rental"
 heroHeadingLine1: "Red Rocks Park & Amphitheatre"

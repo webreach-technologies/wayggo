@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "St. Louis Cathedral Tour Bus Rental — Sacred Spires Heritage Tour — WAYGGO Charters"
+seoTitle: "St. Louis Cathedral Tour Bus Rental — WAYGGO Charters"
 seoDescription: "Book a St. Louis Cathedral tour bus rental for your group — iconic architecture and religious heritage beside Jackson Square, vehicle and driver included."
 
 heroImageAlt: "St. Louis Cathedral tour bus rental"

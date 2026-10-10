@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Corning Museum of Glass Tour Bus Rental — Art of Glass Innovation Tour — WAYGGO Charters"
+seoTitle: "Corning Museum of Glass Tour Bus Rental — WAYGGO Charters"
 seoDescription: "Book a Corning Museum of Glass tour bus rental for your group — remarkable glass collections and live demonstrations, vehicle and driver included."
 
 heroImageAlt: "Corning Museum of Glass tour bus rental"

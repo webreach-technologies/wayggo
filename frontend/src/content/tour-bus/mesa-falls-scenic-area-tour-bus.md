@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Mesa Falls Scenic Area Tour Bus Rental — Forest Cascades Hidden Vista Escape — WAYGGO Charters"
+seoTitle: "Mesa Falls Scenic Area Tour Bus Rental — WAYGGO Charters"
 seoDescription: "Book a Mesa Falls Scenic Area tour bus rental for your group — rushing waterfalls and forested canyon scenery in eastern Idaho, vehicle and driver included."
 
 heroImageAlt: "Mesa Falls Scenic Area tour bus rental"

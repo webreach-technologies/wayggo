@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "North Dakota Heritage Center & State Museum Tour Bus Rental — Prairie Heritage Explorer — WAYGGO Charters"
+seoTitle: "North Dakota Heritage Center & State Museum Tour Bus Rental"
 seoDescription: "Book a North Dakota Heritage Center & State Museum tour bus rental for your group — state history and culture in Bismarck, vehicle and driver included."
 
 heroImageAlt: "North Dakota Heritage Center & State Museum tour bus rental"

@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Coligny Beach Park Tour Bus Rental — Island Beachfront Getaway — WAYGGO Charters"
+seoTitle: "Coligny Beach Park Tour Bus Rental — WAYGGO Charters"
 seoDescription: "Book a Coligny Beach Park tour bus rental for your group — a popular Hilton Head Island beach destination, vehicle and driver included."
 
 heroImageAlt: "Coligny Beach Park tour bus rental"

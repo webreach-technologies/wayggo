@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Narragansett Town Beach Tour Bus Rental — Classic New England Beach Getaway — WAYGGO Charters"
+seoTitle: "Narragansett Town Beach Tour Bus Rental — WAYGGO Charters"
 seoDescription: "Book a Narragansett Town Beach tour bus rental for your group — Rhode Island's beautiful coastline and relaxing beach atmosphere, vehicle and driver included."
 
 heroImageAlt: "Narragansett Town Beach tour bus rental"

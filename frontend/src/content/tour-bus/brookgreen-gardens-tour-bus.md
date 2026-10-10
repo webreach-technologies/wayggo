@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Brookgreen Gardens Tour Bus Rental — Sculptures & Gardens by the Sea — WAYGGO Charters"
+seoTitle: "Brookgreen Gardens Tour Bus Rental — WAYGGO Charters"
 seoDescription: "Book a Brookgreen Gardens tour bus rental for your group — beautiful gardens, art, and Lowcountry scenery, vehicle and driver included."
 
 heroImageAlt: "Brookgreen Gardens tour bus rental"

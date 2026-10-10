@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Timberline Lodge Tour Bus Rental — Timberline Mountain Heritage — WAYGGO Charters"
+seoTitle: "Timberline Lodge Tour Bus Rental — WAYGGO Charters"
 seoDescription: "Book a Timberline Lodge tour bus rental for your group — a National Historic Landmark with alpine scenery on Mount Hood, vehicle and driver included."
 
 heroImageAlt: "Timberline Lodge tour bus rental"

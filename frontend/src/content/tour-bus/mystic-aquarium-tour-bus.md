@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Mystic Aquarium Tour Bus Rental — Marine Wonders Aquarium Journey — WAYGGO Charters"
+seoTitle: "Mystic Aquarium Tour Bus Rental — WAYGGO Charters"
 seoDescription: "Book a Mystic Aquarium tour bus rental for your group — beluga whales and marine exhibits in Mystic, Connecticut, vehicle and driver included."
 
 heroImageAlt: "Mystic Aquarium tour bus rental"

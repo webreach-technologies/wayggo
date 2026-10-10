@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Starved Rock State Park Tour Bus Rental — Canyon Waterfall Bluff Trails Escape — WAYGGO Charters"
+seoTitle: "Starved Rock State Park Tour Bus Rental — WAYGGO Charters"
 seoDescription: "Book a Starved Rock State Park tour bus rental for your group — sandstone canyons, waterfalls, and Illinois River scenery, vehicle and driver included."
 
 heroImageAlt: "Starved Rock State Park tour bus rental"

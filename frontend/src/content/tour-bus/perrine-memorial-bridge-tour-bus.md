@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Perrine Bridge Tour Bus Rental — High Desert Canyon Vista Tour — WAYGGO Charters"
+seoTitle: "Perrine Bridge Tour Bus Rental — WAYGGO Charters"
 seoDescription: "Book a Perrine Bridge tour bus rental for your group — sweeping Snake River Canyon views near Twin Falls, vehicle and driver included."
 
 heroImageAlt: "Perrine Memorial Bridge tour bus rental"

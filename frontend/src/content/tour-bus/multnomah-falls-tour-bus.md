@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Multnomah Falls Tour Bus Rental — Cascade of the Columbia Adventure — WAYGGO Charters"
+seoTitle: "Multnomah Falls Tour Bus Rental — WAYGGO Charters"
 seoDescription: "Book a Multnomah Falls tour bus rental for your group — dramatic waterfall scenery in the Columbia River Gorge, vehicle and driver included."
 
 heroImageAlt: "Multnomah Falls tour bus rental"

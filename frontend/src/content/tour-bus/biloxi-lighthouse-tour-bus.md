@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Biloxi Lighthouse Tour Bus Rental — Beacon of the Gulf Journey — WAYGGO Charters"
+seoTitle: "Biloxi Lighthouse Tour Bus Rental — WAYGGO Charters"
 seoDescription: "Book a Biloxi Lighthouse tour bus rental for your group — historic maritime heritage and distinctive architecture, vehicle and driver included."
 
 heroImageAlt: "Biloxi Lighthouse tour bus rental"

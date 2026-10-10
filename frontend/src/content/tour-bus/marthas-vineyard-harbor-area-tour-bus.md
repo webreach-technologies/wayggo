@@ -27,8 +27,8 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Martha's Vineyard Harbor Area Tour Bus Rental — Island Harbor Charm — WAYGGO Charters"
-seoDescription: "Book a Martha's Vineyard Harbor Area tour bus rental for your group — a beautiful Massachusetts destination for island scenery and waterfront communities, vehicle and driver included."
+seoTitle: "Martha's Vineyard Harbor Area Tour Bus Rental — WAYGGO"
+seoDescription: "Book a Martha's Vineyard Harbor Area tour bus rental for your group — a beautiful Massachusetts destination for island scenery and waterfront communities."
 
 heroImageAlt: "Martha's Vineyard Harbor Area tour bus rental"
 heroHeadingLine1: "Martha's Vineyard Harbor Area"

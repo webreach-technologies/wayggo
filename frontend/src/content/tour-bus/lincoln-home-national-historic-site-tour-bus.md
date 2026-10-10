@@ -27,8 +27,8 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Lincoln Home National Historic Site Tour Bus Rental — Presidential Heritage Neighborhood Walk Experience — WAYGGO Charters"
-seoDescription: "Book a Lincoln Home National Historic Site tour bus rental for your group — the preserved Lincoln family home and neighborhood in Springfield, vehicle and driver included."
+seoTitle: "Lincoln Home National Historic Site Tour Bus Rental — WAYGGO"
+seoDescription: "Book a Lincoln Home National Historic Site tour bus rental — the preserved Lincoln family home and neighborhood in Springfield, vehicle and driver included."
 
 heroImageAlt: "Lincoln Home National Historic Site tour bus rental"
 heroHeadingLine1: "Lincoln Home"

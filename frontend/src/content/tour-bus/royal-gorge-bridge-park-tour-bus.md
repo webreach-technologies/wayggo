@@ -27,8 +27,8 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Royal Gorge Bridge & Park Tour Bus Rental — Canyon Suspension Bridge Adventure Ride — WAYGGO Charters"
-seoDescription: "Book a Royal Gorge Bridge & Park tour bus rental for your group — a historic suspension bridge, scenic gondola, and breathtaking canyon views near Cañon City, vehicle and driver included."
+seoTitle: "Royal Gorge Bridge & Park Tour Bus Rental — WAYGGO Charters"
+seoDescription: "Book a Royal Gorge Bridge & Park tour bus rental for your group — a historic suspension bridge, scenic gondola, and breathtaking canyon views near Cañon City."
 
 heroImageAlt: "Royal Gorge Bridge & Park tour bus rental"
 heroHeadingLine1: "Royal Gorge Bridge & Park"

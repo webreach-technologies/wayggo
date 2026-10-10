@@ -27,8 +27,8 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Harpers Ferry National Historical Park Tour Bus Rental — Crossroads of American History — WAYGGO Charters"
-seoDescription: "Book a Harpers Ferry National Historical Park tour bus rental for your group — one of West Virginia's most memorable historic destinations, vehicle and driver included."
+seoTitle: "Harpers Ferry National Historical Park Tour Bus Rental"
+seoDescription: "Book a Harpers Ferry National Historical Park tour bus rental — one of West Virginia's most memorable historic destinations, vehicle and driver included."
 
 heroImageAlt: "Harpers Ferry National Historical Park tour bus rental"
 heroHeadingLine1: "Harpers Ferry"

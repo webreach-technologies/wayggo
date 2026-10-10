@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Waianapanapa State Park Tour Bus Rental — Black Sand Coastal Lava Escape Journey — WAYGGO Charters"
+seoTitle: "Waianapanapa State Park Tour Bus Rental — WAYGGO Charters"
 seoDescription: "Book a Waiʻānapanapa State Park tour bus rental for your group — black sand beach, sea caves, and volcanic coastal scenery on Maui, vehicle and driver included."
 
 heroImageAlt: "Waianapanapa State Park tour bus rental"

@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "San Diego Zoo Tour Bus Rental — Wildlife Safari Discovery Journey — WAYGGO Charters"
+seoTitle: "San Diego Zoo Tour Bus Rental — WAYGGO Charters"
 seoDescription: "Book a San Diego Zoo tour bus rental for your group — 12,000+ animals and pioneering naturalistic habitats in Balboa Park, vehicle and driver included."
 
 heroImageAlt: "San Diego Zoo tour bus rental"

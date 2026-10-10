@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Traverse City Waterfront Tour Bus Rental — Grand Traverse Bay Escape — WAYGGO Charters"
+seoTitle: "Traverse City Waterfront Tour Bus Rental — WAYGGO Charters"
 seoDescription: "Book a Traverse City Waterfront tour bus rental for your group — Grand Traverse Bay scenery and downtown attractions, vehicle and driver included."
 
 heroImageAlt: "Traverse City Waterfront tour bus rental"

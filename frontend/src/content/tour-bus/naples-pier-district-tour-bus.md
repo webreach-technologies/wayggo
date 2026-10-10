@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Naples Pier District Tour Bus Rental — Gulf Sunset Pier Experience Journey — WAYGGO Charters"
+seoTitle: "Naples Pier District Tour Bus Rental — WAYGGO Charters"
 seoDescription: "Book a Naples Pier District tour bus rental for your group — the historic Naples Pier and Gulf Coast sunsets in Southwest Florida, vehicle and driver included."
 
 heroImageAlt: "Naples Pier District tour bus rental"

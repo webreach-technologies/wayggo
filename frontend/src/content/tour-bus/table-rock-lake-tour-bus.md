@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Table Rock Lake Tour Bus Rental — Lakeside Serenity Escape — WAYGGO Charters"
+seoTitle: "Table Rock Lake Tour Bus Rental — WAYGGO Charters"
 seoDescription: "Book a Table Rock Lake tour bus rental for your group — scenic shoreline and outdoor recreation in the Ozarks, vehicle and driver included."
 
 heroImageAlt: "Table Rock Lake tour bus rental"

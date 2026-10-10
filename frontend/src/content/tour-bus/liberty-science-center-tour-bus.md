@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Liberty Science Center Tour Bus Rental — Science in Motion Adventure — WAYGGO Charters"
+seoTitle: "Liberty Science Center Tour Bus Rental — WAYGGO Charters"
 seoDescription: "Book a Liberty Science Center tour bus rental for your group — interactive STEM exhibits and educational programs in Jersey City, vehicle and driver included."
 
 heroImageAlt: "Liberty Science Center tour bus rental"

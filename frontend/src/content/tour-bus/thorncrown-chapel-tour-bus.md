@@ -27,8 +27,8 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Thorncrown Chapel Tour Bus Rental — Glass & Green Serenity Tour — WAYGGO Charters"
-seoDescription: "Book a Thorncrown Chapel tour bus rental for your group — E. Fay Jones' award-winning glass-and-timber chapel in the Eureka Springs woodlands, vehicle and driver included."
+seoTitle: "Thorncrown Chapel Tour Bus Rental — WAYGGO Charters"
+seoDescription: "Book a Thorncrown Chapel tour bus rental — E. Fay Jones' award-winning glass-and-timber chapel in the Eureka Springs woodlands, vehicle and driver included."
 
 heroImageAlt: "Thorncrown Chapel tour bus rental"
 heroHeadingLine1: "Thorncrown Chapel"

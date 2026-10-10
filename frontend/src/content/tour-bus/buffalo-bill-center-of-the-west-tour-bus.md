@@ -27,8 +27,8 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Buffalo Bill Center of the West Tour Bus Rental — Legends of the American West — WAYGGO Charters"
-seoDescription: "Book a Buffalo Bill Center of the West tour bus rental for your group — one of Wyoming's most significant cultural and historical destinations, vehicle and driver included."
+seoTitle: "Buffalo Bill Center of the West Tour Bus Rental — WAYGGO"
+seoDescription: "Book a Buffalo Bill Center of the West tour bus rental — one of Wyoming's most significant cultural and historical destinations, vehicle and driver included."
 
 heroImageAlt: "Buffalo Bill Center of the West tour bus rental"
 heroHeadingLine1: "Buffalo Bill Center of the West"

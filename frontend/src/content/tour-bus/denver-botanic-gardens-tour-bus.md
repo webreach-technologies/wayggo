@@ -27,8 +27,8 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Denver Botanic Gardens Tour Bus Rental — Floral Oasis Garden Journey — WAYGGO Charters"
-seoDescription: "Book a Denver Botanic Gardens tour bus rental for your group — themed gardens, a tropical conservatory, and seasonal floral displays in Denver, vehicle and driver included."
+seoTitle: "Denver Botanic Gardens Tour Bus Rental — WAYGGO Charters"
+seoDescription: "Book a Denver Botanic Gardens tour bus rental — themed gardens, a tropical conservatory, and seasonal floral displays in Denver, vehicle and driver included."
 
 heroImageAlt: "Denver Botanic Gardens tour bus rental"
 heroHeadingLine1: "Denver Botanic Gardens"

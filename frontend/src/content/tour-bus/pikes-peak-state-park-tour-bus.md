@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Pikes Peak State Park Tour Bus Rental — Mississippi Bluff Overlook Scenic Escape Experience — WAYGGO Charters"
+seoTitle: "Pikes Peak State Park Tour Bus Rental — WAYGGO Charters"
 seoDescription: "Book a Pikes Peak State Park tour bus rental for your group — Mississippi River bluff-top views near McGregor, Iowa, vehicle and driver included."
 
 heroImageAlt: "Pikes Peak State Park tour bus rental"

@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Gateway Arch National Park Tour Bus Rental — Gateway to the West Adventure — WAYGGO Charters"
+seoTitle: "Gateway Arch National Park Tour Bus Rental — WAYGGO Charters"
 seoDescription: "Book a Gateway Arch National Park tour bus rental for your group — iconic monument and Mississippi River setting, vehicle and driver included."
 
 heroImageAlt: "Gateway Arch National Park tour bus rental"

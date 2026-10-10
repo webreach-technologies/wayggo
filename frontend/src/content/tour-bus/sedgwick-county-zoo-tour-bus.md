@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Sedgwick County Zoo Tour Bus Rental — Wildlife Safari River Valley Encounter Experience — WAYGGO Charters"
+seoTitle: "Sedgwick County Zoo Tour Bus Rental — WAYGGO Charters"
 seoDescription: "Book a Sedgwick County Zoo tour bus rental for your group — diverse wildlife and conservation education in Wichita, vehicle and driver included."
 
 heroImageAlt: "Sedgwick County Zoo tour bus rental"

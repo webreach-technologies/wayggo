@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Wall Drug Tour Bus Rental — Roadside Americana Discovery — WAYGGO Charters"
+seoTitle: "Wall Drug Tour Bus Rental — WAYGGO Charters"
 seoDescription: "Book a Wall Drug tour bus rental for your group — one of South Dakota's best-known roadside destinations, vehicle and driver included."
 
 heroImageAlt: "Wall Drug tour bus rental"

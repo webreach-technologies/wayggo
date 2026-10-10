@@ -27,8 +27,8 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Pikes Peak Tour Bus Rental — America's Mountain Summit Journey — WAYGGO Charters"
-seoDescription: "Book a Pikes Peak tour bus rental for your group — the legendary 14,115-foot summit, scenic mountain roads, and sweeping Colorado views, vehicle and driver included."
+seoTitle: "Pikes Peak Tour Bus Rental — WAYGGO Charters"
+seoDescription: "Book a Pikes Peak tour bus rental — the legendary 14,115-foot summit, scenic mountain roads, and sweeping Colorado views, vehicle and driver included."
 
 heroImageAlt: "Pikes Peak tour bus rental"
 heroHeadingLine1: "Pikes Peak"

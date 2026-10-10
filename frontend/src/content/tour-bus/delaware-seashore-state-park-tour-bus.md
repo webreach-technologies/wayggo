@@ -27,8 +27,8 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Delaware Seashore State Park Tour Bus Rental — Atlantic Barrier Island Adventure Ride — WAYGGO Charters"
-seoDescription: "Book a Delaware Seashore State Park tour bus rental for your group — barrier-island beaches, bay wildlife, and maritime history between the Atlantic and Indian River Bay, vehicle and driver included."
+seoTitle: "Delaware Seashore State Park Tour Bus Rental — WAYGGO"
+seoDescription: "Book a Delaware Seashore State Park tour bus rental — barrier-island beaches, bay wildlife, and maritime history between the Atlantic and Indian River Bay."
 
 heroImageAlt: "Delaware Seashore State Park tour bus rental"
 heroHeadingLine1: "Delaware Seashore State Park"

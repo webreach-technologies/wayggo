@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Newfields Tour Bus Rental — Art, Gardens & Estate Elegance Experience — WAYGGO Charters"
+seoTitle: "Newfields Tour Bus Rental — WAYGGO Charters"
 seoDescription: "Book a Newfields tour bus rental for your group — the Indianapolis Museum of Art and expansive gardens, vehicle and driver included."
 
 heroImageAlt: "Newfields (Indianapolis Museum of Art) tour bus rental"

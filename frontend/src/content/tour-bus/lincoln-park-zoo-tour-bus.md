@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Lincoln Park Zoo Tour Bus Rental — Wildlife Oasis City Escape Experience — WAYGGO Charters"
+seoTitle: "Lincoln Park Zoo Tour Bus Rental — WAYGGO Charters"
 seoDescription: "Book a Lincoln Park Zoo tour bus rental for your group — animal habitats and wildlife conservation in the heart of Chicago, vehicle and driver included."
 
 heroImageAlt: "Lincoln Park Zoo tour bus rental"

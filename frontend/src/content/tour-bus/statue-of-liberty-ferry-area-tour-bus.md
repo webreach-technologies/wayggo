@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Statue of Liberty Ferry Area Tour Bus Rental — Gateway to Liberty Journey — WAYGGO Charters"
+seoTitle: "Statue of Liberty Ferry Area Tour Bus Rental — WAYGGO"
 seoDescription: "Book a Statue of Liberty Ferry Area tour bus rental for your group — harbor views and iconic Lower Manhattan sightseeing, vehicle and driver included."
 
 heroImageAlt: "Statue of Liberty Ferry Area tour bus rental"

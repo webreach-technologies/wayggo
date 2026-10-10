@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Yale University Campus Tour Bus Rental — Ivy League Heritage Campus Journey — WAYGGO Charters"
+seoTitle: "Yale University Campus Tour Bus Rental — WAYGGO Charters"
 seoDescription: "Book a Yale University tour bus rental for your group — historic Gothic architecture and iconic libraries in New Haven, vehicle and driver included."
 
 heroImageAlt: "Yale University Campus tour bus rental"

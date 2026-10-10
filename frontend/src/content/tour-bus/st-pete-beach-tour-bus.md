@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "St. Pete Beach Tour Bus Rental — Coastal Relaxation & White Sand Experience Ride — WAYGGO Charters"
+seoTitle: "St. Pete Beach Tour Bus Rental — WAYGGO Charters"
 seoDescription: "Book a St. Pete Beach tour bus rental for your group — sandy shoreline and Gulf Coast relaxation near Tampa Bay, vehicle and driver included."
 
 heroImageAlt: "St. Pete Beach tour bus rental"

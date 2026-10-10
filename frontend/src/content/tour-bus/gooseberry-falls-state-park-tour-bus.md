@@ -27,8 +27,8 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Gooseberry Falls State Park Tour Bus Rental — North Shore Falls Escape — WAYGGO Charters"
-seoDescription: "Book a Gooseberry Falls State Park tour bus rental for your group — waterfalls and Lake Superior scenery on Minnesota's North Shore, vehicle and driver included."
+seoTitle: "Gooseberry Falls State Park Tour Bus Rental — WAYGGO"
+seoDescription: "Book a Gooseberry Falls State Park tour bus rental — waterfalls and Lake Superior scenery on Minnesota's North Shore, vehicle and driver included."
 
 heroImageAlt: "Gooseberry Falls State Park tour bus rental"
 heroHeadingLine1: "Gooseberry Falls"

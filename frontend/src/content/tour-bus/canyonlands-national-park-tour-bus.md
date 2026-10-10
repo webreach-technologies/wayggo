@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Canyonlands National Park Tour Bus Rental — Land of Endless Canyons Journey — WAYGGO Charters"
+seoTitle: "Canyonlands National Park Tour Bus Rental — WAYGGO Charters"
 seoDescription: "Book a Canyonlands National Park tour bus rental for your group — one of Utah's most remarkable natural destinations, vehicle and driver included."
 
 heroImageAlt: "Canyonlands National Park tour bus rental"

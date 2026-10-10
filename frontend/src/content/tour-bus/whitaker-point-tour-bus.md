@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Whitaker Point Tour Bus Rental — Sacred Rock Overlook Experience Tour — WAYGGO Charters"
+seoTitle: "Whitaker Point Tour Bus Rental — WAYGGO Charters"
 seoDescription: "Book a Whitaker Point tour bus rental for your group — the iconic Hawksbill Crag overlook in the Ozark National Forest, vehicle and driver included."
 
 heroImageAlt: "Whitaker Point tour bus rental"

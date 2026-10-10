@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Churchill Downs Tour Bus Rental — Derby Racing Heritage Trackside Experience — WAYGGO Charters"
+seoTitle: "Churchill Downs Tour Bus Rental — WAYGGO Charters"
 seoDescription: "Book a Churchill Downs tour bus rental for your group — the legendary home of the Kentucky Derby in Louisville, vehicle and driver included."
 
 heroImageAlt: "Churchill Downs tour bus rental"

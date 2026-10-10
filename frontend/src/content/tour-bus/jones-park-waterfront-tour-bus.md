@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Jones Park Waterfront Tour Bus Rental — Harborfront Heritage Experience — WAYGGO Charters"
+seoTitle: "Jones Park Waterfront Tour Bus Rental — WAYGGO Charters"
 seoDescription: "Book a Jones Park Waterfront tour bus rental for your group — coastal scenery and Gulf views, vehicle and driver included."
 
 heroImageAlt: "Jones Park Waterfront tour bus rental"

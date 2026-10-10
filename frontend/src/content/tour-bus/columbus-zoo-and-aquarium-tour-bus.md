@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Columbus Zoo and Aquarium Tour Bus Rental — Wild Encounters Adventure — WAYGGO Charters"
+seoTitle: "Columbus Zoo and Aquarium Tour Bus Rental — WAYGGO Charters"
 seoDescription: "Book a Columbus Zoo and Aquarium tour bus rental for your group — wildlife, education, and family entertainment, vehicle and driver included."
 
 heroImageAlt: "Columbus Zoo and Aquarium tour bus rental"

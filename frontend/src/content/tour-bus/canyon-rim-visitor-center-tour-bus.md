@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Canyon Rim Visitor Center Tour Bus Rental — Rimside Views Discovery — WAYGGO Charters"
+seoTitle: "Canyon Rim Visitor Center Tour Bus Rental — WAYGGO Charters"
 seoDescription: "Book a Canyon Rim Visitor Center tour bus rental for your group — a convenient visit to the New River Gorge region, vehicle and driver included."
 
 heroImageAlt: "Canyon Rim Visitor Center tour bus rental"

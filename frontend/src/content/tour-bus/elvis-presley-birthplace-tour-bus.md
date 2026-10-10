@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Elvis Presley Birthplace Tour Bus Rental — King of Rock 'n' Roll Origins Tour — WAYGGO Charters"
+seoTitle: "Elvis Presley Birthplace Tour Bus Rental — WAYGGO Charters"
 seoDescription: "Book an Elvis Presley Birthplace tour bus rental for your group — music history and cultural heritage in Tupelo, vehicle and driver included."
 
 heroImageAlt: "Elvis Presley Birthplace tour bus rental"

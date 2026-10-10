@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Tunnel of Trees Scenic Heritage Route Tour Bus Rental — Emerald Canopy Scenic Byway — WAYGGO Charters"
+seoTitle: "Tunnel of Trees Scenic Heritage Route Tour Bus Rental"
 seoDescription: "Book a Tunnel of Trees Scenic Heritage Route tour bus rental for your group — forested landscapes and Lake Michigan scenery, vehicle and driver included."
 
 heroImageAlt: "Tunnel of Trees Scenic Heritage Route tour bus rental"

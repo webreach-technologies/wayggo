@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Bear Country USA Tour Bus Rental — Wild Bears of the Black Hills — WAYGGO Charters"
+seoTitle: "Bear Country USA Tour Bus Rental — WAYGGO Charters"
 seoDescription: "Book a Bear Country USA tour bus rental for your group — a popular Black Hills wildlife attraction, vehicle and driver included."
 
 heroImageAlt: "Bear Country USA tour bus rental"

@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Adirondack High Peaks Region Tour Bus Rental — Peaks of the Adirondacks Adventure — WAYGGO Charters"
+seoTitle: "Adirondack High Peaks Region Tour Bus Rental — WAYGGO"
 seoDescription: "Book an Adirondack High Peaks Region tour bus rental for your group — mountain landscapes, forests, and lakes, vehicle and driver included."
 
 heroImageAlt: "Adirondack High Peaks Region tour bus rental"

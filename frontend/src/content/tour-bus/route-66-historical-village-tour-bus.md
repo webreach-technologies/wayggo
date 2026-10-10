@@ -27,8 +27,8 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Route 66 Historical Village Tour Bus Rental — Mother Road Heritage Explorer — WAYGGO Charters"
-seoDescription: "Book a Route 66 Historical Village tour bus rental for your group — Oklahoma's transportation heritage on the historic Route 66 corridor, vehicle and driver included."
+seoTitle: "Route 66 Historical Village Tour Bus Rental — WAYGGO"
+seoDescription: "Book a Route 66 Historical Village tour bus rental — Oklahoma's transportation heritage on the historic Route 66 corridor, vehicle and driver included."
 
 heroImageAlt: "Route 66 Historical Village tour bus rental"
 heroHeadingLine1: "Route 66"

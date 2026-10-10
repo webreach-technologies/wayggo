@@ -27,8 +27,8 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Santa Claus House Tour Bus Rental — Christmas Magic Journey — WAYGGO Charters"
-seoDescription: "Book a Santa Claus House tour bus rental for your group — the iconic North Pole, Alaska Christmas landmark and 42-foot Santa statue, vehicle and driver included."
+seoTitle: "Santa Claus House Tour Bus Rental — WAYGGO Charters"
+seoDescription: "Book a Santa Claus House tour bus rental — the iconic North Pole, Alaska Christmas landmark and 42-foot Santa statue, vehicle and driver included."
 
 heroImageAlt: "Santa Claus House tour bus rental"
 heroHeadingLine1: "Santa Claus House"

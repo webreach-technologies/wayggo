@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Fenelon Place Elevator Tour Bus Rental — Historic Cliff Railway Panorama Ride Experience — WAYGGO Charters"
+seoTitle: "Fenelon Place Elevator Tour Bus Rental — WAYGGO Charters"
 seoDescription: "Book a Fenelon Place Elevator tour bus rental for your group — Dubuque's historic hillside funicular and panoramic river views, vehicle and driver included."
 
 heroImageAlt: "Fenelon Place Elevator tour bus rental"

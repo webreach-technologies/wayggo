@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Needles Highway Tour Bus Rental — Needles Through the Black Hills Drive — WAYGGO Charters"
+seoTitle: "Needles Highway Tour Bus Rental — WAYGGO Charters"
 seoDescription: "Book a Needles Highway tour bus rental for your group — dramatic scenery and rock formations in South Dakota's Black Hills, vehicle and driver included."
 
 heroImageAlt: "Needles Highway tour bus rental"

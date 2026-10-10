@@ -27,8 +27,8 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Tlaquepaque Arts & Shopping Village Tour Bus Rental — Rustic Elegance Discovery Tour — WAYGGO Charters"
-seoDescription: "Book a Tlaquepaque Arts & Shopping Village tour bus rental for your group — galleries, boutiques, and courtyards beneath Sedona's red rocks, vehicle and driver included."
+seoTitle: "Tlaquepaque Arts & Shopping Village Tour Bus Rental — WAYGGO"
+seoDescription: "Book a Tlaquepaque Arts & Shopping Village tour bus rental — galleries, boutiques, and courtyards beneath Sedona's red rocks, vehicle and driver included."
 
 heroImageAlt: "Tlaquepaque Arts & Shopping Village tour bus rental"
 heroHeadingLine1: "Tlaquepaque Arts & Shopping Village"

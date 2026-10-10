@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Hershey's Chocolate World Tour Bus Rental — Chocolate Dreams Discovery — WAYGGO Charters"
+seoTitle: "Hershey's Chocolate World Tour Bus Rental — WAYGGO Charters"
 seoDescription: "Book a Hershey's Chocolate World tour bus rental for your group — interactive chocolate-themed attractions in Hershey, vehicle and driver included."
 
 heroImageAlt: "Hershey's Chocolate World tour bus rental"

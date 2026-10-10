@@ -27,8 +27,8 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Faneuil Hall Marketplace Tour Bus Rental — Marketplace Heritage Explorer — WAYGGO Charters"
-seoDescription: "Book a Faneuil Hall Marketplace tour bus rental for your group — one of Boston's most recognizable historic and entertainment destinations, vehicle and driver included."
+seoTitle: "Faneuil Hall Marketplace Tour Bus Rental — WAYGGO Charters"
+seoDescription: "Book a Faneuil Hall Marketplace tour bus rental — one of Boston's most recognizable historic and entertainment destinations, vehicle and driver included."
 
 heroImageAlt: "Faneuil Hall Marketplace tour bus rental"
 heroHeadingLine1: "Faneuil Hall Marketplace"

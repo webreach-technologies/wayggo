@@ -27,8 +27,8 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Crystal Bridges Museum of American Art Tour Bus Rental — Creative Legacy Experience Tour — WAYGGO Charters"
-seoDescription: "Book a Crystal Bridges Museum of American Art tour bus rental for your group — five centuries of American art and sculpture trails in Bentonville, vehicle and driver included."
+seoTitle: "Crystal Bridges Museum of American Art Tour Bus Rental"
+seoDescription: "Book a Crystal Bridges Museum of American Art tour bus rental — five centuries of American art and sculpture trails in Bentonville, vehicle and driver included."
 
 heroImageAlt: "Crystal Bridges Museum of American Art tour bus rental"
 heroHeadingLine1: "Crystal Bridges Museum of American Art"

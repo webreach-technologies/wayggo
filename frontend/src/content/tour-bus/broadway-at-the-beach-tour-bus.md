@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Broadway at the Beach Tour Bus Rental — Beachside Entertainment Escape — WAYGGO Charters"
+seoTitle: "Broadway at the Beach Tour Bus Rental — WAYGGO Charters"
 seoDescription: "Book a Broadway at the Beach tour bus rental for your group — Myrtle Beach's entertainment, shopping, and dining destination, vehicle and driver included."
 
 heroImageAlt: "Broadway at the Beach tour bus rental"

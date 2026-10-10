@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Liberty Bell Tour Bus Rental — Symbol of Freedom Discovery — WAYGGO Charters"
+seoTitle: "Liberty Bell Tour Bus Rental — WAYGGO Charters"
 seoDescription: "Book a Liberty Bell tour bus rental for your group — one of Philadelphia's most recognizable historic symbols, vehicle and driver included."
 
 heroImageAlt: "Liberty Bell tour bus rental"

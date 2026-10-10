@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Bathhouse Row Tour Bus Rental — Bathhouse Heritage Discovery Journey — WAYGGO Charters"
+seoTitle: "Bathhouse Row Tour Bus Rental — WAYGGO Charters"
 seoDescription: "Book a Bathhouse Row tour bus rental for your group — eight historic 1890s–1920s spa buildings in downtown Hot Springs, Arkansas, vehicle and driver included."
 
 heroImageAlt: "Bathhouse Row tour bus rental"

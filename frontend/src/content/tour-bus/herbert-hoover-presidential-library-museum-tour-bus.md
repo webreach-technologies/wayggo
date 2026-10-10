@@ -27,8 +27,8 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Herbert Hoover Presidential Library & Museum Tour Bus Rental — Presidential Legacy & Great Depression History Experience — WAYGGO Charters"
-seoDescription: "Book a Herbert Hoover Presidential Library & Museum tour bus rental for your group — presidential history and Great Depression-era exhibits in West Branch, vehicle and driver included."
+seoTitle: "Herbert Hoover Presidential Library & Museum Tour Bus Rental"
+seoDescription: "Book a Herbert Hoover Presidential Library & Museum tour bus rental for your group — presidential history and Great Depression-era exhibits in West Branch."
 
 heroImageAlt: "Herbert Hoover Presidential Library & Museum tour bus rental"
 heroHeadingLine1: "Herbert Hoover Presidential"

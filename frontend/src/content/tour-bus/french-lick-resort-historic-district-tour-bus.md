@@ -27,8 +27,8 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "French Lick Resort Historic District Tour Bus Rental — Historic Mineral Springs Luxury Heritage Escape Experience — WAYGGO Charters"
-seoDescription: "Book a French Lick Resort Historic District tour bus rental for your group — historic resort architecture and small-town charm in southern Indiana, vehicle and driver included."
+seoTitle: "French Lick Resort Historic District Tour Bus Rental"
+seoDescription: "Book a French Lick Resort Historic District tour bus rental for your group — historic resort architecture and small-town charm in southern Indiana."
 
 heroImageAlt: "French Lick Resort Historic District tour bus rental"
 heroHeadingLine1: "French Lick Resort"

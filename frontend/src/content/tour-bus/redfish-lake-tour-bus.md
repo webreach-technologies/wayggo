@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Redfish Lake Tour Bus Rental — Crystal Alpine Reflection Escape — WAYGGO Charters"
+seoTitle: "Redfish Lake Tour Bus Rental — WAYGGO Charters"
 seoDescription: "Book a Redfish Lake tour bus rental for your group — clear alpine waters beneath the towering Sawtooth Mountains, vehicle and driver included."
 
 heroImageAlt: "Redfish Lake tour bus rental"

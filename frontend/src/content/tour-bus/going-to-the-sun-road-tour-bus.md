@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Going-to-the-Sun Road Tour Bus Rental — Skyline Through the Peaks Journey — WAYGGO Charters"
+seoTitle: "Going-to-the-Sun Road Tour Bus Rental — WAYGGO Charters"
 seoDescription: "Book a Going-to-the-Sun Road tour bus rental for your group — spectacular mountain scenery through Glacier National Park, vehicle and driver included."
 
 heroImageAlt: "Going-to-the-Sun Road tour bus rental"

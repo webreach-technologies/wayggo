@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Cloud Gate (The Bean) Tour Bus Rental — Reflective Skyline Art Experience — WAYGGO Charters"
+seoTitle: "Cloud Gate (The Bean) Tour Bus Rental — WAYGGO Charters"
 seoDescription: "Book a Cloud Gate tour bus rental for your group — Chicago's iconic reflective 'Bean' sculpture in Millennium Park, vehicle and driver included."
 
 heroImageAlt: "Cloud Gate (The Bean) tour bus rental"

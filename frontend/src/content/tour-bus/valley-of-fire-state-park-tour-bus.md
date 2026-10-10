@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Valley of Fire State Park Tour Bus Rental — Valley of Fire Wonders — WAYGGO Charters"
+seoTitle: "Valley of Fire State Park Tour Bus Rental — WAYGGO Charters"
 seoDescription: "Book a Valley of Fire State Park tour bus rental for your group — vivid red sandstone formations in the Mojave Desert, vehicle and driver included."
 
 heroImageAlt: "Valley of Fire State Park tour bus rental"

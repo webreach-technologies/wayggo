@@ -27,8 +27,8 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Monument Valley Navajo Tribal Park Tour Bus Rental — Red Butte Heritage Journey — WAYGGO Charters"
-seoDescription: "Book a Monument Valley Navajo Tribal Park tour bus rental for your group — the Mitten Buttes, the 17-mile Valley Drive, and Navajo heritage, vehicle and driver included."
+seoTitle: "Monument Valley Navajo Tribal Park, AZ Tour Bus Rental"
+seoDescription: "Book a Monument Valley Navajo Tribal Park tour bus rental — the Mitten Buttes, the 17-mile Valley Drive, and Navajo heritage, vehicle and driver included."
 
 heroImageAlt: "Monument Valley Navajo Tribal Park tour bus rental"
 heroHeadingLine1: "Monument Valley Navajo Tribal Park"

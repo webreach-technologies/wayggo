@@ -27,8 +27,8 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Snake River Canyon Tour Bus Rental — Skyline Canyon Vista Escape — WAYGGO Charters"
-seoDescription: "Book a Snake River Canyon tour bus rental for your group — the historic Perrine Memorial Bridge and Twin Falls engineering heritage, vehicle and driver included."
+seoTitle: "Snake River Canyon Tour Bus Rental — WAYGGO Charters"
+seoDescription: "Book a Snake River Canyon tour bus rental — the historic Perrine Memorial Bridge and Twin Falls engineering heritage, vehicle and driver included."
 
 heroImageAlt: "Snake River Canyon tour bus rental"
 heroHeadingLine1: "Snake River Canyon"

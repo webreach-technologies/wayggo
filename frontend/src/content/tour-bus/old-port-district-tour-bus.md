@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Old Port District Tour Bus Rental — Maritime Heritage Explorer — WAYGGO Charters"
+seoTitle: "Old Port District Tour Bus Rental — WAYGGO Charters"
 seoDescription: "Book an Old Port District tour bus rental for your group — historic brick architecture and waterfront shopping in Portland, vehicle and driver included."
 
 heroImageAlt: "Old Port District tour bus rental"

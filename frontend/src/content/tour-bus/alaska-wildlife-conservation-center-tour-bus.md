@@ -27,8 +27,8 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Alaska Wildlife Conservation Center Tour Bus Rental — Alaska Animal Trail Explorer Ride — WAYGGO Charters"
-seoDescription: "Book an Alaska Wildlife Conservation Center tour bus rental for your group — brown bears, wood bison, and musk oxen near Portage, Alaska, vehicle and driver included."
+seoTitle: "Alaska Wildlife Conservation Center Tour Bus Rental — WAYGGO"
+seoDescription: "Book an Alaska Wildlife Conservation Center tour bus rental — brown bears, wood bison, and musk oxen near Portage, Alaska, vehicle and driver included."
 
 heroImageAlt: "Alaska Wildlife Conservation Center tour bus rental"
 heroHeadingLine1: "Alaska Wildlife Conservation Center"

@@ -27,8 +27,8 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Skagway Historic District Tour Bus Rental — Gold Rush Heritage Journey — WAYGGO Charters"
-seoDescription: "Book a Skagway Historic District tour bus rental for your group — Klondike Gold Rush history and the White Pass & Yukon Route Railroad in Alaska's Inside Passage, vehicle and driver included."
+seoTitle: "Skagway Historic District Tour Bus Rental — WAYGGO Charters"
+seoDescription: "Book a Skagway Historic District tour bus rental — Klondike Gold Rush history and the White Pass & Yukon Route Railroad in Alaska's Inside Passage."
 
 heroImageAlt: "Skagway Historic District tour bus rental"
 heroHeadingLine1: "Skagway Historic District"

@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Crown Point Vista House Tour Bus Rental — Crown Above the Gorge Discovery — WAYGGO Charters"
+seoTitle: "Crown Point Vista House Tour Bus Rental — WAYGGO Charters"
 seoDescription: "Book a Crown Point Vista House tour bus rental for your group — a historic landmark with sweeping Columbia River Gorge views, vehicle and driver included."
 
 heroImageAlt: "Crown Point Vista House tour bus rental"

@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "South Beach Tour Bus Rental — Oceanfront Glamour Beach Journey — WAYGGO Charters"
+seoTitle: "South Beach Tour Bus Rental — WAYGGO Charters"
 seoDescription: "Book a South Beach tour bus rental for your group — Ocean Drive, the Art Deco Historic District, and Miami's Atlantic shoreline, vehicle and driver included."
 
 heroImageAlt: "South Beach tour bus rental"

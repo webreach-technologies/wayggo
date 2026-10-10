@@ -27,7 +27,7 @@ included:
   - "Airport transfers"
   - "Hotel pickup & drop-off"
 
-seoTitle: "Scissortail Park Tour Bus Rental — Downtown Green Escape — WAYGGO Charters"
+seoTitle: "Scissortail Park Tour Bus Rental — WAYGGO Charters"
 seoDescription: "Book a Scissortail Park tour bus rental for your group — outdoor recreation and green space in downtown Oklahoma City, vehicle and driver included."
 
 heroImageAlt: "Scissortail Park tour bus rental"
