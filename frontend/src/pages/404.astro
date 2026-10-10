@@ -1,0 +1,19 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import PageHero from "../components/sections/PageHero.astro";
+---
+
+<BaseLayout
+  title="Page Not Found — WAYGGO Charters"
+  description="The page you are looking for could not be found. Head back to the WAYGGO Charters homepage."
+  noindex
+>
+  <PageHero
+    badge="Error 404"
+    heading={'Page Not <span style="color: #FDEA01;">Found</span>'}
+    subheading="The page you are looking for may have been moved, renamed, or no longer exists."
+    size="lg"
+    align="center"
+    cta={{ label: "Back to Home", href: "/" }}
+  />
+</BaseLayout>
